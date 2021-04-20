@@ -2638,7 +2638,7 @@ input, select, textarea {
 				margin-top: 0;
 			}
 
-			.image.fit img {
+			/* .image.fit img {
 				width: 100%;
 			}
 
@@ -2654,7 +2654,7 @@ input, select, textarea {
 
 			.image.main img {
 				width: 100%;
-			}
+			} */
 
 		@media screen and (max-width: 736px) {
 
