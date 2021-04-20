@@ -90,9 +90,19 @@ input, select, textarea {
 
 	}
 
-	html {
+
+	html { 
+		background: url(images/bg.jpg) no-repeat center center fixed; 
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		-o-background-size: cover;
+		background-size: cover;
 		box-sizing: border-box;
-	}
+	  }
+
+	/* html {
+		box-sizing: border-box;
+	} */
 
 	*, *:before, *:after {
 		box-sizing: inherit;
@@ -3246,11 +3256,11 @@ input, select, textarea {
 			z-index: -1;
 		}
 
-			/* #wrapper > .bg.fixed {
+			#wrapper > .bg.fixed {
 				position: fixed;
 				width: 100vw;
 				height: 100vh;
-			} */
+			}
 
 		#wrapper.fade-in:before {
 			pointer-events: none;
