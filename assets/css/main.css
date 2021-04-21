@@ -306,7 +306,7 @@ input, select, textarea {
 	}
 
 	h1, h2, h3, h4, h5, h6 {
-		color: #212931;
+		color: #ffffff;
 	}
 
 	blockquote {
@@ -2180,7 +2180,7 @@ input, select, textarea {
 				input[type="button"].large,
 				button.large,
 				.button.large {
-					font-size: 1rem;
+					font-size: 1.5rem;
 					height: 3.75rem;
 					line-height: 3.75rem;
 				}
@@ -2206,8 +2206,8 @@ input, select, textarea {
 	button,
 	.button {
 		background-color: transparent;
-		box-shadow: inset 0 0 0 2px #212931;
-		color: #212931 !important;
+		box-shadow: inset 0 0 0 2px #ffffff;
+		color: #ffffff !important;
 	}
 
 		input[type="submit"]:hover,
@@ -2959,7 +2959,7 @@ input, select, textarea {
 			}
 
 			header.major > .date {
-				font-size: 1rem;
+				font-size: 1.5rem;
 				margin: 0 0 4rem 0;
 			}
 
@@ -2968,7 +2968,7 @@ input, select, textarea {
 					display: block;
 					position: absolute;
 					top: 50%;
-					width: calc(50% - 6rem);
+					width: calc(50% - 8rem);
 					border-top: solid 2px;
 				}
 
@@ -3264,7 +3264,7 @@ input, select, textarea {
 			display: block;
 			height: 100%;
 			left: 0;
-			opacity: 0;
+			opacity: .85;
 			position: fixed;
 			top: 0;
 			width: 100%;
@@ -3277,7 +3277,7 @@ input, select, textarea {
 		@media screen and (orientation: portrait) {
 
 			#wrapper > .bg {
-				background-size: auto,								auto,														auto 175%;
+				background-size: auto,								auto,														auto 30%;
 			}
 
 		}
@@ -3334,6 +3334,7 @@ input, select, textarea {
 
 		#intro h1, #intro h2, #intro h3, #intro h4, #intro h5, #intro h6 {
 			color: #ffffff;
+			/* background: transparent; */
 		}
 
 		#intro blockquote {
@@ -3392,7 +3393,7 @@ input, select, textarea {
 		}
 
 		#intro p {
-			font-size: 1.25rem;
+			font-size: 2.5rem;
 			font-style: italic;
 			margin-top: -0.25rem;
 			text-align: center;
@@ -3575,6 +3576,8 @@ input, select, textarea {
 			padding: 1rem 1.75rem;
 			text-transform: uppercase;
 			visibility: visible;
+
+			background-color: rgba(0, 0, 0, .5)
 		}
 
 			#header .logo:hover {
@@ -3757,7 +3760,8 @@ input, select, textarea {
 /* Main */
 
 	#main {
-		background-color: #ffffff;
+		color: #ffffff;
+		background-color: #2e2e2e;
 		position: relative;
 		margin: 0 auto;
 		width: calc(100% - 4rem);
