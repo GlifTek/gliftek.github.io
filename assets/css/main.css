@@ -99,6 +99,7 @@ input, select, textarea {
 	}
 
 	body {
+		/* background-color: #1e252d; */
 		background-color: #1e252d;
 	}
 
@@ -145,6 +146,7 @@ input, select, textarea {
 
 	body {
 		color: #212931;
+		
 	}
 
 	body, input, select, textarea {
@@ -2804,18 +2806,21 @@ input, select, textarea {
 		cursor: default;
 		list-style: none;
 		padding-left: 0;
+		
 	}
 
 		ul.icons li {
 			display: inline-block;
 			padding: 0 0.5rem 0 0;
 			vertical-align: middle;
+			
 		}
 
 			ul.icons li:last-child {
 				padding-right: 0;
 			}
 
+			/* SIDE MENU ICONS */
 			ul.icons li .icon:before {
 				width: 2.25rem;
 				height: 2.25rem;
@@ -2824,6 +2829,7 @@ input, select, textarea {
 				text-align: center;
 				border-radius: 100%;
 				font-size: 1.25rem;
+				color: #ffffff;
 			}
 
 		ul.icons.alt li .icon:before {
@@ -3233,7 +3239,7 @@ input, select, textarea {
 			left: 0;
 			width: 100%;
 			height: 100%;
-			background-color: #212931;
+			background-color: #000000;
 			background-image: url("../../images/overlay.png"), linear-gradient(0deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), 
 			url("../../images/gliftek_logo_bg_large_02.jpg");
 			background-size: auto,								auto,														100% auto;
@@ -3259,12 +3265,14 @@ input, select, textarea {
 			-webkit-transition-delay: 0.75s;
 			-ms-transition-delay: 0.75s;
 			transition-delay: 0.75s;
-			background: #1e252d;
+			background: #5d7a9c;
 			content: '';
 			display: block;
 			height: 100%;
 			left: 0;
-			opacity: .85;
+
+			/* final fade level for background image */
+			opacity: .25;
 			position: fixed;
 			top: 0;
 			width: 100%;
@@ -3277,7 +3285,7 @@ input, select, textarea {
 		@media screen and (orientation: portrait) {
 
 			#wrapper > .bg {
-				background-size: auto,								auto,														auto 30%;
+				background-size: auto,								auto,														auto 45%;
 			}
 
 		}
@@ -3619,7 +3627,18 @@ input, select, textarea {
 		-webkit-transition: -webkit-transform 1s ease, opacity 1s ease;
 		-ms-transition: -ms-transform 1s ease, opacity 1s ease;
 		transition: transform 1s ease, opacity 1s ease;
+
+
 		background: rgba(255, 255, 255, 0.175);
+		background-color: rgba(255, 255, 255, 0.175);
+
+		/* MENU COLOR */
+		/* background-color: rgba(46, 46, 46, .8);
+
+		color: #ffffff; */
+		/* color: #212931; */
+
+
 		height: 4rem;
 		line-height: 4rem;
 		margin: -4rem auto 0 auto;
@@ -3726,7 +3745,7 @@ input, select, textarea {
 					}
 
 				#nav ul.links li.active {
-					background-color: #ffffff;
+					background-color: rgba(255, 255, 255, .3);
 				}
 
 					#nav ul.links li.active a {
@@ -3734,7 +3753,7 @@ input, select, textarea {
 					}
 
 						#nav ul.links li.active a:hover {
-							color: #18bfef !important;
+							color: #7fd1cd !important;
 						}
 
 		#nav ul.icons {
@@ -3761,7 +3780,10 @@ input, select, textarea {
 
 	#main {
 		color: #ffffff;
-		background-color: #2e2e2e;
+		/* background-color: #2e2e2e; */
+		/* MAIN BACKGROUND COLOR */
+		background-color: rgba(33, 41, 49, .5);
+		/* background-color: #2e2e2e; */
 		position: relative;
 		margin: 0 auto;
 		width: calc(100% - 4rem);
@@ -4567,9 +4589,21 @@ input, select, textarea {
 		transition: transform 0.5s ease, box-shadow 0.5s ease, visibility 0.5s;
 		display: none;
 		-webkit-overflow-scrolling: touch;
-		background: #ffffff;
+
+		/* background: #7a1010; */
+
+		/* background-color: rgba(46, 46, 46, 0.875); */
+
+		/* NAV MENU SIDE BACKGROUND COLOR */
+		/* background: rgba(46, 46, 46, 0.875); */
+		background: rgba(0, 0, 0, 0.6);
+
+		color: #ffffff;
+
+		/* color: #212931; */
+
 		box-shadow: none;
-		color: #212931;
+		
 		height: 100%;
 		max-width: 80%;
 		overflow-y: auto;
@@ -4585,12 +4619,15 @@ input, select, textarea {
 		#navPanel .links {
 			list-style: none;
 			padding-left: 0;
+			
 		}
 
 			#navPanel .links li {
 				border-top: solid 2px #eeeeee;
+				
 			}
 
+				/* NAV PANEL TEXT COLOR */
 				#navPanel .links li a {
 					border-bottom: 0;
 					display: block;
@@ -4601,10 +4638,12 @@ input, select, textarea {
 					letter-spacing: 0.075em;
 					padding: 0.75rem 0;
 					text-transform: uppercase;
+					color: #ffffff;
 				}
 
 				#navPanel .links li:first-child {
 					border-top: 0;
+					
 				}
 
 		#navPanel .close {
@@ -4615,7 +4654,9 @@ input, select, textarea {
 			transition: color 0.2s ease-in-out;
 			-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 			border: 0;
+
 			color: #909498;
+			
 			cursor: pointer;
 			display: block;
 			height: 3.25rem;
@@ -4648,7 +4689,8 @@ input, select, textarea {
 			}
 
 			#navPanel .close:hover {
-				color: #212931;
+				/* color: #212931; */
+				color: #ffffff;
 			}
 
 			@media screen and (max-width: 736px) {
