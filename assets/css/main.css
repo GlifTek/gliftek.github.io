@@ -294,8 +294,8 @@ input, select, textarea {
 	}
 
 	a {
-		color: #212931;
-		border-bottom-color: rgba(33, 41, 49, 0.5);
+		color: #89b1da;
+		border-bottom-color: rgba(118, 144, 170, 0.5);
 	}
 
 		a:hover {
@@ -2638,7 +2638,7 @@ input, select, textarea {
 
 		.image.main {
 			display: block;
-			margin: 4rem 0;
+			margin: .1rem 0;
 			width: 100%;
 		}
 
@@ -3245,7 +3245,7 @@ input, select, textarea {
 			width: 100%;
 			height: 100%;
 			background-color: #000000;
-			background-image: url("../../images/overlay.png"), linear-gradient(0deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), 
+			background-image: url("../../images/overlay.png"), linear-gradient(0deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.45)), 
 			url("../../images/gliftek_logo_bg_large_02.jpg");
 			background-size: auto,								auto,														100% auto;
 			background-position: center,								center,														top center;
@@ -3270,14 +3270,15 @@ input, select, textarea {
 			-webkit-transition-delay: 0.75s;
 			-ms-transition-delay: 0.75s;
 			transition-delay: 0.75s;
-			background: #5d7a9c;
+			/* background: #5d7a9c; */
+			background: #000000;
 			content: '';
 			display: block;
 			height: 100%;
 			left: 0;
 
 			/* final fade level for background image */
-			opacity: .25;
+			opacity: .0;
 			position: fixed;
 			top: 0;
 			width: 100%;
@@ -4812,9 +4813,11 @@ input, select, textarea {
 #close_HELPERS,
 #close_BOUNDING_BOXES
 	{
-		position: absolute;
+		/* position: absolute; */
+		position: relative;
 		top: 15px;
-		right: 35px;
+		/* right: 35px; */
+		
 		color: #f1f1f1;
 		font-size: 40px;
 		font-weight: bold;
