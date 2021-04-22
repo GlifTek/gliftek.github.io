@@ -2634,6 +2634,8 @@ input, select, textarea {
 				width: 100%;
 			}
 
+
+
 		.image.main {
 			display: block;
 			margin: 4rem 0;
@@ -2664,6 +2666,7 @@ input, select, textarea {
 		overflow: hidden;
 	}
 
+
 		a.image img {
 			-moz-transition: -moz-transform 0.2s ease-out;
 			-webkit-transition: -webkit-transform 0.2s ease-out;
@@ -2677,6 +2680,8 @@ input, select, textarea {
 			-ms-transform: scale(1.05);
 			transform: scale(1.05);
 		}
+
+
 
 /* Actions */
 
@@ -4834,6 +4839,6 @@ input, select, textarea {
   /* 100% Image Width on Smaller Screens */
   @media only screen and (max-width: 700px){
 	.modal-content {
-	  width: 200%;
+	  width: 300%;
 	}
   } 
