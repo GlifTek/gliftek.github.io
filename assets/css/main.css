@@ -2638,7 +2638,7 @@ input, select, textarea {
 
 		.image.main {
 			display: block;
-			margin: .1rem .1rem;
+			margin: .85rem 0;
 			width: 100%;
 		}
 
@@ -4748,8 +4748,15 @@ input, select, textarea {
 /* MY MODAL CODE */
 
 /* Style the Image Used to Trigger the Modal */
-#img_HELPERS,
 #img_OBJECTS,
+	#img_COPY_OBJECT_AND_MATERIAL,
+	#img_COPY_MATERIAL,
+	#img_RENAME_OBJECT,
+	#img_RENAME_MATERIAL,
+	#img_CREATE_GROUP,
+	#img_GET_PARENT,
+
+#img_HELPERS,
 #img_BOUNDING_BOX
 	{
 		border-radius: 5px;
@@ -4810,6 +4817,13 @@ input, select, textarea {
   /* The Close Button */
 
 #close_OBJECTS,
+	#close_COPY_OBJECT_AND_MATERIAL,
+	#close_COPY_MATERIAL,
+	#close_RENAME_OBJECT,
+	#close_RENAME_MATERIAL,
+	#close_CREATE_GROUP,
+	#close_GET_PARENT,
+
 #close_HELPERS,
 #close_BOUNDING_BOXES
 	{
@@ -4826,10 +4840,24 @@ input, select, textarea {
 
 
 #close_OBJECTS:hover,
+	#close_COPY_OBJECT_AND_MATERIAL:hover,
+	#close_COPY_MATERIAL:hover,
+	#close_RENAME_OBJECT:hover,
+	#close_RENAME_MATERIAL:hover,
+	#close_CREATE_GROUP:hover,
+	#close_GET_PARENT:hover,
+
 #close_HELPERS:hover,
 #close_BOUNDING_BOXES:hover,
 
 #close_OBJECTS:focus,
+	#close_COPY_OBJECT_AND_MATERIAL:focus,
+	#close_COPY_MATERIAL:focus,
+	#close_RENAME_OBJECT:focus,
+	#close_RENAME_MATERIAL:focus,
+	#close_CREATE_GROUP:focus,
+	#close_GET_PARENT:focus,
+	
 #close_HELPERS:focus,
 #close_BOUNDING_BOXES:focus
 	{
