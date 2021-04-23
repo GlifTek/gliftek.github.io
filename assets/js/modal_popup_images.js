@@ -1,16 +1,10 @@
-LIST_imgNames = [
-    'OBJECTS',
-    'HELPERS',
-    'BOUNDING_BOXES'
-];
-
 LIST_imgNames.forEach(modalFunction);
 
 //________________________________________________________________________________
 
 function modalFunction(imgName)
 {
-    console.log('running modal Function with ' + imgName + ' as item / imgName');
+    // console.log('running modal Function with ' + imgName + ' as item / imgName');
     // Get the modal
     var modal = document.getElementById('modalDiv_' + imgName);
 
@@ -30,7 +24,7 @@ function modalFunction(imgName)
 
     // When the user clicks on <span> (x), close the modal
     span.onclick = function() {
-        console.log('close button for ' + imgName + ' clicked.');
+        // console.log('close button for ' + imgName + ' clicked.');
         modal.style.display = "none";
     } 
 
