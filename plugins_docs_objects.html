@@ -6,6 +6,19 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+
+		<!-- SET PAGE IMG LIST FOR MODALS -->
+		<script>
+			window.LIST_imgNames = [
+				'COPY_OBJECT_AND_MATERIAL',
+				'COPY_MATERIAL',
+				'RENAME_OBJECT',
+				'RENAME_MATERIAL',
+				'CREATE_GROUP',
+				'GET_PARENT'
+			];
+		</script>
+
 	</head>
 
 
@@ -55,82 +68,9 @@ ________________________________________________________________________________
 							</header>
 
 
-
 <!--
 ____________________________________________________________________________________________________
 -->							
-
-							<!-- GET PARENT -->
-							<section class="post">
-								<br />
-								<div class="align-center">
-
-									<h2><a id="Get_Parent" href="#Get_Parent">[ GET PARENT ]</a></h2>
-
-									The [ GET PARENT ] Puzzle returns the parent object of the given object.<br/>
-
-									<img src="images/plugins_OBJECTS_get_parent.png" alt=""
-									style="width: 65%" />
-
-
-
-									<p class="align-center">
-									
-									This puzzle comes in useful for situations where objects are dynamically parented<br/>
-									and a parent object needs to be retrieved.<br/>
-									<br/>
-									Example:
-									</p>
-									<img src="images/gliftek_plugins_OBJECTS_get_parent_use_case.png" alt=""
-									style="width: 95%" />
-
-									<br/>
-									<br/>
-
-								</div>
-								
-							</section>
-
-
-<!--
-____________________________________________________________________________________________________
--->
-
-							<!-- CREATE GROUP -->
-							<section class="post">
-
-								<br />
-								<div class="align-center">
-
-									<h2><a id="Create_Group" href="#Create_Group">[ CREATE GROUP ]</a></h2>
-
-									<p class="align-center">
-										The [ CREATE GROUP ] Puzzle creates a new empty object group.
-										<br/>
-									</p>
-
-									<img src="images/plugins_OBJECTS_create_group.png" alt=""
-									style="width: 65%" />
-
-									<p class="align-center">
-										This is useful for applying changes to many objects at once. ie: translating or rotating.<br/>
-										<br/>
-										Example:
-									</p>
-
-									<img src="images/GLIFTEK_plugins_OBJECTS_create_group_use_case.png" alt=""
-									style="width: 95%" />
-									
-									<br/>
-									<br/>
-
-								</div>
-
-							</section>
-
-<!--
-____________________________________________________________________________________________________
--->
 
 
 							<!-- COPY OBJECT AND MATERIAL -->
@@ -155,8 +95,22 @@ ________________________________________________________________________________
 										Example:
 									</p>
 
-									<img src="images/GLIFTEK_plugins_OBJECTS_copy_object_and_material_use_case.png" alt=""
-									style="width: 95%" />
+
+									<a class="image main">
+										<img class="modal-content" id="img_COPY_OBJECT_AND_MATERIAL" 
+										src="images/GLIFTEK_plugins_OBJECTS_copy_object_and_material_use_case.png"
+										alt="GLIFTEK [ Copy Object and Material ] Plugin."
+										style="width: 95%" />
+									</a>
+									<p class="align-center">Click image to enlarge.</p>
+									
+									
+									<div id="modalDiv_COPY_OBJECT_AND_MATERIAL" class="modal">
+										<span id="close_COPY_OBJECT_AND_MATERIAL">&times;</span>
+										<img class="modal-content" id="modal_COPY_OBJECT_AND_MATERIAL" />
+										<div id="caption_COPY_OBJECT_AND_MATERIAL"></div>
+									</div>
+
 									
 									<br/>
 									<br/>
@@ -192,8 +146,22 @@ ________________________________________________________________________________
 										Example:
 									</p>
 
-									<img src="images/GLIFTEK_plugins_OBJECTS_copy_material_use_case.png" alt=""
-									style="width: 95%" />
+
+									<a class="image main">
+										<img class="modal-content" id="img_COPY_MATERIAL" 
+										src="images/GLIFTEK_plugins_OBJECTS_copy_material_use_case.png"
+										alt="GLIFTEK [ Copy Material ] Plugin."
+										style="width: 95%" />
+									</a>
+									<p class="align-center">Click image to enlarge.</p>
+									
+									
+									<div id="modalDiv_COPY_MATERIAL" class="modal">
+										<span id="close_COPY_MATERIAL">&times;</span>
+										<img class="modal-content" id="modal_COPY_MATERIAL" />
+										<div id="caption_COPY_MATERIAL"></div>
+									</div>
+
 									
 									<br/>
 									<br/>
@@ -221,17 +189,30 @@ ________________________________________________________________________________
 									</p>
 
 									<img src="images/GLIFTEK_plugins_OBJECTS_rename_object.png" alt=""
-									style="width: 110%" />
+									style="width: 85%" />
 
 									<p class="align-center">
 										Using this puzzle, users can rename objects.<br/>
-										Ideal uses are: renaming copies of single objects, batch renaming groups of objects in a loop, renaming objects via user input or application generated names.<br/>
+										Ideal uses for this puzzle would be for renaming copies of single objects, batch renaming groups of objects in a loop, renaming objects via user input or application generated names.<br/>
 										<br/>
 										Example:
 									</p>
 
-									<img src="images/GLIFTEK_plugins_OBJECTS_rename_object_use_case.png" alt=""
-									style="width: 110%" />
+									<a class="image main">
+										<img class="modal-content" id="img_RENAME_OBJECT" 
+										src="images/GLIFTEK_plugins_OBJECTS_rename_object_use_case.png"
+										alt="GLIFTEK [ Rename Object ] Plugin."
+										style="width: 95%" />
+									</a>
+									<p class="align-center">Click image to enlarge.</p>
+									
+									
+									<div id="modalDiv_RENAME_OBJECT" class="modal">
+										<span id="close_RENAME_OBJECT">&times;</span>
+										<img class="modal-content" id="modal_RENAME_OBJECT" />
+										<div id="caption_RENAME_OBJECT"></div>
+									</div>
+
 									
 									<br/>
 									<br/>
@@ -240,10 +221,161 @@ ________________________________________________________________________________
 
 							</section>
 
+
+							<!--
+____________________________________________________________________________________________________
+-->
+
+
+							<!-- RENAME MATERIAL -->
+							<section class="post">
+
+								<br />
+								<div class="align-center">
+
+									<h2><a id="Rename_Material" href="#Rename_Material">[ RENAME MATERIAL ]</a></h2>
+
+									<p class="align-center">
+										The [ RENAME MATERIAL ] Puzzle changes the selected material's name.
+										<br/>
+									</p>
+
+									<img src="images/GLIFTEK_plugins_OBJECTS_rename_material.png" alt=""
+									style="width: 85%" />
+
+									<p class="align-center">
+										This puzzle renames materials.<br/>
+										When copying or changing objects, material names may need to be specific.  This puzzle allows for this.<br/>
+										<br/>
+										Example:
+									</p>
+
+									<a class="image main">
+										<img class="modal-content" id="img_RENAME_MATERIAL" 
+										src="images/GLIFTEK_plugins_OBJECTS_rename_material_use_case.png"
+										alt="GLIFTEK [ Rename Material ] Plugin."
+										style="width: 95%" />
+									</a>
+									<p class="align-center">Click image to enlarge.</p>
+									
+									
+									<div id="modalDiv_RENAME_MATERIAL" class="modal">
+										<span id="close_RENAME_MATERIAL">&times;</span>
+										<img class="modal-content" id="modal_RENAME_MATERIAL" />
+										<div id="caption_RENAME_MATERIAL"></div>
+									</div>
+
+									
+									<br/>
+									<br/>
+
+								</div>
+
+							</section>
+
+
 <!--
 ____________________________________________________________________________________________________
 -->
 
+							<!-- CREATE GROUP -->
+							<section class="post">
+
+								<br />
+								<div class="align-center">
+
+									<h2><a id="Create_Group" href="#Create_Group">[ CREATE GROUP ]</a></h2>
+
+									<p class="align-center">
+										The [ CREATE GROUP ] Puzzle creates a new empty object group.
+										<br/>
+									</p>
+
+									<img src="images/plugins_OBJECTS_create_group.png" alt=""
+									style="width: 65%" />
+
+									<p class="align-center">
+										This is useful for applying changes to many objects at once. ie: translating or rotating.<br/>
+										<br/>
+										Example:
+									</p>
+
+									
+									<a class="image main">
+										<img class="modal-content" id="img_CREATE_GROUP" 
+										src="images/GLIFTEK_plugins_OBJECTS_create_group_use_case.png"
+										alt="GLIFTEK [ Create Group ] Plugin."
+										style="width: 95%" />
+									</a>
+									<p class="align-center">Click image to enlarge.</p>
+									
+									
+									<div id="modalDiv_CREATE_GROUP" class="modal">
+										<span id="close_CREATE_GROUP">&times;</span>
+										<img class="modal-content" id="modal_CREATE_GROUP" />
+										<div id="caption_CREATE_GROUP"></div>
+									</div>
+									
+									<br/>
+									<br/>
+
+								</div>
+
+							</section>
+<!--
+____________________________________________________________________________________________________
+-->
+
+							<!-- GET PARENT -->
+							<section class="post">
+								<br />
+								<div class="align-center">
+
+									<h2><a id="Get_Parent" href="#Get_Parent">[ GET PARENT ]</a></h2>
+
+									The [ GET PARENT ] Puzzle returns the parent object of the given object.<br/>
+
+									<img src="images/plugins_OBJECTS_get_parent.png" alt=""
+									style="width: 65%" />
+
+
+
+									<p class="align-center">
+									
+									This puzzle comes in useful for situations where objects are dynamically parented<br/>
+									and a parent object needs to be retrieved.<br/>
+									<br/>
+									Example:
+									</p>
+
+
+									<a class="image main">
+										<img class="modal-content" id="img_GET_PARENT" 
+										src="images/gliftek_plugins_OBJECTS_get_parent_use_case.png"
+										alt="GLIFTEK [ Get Parent ] Plugin."
+										style="width: 95%" />
+									</a>
+									<p class="align-center">Click image to enlarge.</p>
+									
+									
+									<div id="modalDiv_GET_PARENT" class="modal">
+										<span id="close_GET_PARENT">&times;</span>
+										<img class="modal-content" id="modal_GET_PARENT" />
+										<div id="caption_GET_PARENT"></div>
+									</div>
+
+
+									<br/>
+									<br/>
+
+								</div>
+								
+							</section>
+
+
+<!--
+____________________________________________________________________________________________________
+-->
 
 					</div>
 
@@ -316,6 +448,7 @@ ________________________________________________________________________________
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+			<script src="assets/js/modal_popup_images.js"></script>
 
 	</body>
 </html>
