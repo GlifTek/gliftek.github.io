@@ -101,6 +101,7 @@ input, select, textarea {
 	body {
 		/* background-color: #1e252d; */
 		background-color: #1e252d;
+		
 	}
 
 		body.is-preload *, body.is-preload *:before, body.is-preload *:after {
@@ -145,7 +146,7 @@ input, select, textarea {
 		}
 
 	body {
-		color: #212931;
+		color: #312121;
 		
 	}
 
@@ -3986,7 +3987,7 @@ input, select, textarea {
 		display: -webkit-flex;
 		display: -ms-flex;
 		display: flex;
-		background-color: #f5f5f5;
+		background-color: rgba(33, 41, 49, .5);
 		color: #909498;
 		cursor: default;
 		position: relative;
@@ -4672,7 +4673,7 @@ input, select, textarea {
 			right: 0;
 			text-align: right;
 			top: 0;
-			vertical-align: middle;
+			/* vertical-align: middle; */
 			width: 7rem;
 		}
 
@@ -4757,6 +4758,12 @@ input, select, textarea {
 	#img_GET_PARENT,
 
 #img_HELPERS,
+	#img_INFINITE_GRID_HELPER,
+	#img_GRID_HELPER,
+	#img_POLAR_GRID_HELPER,
+	#img_ARROW_HELPER,
+	#img_AXES_HELPER,
+
 #img_BOUNDING_BOX
 	{
 		border-radius: 5px;
@@ -4825,6 +4832,13 @@ input, select, textarea {
 	#close_GET_PARENT,
 
 #close_HELPERS,
+	#close_INFINITE_GRID_HELPER,
+	#close_GRID_HELPER,
+	#close_POLAR_GRID_HELPER,
+	#close_ARROW_HELPER,
+	#close_AXES_HELPER,
+	
+
 #close_BOUNDING_BOXES
 	{
 		/* position: absolute; */
@@ -4848,7 +4862,14 @@ input, select, textarea {
 	#close_GET_PARENT:hover,
 
 #close_HELPERS:hover,
+	#close_INFINITE_GRID_HELPER:hover,
+	#close_GRID_HELPER:hover,
+	#close_POLAR_GRID_HELPER:hover,
+	#close_ARROW_HELPER:hover,
+	#close_AXES_HELPER:hover,
+
 #close_BOUNDING_BOXES:hover,
+
 
 #close_OBJECTS:focus,
 	#close_COPY_OBJECT_AND_MATERIAL:focus,
@@ -4859,6 +4880,12 @@ input, select, textarea {
 	#close_GET_PARENT:focus,
 	
 #close_HELPERS:focus,
+	#close_INFINITE_GRID_HELPER:focus,
+	#close_GRID_HELPER:focus,
+	#close_POLAR_GRID_HELPER:focus,
+	#close_ARROW_HELPER:focus,
+	#close_AXES_HELPER:focus,
+
 #close_BOUNDING_BOXES:focus
 	{
 		color: #bbb;
