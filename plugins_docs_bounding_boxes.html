@@ -1,315 +1,463 @@
 <!DOCTYPE HTML>
 <html>
-<head>
-<title>GLIFTEK [ BOUNDING BOXES ] Plugins Pack #4 User Documentation</title>
-<meta charset="utf-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-<link rel="stylesheet" href="assets/css/main.css" />
-<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	<head>
+		<title>GLIFTEK [ BOUNDING BOXES ] Plugins Pack #4 User Documentation</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 
-<!-- SET PAGE IMG LIST FOR MODALS -->
-<script>
-window.LIST_imgNames = [
-'CREATE_BOUNDING_BOX',
-'UPDATE_BOUNDING_BOX',
-'BOUNDING_BOX_COLLISION_SENSOR',
-'GET_BOUNDING_BOX',
-'GET_BOUNDING_BOX_COLLISION_STATE',
-'GET_TOUCHING_OBJECT'
-];
-</script>
+		<!-- SET PAGE IMG LIST FOR MODALS -->
+		<script>
+			window.LIST_imgNames = [
+				'CREATE_BOUNDING_BOX',
+				'UPDATE_BOUNDING_BOX',
+				'BOUNDING_BOX_COLLISION_SENSOR',
+				'GET_BOUNDING_BOX',
+				'GET_BOUNDING_BOX_COLLISION_STATE',
+				'GET_TOUCHING_OBJECT'
+			];
+		</script>
 
-</head>
-
-
-<!--
-____________________________________________________________________________________________________
--->
-
-<body class="is-preload">
-
-<!-- Wrapper -->
-<div id="wrapper">
-<br />
-<br />
-<br />
-<br />
-<br />
-<!-- Header -->
-<header id="header">
-<a href="plugins_docs_objects.html" class="logo"  style='font-size:1.5rem'>[ BOUNDING BOXES ]</a>
-</header>
-
-<!-- Nav -->
-<nav id="nav">
-<ul class="links">
-
-<li><a href="index.html">[ MAIN ]</a></li>
-<li><a href="plugins_docs_objects.html">[ OBJECTS ]</a></li>
-<li><a href="plugins_docs_helpers.html">[ HELPERS ]</a></li>
-<li class="active"><a href="plugins_docs_bounding_boxes.html">[ BOUNDING BOXES ]</a></li>
-<li><a href="plugins_docs_helpers.html">[ SVG ]</a></li>
-</ul>
-<ul class="icons">
-<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
-<li><a href="#" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
-</ul>
-</nav>
-
-<!-- Main -->
-<div id="main">
-
-<!-- Post -->
-<header class="major">
-
-<span class="date">Plugin Pack #4</span>
-
-</header>
+	</head>
 
 
 <!--
 ____________________________________________________________________________________________________
 -->
 
+	<body class="is-preload">
 
-<!-- CREATE BOUNDING BOX -->
-<section class="post">
+		<!-- Wrapper -->
+			<div id="wrapper">
+				<br />
+				<br />
+				<br />
+				<br />
+				<br />
+				<!-- Header -->
+					<header id="header">
+						<a href="plugins_docs_objects.html" class="logo"  style='font-size:1.5rem'>[ BOUNDING BOXES ]</a>
+					</header>
 
-<br />
-<div class="align-center">
+				<!-- Nav -->
+					<nav id="nav">
+						<ul class="links">
 
-<!-- <h2 style='width:10%'> -->
-<h2 >
-<a id="Create_Bounding_Box" href="#Create_Bounding_Box" >[ CREATE BOUNDING BOX ]</a>
-</h2>
+							<li><a href="index.html">[ MAIN ]</a></li>
+							<li><a href="plugins_docs_objects.html">[ OBJECTS ]</a></li>
+							<li><a href="plugins_docs_helpers.html">[ HELPERS ]</a></li>
+							<li class="active"><a href="plugins_docs_bounding_boxes.html">[ BOUNDING BOXES ]</a></li>
+							<li><a href="plugins_docs_helpers.html">[ SVG ]</a></li>
+						</ul>
+						<ul class="icons">
+							<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+							<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+							<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+							<li><a href="#" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+						</ul>
+					</nav>
 
-<p class="align-center">
-The [ CREATE BOUNDING BOX ] Puzzle creates a Bounding Box and optional Helper for a selected object.
-<br/>
-</p>
+				<!-- Main -->
+					<div id="main">
 
-<img src="images/GLIFTEK_plugins_BOUNDING_BOXES_create_bounding_box.png" alt=""
-style="width: 85%" />
+						<!-- Post -->
+						<header class="major">
 
-<p class="align-center">
-This can be used for collision detection without need for a physics engine.<br/>
-<br/>
-Example:
-</p>
+							<span class="date">Plugin Pack #4</span>
 
-
-<a class="image main">
-<img class="modal-content" id="img_CREATE_BOUNDING_BOX" 
-src="images/GLIFTEK_plugins_BOUNDING_BOXES_create_bounding_box_use_case.png"
-alt="GLIFTEK [ Create Bounding Box ] Plugin."
-style="width: 95%" />
-</a>
-<p class="align-center">Click image to enlarge.</p>
+							</header>
 
 
-<div id="modalDiv_CREATE_BOUNDING_BOX" class="modal">
-<span id="close_CREATE_BOUNDING_BOX">&times;</span>
-<img class="modal-content" id="modal_CREATE_BOUNDING_BOX" />
-<div id="caption_CREATE_BOUNDING_BOX"></div>
-</div>
+<!--
+____________________________________________________________________________________________________
+-->							
 
 
-<br/>
-<br/>
+							<!-- CREATE BOUNDING BOX -->
+							<section class="post">
 
-</div>
+								<br />
+								<div class="align-center">
 
-</section>
+									<!-- <h2 style='width:10%'> -->
+									<h2 >	
+										<a id="Create_Bounding_Box" href="#Create_Bounding_Box" >[ CREATE BOUNDING BOX ]</a>
+									</h2>
+
+									<p class="align-center">
+										The [ CREATE BOUNDING BOX ] Puzzle creates a Bounding Box and optional Helper for a selected object.
+										<br/>
+									</p>
+
+									<img src="images/GLIFTEK_plugins_BOUNDING_BOXES_create_bounding_box.png" alt=""
+									style="width: 85%" />
+
+									<p class="align-center">
+										This an be used for collision detection without need for a physics engine.<br/>
+										<br/>
+										Example:
+									</p>
+
+
+									<a class="image main">
+										<img class="modal-content" id="img_CREATE_BOUNDING_BOX" 
+										src="images/GLIFTEK_plugins_BOUNDING_BOXES_create_bounding_box_use_case.png"
+										alt="GLIFTEK [ Create Bounding Box ] Plugin."
+										style="width: 95%" />
+									</a>
+									<p class="align-center">Click image to enlarge.</p>
+									
+									
+									<div id="modalDiv_CREATE_BOUNDING_BOX" class="modal">
+										<span id="close_CREATE_BOUNDING_BOX">&times;</span>
+										<img class="modal-content" id="modal_CREATE_BOUNDING_BOX" />
+										<div id="caption_CREATE_BOUNDING_BOX"></div>
+									</div>
+
+									
+									<br/>
+									<br/>
+
+								</div>
+
+							</section>
+
+
+<!--
+____________________________________________________________________________________________________
+-->							
+
+
+							<!-- UPDATE_BOUNDING_BOX -->
+							<section class="post">
+
+								<br />
+								<div class="align-center">
+
+									<h2><a id="Update_Bounding_Box" href="#Update_Bounding_Box">[ UPDATE BOUNDING BOX ]</a></h2>
+
+									<p class="align-center">
+										The [ UPDATE BOUNDING BOX ] Puzzle makes a new, completely unique copy of the given object and it's material.
+										<br/>
+									</p>
+
+									<img src="images/GLIFTEK_plugins_BOUNDING_BOXES_update_bounding_box.png" alt=""
+									style="width: 85%" />
+
+									<p class="align-center">
+										This puzzle allows users to make copies of objects, and customize the materials and textures independent of their source object.<br/>
+										<br/>
+										Example:
+									</p>
+
+
+									<a class="image main">
+										<img class="modal-content" id="img_UPDATE_BOUNDING_BOX" 
+										src="images/GLIFTEK_plugins_BOUNDING_BOXES_update_bounding_box_use_case.png"
+										alt="GLIFTEK [ Update Bounding Box ] Plugin."
+										style="width: 95%" />
+									</a>
+									<p class="align-center">Click image to enlarge.</p>
+									
+									
+									<div id="modalDiv_UPDATE_BOUNDING_BOX" class="modal">
+										<span id="close_UPDATE_BOUNDING_BOX">&times;</span>
+										<img class="modal-content" id="modal_UPDATE_BOUNDING_BOX" />
+										<div id="caption_UPDATE_BOUNDING_BOX"></div>
+									</div>
+
+									
+									<br/>
+									<br/>
+
+								</div>
+
+							</section>
+							
+							
+							<!--
+____________________________________________________________________________________________________
+-->							
+
+
+							<!-- BOUNDING_BOX_COLLISION_SENSOR -->
+							<section class="post">
+
+								<br />
+								<div class="align-center">
+
+									<h2><a id="Bounding_Box_Collision_Sensor" href="#Bounding_Box_Collision_Sensor">[ BOUNDING BOX COLLISION SENSOR ]</a></h2>
+
+									<p class="align-center">
+										The [ BOUNDING BOX COLLISION SENSOR ] Puzzle compares bounding boxes for collisions and intersections between them without the need for a physics engine.
+										<br/>
+									</p>
+
+									<img src="images/GLIFTEK_plugins_BOUNDING_BOXES_bounding_box_collision_sensor.png" alt=""
+									style="width: 85%" />
+
+									<p class="align-center">
+										For best results, use in the While Moving: Do area of the When Moved event puzzle.<br/>
+										<br/>
+										Example:
+									</p>
+
+
+									<a class="image main">
+										<img class="modal-content" id="img_BOUNDING_BOX_COLLISION_SENSOR" 
+										src="images/GLIFTEK_plugins_BOUNDING_BOXES_bounding_box_collision_sensor_use_case.png"
+										alt="GLIFTEK [ Bounding Box Collision Sensor ] Plugin."
+										style="width: 95%" />
+									</a>
+									<p class="align-center">Click image to enlarge.</p>
+									
+
+									<div id="modalDiv_BOUNDING_BOX_COLLISION_SENSOR" class="modal">
+										<span id="close_BOUNDING_BOX_COLLISION_SENSOR">&times;</span>
+										<img class="modal-content" id="modal_BOUNDING_BOX_COLLISION_SENSOR" />
+										<div id="caption_BOUNDING_BOX_COLLISION_SENSOR"></div>
+									</div>
+
+									
+									<br/>
+									<br/>
+
+								</div>
+
+							</section>
+							
+
+							<!--
+____________________________________________________________________________________________________
+-->							
+
+
+							<!-- GET_BOUNDING_BOX -->
+							<section class="post">
+
+								<br />
+								<div class="align-center">
+
+									<h2><a id="Get_Bounding_Box" href="#Get_Bounding_Box">[ GET BOUNDING BOX ]</a></h2>
+
+									<p class="align-center">
+										The [ GET BOUNDING BOX ] Puzzle returns the Bounding Box of an Object."
+										<br/>
+									</p>
+
+									<img src="images/GLIFTEK_plugins_BOUNDING_BOXES_get_bounding_box.png" alt=""
+									style="width: 85%" />
+
+									<p class="align-center">
+										This an be used for collision detection without need for a physics engine.<br/>
+										<br/>
+										Example:
+									</p>
+
+									<a class="image main">
+										<img class="modal-content" id="img_GET_BOUNDING_BOX" 
+										src="images/GLIFTEK_plugins_BOUNDING_BOXES_get_bounding_box_use_case.png"
+										alt="GLIFTEK [ Get Bounding Box ] Plugin."
+										style="width: 95%" />
+									</a>
+									<p class="align-center">Click image to enlarge.</p>
+
+									<div id="modalDiv_GET_BOUNDING_BOX" class="modal">
+										<span id="close_GET_BOUNDING_BOX">&times;</span>
+										<img class="modal-content" id="modal_GET_BOUNDING_BOX" />
+										<div id="caption_GET_BOUNDING_BOX"></div>
+									</div>
+
+									
+									<br/>
+									<br/>
+
+								</div>
+
+							</section>
+
+
+							<!--
+____________________________________________________________________________________________________
+-->							
+
+
+							<!-- GET_BOUNDING_BOX_COLLISION_STATE -->
+							<section class="post">
+
+								<br />
+								<div class="align-center">
+
+									<h2><a id="Get_Bounding_Box_Collision_State" href="#Get_Bounding_Box_Collision_State">[ GET BOUNDING BOX COLLISION STATE ]</a></h2>
+
+									<p class="align-center">
+										The [ GET BOUNDING BOX COLLISION STATE ] Puzzle returns a boolean (true / false ) value for the current collision state of a Bounding Box.
+										<br/>
+									</p>
+
+									<img src="images/GLIFTEK_plugins_BOUNDING_BOXES_get_bounding_box_collision_state.png" alt=""
+									style="width: 85%" />
+
+									<p class="align-center">
+										This an be used for collision detection without need for a physics engine.<br/>
+										<br/>
+										Example:
+									</p>
+
+
+									<a class="image main">
+										<img class="modal-content" id="img_GET_BOUNDING_BOX_COLLISION_STATE" 
+										src="images/GLIFTEK_plugins_BOUNDING_BOXES_get_bounding_box_collision_state_use_case.png"
+										alt="GLIFTEK [ Get Bounding Box Collision State ] Plugin."
+										style="width: 95%" />
+									</a>
+									<p class="align-center">Click image to enlarge.</p>
+									
+									
+									<div id="modalDiv_GET_BOUNDING_BOX_COLLISION_STATE" class="modal">
+										<span id="close_GET_BOUNDING_BOX_COLLISION_STATE">&times;</span>
+										<img class="modal-content" id="modal_GET_BOUNDING_BOX_COLLISION_STATE" />
+										<div id="caption_GET_BOUNDING_BOX_COLLISION_STATE"></div>
+									</div>
+
+									
+									<br/>
+									<br/>
+
+								</div>
+
+							</section>
+
+			
+							<!--
+____________________________________________________________________________________________________
+-->							
+
+
+							<!-- GET_TOUCHING_OBJECT -->
+							<section class="post">
+
+								<br />
+								<div class="align-center">
+
+									<h2><a id="Get_Touching_Object" href="#Get_Touching_Object">[ GET TOUCHING OBJECT ]</a></h2>
+
+									<p class="align-center">
+										The [ GET TOUCHING OBJECT ] Puzzle returns the object a Bounding Box is currently touching."
+										<br/>
+									</p>
+
+									<img src="images/GLIFTEK_plugins_BOUNDING_BOXES_get_touching_object.png" alt=""
+									style="width: 85%" />
+
+									<p class="align-center">
+										This an be used for collision detection without need for a physics engine.<br/>
+										<br/>
+										Example:
+									</p>
+
+
+									<a class="image main">
+										<img class="modal-content" id="img_GET_TOUCHING_OBJECT" 
+										src="images/GLIFTEK_plugins_BOUNDING_BOXES_get_touching_object_use_case.png"
+										alt="GLIFTEK [ Get Touching Object ] Plugin."
+										style="width: 95%" />
+									</a>
+									<p class="align-center">Click image to enlarge.</p>
+									
+									
+									<div id="modalDiv_GET_TOUCHING_OBJECT" class="modal">
+										<span id="close_GET_TOUCHING_OBJECT">&times;</span>
+										<img class="modal-content" id="modal_GET_TOUCHING_OBJECT" />
+										<div id="caption_GET_TOUCHING_OBJECT"></div>
+									</div>
+
+									
+									<br/>
+									<br/>
+
+								</div>
+
+							</section>
 
 
 <!--
 ____________________________________________________________________________________________________
 -->
 
-
-<!-- UPDATE_BOUNDING_BOX -->
-<section class="post">
-
-<br />
-<div class="align-center">
-
-<h2><a id="Update_Bounding_Box" href="#Update_Bounding_Box">[ UPDATE BOUNDING BOX ]</a></h2>
-
-<p class="align-center">
-The [ UPDATE BOUNDING BOX ] Puzzle updates the current status of the given Bounding Box.
-<br/>
-</p>
-
-<img src="images/GLIFTEK_plugins_BOUNDING_BOXES_update_bounding_box.png" alt=""
-style="width: 85%" />
-
-<p class="align-center">
-This can be used for collision detection without need for a physics engine.<br/>
-<br/>
-Example:
-</p>
-
-
-<a class="image main">
-<img class="modal-content" id="img_UPDATE_BOUNDING_BOX" 
-src="images/GLIFTEK_plugins_BOUNDING_BOXES_update_bounding_box_use_case.png"
-alt="GLIFTEK [ Update Bounding Box ] Plugin."
-style="width: 95%" />
-</a>
-<p class="align-center">Click image to enlarge.</p>
-
-
-<div id="modalDiv_UPDATE_BOUNDING_BOX" class="modal">
-<span id="close_UPDATE_BOUNDING_BOX">&times;</span>
-<img class="modal-content" id="modal_UPDATE_BOUNDING_BOX" />
-<div id="caption_UPDATE_BOUNDING_BOX"></div>
-</div>
-
-
-<br/>
-<br/>
+					</div>
 
 </div>
 
-</section>
 
 
-<!--
-____________________________________________________________________________________________________
--->
 
+				<!-- Footer -->
+					<footer id="footer">
+						<section>
+							<form method="post" action="#">
+								<div class="fields">
+									<div class="field">
+										<label for="name">Name</label>
+										<input type="text" name="name" id="name" />
+									</div>
+									<div class="field">
+										<label for="email">Email</label>
+										<input type="text" name="email" id="email" />
+									</div>
+									<div class="field">
+										<label for="message">Message</label>
+										<textarea name="message" id="message" rows="3"></textarea>
+									</div>
+								</div>
+								<ul class="actions">
+									<li><input type="submit" value="Send Message" /></li>
+								</ul>
+							</form>
+						</section>
+						<section class="split contact">
+							<section class="alt">
+								<h3>Address</h3>
+								<p>1234 Somewhere Road #87257<br />
+								Nashville, TN 00000-0000</p>
+							</section>
+							<section>
+								<h3>Phone</h3>
+								<p><a href="#">(000) 000-0000</a></p>
+							</section>
+							<section>
+								<h3>Email</h3>
+								<p><a href="#">info@untitled.tld</a></p>
+							</section>
+							<section>
+								<h3>Social</h3>
+								<ul class="icons alt">
+									<li><a href="#" class="icon brands alt fa-twitter"><span class="label">Twitter</span></a></li>
+									<li><a href="#" class="icon brands alt fa-facebook-f"><span class="label">Facebook</span></a></li>
+									<li><a href="#" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li>
+									<li><a href="#" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+								</ul>
+							</section>
+						</section>
+					</footer>
 
-<!-- BOUNDING_BOX_COLLISION_SENSOR -->
-<section class="post">
+				<!-- Copyright -->
+					<div id="copyright">
+						<ul><li>&copy; GLIFTEK 2012</li></ul>
+					</div>
 
-<br />
-<div class="align-center">
+			</div>
 
-<h2><a id="Bounding_Box_Collision_Sensor" href="#Bounding_Box_Collision_Sensor">[ BOUNDING BOX COLLISION SENSOR ]</a></h2>
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+			<script src="assets/js/modal_popup_images.js"></script>
 
-<p class="align-center">
-The [ BOUNDING BOX COLLISION SENSOR ] Puzzle compares bounding boxes for collisions and intersections between them without the need for a physics engine.
-<br/>
-</p>
-
-<img src="images/GLIFTEK_plugins_BOUNDING_BOXES_bounding_box_collision_sensor.png" alt=""
-style="width: 85%" />
-
-<p class="align-center">
-For best results, use in the While Moving: Do area of the When Moved event puzzle.<br/>
-<br/>
-Example:
-</p>
-
-
-<a class="image main">
-<img class="modal-content" id="img_BOUNDING_BOX_COLLISION_SENSOR" 
-src="images/GLIFTEK_plugins_BOUNDING_BOXES_bounding_box_collision_sensor_use_case.png"
-alt="GLIFTEK [ Bounding Box Collision Sensor ] Plugin."
-style="width: 95%" />
-</a>
-<p class="align-center">Click image to enlarge.</p>
-
-
-<div id="modalDiv_BOUNDING_BOX_COLLISION_SENSOR" class="modal">
-<span id="close_BOUNDING_BOX_COLLISION_SENSOR">&times;</span>
-<img class="modal-content" id="modal_BOUNDING_BOX_COLLISION_SENSOR" />
-<div id="caption_BOUNDING_BOX_COLLISION_SENSOR"></div>
-</div>
-
-
-<br/>
-<br/>
-
-</div>
-
-</section>
-
-
-<!--
-____________________________________________________________________________________________________
--->
-
-
-<!-- GET_BOUNDING_BOX -->
-<section class="post">
-
-<br />
-<div class="align-center">
-
-<h2><a id="Get_Bounding_Box" href="#Get_Bounding_Box">[ GET BOUNDING BOX ]</a></h2>
-
-<p class="align-center">
-The [ GET BOUNDING BOX ] Puzzle returns the Bounding Box of an Object."
-<br/>
-</p>
-
-<img src="images/GLIFTEK_plugins_BOUNDING_BOXES_get_bounding_box.png" alt=""
-style="width: 85%" />
-
-<p class="align-center">
-This can be used for collision detection without need for a physics engine.<br/>
-<br/>
-Example:
-</p>
-
-<a class="image main">
-<img class="modal-content" id="img_GET_BOUNDING_BOX" 
-src="images/GLIFTEK_plugins_BOUNDING_BOXES_get_bounding_box_use_case.png"
-alt="GLIFTEK [ Get Bounding Box ] Plugin."
-style="width: 95%" />
-</a>
-<p class="align-center">Click image to enlarge.</p>
-
-<div id="modalDiv_GET_BOUNDING_BOX" class="modal">
-<span id="close_GET_BOUNDING_BOX">&times;</span>
-<img class="modal-content" id="modal_GET_BOUNDING_BOX" />
-<div id="caption_GET_BOUNDING_BOX"></div>
-</div>
-
-
-<br/>
-<br/>
-
-</div>
-
-</section>
-
-
-<!--
-____________________________________________________________________________________________________
--->
-
-
-<!-- GET_BOUNDING_BOX_COLLISION_STATE -->
-<section class="post">
-
-<br />
-<div class="align-center">
-
-<h2><a id="Get_Bounding_Box_Collision_State" href="#Get_Bounding_Box_Collision_State">[ GET BOUNDING BOX COLLISION STATE ]</a></h2>
-
-<p class="align-center">
-The [ GET BOUNDING BOX COLLISION STATE ] Puzzle returns a boolean (true / false ) value for the current collision state of a Bounding Box.
-<br/>
-</p>
-
-<img src="images/GLIFTEK_plugins_BOUNDING_BOXES_get_bounding_box_collision_state.png" alt=""
-style="width: 85%" />
-
-<p class="align-center">
-This can be used for collision detection without need for a physics engine.<br/>
-<br/>
-Example:
-</p>
-
-
-<a class="image main">
-<img class="modal-content" id="img_GET_BOUNDING_BOX_COLLISION_STATE" 
-src="images/GLIFTEK_plugins_BOUNDING_BOXES_get_bounding_box_collision_state_use_case.png"
-alt="GLIFTEK [ Get Bounding Box Collision State ] Plugin."
-style="width: 95%" />
-</a>
-<p class="align-center">Click image to enlarge.</p>
+	</body>
+</html>
