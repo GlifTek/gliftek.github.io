@@ -178,7 +178,7 @@ This designates whether the rays will be positioned symmetrically. If the 'ray c
 <p class="align-left">
 Ray Count: 
 <br/>
-This decides how many rays are produced.
+This decides how many rays are produced in the group.
 </p>
 
 <p class="align-left">
@@ -189,12 +189,12 @@ This option changes the width of the rays.
 <p class="align-left">
 Ray Sharpness: 
 <br/>
-Determines the sharpness of the ray.
+Determines the sharpness of the ray.  This needs to be adjusted when higher 'Ray Width' settings may broaden their gradient.
 </p>
 <p class="align-left">
 Randomness Of Ray Length: 
 <br/>
-This option randomizes the rays lengths. A number between 1 and 10 is allowed. 0 negates this.
+This option randomizes the rays lengths. A number between 1 and 10 is allowed. The higher the number, the more variationin length. An input of 0 negates this option.
 </p>
 <p class="align-left">
 Rotation:
@@ -221,7 +221,6 @@ Distance:
 <br/>
 The distance from the light to the camera. A value of 0 (nearest to light) to 1 (nearest to camera) is used.
 This option is convenient for ordering any stacked settings one may have.
-<br/>
 <br/>
 Example:<br/>
 Set a stack of of Rays puzzles setting their 'distance' between .01 to .05, a large background Glow at 0, and a strong small center Glow at .06, at the very front.
