@@ -3,6 +3,7 @@
     "contactInfo": {
 
         "email": "gliftekV3Dplugins@pm.me",
+        "gumroadStore": "https://gliftek.gumroad.com/follow",
         "twitter": "",
         "facebook": "https://www.facebook.com/glif.tek/",
         "instagram": "https://www.instagram.com/GlifTek/",
@@ -44,7 +45,7 @@
 
             "title": "helpers",
 
-            "intro": "The [ HELPERS ] Plugin Pack is a collection of puzzles that create 'helper' objects for visualizing position, size and orientation. The helpers provided here are:",
+            "intro": "is a collection of puzzles that create 'helper' objects for visualizing position, size and orientation. The helpers provided here are:",
 
             "plugins": [
                 "Create_Infinite_Grid_Helper",
@@ -58,7 +59,7 @@
 
                 "pluginWidth": "25rem","exampleWidth": "50%",
 
-                "pluginText": "creates an Infinite Grid Helper object.  The Infinite GridHelper is an object to define infinite grids. Grids are two-dimensional arrays of lines.",
+                "puzzleText": "creates an Infinite Grid Helper object.  The Infinite GridHelper is an object to define infinite grids. Grids are two-dimensional arrays of lines.",
 
                 "exampleText": "This is a convenient method of describing a three dimensional space when designing or displaying a 3D scene.  This grid helper expands in all directions infinitely.  A distance control is used to fade the farthest ends.",
 
@@ -66,14 +67,14 @@
 
                 "extraText": "",
 
-                "extraHTML": ""
+                "customHTML": ""
             },
 
             "Create_Grid_Helper": {
 
                 "pluginWidth": "25rem","exampleWidth": "50%",
                 
-                "pluginText": "creates a Grid Helper object.  The GridHelper is an object to define grids.  Grids are two-dimensional arrays of lines.",
+                "puzzleText": "creates a Grid Helper object.  The GridHelper is an object to define grids.  Grids are two-dimensional arrays of lines.",
 
                 "exampleText": "This is a convenient method of describing a three dimensional space when designing or displaying 3D items.",
 
@@ -81,14 +82,14 @@
 
                 "extraText": "",
 
-                "extraHTML": ""
+                "customHTML": ""
             },
 
             "Create_Polar_Grid_Helper": {
 
                 "pluginWidth": "25rem","exampleWidth": "50%",
                 
-                "pluginText": "creates a Polar Grid Helper object.  The PolarGridHelper is an object to define polar grids. Grids are two-dimensional arrays of lines.",
+                "puzzleText": "creates a Polar Grid Helper object.  The PolarGridHelper is an object to define polar grids. Grids are two-dimensional arrays of lines.",
 
                 "exampleText": "Another method of describing a three dimensional space when designing or displaying 3D items, yet in a radial format.",
 
@@ -96,14 +97,14 @@
 
                 "extraText": "",
 
-                "extraHTML": ""
+                "customHTML": ""
             },
 
             "Create_Arrow_Helper": {
 
                 "pluginWidth": "25rem","exampleWidth": "50%",
                 
-                "pluginText": "creates an Arrow Helper object.  The ArrowHelper is a 3D arrow object for visualizing directions.",
+                "puzzleText": "creates an Arrow Helper object.  The ArrowHelper is a 3D arrow object for visualizing directions.",
 
                 "exampleText": "This object can be used for illustrating direction, decorating controls, and describing object axis orientation.",
 
@@ -111,14 +112,14 @@
 
                 "extraText": "",
 
-                "extraHTML": ""
+                "customHTML": ""
             },
 
             "Create_Axes_Helper": {
 
                 "pluginWidth": "25rem","exampleWidth": "50%",
                 
-                "pluginText": "creates an Axes Helper object.  An axis object to visualize the 3 axes in a simple way.  The X axis is red. The Y axis is green. The Z axis is blue.",
+                "puzzleText": "creates an Axes Helper object.  An axis object to visualize the 3 axes in a simple way.  The X axis is red. The Y axis is green. The Z axis is blue.",
 
                 "exampleText": "In displaying objects in 3D, this helper supplies a point of reference for the three dimensions of the world and the orientation of the axes used",
 
@@ -126,7 +127,7 @@
 
                 "extraText": "",
 
-                "extraHTML": ""
+                "customHTML": ""
             }
         },
 
@@ -142,7 +143,7 @@
 
             "title": "utility",
     
-            "intro": "The [ UTILITY ] Plugin Pack is a selection of puzzles that allow solutions for many varied common tasks. In this group you will find:",
+            "intro": "is a selection of puzzles that allow solutions for many varied common tasks. In this group you will find:",
     
             "plugins": [
                 "Add_Zeros_Padding",
@@ -160,9 +161,9 @@
     
             "Add_Zeros_Padding": {
 
-                "pluginWidth": "25rem","exampleWidth": "50%",
+                "pluginWidth": "22rem","exampleWidth": "30rem",
     
-                "pluginText": "formats a number to a 'Locale String', adding a padding of zeros determined by the 'digits' input amount.",
+                "puzzleText": "formats a number to a 'Locale String', adding a padding of zeros determined by the 'digits' input amount.",
 
                 "exampleText": "When making many iterations of object names or text list items, it's often prefereable to have an ordered naming convention like a numbered suffix.  An easy method to achieve this is to use the plugin in a loop.",
     
@@ -170,15 +171,15 @@
 
                 "extraText": "",
 
-                "extraHTML": ""
+                "customHTML": ""
 
             },
 
             "Convert_To_RGBA": {
 
-                "pluginWidth": "25rem","exampleWidth": "50%",
+                "pluginWidth": "22rem","exampleWidth": "25rem",
     
-                "pluginText": "given a color choice, CSS name, or hex value, returns an 'rgba' string in the format of 'rgba( 0, 0, 0, 0 )' where the last number is an alpha value from the puzzle's alpha input field.",
+                "puzzleText": "given a color choice, CSS name, or hex value, returns an 'rgba' string in the format of 'rgba( 0, 0, 0, 0 )' where the last number is an alpha value from the puzzle's alpha input field.",
     
                 "exampleText": "This puzzle solves the issue of needing an rgba value in certain circumstances.",
     
@@ -186,14 +187,14 @@
     
                 "extraText": "",
 
-                "extraHTML": ""
+                "customHTML": ""
             },
 
             "Export_CSV_File": {
 
-                "pluginWidth": "25rem","exampleWidth": "50%",
+                "pluginWidth": "25rem","exampleWidth": "20rem", "consoleWidth": "22rem", "extraWidth": "22rem",
     
-                "pluginText": "takes a list of lists (rows) and returns a generated Comma Separated Values File (CSV) for use in spreadsheet software.",
+                "puzzleText": "takes a list of lists (rows) and returns a generated Comma Separated Values File (CSV) for use in spreadsheet software.",
     
                 "exampleText": "This can of course be edited, saved, and re-imported by using the default 'Read CSV' puzzle that comes with Verge3D.",
     
@@ -201,45 +202,45 @@
     
                 "extraText": "Which can be opened and edited with any spreadsheet software:",
                 
-                "extraHTML": ""
+                "customHTML": ""
             },
 
             "Convert_To_CSV_Format": {
 
-                "pluginWidth": "25rem","exampleWidth": "50%",
+                "pluginWidth": "22rem","exampleWidth": "22rem", "consoleWidth": "22rem", "extraWidth": "25rem",
     
-                "pluginText": "returns a string in Comma Separated Value (CSV) format, given a list of lists (rows).",
+                "puzzleText": "returns a string in Comma Separated Value (CSV) format, given a list of lists (rows).",
     
                 "exampleText": "This works in the same manner as the above 'Export CSV File' plugin but does not export a file, returning the CSV value to be used as raw data before being exported.",
-    
-                "consoleText": "The data can then be downloaded using the native Verge3D 'download file' puzzle found in the HTML folder of the puzzles menu.",
-    
-                "extraText": "",
 
-                "extraHTML": ""
-                
+                "consoleText": "Console output:",
+
+                "extraText": "The data can then be downloaded using the native Verge3D 'download file' puzzle found in the HTML folder of the puzzles menu.",
+
+                "customHTML": ""
+
             },
 
             "Call_Procedure_By_Name": {
 
-                "pluginWidth": "25rem","exampleWidth": "50%",
-    
-                "pluginText": "executes an already existing procedure when given it's name.",
-    
+                "pluginWidth": "22rem","exampleWidth": "23rem",
+
+                "puzzleText": "executes an already existing procedure when given it's name.",
+
                 "exampleText": "This can be useful when switching between iterations of similar or differently named procedures.  This can be done dynamically.",
-    
+
                 "consoleText": "",
-    
+
                 "extraText": "",
 
-                "extraHTML": ""
+                "customHTML": ""
             },
 
             "Call_Procedure_By_Name_Output": {
 
-                "pluginWidth": "25rem","exampleWidth": "50%",
+                "pluginWidth": "22rem","exampleWidth": "25rem",
     
-                "pluginText": "executes an already existing procedure when given it's name.  Can recieve lists.",
+                "puzzleText": "executes an already existing procedure when given it's name.  Can recieve lists.",
     
                 "exampleText": "This can be useful when switching between iterations of similar or differently named procedures.  This can be done dynamically.",
     
@@ -247,44 +248,44 @@
     
                 "extraText": "",
 
-                "extraHTML": ""
+                "customHTML": ""
             },
 
             "Merge_Lists": {
 
-                "pluginWidth": "25rem","exampleWidth": "50%",
+                "pluginWidth": "20rem","exampleWidth": "23rem", "consoleWidth": "15rem",
     
-                "pluginText": "returns a list consisting of the items from one or more lists.",
+                "puzzleText": "returns a list consisting of the items from one or more lists.",
     
                 "exampleText": "The [ LIST SIMILAR ] Plugin returns a list of all list items containing a specific string, given a list.",
     
-                "consoleText": "",
+                "consoleText": " ",
     
                 "extraText": "",
 
-                "extraHTML": ""
+                "customHTML": ""
             },
 
             "List_Similar": {
 
-                "pluginWidth": "25rem","exampleWidth": "50%",
-    
-                "pluginText": "returns a list of all list items containing a specific string, given a list.",
+                "pluginWidth": "23rem","exampleWidth": "23rem", "consoleWidth": "23rem",
+
+                "puzzleText": "returns a list of all list items containing a specific string, given a list.",
     
                 "exampleText": "___",
     
-                "consoleText": "",
+                "consoleText": " ",
     
                 "extraText": "",
 
-                "extraHTML": ""
+                "customHTML": ""
             },
 
             "Right_Click_Event": {
 
-                "pluginWidth": "25rem","exampleWidth": "50%",
+                "pluginWidth": "15rem","exampleWidth": "22rem", "consoleWidth": "23rem",
     
-                "pluginText": "executes desired functions upon any and all right-clicks on HTML elements.",
+                "puzzleText": "executes desired functions upon any and all right-clicks on HTML elements.",
     
                 "exampleText": "This plugin is also included in the [ GLIFTEK ] Plugins custom 'Right Click Menu' Plugin Pack.  This allows for activation of a custom right-click menu upon clicking HTML elements.",
     
@@ -292,14 +293,14 @@
     
                 "extraText": "",
 
-                "extraHTML": ""
+                "customHTML": ""
             },
 
             "Context_Menu_Toggle": {
 
-                "pluginWidth": "25rem","exampleWidth": "50%",
+                "pluginWidth": "18rem","exampleWidth": "25rem",
     
-                "pluginText": "disables or enables the browser's right-click 'context' menu.",
+                "puzzleText": "disables or enables the browser's right-click 'context' menu.",
     
                 "exampleText": "This is useful when applications need right mouse button interactivity and the browser pop up context menu is unwanted.",
     
@@ -307,22 +308,22 @@
     
                 "extraText": "",
 
-                "extraHTML": ""
+                "customHTML": ""
             },
 
             "Alert_Message": {
 
-                "pluginWidth": "25rem","exampleWidth": "50%",
+                "pluginWidth": "18rem","exampleWidth": "10rem", "consoleWidth": "5rem", "extraWidth": "22rem",
     
-                "pluginText": "outputs text to a popup 'alert' text window.",
+                "puzzleText": "outputs text to a popup 'alert' text window.",
     
                 "exampleText": "",
     
-                "consoleText": "The plugin produces a popup alert message:",
+                "consoleText": "",
     
-                "extraText": "",
+                "extraText": "A browser popup alert message:",
 
-                "extraHTML": ""
+                "customHTML": ""
             }
         },
 
@@ -351,7 +352,7 @@
 
                 "pluginWidth": "25rem","exampleWidth": "50%",
 
-                "pluginText": "makes a new, completely unique copy of the given object and it's material.",
+                "puzzleText": "makes a new, completely unique copy of the given object and it's material.",
 
                 "exampleText": "This puzzle allows users to make copies of objects, and customize the materials and textures independent of their source object.",
 
@@ -359,14 +360,14 @@
 
                 "extraText": "",
 
-                "extraHTML": ""
+                "customHTML": ""
             },
 
             "Update_Bounding_Box": {
 
                 "pluginWidth": "25rem","exampleWidth": "50%",
 
-                "pluginText": "makes a new, completely unique copy of the given object and it's material.",
+                "puzzleText": "makes a new, completely unique copy of the given object and it's material.",
 
                 "exampleText": "This puzzle allows users to make copies of objects, and customize the materials and textures independent of their source object.",
 
@@ -374,14 +375,14 @@
 
                 "extraText": "",
 
-                "extraHTML": ""
+                "customHTML": ""
             },
 
             "Bounding_Box_Collision_Sensor": {
 
                 "pluginWidth": "25rem","exampleWidth": "50%",
 
-                "pluginText": "compares bounding boxes for collisions and intersections between them without the need for a physics engine.",
+                "puzzleText": "compares bounding boxes for collisions and intersections between them without the need for a physics engine.",
 
                 "exampleText": "For best results, use in the While Moving: Do area of the When Moved event puzzle.",
 
@@ -389,14 +390,14 @@
 
                 "extraText": "",
 
-                "extraHTML": ""
+                "customHTML": ""
             },
 
             "Get_Bounding_Box": {
 
                 "pluginWidth": "25rem","exampleWidth": "50%",
 
-                "pluginText": "returns the Bounding Box of an Object.",
+                "puzzleText": "returns the Bounding Box of an Object.",
 
                 "exampleText": "This can be used for collision detection without need for a physics engine.",
 
@@ -404,14 +405,14 @@
 
                 "extraText": "",
 
-                "extraHTML": ""
+                "customHTML": ""
             },
 
             "Get_Bounding_Box_Collision_State": {
 
                 "pluginWidth": "25rem","exampleWidth": "50%",
 
-                "pluginText": "returns a boolean (true / false ) value for the current collision state of a Bounding Box.",
+                "puzzleText": "returns a boolean (true / false ) value for the current collision state of a Bounding Box.",
 
                 "exampleText": "This can be used for collision detection without need for a physics engine.",
 
@@ -419,14 +420,14 @@
 
                 "extraText": "",
 
-                "extraHTML": ""
+                "customHTML": ""
             },
 
             "Get_Touching_Object": {
 
                 "pluginWidth": "25rem","exampleWidth": "50%",
 
-                "pluginText": "returns the object a Bounding Box is currently touching.",
+                "puzzleText": "returns the object a Bounding Box is currently touching.",
 
                 "exampleText": "This an be used for collision detection without need for a physics engine.",
 
@@ -434,7 +435,7 @@
 
                 "extraText": "",
 
-                "extraHTML": ""
+                "customHTML": ""
             }
 
         },
@@ -463,7 +464,7 @@
 
                 "pluginWidth": "20rem", "exampleWidth": "60rem",
 
-                "pluginText": "creates a Lens Flare Object with three optional effects: [ Rays ], [ Glow ], and [ Bokeh ]. (link these)",
+                "puzzleText": "creates a Lens Flare Object with three optional effects: [ Rays ], [ Glow ], and [ Bokeh ]. (link these)",
 
                 "exampleText": "Each of these effects are found within their own corresponding 'Settings' puzzles with a set of customizable options (shown further below). ",
 
@@ -471,14 +472,14 @@
 
                 "extraText": "Usage of custom lens flares can span a wide range of cases:",
 
-                "extraHTML": "<ul style='text-align: left'><li>Sun Lens Flares,</li><li>Sun Coronal Halo Effect,</li><li>Cinematic Anamorphic Streaks,</li><li>In-App Weapon Ignition Effects,</li><li>In-App Missile, Rocket Engine Effects,</li><li>In-App Explosion Effects,</li><li>Car Headlights,</li><li>Vehicle Lighting,</li><li>Flashlights,</li><li>Phone Camera Lights,</li><li>Camera Flasbulb Blooms,</li><li>Nebula, Galaxy and Stars Accents,</li><li>City Light Posts,</li><li>Lighthouse Lights,</li><li>Artistic Abstract Design Lighting,</li><li>Experimental Decorative Effects,</li></ul>"
+                "customHTML": "<ul style='text-align: left'><li>Sun Lens Flares,</li><li>Sun Coronal Halo Effect,</li><li>Cinematic Anamorphic Streaks,</li><li>In-App Weapon Ignition Effects,</li><li>In-App Missile, Rocket Engine Effects,</li><li>In-App Explosion Effects,</li><li>Car Headlights,</li><li>Vehicle Lighting,</li><li>Flashlights,</li><li>Phone Camera Lights,</li><li>Camera Flasbulb Blooms,</li><li>Nebula, Galaxy and Stars Accents,</li><li>City Light Posts,</li><li>Lighthouse Lights,</li><li>Artistic Abstract Design Lighting,</li><li>Experimental Decorative Effects,</li></ul>"
             },
 
             "Rays_Settings": {
 
                 "pluginWidth": "20rem", "exampleWidth": "40%",
 
-                "pluginText": "allows for control of multiple spreads of symmetrical or non-symmetrical rays of light from the center of the Lens Flare Object.",
+                "puzzleText": "allows for control of multiple spreads of symmetrical or non-symmetrical rays of light from the center of the Lens Flare Object.",
 
                 "exampleText": "",
 
@@ -486,14 +487,14 @@
 
                 "extraText": "Users can determine symmetry, ray count, ray width, ray sharpness, randomness of ray length, rotation, blur, opacity, size, distance, and color.  The following options are available:",
 
-                "extraHTML": "<ul style='text-align: left'><li>Symmetry:<br />This designates whether the rays will be positioned symmetrically. If the 'ray count' input is an odd number while the 'Symmetrical' option is checked, the number of rays will be rounded up to the nearest integer resulting in an even number of rays.</li><br /><li>Ray Count:<br />This decides how many rays are produced in the group.<br /><br /></li><li>Ray Width:<br />This option changes the width of the rays.<br /><br /></li><li>Ray Sharpness:<br />Determines the sharpness of the ray. This needs to be adjusted as higher 'Ray Width' settings may broaden their gradient.<br /><br /></li><li>Random Length:<br />This option randomizes the group's rays' lengths. A number between 1 and 10 is allowed. The higher the number, the more variation in length. An input of 0 negates this option.<br /><br /></li><li>Rotation:<br />Rotates the entire group of rays based on degrees from 0 to 360.<br /><br /></li><li>Blur:<br />Sets the level of blur for the group of rays.<br /><br /></li><li>Opacity:<br />This changes the transparency of the group of rays.<br /><br /></li><li>Size:<br />The overall size of the entire group of rays<br /><br /></li><li>Distance:<br />The distance from the light to the camera. A value of 0 (nearest to light) to 1 (nearest to camera) is used. This option is convenient for ordering any stacked settings one may have.<br /><br /></li><li>Example:<br />Set a stack of of Rays puzzles setting their 'distance' between .01 to .05, a large background Glow at 0, and a strong small center Glow at .06, at the very front.<br /><br /></li><li>Color:<br />This designates the color of the rays group.<br /><br /></li><li>Users can determine ray width, ray length, and randomness of ray length.<br /></li></ul>"                
+                "customHTML": "<ul style='text-align: left'><li>Symmetry:<br />This designates whether the rays will be positioned symmetrically. If the 'ray count' input is an odd number while the 'Symmetrical' option is checked, the number of rays will be rounded up to the nearest integer resulting in an even number of rays.</li><br /><li>Ray Count:<br />This decides how many rays are produced in the group.<br /><br /></li><li>Ray Width:<br />This option changes the width of the rays.<br /><br /></li><li>Ray Sharpness:<br />Determines the sharpness of the ray. This needs to be adjusted as higher 'Ray Width' settings may broaden their gradient.<br /><br /></li><li>Random Length:<br />This option randomizes the group's rays' lengths. A number between 1 and 10 is allowed. The higher the number, the more variation in length. An input of 0 negates this option.<br /><br /></li><li>Rotation:<br />Rotates the entire group of rays based on degrees from 0 to 360.<br /><br /></li><li>Blur:<br />Sets the level of blur for the group of rays.<br /><br /></li><li>Opacity:<br />This changes the transparency of the group of rays.<br /><br /></li><li>Size:<br />The overall size of the entire group of rays<br /><br /></li><li>Distance:<br />The distance from the light to the camera. A value of 0 (nearest to light) to 1 (nearest to camera) is used. This option is convenient for ordering any stacked settings one may have.<br /><br /></li><li>Example:<br />Set a stack of of Rays puzzles setting their 'distance' between .01 to .05, a large background Glow at 0, and a strong small center Glow at .06, at the very front.<br /><br /></li><li>Color:<br />This designates the color of the rays group.<br /><br /></li><li>Users can determine ray width, ray length, and randomness of ray length.<br /></li></ul>"                
             },
 
             "Glow_Settings": {
 
                 "pluginWidth": "20rem", "exampleWidth": "40%",
 
-                "pluginText": "controls a single or multiple radial gradients of tone starting from the center of the Lens Flare Object.",                
+                "puzzleText": "controls a single or multiple radial gradients of tone starting from the center of the Lens Flare Object.",                
                 
                 "exampleText": "Users can designate gradient tone spacings via three control fields.  Rotation, blur, and opacity are also available.",
 
@@ -501,14 +502,14 @@
     
                 "extraText": "",
 
-                "extraHTML": ""
+                "customHTML": ""
             },
 
             "Bokeh_Settings": {
 
                 "pluginWidth": "20rem","exampleWidth": "40%",
 
-                "pluginText": "creates bokeh style fragmented in-lens effects. A number of shapes are available to chose from.  Of such are: line, circle, triangle, square, pentagon, hexagon, heptagon, octagon, & nonagon polygon shapes.  Users can determine ray width, ray length, and randomness of ray length.",
+                "puzzleText": "creates bokeh style fragmented in-lens effects. A number of shapes are available to chose from.  Of such are: line, circle, triangle, square, pentagon, hexagon, heptagon, octagon, & nonagon polygon shapes.  Users can determine ray width, ray length, and randomness of ray length.",
 
                 "exampleText": "___",
     
@@ -516,7 +517,7 @@
     
                 "extraText": "",
 
-                "extraHTML": ""
+                "customHTML": ""
             }
         },
 
@@ -540,7 +541,7 @@
     
                 "pluginWidth": "30rem","exampleWidth": "25rem",
 
-                "pluginText": "sets a custom static background image for the scene.  Using a still image for a background to your 3D scene can be a great tool for streamlining your product presentation.",
+                "puzzleText": "sets a custom static background image for the scene.  Using a still image for a background to your 3D scene can be a great tool for streamlining your product presentation.",
     
                 "exampleText": "Often, all that's needed to make your 3D content more prominent, is a subtle touch like a custom still image.",
     
@@ -548,14 +549,14 @@
     
                 "extraText": "",
 
-                "extraHTML": ""
+                "customHTML": ""
             },
 
             "Generate_Gradient_Background": {
     
                 "pluginWidth": "25rem","exampleWidth": "50%",
 
-                "pluginText": "creates a colored gradient static background.",
+                "puzzleText": "creates a colored gradient static background.",
     
                 "exampleText": "",
     
@@ -563,14 +564,14 @@
     
                 "extraText": "This plugin provides 3 color and 3 offset options for generating a gradient background for your 3D scene.  The gradient can be either linear or radial.  Color 'HEX' values recieve hexadecimal '#f0f0f0' format color code.  These override color picker inputs.  To use color pickers, leave HEX fields blank.  Color 2 can be optionally disabled if a two-tone gradient is desired.",
 
-                "extraHTML": "<img src='./images/backgrounds/Generate_Gradient_Background_example_linear.png' style='width:20rem'/><br /><br /><img src='./images/backgrounds/Generate_Gradient_Background_example_radial.png' style='width:20rem'/>"
+                "customHTML": "<img src='./images/backgrounds/Generate_Gradient_Background_example_linear.png' style='width:20rem'/><br /><br /><img src='./images/backgrounds/Generate_Gradient_Background_example_radial.png' style='width:20rem'/>"
             },
 
             "Fade_Screen": {
     
                 "pluginWidth": "30rem","exampleWidth": "40%",
 
-                "pluginText": "Fades the screen in or out from a solid color.",
+                "puzzleText": "Fades the screen in or out from a solid color.",
     
                 "exampleText": "",
     
@@ -578,14 +579,14 @@
     
                 "extraText": "",
 
-                "extraHTML": ""
+                "customHTML": ""
             },
 
             "Screen_Vignette": {
     
                 "pluginWidth": "30rem","exampleWidth": "40%",
 
-                "pluginText": "To achieve a cinematic style 'vignette' effect, this creates a div with a radial gradient background with three stops: Center, Mid, and Outer, differing in opacity.  In the 'radius' field use percentages for a responsive gradient, and integers for an absolute size.  ie: '100%' will scale with different size screens, while '1024' will not, staying that size.",
+                "puzzleText": "To achieve a cinematic style 'vignette' effect, this creates a div with a radial gradient background with three stops: Center, Mid, and Outer, differing in opacity.  In the 'radius' field use percentages for a responsive gradient, and integers for an absolute size.  ie: '100%' will scale with different size screens, while '1024' will not, staying that size.",
     
                 "exampleText": "___",
     
@@ -593,7 +594,7 @@
     
                 "extraText": "",
 
-                "extraHTML": ""
+                "customHTML": ""
             }
         },
 
@@ -619,7 +620,7 @@
     
                 "pluginWidth": "30rem","exampleWidth": "30rem",
 
-                "pluginText": "makes a completely unique copy of the given object and it's material. ",
+                "puzzleText": "makes a completely unique copy of the given object and it's material. ",
     
                 "exampleText": "This puzzle allows users to make copies of an object, a group of objects, or groups of objects.  The object's material is copied as well.  Materials and textures independent of their source object.  Creates multiple copies of an object, material and textures.  Creates groups for each object or a list of objects.",
     
@@ -627,14 +628,14 @@
     
                 "extraText": "",
 
-                "extraHTML": ""
+                "customHTML": ""
             },
 
             "Copy_Material": {
     
                 "pluginWidth": "30rem","exampleWidth": "30rem",
 
-                "pluginText": "makes a new, completely unique copy of the given object's material. ",
+                "puzzleText": "makes a new, completely unique copy of the given object's material. ",
     
                 "exampleText": "This puzzle allows users to generate material copies that can be modified independently from their source material.",
     
@@ -642,14 +643,14 @@
     
                 "extraText": "",
 
-                "extraHTML": ""
+                "customHTML": ""
             },
 
             "Rename_Object": {
     
                 "pluginWidth": "30rem","exampleWidth": "30rem",
 
-                "pluginText": "gives the selected object a new unique name.",
+                "puzzleText": "gives the selected object a new unique name.",
     
                 "exampleText": "Using this puzzle, users can rename objects.  Ideal uses for this puzzle would be for renaming copies of single objects, batch renaming groups of objects in a loop, renaming objects via user input or application generated names.",
     
@@ -657,14 +658,14 @@
     
                 "extraText": "",
 
-                "extraHTML": ""
+                "customHTML": ""
             },
 
             "Rename_Material": {
     
                 "pluginWidth": "30rem","exampleWidth": "30rem",
 
-                "pluginText": "changes the selected material's name. ",
+                "puzzleText": "changes the selected material's name. ",
     
                 "exampleText": "This puzzle renames materials.  When copying or changing objects, material names may need to be specific.  This puzzle allows for this.",
     
@@ -672,14 +673,14 @@
     
                 "extraText": "",
 
-                "extraHTML": ""
+                "customHTML": ""
             },
 
             "Create_Group": {
     
                 "pluginWidth": "30rem","exampleWidth": "30rem",
 
-                "pluginText": "creates a new empty object group.",
+                "puzzleText": "creates a new empty object group.",
     
                 "exampleText": "This is useful for applying changes to many objects at once. ie: translating or rotating.",
     
@@ -687,14 +688,14 @@
     
                 "extraText": "",
 
-                "extraHTML": ""
+                "customHTML": ""
             },
 
             "Get_Parent": {
     
                 "pluginWidth": "30rem","exampleWidth": "30rem",
 
-                "pluginText": "returns the parent object of the given object.",
+                "puzzleText": "returns the parent object of the given object.",
     
                 "exampleText": "This puzzle comes in useful for situations where objects are dynamically parented and a parent object needs to be retrieved.",
     
@@ -702,7 +703,7 @@
     
                 "extraText": "",
 
-                "extraHTML": ""
+                "customHTML": ""
             }
         },
 
@@ -729,7 +730,7 @@
     
                 "pluginWidth": "20rem","exampleWidth": "30rem",
 
-                "pluginText": "___test",
+                "puzzleText": "___",
     
                 "exampleText": "___",
     
@@ -737,14 +738,14 @@
     
                 "extraText": "",
 
-                "extraHTML": ""
+                "customHTML": ""
             },
 
             "Modal_Text_Settings": {
     
                 "pluginWidth": "20rem","exampleWidth": "30rem",
 
-                "pluginText": "___",
+                "puzzleText": "___",
     
                 "exampleText": "___",
     
@@ -752,14 +753,14 @@
     
                 "extraText": "",
 
-                "extraHTML": ""
+                "customHTML": ""
             },
 
             "Modal_Media_Settings": {
     
                 "pluginWidth": "20rem","exampleWidth": "30rem",
 
-                "pluginText": "___",
+                "puzzleText": "___",
     
                 "exampleText": "___",
     
@@ -767,14 +768,14 @@
     
                 "extraText": "",
 
-                "extraHTML": ""
+                "customHTML": ""
             },
 
             "Modal_Animation_Settings": {
     
                 "pluginWidth": "20rem","exampleWidth": "30rem",
 
-                "pluginText": "___",
+                "puzzleText": "___",
     
                 "exampleText": "___",
     
@@ -782,14 +783,14 @@
     
                 "extraText": "",
 
-                "extraHTML": ""
+                "customHTML": ""
             },
 
             "Modal_Open_Close": {
     
                 "pluginWidth": "20rem","exampleWidth": "25rem",
 
-                "pluginText": "opens or closes a pre-existing pop-up modal window, given a modal id.",
+                "puzzleText": "opens or closes a pre-existing pop-up modal window, given a modal id.",
     
                 "exampleText": "___",
     
@@ -797,14 +798,14 @@
     
                 "extraText": "",
 
-                "extraHTML": ""
+                "customHTML": ""
             },
 
             "Get_Modal_Status": {
     
                 "pluginWidth": "30rem","exampleWidth": "30rem",
 
-                "pluginText": "returns true if modal is open, false if closed, given a modal id.",
+                "puzzleText": "returns true if modal is open, false if closed, given a modal id.",
     
                 "exampleText": "___",
     
@@ -812,7 +813,7 @@
     
                 "extraText": "",
 
-                "extraHTML": ""
+                "customHTML": ""
             }
         },
 
@@ -841,7 +842,7 @@
     
                 "pluginWidth": "30rem","exampleWidth": "30rem",
 
-                "pluginText": "Used to initialize the web storage driver type, database name, database size, and description.  NOTE: This puzzle is neccessary to place before any other 'Web Storage' puzzles.",
+                "puzzleText": "Used to initialize the web storage driver type, database name, database size, and description.  NOTE: This puzzle is neccessary to place before any other 'Web Storage' puzzles.",
     
                 "exampleText": "___",
     
@@ -849,14 +850,14 @@
     
                 "extraText": "",
 
-                "extraHTML": ""
+                "customHTML": ""
             },
 
             "Save_To_Web_Storage": {
     
                 "pluginWidth": "30rem","exampleWidth": "30rem",
 
-                "pluginText": "___",
+                "puzzleText": "___",
     
                 "exampleText": "___",
     
@@ -864,14 +865,14 @@
     
                 "extraText": "",
 
-                "extraHTML": ""
+                "customHTML": ""
             },
 
             "Load_From_Web_Storage": {
     
                 "pluginWidth": "30rem","exampleWidth": "30rem",
 
-                "pluginText": "___",
+                "puzzleText": "___",
     
                 "exampleText": "___",
     
@@ -879,14 +880,14 @@
     
                 "extraText": "",
 
-                "extraHTML": ""
+                "customHTML": ""
             },
 
             "Get_All_Keys_Of_DataStore": {
     
                 "pluginWidth": "30rem","exampleWidth": "30rem",
 
-                "pluginText": "___",
+                "puzzleText": "___",
     
                 "exampleText": "___",
     
@@ -894,14 +895,14 @@
     
                 "extraText": "",
 
-                "extraHTML": ""
+                "customHTML": ""
             },
 
             "Get_Length_Of_DataStore": {
     
                 "pluginWidth": "30rem","exampleWidth": "30rem",
 
-                "pluginText": "___",
+                "puzzleText": "___",
     
                 "exampleText": "___",
     
@@ -909,14 +910,14 @@
     
                 "extraText": "",
 
-                "extraHTML": ""
+                "customHTML": ""
             },
 
             "Iterate_Through_DataStore": {
     
                 "pluginWidth": "30rem","exampleWidth": "30rem",
 
-                "pluginText": "___",
+                "puzzleText": "___",
     
                 "exampleText": "___",
     
@@ -924,14 +925,14 @@
     
                 "extraText": "",
 
-                "extraHTML": ""
+                "customHTML": ""
             },
 
             "Clear_Database": {
     
                 "pluginWidth": "30rem","exampleWidth": "30rem",
 
-                "pluginText": "___",
+                "puzzleText": "___",
     
                 "exampleText": "___",
     
@@ -939,14 +940,14 @@
     
                 "extraText": "",
 
-                "extraHTML": ""
+                "customHTML": ""
             },
 
             "Delete_Key": {
     
                 "pluginWidth": "30rem","exampleWidth": "30rem",
 
-                "pluginText": "___",
+                "puzzleText": "___",
     
                 "exampleText": "___",
     
@@ -954,14 +955,14 @@
     
                 "extraText": "",
 
-                "extraHTML": ""
+                "customHTML": ""
             },
 
             "Delete_DataStore": {
     
                 "pluginWidth": "30rem","exampleWidth": "30rem",
 
-                "pluginText": "___",
+                "puzzleText": "___",
     
                 "exampleText": "___",
     
@@ -969,14 +970,14 @@
     
                 "extraText": "",
 
-                "extraHTML": ""
+                "customHTML": ""
             },
 
             "Delete_Database": {
     
                 "pluginWidth": "30rem","exampleWidth": "30rem",
 
-                "pluginText": "___",
+                "puzzleText": "___",
     
                 "exampleText": "___",
     
@@ -984,7 +985,7 @@
     
                 "extraText": "",
 
-                "extraHTML": ""
+                "customHTML": ""
             }
         },
 
@@ -1007,7 +1008,7 @@
     
                 "pluginWidth": "30rem","exampleWidth": "30rem",
 
-                "pluginText": "Makes an Sky object to simulate a sunlit or moonlit atmosphere.",
+                "puzzleText": "Makes an Sky object to simulate a sunlit or moonlit atmosphere.",
     
                 "exampleText": "___",
     
@@ -1015,14 +1016,14 @@
     
                 "extraText": "",
 
-                "extraHTML": ""
+                "customHTML": ""
             },
 
             "Generate_Sun_Light": {
     
                 "pluginWidth": "30rem","exampleWidth": "30rem",
 
-                "pluginText": "Makes a physically correct 'Sun' light. This can be used with in the Generate Sky, Generate Terrain, and Generate Ocean plugins.",
+                "puzzleText": "Makes a physically correct 'Sun' light. This can be used with in the Generate Sky, Generate Terrain, and Generate Ocean plugins.",
     
                 "exampleText": "___",
     
@@ -1030,14 +1031,14 @@
     
                 "extraText": "",
 
-                "extraHTML": ""
+                "customHTML": ""
             },
 
             "Generate_Ocean": {
     
                 "pluginWidth": "30rem","exampleWidth": "30rem",
 
-                "pluginText": "Generates a water object for use with landscapes.",
+                "puzzleText": "Generates a water object for use with landscapes.",
     
                 "exampleText": "___",
     
@@ -1045,14 +1046,14 @@
     
                 "extraText": "",
 
-                "extraHTML": ""
+                "customHTML": ""
             },
 
             "Generate_Terrain": {
     
                 "pluginWidth": "30rem","exampleWidth": "30rem",
 
-                "pluginText": "Generates a terrain object for use with landscapes.",
+                "puzzleText": "Generates a terrain object for use with landscapes.",
     
                 "exampleText": "___",
     
@@ -1060,7 +1061,7 @@
     
                 "extraText": "",
 
-                "extraHTML": ""
+                "customHTML": ""
             }
         },
 
@@ -1083,7 +1084,7 @@
     
                 "pluginWidth": "30rem","exampleWidth": "30rem",
 
-                "pluginText": "___",
+                "puzzleText": "___",
     
                 "exampleText": "___",
     
@@ -1091,7 +1092,7 @@
     
                 "extraText": "",
 
-                "extraHTML": ""
+                "customHTML": ""
             }
         }
 
