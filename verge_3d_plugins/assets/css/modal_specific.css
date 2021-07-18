@@ -1,0 +1,183 @@
+
+
+/* MY MODAL CODE */
+
+/* Style the Image Used to Trigger the Modal */
+#img_OBJECTS,
+	#img_COPY_OBJECT_AND_MATERIAL,
+	#img_COPY_MATERIAL,
+	#img_RENAME_OBJECT,
+	#img_RENAME_MATERIAL,
+	#img_CREATE_GROUP,
+	#img_GET_PARENT,
+
+#img_HELPERS,
+	#img_INFINITE_GRID_HELPER,
+	#img_GRID_HELPER,
+	#img_POLAR_GRID_HELPER,
+	#img_ARROW_HELPER,
+	#img_AXES_HELPER,
+
+#img_BOUNDING_BOXES,
+	#img_CREATE_BOUNDING_BOX,
+	#img_UPDATE_BOUNDING_BOX,
+	#img_BOUNDING_BOX_COLLISION_SENSOR,
+	#img_GET_BOUNDING_BOX,
+	#img_GET_BOUNDING_BOX_COLLISION_STATE,
+	#img_GET_TOUCHING_OBJECT
+
+
+	{
+		border-radius: 5px;
+		cursor: pointer;
+		transition: 0.3s;
+	}
+  
+  /* #img_OBJECTS:hover {opacity: 0.7;} */
+  
+  /* The Modal (background) */
+  .modal {
+	display: none; /* Hidden by default */
+	position: fixed; /* Stay in place */
+	z-index: 1; /* Sit on top */
+	padding-top: 100px; /* Location of the box */
+	left: 0;
+	top: 0;
+	width: 100%; /* Full width */
+	height: 100%; /* Full height */
+	overflow: auto; /* Enable scroll if needed */
+	background-color: rgb(0,0,0); /* Fallback color */
+	background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+  }
+  
+  /* Modal Content (Image) */
+  .modal-content {
+	margin: auto;
+	display: block;
+	width: 150%;
+	/* max-width: 700px; */
+  }
+  
+  /* Caption of Modal Image (Image Text) - Same Width as the Image */
+  #caption {
+	margin: auto;
+	display: block;
+	width: 80%;
+	max-width: 700px;
+	text-align: center;
+	color: #ccc;
+	padding: 10px 0;
+	height: 150px;
+  }
+  
+  /* Add Animation - Zoom in the Modal */
+  .modal-content, #caption {
+	animation-name: zoom;
+	animation-duration: 0.6s;
+  }
+  
+  @keyframes zoom {
+	from {transform:scale(0)}
+	to {transform:scale(1)}
+  }
+  
+
+
+  /* The Close Button */
+
+#close_OBJECTS,
+	#close_COPY_OBJECT_AND_MATERIAL,
+	#close_COPY_MATERIAL,
+	#close_RENAME_OBJECT,
+	#close_RENAME_MATERIAL,
+	#close_CREATE_GROUP,
+	#close_GET_PARENT,
+
+#close_HELPERS,
+	#close_INFINITE_GRID_HELPER,
+	#close_GRID_HELPER,
+	#close_POLAR_GRID_HELPER,
+	#close_ARROW_HELPER,
+	#close_AXES_HELPER,
+	
+
+#close_BOUNDING_BOXES,
+	#close_COPY_OBJECT_AND_MATERIAL,
+	#close_COPY_MATERIAL,
+	#close_RENAME_OBJECT,
+	#close_RENAME_MATERIAL,
+	#close_CREATE_GROUP,
+	#close_GET_PARENT
+	{
+		/* position: absolute; */
+		position: relative;
+		top: 15px;
+		/* right: 35px; */
+		
+		color: #f1f1f1;
+		font-size: 40px;
+		font-weight: bold;
+		transition: 0.3s;
+	}
+
+
+#close_OBJECTS:hover,
+	#close_COPY_OBJECT_AND_MATERIAL:hover,
+	#close_COPY_MATERIAL:hover,
+	#close_RENAME_OBJECT:hover,
+	#close_RENAME_MATERIAL:hover,
+	#close_CREATE_GROUP:hover,
+	#close_GET_PARENT:hover,
+
+#close_HELPERS:hover,
+	#close_INFINITE_GRID_HELPER:hover,
+	#close_GRID_HELPER:hover,
+	#close_POLAR_GRID_HELPER:hover,
+	#close_ARROW_HELPER:hover,
+	#close_AXES_HELPER:hover,
+
+#close_BOUNDING_BOXES:hover,
+	#close_CREATE_BOUNDING_BOX:hover,
+	#close_UPDATE_BOUNDING_BOX:hover,
+	#close_BOUNDING_BOX_COLLISION_SENSOR:hover,
+	#close_GET_BOUNDING_BOX:hover,
+	#close_GET_BOUNDING_BOX_COLLISION_STATE:hover,
+	#close_GET_TOUCHING_OBJECT:hover,
+
+
+
+#close_OBJECTS:focus,
+	#close_COPY_OBJECT_AND_MATERIAL:focus,
+	#close_COPY_MATERIAL:focus,
+	#close_RENAME_OBJECT:focus,
+	#close_RENAME_MATERIAL:focus,
+	#close_CREATE_GROUP:focus,
+	#close_GET_PARENT:focus,
+	
+#close_HELPERS:focus,
+	#close_INFINITE_GRID_HELPER:focus,
+	#close_GRID_HELPER:focus,
+	#close_POLAR_GRID_HELPER:focus,
+	#close_ARROW_HELPER:focus,
+	#close_AXES_HELPER:focus,
+
+#close_BOUNDING_BOXES:focus,
+	#close_CREATE_BOUNDING_BOX:focus,
+	#close_UPDATE_BOUNDING_BOX:focus,
+	#close_BOUNDING_BOX_COLLISION_SENSOR:focus,
+	#close_GET_BOUNDING_BOX:focus,
+	#close_GET_BOUNDING_BOX_COLLISION_STATE:focus,
+	#close_GET_TOUCHING_OBJECT:focus
+	{
+		color: #bbb;
+		text-decoration: none;
+		cursor: pointer;
+	}
+
+
+  /* 100% Image Width on Smaller Screens  */
+   @media only screen and (max-width: 700px){
+	.modal-content {
+	  width: 300%;
+	} 
+  }

@@ -1,0 +1,303 @@
+{"siteData": {
+
+    "contactInfo": {
+
+        "gumroadStore": "https://gliftek.gumroad.com",
+        "email": "gliftekV3Dplugins@pm.me",
+        "twitter": "",
+        "facebook": "https://www.facebook.com/glif.tek/",
+        "instagram": "https://www.instagram.com/GlifTek/",
+        "github": "https://github.com/GlifTek/",
+        "discordGliftek": "",
+        "discordVerge3D": "https://discord.gg/vGMAAED"
+    },
+
+
+    "pluginPacks": {
+
+        "allPluginPacks": [
+            "utility",
+            "helpers",        
+            "objects",
+            "lens flare deluxe",
+            "bounding boxes",
+            "pop-up modal",
+            "right-click menu",        
+            "svg loader",
+            "paperJS",
+            "backgrounds",
+            "constructive solid geometry",
+            "world, sky, earth, ocean, sun",
+            "geometry",
+            "web storage",
+            "clipping planes",
+            "console",
+            "material"
+        ],
+
+        "helpers": {
+
+            "title": "helpers",
+
+            "intro": "The [ HELPERS ] Plugin Pack is a collection of puzzles that create 'helper' objects for visualizing position, size and orientation. The helpers provided here are:",
+
+            "plugins": [
+                "Create_Infinite_Grid_Helper",
+                "Create_Grid_Helper",
+                "Create_Polar_Grid_Helper",
+                "Create_Arrow_Helper",
+                "Create_Axes_Helper"
+            ],
+
+            "Create_Infinite_Grid_Helper": {
+
+                "pluginText": "creates an Infinite Grid Helper object.  The Infinite GridHelper is an object to define infinite grids. Grids are two-dimensional arrays of lines.",
+
+                "exampleText": "This is a convenient method of describing a three dimensional space when designing or displaying a 3D scene.  This grid helper expands in all directions infinitely.  A distance control is used to fade the farthest ends.",
+
+                "consoleText": "",
+
+                "extraText": ""
+            },
+
+            "Create_Grid_Helper": {
+                
+                "pluginText": "creates a Grid Helper object.  The GridHelper is an object to define grids.  Grids are two-dimensional arrays of lines.",
+
+                "exampleText": "This is a convenient method of describing a three dimensional space when designing or displaying 3D items.",
+
+                "consoleText": "",
+
+                "extraText": ""
+            },
+
+            "Create_Polar_Grid_Helper": {
+                
+                "pluginText": "creates a Polar Grid Helper object.  The PolarGridHelper is an object to define polar grids. Grids are two-dimensional arrays of lines.",
+
+                "exampleText": "Another method of describing a three dimensional space when designing or displaying 3D items, yet in a radial format.",
+
+                "consoleText": "",
+
+                "extraText": ""
+            },
+
+            "Create_Arrow_Helper": {
+                
+                "pluginText": "creates an Arrow Helper object.  The ArrowHelper is a 3D arrow object for visualizing directions.",
+
+                "exampleText": "This object can be used for illustrating direction, decorating controls, and describing object axis orientation.",
+
+                "consoleText": "",
+
+                "extraText": ""
+            },
+
+            "Create_Axes_Helper": {
+                
+                "pluginText": "creates an Axes Helper object.  An axis object to visualize the 3 axes in a simple way.  The X axis is red. The Y axis is green. The Z axis is blue.",
+
+                "exampleText": "In displaying objects in 3D, this helper supplies a point of reference for the three dimensions of the world and the orientation of the axes used",
+
+                "consoleText": "",
+
+                "extraText": ""
+            }
+        },
+
+
+
+
+
+
+
+
+
+        "utility": {
+
+            "title": "utility",
+    
+            "intro": "The [ UTILITY ] Plugin Pack is a selection of puzzles that allow solutions for many varied common tasks. In this group you will find:",
+    
+            "plugins": [
+                "Add_Zeros_Padding",
+                "Convert_To_RGBA",
+                "Export_CSV_File",
+                "Convert_To_CSV_Format",
+                "Call_Procedure_By_Name",
+                "Call_Procedure_By_Name_Output",
+                "Merge_Lists",
+                "List_Similar",
+                "Right_Click_Event",
+                "Context_Menu_Toggle",
+                "Alert_Message"
+            ],
+    
+            "Add_Zeros_Padding": {
+    
+                "pluginText": "The [ ADD ZEROS PADDING ] Plugin formats a number to a 'Locale String', adding a padding of zeros determined by the 'digits' input amount.",
+    
+                "exampleText": "When making many iterations of object names or text list items, it's often prefereable to have an ordered naming convention like a numbered suffix.  An easy method to achieve this is to use the plugin in a loop.",
+    
+                "consoleText": "",
+    
+                "extraText": ""
+            },
+
+            "Convert_To_RGBA": {
+    
+                "pluginText": "The [ CONVERT TO RGBA ] Plugin given a color choice, CSS name, or hex value, returns an 'rgba' string in the format of 'rgba( 0, 0, 0, 0 )' where the last number is an alpha value from the puzzle's alpha input field.",
+    
+                "exampleText": "This puzzle solves the issue of needing an rgba value in certain circumstances.",
+    
+                "consoleText": "",
+    
+                "extraText": ""
+            },
+
+            "Export_CSV_File": {
+    
+                "pluginText": "The [ EXPORT CSV FILE ] Plugin takes a list of lists (rows) and returns a generated Comma Separated Values File (CSV) for use in spreadsheet software.",
+    
+                "exampleText": "This can of course be edited, saved, and re-imported by using the default 'Read CSV' puzzle that comes with Verge3D.",
+    
+                "consoleText": "The plugin will produce a save file dialogue:",
+    
+                "extraText": "Which can be opened and edited with any spreadsheet software:"
+            },
+
+            "Convert_To_CSV_Format": {
+    
+                "pluginText": "The [ CONVERT TO CSV FORMAT ] Plugin returns a string in Comma Separated Value (CSV) format, given a list of lists (rows).",
+    
+                "exampleText": "This works in the same manner as the above 'Export CSV File' plugin but does not export a file, returning the CSV value to be used as raw data before being exported.",
+    
+                "consoleText": "The data can then be downloaded using the native Verge3D 'download file' puzzle found in the HTML folder of the puzzles menu.",
+    
+                "extraText": ""
+            },
+
+            "Call_Procedure_By_Name": {
+    
+                "pluginText": "The [ CALL PROCEDURE BY NAME ] Plugin executes an already existing procedure when given it's name.",
+    
+                "exampleText": "This can be useful when switching between iterations of similar or differently named procedures.  This can be done dynamically.",
+    
+                "consoleText": "",
+    
+                "extraText": ""
+            },
+
+            "Call_Procedure_By_Name_Output": {
+    
+                "pluginText": "The [ CALL PROCEDURE BY NAME - OUTPUT ] Plugin executes an already existing procedure when given it's name.  Can recieve lists.",
+    
+                "exampleText": "This can be useful when switching between iterations of similar or differently named procedures.  This can be done dynamically.",
+    
+                "consoleText": "",
+    
+                "extraText": ""
+            },
+
+            "Merge_Lists": {
+    
+                "pluginText": "The [ MERGE LISTS ] Plugin returns a list consisting of the items from one or more lists.",
+    
+                "exampleText": "The [ LIST SIMILAR ] Plugin returns a list of all list items containing a specific string, given a list.",
+    
+                "consoleText": "",
+    
+                "extraText": ""
+            },
+
+            "List_Similar": {
+    
+                "pluginText": "The [ LIST SIMILAR ] Plugin returns a list of all list items containing a specific string, given a list.",
+    
+                "exampleText": "___",
+    
+                "consoleText": "",
+    
+                "extraText": ""
+            },
+
+            "Right_Click_Event": {
+    
+                "pluginText": "The [ RIGHT CLICK EVENT ] Plugin executes desired functions upon any and all right-clicks on HTML elements.",
+    
+                "exampleText": "This plugin is also included in the [ GLIFTEK ] Plugins custom 'Right Click Menu' Plugin Pack.  This allows for activation of a custom right-click menu upon clicking HTML elements.",
+    
+                "consoleText": "",
+    
+                "extraText": ""
+            },
+
+            "Context_Menu_Toggle": {
+    
+                "pluginText": "The [ CONTEXT MENU TOGGLE ] Plugin disables or enables the browser's right-click 'context' menu.",
+    
+                "exampleText": "This is useful when applications need right mouse button interactivity and the browser pop up context menu is unwanted.",
+    
+                "consoleText": "This plugin is also included in the [ GLIFTEK ] Plugins custom 'Right Click Menu' Plugin Pack as it is necessary to disable the existing context menu in order to display a custom menu.",
+    
+                "extraText": ""
+            },
+
+            "Alert_Message": {
+    
+                "pluginText": "The [ ALERT MESSAGE ] Plugin returns a list of all list items containing a specific string, given a list.",
+    
+                "exampleText": "___",
+    
+                "consoleText": "The plugin produces a popup alert message:",
+    
+                "extraText": ""
+            }
+        },
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        "pluginTemplate": {
+
+            "title": "name",
+    
+            "intro": "The [ BLANK ] Plugin Pack is a",
+    
+            "plugins": [
+                "___",
+                "___",
+                "___",
+                "___",
+                "___"
+            ],
+    
+            "puzzle": {
+    
+                "pluginText": "___",
+    
+                "exampleText": "___",
+    
+                "consoleText": "",
+    
+                "extraText": ""
+            }
+        }
+
+    }
+}}
