@@ -308,6 +308,8 @@ function make_site_HTML()
 
   nav_HTML();
 
+  storeSmall_HTML();
+
   intro_HTML();
 
   make_All_post_HTML();
@@ -432,13 +434,38 @@ function makeSingleImage ( i, list, imageName, suffix )
 
       console.log('imageNameFull:',imageNameFull);
       let pluginPackEvaled = eval(`pluginPack.${imageName}`);
-      let pluginWidth = pluginPackEvaled.pluginWidth;
-      console.log('pluginWidth:',pluginWidth);
+
+
+      let imageWidth;
+
+      if ( suffix == 'puzzle' )
+      {
+        imageWidth = pluginPackEvaled.pluginWidth;        
+      }
+
+      else if ( suffix == 'example' )
+      {
+        imageWidth = pluginPackEvaled.exampleWidth;
+      }
+
+      else if ( suffix == 'console' )
+      {
+        imageWidth = pluginPackEvaled.consoleWidth;
+      }
+
+      else if ( suffix == 'extra' )
+      {
+        imageWidth = pluginPackEvaled.extraWidth;
+      }
+
+
+      console.log('imageWidth:',imageWidth);
 
       let pageImage = document.createElement('img');   
       pageImage.src = imageNameFull;
       pageImage.alt = imageName;
-      pageImage.style.width = pluginWidth;
+      pageImage.style.width = imageWidth;
+      pageImage.style.textAlign = 'center';
       console.log('pageImage.style.width:',pageImage.style.width);
 
       let pic = setPicNumberingVar(i);
@@ -839,39 +866,42 @@ function set_post_HTML( pluginName, pic )
   let pluginName_NoUnderscores = pluginName.replace(/_/g, ' ');;
   let pluginName_UpperCase = pluginName_NoUnderscores.toUpperCase();
 
-  let divPluginPic = 'div_puzzle_' + pic;
+  let divPuzzlePic = 'div_puzzle_' + pic;
   let divExamplePic = 'div_example_' + pic;
   let divConsolePic = 'div_console_' + pic;
   let divExtraPic = 'div_extra_' + pic;
 
-  console.log('divPluginPic:',divPluginPic);
+  console.log('divPuzzlePic:',divPuzzlePic);
   console.log('divExamplePic:',divExamplePic);
   console.log('divConsolePic:',divConsolePic);
   console.log('divExtraPic:',divExtraPic);
 
   let pluginPackEvaled = eval(`pluginPack.${pluginName}`);
 
-  let pluginText = pluginPackEvaled.pluginText;
+  let puzzleText = pluginPackEvaled.puzzleText;
   let exampleText = pluginPackEvaled.exampleText;
   let consoleText = pluginPackEvaled.consoleText;
   let extraText = pluginPackEvaled.extraText;
-  let extraHTML = pluginPackEvaled.extraHTML;
-
-  let exampleWidth = pluginPackEvaled.exampleWidth;
-  let pluginWidth = pluginPackEvaled.pluginWidth;
+  let customHTML = pluginPackEvaled.customHTML;
 
 
-  // window.pluginPackEvaled = eval(`pluginPack.${pluginPack}`);
-  // console.log('imagePrefix:',imagePrefix);
 
-  // window.pluginImageWidth = pluginPackEvaled.pluginWidth;
-  // console.log('imagePrefix:',imagePrefix);
-// let imageName = 'img_puzzle' + pic;
-// console.log('imageName:',imageName);
-// // imgPluginPic
-//   let imageNameFull =
-//   imageDir + page + '/' + imageName + '.png';
-//   console.log('imageNameFull:',imageNameFull);
+  let puzzleHTML;
+
+  if ( puzzleText == '' || puzzleText == 'undefined' )
+  {
+    puzzleHTML =
+    `<div id='${divPuzzlePic}' style='display:none'></div>`;
+  }
+  else if ( puzzleText !== '' || puzzleText !== 'undefined' )
+  {
+    puzzleHTML =
+    `<p class="align-center">The [ ${pluginName_UpperCase} ] Plugin ${puzzleText}</p>    
+    <div id='${divPuzzlePic}' class='modal-content' style='width: 100%'></div><br />`;
+  };
+
+
+
 
   let exampleHTML;
 
@@ -883,56 +913,75 @@ function set_post_HTML( pluginName, pic )
   else if ( exampleText !== '' || exampleText !== 'undefined' )
   {
     exampleHTML =
-    `<p class="align-center">
-    ${exampleText}
-    </p>
-    <p class="align-center">Click example to enlarge.</p>
-    <a class="image main">
-    <div id='${divExamplePic}' class='modal-content' style='width: ${exampleWidth}; text-align: center' ></div>
-    </a>`;
+    `<p class="align-center">${exampleText}</p>
+    <p class="align-center">Click example to enlarge.</p>    
+    <div id='${divExamplePic}' class='modal-content' style='width: 100%'></div><br />`;
   };
 
-  // <div id='${divPluginPic}' style='width: ${pluginWidth}; '>
-  // <img id='77' src =  ${imageNameFull} style='width: ${pluginWidth}; />
-  // <div id='${divPluginPic}' style='width: ${pluginWidth}; text-align:center '></div>
+
+
+
+  let consoleHTML;
+
+  if ( consoleText == '' || consoleText == 'undefined' )
+  {
+    consoleHTML =
+    `<div id='${divConsolePic}' style='display:none'></div>`;
+  }
+  else if ( consoleText !== '' || consoleText !== 'undefined' )
+  {
+
+    consoleHTML =
+    `<p class="align-center">${consoleText}</p>
+    <div id='${divConsolePic}' class='modal-content' style='width: 100%'></div><br />`;
+
+  };
+
+
+
+
+  let extraHTML;
+
+  if ( extraText == '' || extraText == 'undefined' )
+  {
+    extraHTML =
+    `<div id='${divExtraPic}' style='display:none'></div>`;
+  }
+  else if ( extraText !== '' || extraText !== 'undefined' )
+  {
+
+    extraHTML =
+    `<p class="align-center">${extraText}</p>
+    <div id='${divExtraPic}' class='modal-content' style='width: 100%'></div><br />`;
+
+  };
+
+  
 
 
   let result =
-  `<!-- ${pluginName_UpperCase} -->
-
-    <section class="post">
+  `<section class="post" >
 
     <br />
-    <div class="align-center">
+
+    <div class="align-center" >
 
       <h2><a id="${pluginName}" href="#${pluginName}">[ ${pluginName_UpperCase} ]</a></h2>
 
-      <p class="align-center">The [ ${pluginName_UpperCase} ] Plugin ${pluginText}</p>
-
-    
-
-      <div id='${divPluginPic}' style='width:100%; '></div>
-      
+      ${puzzleHTML}
 
       ${exampleHTML}
-      <br />
-
-      <p class="align-center">${consoleText}</p>
-
-      <div id='${divConsolePic}'></div>
       
-      <p class="align-center">${extraText}</p>
-
-      <div id='${divExtraPic}'></div>
+      ${consoleHTML}
 
       ${extraHTML}
-      <br />  
-      <br />  
 
       <div style="width: 100%; height: 1px; background: #ffffff;"></div>
 
+      <br />
+
     </div>
-    <br />
+
   </section>`;
 
   return result;
@@ -941,7 +990,11 @@ function set_post_HTML( pluginName, pic )
 
 
 
-
+function storeSmall_HTML()
+{
+  let storeSmallDiv = document.getElementById('storeSmallDiv');
+  storeSmallDiv.innerHTML = `<div class="align-center"><a href="${gliftek_contactInfo.gumroadStore}" target="_blank" rel="noreferrer noopener"class="button small">PURCHASE AT STORE</a></div><br />`;
+}
 
 
 
@@ -956,6 +1009,8 @@ function store_HTML()
   let storeDiv = document.getElementById('storeDiv');
   storeDiv.appendChild( store_HTML_Div );
 }
+
+
 
 function set_store_HTML()
 {
@@ -1038,31 +1093,17 @@ function set_footer_HTML()
       ${menuHeaderFooter}      
     </section>
   </section>
-</footer> `;
+</footer>`;
 
 return result;
 };
 
 
-
 function copyright_HTML()
 {
-    let copyright_HTML_Var = set_copyright_HTML();
-    let copyright_HTML_Div = document.createElement('div');
-    copyright_HTML_Div.id = 'copyright_HTML_Div';   
-    copyright_HTML_Div.innerHTML = copyright_HTML_Var;
-
-    let copyrightDiv = document.getElementById('copyrightDiv');
-    copyrightDiv.appendChild( copyright_HTML_Div );
+  copyrightDiv = document.getElementById('copyright');
+  copyrightDiv.innerHTML = '<ul><li>&copy; [ GLIFTEK ] 2021 </li>';
 };
-
-function set_copyright_HTML()
-{
-  let result = `<ul><li>&copy; [ GLIFTEK ] 2021 </li>`;
-  // `<ul><li>&copy; [ GLIFTEK ] 2021 - ${year}</li>`;
-  return result;
-};
-
 
 
 };  //  END makePluginPage()
