@@ -320,6 +320,57 @@ function make_site_HTML()
 
   copyright_HTML();
 
+  
+
+  setTimeout(doEndScript(), 500);
+
+  function doEndScript()
+  {
+    console.log('DOING END SCRIPT MAIN')
+    let endScript = document.createElement('script');
+    
+    endScript.crossOrigin = 'anonymous';
+    endScript.src="./assets/js/main.js";
+    // endScript.src="./main.js";
+    
+    
+    
+    endScript.onload = function () {
+
+      console.log('MAIN.JS loaded!')
+      //do stuff with the script
+  };
+
+  document.head.appendChild(endScript);   
+
+
+    // var script = document.createElement('script');
+    
+// script.src = something;
+
+// document.head.appendChild(script); //or something of the likes
+
+
+
+
+    // jQuery.loadScript = function (url, callback) {
+    //   jQuery.ajax({
+    //       url: url,
+    //       dataType: 'script',
+    //       success: callback,
+    //       async: true
+    //   });
+
+    //   if (typeof someObject == 'undefined') $.loadScript('./assets/js/main.js', function(){
+    //     //Stuff to do after someScript has loaded
+    // });
+  // }
+
+
+  }
+
+
+
 };
 
 
@@ -511,40 +562,40 @@ function makeSingleImage ( i, list, imageName, suffix )
 
 
 
-function add_all_Images_to_divs(list)
-{
-  console.log('list in add_all_Images_to_divs :',list);
-  console.log('list LENGTH in add_all_Images_to_divs :',list.length);
+// function add_all_Images_to_divs(list)
+// {
+//   console.log('list in add_all_Images_to_divs :',list);
+//   console.log('list LENGTH in add_all_Images_to_divs :',list.length);
 
-  for( let i = 0; i < list.length; i++ )
-  {
-    let item = list[i];
+//   for( let i = 0; i < list.length; i++ )
+//   {
+//     let item = list[i];
 
-    add_SINGLE_Image_to_div(item);
-  }
+//     add_SINGLE_Image_to_div(item);
+//   }
 
-}
+// }
 
 
 
-function add_SINGLE_Image_to_div(item)
-{
-  console.log('item:',item);
+// function add_SINGLE_Image_to_div(item)
+// {
+//   console.log('item:',item);
 
-  let itemImage = document.getElementById(item.toString());
-  console.log('itemImage:',itemImage);
+//   let itemImage = document.getElementById(item.toString());
+//   console.log('itemImage:',itemImage);
 
-  let substring = item.toString().substr(4, item.length);
-  console.log('substring:',substring);
+//   let substring = item.toString().substr(4, item.length);
+//   console.log('substring:',substring);
 
-  let div_Id  = 'div_' + substring;
-  console.log('div_Id:',div_Id);
+//   let div_Id  = 'div_' + substring;
+//   console.log('div_Id:',div_Id);
 
-  let div = document.getElementById(div_Id);
-  div.appendChild(itemImage);
-  console.log('modalPageImage result:',item);
+//   let div = document.getElementById(div_Id);
+//   div.appendChild(itemImage);
+//   console.log('modalPageImage result:',item);
 
-}
+// }
 
 
 
@@ -609,7 +660,7 @@ function set_ALL_ModalFunction()
       set_ModalFunction(item);
 
       //  WHEN FINISHED, DO:
-      if ( i = LIST_PICs.length )
+      if ( i == LIST_PICs.length -1 )
       {
         console.log('SCRIPT END.');
       };
@@ -659,56 +710,26 @@ function set_ModalFunction(imgName)
 
 function title_HTML()
 {
-    let title_HTML_Var = set_title_HTML();
     let titleTag = document.getElementById('titleTag');
-    titleTag.innerHTML = title_HTML_Var;
+    titleTag.innerHTML = `GLIFTEK [ ${pluginPack_title_UpperCase} ] Plugin Pack User Documentation`;
 };
-
-function set_title_HTML()
-{
-  let result =
-  `GLIFTEK [ ${pluginPack_title_UpperCase} ] Plugin Pack User Documentation`;
-
-  return result;
-}
-
-
-
 
 
 function header_HTML(pluginName)
 {
-    let header_HTML_Var = set_header_HTML(pluginName);
-    let header_HTML_Div = document.createElement('div');
-    header_HTML_Div.id = 'header_HTML_Div';   
-    header_HTML_Div.innerHTML = header_HTML_Var;
-
     let headerDiv = document.getElementById ( 'headerDiv' );
-    headerDiv.appendChild( header_HTML_Div );
+
+    headerDiv.innerHTML = `<header id="header">
+    <a href="user_docs_${pluginName}.html" class="logo">[ ${pluginPack_title_UpperCase} ]</a>
+    </header>`;
 };
-
-function set_header_HTML( pluginName )
-{
-  let result =
-  `<header id="header">
-  <a href="user_docs_${pluginName}.html" class="logo">[ ${pluginPack_title_UpperCase} ]</a>
-  </header>`;
-
-  return result;
-}
-
 
 
 function nav_HTML()
 {
-  let nav_HTML_Var = set_nav_HTML();
-  let nav_HTML_Div = document.createElement('div');
-  nav_HTML_Div.id = 'nav_HTML_Div';   
-  nav_HTML_Div.innerHTML = nav_HTML_Var;
-
-  let navDiv = document.getElementById('navDiv');
-  navDiv.appendChild( nav_HTML_Div );
-}
+  let navDiv = document.getElementById('nav');
+  navDiv.innerHTML = set_nav_HTML();
+};
 
 function set_nav_HTML()
 // loop to get all plugins from JSON and CAPStitles also remove "user_docs" 
@@ -722,10 +743,20 @@ function set_nav_HTML()
   {
     let item = LIST_allPluginPacks[i];
 
-    let navMenuItem = 
-    `<li><a href="user_docs.html?page=${item}">${item}</a></li>`;
+    let navItemClass;
 
-    // `<li><a href="user_docs.html?page=${item}">${item.replace(/_/g, ' ')}</a></li>`;
+
+    if ( item == page )
+    {
+      navItemClass = 'active';
+    }
+    else
+    {
+      navItemClass = '';
+    }
+
+    let navMenuItem = 
+    `<li class = '${navItemClass}'><a href="user_docs.html?page=${item}">${item}</a></li>`;
 
     navMenuList_1.push(navMenuItem);
 
@@ -737,44 +768,11 @@ function set_nav_HTML()
 
   }
 
-
-  let navMenuList_2 = [];
-
-  for( let i = 0; i < ( LIST_allPluginPacks.length ); i++ )
-  {
-    let item = LIST_allPluginPacks[i];
-
-    let navMenuItem = 
-    `<li><a href="user_docs.html?page=${item}">${item}</a></li>`;
-
-    // `<li><a href="user_docs.html?page=${item}">${item.replace(/_/g, ' ')}</a></li>`;
-
-    navMenuList_2.push(navMenuItem);
-
-  }
-
-
-    let result =
-      `<nav id="nav">
-      <ul class="links">
-        ${navMenuList_1.join('')}
-        ${navMenuList_2.join('')}
-      </ul>
-      ${menuHeaderFooter}
-    </nav>`;
-
-
-//   let result =
-//   `<nav id="nav">
-//   <ul class="links">
-//     <li><a href="user_docs_main.html">[ MAIN ]</a></li>
-//     <li><a href="user_docs_lensflare_deluxe.html">[ LENS FLARE DELUXE ]</a></li>
-//     <li><a href="user_docs_bounding_boxes.html">[ BOUNDING BOXES ]</a></li>
-//     <li class="active"><a href="user_docs.html?page=helpers">[ HELPERS ]</a></li>
-//     <li><a href="user_docs.html?page=utility">[ UTILITY ]</a></li>
-//   </ul>
-//   ${menuHeaderFooter}
-// </nav>`;
+  let result =
+  `<ul class="links">
+    ${navMenuList_1.join('')}   
+  </ul>
+  ${menuHeaderFooter}`;
 
   return result;
 };
@@ -975,6 +973,8 @@ function set_post_HTML( pluginName, pic )
       ${consoleHTML}
 
       ${extraHTML}
+
+      ${customHTML}
 
       <div style="width: 100%; height: 1px; background: #ffffff;"></div>
 
