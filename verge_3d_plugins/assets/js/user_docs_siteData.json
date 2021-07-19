@@ -462,7 +462,7 @@
 
             "Lens_Flare_Deluxe": {
 
-                "pluginWidth": "20rem", "exampleWidth": "60rem",
+                "pluginWidth": "20rem", "exampleWidth": "23rem",
 
                 "puzzleText": "creates a Lens Flare Object with three optional effects: [ Rays ], [ Glow ], and [ Bokeh ]. (link these)",
 
