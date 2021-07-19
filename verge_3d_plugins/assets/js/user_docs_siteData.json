@@ -354,7 +354,7 @@
 
                 "puzzleText": "makes a new, completely unique copy of the given object and it's material.",
 
-                "exampleText": "This puzzle allows users to make copies of objects, and customize the materials and textures independent of their source object.",
+                "exampleText": "creates a virtual 'Box3' cube shaped boundary around an object used for determining intersections with others of it's type.  An optional bounding box helper object can be used for visualizing the box's dimensions for testing and debugging.",
 
                 "consoleText": "",
 
@@ -399,7 +399,7 @@
 
                 "puzzleText": "returns the Bounding Box of an Object.",
 
-                "exampleText": "This can be used for collision detection without need for a physics engine.",
+                "exampleText": "returns the bounding box of a given object.",
 
                 "consoleText": "",
 
@@ -414,7 +414,7 @@
 
                 "puzzleText": "returns a boolean (true / false ) value for the current collision state of a Bounding Box.",
 
-                "exampleText": "This can be used for collision detection without need for a physics engine.",
+                "exampleText": "returns a true / false boolean operator as to whether two bounding box's are touching / intersecting at any given time, given a moving object and object to compare it with.",
 
                 "consoleText": "",
 
@@ -429,7 +429,7 @@
 
                 "puzzleText": "returns the object a Bounding Box is currently touching.",
 
-                "exampleText": "This an be used for collision detection without need for a physics engine.",
+                "exampleText": "returns the name of an object whose bounding box is touching another bounding box",
 
                 "consoleText": "",
 
