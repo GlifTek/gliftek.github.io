@@ -13,12 +13,45 @@
     },
 
 
+    "mainPage": {
+
+        "featured": {
+
+            "title": "featured",
+
+            "intro": "<p font-size='3rem'>[ GLIFTEK ] Plugin Packs are collections of convenient visual coding puzzles for the<a href='https://soft8soft.com' target='_blank' rel='noreferrer noopener'> Verge 3D</a> web graphics authoring application.",
+
+            "plugins": [
+                "plugins_BOUNDING_BOXES_group",
+                "plugins_HELPERS_group",
+                "plugins_OBJECTS_group"
+            ],
+
+            "puzzle": {
+
+                "pluginWidth": "30rem","exampleWidth": "30rem",
+
+                "puzzleText": "___",
+
+                "exampleText": "___",
+
+                "consoleText": "",
+
+                "extraText": "",
+
+                "customHTML": ""
+            }
+        }
+
+    },
+
     "pluginPacks": {
 
         "imageDir": "./images/",
         "imagePrefix": "GLIFTEK_plugins",
 
         "allPluginPacks": [
+            "featured",
             "lens_flare_deluxe",
             "world",
             "modal_window",
@@ -40,6 +73,70 @@
 
 
 
+        "featured": {
+
+            "title": "featured",
+
+            "intro": "<p font-size='3rem'>[ GLIFTEK ] Plugin Packs are collections of convenient visual coding puzzles for the<a href='https://soft8soft.com' target='_blank' rel='noreferrer noopener'> Verge 3D</a> web graphics authoring application.</br />  Featured here are the following:",
+
+            "plugins": [
+                "Bounding_Boxes",
+                "Helpers",
+                "Objects"
+            ],
+
+            "Bounding_Boxes": {
+
+                "pluginWidth": "100%","exampleWidth": "30rem",
+
+                "puzzleText": "consists of the puzzles<br />'Create Bounding Box', 'Update Bounding Box', 'Bounding Box Collision Sensor', 'Get Bounding Box',<br /> 'Get Bounding Box Collision State', & 'Get Touching Object'. ",
+
+                "exampleText": "",
+
+                "consoleText": "",
+
+                "extraText": "",
+
+                "mainText": " ",
+
+                "customHTML": ""
+            },
+
+            "Helpers": {
+
+                "pluginWidth": "100%","exampleWidth": "30rem",
+
+                "puzzleText": "consists of the puzzles:<br />'Grid Helper', 'Polar Grid Helper', 'Arrow Helper', & 'Axes Helper'. ",
+
+                "exampleText": "",
+
+                "consoleText": "",
+
+                "extraText": "",
+
+                "mainText": " ",
+
+                "customHTML": ""
+            },
+
+            "Objects": {
+
+                "pluginWidth": "100%","exampleWidth": "30rem",
+
+                "puzzleText": "consists of the puzzles:<br />'Copy Object And Material', 'Copy Material', 'Rename Object', 'Rename Material', 'Create Group', & 'Get Parent'.",
+
+                "exampleText": "",
+
+                "consoleText": "",
+
+                "extraText": "",
+
+                "mainText": " ",
+
+                "customHTML": ""
+            }
+        },
+
 
         "helpers": {
 
@@ -57,7 +154,7 @@
 
             "Create_Infinite_Grid_Helper": {
 
-                "pluginWidth": "25rem","exampleWidth": "50%",
+                "pluginWidth": "22rem","exampleWidth": "22rem",
 
                 "puzzleText": "creates an Infinite Grid Helper object.  The Infinite GridHelper is an object to define infinite grids. Grids are two-dimensional arrays of lines.",
 
@@ -72,7 +169,7 @@
 
             "Create_Grid_Helper": {
 
-                "pluginWidth": "25rem","exampleWidth": "50%",
+                "pluginWidth": "22rem", "exampleWidth": "22rem",
                 
                 "puzzleText": "creates a Grid Helper object.  The GridHelper is an object to define grids.  Grids are two-dimensional arrays of lines.",
 
@@ -87,7 +184,7 @@
 
             "Create_Polar_Grid_Helper": {
 
-                "pluginWidth": "25rem","exampleWidth": "50%",
+                "pluginWidth": "22rem", "exampleWidth": "22rem",
                 
                 "puzzleText": "creates a Polar Grid Helper object.  The PolarGridHelper is an object to define polar grids. Grids are two-dimensional arrays of lines.",
 
@@ -102,7 +199,7 @@
 
             "Create_Arrow_Helper": {
 
-                "pluginWidth": "25rem","exampleWidth": "50%",
+                "pluginWidth": "22rem", "exampleWidth": "22rem",
                 
                 "puzzleText": "creates an Arrow Helper object.  The ArrowHelper is a 3D arrow object for visualizing directions.",
 
@@ -117,7 +214,7 @@
 
             "Create_Axes_Helper": {
 
-                "pluginWidth": "25rem","exampleWidth": "50%",
+                "pluginWidth": "22rem", "exampleWidth": "22rem",
                 
                 "puzzleText": "creates an Axes Helper object.  An axis object to visualize the 3 axes in a simple way.  The X axis is red. The Y axis is green. The Z axis is blue.",
 
