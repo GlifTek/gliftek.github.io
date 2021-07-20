@@ -62,7 +62,7 @@ function set_Globals()
   LIST_images_console = [];
   LIST_images_extra = [];
 
-  loadMainJS();
+  //loadMainJS();
 
   loadJSON();
 
@@ -322,6 +322,8 @@ function make_site_HTML()
   footer_HTML();
 
   copyright_HTML();
+  
+  loadMainJS();
 
   
 
