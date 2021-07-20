@@ -323,9 +323,9 @@ function make_site_HTML()
 
   copyright_HTML();
   
-  loadMainJS();
-
   
+
+setTimeout(loadMainJS(), 500);
 
   // setTimeout(doEndScript(), 500);
 
