@@ -325,9 +325,9 @@ function make_site_HTML()
   
   
 
-setTimeout(loadMainJS(), 500);
+//setTimeout(loadMainJS(), 500);
 
-  // setTimeout(doEndScript(), 500);
+  setTimeout(doEndScript(), 500);
 
   function doEndScript()
   {
