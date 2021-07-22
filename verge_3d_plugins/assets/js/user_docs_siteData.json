@@ -1149,11 +1149,11 @@
 
                 "puzzleText": "executes a boolean operation between two objects, returning the resulting geometry as a new object.",
 
-                "exampleText": "Operation modes available are: Union, Subtract, and Intersect.",
+                "exampleText": "Two objects intersected for a CSG Boolean operation:",
     
                 "consoleText": "",
     
-                "extraText": " ",
+                "extraText": "Operation modes available are: Union, Subtract, and Intersect.",
 
                 "customHTML": ""
             },
