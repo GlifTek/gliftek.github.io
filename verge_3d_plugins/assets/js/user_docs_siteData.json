@@ -13,37 +13,6 @@
     },
 
 
-    "mainPage": {
-
-        "featured": {
-
-            "title": "featured",
-
-            "intro": "<p font-size='3rem'>[ GLIFTEK ] Plugin Packs are collections of convenient visual coding puzzles for the<a href='https://soft8soft.com' target='_blank' rel='noreferrer noopener'> Verge 3D</a> web graphics authoring application.",
-
-            "plugins": [
-                "plugins_BOUNDING_BOXES_group",
-                "plugins_HELPERS_group",
-                "plugins_OBJECTS_group"
-            ],
-
-            "puzzle": {
-
-                "pluginWidth": "30rem","exampleWidth": "30rem",
-
-                "puzzleText": "___",
-
-                "exampleText": "___",
-
-                "consoleText": "",
-
-                "extraText": "",
-
-                "customHTML": ""
-            }
-        }
-
-    },
 
     "pluginPacks": {
 
@@ -52,8 +21,9 @@
 
         "allPluginPacks": [
             "featured",
-            "lens_flare_deluxe",
+            "lens_flare_deluxe",            
             "world",
+            "csg",
             "modal_window",
             "web_storage",
             "backgrounds",
@@ -63,8 +33,7 @@
             "objects",
             "right_click_menu",
             "svg_loader",
-            "paperJS",            
-            "constructive_solid_geometry",            
+            "paperJS",
             "geometry",            
             "clipping planes",
             "console",
@@ -154,7 +123,7 @@
 
             "Create_Infinite_Grid_Helper": {
 
-                "pluginWidth": "22rem","exampleWidth": "22rem",
+                "pluginWidth": "22rem","exampleWidth": "40rem",
 
                 "puzzleText": "creates an Infinite Grid Helper object.  The Infinite GridHelper is an object to define infinite grids. Grids are two-dimensional arrays of lines.",
 
@@ -169,7 +138,7 @@
 
             "Create_Grid_Helper": {
 
-                "pluginWidth": "22rem", "exampleWidth": "22rem",
+                "pluginWidth": "22rem", "exampleWidth": "40rem",
                 
                 "puzzleText": "creates a Grid Helper object.  The GridHelper is an object to define grids.  Grids are two-dimensional arrays of lines.",
 
@@ -184,7 +153,7 @@
 
             "Create_Polar_Grid_Helper": {
 
-                "pluginWidth": "22rem", "exampleWidth": "22rem",
+                "pluginWidth": "22rem", "exampleWidth": "40rem",
                 
                 "puzzleText": "creates a Polar Grid Helper object.  The PolarGridHelper is an object to define polar grids. Grids are two-dimensional arrays of lines.",
 
@@ -199,7 +168,7 @@
 
             "Create_Arrow_Helper": {
 
-                "pluginWidth": "22rem", "exampleWidth": "22rem",
+                "pluginWidth": "22rem", "exampleWidth": "40rem",
                 
                 "puzzleText": "creates an Arrow Helper object.  The ArrowHelper is a 3D arrow object for visualizing directions.",
 
@@ -548,7 +517,7 @@
 
             "title": "lens_flare_deluxe",
 
-            "intro": "creates a 'Lens Flare' object with three optional effects: [ Rays ], [ Glow ], and [ Bokeh ].",
+            "intro": "creates a 'Lens Flare' object with three optional effects:<br /> [ Rays ], [ Glow ], and [ Bokeh ].",
 
             "plugins": [
                 "Lens_Flare_Deluxe",
@@ -636,7 +605,8 @@
     
             "Set_Background_Image": {
     
-                "pluginWidth": "30rem","exampleWidth": "25rem",
+                "pluginWidth": "30rem", "exampleWidth": "30rem",
+                "pluginWidth_mobile": "30rem", "exampleWidth_mobile": "30rem",
 
                 "puzzleText": "sets a custom static background image for the scene.  Using a still image for a background to your 3D scene can be a great tool for streamlining your product presentation.",
     
@@ -1151,6 +1121,49 @@
                 "pluginWidth": "30rem","exampleWidth": "30rem",
 
                 "puzzleText": "Generates a terrain object for use with landscapes.",
+    
+                "exampleText": "___",
+    
+                "consoleText": "",
+    
+                "extraText": "",
+
+                "customHTML": ""
+            }
+        },
+
+
+        "csg": {
+
+            "title": "Constructive Solid Geometry",
+    
+            "intro": "",
+    
+            "plugins": [
+                "CSG_Boolean",
+                "CSG_Boolean2"
+            ],
+
+            "CSG_Boolean": {
+
+                "pluginWidth": "25rem","exampleWidth": "30rem",  "consoleWidth": "22rem", "extraWidth": "85%",
+
+                "puzzleText": "executes a boolean operation between two objects, returning the resulting geometry as a new object. Operation modes available are: Union, Subtract, and Intersect.",
+
+                "exampleText": "creates a boolean operation between two objects, returning the resulting geometry as a new object. Operation modes available are: Union, Subtract, and Intersect.",
+    
+                "consoleText": "",
+    
+                "extraText": " ",
+
+                "customHTML": ""
+            },
+
+            "CSG_Boolean2": {
+    
+                "pluginWidth": "30rem","exampleWidth": "30rem",
+
+                "puzzleText": "creates a boolean operation between two objects, returning the resulting geometry as a new object. Operation modes available are: Union, Subtract, and Intersect.",
     
                 "exampleText": "___",
     

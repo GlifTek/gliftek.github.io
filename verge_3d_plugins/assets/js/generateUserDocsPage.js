@@ -62,7 +62,8 @@ function set_Globals()
   LIST_images_console = [];
   LIST_images_extra = [];
 
-  //loadMainJS();
+
+  loadMainJS_BG_Parallax();
 
   loadJSON();
 
@@ -260,9 +261,35 @@ function setstyleVar()
     from {transform:scale(0)}
     to {transform:scale(1)}
   }
+
+  /* make example pics be % at certain screen widths */
+  @media screen and (max-width: 980px) {
+    @media screen and (min-width: 10px) {
+
+      .sizeForScreens {
+        width: 90% !important;
+      }
+
+    }
+
+  }
+
+
   `
   return result;
 }
+// @media screen and (max-width: 980px) {
+
+
+  // //   set pluginWidth_mobile size
+  // function pluginWidth_mobile_CSS()
+  // {
+  //   result = 
+  //   `
+  //   `;
+  // }
+
+
 
 
 function setStyle()
@@ -322,58 +349,9 @@ function make_site_HTML()
   footer_HTML();
 
   copyright_HTML();
-  
-  
-
-//setTimeout(loadMainJS(), 500);
-
-  setTimeout(doEndScript(), 500);
-
-  function doEndScript()
-  {
-    console.log('DOING END SCRIPT MAIN')
-    let endScript = document.createElement('script');
-    
-    endScript.crossOrigin = 'anonymous';
-    endScript.src="./assets/js/main.js";    
-    
-    document.head.appendChild(endScript);   
-
-    endScript.onload = function () {
-
-    console.log('MAIN.JS loaded!');
-
-    let mainCSS = document.createElement('style');
-    
-    mainCSS.crossOrigin = 'anonymous';
-    mainCSS.src="./assets/css/main.css";
-    document.head.appendChild(mainCSS);
-
-    mainCSS.onload = function () {
-      console.log('MAIN.CSS loaded!')
-    };
-
-  };
 
 
-
-    // jQuery.loadScript = function (url, callback) {
-    //   jQuery.ajax({
-    //       url: url,
-    //       dataType: 'script',
-    //       success: callback,
-    //       async: true
-    //   });
-
-    //   if (typeof someObject == 'undefined') $.loadScript('./assets/js/main.js', function(){
-    //     //Stuff to do after someScript has loaded
-    // });
-  // }
-
-
-  }
-
-
+  loadMainJS_navPanel();
 
 };
 
@@ -487,6 +465,8 @@ function makeSingleImage ( i, list, imageName, suffix )
     else if ( boolean == true )
     {
 
+      let pageImage = document.createElement('img');   
+
       console.log('imageNameFull:',imageNameFull);
       let pluginPackEvaled = eval(`pluginPack.${imageName}`);
 
@@ -501,6 +481,9 @@ function makeSingleImage ( i, list, imageName, suffix )
       else if ( suffix == 'example' )
       {
         imageWidth = pluginPackEvaled.exampleWidth;
+        pageImage.classList.add('sizeForScreens');
+        console.log('pageImage.classList:',pageImage.classList);
+
       }
 
       else if ( suffix == 'console' )
@@ -516,12 +499,13 @@ function makeSingleImage ( i, list, imageName, suffix )
 
       console.log('imageWidth:',imageWidth);
 
-      let pageImage = document.createElement('img');   
+      
       pageImage.src = imageNameFull;
       pageImage.alt = imageName;
       pageImage.style.width = imageWidth;
-      pageImage.style.textAlign = 'center';
       console.log('pageImage.style.width:',pageImage.style.width);
+
+      
 
       let pic = setPicNumberingVar(i);
 
@@ -552,6 +536,8 @@ function makeSingleImage ( i, list, imageName, suffix )
         console.log('list:',list );
 
         console.log('done list images:',suffix);
+
+        // make_Modals()
 
       };
 
@@ -741,56 +727,206 @@ function set_nav_HTML()
 // to fit so many, make dropdown instead of topBar menu?
 {
 
-  let navMenuList_1 = [];
+  console.log('LIST_allPluginPacks:',LIST_allPluginPacks);
+  
+  console.log('LIST_allPluginPacks.length',LIST_allPluginPacks.length);
 
-  for( let i = 0; i < (  ( LIST_allPluginPacks.length - ( LIST_allPluginPacks.length / 2 )  )  ); i++ )
+  const LIST_allPluginPacks_half = Math.ceil(LIST_allPluginPacks.length / 2);    
+  console.log('LIST_allPluginPacks_half',LIST_allPluginPacks_half);
+
+  const LIST_nav_firstHalf = LIST_allPluginPacks.slice(0, LIST_allPluginPacks_half)
+  console.log('LIST_nav_firstHalf',LIST_nav_firstHalf);
+
+  const LIST_nav_secondHalf = LIST_allPluginPacks.slice(-LIST_allPluginPacks_half)
+  console.log('LIST_nav_secondHalf',LIST_nav_secondHalf);
+
+
+
+  function make_Nav()
   {
-    let item = LIST_allPluginPacks[i];
+    
 
-    let navItemClass;
+    let navMenuList = [];
 
-
-    if ( item == page )
+    // for( let i = 0; i < (  ( LIST_nav_firstHalf.length - ( LIST_nav_firstHalf.length / 2 )  )  ); i++ )
+    for( let i = 0; i < LIST_allPluginPacks.length; i++ )
     {
-      navItemClass = 'active';
+      let item = LIST_allPluginPacks[i];
+
+      let navItemClass;
+
+
+      if ( item == page )
+      {
+        navItemClass = 'active';
+      }
+      else
+      {
+        navItemClass = '';
+      }
+
+      let navMenuItem = 
+      `<li class = '${navItemClass}'><a href="user_docs.html?page=${item}">${item}</a></li>`;
+
+      navMenuList.push(navMenuItem);
+
+
     }
-    else
+
+    return navMenuList;
+  }
+
+
+
+
+
+  function make_Nav1()
+  {
+    let navMenuList_1 = [];
+
+    // for( let i = 0; i < (  ( LIST_nav_firstHalf.length - ( LIST_nav_firstHalf.length / 2 )  )  ); i++ )
+    for( let i = 0; i < LIST_nav_firstHalf.length; i++ )
     {
-      navItemClass = '';
+      let item = LIST_nav_firstHalf[i];
+
+      let navItemClass;
+
+
+      if ( item == page )
+      {
+        navItemClass = 'active';
+      }
+      else
+      {
+        navItemClass = '';
+      }
+
+      let navMenuItem = 
+      `<li class = '${navItemClass}'><a href="user_docs.html?page=${item}">${item}</a></li>`;
+
+      navMenuList_1.push(navMenuItem);
+
     }
 
-    let navMenuItem = 
-    `<li class = '${navItemClass}'><a href="user_docs.html?page=${item}">${item}</a></li>`;
+    return navMenuList_1;
+  }
 
-    navMenuList_1.push(navMenuItem);
 
-    // const list = [1, 2, 3, 4, 5, 6]
-    // const half = Math.ceil(list.length / 2);    
+  function make_Nav2()
+  {
+      let navMenuList_2  = [];
 
-    // const firstHalf = list.slice(0, half)
-    // const secondHalf = list.slice(-half)
+      for( let i = 0; i < LIST_nav_secondHalf.length; i++ )
+      {
+        let item = LIST_nav_secondHalf[i];
+    
+        let navItemClass;
+    
+    
+        if ( item == page )
+        {
+          navItemClass = 'active';
+        }
+        else
+        {
+          navItemClass = '';
+        }
+    
+        let navMenuItem = 
+        `<li class = '${navItemClass}'><a href="user_docs.html?page=${item}">${item}</a></li>`;
+    
+        navMenuList_2.push(navMenuItem);
+
+        
+
+      };
+
+      return navMenuList_2;
 
   }
 
+
+  // for( let i = 0; i < (  ( LIST_allPluginPacks.length - ( LIST_allPluginPacks.length / 2 )  )  ); i++ )
+  // {
+  //   let item = LIST_allPluginPacks[i];
+
+  //   let navItemClass;
+
+
+  //   if ( item == page )
+  //   {
+  //     navItemClass = 'active';
+  //   }
+  //   else
+  //   {
+  //     navItemClass = '';
+  //   }
+
+  //   let navMenuItem = 
+  //   `<li class = '${navItemClass}'><a href="user_docs.html?page=${item}">${item}</a></li>`;
+
+  //   navMenuList_1.push(navMenuItem);
+
+
+  // make_Nav1();
+  // make_Nav2();
+
+
   let result =
+
   `<ul class="links">
-    ${navMenuList_1.join('')}   
+    ${make_Nav().join('')}   
   </ul>
   ${menuHeaderFooter}`;
 
   return result;
+
+
+
+  // let result =
+
+  // `<ul class="links">
+  //   ${make_Nav1().join('')}   
+  // </ul>
+  // <br />
+  // <ul class="links">
+  //   ${make_Nav2().join('')}   
+  // </ul>
+
+  // ${menuHeaderFooter}`;
+
+  // return result;
+
+
+
+
+
+  // let result =
+
+  // `<ul class="links">
+  //   ${navMenuList_1.join('')}   
+  // </ul>
+
+  // <ul class="links">
+  //   ${navMenuList_2.join('')}   
+  // </ul>
+
+  // ${menuHeaderFooter}`;
+
+  // return result;
 };
 
 
 function intro_HTML()
 {
-  let intro_HTML_Var = set_intro_HTML();
-  let intro_HTML_Div = document.createElement('div');
-  intro_HTML_Div.id = 'intro_HTML_Div';   
-  intro_HTML_Div.innerHTML = intro_HTML_Var;
+  // let intro_HTML_Var = set_intro_HTML();
+  // let intro_HTML_Div = document.createElement('div');
+  // intro_HTML_Div.id = 'intro_HTML_Div';   
+  // intro_HTML_Div.innerHTML = intro_HTML_Var;
 
   let introDiv = document.getElementById('introDiv');
-  introDiv.appendChild( intro_HTML_Div );
+  introDiv.innerHTML = set_intro_HTML();
+  // introDiv.appendChild( intro_HTML_Div );
 }
 
 function set_intro_HTML()
@@ -1013,6 +1149,7 @@ function set_post_HTML( pluginName, pic )
 
 
 
+
   let result =
   `<section class="post" >
 
@@ -1025,7 +1162,7 @@ function set_post_HTML( pluginName, pic )
       ${puzzleHTML}
 
       ${exampleHTML}
-      
+
       ${consoleHTML}
 
       ${extraHTML}
@@ -1169,20 +1306,18 @@ function copyright_HTML()
 
 
 
-function loadMainJS()
+function loadMainJS_BG_Parallax()
 {
   //  FROM: Massively by HTML5 UP
 	//  html5up.net | @ajlkn
 
   (function($) {
 
-    var	$window = $(window),
+    let	$window = $(window),
       $body = $('body'),
       $wrapper = $('#wrapper'),
       $header = $('#header'),
-      $nav = $('#nav'),
-      $main = $('#main'),
-      $navPanelToggle, $navPanel, $navPanelInner;
+      $main = $('#main');
   
     // Breakpoints.
       breakpoints({
@@ -1293,6 +1428,99 @@ function loadMainJS()
     // Background.
       $wrapper._parallax(0.925);
   
+        // Change toggle styling once we've scrolled past the header.
+          $header.scrollex({
+            bottom: '5vh',
+            enter: function() {
+              $navPanelToggle.removeClass('alt');
+            },
+            leave: function() {
+              $navPanelToggle.addClass('alt');
+            }
+          });
+  
+    // Intro.
+      var $intro = $('#intro');
+  
+      if ($intro.length > 0) {
+  
+        // Hack: Fix flex min-height on IE.
+          if (browser.name == 'ie') {
+            $window.on('resize.ie-intro-fix', function() {
+  
+              var h = $intro.height();
+  
+              if (h > $window.height())
+                $intro.css('height', 'auto');
+              else
+                $intro.css('height', h);
+  
+            }).trigger('resize.ie-intro-fix');
+          }
+  
+        // Hide intro on scroll (> small).
+          breakpoints.on('>small', function() {
+  
+            $main.unscrollex();
+  
+            $main.scrollex({
+              mode: 'bottom',
+              top: '25vh',
+              bottom: '-50vh',
+              enter: function() {
+                $intro.addClass('hidden');
+              },
+              leave: function() {
+                $intro.removeClass('hidden');
+              }
+            });
+  
+          });
+  
+        // Hide intro on scroll (<= small).
+          breakpoints.on('<=small', function() {
+  
+            $main.unscrollex();
+  
+            $main.scrollex({
+              mode: 'middle',
+              top: '15vh',
+              bottom: '-15vh',
+              enter: function() {
+                $intro.addClass('hidden');
+              },
+              leave: function() {
+                $intro.removeClass('hidden');
+              }
+            });
+  
+        });
+  
+      }
+  
+  })(jQuery);
+} //  END loadMainJS1
+
+
+
+
+
+
+
+
+function loadMainJS_navPanel()  //  MENU part
+{
+  //  FROM: Massively by HTML5 UP
+	//  html5up.net | @ajlkn
+
+  (function($) {
+
+    let $body = $('body'),
+      $wrapper = $('#wrapper'),
+      $header = $('#header'),
+      $nav = $('#nav'),
+      $navPanelToggle, $navPanel, $navPanelInner;
+  
     // Nav Panel.
   
       // Toggle.
@@ -1368,64 +1596,9 @@ function loadMainJS()
             $navPanel
               .css('transition', 'none');
   
-    // Intro.
-      var $intro = $('#intro');
-  
-      if ($intro.length > 0) {
-  
-        // Hack: Fix flex min-height on IE.
-          if (browser.name == 'ie') {
-            $window.on('resize.ie-intro-fix', function() {
-  
-              var h = $intro.height();
-  
-              if (h > $window.height())
-                $intro.css('height', 'auto');
-              else
-                $intro.css('height', h);
-  
-            }).trigger('resize.ie-intro-fix');
-          }
-  
-        // Hide intro on scroll (> small).
-          breakpoints.on('>small', function() {
-  
-            $main.unscrollex();
-  
-            $main.scrollex({
-              mode: 'bottom',
-              top: '25vh',
-              bottom: '-50vh',
-              enter: function() {
-                $intro.addClass('hidden');
-              },
-              leave: function() {
-                $intro.removeClass('hidden');
-              }
-            });
-  
-          });
-  
-        // Hide intro on scroll (<= small).
-          breakpoints.on('<=small', function() {
-  
-            $main.unscrollex();
-  
-            $main.scrollex({
-              mode: 'middle',
-              top: '15vh',
-              bottom: '-15vh',
-              enter: function() {
-                $intro.addClass('hidden');
-              },
-              leave: function() {
-                $intro.removeClass('hidden');
-              }
-            });
-  
-        });
-  
-      }
-  
   })(jQuery);
-}
+} //  END loadMainJS2
+
+
+
+
