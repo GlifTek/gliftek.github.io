@@ -1140,17 +1140,16 @@
             "intro": "",
     
             "plugins": [
-                "CSG_Boolean",
-                "CSG_Boolean2"
+                "CSG_Boolean"
             ],
 
             "CSG_Boolean": {
 
                 "pluginWidth": "25rem","exampleWidth": "30rem",  "consoleWidth": "22rem", "extraWidth": "85%",
 
-                "puzzleText": "executes a boolean operation between two objects, returning the resulting geometry as a new object. Operation modes available are: Union, Subtract, and Intersect.",
+                "puzzleText": "executes a boolean operation between two objects, returning the resulting geometry as a new object.",
 
-                "exampleText": "creates a boolean operation between two objects, returning the resulting geometry as a new object. Operation modes available are: Union, Subtract, and Intersect.",
+                "exampleText": "Operation modes available are: Union, Subtract, and Intersect.",
     
                 "consoleText": "",
     
@@ -1159,21 +1158,7 @@
                 "customHTML": ""
             },
 
-            "CSG_Boolean2": {
-    
-                "pluginWidth": "30rem","exampleWidth": "30rem",
-
-                "puzzleText": "creates a boolean operation between two objects, returning the resulting geometry as a new object. Operation modes available are: Union, Subtract, and Intersect.",
-    
-                "exampleText": "___",
-    
-                "consoleText": "",
-    
-                "extraText": "",
-
-                "customHTML": ""
-            }
-        },
+            
 
 
         "pluginTemplate": {
