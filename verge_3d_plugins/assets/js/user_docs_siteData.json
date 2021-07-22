@@ -1141,7 +1141,7 @@
     
             "plugins": [
                 "CSG_Boolean",
-                "puzzle"
+                "CSG_Boolean2"
                 
             ],
 
@@ -1160,7 +1160,7 @@
                 "customHTML": ""
             },
             
-            "puzzle": {
+            "CSG_Boolean2": {
     
                 "pluginWidth": "30rem","exampleWidth": "30rem",
 
