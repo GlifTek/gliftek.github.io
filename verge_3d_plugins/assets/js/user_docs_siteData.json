@@ -24,6 +24,7 @@
             "lens_flare_deluxe",            
             "world",
             "csg",
+            "import_export",
             "modal_window",
             "web_storage",
             "backgrounds",
@@ -1140,32 +1141,43 @@
             "intro": "",
     
             "plugins": [
-                "CSG_Boolean",
-                "CSG_Boolean2"
-                
+                "CSG_Boolean"
             ],
 
             "CSG_Boolean": {
 
                 "pluginWidth": "25rem","exampleWidth": "30rem",  "consoleWidth": "22rem", "extraWidth": "85%",
 
-                "puzzleText": "( Constructive Solid Geometry ) executes a boolean operation between two objects, returning the resulting geometry as a new object.",
+                "puzzleText": "executes a boolean operation between two objects, returning the resulting geometry as a new object.",
 
-                "exampleText": "Two objects intersected for a CSG Boolean operation:",
+                "exampleText": "Operation modes available are: Union, Subtract, and Intersect.",
     
                 "consoleText": "",
     
-                "extraText": "Operation modes available are: Union, Subtract, and Intersect.",
+                "extraText": " ",
 
                 "customHTML": ""
-            },
-            
-            "CSG_Boolean2": {
+            }
+        },
+
+
+        "import_export": {
+
+            "title": "",
+    
+            "intro": ": While Verge3D currently allows for importing GLTF and GLB file formats, one can use external applications to convert 3D files before importing to Verge3D.  However, certain cases demand the need for importing and exporting other 3D file formats within Verge3D-created apps.  This plugin allows for this.",
+    
+            "plugins": [
+                "Import_Export_3D_File"
+            ],
+    
+            "Import_Export_3D_File": {
     
                 "pluginWidth": "30rem","exampleWidth": "30rem",
 
-                "puzzleText": "___",
+                "puzzleText": "allows for the importing and exporting of different 3D file formats.<br />Available formats are: Wavefront (.obj), Stereo Lithography (.stl), Collada (.dae), Motion Capture (.bhv), .fbx, Lightwave3D (.lwo), Draco Compressed (.drc).",
     
+
                 "exampleText": "___",
     
                 "consoleText": "",
@@ -1175,8 +1187,6 @@
                 "customHTML": ""
             }
         },
-
-            
 
 
         "pluginTemplate": {
