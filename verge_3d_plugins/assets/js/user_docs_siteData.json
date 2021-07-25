@@ -1168,10 +1168,10 @@
             "intro": ": While Verge3D currently allows for importing GLTF and GLB file formats, one can use external applications to convert 3D files before importing to Verge3D.  However, certain cases demand the need for importing and exporting other 3D file formats within Verge3D-created apps.  This plugin allows for this.",
     
             "plugins": [
-                "Import_Export_3D_File"
+                "Import_Export_3d_File"
             ],
     
-            "Import_Export_3D_File": {
+            "Import_Export_3d_File": {
     
                 "pluginWidth": "30rem","exampleWidth": "30rem",
 
