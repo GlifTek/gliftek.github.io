@@ -200,12 +200,6 @@
 
 
 
-
-
-
-
-
-
         "utility": {
 
             "title": "utility",
@@ -397,9 +391,6 @@
 
 
 
-
-
-
         "bounding_boxes": {
 
             "title": "bounding_boxes",
@@ -419,9 +410,9 @@
 
                 "pluginWidth": "25rem","exampleWidth": "50%",
 
-                "puzzleText": "makes a new, completely unique copy of the given object and it's material.",
+                "puzzleText": "creates a virtual 'Box3' cube shaped boundary around an object used for determining intersections with others of it's type.",
 
-                "exampleText": "creates a virtual 'Box3' cube shaped boundary around an object used for determining intersections with others of it's type.  An optional bounding box helper object can be used for visualizing the box's dimensions for testing and debugging.",
+                "exampleText": "An optional bounding box helper object can be used for visualizing the box's dimensions for testing and debugging.",
 
                 "consoleText": "",
 
@@ -434,7 +425,7 @@
 
                 "pluginWidth": "25rem","exampleWidth": "50%",
 
-                "puzzleText": "makes a new, completely unique copy of the given object and it's material.",
+                "puzzleText": "This puzzle is needed to .",
 
                 "exampleText": "This puzzle allows users to make copies of objects, and customize the materials and textures independent of their source object.",
 
@@ -506,10 +497,6 @@
             }
 
         },
-
-
-
-
 
 
 
@@ -673,7 +660,7 @@
 
             "title": "objects",
     
-            "intro": "",
+            "intro": ": cloning objects in Verge3D is avaliable using the clone puzzle.  However, creating deep copies of objects and their corresponding materials and textures has not been available as an option.  These pluigns allow for detailed reproductions of individual objects or groups of objects, each with unique properties.",
     
             "plugins": [
                 "Copy_Objects",
