@@ -50,9 +50,9 @@
             "intro": "<p font-size='3rem'>[ GLIFTEK ] Plugin Packs are collections of convenient visual coding puzzles for the<a href='https://soft8soft.com' target='_blank' rel='noreferrer noopener'> Verge 3D</a> web graphics authoring application.</br />  Featured here are the following:",
 
             "plugins": [
-                "Bounding_Boxes",
-                "Helpers",
-                "Objects"
+                "bounding_boxes",
+                "helpers",
+                "objects"
             ],
 
             "Bounding_Boxes": {
