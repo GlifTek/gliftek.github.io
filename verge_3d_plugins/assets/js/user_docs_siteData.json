@@ -61,7 +61,7 @@
 
                 "puzzleText": "consists of the puzzles<br />'Create Bounding Box', 'Update Bounding Box', 'Bounding Box Collision Sensor', 'Get Bounding Box',<br /> 'Get Bounding Box Collision State', & 'Get Touching Object'. ",
 
-                "exampleText": "",
+                "exampleText": "is a collection of puzzles that create 'helper' objects for visualizing position, size and orientation.",
 
                 "consoleText": "",
 
