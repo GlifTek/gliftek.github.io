@@ -61,7 +61,8 @@
 
                 "puzzleText": "consists of the puzzles<br />'Create Bounding Box', 'Update Bounding Box', 'Bounding Box Collision Sensor', 'Get Bounding Box',<br /> 'Get Bounding Box Collision State', & 'Get Touching Object'. ",
 
-                "exampleText": "is a collection of puzzles that create 'helper' objects for visualizing position, size and orientation.",
+                "exampleText": "The [ BOUNDING BOXES ] Plugin Pack is a suite of plugins that allow for determining individual object intersections with other objects. This is useful for triggering events based off of 3D object collisions.",
+
 
                 "consoleText": "",
 
@@ -395,7 +396,7 @@
 
             "title": "bounding_boxes",
 
-            "intro": "The [ BOUNDING BOXES ] Plugin Pack is a",
+            "intro": "The [ BOUNDING BOXES ] Plugin Pack is a suite of plugins that allow for determining individual object intersections with other objects. This is useful for triggering events based off of 3D object collisions.",
 
             "plugins": [
                 "Create_Bounding_Box",
