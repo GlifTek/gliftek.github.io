@@ -55,7 +55,7 @@
                 "objects"
             ],
 
-            "Bounding_Boxes": {
+            "bounding_boxes": {
 
                 "pluginWidth": "100%","exampleWidth": "30rem",
 
@@ -72,7 +72,7 @@
                 "customHTML": ""
             },
 
-            "Helpers": {
+            "helpers": {
 
                 "pluginWidth": "100%","exampleWidth": "30rem",
 
@@ -89,7 +89,7 @@
                 "customHTML": ""
             },
 
-            "Objects": {
+            "objects": {
 
                 "pluginWidth": "100%","exampleWidth": "30rem",
 
