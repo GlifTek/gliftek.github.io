@@ -96,7 +96,7 @@
 
                 "puzzleText": "consists of the puzzles:<br />'Copy Object And Material', 'Copy Material', 'Rename Object', 'Rename Material', 'Create Group', & 'Get Parent'.",
 
-                "exampleText": "",
+                "exampleText": "cloning objects in Verge3D is avaliable using the clone puzzle.  However, creating deep copies of objects and their corresponding materials and textures has not been available as an option.  These pluigns allow for detailed reproductions of individual objects or groups of objects, each with unique properties.",
 
                 "consoleText": "",
 
