@@ -109,6 +109,12 @@
         },
 
 
+
+
+
+
+
+
         "helpers": {
 
             "title": "helpers",
@@ -426,9 +432,9 @@
 
                 "pluginWidth": "25rem","exampleWidth": "50%",
 
-                "puzzleText": "This puzzle is needed to .",
+                "puzzleText": "This puzzle is required for updating any object's bounding boxes to be succinct with the Scene's changing state.",
 
-                "exampleText": "This puzzle allows users to make copies of objects, and customize the materials and textures independent of their source object.",
+                "exampleText": "",
 
                 "consoleText": "",
 
