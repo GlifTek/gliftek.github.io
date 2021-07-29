@@ -50,19 +50,18 @@
             "intro": "<p font-size='3rem'>[ GLIFTEK ] Plugin Packs are collections of convenient visual coding puzzles for the<a href='https://soft8soft.com' target='_blank' rel='noreferrer noopener'> Verge 3D</a> web graphics authoring application.</br />  Featured here are the following:",
 
             "plugins": [
-                "bounding_boxes",
-                "helpers",
-                "objects"
+                "Bounding_Boxes",
+                "Helpers",
+                "Objects"
             ],
 
-            "bounding_boxes": {
+            "Bounding_Boxes": {
 
                 "pluginWidth": "100%","exampleWidth": "30rem",
 
                 "puzzleText": "consists of the puzzles<br />'Create Bounding Box', 'Update Bounding Box', 'Bounding Box Collision Sensor', 'Get Bounding Box',<br /> 'Get Bounding Box Collision State', & 'Get Touching Object'. ",
 
-                "exampleText": "The [ BOUNDING BOXES ] Plugin Pack is a suite of plugins that allow for determining individual object intersections with other objects. This is useful for triggering events based off of 3D object collisions.",
-
+                "exampleText": "",
 
                 "consoleText": "",
 
@@ -73,13 +72,13 @@
                 "customHTML": ""
             },
 
-            "helpers": {
+            "Helpers": {
 
                 "pluginWidth": "100%","exampleWidth": "30rem",
 
                 "puzzleText": "consists of the puzzles:<br />'Grid Helper', 'Polar Grid Helper', 'Arrow Helper', & 'Axes Helper'. ",
 
-                "exampleText": "is a collection of puzzles that create 'helper' objects for visualizing position, size and orientation.",
+                "exampleText": "",
 
                 "consoleText": "",
 
@@ -90,13 +89,13 @@
                 "customHTML": ""
             },
 
-            "objects": {
+            "Objects": {
 
                 "pluginWidth": "100%","exampleWidth": "30rem",
 
                 "puzzleText": "consists of the puzzles:<br />'Copy Object And Material', 'Copy Material', 'Rename Object', 'Rename Material', 'Create Group', & 'Get Parent'.",
 
-                "exampleText": "cloning objects in Verge3D is avaliable using the clone puzzle.  However, creating deep copies of objects and their corresponding materials and textures has not been available as an option.  These pluigns allow for detailed reproductions of individual objects or groups of objects, each with unique properties.",
+                "exampleText": "",
 
                 "consoleText": "",
 
@@ -107,12 +106,6 @@
                 "customHTML": ""
             }
         },
-
-
-
-
-
-
 
 
         "helpers": {
@@ -402,10 +395,10 @@
 
             "title": "bounding_boxes",
 
-            "intro": "The [ BOUNDING BOXES ] Plugin Pack is a suite of plugins that allow for determining individual object intersections with other objects. This is useful for triggering events based off of 3D object collisions.",
+            "intro": "The [ BOUNDING BOXES ] Plugin Pack is a",
 
             "plugins": [
-                "Create_Bounding_Box",
+                "Create_Bounding_Boxes",
                 "Update_Bounding_Box",
                 "Bounding_Box_Collision_Sensor",
                 "Get_Bounding_Box",
@@ -413,7 +406,7 @@
                 "Get_Touching_Object"
             ],
 
-            "Create_Bounding_Box": {
+            "Create_Bounding_Boxes": {
 
                 "pluginWidth": "25rem","exampleWidth": "50%",
 
@@ -432,9 +425,9 @@
 
                 "pluginWidth": "25rem","exampleWidth": "50%",
 
-                "puzzleText": "This puzzle is required for updating any object's bounding boxes to be succinct with the Scene's changing state.",
+                "puzzleText": "This puzzle is needed to .",
 
-                "exampleText": "",
+                "exampleText": "This puzzle allows users to make copies of objects, and customize the materials and textures independent of their source object.",
 
                 "consoleText": "",
 
