@@ -770,7 +770,7 @@
 
             "title": "modal_window",
     
-            "intro": "",
+            "intro": "creates a fully customizable pop-up window that can be filled with custom content, be it text, images, or video. Placement of window contents is controlled by a drop down menu.",
     
             "plugins": [
                 "Pop_Up_Modal",
@@ -785,7 +785,7 @@
     
                 "pluginWidth": "20rem","exampleWidth": "30rem",
 
-                "puzzleText": "___",
+                "puzzleText": "The opening and closing of the window can be animated via slide, zoom, or fade functions. The background of the window and / or entire background screen can be blurred, tinted or darkened for greater focus on the window and its contents.",
     
                 "exampleText": "___",
     
@@ -800,7 +800,7 @@
     
                 "pluginWidth": "20rem","exampleWidth": "30rem",
 
-                "puzzleText": "___",
+                "puzzleText": "Text settings options are standard. Users can load external fonts if desired. The float settings allow for grouping text around images and or video.",
     
                 "exampleText": "___",
     
@@ -815,7 +815,7 @@
     
                 "pluginWidth": "20rem","exampleWidth": "30rem",
 
-                "puzzleText": "___",
+                "puzzleText": "The media puzzle provides input of images and video. For video, mp4 format is recommended. Settings for video include video controls, loop video, play on start.",
     
                 "exampleText": "___",
     
@@ -830,7 +830,7 @@
     
                 "pluginWidth": "20rem","exampleWidth": "30rem",
 
-                "puzzleText": "___",
+                "puzzleText": "The animation settings plugin provides input for customizing opening and closing animations. Options include slide in/out, zoom in/out, fade in/out. Timing of the animation and animation tweening settings are available.",
     
                 "exampleText": "___",
     
