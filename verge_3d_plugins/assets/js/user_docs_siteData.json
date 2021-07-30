@@ -858,7 +858,7 @@
 
             "Get_Modal_Status": {
     
-                "pluginWidth": "30rem","exampleWidth": "30rem",
+                "pluginWidth": "25rem","exampleWidth": "30rem",
 
                 "puzzleText": "returns true if modal is open, false if closed, given a modal id.",
     
