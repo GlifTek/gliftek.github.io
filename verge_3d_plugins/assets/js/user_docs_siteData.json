@@ -925,7 +925,7 @@
 
             "Load_From_Web_Storage": {
     
-                "pluginWidth": "25rem","exampleWidth": "30rem",
+                "pluginWidth": "22rem","exampleWidth": "30rem",
 
                 "puzzleText": "Returns the value of an object key / value pair stored in a user designated dataStore in a user designated database, given an existing key.",
     
