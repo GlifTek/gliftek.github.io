@@ -895,7 +895,7 @@
     
             "Configure_Web_Storage": {
     
-                "pluginWidth": "30rem","exampleWidth": "30rem",
+                "pluginWidth": "25rem","exampleWidth": "30rem",
 
                 "puzzleText": "Used to initialize the web storage driver type, database name, database size, and description.  NOTE: This puzzle is neccessary to place before any other 'Web Storage' puzzles.",
     
@@ -910,7 +910,7 @@
 
             "Save_To_Web_Storage": {
     
-                "pluginWidth": "30rem","exampleWidth": "30rem",
+                "pluginWidth": "25rem","exampleWidth": "30rem",
 
                 "puzzleText": "Saves given data to an object key / value pair. Data is saved to a user designated dataStore in a user designated database.",
     
@@ -925,7 +925,7 @@
 
             "Load_From_Web_Storage": {
     
-                "pluginWidth": "30rem","exampleWidth": "30rem",
+                "pluginWidth": "25rem","exampleWidth": "30rem",
 
                 "puzzleText": "Returns the value of an object key / value pair stored in a user designated dataStore in a user designated database, given an existing key.",
     
@@ -940,7 +940,7 @@
 
             "Get_All_Keys_Of_DataStore": {
     
-                "pluginWidth": "30rem","exampleWidth": "30rem",
+                "pluginWidth": "25rem","exampleWidth": "30rem",
 
                 "puzzleText": "Returns all keys from a user designated dataStore in a user designated database, given an existing dataStore.",
     
@@ -955,7 +955,7 @@
 
             "Get_Length_Of_DataStore": {
     
-                "pluginWidth": "30rem","exampleWidth": "30rem",
+                "pluginWidth": "25rem","exampleWidth": "30rem",
 
                 "puzzleText": "Returns the numerical amount of keys in a user designated dataStore in a user designated database, given an existing dataStore.",
     
@@ -970,7 +970,7 @@
 
             "Iterate_Through_DataStore": {
     
-                "pluginWidth": "30rem","exampleWidth": "30rem",
+                "pluginWidth": "25rem","exampleWidth": "30rem",
 
                 "puzzleText": "Iterates through keys in a user designated dataStore in a user designated database, given an existing dataStore.",
     
@@ -985,7 +985,7 @@
 
             "Clear_Database": {
     
-                "pluginWidth": "30rem","exampleWidth": "30rem",
+                "pluginWidth": "25rem","exampleWidth": "30rem",
 
                 "puzzleText": "Clears all data in a user designated database.",
     
@@ -1000,7 +1000,7 @@
 
             "Delete_Key": {
     
-                "pluginWidth": "30rem","exampleWidth": "30rem",
+                "pluginWidth": "25rem","exampleWidth": "30rem",
 
                 "puzzleText": "Removes a designated key / value pair from a user designated dataStore.",
     
@@ -1015,7 +1015,7 @@
 
             "Delete_DataStore": {
     
-                "pluginWidth": "30rem","exampleWidth": "30rem",
+                "pluginWidth": "25rem","exampleWidth": "30rem",
 
                 "puzzleText": "Removes a designated dataStore from a user designated dataStore in a user designated database.",
     
@@ -1030,7 +1030,7 @@
 
             "Delete_Database": {
     
-                "pluginWidth": "30rem","exampleWidth": "30rem",
+                "pluginWidth": "25rem","exampleWidth": "30rem",
 
                 "puzzleText": "Deletes a designated database, given am existing database.",
     
