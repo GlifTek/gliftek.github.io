@@ -912,7 +912,7 @@
     
                 "pluginWidth": "30rem","exampleWidth": "30rem",
 
-                "puzzleText": "___",
+                "puzzleText": "Saves given data to an object key / value pair. Data is saved to a user designated dataStore in a user designated database.",
     
                 "exampleText": "___",
     
@@ -927,7 +927,7 @@
     
                 "pluginWidth": "30rem","exampleWidth": "30rem",
 
-                "puzzleText": "___",
+                "puzzleText": "Returns the value of an object key / value pair stored in a user designated dataStore in a user designated database, given an existing key.",
     
                 "exampleText": "___",
     
@@ -942,7 +942,7 @@
     
                 "pluginWidth": "30rem","exampleWidth": "30rem",
 
-                "puzzleText": "___",
+                "puzzleText": "Returns all keys from a user designated dataStore in a user designated database, given an existing dataStore.",
     
                 "exampleText": "___",
     
@@ -957,7 +957,7 @@
     
                 "pluginWidth": "30rem","exampleWidth": "30rem",
 
-                "puzzleText": "___",
+                "puzzleText": "Returns the numerical amount of keys in a user designated dataStore in a user designated database, given an existing dataStore.",
     
                 "exampleText": "___",
     
@@ -972,7 +972,7 @@
     
                 "pluginWidth": "30rem","exampleWidth": "30rem",
 
-                "puzzleText": "___",
+                "puzzleText": "Iterates through keys in a user designated dataStore in a user designated database, given an existing dataStore.",
     
                 "exampleText": "___",
     
@@ -987,7 +987,7 @@
     
                 "pluginWidth": "30rem","exampleWidth": "30rem",
 
-                "puzzleText": "___",
+                "puzzleText": "Clears all data in a user designated database.",
     
                 "exampleText": "___",
     
@@ -1002,7 +1002,7 @@
     
                 "pluginWidth": "30rem","exampleWidth": "30rem",
 
-                "puzzleText": "___",
+                "puzzleText": "Removes a designated key / value pair from a user designated dataStore.",
     
                 "exampleText": "___",
     
@@ -1017,7 +1017,7 @@
     
                 "pluginWidth": "30rem","exampleWidth": "30rem",
 
-                "puzzleText": "___",
+                "puzzleText": "Removes a designated dataStore from a user designated dataStore in a user designated database.",
     
                 "exampleText": "___",
     
@@ -1032,7 +1032,7 @@
     
                 "pluginWidth": "30rem","exampleWidth": "30rem",
 
-                "puzzleText": "___",
+                "puzzleText": "Deletes a designated database, given am existing database.",
     
                 "exampleText": "___",
     
