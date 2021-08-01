@@ -1061,7 +1061,7 @@
     
             "Generate_Sky": {
     
-                "pluginWidth": "30rem","exampleWidth": "30rem",
+                "pluginWidth": "23rem","exampleWidth": "30rem",
 
                 "puzzleText": "Makes an Sky object to simulate a sunlit or moonlit atmosphere.",
     
@@ -1076,7 +1076,7 @@
 
             "Generate_Sun_Light": {
     
-                "pluginWidth": "30rem","exampleWidth": "30rem",
+                "pluginWidth": "23rem","exampleWidth": "30rem",
 
                 "puzzleText": "Makes a physically correct 'Sun' light. This can be used with in the Generate Sky, Generate Terrain, and Generate Ocean plugins.",
     
@@ -1091,7 +1091,7 @@
 
             "Generate_Ocean": {
     
-                "pluginWidth": "30rem","exampleWidth": "30rem",
+                "pluginWidth": "23rem","exampleWidth": "30rem",
 
                 "puzzleText": "Generates a water object for use with landscapes.",
     
@@ -1106,7 +1106,7 @@
 
             "Generate_Terrain": {
     
-                "pluginWidth": "30rem","exampleWidth": "30rem",
+                "pluginWidth": "23rem","exampleWidth": "30rem",
 
                 "puzzleText": "Generates a terrain object for use with landscapes.",
     
