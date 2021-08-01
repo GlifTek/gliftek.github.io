@@ -701,7 +701,7 @@ function set_ModalFunction(imgName)
 function title_HTML()
 {
     let titleTag = document.getElementById('titleTag');
-    titleTag.innerHTML = `GLIFTEK [ ${pluginPack_title_UpperCase} ] Plugin Pack User Documentation`;
+    titleTag.innerHTML = `GLIFTEK [ ${pluginPack_title_UpperCase} ] Plugin Pack Plugin Instructions`;
 };
 
 
