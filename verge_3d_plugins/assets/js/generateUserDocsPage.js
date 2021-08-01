@@ -956,7 +956,7 @@ function set_intro_HTML()
   else if ( page !== 'featured' )
   {    
     pluginNameandIntro = `The [ ${pluginPack_title_UpperCase} ] Plugin Pack ${pluginPack.intro}`;
-    userDocumentationOrNot = 'User Documentation';
+    userDocumentationOrNot = 'Plugin Instructions';
   }
 
 
