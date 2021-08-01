@@ -1133,7 +1133,7 @@
 
             "CSG_Boolean": {
 
-                "pluginWidth": "25rem","exampleWidth": "30rem",  "consoleWidth": "22rem", "extraWidth": "85%",
+                "pluginWidth": "23rem","exampleWidth": "25rem",  "consoleWidth": "22rem", "extraWidth": "85%",
 
                 "puzzleText": "executes a boolean operation between two objects, returning the resulting geometry as a new object.",
 
@@ -1160,7 +1160,7 @@
     
             "Import_Export_3D_File": {
     
-                "pluginWidth": "30rem","exampleWidth": "30rem",
+                "pluginWidth": "25rem","exampleWidth": "25rem",
 
                 "puzzleText": "allows for the importing and exporting of different 3D file formats.<br />Available formats are: Wavefront (.obj), Stereo Lithography (.stl), Collada (.dae), Motion Capture (.bhv), .fbx, Lightwave3D (.lwo), Draco Compressed (.drc).",
     
