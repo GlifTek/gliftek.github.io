@@ -1036,7 +1036,7 @@ function set_intro_HTML()
     framespacing = "0"
     allowfullscreen = "true"
     style='display: block;
-    width: 95%;
+    width: 100%;
     height: 300px;
     text-align: center;'>
     </iframe>`;
