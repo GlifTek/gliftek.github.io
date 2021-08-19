@@ -275,6 +275,51 @@ function setstyleVar()
   }
 
 
+
+
+  #v3d-container {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+}
+
+.fullscreen-button {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    background-size: 100% 100%;
+    display: none;
+    z-index: 1;
+}
+
+.fullscreen-open {
+    background-image: url('media/fullscreen_open.svg');
+}
+
+.fullscreen-close {
+    background-image: url('media/fullscreen_close.svg');
+}
+
+/* removes tap blinking on ios devices */
+* { -webkit-tap-highlight-color:rgba(0,0,0,0); }
+
+/* Dark Theme */
+
+.v3d-simple-preloader-background {
+    background-color: #181818;
+}
+
+.v3d-simple-preloader-container {
+    filter: drop-shadow(0px 0px 4px #2a69bd);
+}
+
+
+
   `
   return result;
 }
@@ -349,7 +394,6 @@ function make_site_HTML()
   footer_HTML();
 
   copyright_HTML();
-
 
   loadMainJS_navPanel();
 
@@ -701,7 +745,7 @@ function set_ModalFunction(imgName)
 function title_HTML()
 {
     let titleTag = document.getElementById('titleTag');
-    titleTag.innerHTML = `GLIFTEK [ ${pluginPack_title_UpperCase} ] Plugin Pack Plugin Instructions`;
+    titleTag.innerHTML = `GLIFTEK [ ${pluginPack_title_UpperCase} ] Plugin Pack User Documentation`;
 };
 
 
@@ -919,14 +963,8 @@ function set_nav_HTML()
 
 function intro_HTML()
 {
-  // let intro_HTML_Var = set_intro_HTML();
-  // let intro_HTML_Div = document.createElement('div');
-  // intro_HTML_Div.id = 'intro_HTML_Div';   
-  // intro_HTML_Div.innerHTML = intro_HTML_Var;
-
   let introDiv = document.getElementById('introDiv');
   introDiv.innerHTML = set_intro_HTML();
-  // introDiv.appendChild( intro_HTML_Div );
 }
 
 function set_intro_HTML()
@@ -956,26 +994,78 @@ function set_intro_HTML()
   else if ( page !== 'featured' )
   {    
     pluginNameandIntro = `The [ ${pluginPack_title_UpperCase} ] Plugin Pack ${pluginPack.intro}`;
-    userDocumentationOrNot = 'Plugin Instructions';
+    userDocumentationOrNot = 'User Documentation';
   }
 
 
 
-  let result =
-  `<header class="major" style='font-style: italic'>
-  <span class="date">${userDocumentationOrNot}</span>
-  ${pluginNameandIntro}
-  </header>
-  <hr>
-  <div style='text-align: left; font-style: italic' >
-    <ul id = 'pageContentsList' >  
-    ${tableOfContents.join('')}
-    </ul>
-  </div>`;
+  let
+  demo;
 
-  return result;
-}
+  let
+  iframeSrc,
+  iframeSrcURI,
+  pluginFolder,
+  pluginAddress,
+  pluginAddress2;
 
+  if ( pluginPack.demo !== true )
+  {
+    demo = '';
+  }
+
+  else if ( pluginPack.demo == true )
+  {
+   
+
+    pluginFolder = `GLIFTEK_Plugins_${pluginPack.title}`;
+    console.log('pluginFolder:',pluginFolder);
+
+    pluginAddress = `./assets/demos/${pluginFolder}/`;
+    console.log('pluginAddress:',pluginAddress);
+
+    pluginAddress2 = `./assets/demos/${pluginFolder}/${pluginFolder}.html`;
+    console.log('pluginAddress2:',pluginAddress2);
+
+
+    demo = 
+    `<iframe src = "${pluginAddress2}"
+    scrolling = "no"
+    border = "0"
+    frameborder = "0"
+    framespacing = "0"
+    allowfullscreen = "true"
+    style='display: block;
+    width: 95%;
+    height: 300px;
+    text-align: center;'>
+    </iframe>`;
+
+    console.log('demo:',demo);
+
+    // max-width: 700px;
+
+  };
+
+    let result =
+    `<header class="major" style='font-style: italic'>
+    <span class="date">${userDocumentationOrNot}</span>
+    ${pluginNameandIntro}
+    </header>  
+    <div id='verge3d_iframe_Div' style='display: block; float: center; text-align: center'>
+    ${demo}
+    </div>
+    <hr>
+    <div style='text-align: left; font-style: italic' >
+      <ul id = 'pageContentsList' >  
+      ${tableOfContents.join('')}
+      </ul>
+    </div>`;
+
+    return result;
+
+
+};
 
 
 
