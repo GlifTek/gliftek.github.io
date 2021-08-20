@@ -1,8 +1,13 @@
 <xml xmlns="http://www.w3.org/1999/xhtml">
-  <tab name="init" type="InitTab" active="false" scrollx="715" scrolly="349.5" scale="0.9"></tab>
-  <tab name="main" type="MainTab" active="true" scrollx="620.27197265625" scrolly="164.7796401977539" scale="0.3">
-    <block xmlns="https://developers.google.com/blockly/xml" type="procedures_callnoreturn" id="6p[@*A~[j#+qNk+[q(=S" x="-690" y="-370">
+  <tab name="init" type="InitTab" active="false" scrollx="581" scrolly="349.5" scale="0.9"></tab>
+  <tab name="main" type="MainTab" active="true" scrollx="244.04506874098433" scrolly="403.47210693359375" scale="0.7655186873167403">
+    <block xmlns="https://developers.google.com/blockly/xml" type="procedures_callnoreturn" id="6p[@*A~[j#+qNk+[q(=S" x="-690" y="-470">
       <mutation name="MAIN"/>
+      <next>
+        <block type="procedures_callnoreturn" id="$mBu3HRgynRq`aGH32c)">
+          <mutation name="CAMERA"/>
+        </block>
+      </next>
     </block>
     <block xmlns="https://developers.google.com/blockly/xml" type="procedures_defnoreturn" id="nvQ]-jVZ*6c3+.{6+vTD" x="-690" y="-330">
       <field name="NAME">MAIN</field>
@@ -147,6 +152,199 @@
                       <field name="TEXT">skySun</field>
                     </shadow>
                   </value>
+                </block>
+              </next>
+            </block>
+          </next>
+        </block>
+      </statement>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="procedures_defnoreturn" id="ij;wW{h31k=s8XCEjT{{" x="-190" y="-330">
+      <field name="NAME">CAMERA</field>
+      <comment pinned="false" h="80" w="160">Describe this function...</comment>
+      <statement name="STACK">
+        <block type="whenMoved" id="MCu3`Q:/M?T|fM%7Z#B6" collapsed="true" disabled="true">
+          <value name="OBJECT">
+            <shadow type="objectList" id="E5j1,7izHD2u%5fuz;2C">
+              <field name="FIELDNAME">Camera</field>
+            </shadow>
+          </value>
+          <value name="DELTA">
+            <shadow type="math_number" id="%`5G5@^KFHRc-41|0#v7">
+              <field name="NUM">0.01</field>
+            </shadow>
+          </value>
+          <statement name="DO_MOVE">
+            <block type="console.log" id="^F9l?b66wNgM$Fm;?.?A">
+              <value name="VALUE">
+                <shadow type="text" id="XkKX!_vm,ws34nK/b*sB">
+                  <field name="TEXT">CAM DIR: </field>
+                </shadow>
+              </value>
+              <next>
+                <block type="console.log" id=")i`Jm@YsGNwT$F]]#[#(">
+                  <value name="VALUE">
+                    <shadow type="text" id="9U/[jR_7|wdHDaT{WgxF">
+                      <field name="TEXT">Hello, Verge!</field>
+                    </shadow>
+                    <block type="getCameraDirection" id="$y]Zw#yE#V3UUw8~nSAs">
+                      <field name="MOUSE_TOUCH">FALSE</field>
+                      <field name="INVERTED">FALSE</field>
+                    </block>
+                  </value>
+                  <next>
+                    <block type="console.log" id="!=x[q0EvOSkthqfOg6UJ">
+                      <value name="VALUE">
+                        <shadow type="text" id="!+^6x)/s~p[7_=Yf%rgs">
+                          <field name="TEXT">CAM POZ: </field>
+                        </shadow>
+                      </value>
+                      <next>
+                        <block type="console.log" id="5%1|};nR$]DZkOYP5=iE">
+                          <value name="VALUE">
+                            <shadow type="text" id="g`|m1kH_|Iir=-orAQOP">
+                              <field name="TEXT">Hello, Verge!</field>
+                            </shadow>
+                            <block type="getObjTransform" id="vXAyKsy-B@MrlV[W/Wd(">
+                              <field name="MODE">position</field>
+                              <field name="COORD">xyz</field>
+                              <value name="TARGETOBJ">
+                                <shadow type="objectList" id="D]TQOJ480+`n*@eSkEgL">
+                                  <field name="FIELDNAME">Camera</field>
+                                </shadow>
+                              </value>
+                            </block>
+                          </value>
+                        </block>
+                      </next>
+                    </block>
+                  </next>
+                </block>
+              </next>
+            </block>
+          </statement>
+          <next>
+            <block type="objConstraintAddLimit" id="rhK%]kn7xTI2n;@nkUcz">
+              <mutation xmlns="http://www.w3.org/1999/xhtml" mode="POS_X"></mutation>
+              <field name="MODE">POS_X</field>
+              <field name="DIST_LIMIT_MODE">LIMITDIST_ONSURFACE</field>
+              <value name="CONSTRAINT">
+                <shadow type="text" id=".j;j7Y)mRJb`/mw?on8f">
+                  <field name="TEXT">CamConstraintX</field>
+                </shadow>
+              </value>
+              <value name="TARGETOBJ">
+                <shadow type="objectList" id="+Ie{`o4BB!NGnL]t_:]v">
+                  <field name="FIELDNAME">Camera</field>
+                </shadow>
+              </value>
+              <value name="MIN">
+                <shadow type="math_number" id="*/{g1y1PKcUC{_8=YXcR">
+                  <field name="NUM">-1</field>
+                </shadow>
+                <block type="getObjTransform" id="cw`NrFuxcm-6Pk;i(PbI">
+                  <field name="MODE">position</field>
+                  <field name="COORD">x</field>
+                  <value name="TARGETOBJ">
+                    <shadow type="objectList" id="xD,]!V`W$YBPs_%Hd:7x">
+                      <field name="FIELDNAME">Camera</field>
+                    </shadow>
+                  </value>
+                </block>
+              </value>
+              <value name="MAX">
+                <shadow type="math_number" id="UQE;PAuQn96Jzy0c)]JI">
+                  <field name="NUM">1</field>
+                </shadow>
+                <block type="getObjTransform" id="CJY*)pdq4H7g6$4_e!.K">
+                  <field name="MODE">position</field>
+                  <field name="COORD">x</field>
+                  <value name="TARGETOBJ">
+                    <shadow type="objectList" id=":S4@IU$PN^k_Z@dIk}b:">
+                      <field name="FIELDNAME">Camera</field>
+                    </shadow>
+                  </value>
+                </block>
+              </value>
+              <next>
+                <block type="objConstraintAddLimit" id="0asLf=]P(+W7[=V@=$/U">
+                  <mutation xmlns="http://www.w3.org/1999/xhtml" mode="POS_Y"></mutation>
+                  <field name="MODE">POS_Y</field>
+                  <field name="DIST_LIMIT_MODE">LIMITDIST_ONSURFACE</field>
+                  <value name="CONSTRAINT">
+                    <shadow type="text" id="Q+kfX.lTQt/sfC*YpD{O">
+                      <field name="TEXT">CamConstraintY</field>
+                    </shadow>
+                  </value>
+                  <value name="TARGETOBJ">
+                    <shadow type="objectList" id="m9N{5v;b3-6tQAd/##`w">
+                      <field name="FIELDNAME">Camera</field>
+                    </shadow>
+                  </value>
+                  <value name="MIN">
+                    <shadow type="math_number" id="XXKx*Jl2a6fL=J/fPx}2">
+                      <field name="NUM">20</field>
+                    </shadow>
+                  </value>
+                  <value name="MAX">
+                    <shadow type="math_number" id=",O=^shmbch|/HGo$Wpf0">
+                      <field name="NUM">20</field>
+                    </shadow>
+                  </value>
+                  <next>
+                    <block type="objConstraintAddLimit" id="uXGX=%`FX%O8!~~qtD5m">
+                      <mutation xmlns="http://www.w3.org/1999/xhtml" mode="POS_Z"></mutation>
+                      <field name="MODE">POS_Z</field>
+                      <field name="DIST_LIMIT_MODE">LIMITDIST_ONSURFACE</field>
+                      <value name="CONSTRAINT">
+                        <shadow type="text" id="tgK6[l[T05$sFQ?:hOk`">
+                          <field name="TEXT">CamConstraintZ</field>
+                        </shadow>
+                      </value>
+                      <value name="TARGETOBJ">
+                        <shadow type="objectList" id="P3;ag-gI-BuwA$d3lYRy">
+                          <field name="FIELDNAME">Camera</field>
+                        </shadow>
+                      </value>
+                      <value name="MIN">
+                        <shadow type="math_number" id="O9X=u-YWa[#`mjZ+Jrmr">
+                          <field name="NUM">2</field>
+                        </shadow>
+                      </value>
+                      <value name="MAX">
+                        <shadow type="math_number" id="zf2?d6.bnT]%=$q~u#.e">
+                          <field name="NUM">30</field>
+                        </shadow>
+                      </value>
+                      <next>
+                        <block type="objConstraintAddLimit" id="QT;#s|I:0^bQ}LSdVRum" disabled="true">
+                          <mutation xmlns="http://www.w3.org/1999/xhtml" mode="ROT_X"></mutation>
+                          <field name="MODE">ROT_X</field>
+                          <field name="DIST_LIMIT_MODE">LIMITDIST_ONSURFACE</field>
+                          <value name="CONSTRAINT">
+                            <shadow type="text" id="+Jq,Y4~xg,akGxz,,.^W">
+                              <field name="TEXT">CamConstraintRotX</field>
+                            </shadow>
+                          </value>
+                          <value name="TARGETOBJ">
+                            <shadow type="objectList" id="(#s%)Rn5U3z`Wp|i4L8-">
+                              <field name="FIELDNAME">Camera</field>
+                            </shadow>
+                          </value>
+                          <value name="MIN">
+                            <shadow type="math_number" id="KkccI/{GrV%e!G7a#3s?">
+                              <field name="NUM">90</field>
+                            </shadow>
+                          </value>
+                          <value name="MAX">
+                            <shadow type="math_number" id="]a,b*Bpo[d`V7p[55BXz">
+                              <field name="NUM">90</field>
+                            </shadow>
+                          </value>
+                        </block>
+                      </next>
+                    </block>
+                  </next>
                 </block>
               </next>
             </block>
