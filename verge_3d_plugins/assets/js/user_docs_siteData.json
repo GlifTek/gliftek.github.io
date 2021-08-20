@@ -886,7 +886,7 @@
 
         "title": "Web_Storage",
 
-        "intro": "allows developers the option to save data to user device browser storage.  This is a prime tool for saving information off-line so that it may be used later.  Such types of data might be: product configuration progress, saved game progress, settings, databases, etc. ",
+        "intro": "allows developers the option to save data to user device browser storage.  This is a prime tool for saving information off-line so that it may be used later.  Such types of data might be: product configuration progress, saved game progress, settings, databases, etc.  In the demo below, drag objects around, save the key, drag around again, and then load key to revert to saved key. ",
 
         "demo": true,
 
