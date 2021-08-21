@@ -281,12 +281,12 @@ function setstyleVar()
     position: absolute;
     top: 0px;
     left: 0px;
-    width: 100%;
+    width: 95%;
     height: 100%;
 
     border-radius: 25px;
-    border: 2px solid #73AD21;
-    padding: 20px;
+    border: 2px solid white;
+    padding: 10px;
 }
 
 .fullscreen-button {
