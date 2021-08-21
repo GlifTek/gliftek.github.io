@@ -274,75 +274,9 @@ function setstyleVar()
 
   }
 
-
-
   `
   return result;
 }
-
-
-
-
-
-// #v3d-container {
-//   position: absolute;
-//   top: 0px;
-//   left: 0px;
-//   width: 95%;
-//   height: 100%;
-
-//   border-radius: 15px;
-//   border: 2px solid cyan;
-//   padding: 5px;
-// }
-
-// .fullscreen-button {
-//   position: absolute;
-//   top: 5px;
-//   right: 5px;
-//   width: 50px;
-//   height: 50px;
-//   cursor: pointer;
-//   background-size: 100% 100%;
-//   display: none;
-//   z-index: 1;
-// }
-
-// .fullscreen-open {
-//   background-image: url('media/fullscreen_open.svg');
-// }
-
-// .fullscreen-close {
-//   background-image: url('media/fullscreen_close.svg');
-// }
-
-// /* removes tap blinking on ios devices */
-// * { -webkit-tap-highlight-color:rgba(0,0,0,0); }
-
-// /* Dark Theme */
-
-// .v3d-simple-preloader-background {
-//   background-color: #181818;
-// }
-
-// .v3d-simple-preloader-container {
-//   filter: drop-shadow(0px 0px 4px #2a69bd);
-// }
-
-
-
-
-// @media screen and (max-width: 980px) {
-
-
-  // //   set pluginWidth_mobile size
-  // function pluginWidth_mobile_CSS()
-  // {
-  //   result = 
-  //   `
-  //   `;
-  // }
-
 
 
 
@@ -1025,8 +959,7 @@ function set_intro_HTML()
 
   else if ( pluginPack.demo == true )
   {
-   
-
+  
     pluginFolder = `GLIFTEK_Plugins_${pluginPack.title}`;
     console.log('pluginFolder:',pluginFolder);
 
@@ -1036,17 +969,8 @@ function set_intro_HTML()
     pluginAddress2 = `./assets/demos/${pluginFolder}/${pluginFolder}.html`;
     console.log('pluginAddress2:',pluginAddress2);
 
-    // demo = 
-    // `<iframe src = "${pluginAddress2}"
-    // scrolling = "no"
-    // border = "0"
-    // frameborder = "0"
-    // framespacing = "0"
-    // allowfullscreen = "true"
-    // style='width: 100%; height: 300px;'>
-    // </iframe>`;
 
-    demo = 
+     demo = 
     `<iframe src = "${pluginAddress2}"
     scrolling = "no"
     border = "0"
@@ -1056,12 +980,20 @@ function set_intro_HTML()
     style='display: block;
     width: 100%;
     height: 300px;
-    text-align: center;'>
+    text-align: center;
+
+    border-radius: 20px;
+    border: 2px solid white'>
     </iframe>`;
 
-    // console.log('demo:',demo);
+    // position: absolute;
+    // top: 0px;
+    // left: 0px;
+    // width: 98%;
+    // height: 96%;
 
-    // max-width: 700px;
+    // border-radius: 15px;
+    // border: 2px solid cyan    
 
   };
 
