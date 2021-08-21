@@ -983,7 +983,7 @@ function set_intro_HTML()
     text-align: center;
 
     border-radius: 20px;
-    border: 2px solid white'>
+    border: 2px solid cyan'>
     </iframe>`;
 
     // position: absolute;
