@@ -1,0 +1,2371 @@
+<xml xmlns="http://www.w3.org/1999/xhtml">
+  <tab name="init" type="InitTab" active="true" scrollx="108.00000000000114" scrolly="207.0000000000017" scale="0.9">
+    <block xmlns="https://developers.google.com/blockly/xml" type="initSettings" id="|~!+-,G9eUKp8Cm%BIJE" x="-70" y="-190">
+      <field name="LOAD_COMP_ASSETS">FALSE</field>
+      <field name="FULLSCREEN">TRUE</field>
+      <field name="BKG_TRANSPARENCY">TRUE</field>
+      <field name="PRESERVE_DRAW_BUF">FALSE</field>
+      <field name="FADE_ANNOTATIONS">TRUE</field>
+    </block>
+  </tab>
+  <tab name="main" type="MainTab" active="false" scrollx="1948.1767578125" scrolly="837.2200927734375" scale="0.7912092655287302">
+    <variables xmlns="https://developers.google.com/blockly/xml">
+      <variable id="nqO?]0xVguKq`L~-[R.J" type="">obj</variable>
+      <variable id="?6{;u}Ht@dCy/J7K~Tt7" type="">save_object</variable>
+      <variable id="uW$}yQh@+A7GAt~pE{Wt" type="">loaded_DICTIONARY</variable>
+      <variable id="OI55u2:w((7{$p[G]$0Z" type="">DICT_load_object</variable>
+      <variable id="YfhsJX_E[Iosau%86#mx" type="">current_color</variable>
+      <variable id="Z6fqxobup.9:B0P9@`9#" type="">current_object</variable>
+      <variable id="dGlLd/|QM*Nx?BamIUD$" type="">DICT_object_colors</variable>
+      <variable id="8gdbb^1f9d.zubg|Qp^_" type="">LIST_objects</variable>
+      <variable id="W`4atk8g]C1Ihq)!vN}P" type="">EXEC_TEXT_instructions</variable>
+      <variable id="D+rplXt9O;ORT%Y`Z0XW" type="">i</variable>
+      <variable id="/U=]vMuDi3Kz;bi$pQJR" type="">DICT_save_object</variable>
+      <variable id="mfo44SvBTDEILi7)Vtp#" type="">my_saved_key</variable>
+      <variable id="lRNWA%|UJ[{O0:::W[|Y" type="">DICT_save_all_objects</variable>
+      <variable id="-+CHX{4Cc4rb~3Wy;5}k" type="">m</variable>
+      <variable id="NcUiKrQXv#LFtXD3,#l}" type="">load_object</variable>
+      <variable id="p7U;1_1TIGTp[SZU8A#+" type="">next_color</variable>
+      <variable id="JU8ezYUE_ut.t+4F2pyZ" type="">length_of_CSV</variable>
+      <variable id="_b3MtHu.I*t.=s}Ny|ES" type="">LIST_keys_from_database</variable>
+      <variable id="G$u+E1+._AY8.{xawL6^" type="">LIST_colors</variable>
+      <variable id="P3q!|p^nAm+oSGW*fWwT" type="">LIST_hitboxes</variable>
+      <variable id="!%E4qfZS]00cr}rMK(3O" type="">my_database</variable>
+      <variable id="@cK+zRt,3lGrJU+C5)w8" type="">my_dataStore</variable>
+      <variable id="!a%hm_-Uv:/Mw9!%1~P*" type="">my_description</variable>
+      <variable id="?^5VLd[haZ/NHYR`|XM:" type="">DICT_save_object_POSITION</variable>
+      <variable id="=NDHSVYTD55I?Tejz]8O" type="">j</variable>
+      <variable id="^4$[G:4wvVgPry?Y6Ge*" type="">LIST_text_items</variable>
+      <variable id="cOTWf=QG6@lzdF4[t5*U" type="">selected_item</variable>
+      <variable id="p]tV`~b;N:omzUfD(pW9" type="">DICT_save_object_ROTATION</variable>
+      <variable id="fxh%KB@*N!};(xX9r1XA" type="">selected_object_Hitbox</variable>
+      <variable id=";b8qabP@t1=eZwyX6h_p" type="">DICT_save_object_SCALE</variable>
+      <variable id="}YOA0L5PStBxHBU(($6N" type="">LIST_text_colors</variable>
+      <variable id="anx5!tSvEN)9,8P?:b^p" type="">load_object_color</variable>
+      <variable id=")Ku8NsSXfKh27B.U@k|@" type="">load_object_material</variable>
+    </variables>
+    <block xmlns="https://developers.google.com/blockly/xml" type="procedures_callnoreturn" id="%KQ]%2/0o-(PsYpr9(Yq" x="-1350" y="-2010">
+      <mutation name="MAIN"/>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="procedures_defnoreturn" id="EB_+JLQb_b7xe7Xa9Yn;" x="-1350" y="-1950">
+      <field name="NAME">MAIN</field>
+      <comment pinned="false" h="80" w="160">Describe this function...</comment>
+      <statement name="STACK">
+        <block type="procedures_callnoreturn" id="n4xIr:(*tKD91E[.j]U;">
+          <mutation name="REMOVE CONTEXT MENU"/>
+          <next>
+            <block type="procedures_callnoreturn" id="c^FckAz:b!^2O@]r,zR`">
+              <mutation name="SET_INSTRUCTIONS"/>
+              <next>
+                <block type="procedures_callnoreturn" id="Y%rJ]H;}w,p2PGJF=W!L">
+                  <mutation name="SET_DATABASE_NAME_VARS"/>
+                  <next>
+                    <block type="procedures_callnoreturn" id="CicM[?~|7$[{/R[Pv1(0">
+                      <mutation name="SETUP_MENU"/>
+                      <next>
+                        <block type="procedures_callnoreturn" id=";7uKfi[N+U(wHz%]y?~5">
+                          <mutation name="SETUP_OBJECTS"/>
+                          <next>
+                            <block type="procedures_callnoreturn" id="Y~{b{74wm%v1T=os1Q5=">
+                              <mutation name="SET_CONSTRAINTS"/>
+                              <next>
+                                <block type="procedures_callnoreturn" id="t)Vr6XL}zG{3ytH_w|S0">
+                                  <mutation name="CONFIG_WEB_STORAGE"/>
+                                </block>
+                              </next>
+                            </block>
+                          </next>
+                        </block>
+                      </next>
+                    </block>
+                  </next>
+                </block>
+              </next>
+            </block>
+          </next>
+        </block>
+      </statement>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="procedures_defnoreturn" id="xL6]cQEW;?XH(D3ovHOR" x="-1350" y="-1710">
+      <field name="NAME">SETUP_OBJECTS</field>
+      <comment pinned="false" h="80" w="160">Describe this function...</comment>
+      <statement name="STACK">
+        <block type="procedures_callnoreturn" id="[0tS=A4jRS-q*D@$5%aI">
+          <mutation name="SET_DICT_OBJECT_COLORS"/>
+          <next>
+            <block type="procedures_callnoreturn" id="Ldi@tB2]ls)*eaUjOT[N">
+              <mutation name="DRAG_OBJECTS_LOOP"/>
+              <next>
+                <block type="procedures_callnoreturn" id="*+/l4%G{*lo^mqcR0aX[">
+                  <mutation name="HOVER_OBJECTS"/>
+                  <next>
+                    <block type="procedures_callnoreturn" id="_,lXDr+fKUl[lX%y0O*N">
+                      <mutation name="CLICK_OBJECTS"/>
+                    </block>
+                  </next>
+                </block>
+              </next>
+            </block>
+          </next>
+        </block>
+      </statement>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="procedures_defnoreturn" id="Y.m@-NIZvdh|9m4kgW4G" x="-890" y="-1690">
+      <field name="NAME">REMOVE CONTEXT MENU</field>
+      <comment pinned="false" h="80" w="160">Describe this function...</comment>
+      <statement name="STACK">
+        <block type="execScript" id="!EH7FA`:g!89}x]Xs{(i" collapsed="true">
+          <value name="TEXT">
+            <shadow type="textMultiline" id="cL@eH$wy@Xq|P]e]`QS*">
+              <field name="HIGHLIGHT_MODE">javascript</field>
+              <field name="TEXT">window.addEventListener("contextmenu", e =&gt; e.preventDefault());</field>
+            </shadow>
+          </value>
+        </block>
+      </statement>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="procedures_defnoreturn" id="ZdOWnm3td#^@}pYAq.=*" x="-1350" y="-1550">
+      <field name="NAME">SETUP_MENU</field>
+      <comment pinned="false" h="80" w="160">Describe this function...</comment>
+      <statement name="STACK">
+        <block type="procedures_callnoreturn" id="E/?Ho3cqIZ09dPd|]6EU">
+          <mutation name="SET_LISTS"/>
+          <next>
+            <block type="procedures_callnoreturn" id="zA^U/M0!%*JrX*Bts1iI">
+              <mutation name="HOVER_MENU_ITEMS"/>
+              <next>
+                <block type="procedures_callnoreturn" id="okP[[x)UG~o$`l/i$.-V">
+                  <mutation name="CLICK_MENU_ITEMS"/>
+                </block>
+              </next>
+            </block>
+          </next>
+        </block>
+      </statement>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="procedures_defnoreturn" id="9DG(MsNZBHj8,Bp$7Ded" x="-890" y="-1470">
+      <field name="NAME">SET_DICT_OBJECT_COLORS</field>
+      <comment pinned="false" h="80" w="160">Describe this function...</comment>
+      <statement name="STACK">
+        <block type="variables_set" id="ipwu*;dV70vvY]PWC2:z">
+          <field name="VAR" id="dGlLd/|QM*Nx?BamIUD$">DICT_object_colors</field>
+          <value name="VALUE">
+            <block type="dictCreateEmpty" id="1eTn`x+.$hv+LqNrGZFt"/>
+          </value>
+          <next>
+            <block type="dictSet" id="D(mE6gbuE_@0K()c{JG5">
+              <value name="DICT">
+                <block type="variables_get" id="}mTjeKN*U^_^E,(1,1;K">
+                  <field name="VAR" id="dGlLd/|QM*Nx?BamIUD$">DICT_object_colors</field>
+                </block>
+              </value>
+              <value name="KEY">
+                <shadow type="text" id="((d=_rMp+5%H[ykHx[%1">
+                  <field name="TEXT">Cube</field>
+                </shadow>
+              </value>
+              <value name="VALUE">
+                <block type="text" id="hSET~krnm/E5@pso/|G$">
+                  <field name="TEXT">red</field>
+                </block>
+              </value>
+              <next>
+                <block type="dictSet" id="VEtd4{oO:U;A[{?7zLn[">
+                  <value name="DICT">
+                    <block type="variables_get" id="k-fvSvf$bmR~0M4=d-{l">
+                      <field name="VAR" id="dGlLd/|QM*Nx?BamIUD$">DICT_object_colors</field>
+                    </block>
+                  </value>
+                  <value name="KEY">
+                    <shadow type="text" id="re2$Z^I7dbRX0Jbuca(Q">
+                      <field name="TEXT">Cone</field>
+                    </shadow>
+                  </value>
+                  <value name="VALUE">
+                    <block type="text" id="tR:shTE!pAX,~?]=zsxP">
+                      <field name="TEXT">green</field>
+                    </block>
+                  </value>
+                  <next>
+                    <block type="dictSet" id="ID:R(Zu2Io]Myu)rl9pZ">
+                      <value name="DICT">
+                        <block type="variables_get" id="u7jKa,a8PCb(rG)bpT4Q">
+                          <field name="VAR" id="dGlLd/|QM*Nx?BamIUD$">DICT_object_colors</field>
+                        </block>
+                      </value>
+                      <value name="KEY">
+                        <shadow type="text" id="c{]EIX_+C5ZRNP~ezT~j">
+                          <field name="TEXT">Torus</field>
+                        </shadow>
+                      </value>
+                      <value name="VALUE">
+                        <block type="text" id="fNJlOqY7kq2w5IVE@.q9">
+                          <field name="TEXT">blue</field>
+                        </block>
+                      </value>
+                    </block>
+                  </next>
+                </block>
+              </next>
+            </block>
+          </next>
+        </block>
+      </statement>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="procedures_defnoreturn" id=":k/WEc{(P#DDCpkK-G]}" x="-1570" y="-1370">
+      <field name="NAME">SET_LISTS</field>
+      <comment pinned="false" h="80" w="160">Describe this function...</comment>
+      <statement name="STACK">
+        <block type="variables_set" id="TBdc%|qKjv{5H[Ve*g-7">
+          <field name="VAR" id="8gdbb^1f9d.zubg|Qp^_">LIST_objects</field>
+          <value name="VALUE">
+            <block type="lists_create_with" id="+iOy;,JM8,;FvGy,.i`;">
+              <mutation items="3"/>
+              <value name="ADD0">
+                <block type="objectList" id="bpwFTF1`^$se,Sm)[/n1">
+                  <field name="FIELDNAME">Cube</field>
+                </block>
+              </value>
+              <value name="ADD1">
+                <block type="objectList" id="ygNsAR:@LBRnF?TF_a#/">
+                  <field name="FIELDNAME">Cone</field>
+                </block>
+              </value>
+              <value name="ADD2">
+                <block type="objectList" id="^-LL^8:v:=in*?B6MB,U">
+                  <field name="FIELDNAME">Torus</field>
+                </block>
+              </value>
+            </block>
+          </value>
+          <next>
+            <block type="variables_set" id="S:1?`|cK1r@9Q6akYljM">
+              <field name="VAR" id="G$u+E1+._AY8.{xawL6^">LIST_colors</field>
+              <value name="VALUE">
+                <block type="lists_create_with" id="r,G^Rdc-6KGfs?{x?YM;">
+                  <mutation items="3"/>
+                  <value name="ADD0">
+                    <block type="text" id="^1fPE{zqPVbtKxLzwC9V">
+                      <field name="TEXT">red</field>
+                    </block>
+                  </value>
+                  <value name="ADD1">
+                    <block type="text" id="7w#2)$V4,[ihyx=#JTT=">
+                      <field name="TEXT">green</field>
+                    </block>
+                  </value>
+                  <value name="ADD2">
+                    <block type="text" id="YW3zJ~r:J.8pfa#;0wnQ">
+                      <field name="TEXT">blue</field>
+                    </block>
+                  </value>
+                </block>
+              </value>
+              <next>
+                <block type="variables_set" id="!@0m=@|S.B6F1$k5y#+3" collapsed="true" disabled="true">
+                  <field name="VAR" id="^4$[G:4wvVgPry?Y6Ge*">LIST_text_items</field>
+                  <value name="VALUE">
+                    <block type="lists_create_with" id="jHBGeFFNF;~wqb_VIj-o">
+                      <mutation items="3"/>
+                      <value name="ADD0">
+                        <block type="text" id="M3I_M[tRI;.taukUu,kx">
+                          <field name="TEXT">SAVE_KEY</field>
+                        </block>
+                      </value>
+                      <value name="ADD1">
+                        <block type="text" id="17!^3gvBOI(GV*N(+eJc">
+                          <field name="TEXT">LOAD_KEY</field>
+                        </block>
+                      </value>
+                      <value name="ADD2">
+                        <block type="text" id="T4U0{2s18,(@I}j76aC+">
+                          <field name="TEXT">RESET_SCENE</field>
+                        </block>
+                      </value>
+                    </block>
+                  </value>
+                  <next>
+                    <block type="variables_set" id="-,D]l0Mk$-ieH|)tGaxW">
+                      <field name="VAR" id="^4$[G:4wvVgPry?Y6Ge*">LIST_text_items</field>
+                      <value name="VALUE">
+                        <block type="lists_create_with" id="DjH$US@CZME|C6`rj:4H">
+                          <mutation items="2"/>
+                          <value name="ADD0">
+                            <block type="text" id=".cNOH;hXKESS7#/-DAV@">
+                              <field name="TEXT">SAVE_KEY</field>
+                            </block>
+                          </value>
+                          <value name="ADD1">
+                            <block type="text" id="+U5[!M`HugTB@@|NK%R!">
+                              <field name="TEXT">LOAD_KEY</field>
+                            </block>
+                          </value>
+                        </block>
+                      </value>
+                      <next>
+                        <block type="variables_set" id="HCEmT;l%ikI5v|[i$Ukq">
+                          <field name="VAR" id="}YOA0L5PStBxHBU(($6N">LIST_text_colors</field>
+                          <value name="VALUE">
+                            <block type="lists_create_with" id="HE#|U]g:Qmn7Hx:j)$Bm">
+                              <mutation items="2"/>
+                              <value name="ADD0">
+                                <block type="text" id="WqJczRHBd9,hnZthSm0?">
+                                  <field name="TEXT">green</field>
+                                </block>
+                              </value>
+                              <value name="ADD1">
+                                <block type="text" id="yuu[]Iu#4{be]@n;-CG9">
+                                  <field name="TEXT">red</field>
+                                </block>
+                              </value>
+                            </block>
+                          </value>
+                          <next>
+                            <block type="variables_set" id="k7yo;rBZl2#,JZ..wxa%" collapsed="true" disabled="true">
+                              <field name="VAR" id="}YOA0L5PStBxHBU(($6N">LIST_text_colors</field>
+                              <value name="VALUE">
+                                <block type="lists_create_with" id=";A%ESnT;R.460^k{s76;">
+                                  <mutation items="3"/>
+                                  <value name="ADD0">
+                                    <block type="text" id="nHiy:U)G*jJ^YVn9,uIS">
+                                      <field name="TEXT">green</field>
+                                    </block>
+                                  </value>
+                                  <value name="ADD1">
+                                    <block type="text" id="pM5#Kv56TTC`_PuC=B(d">
+                                      <field name="TEXT">lightblue</field>
+                                    </block>
+                                  </value>
+                                  <value name="ADD2">
+                                    <block type="text" id="Lpmnj4c+qVjcO*wc1kw~">
+                                      <field name="TEXT">red</field>
+                                    </block>
+                                  </value>
+                                </block>
+                              </value>
+                              <next>
+                                <block type="variables_set" id="vH5}Q_0Fj8Z$tJyOoP+0" collapsed="true" disabled="true">
+                                  <field name="VAR" id="P3q!|p^nAm+oSGW*fWwT">LIST_hitboxes</field>
+                                  <value name="VALUE">
+                                    <block type="lists_create_with" id="}t:o_GO7b0M[)[NL,:X/">
+                                      <mutation items="3"/>
+                                      <value name="ADD0">
+                                        <block type="objectList" id="Exc1U_2fg+wwxqd+H8k$">
+                                          <field name="FIELDNAME">SAVE_KEY_HITBOX </field>
+                                        </block>
+                                      </value>
+                                      <value name="ADD1">
+                                        <block type="objectList" id="+R2v[x[z5|0r+U*C}eBR">
+                                          <field name="FIELDNAME">LOAD_KEY_HITBOX </field>
+                                        </block>
+                                      </value>
+                                      <value name="ADD2">
+                                        <block type="objectList" id="SiTLA}MOXc3vXKmN0cJ8">
+                                          <field name="FIELDNAME">RESET_SCENE_HITBOX </field>
+                                        </block>
+                                      </value>
+                                    </block>
+                                  </value>
+                                  <next>
+                                    <block type="variables_set" id="r{dSdo/I1c8zT1.(]:2d">
+                                      <field name="VAR" id="P3q!|p^nAm+oSGW*fWwT">LIST_hitboxes</field>
+                                      <value name="VALUE">
+                                        <block type="lists_create_with" id="LZClZW_8Z=ZCnrfx*|]}">
+                                          <mutation items="2"/>
+                                          <value name="ADD0">
+                                            <block type="objectList" id="sU~H{|HBPMBx$GgKxvfw">
+                                              <field name="FIELDNAME">SAVE_KEY_HITBOX </field>
+                                            </block>
+                                          </value>
+                                          <value name="ADD1">
+                                            <block type="objectList" id="S%1O-kK]l3m%GM4%;4%f">
+                                              <field name="FIELDNAME">LOAD_KEY_HITBOX </field>
+                                            </block>
+                                          </value>
+                                        </block>
+                                      </value>
+                                      <next>
+                                        <block type="hide" id="Ip5]9xR_D_F$%1Z/~|w2">
+                                          <value name="VALUE">
+                                            <shadow type="objectList" id="3X7w5je.TDeRjdtDa)Z[">
+                                              <field name="FIELDNAME">RESET_SCENE</field>
+                                            </shadow>
+                                          </value>
+                                          <next>
+                                            <block type="hide" id="$_u:uq45l|aDyYM5HFQX">
+                                              <value name="VALUE">
+                                                <shadow type="objectList" id="((S}q_gw%8N6U^fNl|sZ">
+                                                  <field name="FIELDNAME">RESET_SCENE_HITBOX </field>
+                                                </shadow>
+                                              </value>
+                                              <next>
+                                                <block type="variables_set" id="0G?e=XK0l~L|!I8PqpyL">
+                                                  <field name="VAR" id="cOTWf=QG6@lzdF4[t5*U">selected_item</field>
+                                                  <value name="VALUE">
+                                                    <block type="logic_null" id="wV{/lXHK/rs1OeX4?2zh"/>
+                                                  </value>
+                                                </block>
+                                              </next>
+                                            </block>
+                                          </next>
+                                        </block>
+                                      </next>
+                                    </block>
+                                  </next>
+                                </block>
+                              </next>
+                            </block>
+                          </next>
+                        </block>
+                      </next>
+                    </block>
+                  </next>
+                </block>
+              </next>
+            </block>
+          </next>
+        </block>
+      </statement>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="procedures_defnoreturn" id="4W5e7FY%d-n5R5xaq1HE" x="-250" y="-1290">
+      <field name="NAME">SET_INSTRUCTIONS</field>
+      <comment pinned="false" h="80" w="160">Describe this function...</comment>
+      <statement name="STACK">
+        <block type="variables_set" id="/:F^=5oxaIRH}C}?$bx$">
+          <field name="VAR" id="W`4atk8g]C1Ihq)!vN}P">EXEC_TEXT_instructions</field>
+          <value name="VALUE">
+            <block type="textMultiline" id="q.J2=@ncgRU!L^F-t~Hh">
+              <field name="HIGHLIGHT_MODE">text</field>
+              <field name="TEXT">Welcome to the [ GLIFTEK ] Web Storage Plugin Demo.\n&#10;Instructions:\n&#10;Left Click: Move objects\n&#10;Middle Click: Scale Objects\n&#10;Right Click: Rotate Objects\n&#10;&#10;To access your browser's offline web storage interface,\n&#10;open your Broswer Dev Tools (f12 on most) and select:\n&#10;&#10;Firefox: Storage Tab\n&#10;Chrome: Application Tab, Storage Section\n&#10;Edge: Application Tab, Storage Section\n&#10;Opera: Ctrl+Shift+I, Application Tab, Storage Section\n&#10;&#10;Links to browser support stats of the three storage drivers\n&#10;used in this plugin:\n&#10;IndexedDB - https://caniuse.com/indexeddb\n&#10;LocalStorage - https://caniuse.com/mdn-api_window_localstorage\n&#10;WebSQL - https://caniuse.com/sql-storage\n</field>
+            </block>
+          </value>
+        </block>
+      </statement>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="procedures_defnoreturn" id="lsZt=gMwzA(LEcywYSzm" x="-890" y="-1150">
+      <field name="NAME">DRAG_OBJECTS_LOOP</field>
+      <comment pinned="false" h="80" w="160">Describe this function...</comment>
+      <statement name="STACK">
+        <block type="controls_forEach" id="Qmre?wD:dU,_9%C.D+JG">
+          <field name="VAR" id="D+rplXt9O;ORT%Y`Z0XW">i</field>
+          <value name="LIST">
+            <block type="variables_get" id="7BBLS[wzNHsymx4`e$[%">
+              <field name="VAR" id="8gdbb^1f9d.zubg|Qp^_">LIST_objects</field>
+            </block>
+          </value>
+          <statement name="DO">
+            <block type="procedures_callnoreturn" id="8Nl+8IanTs4|j52[@DKr">
+              <mutation name="DRAG_OBJECTS">
+                <arg name="obj"/>
+              </mutation>
+              <value name="ARG0">
+                <block type="variables_get" id=":zrok$2hos`l,W*p0v%T">
+                  <field name="VAR" id="D+rplXt9O;ORT%Y`Z0XW">i</field>
+                </block>
+              </value>
+            </block>
+          </statement>
+        </block>
+      </statement>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="procedures_defnoreturn" id="j,24rrp,{gnSM/nNu2SV" x="-2310" y="-930">
+      <field name="NAME">CLICK_MENU_ITEMS</field>
+      <comment pinned="false" h="80" w="160">Describe this function...</comment>
+      <statement name="STACK">
+        <block type="whenClicked" id="n;F/Ge{{=QXJnCl?^N.z">
+          <mutation xmlns="http://www.w3.org/1999/xhtml" adveventoptions="false" enableifmissed="false"></mutation>
+          <field name="X_RAY">FALSE</field>
+          <field name="DOUBLE_CLICK">FALSE</field>
+          <field name="LEFT_BUTTON">TRUE</field>
+          <field name="MIDDLE_BUTTON">TRUE</field>
+          <field name="RIGHT_BUTTON">TRUE</field>
+          <value name="VALUE">
+            <shadow type="objectList" id="U=]M.ddfsQhxO7?1YM(G">
+              <field name="FIELDNAME">&lt;none&gt;</field>
+            </shadow>
+            <block type="variables_get" id="#`{G-57O]Bu?5~rj4`xw">
+              <field name="VAR" id="P3q!|p^nAm+oSGW*fWwT">LIST_hitboxes</field>
+            </block>
+          </value>
+          <statement name="DO">
+            <block type="procedures_callnoreturn" id="ZCU9|9xH!v%`~0rP=/Pw" disabled="true">
+              <mutation name="OUTLINE_HITBOX"/>
+              <next>
+                <block type="variables_set" id=";Eb]hu,Z1ER0Q8Rdm.o[" disabled="true">
+                  <field name="VAR" id="cOTWf=QG6@lzdF4[t5*U">selected_item</field>
+                  <value name="VALUE">
+                    <block type="text_getSubstring" id="uF$O)vTBv06;PgBCBpJB" inline="false">
+                      <mutation at1="false" at2="true"/>
+                      <field name="WHERE1">FIRST</field>
+                      <field name="WHERE2">FROM_END</field>
+                      <value name="STRING">
+                        <block type="pickedObject" id="McHz49?qpxf7*@/i|a!L"/>
+                      </value>
+                      <value name="AT2">
+                        <block type="math_number" id="Wx^}j/;a)ds8jMD6my~p">
+                          <field name="NUM">8</field>
+                        </block>
+                      </value>
+                    </block>
+                  </value>
+                  <next>
+                    <block type="variables_set" id="Z9M:tGli-V(oLT7pxq3l">
+                      <field name="VAR" id="fxh%KB@*N!};(xX9r1XA">selected_object_Hitbox</field>
+                      <value name="VALUE">
+                        <block type="pickedObject" id="O_=WNUJ8$w.~@]QiuoLu"/>
+                      </value>
+                      <next>
+                        <block type="variables_set" id="W]D9@_wi_GNzQbxD!#E^">
+                          <field name="VAR" id="cOTWf=QG6@lzdF4[t5*U">selected_item</field>
+                          <value name="VALUE">
+                            <block type="text_getSubstring" id="=!s6W@HN[zO.%HI%Am^J" inline="false">
+                              <mutation at1="false" at2="true"/>
+                              <field name="WHERE1">FIRST</field>
+                              <field name="WHERE2">FROM_END</field>
+                              <value name="STRING">
+                                <block type="pickedObject" id="p=GSh8svytp{!ZNG,|q{"/>
+                              </value>
+                              <value name="AT2">
+                                <block type="math_number" id=";l@lSp6vZ(nnP.rD.#i9">
+                                  <field name="NUM">8</field>
+                                </block>
+                              </value>
+                            </block>
+                          </value>
+                          <next>
+                            <block type="console.log" id="JJp#_ssZuS(^q[[QnL.T">
+                              <value name="VALUE">
+                                <shadow type="text" id="*`i([WG,{5Ttq8k]XhA{">
+                                  <field name="TEXT">selected item: </field>
+                                </shadow>
+                              </value>
+                              <next>
+                                <block type="console.log" id="LKmz!-HXe*@^~}}jJ:;y">
+                                  <value name="VALUE">
+                                    <shadow type="text">
+                                      <field name="TEXT">Hello, Verge!</field>
+                                    </shadow>
+                                    <block type="variables_get" id="LF0G~xrubvodZ[xYTezM">
+                                      <field name="VAR" id="cOTWf=QG6@lzdF4[t5*U">selected_item</field>
+                                    </block>
+                                  </value>
+                                  <next>
+                                    <block type="outline" id="JP#+UtM8C~b+$lo$:tE5">
+                                      <field name="DO_WHAT">ENABLE</field>
+                                      <value name="TARGET">
+                                        <shadow type="objectList" id="#JX7gEmx59krFtCbKt?B">
+                                          <field name="FIELDNAME">&lt;none&gt;</field>
+                                        </shadow>
+                                        <block type="variables_get" id="~T^y=Ph)KHB59j(nwS!]">
+                                          <field name="VAR" id="fxh%KB@*N!};(xX9r1XA">selected_object_Hitbox</field>
+                                        </block>
+                                      </value>
+                                      <next>
+                                        <block type="setTimeout" id="a[L7+g46(,d[k3Lb#hoG">
+                                          <value name="VALUE">
+                                            <shadow type="math_number" id="D4F1H6E6WWY?E5T{8v:l">
+                                              <field name="NUM">0.15</field>
+                                            </shadow>
+                                          </value>
+                                          <statement name="DO">
+                                            <block type="outline" id="Bi/da3p.RlgO4tVqwsX[">
+                                              <field name="DO_WHAT">DISABLE</field>
+                                              <value name="TARGET">
+                                                <shadow type="objectList" id="Yw:nG+9Bx%VAMKm?c)1e">
+                                                  <field name="FIELDNAME">&lt;none&gt;</field>
+                                                </shadow>
+                                                <block type="variables_get" id="%z4FL4*K@0jQ{UlRcx$*">
+                                                  <field name="VAR" id="fxh%KB@*N!};(xX9r1XA">selected_object_Hitbox</field>
+                                                </block>
+                                              </value>
+                                            </block>
+                                          </statement>
+                                          <next>
+                                            <block type="execScript" id="doKtnAclq%]`yY3P%u~I">
+                                              <value name="TEXT">
+                                                <shadow type="textMultiline" id="!-4:XK.DEW.`^_8h|gt[">
+                                                  <field name="HIGHLIGHT_MODE">javascript</field>
+                                                  <field name="TEXT">let selectedItem = VARS['selected_item'];&#10;let command = `v3d.puzzles.procedures.${selectedItem}()`;&#10;eval(command);</field>
+                                                </shadow>
+                                              </value>
+                                            </block>
+                                          </next>
+                                        </block>
+                                      </next>
+                                    </block>
+                                  </next>
+                                </block>
+                              </next>
+                            </block>
+                          </next>
+                        </block>
+                      </next>
+                    </block>
+                  </next>
+                </block>
+              </next>
+            </block>
+          </statement>
+        </block>
+      </statement>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="procedures_defnoreturn" id="!6Zxa4sNWPs0-i?BI{oo" x="-890" y="-950">
+      <mutation>
+        <arg name="obj" varid="nqO?]0xVguKq`L~-[R.J"/>
+      </mutation>
+      <field name="NAME">DRAG_OBJECTS</field>
+      <comment pinned="false" h="80" w="160">Describe this function...</comment>
+      <statement name="STACK">
+        <block type="whenDraggedOver" id="3Kf?{81_=}r?ypP|Mj6X" inline="true">
+          <mutation xmlns="http://www.w3.org/1999/xhtml" adv_event_opts="true" do_start="true" do_drop="true"></mutation>
+          <field name="X_RAY">FALSE</field>
+          <field name="LEFT_BUTTON">TRUE</field>
+          <field name="MIDDLE_BUTTON">TRUE</field>
+          <field name="RIGHT_BUTTON">TRUE</field>
+          <value name="VALUE">
+            <shadow type="objectList" id="#8m8WLO/[K$Aym9g4l,v">
+              <field name="FIELDNAME">&lt;none&gt;</field>
+            </shadow>
+            <block type="variables_get" id="KrM4V,fDXTv9K)Fr_^G%">
+              <field name="VAR" id="nqO?]0xVguKq`L~-[R.J">obj</field>
+            </block>
+          </value>
+          <statement name="DO_START">
+            <block type="outline" id="}9LQwC-nnc]Kn/akCXnf">
+              <field name="DO_WHAT">ENABLE</field>
+              <value name="TARGET">
+                <shadow type="objectList">
+                  <field name="FIELDNAME">&lt;none&gt;</field>
+                </shadow>
+                <block type="variables_get" id=";v2RZIKx:yR`4S%SH8H%">
+                  <field name="VAR" id="nqO?]0xVguKq`L~-[R.J">obj</field>
+                </block>
+              </value>
+            </block>
+          </statement>
+          <statement name="DO_MOVE">
+            <block type="dragMove" id=")lwA9%AEkfaYLV^270lD">
+              <field name="MODE">XY</field>
+              <value name="TARGETOBJ">
+                <shadow type="objectList" id="g7[+T(~MVyFLp~HTZWrH">
+                  <field name="FIELDNAME">Cube</field>
+                </shadow>
+                <block type="variables_get" id="b{GMsTfc.y^+@wwmsB^m">
+                  <field name="VAR" id="nqO?]0xVguKq`L~-[R.J">obj</field>
+                </block>
+              </value>
+            </block>
+          </statement>
+          <statement name="DO_DROP">
+            <block type="outline" id="*B|%boGN7MeA.Hj6k?Vh">
+              <field name="DO_WHAT">DISABLE</field>
+              <value name="TARGET">
+                <shadow type="objectList">
+                  <field name="FIELDNAME">&lt;none&gt;</field>
+                </shadow>
+                <block type="variables_get" id="GFu~/utD}b_WsWg8`:U(">
+                  <field name="VAR" id="nqO?]0xVguKq`L~-[R.J">obj</field>
+                </block>
+              </value>
+            </block>
+          </statement>
+        </block>
+      </statement>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="procedures_defnoreturn" id="g}Bd09l-miD{5)5KyQ3j" x="-250" y="-870">
+      <field name="NAME">CONFIG_WEB_STORAGE</field>
+      <comment pinned="false" h="80" w="160">Describe this function...</comment>
+      <statement name="STACK">
+        <block type="GLIFTEK_v3d_Plugins_Web_Storage/GLIFTEK_WEB_STORAGE_Configure_Web_Storage" id="B)?ZzRQKa`_6~5T[-$x7">
+          <field name="driverDropdown">INDEXEDDB</field>
+          <value name="databaseName">
+            <shadow type="text" id="rn,}-w!J~0}qv[rmmH|F">
+              <field name="TEXT">myAppsDatabase</field>
+            </shadow>
+            <block type="variables_get" id="-w-^huY5e4KGKq0|R)!,">
+              <field name="VAR" id="!%E4qfZS]00cr}rMK(3O">my_database</field>
+            </block>
+          </value>
+          <value name="size">
+            <shadow type="math_number" id="9Q?5%FCfOP)rLY,S$2h7">
+              <field name="NUM">4980736</field>
+            </shadow>
+          </value>
+          <value name="storeName">
+            <shadow type="text" id="q(Wzs]XqTu_Q(z*+p4v)">
+              <field name="TEXT">myDataStore_01</field>
+            </shadow>
+            <block type="variables_get" id="f?cCkGu!.Bf0@SU/ytiJ">
+              <field name="VAR" id="@cK+zRt,3lGrJU+C5)w8">my_dataStore</field>
+            </block>
+          </value>
+          <value name="description">
+            <shadow type="text" id="Q|65,6*^8{9YAO*E*7GH">
+              <field name="TEXT">description</field>
+            </shadow>
+            <block type="variables_get" id="I8tqjXs5~rCGKXk5?$m-">
+              <field name="VAR" id="!a%hm_-Uv:/Mw9!%1~P*">my_description</field>
+            </block>
+          </value>
+        </block>
+      </statement>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="procedures_defreturn" id="mN9~q^tX6sqB;IS){n$t" x="1130" y="-890">
+      <mutation>
+        <arg name="save_object" varid="?6{;u}Ht@dCy/J7K~Tt7"/>
+      </mutation>
+      <field name="NAME">GET_DATA_FROM_OBJECTS</field>
+      <comment pinned="false" h="80" w="160">Describe this function...</comment>
+      <statement name="STACK">
+        <block type="variables_set" id="az,#}4`n#?qR{`I_j8MR">
+          <field name="VAR" id="/U=]vMuDi3Kz;bi$pQJR">DICT_save_object</field>
+          <value name="VALUE">
+            <block type="dictCreateEmpty" id="YNtt+O!nMP:6]j=(6GK6"/>
+          </value>
+          <next>
+            <block type="variables_set" id=":,s7a_M:OdMy`xh+e)j|">
+              <field name="VAR" id="?^5VLd[haZ/NHYR`|XM:">DICT_save_object_POSITION</field>
+              <value name="VALUE">
+                <block type="dictCreateEmpty" id="sPUTL;:B/Jbz=FW4M00T"/>
+              </value>
+              <next>
+                <block type="variables_set" id="Wy?#=^7ev`W~PaG^u%#y">
+                  <field name="VAR" id="p]tV`~b;N:omzUfD(pW9">DICT_save_object_ROTATION</field>
+                  <value name="VALUE">
+                    <block type="dictCreateEmpty" id="+hzf3y3{{*jx.5jRMNc,"/>
+                  </value>
+                  <next>
+                    <block type="variables_set" id="xWw*qFQD%j:ql;r#211;">
+                      <field name="VAR" id=";b8qabP@t1=eZwyX6h_p">DICT_save_object_SCALE</field>
+                      <value name="VALUE">
+                        <block type="dictCreateEmpty" id="`r`,Gl1Fm]4,mUe#Kgzj"/>
+                      </value>
+                      <next>
+                        <block type="dictSet" id="a*)?r6H`{XaZYyiZ78p!">
+                          <value name="DICT">
+                            <block type="variables_get" id="(Rx!kd}S9US9aVNd,@=(">
+                              <field name="VAR" id="/U=]vMuDi3Kz;bi$pQJR">DICT_save_object</field>
+                            </block>
+                          </value>
+                          <value name="KEY">
+                            <shadow type="text" id="1|5HP2K!#Z%M5`}}@][L">
+                              <field name="TEXT">name</field>
+                            </shadow>
+                          </value>
+                          <value name="VALUE">
+                            <block type="variables_get" id="iW`1?h-,{s+W?auq4nvO">
+                              <field name="VAR" id="?6{;u}Ht@dCy/J7K~Tt7">save_object</field>
+                            </block>
+                          </value>
+                          <next>
+                            <block type="dictSet" id="0QaR-4`cD=7;Y=;pGRi;">
+                              <value name="DICT">
+                                <block type="variables_get" id="Q^qX(c.VU{BZAcTWBeJ;">
+                                  <field name="VAR" id="?^5VLd[haZ/NHYR`|XM:">DICT_save_object_POSITION</field>
+                                </block>
+                              </value>
+                              <value name="KEY">
+                                <shadow type="text" id="T-|rIw]@8JC@b.gl#nMp">
+                                  <field name="TEXT">x</field>
+                                </shadow>
+                              </value>
+                              <value name="VALUE">
+                                <block type="getObjTransform" id="M~`BMy.g_-s8$TVS_0[]">
+                                  <field name="MODE">position</field>
+                                  <field name="COORD">x</field>
+                                  <value name="TARGETOBJ">
+                                    <shadow type="objectList">
+                                      <field name="FIELDNAME">&lt;none&gt;</field>
+                                    </shadow>
+                                    <block type="variables_get" id="8~aV{,=O7z`hJDbx9)-;">
+                                      <field name="VAR" id="?6{;u}Ht@dCy/J7K~Tt7">save_object</field>
+                                    </block>
+                                  </value>
+                                </block>
+                              </value>
+                              <next>
+                                <block type="dictSet" id="iUN%2U4ulGHB310L(uF1">
+                                  <value name="DICT">
+                                    <block type="variables_get" id="m/r/5/g3VgIkbJo)/Mb=">
+                                      <field name="VAR" id="?^5VLd[haZ/NHYR`|XM:">DICT_save_object_POSITION</field>
+                                    </block>
+                                  </value>
+                                  <value name="KEY">
+                                    <shadow type="text" id="ph(gc^9X]m4SQ=UiD.{O">
+                                      <field name="TEXT">y</field>
+                                    </shadow>
+                                  </value>
+                                  <value name="VALUE">
+                                    <block type="getObjTransform" id="60g-AYT:39!nCKlLqVnM">
+                                      <field name="MODE">position</field>
+                                      <field name="COORD">y</field>
+                                      <value name="TARGETOBJ">
+                                        <shadow type="objectList">
+                                          <field name="FIELDNAME">&lt;none&gt;</field>
+                                        </shadow>
+                                        <block type="variables_get" id="{=UA3d/yill[d.f+wl?z">
+                                          <field name="VAR" id="?6{;u}Ht@dCy/J7K~Tt7">save_object</field>
+                                        </block>
+                                      </value>
+                                    </block>
+                                  </value>
+                                  <next>
+                                    <block type="dictSet" id="bDrR`C_CG[Mr$Hr]p{kM">
+                                      <value name="DICT">
+                                        <block type="variables_get" id="LK7N%KpT|%^*s2-)+B`(">
+                                          <field name="VAR" id="?^5VLd[haZ/NHYR`|XM:">DICT_save_object_POSITION</field>
+                                        </block>
+                                      </value>
+                                      <value name="KEY">
+                                        <shadow type="text" id="lAU#~P:~!|`1KcQUw|BJ">
+                                          <field name="TEXT">z</field>
+                                        </shadow>
+                                      </value>
+                                      <value name="VALUE">
+                                        <block type="getObjTransform" id="/Ljc{3ts5n`#eC7XHB*)">
+                                          <field name="MODE">position</field>
+                                          <field name="COORD">z</field>
+                                          <value name="TARGETOBJ">
+                                            <shadow type="objectList">
+                                              <field name="FIELDNAME">&lt;none&gt;</field>
+                                            </shadow>
+                                            <block type="variables_get" id="p?5Y*uCGH2dqCJRsI86K">
+                                              <field name="VAR" id="?6{;u}Ht@dCy/J7K~Tt7">save_object</field>
+                                            </block>
+                                          </value>
+                                        </block>
+                                      </value>
+                                      <next>
+                                        <block type="dictSet" id="sMFz]KV/T%YIeO4qu01#">
+                                          <value name="DICT">
+                                            <block type="variables_get" id="rV%kK.5x7prX@pkaNE9m">
+                                              <field name="VAR" id="p]tV`~b;N:omzUfD(pW9">DICT_save_object_ROTATION</field>
+                                            </block>
+                                          </value>
+                                          <value name="KEY">
+                                            <shadow type="text" id="23;YRsnrx}c,#mkZ;Z)7">
+                                              <field name="TEXT">x</field>
+                                            </shadow>
+                                          </value>
+                                          <value name="VALUE">
+                                            <block type="getObjTransform" id="_c2no|W;IqVe[;j;phTr">
+                                              <field name="MODE">rotation</field>
+                                              <field name="COORD">x</field>
+                                              <value name="TARGETOBJ">
+                                                <shadow type="objectList" id="eUoq^VEhMGSy7jPB%9ES">
+                                                  <field name="FIELDNAME">&lt;none&gt;</field>
+                                                </shadow>
+                                                <block type="variables_get" id="C`rj8+6Oq2q)D55Csrgh">
+                                                  <field name="VAR" id="?6{;u}Ht@dCy/J7K~Tt7">save_object</field>
+                                                </block>
+                                              </value>
+                                            </block>
+                                          </value>
+                                          <next>
+                                            <block type="dictSet" id="*MH}c;bb!P^wsHTz97w!">
+                                              <value name="DICT">
+                                                <block type="variables_get" id=")ldtGpp:dQp?ayP/ZRP~">
+                                                  <field name="VAR" id="p]tV`~b;N:omzUfD(pW9">DICT_save_object_ROTATION</field>
+                                                </block>
+                                              </value>
+                                              <value name="KEY">
+                                                <shadow type="text" id="@riUmr`tq[3Gu=.N][FH">
+                                                  <field name="TEXT">y</field>
+                                                </shadow>
+                                              </value>
+                                              <value name="VALUE">
+                                                <block type="getObjTransform" id="Jh%X=ISg$oD02doBWv99">
+                                                  <field name="MODE">rotation</field>
+                                                  <field name="COORD">y</field>
+                                                  <value name="TARGETOBJ">
+                                                    <shadow type="objectList">
+                                                      <field name="FIELDNAME">&lt;none&gt;</field>
+                                                    </shadow>
+                                                    <block type="variables_get" id="D36+_=;qJ$wpis#eT}[1">
+                                                      <field name="VAR" id="?6{;u}Ht@dCy/J7K~Tt7">save_object</field>
+                                                    </block>
+                                                  </value>
+                                                </block>
+                                              </value>
+                                              <next>
+                                                <block type="dictSet" id=",.J{U/,Ib0STeKWDw%Ai">
+                                                  <value name="DICT">
+                                                    <block type="variables_get" id="MIon+#Zk9pYObVx[j/Rh">
+                                                      <field name="VAR" id="p]tV`~b;N:omzUfD(pW9">DICT_save_object_ROTATION</field>
+                                                    </block>
+                                                  </value>
+                                                  <value name="KEY">
+                                                    <shadow type="text" id="HgVa(3tHuh2uA,7[zH`.">
+                                                      <field name="TEXT">z</field>
+                                                    </shadow>
+                                                  </value>
+                                                  <value name="VALUE">
+                                                    <block type="getObjTransform" id="`W1=lIrvf[Mqu/y0/{3e">
+                                                      <field name="MODE">rotation</field>
+                                                      <field name="COORD">z</field>
+                                                      <value name="TARGETOBJ">
+                                                        <shadow type="objectList">
+                                                          <field name="FIELDNAME">&lt;none&gt;</field>
+                                                        </shadow>
+                                                        <block type="variables_get" id="HeFc+5a3A2dV!]]BecJx">
+                                                          <field name="VAR" id="?6{;u}Ht@dCy/J7K~Tt7">save_object</field>
+                                                        </block>
+                                                      </value>
+                                                    </block>
+                                                  </value>
+                                                  <next>
+                                                    <block type="dictSet" id="`+MrA}/f;ED2js3BRy{0">
+                                                      <value name="DICT">
+                                                        <block type="variables_get" id="t]WbgYG;uRyO$^;h(H-l">
+                                                          <field name="VAR" id=";b8qabP@t1=eZwyX6h_p">DICT_save_object_SCALE</field>
+                                                        </block>
+                                                      </value>
+                                                      <value name="KEY">
+                                                        <shadow type="text" id="sx8M/YKDvtX/Lb9{*)Y}">
+                                                          <field name="TEXT">x</field>
+                                                        </shadow>
+                                                      </value>
+                                                      <value name="VALUE">
+                                                        <block type="getObjTransform" id="_8(m#/g?:8P-/TzDV|X2">
+                                                          <field name="MODE">scale</field>
+                                                          <field name="COORD">x</field>
+                                                          <value name="TARGETOBJ">
+                                                            <shadow type="objectList">
+                                                              <field name="FIELDNAME">&lt;none&gt;</field>
+                                                            </shadow>
+                                                            <block type="variables_get" id="*_b9-:v(p0)s$!OT,X#8">
+                                                              <field name="VAR" id="?6{;u}Ht@dCy/J7K~Tt7">save_object</field>
+                                                            </block>
+                                                          </value>
+                                                        </block>
+                                                      </value>
+                                                      <next>
+                                                        <block type="dictSet" id="Y2a%RW%=746z.s-)PZZ7">
+                                                          <value name="DICT">
+                                                            <block type="variables_get" id="OvTc-aB3]5:#a{B`$uYh">
+                                                              <field name="VAR" id=";b8qabP@t1=eZwyX6h_p">DICT_save_object_SCALE</field>
+                                                            </block>
+                                                          </value>
+                                                          <value name="KEY">
+                                                            <shadow type="text" id="i$BhC39T}rH(]3lEez8N">
+                                                              <field name="TEXT">y</field>
+                                                            </shadow>
+                                                          </value>
+                                                          <value name="VALUE">
+                                                            <block type="getObjTransform" id="NMrpA/%W!kBWM[a+z7@s">
+                                                              <field name="MODE">scale</field>
+                                                              <field name="COORD">y</field>
+                                                              <value name="TARGETOBJ">
+                                                                <shadow type="objectList">
+                                                                  <field name="FIELDNAME">&lt;none&gt;</field>
+                                                                </shadow>
+                                                                <block type="variables_get" id="}O^)o[$+)vW(}3{,e#wd">
+                                                                  <field name="VAR" id="?6{;u}Ht@dCy/J7K~Tt7">save_object</field>
+                                                                </block>
+                                                              </value>
+                                                            </block>
+                                                          </value>
+                                                          <next>
+                                                            <block type="dictSet" id="Humfosr@y5Z$dBOK2UQK">
+                                                              <value name="DICT">
+                                                                <block type="variables_get" id="9-zTVX=W[ni@5P1G-u[d">
+                                                                  <field name="VAR" id=";b8qabP@t1=eZwyX6h_p">DICT_save_object_SCALE</field>
+                                                                </block>
+                                                              </value>
+                                                              <value name="KEY">
+                                                                <shadow type="text" id="iBad#EC6tX=?CH+9;}{R">
+                                                                  <field name="TEXT">z</field>
+                                                                </shadow>
+                                                              </value>
+                                                              <value name="VALUE">
+                                                                <block type="getObjTransform" id="JTyb5x11|04?{)po8om_">
+                                                                  <field name="MODE">scale</field>
+                                                                  <field name="COORD">z</field>
+                                                                  <value name="TARGETOBJ">
+                                                                    <shadow type="objectList">
+                                                                      <field name="FIELDNAME">&lt;none&gt;</field>
+                                                                    </shadow>
+                                                                    <block type="variables_get" id="Pc]5Dqwh!Gs8uU;@yXnD">
+                                                                      <field name="VAR" id="?6{;u}Ht@dCy/J7K~Tt7">save_object</field>
+                                                                    </block>
+                                                                  </value>
+                                                                </block>
+                                                              </value>
+                                                              <next>
+                                                                <block type="dictSet" id="IcbMM3m=:qXt{mC)+s,g">
+                                                                  <value name="DICT">
+                                                                    <block type="variables_get" id=")rZ$ug#Bl{.nq_c-ZIWh">
+                                                                      <field name="VAR" id="/U=]vMuDi3Kz;bi$pQJR">DICT_save_object</field>
+                                                                    </block>
+                                                                  </value>
+                                                                  <value name="KEY">
+                                                                    <shadow type="text" id="my6CmWdl^v@xm{|]M(~k">
+                                                                      <field name="TEXT">position</field>
+                                                                    </shadow>
+                                                                  </value>
+                                                                  <value name="VALUE">
+                                                                    <block type="variables_get" id="=@%2W4gv!tYz{Fri(lpC">
+                                                                      <field name="VAR" id="?^5VLd[haZ/NHYR`|XM:">DICT_save_object_POSITION</field>
+                                                                    </block>
+                                                                  </value>
+                                                                  <next>
+                                                                    <block type="dictSet" id="M{/6fU,8s.bG,9G+%.+f">
+                                                                      <value name="DICT">
+                                                                        <block type="variables_get" id="cO)W19t)l2xfV#A2@i-{">
+                                                                          <field name="VAR" id="/U=]vMuDi3Kz;bi$pQJR">DICT_save_object</field>
+                                                                        </block>
+                                                                      </value>
+                                                                      <value name="KEY">
+                                                                        <shadow type="text" id="A9lN`nxz;wyn#+KS/:wb">
+                                                                          <field name="TEXT">rotation</field>
+                                                                        </shadow>
+                                                                      </value>
+                                                                      <value name="VALUE">
+                                                                        <block type="variables_get" id="IqU?jts.f)bVxp;{b+];">
+                                                                          <field name="VAR" id="p]tV`~b;N:omzUfD(pW9">DICT_save_object_ROTATION</field>
+                                                                        </block>
+                                                                      </value>
+                                                                      <next>
+                                                                        <block type="dictSet" id="W{(g=T*{fldVp;,7a*2s">
+                                                                          <value name="DICT">
+                                                                            <block type="variables_get" id="q-sZbZl+LV?0QzQu~@a=">
+                                                                              <field name="VAR" id="/U=]vMuDi3Kz;bi$pQJR">DICT_save_object</field>
+                                                                            </block>
+                                                                          </value>
+                                                                          <value name="KEY">
+                                                                            <shadow type="text" id="1n__xPbcKXcQI?s~obJ[">
+                                                                              <field name="TEXT">scale</field>
+                                                                            </shadow>
+                                                                          </value>
+                                                                          <value name="VALUE">
+                                                                            <block type="variables_get" id="UO]3VfZ!)BD:R=#x*Ey$">
+                                                                              <field name="VAR" id=";b8qabP@t1=eZwyX6h_p">DICT_save_object_SCALE</field>
+                                                                            </block>
+                                                                          </value>
+                                                                          <next>
+                                                                            <block type="dictSet" id="(;*Ac{V}d6e4M;V#F*5@">
+                                                                              <value name="DICT">
+                                                                                <block type="variables_get" id="yUF!Ym`c_RV.AN!wu;)+">
+                                                                                  <field name="VAR" id="/U=]vMuDi3Kz;bi$pQJR">DICT_save_object</field>
+                                                                                </block>
+                                                                              </value>
+                                                                              <value name="KEY">
+                                                                                <shadow type="text" id="6n)aJ;Bb4;mbqOh`gdm6">
+                                                                                  <field name="TEXT">color</field>
+                                                                                </shadow>
+                                                                              </value>
+                                                                              <value name="VALUE">
+                                                                                <block type="getMaterialColor" id="?yl0N;a1?aTGD,~]0PO*">
+                                                                                  <mutation xmlns="http://www.w3.org/1999/xhtml" flexcolinput="true"></mutation>
+                                                                                  <field name="MAT_COL_NAME">&lt;no colors&gt;</field>
+                                                                                  <field name="COORD">CSS_HEX</field>
+                                                                                  <value name="COL_NAME_FLEX">
+                                                                                    <block type="text" id="Yv=@gNn.1Sp6[Zv+-pJF">
+                                                                                      <field name="TEXT">Color</field>
+                                                                                    </block>
+                                                                                  </value>
+                                                                                  <value name="MATERIAL">
+                                                                                    <shadow type="materialList">
+                                                                                      <field name="FIELDNAME">&lt;none&gt;</field>
+                                                                                    </shadow>
+                                                                                    <block type="getObjectMaterial" id=";#9{bv%vr6EUAfSOXJVh">
+                                                                                      <value name="VALUE">
+                                                                                        <shadow type="objectList">
+                                                                                          <field name="FIELDNAME">&lt;none&gt;</field>
+                                                                                        </shadow>
+                                                                                        <block type="variables_get" id="2dF8Ci08JI7mZm_;2efw">
+                                                                                          <field name="VAR" id="?6{;u}Ht@dCy/J7K~Tt7">save_object</field>
+                                                                                        </block>
+                                                                                      </value>
+                                                                                    </block>
+                                                                                  </value>
+                                                                                </block>
+                                                                              </value>
+                                                                            </block>
+                                                                          </next>
+                                                                        </block>
+                                                                      </next>
+                                                                    </block>
+                                                                  </next>
+                                                                </block>
+                                                              </next>
+                                                            </block>
+                                                          </next>
+                                                        </block>
+                                                      </next>
+                                                    </block>
+                                                  </next>
+                                                </block>
+                                              </next>
+                                            </block>
+                                          </next>
+                                        </block>
+                                      </next>
+                                    </block>
+                                  </next>
+                                </block>
+                              </next>
+                            </block>
+                          </next>
+                        </block>
+                      </next>
+                    </block>
+                  </next>
+                </block>
+              </next>
+            </block>
+          </next>
+        </block>
+      </statement>
+      <value name="RETURN">
+        <block type="variables_get" id="O:(gnaw967EdF[e$x{Mz">
+          <field name="VAR" id="/U=]vMuDi3Kz;bi$pQJR">DICT_save_object</field>
+        </block>
+      </value>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="procedures_defnoreturn" id="R!y7gJ|]!/W3gS7b]q}}" x="-1350" y="-610">
+      <field name="NAME">SET_CONSTRAINTS</field>
+      <comment pinned="false" h="80" w="160">Describe this function...</comment>
+      <statement name="STACK">
+        <block type="objConstraintAddLimit" id="T7%R7uE%eB(q!Yx(i{R*">
+          <mutation xmlns="http://www.w3.org/1999/xhtml" mode="POS_X"></mutation>
+          <field name="MODE">POS_X</field>
+          <field name="DIST_LIMIT_MODE">LIMITDIST_ONSURFACE</field>
+          <value name="CONSTRAINT">
+            <shadow type="text" id="gfYA`6GnJ0zQrsw5S^}C">
+              <field name="TEXT">myConst1</field>
+            </shadow>
+          </value>
+          <value name="TARGETOBJ">
+            <shadow type="objectList" id="ayF5+1kV^fW[wK+mFucR">
+              <field name="FIELDNAME">Camera</field>
+            </shadow>
+            <block type="variables_get" id="!bk7NtT~_DK}mb:l!t-C">
+              <field name="VAR" id="8gdbb^1f9d.zubg|Qp^_">LIST_objects</field>
+            </block>
+          </value>
+          <value name="MIN">
+            <shadow type="math_number" id="2gsU7nCAUW+H+Z.L@m5/">
+              <field name="NUM">-8</field>
+            </shadow>
+          </value>
+          <value name="MAX">
+            <shadow type="math_number" id="Hy|,^)UW|PKC#??0$Aup">
+              <field name="NUM">8</field>
+            </shadow>
+          </value>
+          <next>
+            <block type="objConstraintAddLimit" id="Qtw02[k$HsJHo*xpNSV`">
+              <mutation xmlns="http://www.w3.org/1999/xhtml" mode="POS_Y"></mutation>
+              <field name="MODE">POS_Y</field>
+              <field name="DIST_LIMIT_MODE">LIMITDIST_ONSURFACE</field>
+              <value name="CONSTRAINT">
+                <shadow type="text" id="zz8E~I|SVa~c__]u!n*F">
+                  <field name="TEXT">myConst2</field>
+                </shadow>
+              </value>
+              <value name="TARGETOBJ">
+                <shadow type="objectList" id="BHEFn|;ZrqAqFs%=@fjD">
+                  <field name="FIELDNAME">Camera</field>
+                </shadow>
+                <block type="variables_get" id="5q2lCX$eAU10yLc_iX3F">
+                  <field name="VAR" id="8gdbb^1f9d.zubg|Qp^_">LIST_objects</field>
+                </block>
+              </value>
+              <value name="MIN">
+                <shadow type="math_number" id="!t[EU@;$pLTK+9FfVh|x">
+                  <field name="NUM">-3</field>
+                </shadow>
+              </value>
+              <value name="MAX">
+                <shadow type="math_number" id="Q(Xlq/wjb*UJ2-|M4~bJ">
+                  <field name="NUM">4</field>
+                </shadow>
+              </value>
+            </block>
+          </next>
+        </block>
+      </statement>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="procedures_defnoreturn" id="A+yTv)|hm77Oy,gm#c!," x="430" y="-610">
+      <field name="NAME">SET_DATABASE_NAME_VARS</field>
+      <comment pinned="false" h="80" w="160">Describe this function...</comment>
+      <statement name="STACK">
+        <block type="variables_set" id="hrwUv[Cdl;|g(Qy}PZ75">
+          <field name="VAR" id="mfo44SvBTDEILi7)Vtp#">my_saved_key</field>
+          <value name="VALUE">
+            <block type="text" id=".!LuOB3{u{~wunE#{D]O">
+              <field name="TEXT">all_objects_data_save_01</field>
+            </block>
+          </value>
+          <next>
+            <block type="variables_set" id="LiWk8s46Jf5c0_^v8=lD">
+              <field name="VAR" id="@cK+zRt,3lGrJU+C5)w8">my_dataStore</field>
+              <value name="VALUE">
+                <block type="text" id="{hAl(H:Zrq{?=DG=MrNA">
+                  <field name="TEXT">myDataStore_01</field>
+                </block>
+              </value>
+              <next>
+                <block type="variables_set" id="TU3Ih0Py.l|+?)GSsVI0">
+                  <field name="VAR" id="!%E4qfZS]00cr}rMK(3O">my_database</field>
+                  <value name="VALUE">
+                    <block type="text" id="h{HPmJqGEa,lVww]x%aY">
+                      <field name="TEXT">myAppsDatabase</field>
+                    </block>
+                  </value>
+                  <next>
+                    <block type="variables_set" id="Oqv3ST0f,_k_cGKg[Ce4">
+                      <field name="VAR" id="!a%hm_-Uv:/Mw9!%1~P*">my_description</field>
+                      <value name="VALUE">
+                        <block type="textMultiline" id="u-yeV*e:x;)bwCH48(-G" collapsed="true">
+                          <field name="HIGHLIGHT_MODE">text</field>
+                          <field name="TEXT">GLIFTEK Web Storage plugin demo.&#10;Saves objects data to browser storage for later retrivial.</field>
+                        </block>
+                      </value>
+                    </block>
+                  </next>
+                </block>
+              </next>
+            </block>
+          </next>
+        </block>
+      </statement>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="procedures_defnoreturn" id="w6v?gM9BE@P3j_O84BoH" x="-250" y="-570">
+      <field name="NAME">RESET_SCENE</field>
+      <comment pinned="false" h="80" w="160">Describe this function...</comment>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="procedures_defnoreturn" id="[I5?Q%D.`3GcQ{+=FDwS" x="-890" y="-390">
+      <field name="NAME">CLICK_OBJECTS</field>
+      <comment pinned="false" h="80" w="160">Describe this function...</comment>
+      <statement name="STACK">
+        <block type="whenClicked" id="GZohy~#4xoC.ZH~FUf^}">
+          <mutation xmlns="http://www.w3.org/1999/xhtml" adveventoptions="false" enableifmissed="false"></mutation>
+          <field name="X_RAY">FALSE</field>
+          <field name="DOUBLE_CLICK">FALSE</field>
+          <field name="LEFT_BUTTON">TRUE</field>
+          <field name="MIDDLE_BUTTON">TRUE</field>
+          <field name="RIGHT_BUTTON">TRUE</field>
+          <value name="VALUE">
+            <shadow type="objectList" id="hxkSRCpw2Y6}Jcd4Ey90">
+              <field name="FIELDNAME">&lt;none&gt;</field>
+            </shadow>
+            <block type="variables_get" id=",As2(2Q2NKiqM~fr4ESF">
+              <field name="VAR" id="8gdbb^1f9d.zubg|Qp^_">LIST_objects</field>
+            </block>
+          </value>
+          <statement name="DO">
+            <block type="setMaterialColor" id="AKnWki%QR:@4c#/Mn)?-" inline="false">
+              <mutation xmlns="http://www.w3.org/1999/xhtml" flexcolinput="true" usecsscolor="true"></mutation>
+              <field name="MAT_COL_NAME">color</field>
+              <value name="COL_NAME_FLEX">
+                <block type="text" id="ZI1}KH0|x6fGcFL9+@A,">
+                  <field name="TEXT">Color</field>
+                </block>
+              </value>
+              <value name="MATERIAL">
+                <shadow type="materialList">
+                  <field name="FIELDNAME">CubeMaterial</field>
+                </shadow>
+                <block type="getObjectMaterial" id="[(($-ok%7?+O?l!KG!mk">
+                  <value name="VALUE">
+                    <shadow type="objectList" id="UO?(wx|OL5%D}1D,lCZ{">
+                      <field name="FIELDNAME">&lt;none&gt;</field>
+                    </shadow>
+                    <block type="pickedObject" id="Hz$${8zu*Y[.fl9VDJ*w"/>
+                  </value>
+                </block>
+              </value>
+              <value name="CSS">
+                <block type="procedures_callreturn" id="+EW+(U)+-Cj)`ay-:;}l">
+                  <mutation name="NEXT_COLOR">
+                    <arg name="current_color"/>
+                    <arg name="current_object"/>
+                  </mutation>
+                  <value name="ARG0">
+                    <block type="dictGet" id="G$:RA_;(:W$uHN39.b:O" inline="false">
+                      <value name="DICT">
+                        <block type="variables_get" id="V+;CVv$-q#%1nrvjC_@x">
+                          <field name="VAR" id="dGlLd/|QM*Nx?BamIUD$">DICT_object_colors</field>
+                        </block>
+                      </value>
+                      <value name="KEY">
+                        <shadow type="text" id="2i@lfD$LvPnk+tqSJ(?E">
+                          <field name="TEXT">someKey</field>
+                        </shadow>
+                        <block type="pickedObject" id="j@ld3[(803TqRmcxhwE1"/>
+                      </value>
+                    </block>
+                  </value>
+                  <value name="ARG1">
+                    <block type="pickedObject" id="Ob2/3qX{^GjvTQwNfx[q"/>
+                  </value>
+                </block>
+              </value>
+            </block>
+          </statement>
+        </block>
+      </statement>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="procedures_defnoreturn" id="Wb,!i)=vpulZc5]p~EWO" x="-2310" y="-310">
+      <field name="NAME">OUTLINE_HITBOX</field>
+      <comment pinned="false" h="80" w="160">Describe this function...</comment>
+      <statement name="STACK">
+        <block type="outline" id="(}BUw|#H}(Qd;XKN/Mi|">
+          <field name="DO_WHAT">DISABLE</field>
+          <value name="TARGET">
+            <shadow type="objectList" id="UNRVvY)*K@(7%nk0D,au">
+              <field name="FIELDNAME">&lt;none&gt;</field>
+            </shadow>
+            <block type="pickedObject" id="mk`Q}WRQ?SZ5E4my|}QT"/>
+          </value>
+          <next>
+            <block type="setTimeout" id="*$8vD;4waHH@pJLIY$!v">
+              <value name="VALUE">
+                <shadow type="math_number" id="x=EQO?7yx}+lqm,=rc+{">
+                  <field name="NUM">0.15</field>
+                </shadow>
+              </value>
+              <statement name="DO">
+                <block type="outline" id="W@787B@sy%E.46GlUOwE">
+                  <field name="DO_WHAT">ENABLE</field>
+                  <value name="TARGET">
+                    <shadow type="objectList">
+                      <field name="FIELDNAME">&lt;none&gt;</field>
+                    </shadow>
+                    <block type="pickedObject" id="`%KhJ`Bc~FoM|oWrQsX~"/>
+                  </value>
+                </block>
+              </statement>
+            </block>
+          </next>
+        </block>
+      </statement>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="procedures_defreturn" id="Pi~Y|.Km]1|B(}IO;CX6" x="430" y="-310">
+      <field name="NAME">SAVE_OBJECT_DATA</field>
+      <comment pinned="false" h="80" w="160">Describe this function...</comment>
+      <statement name="STACK">
+        <block type="variables_set" id="NV?NC@5*A|*f,h%TO/7o">
+          <field name="VAR" id="lRNWA%|UJ[{O0:::W[|Y">DICT_save_all_objects</field>
+          <value name="VALUE">
+            <block type="dictCreateEmpty" id="b|,]T68JW|sHFCP@(zVu"/>
+          </value>
+          <next>
+            <block type="controls_forEach" id="Ob,I^(+yFwDGB7F#mAvd">
+              <field name="VAR" id="=NDHSVYTD55I?Tejz]8O">j</field>
+              <value name="LIST">
+                <block type="variables_get" id="LN`x{3(;gw{4RLKjh/N}">
+                  <field name="VAR" id="8gdbb^1f9d.zubg|Qp^_">LIST_objects</field>
+                </block>
+              </value>
+              <statement name="DO">
+                <block type="dictSet" id="ngslYf|*2.ez.mKkeEbG" inline="false">
+                  <value name="DICT">
+                    <block type="variables_get" id="5_0(w1@ZJE`RL$,GcGk.">
+                      <field name="VAR" id="lRNWA%|UJ[{O0:::W[|Y">DICT_save_all_objects</field>
+                    </block>
+                  </value>
+                  <value name="KEY">
+                    <shadow type="text">
+                      <field name="TEXT">name</field>
+                    </shadow>
+                    <block type="variables_get" id="V`10ZB4a4T0_NBHaycL*">
+                      <field name="VAR" id="=NDHSVYTD55I?Tejz]8O">j</field>
+                    </block>
+                  </value>
+                  <value name="VALUE">
+                    <block type="procedures_callreturn" id="bwzu~@-COQjU@-s:+y?)">
+                      <mutation name="GET_DATA_FROM_OBJECTS">
+                        <arg name="save_object"/>
+                      </mutation>
+                      <value name="ARG0">
+                        <block type="variables_get" id="44R=w]eMoR4=.[nZa}83">
+                          <field name="VAR" id="=NDHSVYTD55I?Tejz]8O">j</field>
+                        </block>
+                      </value>
+                    </block>
+                  </value>
+                </block>
+              </statement>
+            </block>
+          </next>
+        </block>
+      </statement>
+      <value name="RETURN">
+        <block type="variables_get" id="E;$BVZnXc~)tDqYi*.Sg">
+          <field name="VAR" id="lRNWA%|UJ[{O0:::W[|Y">DICT_save_all_objects</field>
+        </block>
+      </value>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="procedures_defnoreturn" id="}5^),aNY(R2wld?lSB_D" x="-250" y="-270">
+      <field name="NAME">SAVE_KEY</field>
+      <comment pinned="false" h="80" w="160">Describe this function...</comment>
+      <statement name="STACK">
+        <block type="console.log" id="G}/Ww}Y`M/^eY$[mE[TR">
+          <value name="VALUE">
+            <shadow type="text" id="!fGS,ZRwo#$t%(6Hum$F">
+              <field name="TEXT">procedure "SAVE" running.</field>
+            </shadow>
+          </value>
+          <next>
+            <block type="GLIFTEK_v3d_Plugins_Web_Storage/GLIFTEK_WEB_STORAGE_Set_Key" id="}/UzZkoQP^]F8*Fl/NNC">
+              <value name="key">
+                <shadow type="text" id="S2U7}*Z3DI|K?RLYe99x">
+                  <field name="TEXT">someKey</field>
+                </shadow>
+                <block type="variables_get" id="Ai8R,,`$-Hg-L$!vh.%B">
+                  <field name="VAR" id="mfo44SvBTDEILi7)Vtp#">my_saved_key</field>
+                </block>
+              </value>
+              <value name="value">
+                <shadow type="text" id="0OG`-l)oz.~3[+B.2b%=">
+                  <field name="TEXT">someValue</field>
+                </shadow>
+                <block type="procedures_callreturn" id="jU|d3_m@f!ijNee$LHL?">
+                  <mutation name="SAVE_OBJECT_DATA"/>
+                </block>
+              </value>
+              <value name="storeName">
+                <shadow type="text" id="|4{,nkq|c,TrQ`ZjcPex">
+                  <field name="TEXT">myDataStore_01</field>
+                </shadow>
+                <block type="variables_get" id="1i::IBafCJWa^*:u3n^|">
+                  <field name="VAR" id="@cK+zRt,3lGrJU+C5)w8">my_dataStore</field>
+                </block>
+              </value>
+              <value name="databaseName">
+                <shadow type="text" id="l#J26~?1t{K9R}+Cv4Qq">
+                  <field name="TEXT">myAppsDatabase</field>
+                </shadow>
+                <block type="variables_get" id="};`lmm;53#5ocJUS%5}_">
+                  <field name="VAR" id="!%E4qfZS]00cr}rMK(3O">my_database</field>
+                </block>
+              </value>
+            </block>
+          </next>
+        </block>
+      </statement>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="procedures_defnoreturn" id="wwJqF:Y*/_i}|X_FN3G^" x="-1630" y="-90">
+      <field name="NAME">HOVER_MENU_ITEMS</field>
+      <comment pinned="false" h="80" w="160">Describe this function...</comment>
+      <statement name="STACK">
+        <block type="whenHovered" id="}U4gb%IxeaYo^!ruUI,N">
+          <mutation xmlns="http://www.w3.org/1999/xhtml" adveventoptions="false"></mutation>
+          <field name="X_RAY">FALSE</field>
+          <value name="VALUE">
+            <shadow type="objectList" id="XJ|DO?,.foDSJCKA{wUA">
+              <field name="FIELDNAME">&lt;none&gt;</field>
+            </shadow>
+            <block type="variables_get" id="zqG2_y{Z*hXBBWsfjUIG">
+              <field name="VAR" id="P3q!|p^nAm+oSGW*fWwT">LIST_hitboxes</field>
+            </block>
+          </value>
+          <statement name="DO_OVER">
+            <block type="setHTMLElemStyle" id="]q{qw|pQma6=@vWFbRO}">
+              <field name="PROPERTY">cursor</field>
+              <field name="PARENT">FALSE</field>
+              <value name="VALUE">
+                <block type="text" id="keA~#-;a|qw?b8yS^V`4">
+                  <field name="TEXT">pointer</field>
+                </block>
+              </value>
+              <value name="ID">
+                <shadow type="text">
+                  <field name="TEXT"/>
+                </shadow>
+                <block type="DOMObjectSelector" id="TzKBK7O.lCZ*e`s6Mcbw">
+                  <field name="DOM_OBJECT">CONTAINER</field>
+                </block>
+              </value>
+              <next>
+                <block type="outline" id="0$JYUyEO4eN{rOym^:5.">
+                  <field name="DO_WHAT">ENABLE</field>
+                  <value name="TARGET">
+                    <shadow type="objectList" id="GS?SE:a_8dC4Y^{rNhX^">
+                      <field name="FIELDNAME">&lt;none&gt;</field>
+                    </shadow>
+                    <block type="hoveredObject" id="q{x/!E6SYyx?|ZQR];Qj"/>
+                  </value>
+                </block>
+              </next>
+            </block>
+          </statement>
+          <statement name="DO_OUT">
+            <block type="setHTMLElemStyle" id="Q_=Qn%,{=Wq@a0hZU^zH">
+              <field name="PROPERTY">cursor</field>
+              <field name="PARENT">FALSE</field>
+              <value name="VALUE">
+                <block type="text" id="5^qj/f!*Ws#gK1:q/#[g">
+                  <field name="TEXT">default</field>
+                </block>
+              </value>
+              <value name="ID">
+                <shadow type="text">
+                  <field name="TEXT"/>
+                </shadow>
+                <block type="DOMObjectSelector" id=".ybv`Gdnmi$=ZlYGG@t}">
+                  <field name="DOM_OBJECT">CONTAINER</field>
+                </block>
+              </value>
+              <next>
+                <block type="outline" id="P1-be*5bj!];lNn,R-ZX">
+                  <field name="DO_WHAT">DISABLE</field>
+                  <value name="TARGET">
+                    <shadow type="objectList" id="e[tI|_j.{wOmse%vG?S#">
+                      <field name="FIELDNAME">&lt;none&gt;</field>
+                    </shadow>
+                    <block type="hoveredObject" id="SPM1=R]o^dO(v%QCC25e"/>
+                  </value>
+                </block>
+              </next>
+            </block>
+          </statement>
+        </block>
+      </statement>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="procedures_defnoreturn" id="`OA~6g.2M(iB;BH:@qvt" x="-890" y="-10">
+      <field name="NAME">HOVER_OBJECTS</field>
+      <comment pinned="false" h="80" w="160">Describe this function...</comment>
+      <statement name="STACK">
+        <block type="whenHovered" id="79N4pr:#:I4;F]-)W1DS">
+          <mutation xmlns="http://www.w3.org/1999/xhtml" adveventoptions="false"></mutation>
+          <field name="X_RAY">FALSE</field>
+          <value name="VALUE">
+            <shadow type="objectList">
+              <field name="FIELDNAME">&lt;none&gt;</field>
+            </shadow>
+            <block type="variables_get" id="wh;{ddLPCd|,EIM)nCOm">
+              <field name="VAR" id="8gdbb^1f9d.zubg|Qp^_">LIST_objects</field>
+            </block>
+          </value>
+          <statement name="DO_OVER">
+            <block type="outline" id="BfHio+C:a*3#Cji;Ifw?">
+              <field name="DO_WHAT">ENABLE</field>
+              <value name="TARGET">
+                <shadow type="objectList">
+                  <field name="FIELDNAME">&lt;none&gt;</field>
+                </shadow>
+                <block type="hoveredObject" id="p^u[Z$^%R9sN3l=G?51#"/>
+              </value>
+            </block>
+          </statement>
+          <statement name="DO_OUT">
+            <block type="outline" id="gxrI:TY9_GQO9ewAK]Sx">
+              <field name="DO_WHAT">DISABLE</field>
+              <value name="TARGET">
+                <shadow type="objectList">
+                  <field name="FIELDNAME">&lt;none&gt;</field>
+                </shadow>
+                <block type="hoveredObject" id="FRra8AS(PE}Fz70NxwGn"/>
+              </value>
+            </block>
+          </statement>
+        </block>
+      </statement>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="procedures_defnoreturn" id="_HwkV;=`rO;;W8%vCZ_y" x="-250" y="-30">
+      <field name="NAME">LOAD_KEY</field>
+      <comment pinned="false" h="80" w="160">Describe this function...</comment>
+      <statement name="STACK">
+        <block type="console.log" id="tUFG!h4dw5Q;G[HH(YT0">
+          <value name="VALUE">
+            <shadow type="text" id="byX;n(_4g#97b^JcHM-9">
+              <field name="TEXT">procedure "LOAD" running.</field>
+            </shadow>
+          </value>
+          <next>
+            <block type="waitPromise" id="._j6w7HhwialBk_2q,qX">
+              <value name="PROMISE">
+                <block type="GLIFTEK_v3d_Plugins_Web_Storage/GLIFTEK_WEB_STORAGE_Get_Key" id="tDn|Zoiz^}-HKJ5=4jUH">
+                  <value name="key">
+                    <shadow type="text" id="T)oS@Qt%C80!VPqZ/Yu!">
+                      <field name="TEXT">someKey</field>
+                    </shadow>
+                    <block type="variables_get" id="Rup]p9f`3qG%EDp*rNl)">
+                      <field name="VAR" id="mfo44SvBTDEILi7)Vtp#">my_saved_key</field>
+                    </block>
+                  </value>
+                  <value name="storeName">
+                    <shadow type="text" id="pp:)e8O#-eL,NWPANliy">
+                      <field name="TEXT">myDataStore_01</field>
+                    </shadow>
+                    <block type="variables_get" id="U]2jk4ci7gV)|,A9jeRe">
+                      <field name="VAR" id="@cK+zRt,3lGrJU+C5)w8">my_dataStore</field>
+                    </block>
+                  </value>
+                  <value name="databaseName">
+                    <shadow type="text" id="Hf.jEoi0D#F|hJ)1:Pq9">
+                      <field name="TEXT">myAppsDatabase</field>
+                    </shadow>
+                    <block type="variables_get" id="y#kQ7YYC**6!^po,IWzU">
+                      <field name="VAR" id="!%E4qfZS]00cr}rMK(3O">my_database</field>
+                    </block>
+                  </value>
+                </block>
+              </value>
+              <statement name="ON_FULFILLED">
+                <block type="procedures_callnoreturn" id="gGLQpB$_Sb1?|ts6E.BO">
+                  <mutation name="LOAD_OBJECT_DATA">
+                    <arg name="loaded_DICTIONARY"/>
+                  </mutation>
+                  <value name="ARG0">
+                    <block type="promiseValue" id="*?bh9ljC0N2nZfVh|FKC"/>
+                  </value>
+                </block>
+              </statement>
+              <statement name="ON_REJECTED">
+                <block type="console.log" id="ej4[(mC:w7c=LKy3hIis" collapsed="true">
+                  <value name="VALUE">
+                    <shadow type="text" id="!H;liMhH{hN6f8.t!w^W">
+                      <field name="TEXT">load from local storage failed.</field>
+                    </shadow>
+                  </value>
+                </block>
+              </statement>
+            </block>
+          </next>
+        </block>
+      </statement>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="procedures_defnoreturn" id="gbTotKjoP*RpH3m]!N;`" x="430" y="10">
+      <mutation>
+        <arg name="loaded_DICTIONARY" varid="uW$}yQh@+A7GAt~pE{Wt"/>
+      </mutation>
+      <field name="NAME">LOAD_OBJECT_DATA</field>
+      <comment pinned="false" h="80" w="160">Describe this function...</comment>
+      <statement name="STACK">
+        <block type="controls_forEach" id="nx71:x=E-bQk4;vAqp`_">
+          <field name="VAR" id="-+CHX{4Cc4rb~3Wy;5}k">m</field>
+          <value name="LIST">
+            <block type="variables_get" id="zFu);Ejnct?Sa0Rr`J[h">
+              <field name="VAR" id="uW$}yQh@+A7GAt~pE{Wt">loaded_DICTIONARY</field>
+            </block>
+          </value>
+          <statement name="DO">
+            <block type="procedures_callnoreturn" id="JUNR+Y_$(gVY9t-1-{GB">
+              <mutation name="APPLY_LOADED_DATA_TO_OBJECTS">
+                <arg name="DICT_load_object"/>
+              </mutation>
+              <value name="ARG0">
+                <block type="variables_get" id="lT4._kq9DV/6t6N_%zd+">
+                  <field name="VAR" id="-+CHX{4Cc4rb~3Wy;5}k">m</field>
+                </block>
+              </value>
+            </block>
+          </statement>
+        </block>
+      </statement>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="procedures_defnoreturn" id="9c,2~sM8anuc4_^-,-uH" x="1130" y="10">
+      <mutation>
+        <arg name="DICT_load_object" varid="OI55u2:w((7{$p[G]$0Z"/>
+      </mutation>
+      <field name="NAME">APPLY_LOADED_DATA_TO_OBJECTS</field>
+      <comment pinned="false" h="80" w="160">Describe this function...</comment>
+      <statement name="STACK">
+        <block type="variables_set" id="|TvkUr(4!9n_@_14)1se">
+          <field name="VAR" id="NcUiKrQXv#LFtXD3,#l}">load_object</field>
+          <value name="VALUE">
+            <block type="dictGet" id="ub?inQbt`%0z(,4JX}sE">
+              <value name="DICT">
+                <block type="variables_get" id="g)cJOP#%H*]0bth$w]QN">
+                  <field name="VAR" id="OI55u2:w((7{$p[G]$0Z">DICT_load_object</field>
+                </block>
+              </value>
+              <value name="KEY">
+                <shadow type="text" id=";5Lc@CA1ei^~-Y6kNS|M">
+                  <field name="TEXT">name</field>
+                </shadow>
+              </value>
+            </block>
+          </value>
+          <next>
+            <block type="setObjTransform" id="!-/+ulmAnz!nSZ^B_P~c">
+              <mutation xmlns="http://www.w3.org/1999/xhtml" usevectorslot="true"></mutation>
+              <field name="MODE">position</field>
+              <field name="OFFSET">FALSE</field>
+              <value name="TARGETOBJ">
+                <shadow type="objectList">
+                  <field name="FIELDNAME">&lt;none&gt;</field>
+                </shadow>
+                <block type="variables_get" id="~6!9Pu:u[vpXW2p3f=C-">
+                  <field name="VAR" id="NcUiKrQXv#LFtXD3,#l}">load_object</field>
+                </block>
+              </value>
+              <value name="USE_VECTOR">
+                <block type="createVector" id=",l8wQoeq(4t5lQ5@h/C@" inline="false" collapsed="true">
+                  <value name="X">
+                    <shadow type="math_number" id="[qJ,a]fP4xYlX)y^R!{J">
+                      <field name="NUM">0</field>
+                    </shadow>
+                    <block type="dictGet" id="Fb75o9S3#Ed5s1kPR-U|">
+                      <value name="DICT">
+                        <block type="dictGet" id="G1*{abOS5=^Ou:5q$!Cn">
+                          <value name="DICT">
+                            <block type="variables_get" id="AprT:)9!%77R!XX_3^PG">
+                              <field name="VAR" id="OI55u2:w((7{$p[G]$0Z">DICT_load_object</field>
+                            </block>
+                          </value>
+                          <value name="KEY">
+                            <shadow type="text" id="%`k7Z(A_C*bdJ?}L!,0U">
+                              <field name="TEXT">position</field>
+                            </shadow>
+                          </value>
+                        </block>
+                      </value>
+                      <value name="KEY">
+                        <shadow type="text" id="wF/S=9E#5J%,^W*xGUUV">
+                          <field name="TEXT">x</field>
+                        </shadow>
+                      </value>
+                    </block>
+                  </value>
+                  <value name="Y">
+                    <shadow type="math_number">
+                      <field name="NUM">0</field>
+                    </shadow>
+                    <block type="dictGet" id="cxgvLP8+frTXa,[98Jq4">
+                      <value name="DICT">
+                        <block type="dictGet" id="5c+Hr@gAD!BRl+2;(D-:">
+                          <value name="DICT">
+                            <block type="variables_get" id=".2jBbqkPO]KRo1L+8h8N">
+                              <field name="VAR" id="OI55u2:w((7{$p[G]$0Z">DICT_load_object</field>
+                            </block>
+                          </value>
+                          <value name="KEY">
+                            <shadow type="text" id="E|V?@_#pRtS|F$=)_va/">
+                              <field name="TEXT">position</field>
+                            </shadow>
+                          </value>
+                        </block>
+                      </value>
+                      <value name="KEY">
+                        <shadow type="text" id="p:_#[d0!Ffic0IOyug$)">
+                          <field name="TEXT">y</field>
+                        </shadow>
+                      </value>
+                    </block>
+                  </value>
+                  <value name="Z">
+                    <shadow type="math_number">
+                      <field name="NUM">0</field>
+                    </shadow>
+                    <block type="dictGet" id=":tYgfce)~%5.0j+G*D:O">
+                      <value name="DICT">
+                        <block type="dictGet" id="*B*TKR:3ZHnyQ{3L-@BS">
+                          <value name="DICT">
+                            <block type="variables_get" id="Jw;1gWpq,cg4(R@bnIfb">
+                              <field name="VAR" id="OI55u2:w((7{$p[G]$0Z">DICT_load_object</field>
+                            </block>
+                          </value>
+                          <value name="KEY">
+                            <shadow type="text" id="HwrInM@Oh8u+BT#74.]s">
+                              <field name="TEXT">position</field>
+                            </shadow>
+                          </value>
+                        </block>
+                      </value>
+                      <value name="KEY">
+                        <shadow type="text" id="Sj|/ddkyu,UhKFC8cUi=">
+                          <field name="TEXT">z</field>
+                        </shadow>
+                      </value>
+                    </block>
+                  </value>
+                </block>
+              </value>
+              <next>
+                <block type="setObjTransform" id="(h376[zxnh]eId;(*+nF">
+                  <mutation xmlns="http://www.w3.org/1999/xhtml" usevectorslot="true"></mutation>
+                  <field name="MODE">rotation</field>
+                  <field name="OFFSET">FALSE</field>
+                  <value name="TARGETOBJ">
+                    <shadow type="objectList">
+                      <field name="FIELDNAME">&lt;none&gt;</field>
+                    </shadow>
+                    <block type="variables_get" id="P-}iM9082}{dK?Di~EnN">
+                      <field name="VAR" id="NcUiKrQXv#LFtXD3,#l}">load_object</field>
+                    </block>
+                  </value>
+                  <value name="USE_VECTOR">
+                    <block type="createVector" id="|+Lpc;qPhgM!%yoQL;v+" inline="false" collapsed="true">
+                      <value name="X">
+                        <shadow type="math_number">
+                          <field name="NUM">0</field>
+                        </shadow>
+                        <block type="dictGet" id="tV|ejK+6l!k^pf}[7U9m">
+                          <value name="DICT">
+                            <block type="dictGet" id="n,N3B(C|.R.^D5,I#K3E">
+                              <value name="DICT">
+                                <block type="variables_get" id="fN4YC/Wo6M#V}pA~V6V7">
+                                  <field name="VAR" id="OI55u2:w((7{$p[G]$0Z">DICT_load_object</field>
+                                </block>
+                              </value>
+                              <value name="KEY">
+                                <shadow type="text" id="xQ{a;@E|%}Aiiw-H4x^h">
+                                  <field name="TEXT">rotation</field>
+                                </shadow>
+                              </value>
+                            </block>
+                          </value>
+                          <value name="KEY">
+                            <shadow type="text" id="2_rh[qEUHI?s~]ogwlfH">
+                              <field name="TEXT">x</field>
+                            </shadow>
+                          </value>
+                        </block>
+                      </value>
+                      <value name="Y">
+                        <shadow type="math_number">
+                          <field name="NUM">0</field>
+                        </shadow>
+                        <block type="dictGet" id="+.NJ^+cE%rj0iAO;=lqC">
+                          <value name="DICT">
+                            <block type="dictGet" id="=PW(-^q-^r?%ErbtXUWa">
+                              <value name="DICT">
+                                <block type="variables_get" id="AQN?2Vxee{,v$]S0:6]!">
+                                  <field name="VAR" id="OI55u2:w((7{$p[G]$0Z">DICT_load_object</field>
+                                </block>
+                              </value>
+                              <value name="KEY">
+                                <shadow type="text" id="3,d:|*(n[x?Dp$*FW(Wl">
+                                  <field name="TEXT">rotation</field>
+                                </shadow>
+                              </value>
+                            </block>
+                          </value>
+                          <value name="KEY">
+                            <shadow type="text" id="iBfZ/nc*}XVJhjz?G)88">
+                              <field name="TEXT">y</field>
+                            </shadow>
+                          </value>
+                        </block>
+                      </value>
+                      <value name="Z">
+                        <shadow type="math_number">
+                          <field name="NUM">0</field>
+                        </shadow>
+                        <block type="dictGet" id="8ZC#jBu#dCj,CMXj?Ajl">
+                          <value name="DICT">
+                            <block type="dictGet" id="}rP;pt:-QVe#`cAR~r`c">
+                              <value name="DICT">
+                                <block type="variables_get" id="8ap8Ry`$y21^*Oi$jA3*">
+                                  <field name="VAR" id="OI55u2:w((7{$p[G]$0Z">DICT_load_object</field>
+                                </block>
+                              </value>
+                              <value name="KEY">
+                                <shadow type="text" id="R!](vTh0LzAU(F5U0o7/">
+                                  <field name="TEXT">rotation</field>
+                                </shadow>
+                              </value>
+                            </block>
+                          </value>
+                          <value name="KEY">
+                            <shadow type="text" id="/w_Tr/Wi1$g+]__qt#kl">
+                              <field name="TEXT">z</field>
+                            </shadow>
+                          </value>
+                        </block>
+                      </value>
+                    </block>
+                  </value>
+                  <next>
+                    <block type="setObjTransform" id="u8EO6f0~#^=G4s,py{7^">
+                      <mutation xmlns="http://www.w3.org/1999/xhtml" usevectorslot="true"></mutation>
+                      <field name="MODE">scale</field>
+                      <field name="OFFSET">FALSE</field>
+                      <value name="TARGETOBJ">
+                        <shadow type="objectList">
+                          <field name="FIELDNAME">&lt;none&gt;</field>
+                        </shadow>
+                        <block type="variables_get" id="b?*kSLPz}EjB9-`D@@57">
+                          <field name="VAR" id="NcUiKrQXv#LFtXD3,#l}">load_object</field>
+                        </block>
+                      </value>
+                      <value name="USE_VECTOR">
+                        <block type="createVector" id="zbi%t{m-4BDZ$6ph{m,(" inline="false" collapsed="true">
+                          <value name="X">
+                            <shadow type="math_number">
+                              <field name="NUM">0</field>
+                            </shadow>
+                            <block type="dictGet" id="rFOJ73ri7lnD[4{aJ9s-">
+                              <value name="DICT">
+                                <block type="dictGet" id="cZzdpI^k~Rl%^qXOs=cl">
+                                  <value name="DICT">
+                                    <block type="variables_get" id="klPCmcY}jHQh48Svy2C8">
+                                      <field name="VAR" id="OI55u2:w((7{$p[G]$0Z">DICT_load_object</field>
+                                    </block>
+                                  </value>
+                                  <value name="KEY">
+                                    <shadow type="text" id="[{E3}kJ1Rx$p1!qB2`_-">
+                                      <field name="TEXT">scale</field>
+                                    </shadow>
+                                  </value>
+                                </block>
+                              </value>
+                              <value name="KEY">
+                                <shadow type="text" id="IPURJ?LoA1wUT_]Z}rR1">
+                                  <field name="TEXT">x</field>
+                                </shadow>
+                              </value>
+                            </block>
+                          </value>
+                          <value name="Y">
+                            <shadow type="math_number">
+                              <field name="NUM">0</field>
+                            </shadow>
+                            <block type="dictGet" id="kRz=QtCPD4j[$l^@vYuM">
+                              <value name="DICT">
+                                <block type="dictGet" id="b^Y4Y#WsE_51t9p6`(^n">
+                                  <value name="DICT">
+                                    <block type="variables_get" id=":R!v[!Yw8cI^sV~v~_MW">
+                                      <field name="VAR" id="OI55u2:w((7{$p[G]$0Z">DICT_load_object</field>
+                                    </block>
+                                  </value>
+                                  <value name="KEY">
+                                    <shadow type="text" id="h6g%}HeGg*9q{5h~vKTL">
+                                      <field name="TEXT">scale</field>
+                                    </shadow>
+                                  </value>
+                                </block>
+                              </value>
+                              <value name="KEY">
+                                <shadow type="text" id="`.@T`68)tf?Hz5Q;?}M,">
+                                  <field name="TEXT">y</field>
+                                </shadow>
+                              </value>
+                            </block>
+                          </value>
+                          <value name="Z">
+                            <shadow type="math_number">
+                              <field name="NUM">0</field>
+                            </shadow>
+                            <block type="dictGet" id="`2m!eeuqU$SBx?MUEC6b">
+                              <value name="DICT">
+                                <block type="dictGet" id="HUu(:,nE`^owRvk|cCk_">
+                                  <value name="DICT">
+                                    <block type="variables_get" id=",a@Wk08I{qp(ib,GhDVK">
+                                      <field name="VAR" id="OI55u2:w((7{$p[G]$0Z">DICT_load_object</field>
+                                    </block>
+                                  </value>
+                                  <value name="KEY">
+                                    <shadow type="text" id="t7I[d_2O[4|$nc]g@dSx">
+                                      <field name="TEXT">scale</field>
+                                    </shadow>
+                                  </value>
+                                </block>
+                              </value>
+                              <value name="KEY">
+                                <shadow type="text" id="10Y#yLU|y%AxbqWaB.mf">
+                                  <field name="TEXT">z</field>
+                                </shadow>
+                              </value>
+                            </block>
+                          </value>
+                        </block>
+                      </value>
+                      <next>
+                        <block type="variables_set" id="OzqE}$7iIPZzQc]fY2y|">
+                          <field name="VAR" id="anx5!tSvEN)9,8P?:b^p">load_object_color</field>
+                          <value name="VALUE">
+                            <block type="dictGet" id="i[7|K}ji:svlf|6W,lu@">
+                              <value name="DICT">
+                                <block type="variables_get" id="1hX7LDKytP{R4)lJxZe[">
+                                  <field name="VAR" id="OI55u2:w((7{$p[G]$0Z">DICT_load_object</field>
+                                </block>
+                              </value>
+                              <value name="KEY">
+                                <shadow type="text" id="($q?f2,=Ak^!2;.E.jv?">
+                                  <field name="TEXT">color</field>
+                                </shadow>
+                              </value>
+                            </block>
+                          </value>
+                          <next>
+                            <block type="variables_set" id="J1T*a!FX#374iUjgu`@X">
+                              <field name="VAR" id=")Ku8NsSXfKh27B.U@k|@">load_object_material</field>
+                              <value name="VALUE">
+                                <block type="getObjectMaterial" id="_5R4|JjwLAP5K|QRJ{Ib">
+                                  <value name="VALUE">
+                                    <shadow type="objectList">
+                                      <field name="FIELDNAME">&lt;none&gt;</field>
+                                    </shadow>
+                                    <block type="variables_get" id="}QC=T:27zFG{XBt5aHjZ">
+                                      <field name="VAR" id="NcUiKrQXv#LFtXD3,#l}">load_object</field>
+                                    </block>
+                                  </value>
+                                </block>
+                              </value>
+                              <next>
+                                <block type="setMaterialColor" id="pUc1gB$G-D/hZ(q[(:jv">
+                                  <mutation xmlns="http://www.w3.org/1999/xhtml" flexcolinput="true" usecsscolor="true"></mutation>
+                                  <field name="MAT_COL_NAME">color</field>
+                                  <value name="COL_NAME_FLEX">
+                                    <block type="text" id="fDge;ZnE)cIV@1S2/-Xq">
+                                      <field name="TEXT">Color</field>
+                                    </block>
+                                  </value>
+                                  <value name="MATERIAL">
+                                    <shadow type="materialList">
+                                      <field name="FIELDNAME">TorusMaterial</field>
+                                    </shadow>
+                                    <block type="variables_get" id="9q7@z$fk2wWwpHb~OcV)">
+                                      <field name="VAR" id=")Ku8NsSXfKh27B.U@k|@">load_object_material</field>
+                                    </block>
+                                  </value>
+                                  <value name="CSS">
+                                    <block type="variables_get" id="q`hoL(b^kf;WWs%;z_lA">
+                                      <field name="VAR" id="anx5!tSvEN)9,8P?:b^p">load_object_color</field>
+                                    </block>
+                                  </value>
+                                </block>
+                              </next>
+                            </block>
+                          </next>
+                        </block>
+                      </next>
+                    </block>
+                  </next>
+                </block>
+              </next>
+            </block>
+          </next>
+        </block>
+      </statement>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="procedures_defreturn" id="DqH?CQX1ZC8zYgz4Ni7Y" x="-890" y="230">
+      <mutation>
+        <arg name="current_color" varid="YfhsJX_E[Iosau%86#mx"/>
+        <arg name="current_object" varid="Z6fqxobup.9:B0P9@`9#"/>
+      </mutation>
+      <field name="NAME">NEXT_COLOR</field>
+      <comment pinned="false" h="80" w="160">Describe this function...</comment>
+      <statement name="STACK">
+        <block type="controls_if" id="TbLA(2On_AId0Tcp8?/*">
+          <mutation elseif="2"/>
+          <value name="IF0">
+            <block type="logic_compare" id=",`1VE+{((8?5xqdO]RJ}">
+              <field name="OP">EQ</field>
+              <value name="A">
+                <block type="variables_get" id="6sMzL6(8k:X*0?1MV/fp">
+                  <field name="VAR" id="YfhsJX_E[Iosau%86#mx">current_color</field>
+                </block>
+              </value>
+              <value name="B">
+                <block type="text" id="1Bdb`xMD)]H-2:I^PbPH">
+                  <field name="TEXT">red</field>
+                </block>
+              </value>
+            </block>
+          </value>
+          <statement name="DO0">
+            <block type="variables_set" id="*XaTH)~3VP{k|rvMMB]X">
+              <field name="VAR" id="p7U;1_1TIGTp[SZU8A#+">next_color</field>
+              <value name="VALUE">
+                <block type="text" id="^aM/NCUhTLg;zrQ$]dke">
+                  <field name="TEXT">green</field>
+                </block>
+              </value>
+            </block>
+          </statement>
+          <value name="IF1">
+            <block type="logic_compare" id="TSO73ETfJl`t#d217tk3">
+              <field name="OP">EQ</field>
+              <value name="A">
+                <block type="variables_get" id=",0u6_TpaXAGBPtyC[rkO">
+                  <field name="VAR" id="YfhsJX_E[Iosau%86#mx">current_color</field>
+                </block>
+              </value>
+              <value name="B">
+                <block type="text" id="r*qM]f!~v=xiGsw#.5#3">
+                  <field name="TEXT">green</field>
+                </block>
+              </value>
+            </block>
+          </value>
+          <statement name="DO1">
+            <block type="variables_set" id="/jXk*cb2A:4guV`bGh*s">
+              <field name="VAR" id="p7U;1_1TIGTp[SZU8A#+">next_color</field>
+              <value name="VALUE">
+                <block type="text" id="y*aO3c,2[Xzv#WGGN:$U">
+                  <field name="TEXT">blue</field>
+                </block>
+              </value>
+            </block>
+          </statement>
+          <value name="IF2">
+            <block type="logic_compare" id="v22999zE0(v[X|)~A;;T">
+              <field name="OP">EQ</field>
+              <value name="A">
+                <block type="variables_get" id="Su-X3Gzp+khV9La@Z[zN">
+                  <field name="VAR" id="YfhsJX_E[Iosau%86#mx">current_color</field>
+                </block>
+              </value>
+              <value name="B">
+                <block type="text" id="XMZp!.;{i3e~QPG^+-O3">
+                  <field name="TEXT">blue</field>
+                </block>
+              </value>
+            </block>
+          </value>
+          <statement name="DO2">
+            <block type="variables_set" id="z0m#gD6pv^WTw@n)l1:b">
+              <field name="VAR" id="p7U;1_1TIGTp[SZU8A#+">next_color</field>
+              <value name="VALUE">
+                <block type="text" id="}N8T+|MX_k^T?_54HcD)">
+                  <field name="TEXT">red</field>
+                </block>
+              </value>
+            </block>
+          </statement>
+          <next>
+            <block type="dictSet" id="35Rss1R-iGN8Qjwb.BYS" inline="false">
+              <value name="DICT">
+                <block type="variables_get" id="/:wt70%BL%S:Lhp9z~Y7">
+                  <field name="VAR" id="dGlLd/|QM*Nx?BamIUD$">DICT_object_colors</field>
+                </block>
+              </value>
+              <value name="KEY">
+                <shadow type="text" id="*67MkoSLOTKcW?T)^$LE">
+                  <field name="TEXT">Cube</field>
+                </shadow>
+                <block type="variables_get" id="$u4[t1+3}4j!akIb;Jnu">
+                  <field name="VAR" id="Z6fqxobup.9:B0P9@`9#">current_object</field>
+                </block>
+              </value>
+              <value name="VALUE">
+                <block type="variables_get" id="$X*XrdBU^4lNrhF_).~;">
+                  <field name="VAR" id="p7U;1_1TIGTp[SZU8A#+">next_color</field>
+                </block>
+              </value>
+              <next>
+                <block type="console.log" id="myJTJ#t_1ImnMUmMBAW!" disabled="true">
+                  <value name="VALUE">
+                    <shadow type="text" id="Gq).rKq_X],B~prSCa6B">
+                      <field name="TEXT">procedure "LOAD" running.</field>
+                    </shadow>
+                  </value>
+                </block>
+              </next>
+            </block>
+          </next>
+        </block>
+      </statement>
+      <value name="RETURN">
+        <block type="variables_get" id="3IV5!|yl}fHVC4Hr55#l">
+          <field name="VAR" id="p7U;1_1TIGTp[SZU8A#+">next_color</field>
+        </block>
+      </value>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="procedures_defnoreturn" id="1R2oy$rYL?Q`0P_Vwz_F" x="-250" y="310">
+      <field name="NAME">DELETE_KEY</field>
+      <comment pinned="false" h="80" w="160">Describe this function...</comment>
+      <statement name="STACK">
+        <block type="GLIFTEK_v3d_Plugins_Web_Storage/GLIFTEK_WEB_STORAGE_Delete_Key" id="@[B0GV@5g/Azx[#S/c4}" inline="false">
+          <value name="key">
+            <shadow type="text" id="KAen@C[{1][:Q}J7`d5;">
+              <field name="TEXT">someKey</field>
+            </shadow>
+            <block type="variables_get" id="OR555nared#K00+O@4FA">
+              <field name="VAR" id="mfo44SvBTDEILi7)Vtp#">my_saved_key</field>
+            </block>
+          </value>
+          <value name="storeName">
+            <shadow type="text" id="#..8mHobC;O3/Kw#2T+i">
+              <field name="TEXT">myDataStore_01</field>
+            </shadow>
+            <block type="variables_get" id="7HWFBYlgMy%c0:r_iCCU">
+              <field name="VAR" id="@cK+zRt,3lGrJU+C5)w8">my_dataStore</field>
+            </block>
+          </value>
+          <value name="databaseName">
+            <shadow type="text" id="F~!AQ#nE#4doNn,xEahi">
+              <field name="TEXT">myAppsDatabase</field>
+            </shadow>
+            <block type="variables_get" id="GA%Mv=jt*U7~:35EeK:7">
+              <field name="VAR" id="!%E4qfZS]00cr}rMK(3O">my_database</field>
+            </block>
+          </value>
+        </block>
+      </statement>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="procedures_defnoreturn" id="QE]MQZq=[/`;P{20G]^W" x="-250" y="470">
+      <field name="NAME">CLEAR_DATABASE</field>
+      <comment pinned="false" h="80" w="160">Describe this function...</comment>
+      <statement name="STACK">
+        <block type="GLIFTEK_v3d_Plugins_Web_Storage/GLIFTEK_WEB_STORAGE_Clear_Database" id="8zZg*e%iA6P@y7VA3[|[">
+          <value name="databaseName">
+            <shadow type="text" id="UHV%A{NH(~6C8xIL_S0+">
+              <field name="TEXT">myAppsDatabase</field>
+            </shadow>
+            <block type="variables_get" id="KmL}b`{gZ_(|Wn4/V-wB">
+              <field name="VAR" id="!%E4qfZS]00cr}rMK(3O">my_database</field>
+            </block>
+          </value>
+        </block>
+      </statement>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="procedures_defnoreturn" id="?Av!1lVpQ3n6ww(uz.NR" x="-250" y="610">
+      <field name="NAME">GET_LENGTH_OF_DATASTORE</field>
+      <comment pinned="false" h="80" w="160">Describe this function...</comment>
+      <statement name="STACK">
+        <block type="variables_set" id="B%NqbjhXcR$g:bX)ooYU">
+          <field name="VAR" id="JU8ezYUE_ut.t+4F2pyZ">length_of_CSV</field>
+          <value name="VALUE">
+            <block type="GLIFTEK_v3d_Plugins_Web_Storage/GLIFTEK_WEB_STORAGE_Get_Length_Of_DataStore" id="Q0K0I,fl!TI5|-dW={UW" inline="false">
+              <value name="storeName">
+                <shadow type="text" id="M=EJs%Ue#J|TRk@}^mf~">
+                  <field name="TEXT">myDataStore_01</field>
+                </shadow>
+                <block type="variables_get" id="hX+`I+(3-,se@@iagfF7">
+                  <field name="VAR" id="@cK+zRt,3lGrJU+C5)w8">my_dataStore</field>
+                </block>
+              </value>
+              <value name="databaseName">
+                <shadow type="text" id="0#Pg6LJ7BZjio51o}f;B">
+                  <field name="TEXT">myAppsDatabase</field>
+                </shadow>
+                <block type="variables_get" id="r2qzzOJ0~2Ou,,/Dos?.">
+                  <field name="VAR" id="!%E4qfZS]00cr}rMK(3O">my_database</field>
+                </block>
+              </value>
+            </block>
+          </value>
+        </block>
+      </statement>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="procedures_defnoreturn" id="YZ/I!53-X54yu]lR6G*v" x="-250" y="790">
+      <field name="NAME">GET_ALL_KEYS</field>
+      <comment pinned="false" h="80" w="160">Describe this function...</comment>
+      <statement name="STACK">
+        <block type="variables_set" id="CnYX;4)R~,3W)!AMqFrQ">
+          <field name="VAR" id="_b3MtHu.I*t.=s}Ny|ES">LIST_keys_from_database</field>
+          <value name="VALUE">
+            <block type="GLIFTEK_v3d_Plugins_Web_Storage/GLIFTEK_WEB_STORAGE_Get_All_Keys_Of_DataStore" id="@e)#}OT#C+,7uR^a}-T*" inline="false">
+              <value name="storeName">
+                <shadow type="text" id="u@cbiD=@,jQ$`Ckmv6#W">
+                  <field name="TEXT">myDataStore_01</field>
+                </shadow>
+                <block type="variables_get" id="J5;?iH?x?5hd`mMR9_y*">
+                  <field name="VAR" id="@cK+zRt,3lGrJU+C5)w8">my_dataStore</field>
+                </block>
+              </value>
+              <value name="databaseName">
+                <shadow type="text" id="W]CAZt8$;.d|b+i|GJ8[">
+                  <field name="TEXT">myAppsDatabase</field>
+                </shadow>
+                <block type="variables_get" id="[nOow;l0ow@bQiHt_bnN">
+                  <field name="VAR" id="!%E4qfZS]00cr}rMK(3O">my_database</field>
+                </block>
+              </value>
+            </block>
+          </value>
+          <next>
+            <block type="console.log" id="oWUV;4^QhTgtjwCrjt_=">
+              <value name="VALUE">
+                <shadow type="text" id="9:Kj/Ya})xS-=k7%v!b-">
+                  <field name="TEXT">LIST_keys_from_database: </field>
+                </shadow>
+              </value>
+              <next>
+                <block type="console.log" id="Bur-l~LilmSN(8.,/;V/">
+                  <value name="VALUE">
+                    <shadow type="text">
+                      <field name="TEXT">length_of_CSV: </field>
+                    </shadow>
+                    <block type="variables_get" id="]}8JRiS)-?Rz+Rd=j)[r">
+                      <field name="VAR" id="_b3MtHu.I*t.=s}Ny|ES">LIST_keys_from_database</field>
+                    </block>
+                  </value>
+                </block>
+              </next>
+            </block>
+          </next>
+        </block>
+      </statement>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="procedures_defnoreturn" id="LilP5|[rT,$%)StvpB+Q" x="-250" y="1010">
+      <field name="NAME">DELETE_DATASTORE</field>
+      <comment pinned="false" h="80" w="160">Describe this function...</comment>
+      <statement name="STACK">
+        <block type="GLIFTEK_v3d_Plugins_Web_Storage/GLIFTEK_WEB_STORAGE_Delete_DataStore" id="X6ekqy.px(,b4=4qzKr2">
+          <value name="dataStoreName">
+            <block type="variables_get" id="F6o@5)p407_(nY|PDMd+">
+              <field name="VAR" id="@cK+zRt,3lGrJU+C5)w8">my_dataStore</field>
+            </block>
+          </value>
+          <value name="databaseName">
+            <shadow type="text" id="{[sbG*@4P`pU[R~y6],p">
+              <field name="TEXT">myAppsDatabase</field>
+            </shadow>
+            <block type="variables_get" id="Q#y-:P?)0g8x-/gKRptJ">
+              <field name="VAR" id="!%E4qfZS]00cr}rMK(3O">my_database</field>
+            </block>
+          </value>
+        </block>
+      </statement>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="procedures_defnoreturn" id="@kWmCO*|Qamm89aE@AUp" x="-250" y="1130">
+      <field name="NAME">DELETE_DATABASE</field>
+      <comment pinned="false" h="80" w="160">Describe this function...</comment>
+      <statement name="STACK">
+        <block type="GLIFTEK_v3d_Plugins_Web_Storage/GLIFTEK_WEB_STORAGE_Delete_Database" id="heT*2vSxZhK)GS@7]Rc*">
+          <value name="databaseName">
+            <shadow type="text" id="},t+F_5O4P@#/6D2Ig-N">
+              <field name="TEXT">myAppsDatabase</field>
+            </shadow>
+            <block type="variables_get" id="wRB+[5/$i?,h/nD*2NOm">
+              <field name="VAR" id="!%E4qfZS]00cr}rMK(3O">my_database</field>
+            </block>
+          </value>
+        </block>
+      </statement>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="procedures_defnoreturn" id="y),/(=juxuD@FnH!y^Xa" x="-250" y="1250">
+      <field name="NAME">ITERATE_DATASTORE</field>
+      <comment pinned="false" h="80" w="160">Describe this function...</comment>
+      <statement name="STACK">
+        <block type="GLIFTEK_v3d_Plugins_Web_Storage/GLIFTEK_WEB_STORAGE_Iterate_Through_DataStore" id="[Y^7|}iXMWDGz^M:88[C">
+          <value name="value">
+            <shadow type="text" id="J8TUR=PZr)R.+[h}GWu9">
+              <field name="TEXT">someValue</field>
+            </shadow>
+          </value>
+          <value name="key">
+            <shadow type="text" id="2mFPk1cB5giV7S=Z.0#H">
+              <field name="TEXT">someKey</field>
+            </shadow>
+            <block type="variables_get" id="n|:OJGIOYOOuZ@Y@3FTB">
+              <field name="VAR" id="mfo44SvBTDEILi7)Vtp#">my_saved_key</field>
+            </block>
+          </value>
+          <value name="iterationNumber">
+            <shadow type="math_number" id="tAK^WzwVdZ-ljXzGLJLj">
+              <field name="NUM">0</field>
+            </shadow>
+          </value>
+          <value name="storeName">
+            <shadow type="text" id="CU##.5`iN!7ixz6o#6s?">
+              <field name="TEXT">myDataStore_01</field>
+            </shadow>
+            <block type="variables_get" id="_S[8(~,BCZ8cR$i?^n9!">
+              <field name="VAR" id="@cK+zRt,3lGrJU+C5)w8">my_dataStore</field>
+            </block>
+          </value>
+          <value name="databaseName">
+            <shadow type="text" id="=DOt8)XM6)3mTh:43|M[">
+              <field name="TEXT">myAppsDatabase</field>
+            </shadow>
+            <block type="variables_get" id=":rI|za=pG|ZlcsyGd8v-">
+              <field name="VAR" id="!%E4qfZS]00cr}rMK(3O">my_database</field>
+            </block>
+          </value>
+        </block>
+      </statement>
+    </block>
+  </tab>
+  <editorsettings viewport-x="1288.0000244140624" viewport-y="82" viewport-w="300" viewport-h="235" viewport-hidden="true" toolbox-library-mode="false" toolbox-minimized-mode="false"></editorsettings>
+</xml>
