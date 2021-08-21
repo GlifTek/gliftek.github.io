@@ -328,7 +328,15 @@ function make_site_HTML()
 
   storeSmall_HTML();
 
+
+
   intro_HTML();
+
+  demo_HTML();
+
+  tableOfContents_HTML();
+
+
 
   make_All_post_HTML();
 
@@ -901,7 +909,9 @@ function set_nav_HTML()
   // ${menuHeaderFooter}`;
 
   // return result;
-};
+
+
+};  //  END NAVS
 
 
 function intro_HTML()
@@ -912,19 +922,6 @@ function intro_HTML()
 
 function set_intro_HTML()
 {
-  let tableOfContents = [];
-
-  for( let i = 0; i < ( LIST_pluginPack_plugins_LENGTH ); i++ )
-  {
-
-    let item = LIST_pluginPack_plugins[i];
-
-    let tableItem = 
-    `<li><a href="#${item}">${item.replace(/_/g, ' ')}</a></li>`;
-
-    tableOfContents.push(tableItem);
-
-  }
 
   let pluginNameandIntro, userDocumentationOrNot;
 
@@ -941,11 +938,30 @@ function set_intro_HTML()
   }
 
 
+    let result =
+    `<header class="major" style='font-style: italic'>
+    <span class="date">${userDocumentationOrNot}</span>
+    ${pluginNameandIntro}
+    </header>
+    <hr>`;
 
-  let
-  demo;
+    return result;
 
+
+};
+
+
+
+function demo_HTML()
+{
+  let demoDiv = document.getElementById('demoDiv');
+  demoDiv.innerHTML = set_demo_HTML();
+}
+
+function set_demo_HTML()
+{
   let
+  demo,
   iframeSrc,
   iframeSrcURI,
   pluginFolder,
@@ -961,17 +977,13 @@ function set_intro_HTML()
   {
   
     pluginFolder = `GLIFTEK_Plugins_${pluginPack.title}`;
-    console.log('pluginFolder:',pluginFolder);
+    // console.log('pluginFolder:',pluginFolder);
 
-    pluginAddress = `./assets/demos/${pluginFolder}/`;
-    console.log('pluginAddress:',pluginAddress);
+    pluginAddress = `./assets/demos/${pluginFolder}/${pluginFolder}.html`;
+    // console.log('pluginAddress:',pluginAddress);
 
-    pluginAddress2 = `./assets/demos/${pluginFolder}/${pluginFolder}.html`;
-    console.log('pluginAddress2:',pluginAddress2);
-
-
-     demo = 
-    `<iframe src = "${pluginAddress2}"
+    demo = 
+    `<iframe src = "${pluginAddress}"
     scrolling = "no"
     border = "0"
     frameborder = "0"
@@ -983,40 +995,61 @@ function set_intro_HTML()
     text-align: center;
 
     border-radius: 20px;
-    border: 2px solid cyan'>
+    border: 2px solid cyan;
+    background-color:rgba(0,0,0,0.3);'>
     </iframe>`;
-
-    // position: absolute;
-    // top: 0px;
-    // left: 0px;
-    // width: 98%;
-    // height: 96%;
-
-    // border-radius: 15px;
-    // border: 2px solid cyan    
 
   };
 
     let result =
-    `<header class="major" style='font-style: italic'>
-    <span class="date">${userDocumentationOrNot}</span>
-    ${pluginNameandIntro}
-    </header>  
+    `</br>
     <div id='verge3d_iframe_Div' style='display: block; float: center; text-align: center'>
     ${demo}
     </div>
-    <hr>
-    <div style='text-align: left; font-style: italic' >
-      <ul id = 'pageContentsList' >  
-      ${tableOfContents.join('')}
-      </ul>
-    </div>`;
-
+    </br>
+    </br>
+    `;
     return result;
-
 
 };
 
+
+
+function tableOfContents_HTML()
+{
+  let tableOfContentsDiv = document.getElementById('tableOfContentsDiv');
+  tableOfContentsDiv.innerHTML = set_tableOfContents_HTML();
+};
+
+function set_tableOfContents_HTML()
+{
+  let tableOfContents = [];
+
+  for( let i = 0; i < ( LIST_pluginPack_plugins_LENGTH ); i++ )
+  {
+
+    let item = LIST_pluginPack_plugins[i];
+
+    let tableItem = 
+    `<li><a href="#${item}">${item.replace(/_/g, ' ')}</a></li>`;
+
+    tableOfContents.push(tableItem);
+
+  };
+    
+    let result =
+    `
+    <header class="major" style='font-style: italic'>
+    <span class="date">Plugins:</span>
+    <ul id = 'pageContentsList'>  
+      ${tableOfContents.join('')}
+      </ul>
+    </header>
+    <hr>
+  `;
+
+    return result;
+};
 
 
 
@@ -1078,8 +1111,6 @@ function set_post_HTML( pluginName, pic )
   let consoleText = pluginPackEvaled.consoleText;
   let extraText = pluginPackEvaled.extraText;
   let customHTML = pluginPackEvaled.customHTML;
-
-
 
 
 
@@ -1228,7 +1259,7 @@ function set_post_HTML( pluginName, pic )
 function storeSmall_HTML()
 {
   let storeSmallDiv = document.getElementById('storeSmallDiv');
-  storeSmallDiv.innerHTML = `<div class="align-center"><a href="${gliftek_contactInfo.gumroadStore}" target="_blank" rel="noreferrer noopener"class="button small">PURCHASE AT STORE</a></div><br />`;
+  storeSmallDiv.innerHTML = `<div class="align-center"><a href="${gliftek_contactInfo.gumroadStore}" target="_blank" rel="noreferrer noopener"class="button large">PURCHASE AT STORE</a></div><br />`;
 }
 
 
