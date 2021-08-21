@@ -284,9 +284,9 @@ function setstyleVar()
     width: 95%;
     height: 100%;
 
-    border-radius: 25px;
-    border: 2px solid white;
-    padding: 10px;
+    border-radius: 15px;
+    border: 2px solid cyan;
+    padding: 5px;
 }
 
 .fullscreen-button {
