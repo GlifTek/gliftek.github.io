@@ -2957,7 +2957,7 @@ input, select, textarea {
 		}
 
 		header.major {
-			margin: 0 0 4rem 0;
+			margin: 0 0 0rem 0;
 			text-align: center;
 		}
 
@@ -2972,7 +2972,7 @@ input, select, textarea {
 
 			header.major > .date {
 				font-size: 1.5rem;
-				margin: 0 0 4rem 0;
+				margin: 0 0 1rem 0;
 			}
 
 				header.major > .date:before, header.major > .date:after {
@@ -3775,13 +3775,21 @@ input, select, textarea {
 			margin-bottom: 0;
 		}
 
-		@media screen and (max-width: 980px) {
+		/* @media screen and (max-width: 100000px) { */
 
 			#nav {
 				display: none;
 			}
 
-		}
+		/* } */
+
+		/* @media screen and (max-width: 980px) {
+
+			#nav {
+				display: none;
+			}
+
+		} */
 
 /* Main */
 
@@ -4535,7 +4543,10 @@ input, select, textarea {
 		-webkit-transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
 		-ms-transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
 		transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+
 		display: none;
+		/* display: block; */
+
 		position: fixed;
 		top: 0.75rem;
 		right: 0.75rem;
@@ -4580,22 +4591,31 @@ input, select, textarea {
 				background-color: #ffffff;
 			}
 
-		@media screen and (max-width: 980px) {
+
+			/* @media screen and (min-width: 1px) {
+
+				#navPanelToggle {
+					display: block;
+				}
+	
+			} */
+
+		/* @media screen and (max-width: 980px) { */
 
 			#navPanelToggle {
 				display: block;
 			}
 
-		}
+		/* } */
 
-		@media screen and (max-width: 736px) {
+		/* @media screen and (max-width: 736px) { */
 
 			#navPanelToggle {
 				font-size: 0.8rem;
 				padding: 0.25rem 1rem;
 			}
 
-		}
+		/* } */
 
 	#navPanel {
 		-moz-transform: translateX(20rem);
@@ -4606,7 +4626,10 @@ input, select, textarea {
 		-webkit-transition: -webkit-transform 0.5s ease, box-shadow 0.5s ease, visibility 0.5s;
 		-ms-transition: -ms-transform 0.5s ease, box-shadow 0.5s ease, visibility 0.5s;
 		transition: transform 0.5s ease, box-shadow 0.5s ease, visibility 0.5s;
-		display: none;
+
+		/* display: none; */
+		display: block;
+
 		-webkit-overflow-scrolling: touch;
 
 		/* background: #7a1010; */
@@ -4662,8 +4685,8 @@ input, select, textarea {
 
 				#navPanel .links li:first-child {
 					border-top: 0;
-					
 				}
+
 
 		#navPanel .close {
 			text-decoration: none;
@@ -4702,42 +4725,53 @@ input, select, textarea {
 				font-weight: 900;
 			}
 
+
 			#navPanel .close:before {
 				content: '\f00d';
 				font-size: 1.25rem;
 			}
+
 
 			#navPanel .close:hover {
 				/* color: #212931; */
 				color: #ffffff;
 			}
 
-			@media screen and (max-width: 736px) {
+			/* @media screen and (min-width: 736px) { */
 
-				#navPanel .close {
-					height: 4rem;
-					line-height: 4rem;
-				}
-
+			#navPanel .close {
+				height: 4rem;
+				line-height: 4rem;
 			}
 
-		@media screen and (max-width: 980px) {
+			/* } */
+
+			/* @media screen and (min-width: 980px) { */
+
+				#navPanel {
+					display: block;
+				}
+	
+			/* } */
+			
+		/* @media screen and (max-width: 980px) {
 
 			#navPanel {
 				display: block;
 			}
 
-		}
+		} */
 
-		@media screen and (max-width: 736px) {
+		/* @media screen and (max-width: 736px) { */
 
 			#navPanel {
 				padding: 2.5rem 1.75rem;
 			}
 
-		}
+		/* } */
 
-	@media screen and (max-width: 980px) {
+	/* @media screen and (min-width: 1px) { */
+		/* @media screen and (max-width: 10px) { */
 
 		body.is-navPanel-visible #wrapper {
 			opacity: 0.5;
@@ -4752,4 +4786,4 @@ input, select, textarea {
 			visibility: visible;
 		}
 
-	}
+	/* } */
