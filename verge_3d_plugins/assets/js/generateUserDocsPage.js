@@ -937,13 +937,13 @@ function set_intro_HTML()
     userDocumentationOrNot = 'User Documentation';
   }
 
-
     let result =
     `<header class="major" style='font-style: italic'>
     <span class="date">${userDocumentationOrNot}</span>
     ${pluginNameandIntro}
     </header>
-    <hr>`;
+    
+    `;
 
     return result;
 
@@ -990,7 +990,7 @@ function set_demo_HTML()
     framespacing = "0"
     allowfullscreen = "true"
     style='display: block;
-    width: 90%;
+    width: 100%;
     height: 300px;
     text-align: center;
     display: block;
@@ -1015,7 +1015,12 @@ function set_demo_HTML()
     text-align: center;
     '>
     ${demo}
-    </div>
+    </br>
+    <i>Right Click-Drag or Swipe to pan image in the demo above.</i>
+    </div>   
+    <!--  <hr> -->
+   
+    </br>
     </br>
     </br>
     `;
@@ -1051,9 +1056,23 @@ function set_tableOfContents_HTML()
     `
     <header class="major" style='font-style: italic'>
     <span class="date">Plugins:</span>
-    <ul id = 'pageContentsList'>  
+    
+    <div styly='width: 100%'>
+    <div id= 'pageContentsListDiv'
+    style = '
+    text-align: center;
+    margin-left: 38%;
+    margin-right: auto;
+    width: 50%;
+    '>
+
+    <ul style = ' text-align: left; '>  
       ${tableOfContents.join('')}
       </ul>
+
+      </div>
+      </div>
+
     </header>
     <hr>
   `;
@@ -1171,7 +1190,8 @@ function set_post_HTML( pluginName, pic )
 
     consoleHTML =
     `<p class="align-center">${consoleText}</p>
-    <div id='${divConsolePic}' class='modal-content' style='width: 100%'></div><br />`;
+    <div id='${divConsolePic}' class='modal-content' style='width: 100%'></div>
+    `;
 
   };
 
@@ -1223,42 +1243,49 @@ function set_post_HTML( pluginName, pic )
 
     extraHTML =
     `<p class="align-center">${extraText}</p>
-    <div id='${divExtraPic}' class='modal-content' style='width: 100%'></div><br />`;
+    <div id='${divExtraPic}' class='modal-content' style='width: 100%'></div>`;
 
   };
 
 
 
-
+//<div style="width: 100%; height: 1px; background: #ffffff;"></div>
 
   let result =
-  `<section class="post" >
+  `
+  <section class="post" >
 
-    <br />
-
+   
     <div class="align-center" >
 
       <h2><a id="${pluginName}" href="#${pluginName}">[ ${pluginName_UpperCase} ]</a></h2>
-
+      </br>
+      <i>
       ${puzzleHTML}
 
       ${exampleHTML}
 
+      <hr>
+
       ${consoleHTML}
+
+      <hr>
 
       ${extraHTML}
 
       ${customHTML}
-
+     
       ${mainHTML}
 
-      <div style="width: 100%; height: 1px; background: #ffffff;"></div>
+      <hr>
 
+      </i>
       <br />
 
     </div>
 
-  </section>`;
+  </section>
+  `;
 
   return result;
 };
