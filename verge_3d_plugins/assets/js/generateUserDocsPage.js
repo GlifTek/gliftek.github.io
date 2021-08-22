@@ -990,20 +990,30 @@ function set_demo_HTML()
     framespacing = "0"
     allowfullscreen = "true"
     style='display: block;
-    width: 100%;
+    width: 90%;
     height: 300px;
     text-align: center;
+    display: block;
+
+    margin-left: auto;
+    margin-right: auto;
 
     border-radius: 20px;
     border: 2px solid cyan;
     background-color:rgba(0,0,0,0.3);'>
-    </iframe>`;
+    </iframe>
+    `;
 
   };
 
     let result =
     `</br>
-    <div id='verge3d_iframe_Div' style='display: block; float: center; text-align: center'>
+    <div id='verge3d_iframe_Div'
+    style='
+    display: block; 
+    float: center; 
+    text-align: center;
+    '>
     ${demo}
     </div>
     </br>
@@ -1259,7 +1269,9 @@ function set_post_HTML( pluginName, pic )
 function storeSmall_HTML()
 {
   let storeSmallDiv = document.getElementById('storeSmallDiv');
-  storeSmallDiv.innerHTML = `<div class="align-center"><a href="${gliftek_contactInfo.gumroadStore}" target="_blank" rel="noreferrer noopener"class="button large">PURCHASE AT STORE</a></div><br />`;
+  storeSmallDiv.innerHTML = `<div class="align-center"><a href="${gliftek_contactInfo.gumroadStore}" target="_blank" rel="noreferrer noopener"class="button large">PURCHASE AT STORE</a></div>
+  </br>
+  </br>`;
 }
 
 
