@@ -2163,9 +2163,10 @@ input, select, textarea {
 			font-size: 0.9rem;
 			height: 3.5rem;
 			line-height: 3.5rem;
-			padding: 0 2.75rem;
+			padding: 0 1rem;
 		}
 
+		 /* PICK UP FROM HERE */
 		@media screen and (max-width: 980px) {
 
 			input[type="submit"],
@@ -4588,7 +4589,7 @@ input, select, textarea {
 		}
 
 			#navPanelToggle.alt:hover {
-				background-color: #ffffff;
+				background-color: #ffffff21;
 			}
 
 
@@ -4675,7 +4676,6 @@ input, select, textarea {
 					display: block;
 					font-family: "Source Sans Pro", Helvetica, sans-serif;
 					font-size: 0.9rem;
-					font-size: 0.9rem;
 					font-weight: 900;
 					letter-spacing: 0.075em;
 					padding: 0.75rem 0;
@@ -4737,40 +4737,40 @@ input, select, textarea {
 				color: #ffffff;
 			}
 
-			/* @media screen and (min-width: 736px) { */
+			@media screen and (min-width: 736px) {
 
 			#navPanel .close {
 				height: 4rem;
 				line-height: 4rem;
 			}
 
-			/* } */
+			}
 
-			/* @media screen and (min-width: 980px) { */
+			@media screen and (min-width: 980px) {
 
 				#navPanel {
 					display: block;
 				}
 	
-			/* } */
+			}
 			
-		/* @media screen and (max-width: 980px) {
+		@media screen and (max-width: 980px) {
 
 			#navPanel {
 				display: block;
 			}
 
-		} */
+		}
 
-		/* @media screen and (max-width: 736px) { */
+		@media screen and (max-width: 736px) {
 
 			#navPanel {
 				padding: 2.5rem 1.75rem;
 			}
 
-		/* } */
+		}
 
-	/* @media screen and (min-width: 1px) { */
+	@media screen and (min-width: 1px) {
 		/* @media screen and (max-width: 10px) { */
 
 		body.is-navPanel-visible #wrapper {
@@ -4786,4 +4786,4 @@ input, select, textarea {
 			visibility: visible;
 		}
 
-	/* } */
+	}
