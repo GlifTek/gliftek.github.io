@@ -313,12 +313,13 @@ function make_site_HTML()
 
   window.menuHeaderFooter =
 `<ul class="icons">
-<li><a href="${gliftek_contactInfo.discordVerge3D}" class="icon brands alt fa-discord"><span class="label">Discord</span></a></li>        
+<li><a href="${gliftek_contactInfo.discordVerge3D}" class="icon brands alt fa-discord"><span class="label">Discord</span></a></li>
+<li><a href="${gliftek_contactInfo.github}" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li> 
 <li><a href="${gliftek_contactInfo.facebook}" class="icon brands alt fa-facebook-f"><span class="label">Facebook</span></a></li>
+<li><a href="${gliftek_contactInfo.youtube}" class="icon brands alt fa-youtube"><span class="label">YouTube</span></a></li>
 <li><a href="${gliftek_contactInfo.instagram}" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li>
-<li><a href="${gliftek_contactInfo.twitter}" class="icon brands alt fa-twitter"><span class="label">Twitter</span></a></li>
-<li><a href="${gliftek_contactInfo.github}" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>    
 </ul>`;
+//<li><a href="${gliftek_contactInfo.twitter}" class="icon brands alt fa-twitter"><span class="label">Twitter</span></a></li> 
 
   title_HTML();
 
@@ -707,6 +708,7 @@ function header_HTML(pluginName)
     headerDiv.innerHTML = `<header id="header">
     <a href="user_docs_${pluginName}.html" class="logo">[ ${pluginPack_title_UpperCase} ]</a>
     </header>`;
+
 };
 
 
@@ -726,27 +728,38 @@ function set_nav_HTML()
   
   console.log('LIST_allPluginPacks.length',LIST_allPluginPacks.length);
 
-  const LIST_allPluginPacks_half = Math.ceil(LIST_allPluginPacks.length / 2);    
-  console.log('LIST_allPluginPacks_half',LIST_allPluginPacks_half);
+  // const LIST_allPluginPacks_half = Math.ceil(LIST_allPluginPacks.length / 2);    
+  // console.log('LIST_allPluginPacks_half',LIST_allPluginPacks_half);
 
-  const LIST_nav_firstHalf = LIST_allPluginPacks.slice(0, LIST_allPluginPacks_half)
+
+
+  const LIST_nav_firstHalf = LIST_allPluginPacks.slice(0, 11)
   console.log('LIST_nav_firstHalf',LIST_nav_firstHalf);
 
-  const LIST_nav_secondHalf = LIST_allPluginPacks.slice(-LIST_allPluginPacks_half)
-  console.log('LIST_nav_secondHalf',LIST_nav_secondHalf);
+  // const LIST_nav_firstHalf = LIST_allPluginPacks.slice(0, LIST_allPluginPacks_half)
+  // console.log('LIST_nav_firstHalf',LIST_nav_firstHalf);
+
+  // const LIST_nav_secondHalf = LIST_allPluginPacks.slice(-LIST_allPluginPacks_half)
+  // console.log('LIST_nav_secondHalf',LIST_nav_secondHalf);
 
 
 
   function make_Nav()
   {
-    
+
 
     let navMenuList = [];
 
     // for( let i = 0; i < (  ( LIST_nav_firstHalf.length - ( LIST_nav_firstHalf.length / 2 )  )  ); i++ )
-    for( let i = 0; i < LIST_allPluginPacks.length; i++ )
+    // for( let i = 0; i < LIST_allPluginPacks.length; i++ )
+    // {
+    //   let item = LIST_allPluginPacks[i];
+
+    for( let i = 0; i < LIST_nav_firstHalf.length; i++ )
     {
-      let item = LIST_allPluginPacks[i];
+      let item = LIST_nav_firstHalf[i];
+
+      
 
       let navItemClass;
 
@@ -807,38 +820,38 @@ function set_nav_HTML()
   }
 
 
-  function make_Nav2()
-  {
-      let navMenuList_2  = [];
+  // function make_Nav2()
+  // {
+  //     let navMenuList_2  = [];
 
-      for( let i = 0; i < LIST_nav_secondHalf.length; i++ )
-      {
-        let item = LIST_nav_secondHalf[i];
+  //     for( let i = 0; i < LIST_nav_secondHalf.length; i++ )
+  //     {
+  //       let item = LIST_nav_secondHalf[i];
     
-        let navItemClass;
+  //       let navItemClass;
     
     
-        if ( item == page )
-        {
-          navItemClass = 'active';
-        }
-        else
-        {
-          navItemClass = '';
-        }
+  //       if ( item == page )
+  //       {
+  //         navItemClass = 'active';
+  //       }
+  //       else
+  //       {
+  //         navItemClass = '';
+  //       }
     
-        let navMenuItem = 
-        `<li class = '${navItemClass}'><a href="user_docs.html?page=${item}">${item}</a></li>`;
+  //       let navMenuItem = 
+  //       `<li class = '${navItemClass}'><a href="user_docs.html?page=${item}">${item}</a></li>`;
     
-        navMenuList_2.push(navMenuItem);
+  //       navMenuList_2.push(navMenuItem);
 
         
 
-      };
+  //     };
 
-      return navMenuList_2;
+  //     return navMenuList_2;
 
-  }
+  // }
 
 
   // for( let i = 0; i < (  ( LIST_allPluginPacks.length - ( LIST_allPluginPacks.length / 2 )  )  ); i++ )
@@ -869,6 +882,11 @@ function set_nav_HTML()
 
   let result =
 
+  // `<ul class="links">
+  // ${menuHeaderFooter}
+  // ${make_Nav().join('')}   
+  // </ul>`;
+  
   `<ul class="links">
     ${make_Nav().join('')}   
   </ul>
@@ -923,6 +941,7 @@ function intro_HTML()
 function set_intro_HTML()
 {
 
+
   let pluginNameandIntro, userDocumentationOrNot;
 
   if ( page == 'featured' )
@@ -938,7 +957,8 @@ function set_intro_HTML()
   }
 
     let result =
-    `<header class="major" style='font-style: italic'>
+    `<div style="text-align: center; font-size: 20;">${menuHeaderFooter}</div>
+    <header class="major" style='font-style: italic'>
     <span class="date">${userDocumentationOrNot}</span>
     ${pluginNameandIntro}
     </header>
@@ -1678,18 +1698,18 @@ function loadMainJS_navPanel()  //  MENU part
         // Move nav content on breakpoint change.
           var $navContent = $nav.children();
   
-          breakpoints.on('>medium', function() {
+          // breakpoints.on('>medium', function() {
   
-            // NavPanel -> Nav.
-              $navContent.appendTo($nav);
+          //   // NavPanel -> Nav.
+          //     $navContent.appendTo($nav);
   
-            // Flip icon classes.
-              $nav.find('.icons, .icon')
-                .removeClass('alt');
+          //   // Flip icon classes.
+          //     $nav.find('.icons, .icon')
+          //       .removeClass('alt');
   
-          });
+          // });
   
-          breakpoints.on('<=medium', function() {
+          // breakpoints.on('<=medium', function() {
   
             // Nav -> NavPanel.
               $navContent.appendTo($navPanelInner);
@@ -1698,7 +1718,7 @@ function loadMainJS_navPanel()  //  MENU part
               $navPanelInner.find('.icons, .icon')
                 .addClass('alt');
   
-          });
+          // });
   
         // Hack: Disable transitions on WP.
           if (browser.os == 'wp'
