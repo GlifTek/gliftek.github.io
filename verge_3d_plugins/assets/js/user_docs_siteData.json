@@ -5,6 +5,7 @@
     "email": "gliftekV3Dplugins@pm.me",
     "gumroadStore": "https://gliftek.gumroad.com/follow",
     "twitter": "",
+    "youtube": "https://www.youtube.com/gliftek/",
     "facebook": "https://www.facebook.com/glif.tek/",
     "instagram": "https://www.instagram.com/GlifTek/",
     "github": "https://github.com/GlifTek/",
@@ -21,17 +22,18 @@
 
     "allPluginPacks": [
         "featured",
-        "lens_flare_deluxe",            
+        "lens_flare_deluxe",
         "world",
         "csg",
-        "import_export",
-        "modal_window",
-        "web_storage",
-        "backgrounds",
+        "web_storage",        
         "bounding_boxes",
         "helpers",
+        "backgrounds",
+        "modal_window",
         "utility",
         "objects",
+
+        "import_export",
         "right_click_menu",
         "svg_loader",
         "paperJS",
@@ -204,7 +206,7 @@
 
     "utility": {
 
-        "title": "utility",
+        "title": "Utility",
 
         "intro": "is a selection of puzzles that allow solutions for many varied common tasks. In this group you will find:",
 
