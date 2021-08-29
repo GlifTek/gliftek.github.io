@@ -2,7 +2,7 @@
 
 "contactInfo": {
 
-    "email": "gliftekV3Dplugins@pm.me",
+    "email": "sales@gliftek.com",
     "gumroadStore": "https://gliftek.gumroad.com/follow",
     "twitter": "",
     "youtube": "https://www.youtube.com/gliftek/",
@@ -511,9 +511,11 @@
 
         "title": "Lens_Flare_Deluxe",
 
-        "intro": "creates a 'Lens Flare' object with three optional effects:<br /> [ Rays ], [ Glow ], and [ Bokeh ].",
+        "intro": "creates a 'Lens Flare' object with three optional effects settings:<br /> Rays, Glow, and Bokeh.",
 
         "demo": true,
+
+        "demoText": "<i>Two-Finger Swipe or Right Click Drag to pan image in the demo above.  <br>Click 'Next' to view next example.</i>",
         
         "plugins": [
             "Lens_Flare_Deluxe",
@@ -526,7 +528,7 @@
 
             "pluginWidth": "20rem", "exampleWidth": "23rem",
 
-            "puzzleText": "creates a Lens Flare Object with three optional effects: [ Rays ], [ Glow ], and [ Bokeh ]. (link these)",
+            "puzzleText": "creates a Lens Flare Object with three optional effects: Rays, Glow and Bokeh. (link these)",
 
             "exampleText": "Each of these effects are found within their own corresponding 'Settings' puzzles with a set of customizable options (shown further below). ",
 
@@ -1066,6 +1068,9 @@
 
         "demo": true,
 
+        "demoText": "<i>Two-Finger Swipe or Right Click Drag to pan image in the demo above.</i>",
+        
+
         "plugins": [
             "Generate_Sky",
             "Generate_Sun_Light",
@@ -1142,6 +1147,8 @@
         "intro": "is a set of plugins that use CONSTRUCTIVE SOLID GEOMETRY libraries to add or subtract geometry from objects. In the demo below, select an operation from the menu, drag one object to overlap a part of the other, then Double Click / Double Tap the object to receive the operation.",
 
         "demo": true,
+
+        "demoText": "<i>Right Click-Drag or Swipe to pan image in the demo above.</i>",
 
         "plugins": [
             "CSG_Boolean"
