@@ -411,7 +411,8 @@
             "Bounding_Box_Collision_Sensor",
             "Get_Bounding_Box",
             "Get_Bounding_Box_Collision_State",
-            "Get_Touching_Object"
+            "Get_Touching_Object",
+            "Get_List_Of_Touching_Or_Non_Touching_Objects"
         ],
 
         "Create_Bounding_Boxes": {
@@ -496,6 +497,21 @@
             "puzzleText": "returns the object a Bounding Box is currently touching.",
 
             "exampleText": "returns the name of an object whose bounding box is touching another bounding box",
+
+            "consoleText": "",
+
+            "extraText": "",
+
+            "customHTML": ""
+        },
+
+        "Get_List_Of_Touching_Or_Non_Touching_Objects": {
+
+            "pluginWidth": "25rem","exampleWidth": "50%",
+
+            "puzzleText": "returns a list of all the objects in a scene whose bounding boxes are either touching or not touching outher bounding boxes.",
+
+            "exampleText": "...",
 
             "consoleText": "",
 
