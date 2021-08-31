@@ -2160,9 +2160,12 @@ input, select, textarea {
 		input[type="button"].large,
 		button.large,
 		.button.large {
-			font-size: 0.9rem;
+			/* font-size: 0.9rem;
 			height: 3.5rem;
-			line-height: 3.5rem;
+			line-height: 3.5rem; */
+			font-size: 1.5rem;
+			height: 3.75rem;
+			line-height: 3.75rem;
 			padding: 0 1rem;
 		}
 
@@ -2179,15 +2182,15 @@ input, select, textarea {
 				line-height: 3.25rem;
 			}
 
-				input[type="submit"].large,
-				input[type="reset"].large,
-				input[type="button"].large,
+				/* input[type="submit"].large,
+				input[type="reset"].large, */
+				/* input[type="button"].large,
 				button.large,
 				.button.large {
 					font-size: 1.5rem;
 					height: 3.75rem;
 					line-height: 3.75rem;
-				}
+				} */
 
 		}
 
