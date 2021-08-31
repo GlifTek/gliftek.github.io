@@ -1166,7 +1166,7 @@
 
         "demo": true,
 
-        "demoText": "<i>Right Click-Drag or Swipe to pan image in the demo above.</i>",
+        "demoText": "<i>Use the menu items to select a boolean operation in the demo above.</i>",
 
         "plugins": [
             "CSG_Boolean"
@@ -1176,15 +1176,16 @@
 
             "pluginWidth": "25rem","exampleWidth": "30rem",  "consoleWidth": "22rem", "extraWidth": "85%",
 
-            "puzzleText": "executes a boolean operation between two objects, returning the resulting geometry as a new object.",
+            "puzzleText": "executes a boolean operation between two objects, returning the resulting geometry in a new object.",
 
-            "exampleText": "Operation modes available are: Union, Subtract, and Intersect.",
+            "exampleText": "Operation modes available are: Union, Subtract, and Intersect.  The 'operation aux' field can be used to supersede the dropdown menu if a changing varable is needed.",
 
             "consoleText": "",
 
-            "extraText": " ",
+            "extraText": "Boolean Operation Modes:",
 
-            "customHTML": ""
+            "customHTML": "</br /></br />- License -</br /> Copyright (c) 2011 Evan Wallace ( <a href='http://madebyevan.com/' target='blank' rel='noreferrer noopener'  >http://madebyevan.com </a>), under the MIT license.  </br />THREE.js rework by manthrax - <a href='https://github.com/manthrax/THREE-CSGMesh' target='blank' rel='noreferrer noopener' >https://github.com/manthrax/THREE-CSGMesh</a></br />Ported to Verge3D by GlifTek."
+
         }
     },
 
