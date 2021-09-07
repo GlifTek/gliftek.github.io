@@ -213,6 +213,7 @@
         "intro": "is a selection of puzzles that allow solutions for many varied common tasks. In this group you will find:",
 
         "plugins": [
+            "Stats_Info_Box",
             "Add_Zeros_Padding",
             "Convert_To_RGBA",
             "Export_CSV_File",
@@ -225,6 +226,24 @@
             "Context_Menu_Toggle",
             "Alert_Message"
         ],
+
+        
+        "Stats_Info_Box": {
+
+            "pluginWidth": "23rem","exampleWidth": "30rem",
+
+            "puzzleText": "provides a simple info box that will help you monitor your code performance.",
+
+            "exampleText": "Types of stats available:<br><ul><li>Frames rendered in the last second. The higher the number the better.</li><li>Milliseconds needed to render a frame. The lower the number the better.</li><li>MBytes of allocated memory. (Run Chrome with <code>--enable-precise-memory-info</code>)</li></ul>",
+            
+            "consoleText": "",
+
+            "extraText": "",
+
+            "customHTML": "Ported to Verge3D by GlifTek. <br> Original code from: <a href = 'https://github.com/mrdoob/stats.js'  target='blank' rel='noreferrer noopener' >https://threejs.org/examples/webgl_shaders_sky.html</a><br>Portions of the proceeds from the purchase of this plugin go to<br> the <a href = 'https://docs.github.com/en/sponsors/getting-started-with-github-sponsors/about-github-sponsors'  target='blank' rel='noreferrer noopener' >Github Sponsors Matching Fund.</a>"
+
+
+        },
 
         "Add_Zeros_Padding": {
 
