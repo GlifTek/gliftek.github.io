@@ -1099,9 +1099,9 @@
 
     "world": {
 
-        "title": "is a group of plugins, mostly ported from pre-existing open source examples, that provide easily implemented real-world environmental features such as a natural sky, body of water, and terrain. ",
-
-        "intro": "",
+        "title": "World",
+        
+        "intro": "is a group of plugins, mostly ported from pre-existing open source examples, that provide easily implemented real-world environmental features such as a natural sky, body of water, and terrain.",
 
         "demo": true,
 
