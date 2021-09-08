@@ -3,6 +3,9 @@
 //________________________________________________________________________________
 //  SET GLOBALS
 
+// mute console logging
+// console.log = function() {}
+
 set_Globals();
 
 function set_Globals()
@@ -1000,6 +1003,11 @@ function set_demo_HTML()
   {
     demo = '';
   }
+  // if ( pluginPack.demo == false )
+  // {
+  //   // console.log('DEMO = FALSE!')
+  //   demo = ``;
+  // }
 
   else if ( pluginPack.demo == true )
   {
