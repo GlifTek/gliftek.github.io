@@ -53,6 +53,10 @@
 
         "intro": "<p font-size='3rem'>[ GLIFTEK ] Plugin Packs are collections of convenient visual coding blocks for the<a href='https://soft8soft.com' target='_blank' rel='noreferrer noopener'> Verge 3D</a> web graphics authoring application.</br />  These will be up for sale soon.<br />Featured here are the following:",
 
+        "demo": false,
+
+        "demoText": "",
+
         "plugins": [
             "Bounding_Boxes",
             "Helpers",
@@ -119,6 +123,9 @@
         "intro": "is a collection of puzzles that create 'helper' objects for visualizing position, size and orientation. The helpers provided here are:",
 
         "demo": true,
+
+        "demoText": "<i>Drag to navigate the demo above.<br>Click the center object to view next example.</i>",
+        
 
         "plugins": [
             "Create_Infinite_Grid_Helper",
@@ -210,7 +217,9 @@
 
         "title": "Utility",
 
-        "intro": "is a selection of puzzles that allow solutions for many varied common tasks. In this group you will find:",
+        "intro": "is a selection of a dozen puzzles that allow solutions for many varied and common smaller tasks useful for app development such as database exporting, color format conversion, FPS stats, array (list) management and alert messages.",
+
+        "demo": false,
 
         "plugins": [
             "Stats_Info_Box",
@@ -240,7 +249,7 @@
 
             "extraText": "",
 
-            "customHTML": "Ported to Verge3D by GlifTek. <br> Original code from: <a href = 'https://github.com/mrdoob/stats.js'  target='blank' rel='noreferrer noopener' >https://github.com/mrdoob/stats.js</a><br>Portions of the proceeds from the purchase of this plugin go to<br> the <a href = 'https://docs.github.com/en/sponsors/getting-started-with-github-sponsors/about-github-sponsors'  target='blank' rel='noreferrer noopener' >Github Sponsors Matching Fund.</a>"
+            "customHTML": "Ported to Verge3D by GlifTek. <br> Original code from: <a href = 'https://github.com/mrdoob/stats.js'  target='blank' rel='noreferrer noopener' >https://github.com/mrdoob/stats.js</a><br>Portions of profits from the purchase of this plugin go to<br> the <a href = 'https://docs.github.com/en/sponsors/getting-started-with-github-sponsors/about-github-sponsors'  target='blank' rel='noreferrer noopener' >Github Sponsors Matching Fund.</a>"
 
 
         },
@@ -1127,7 +1136,7 @@
 
             "extraText": "",
 
-            "customHTML": "</br /></br />Ported to Verge3D by GlifTek. <br> Code reworked from: <a href = 'https://threejs.org/examples/webgl_shaders_sky.html'  target='blank' rel='noreferrer noopener' >https://threejs.org/examples/webgl_shaders_sky.html</a><br>Portions of the proceeds from the purchase of this plugin go to the <a href = 'https://docs.github.com/en/sponsors/getting-started-with-github-sponsors/about-github-sponsors'  target='blank' rel='noreferrer noopener' >Github Sponsors Matching Fund.</a>"
+            "customHTML": "Ported to Verge3D by GlifTek. <br> Code reworked from: <a href = 'https://threejs.org/examples/webgl_shaders_sky.html'  target='blank' rel='noreferrer noopener' >https://threejs.org/examples/webgl_shaders_sky.html</a><br>Portions of profits from the purchase of this plugin go to the <a href = 'https://docs.github.com/en/sponsors/getting-started-with-github-sponsors/about-github-sponsors'  target='blank' rel='noreferrer noopener' >Github Sponsors Matching Fund.</a>"
 
         },
 
@@ -1158,7 +1167,7 @@
 
             "extraText": "",
 
-            "customHTML": "</br /></br />Ported to Verge3D by GlifTek. <br> Code reworked from: <a href = 'https://threejs.org/examples/webgl_shaders_ocean.html'  target='blank' rel='noreferrer noopener' >https://threejs.org/examples/webgl_shaders_ocean.html</a><br>Portions of the proceeds from the purchase of this plugin go to the <a href = 'https://docs.github.com/en/sponsors/getting-started-with-github-sponsors/about-github-sponsors'  target='blank' rel='noreferrer noopener' >Github Sponsors Matching Fund.</a>"
+            "customHTML": "Ported to Verge3D by GlifTek. <br> Code reworked from: <a href = 'https://threejs.org/examples/webgl_shaders_ocean.html'  target='blank' rel='noreferrer noopener' >https://threejs.org/examples/webgl_shaders_ocean.html</a><br>Portions of profits from the purchase of this plugin go<br>to the <a href = 'https://docs.github.com/en/sponsors/getting-started-with-github-sponsors/about-github-sponsors'  target='blank' rel='noreferrer noopener' >Github Sponsors Matching Fund.</a>"
 
         },
 
