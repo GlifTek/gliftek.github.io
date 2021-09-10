@@ -1,0 +1,884 @@
+<xml xmlns="http://www.w3.org/1999/xhtml">
+  <tab name="init" type="InitTab" active="false" scrollx="117.00000000000205" scrolly="466.00000000000034" scale="0.9">
+    <block xmlns="https://developers.google.com/blockly/xml" type="initSettings" id="_lf}t7WwM?BcRc;v7,wZ" x="-110" y="-510">
+      <field name="LOAD_COMP_ASSETS">FALSE</field>
+      <field name="FULLSCREEN">TRUE</field>
+      <field name="BKG_TRANSPARENCY">TRUE</field>
+      <field name="PRESERVE_DRAW_BUF">FALSE</field>
+      <field name="FADE_ANNOTATIONS">TRUE</field>
+    </block>
+  </tab>
+  <tab name="main" type="MainTab" active="true" scrollx="1118.0662841796875" scrolly="203.5714111328125" scale="0.6056854783403958">
+    <variables xmlns="https://developers.google.com/blockly/xml">
+      <variable id=".L_a37)m}/fJrNmcvF~w" type="">object_in_list</variable>
+      <variable id="2b@Zc_P~fchNLpVa~4`]" type="">obj</variable>
+      <variable id="pdfTnVBBf`wUeNn8uW4R" type="">touching</variable>
+      <variable id="p.kyYE1`YR/#mi8)X1@M" type="">readout_for_selected_object</variable>
+      <variable id=";yghu4_r=c9a_yisY73U" type="">LIST_Objects</variable>
+      <variable id="~Ilo$%2T%tn?!X5F!sFS" type="">selected_object</variable>
+      <variable id="1j%DTIN)B}|_H_!pikA{" type="">touched_object</variable>
+      <variable id="^kr@aIvrU*I@71-M/LNs" type="">DICT_object_colors</variable>
+      <variable id=".=9SKSC!YOCIHiI1/_Qh" type="">object_touching</variable>
+      <variable id="(BsZ(a?QUDK,P{|/6KnA" type="">object_for_color</variable>
+      <variable id="U*N;^?peKB5$[[xP[-mQ" type="">object_NOT_touching</variable>
+      <variable id="d8oVHT|wv[4:0j2s+e-p" type="">LIST_all_touching_objects</variable>
+      <variable id=":R6-d*b7zS_=(ol-`[ZW" type="">j</variable>
+      <variable id="K;|KfZWuLVXzXf.])ck#" type="">readout_for_all_objects</variable>
+    </variables>
+    <block xmlns="https://developers.google.com/blockly/xml" type="comment" id="xf#]`/MZ^yO?xgacxo9R" x="-810" y="-1050">
+      <field name="TEXT">PUZZLE ARRANGEMENT STARTS HERE</field>
+      <next>
+        <block type="procedures_callnoreturn" id="s7xWQy+vSC:^/HaWROR%">
+          <mutation name="MAIN"/>
+        </block>
+      </next>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="procedures_defnoreturn" id="X2o3MZ)V)iaQ$-#Zl(WJ" x="-810" y="-970">
+      <field name="NAME">MAIN</field>
+      <comment pinned="false" h="80" w="160">Describe this function...</comment>
+      <statement name="STACK">
+        <block type="createEnvironment" id="sihTl[V@Q}2I5#Qwh[M!" inline="false" disabled="true">
+          <mutation xmlns="http://www.w3.org/1999/xhtml" oncereadydoslot="false"></mutation>
+          <field name="TYPE">BACKGROUND_COLOR</field>
+          <value name="NAME">
+            <shadow type="text" id="R87IKI2uBtV4My*[[#e2">
+              <field name="TEXT">myEnvMaterial</field>
+            </shadow>
+          </value>
+          <next>
+            <block type="GLIFTEK_v3d_Plugins_Helpers/GLIFTEK_HELPERS_Grid" id="M)!EFL3-Ndp|AzfF7)J," inline="true">
+              <value name="gridSize">
+                <shadow type="math_number" id="Tzigy$24LdfU+M|mO}h7">
+                  <field name="NUM">10</field>
+                </shadow>
+              </value>
+              <value name="divisions">
+                <shadow type="math_number" id="8z_Yc_27b~JRW9LTR+j$">
+                  <field name="NUM">10</field>
+                </shadow>
+              </value>
+              <value name="colorGrid">
+                <shadow type="text" id="}#ttZ*QwLwy_Q(@BK*R4">
+                  <field name="TEXT">gray</field>
+                </shadow>
+              </value>
+              <value name="colorCenterLine">
+                <shadow type="text" id="q%_r@,.3:{Sdp!spd`#-">
+                  <field name="TEXT">black</field>
+                </shadow>
+              </value>
+              <next>
+                <block type="variables_set" id="4jN8qlY?H*J~!Q()OHiX">
+                  <field name="VAR" id=";yghu4_r=c9a_yisY73U">LIST_Objects</field>
+                  <value name="VALUE">
+                    <block type="getObjectsFrom" id="W_}yrsxl)cS-g4%Y]v-@">
+                      <field name="TYPE">ALL</field>
+                      <value name="OBJ">
+                        <block type="groupList" id="a%$qhm_EDEcc;Dect9{b">
+                          <field name="FIELDNAME">Cubes</field>
+                        </block>
+                      </value>
+                    </block>
+                  </value>
+                  <next>
+                    <block type="GLIFTEK_v3d_Plugins_Bounding_Boxes/GLIFTEK_BBOX_Create_Bounding_Boxes" id="Nd02=grm{5T3GMCk4*6$">
+                      <field name="box3HelperCheckbox">TRUE</field>
+                      <field name="color">#00cccc</field>
+                      <value name="objInput">
+                        <shadow type="objectList" id="dS/0h0mf#=5X*%5V/b]{">
+                          <field name="FIELDNAME">&lt;none&gt;</field>
+                        </shadow>
+                        <block type="variables_get" id="ru8h]69c7|S3_b*CFDc+">
+                          <field name="VAR" id=";yghu4_r=c9a_yisY73U">LIST_Objects</field>
+                        </block>
+                      </value>
+                      <next>
+                        <block type="controls_forEach" id="dB[^__?Sk}btS/(%gB*$">
+                          <field name="VAR" id=":R6-d*b7zS_=(ol-`[ZW">j</field>
+                          <value name="LIST">
+                            <block type="variables_get" id="d7:6hP/nsi@Zv=PT?~m*">
+                              <field name="VAR" id=";yghu4_r=c9a_yisY73U">LIST_Objects</field>
+                            </block>
+                          </value>
+                          <statement name="DO">
+                            <block type="hide" id="o09,iU;+,D[mbQS|DvGH">
+                              <value name="VALUE">
+                                <shadow type="objectList" id="3OMwBmcWQRZn_$!g/!.t">
+                                  <field name="FIELDNAME">Cube_Red_Box3_Helper</field>
+                                </shadow>
+                                <block type="text_join" id="BERJ/Co?,OawO6lXOsmx">
+                                  <mutation items="2"/>
+                                  <value name="ADD0">
+                                    <block type="variables_get" id="_xOF{LuWrh)}.eH.z932">
+                                      <field name="VAR" id=":R6-d*b7zS_=(ol-`[ZW">j</field>
+                                    </block>
+                                  </value>
+                                  <value name="ADD1">
+                                    <block type="text" id="k|A|B/M:_PG4Y)~h-KC]">
+                                      <field name="TEXT">_Box3_Helper</field>
+                                    </block>
+                                  </value>
+                                </block>
+                              </value>
+                            </block>
+                          </statement>
+                          <next>
+                            <block type="procedures_callnoreturn" id="T|M[No34S}/vkoZgVcN*">
+                              <mutation name="TEXT_READOUT"/>
+                              <next>
+                                <block type="procedures_callnoreturn" id="gJ{Qgs-^!^4VOh5AXVTF">
+                                  <mutation name="SET_DICT_OBJECT_COLORS"/>
+                                  <next>
+                                    <block type="procedures_callnoreturn" id="~TW0FpM`ioE8Tz;CjWt#">
+                                      <mutation name="GET_SELECTED_OBJECT"/>
+                                    </block>
+                                  </next>
+                                </block>
+                              </next>
+                            </block>
+                          </next>
+                        </block>
+                      </next>
+                    </block>
+                  </next>
+                </block>
+              </next>
+            </block>
+          </next>
+        </block>
+      </statement>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="procedures_defnoreturn" id="IS*UPaqE!Ty_8~RQ`L50" x="170" y="-890">
+      <field name="NAME">TEXT_READOUT</field>
+      <comment pinned="false" h="80" w="160">Describe this function...</comment>
+      <statement name="STACK">
+        <block type="variables_set" id="}o[KsIW;5Zn)}Z9(eL,*">
+          <field name="VAR" id="p.kyYE1`YR/#mi8)X1@M">readout_for_selected_object</field>
+          <value name="VALUE">
+            <block type="text" id="+C3Rhk9/$.UBD}P?erY1">
+              <field name="TEXT">Drag objects to touch.</field>
+            </block>
+          </value>
+          <next>
+            <block type="addHTMLElement" id="KQxv6Kt/YAJ*l5K`z@Ih">
+              <field name="ELEMENT">div</field>
+              <field name="MODE">TO</field>
+              <field name="PARENT">FALSE</field>
+              <value name="ID">
+                <shadow type="text" id="T$aBuPeC^|%C/d0[Z;SX">
+                  <field name="TEXT">readout_for_selected_object</field>
+                </shadow>
+              </value>
+              <value name="TARGET_ID">
+                <shadow type="DOMObjectSelector" id="QtdDbM^^TeFRO4;m3rbw">
+                  <field name="DOM_OBJECT">CONTAINER</field>
+                </shadow>
+              </value>
+              <next>
+                <block type="setHTMLElemStyle" id=":H0`G#j[Xd2-c=i?zE:[">
+                  <field name="PROPERTY">zIndex</field>
+                  <field name="PARENT">FALSE</field>
+                  <value name="VALUE">
+                    <block type="text" id="SM}v`q/lA8;V2GMBpn(I">
+                      <field name="TEXT">2</field>
+                    </block>
+                  </value>
+                  <value name="ID">
+                    <shadow type="text" id=";nFwN{gS2SnT(PasRk=b">
+                      <field name="TEXT">readout_for_selected_object</field>
+                    </shadow>
+                  </value>
+                  <next>
+                    <block type="setHTMLElemStyle" id="Ut~^$sNDA-ndnU7U%lY]">
+                      <field name="PROPERTY">color</field>
+                      <field name="PARENT">FALSE</field>
+                      <value name="VALUE">
+                        <block type="text" id="U_/8#C+CQiFUaD]O?;mU">
+                          <field name="TEXT">white</field>
+                        </block>
+                      </value>
+                      <value name="ID">
+                        <shadow type="text" id="_U!N$*=MNViJ%w}MuA%K">
+                          <field name="TEXT">readout_for_selected_object</field>
+                        </shadow>
+                      </value>
+                      <next>
+                        <block type="variables_set" id="gI+8|EXozvij-jp1Z7Bw">
+                          <field name="VAR" id="K;|KfZWuLVXzXf.])ck#">readout_for_all_objects</field>
+                          <value name="VALUE">
+                            <block type="text" id="$$mUO8M]bWUr%w#r5po!">
+                              <field name="TEXT"/>
+                            </block>
+                          </value>
+                          <next>
+                            <block type="addHTMLElement" id="{^wF]#8p(9voJL!W-jRE">
+                              <field name="ELEMENT">div</field>
+                              <field name="MODE">TO</field>
+                              <field name="PARENT">FALSE</field>
+                              <value name="ID">
+                                <shadow type="text" id="CrI#-nSbDf01F81VT=^*">
+                                  <field name="TEXT">readout_for_all_objects</field>
+                                </shadow>
+                              </value>
+                              <value name="TARGET_ID">
+                                <shadow type="DOMObjectSelector" id="h)~[OlokJLqXm^Cc?dLz">
+                                  <field name="DOM_OBJECT">CONTAINER</field>
+                                </shadow>
+                              </value>
+                              <next>
+                                <block type="setHTMLElemStyle" id="4FB,p?(!ZjaCeVj)U_hZ">
+                                  <field name="PROPERTY">zIndex</field>
+                                  <field name="PARENT">FALSE</field>
+                                  <value name="VALUE">
+                                    <block type="text" id="dFswr1H`x{Dy0^^@DHTI">
+                                      <field name="TEXT">2</field>
+                                    </block>
+                                  </value>
+                                  <value name="ID">
+                                    <shadow type="text" id="qf7k2}h8/61DF*jjJqc2">
+                                      <field name="TEXT">readout_for_all_objects</field>
+                                    </shadow>
+                                  </value>
+                                  <next>
+                                    <block type="setHTMLElemStyle" id="y@I1,BJrWr3!0AafPeGz">
+                                      <field name="PROPERTY">color</field>
+                                      <field name="PARENT">FALSE</field>
+                                      <value name="VALUE">
+                                        <block type="text" id="]q4P54LGQRyYfoN?Whz%">
+                                          <field name="TEXT">white</field>
+                                        </block>
+                                      </value>
+                                      <value name="ID">
+                                        <shadow type="text" id=",Gvh?ac02,1$iIP9xIg{">
+                                          <field name="TEXT">readout_for_all_objects</field>
+                                        </shadow>
+                                      </value>
+                                    </block>
+                                  </next>
+                                </block>
+                              </next>
+                            </block>
+                          </next>
+                        </block>
+                      </next>
+                    </block>
+                  </next>
+                </block>
+              </next>
+            </block>
+          </next>
+        </block>
+      </statement>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="procedures_defnoreturn" id="N3psCZCQ)#cvPc57QeLl" x="-810" y="-390">
+      <field name="NAME">GET_SELECTED_OBJECT</field>
+      <comment pinned="false" h="80" w="160">Describe this function...</comment>
+      <statement name="STACK">
+        <block type="comment" id="{5#f^`e~ZnTfrfIe8fb6">
+          <field name="TEXT">Detect if mouse/touch is being pressed or released upon the object.</field>
+          <next>
+            <block type="disableRendering" id="_op[DTokk74(zBMdJjfr">
+              <field name="AA">FALSE</field>
+              <next>
+                <block type="eventHTMLElem" id="/EGz`7o$66ga[G51w;{b">
+                  <field name="EVENT">pointerdown</field>
+                  <field name="PARENT">FALSE</field>
+                  <value name="ID">
+                    <shadow type="text">
+                      <field name="TEXT"/>
+                    </shadow>
+                    <block type="DOMObjectSelector" id="{e*.I^4;@:919I9Lz}JE">
+                      <field name="DOM_OBJECT">CONTAINER</field>
+                    </block>
+                  </value>
+                  <statement name="DO">
+                    <block type="enableRendering" id="Vmf@;#H!+]Jqpg2N[Wl?">
+                      <next>
+                        <block type="procedures_callnoreturn" id="S{rE_T)J4Kc@d;dQiyoD">
+                          <mutation name="do something"/>
+                        </block>
+                      </next>
+                    </block>
+                  </statement>
+                  <next>
+                    <block type="eventHTMLElem" id="+Xa$AtDfau[4zKkg~Kyz">
+                      <field name="EVENT">pointerup</field>
+                      <field name="PARENT">FALSE</field>
+                      <value name="ID">
+                        <shadow type="text">
+                          <field name="TEXT"/>
+                        </shadow>
+                        <block type="DOMObjectSelector" id="LE7psBS5sM*8Z,}?nMq=">
+                          <field name="DOM_OBJECT">CONTAINER</field>
+                        </block>
+                      </value>
+                      <statement name="DO">
+                        <block type="hide" id="k70Ks5_@U*+ktokR}Kdn">
+                          <value name="VALUE">
+                            <shadow type="objectList" id="/+3~2ZiXvp1M#N265j!3">
+                              <field name="FIELDNAME">&lt;none&gt;</field>
+                            </shadow>
+                            <block type="text_join" id="%hSyr@*=OEhjEchpNp!S">
+                              <mutation items="2"/>
+                              <value name="ADD0">
+                                <block type="variables_get" id="gP3PwTC2Cb=sfY@QW^o-">
+                                  <field name="VAR" id="~Ilo$%2T%tn?!X5F!sFS">selected_object</field>
+                                </block>
+                              </value>
+                              <value name="ADD1">
+                                <block type="text" id="n/^4(oxwd#A/g67M}iYU">
+                                  <field name="TEXT">_Box3_Helper</field>
+                                </block>
+                              </value>
+                            </block>
+                          </value>
+                          <next>
+                            <block type="variables_set" id="wx3yX.(B$PW2WfrmB56[">
+                              <field name="VAR" id="~Ilo$%2T%tn?!X5F!sFS">selected_object</field>
+                              <value name="VALUE">
+                                <block type="logic_null" id="r#^g~1RRq=^W*ft=r7^3"/>
+                              </value>
+                              <next>
+                                <block type="disableRendering" id="`8dHafM.i+zc`-CYRIQ(">
+                                  <field name="AA">FALSE</field>
+                                </block>
+                              </next>
+                            </block>
+                          </next>
+                        </block>
+                      </statement>
+                    </block>
+                  </next>
+                </block>
+              </next>
+            </block>
+          </next>
+        </block>
+      </statement>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="procedures_defnoreturn" id="AkZAWf|c{!,o?2W=ofih" x="170" y="-390">
+      <field name="NAME">SET_DICT_OBJECT_COLORS</field>
+      <comment pinned="false" h="80" w="160">Describe this function...</comment>
+      <statement name="STACK">
+        <block type="comment" id="QOY6kSSRTF7?whN!xrw;">
+          <field name="TEXT">This records all the object's original colors</field>
+          <next>
+            <block type="variables_set" id="JqV?u-WQ8.%j3N[FSz?:">
+              <field name="VAR" id="^kr@aIvrU*I@71-M/LNs">DICT_object_colors</field>
+              <value name="VALUE">
+                <block type="dictCreateEmpty" id="XAEXK|+nbZvpTs1{N{Tr"/>
+              </value>
+              <next>
+                <block type="controls_forEach" id="N]Q#Ftz@m6V=JiJ*h3Z@">
+                  <field name="VAR" id="(BsZ(a?QUDK,P{|/6KnA">object_for_color</field>
+                  <value name="LIST">
+                    <block type="variables_get" id="-XsJ~`/UuNcAbn(xPF8P">
+                      <field name="VAR" id=";yghu4_r=c9a_yisY73U">LIST_Objects</field>
+                    </block>
+                  </value>
+                  <statement name="DO">
+                    <block type="dictSet" id="W^sqPJOt+;2{$gz0M%)]" inline="false">
+                      <value name="DICT">
+                        <block type="variables_get" id="7#@fJS;cKdBh{}Gwz6@/">
+                          <field name="VAR" id="^kr@aIvrU*I@71-M/LNs">DICT_object_colors</field>
+                        </block>
+                      </value>
+                      <value name="KEY">
+                        <shadow type="text" id="i;Z.5sO;2icG{I$DIa?z">
+                          <field name="TEXT">someKey</field>
+                        </shadow>
+                        <block type="variables_get" id="BXviemb8fStJYgKg$o*}">
+                          <field name="VAR" id="(BsZ(a?QUDK,P{|/6KnA">object_for_color</field>
+                        </block>
+                      </value>
+                      <value name="VALUE">
+                        <block type="getMaterialColor" id="Qct0!A?xOObp[nUsiWy%" inline="false">
+                          <mutation xmlns="http://www.w3.org/1999/xhtml" flexcolinput="true"></mutation>
+                          <field name="MAT_COL_NAME">&lt;no colors&gt;</field>
+                          <field name="COORD">CSS_HEX</field>
+                          <value name="COL_NAME_FLEX">
+                            <block type="text" id="P9FTrN}5tui.U7K~MTWe">
+                              <field name="TEXT">Principled BSDF Color</field>
+                            </block>
+                          </value>
+                          <value name="MATERIAL">
+                            <shadow type="materialList">
+                              <field name="FIELDNAME">Cube_1</field>
+                            </shadow>
+                            <block type="getObjectMaterial" id="ta[OMctYbF`uYEP5wLLC">
+                              <value name="VALUE">
+                                <shadow type="objectList" id="[X630c@pb(|-C}l0n:n%">
+                                  <field name="FIELDNAME">&lt;none&gt;</field>
+                                </shadow>
+                                <block type="variables_get" id="T[QX+*-LgHz|?WIhe7td">
+                                  <field name="VAR" id="(BsZ(a?QUDK,P{|/6KnA">object_for_color</field>
+                                </block>
+                              </value>
+                            </block>
+                          </value>
+                        </block>
+                      </value>
+                    </block>
+                  </statement>
+                </block>
+              </next>
+            </block>
+          </next>
+        </block>
+      </statement>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="controls_forEach" id="s;8.EoD5:s_gVo@W*JrC" collapsed="true" disabled="true" x="-1390" y="-210">
+      <field name="VAR" id=".L_a37)m}/fJrNmcvF~w">object_in_list</field>
+      <value name="LIST">
+        <block type="variables_get" id="ZcRWf3{vRNDT~e`1n1=O">
+          <field name="VAR" id=";yghu4_r=c9a_yisY73U">LIST_Objects</field>
+        </block>
+      </value>
+      <statement name="DO">
+        <block type="variables_set" id="pD#`SMPw(yOTBg5$n|N|">
+          <field name="VAR" id="~Ilo$%2T%tn?!X5F!sFS">selected_object</field>
+          <value name="VALUE">
+            <block type="variables_get" id="eVJ3h!AMNEUmu?ZAf!ln">
+              <field name="VAR" id=".L_a37)m}/fJrNmcvF~w">object_in_list</field>
+            </block>
+          </value>
+          <next>
+            <block type="show" id="4j-/KKhhEz3nQNgK9|I=">
+              <value name="VALUE">
+                <shadow type="objectList">
+                  <field name="FIELDNAME">&lt;none&gt;</field>
+                </shadow>
+                <block type="text_join" id="#Inclophd:MiX=PArA@x">
+                  <mutation items="2"/>
+                  <value name="ADD0">
+                    <block type="variables_get" id="xoxABK(#Vs(,(hQ^+8K)">
+                      <field name="VAR" id="~Ilo$%2T%tn?!X5F!sFS">selected_object</field>
+                    </block>
+                  </value>
+                  <value name="ADD1">
+                    <block type="text" id="1v:a3$hj5R%3af{:|Mfp">
+                      <field name="TEXT">_Box3_Helper</field>
+                    </block>
+                  </value>
+                </block>
+              </value>
+            </block>
+          </next>
+        </block>
+      </statement>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="procedures_defnoreturn" id="`?tfRyX`nw^t)2P+!7_j" x="-1430" y="-110">
+      <field name="NAME">do something</field>
+      <comment pinned="false" h="80" w="160">Describe this function...</comment>
+      <statement name="STACK">
+        <block type="controls_forEach" id="7bz^kscB`]kmIf:yu?_[">
+          <field name="VAR" id=".L_a37)m}/fJrNmcvF~w">object_in_list</field>
+          <value name="LIST">
+            <block type="variables_get" id="1e@Pu8gfLG!)[;3%=-Q,">
+              <field name="VAR" id=";yghu4_r=c9a_yisY73U">LIST_Objects</field>
+            </block>
+          </value>
+          <statement name="DO">
+            <block type="procedures_callnoreturn" id="b_I-K:xLcew4|;`sDVh~">
+              <mutation name="do something2">
+                <arg name="obj"/>
+              </mutation>
+              <value name="ARG0">
+                <block type="variables_get" id="W#*.WYy6a*fM,B{Umymr">
+                  <field name="VAR" id=".L_a37)m}/fJrNmcvF~w">object_in_list</field>
+                </block>
+              </value>
+            </block>
+          </statement>
+        </block>
+      </statement>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="procedures_defnoreturn" id="i#Y]+nQuZ=gQ$hQWI~~?" x="-810" y="70">
+      <field name="NAME">CHANGE_COLORS_OF_ALL</field>
+      <comment pinned="false" h="80" w="160">Describe this function...</comment>
+      <statement name="STACK">
+        <block type="comment" id="x3taQf/`d|fSwT,V}1CC">
+          <field name="TEXT">This changes all of the object's colors depending on whether they are touching or not.</field>
+          <next>
+            <block type="controls_forEach" id="[J6:5cB9xu/2u)}R}{Rk">
+              <field name="VAR" id=".=9SKSC!YOCIHiI1/_Qh">object_touching</field>
+              <value name="LIST">
+                <block type="GLIFTEK_v3d_Plugins_Bounding_Boxes/GLIFTEK_BBOX_Get_List_Of_Touching_or_NON_Touching_Objects" id="(~L,5c|uF#M@][?;VOF7">
+                  <field name="typeDropdown">touching</field>
+                </block>
+              </value>
+              <statement name="DO">
+                <block type="setMaterialColor" id="izZ*;uo6xN_t-4rk:mC@" inline="false">
+                  <mutation xmlns="http://www.w3.org/1999/xhtml" flexcolinput="true" usecsscolor="true"></mutation>
+                  <field name="MAT_COL_NAME">&lt;no colors&gt;</field>
+                  <value name="COL_NAME_FLEX">
+                    <block type="text" id="v`4lhjVWGg$}I?{V,CiG">
+                      <field name="TEXT">Principled BSDF Color</field>
+                    </block>
+                  </value>
+                  <value name="MATERIAL">
+                    <shadow type="materialList">
+                      <field name="FIELDNAME">&lt;none&gt;</field>
+                    </shadow>
+                    <block type="getObjectMaterial" id="/Xv%TE^xj~VG6TVOkE/=">
+                      <value name="VALUE">
+                        <shadow type="objectList">
+                          <field name="FIELDNAME">&lt;none&gt;</field>
+                        </shadow>
+                        <block type="variables_get" id="pZel(4-v1kSK$~9[0=lk">
+                          <field name="VAR" id=".=9SKSC!YOCIHiI1/_Qh">object_touching</field>
+                        </block>
+                      </value>
+                    </block>
+                  </value>
+                  <value name="CSS">
+                    <block type="text" id="r7GhOE.?4UtnGk%8sB,m">
+                      <field name="TEXT">yellow</field>
+                    </block>
+                  </value>
+                </block>
+              </statement>
+              <next>
+                <block type="controls_forEach" id="FWIu7P1j}S.;?@zP]kF;">
+                  <field name="VAR" id="U*N;^?peKB5$[[xP[-mQ">object_NOT_touching</field>
+                  <value name="LIST">
+                    <block type="GLIFTEK_v3d_Plugins_Bounding_Boxes/GLIFTEK_BBOX_Get_List_Of_Touching_or_NON_Touching_Objects" id="F!3^4:u$JEbe9mBWKhIu">
+                      <field name="typeDropdown">not_touching</field>
+                    </block>
+                  </value>
+                  <statement name="DO">
+                    <block type="setMaterialColor" id="!A6.,@b*,i+-rwt%{:c." inline="false">
+                      <mutation xmlns="http://www.w3.org/1999/xhtml" flexcolinput="true" usecsscolor="true"></mutation>
+                      <field name="MAT_COL_NAME">&lt;no colors&gt;</field>
+                      <value name="COL_NAME_FLEX">
+                        <block type="text" id="5ZUEIp$N3lD32,3(+XRM">
+                          <field name="TEXT">Principled BSDF Color</field>
+                        </block>
+                      </value>
+                      <value name="MATERIAL">
+                        <shadow type="materialList">
+                          <field name="FIELDNAME">&lt;none&gt;</field>
+                        </shadow>
+                        <block type="getObjectMaterial" id="(y/qzEQprjKlQ`g^(+#l">
+                          <value name="VALUE">
+                            <shadow type="objectList" id="WADxhCA5y]]p^rD+x,@9">
+                              <field name="FIELDNAME">&lt;none&gt;</field>
+                            </shadow>
+                            <block type="variables_get" id="fwG#FT!ZN7[11rK*r;Yx">
+                              <field name="VAR" id="U*N;^?peKB5$[[xP[-mQ">object_NOT_touching</field>
+                            </block>
+                          </value>
+                        </block>
+                      </value>
+                      <value name="CSS">
+                        <block type="dictGet" id="swXJr8N?NQHNm7b,y7FQ" inline="false">
+                          <value name="DICT">
+                            <block type="variables_get" id="Q+0wqCf-U]:6F$7[o$E1">
+                              <field name="VAR" id="^kr@aIvrU*I@71-M/LNs">DICT_object_colors</field>
+                            </block>
+                          </value>
+                          <value name="KEY">
+                            <shadow type="text">
+                              <field name="TEXT">someKey</field>
+                            </shadow>
+                            <block type="variables_get" id="XF8DJK^Q=Zn.y9[!562c">
+                              <field name="VAR" id="U*N;^?peKB5$[[xP[-mQ">object_NOT_touching</field>
+                            </block>
+                          </value>
+                        </block>
+                      </value>
+                    </block>
+                  </statement>
+                </block>
+              </next>
+            </block>
+          </next>
+        </block>
+      </statement>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="procedures_defnoreturn" id="Xe}A@6.,,%92to`Z93Am" x="-1470" y="170">
+      <mutation>
+        <arg name="obj" varid="2b@Zc_P~fchNLpVa~4`]"/>
+      </mutation>
+      <field name="NAME">do something2</field>
+      <comment pinned="false" h="80" w="160">Describe this function...</comment>
+      <statement name="STACK">
+        <block type="whenDraggedOver" id="]v@c60@wY6_Vi]C!3A]p">
+          <field name="X_RAY">FALSE</field>
+          <field name="LEFT_BUTTON">TRUE</field>
+          <field name="MIDDLE_BUTTON">TRUE</field>
+          <field name="RIGHT_BUTTON">TRUE</field>
+          <value name="VALUE">
+            <shadow type="objectList">
+              <field name="FIELDNAME">Cube_01</field>
+            </shadow>
+            <block type="variables_get" id="!_B@AT%h5WvCyz;v5p[L">
+              <field name="VAR" id="2b@Zc_P~fchNLpVa~4`]">obj</field>
+            </block>
+          </value>
+          <statement name="DO_MOVE">
+            <block type="variables_set" id=")i+Rf{G6$]i:!MDc-}p)">
+              <field name="VAR" id="~Ilo$%2T%tn?!X5F!sFS">selected_object</field>
+              <value name="VALUE">
+                <block type="variables_get" id="S!8!/SJLQbhpyg(+(/h$">
+                  <field name="VAR" id="2b@Zc_P~fchNLpVa~4`]">obj</field>
+                </block>
+              </value>
+              <next>
+                <block type="show" id="G~W!-kB={%6|h*^cB$Ej">
+                  <value name="VALUE">
+                    <shadow type="objectList">
+                      <field name="FIELDNAME">&lt;none&gt;</field>
+                    </shadow>
+                    <block type="text_join" id="9FR%Wk$`Fj?aG6c7FC,#">
+                      <mutation items="2"/>
+                      <value name="ADD0">
+                        <block type="variables_get" id="aqLjH,SU(2]/A?/q+GaC">
+                          <field name="VAR" id="~Ilo$%2T%tn?!X5F!sFS">selected_object</field>
+                        </block>
+                      </value>
+                      <value name="ADD1">
+                        <block type="text" id="N50bSqkE935ZU2uO_QsE">
+                          <field name="TEXT">_Box3_Helper</field>
+                        </block>
+                      </value>
+                    </block>
+                  </value>
+                  <next>
+                    <block type="dragMove" id="?1BsHS%9;#@DGTpiI_gD">
+                      <field name="MODE">XY</field>
+                      <value name="TARGETOBJ">
+                        <shadow type="objectList">
+                          <field name="FIELDNAME">Cube_01</field>
+                        </shadow>
+                        <block type="variables_get" id="YAf}7od`g,0tZK(`R!]l">
+                          <field name="VAR" id="2b@Zc_P~fchNLpVa~4`]">obj</field>
+                        </block>
+                      </value>
+                      <next>
+                        <block type="procedures_callnoreturn" id="n]D|+=eAxyRN/~j`3Vot">
+                          <mutation name="do something3">
+                            <arg name="obj"/>
+                          </mutation>
+                          <value name="ARG0">
+                            <block type="variables_get" id="a`h|]]!~1RJtZ*t-`}TP">
+                              <field name="VAR" id="2b@Zc_P~fchNLpVa~4`]">obj</field>
+                            </block>
+                          </value>
+                        </block>
+                      </next>
+                    </block>
+                  </next>
+                </block>
+              </next>
+            </block>
+          </statement>
+        </block>
+      </statement>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="procedures_defnoreturn" id="e%Z}D9b}3vC);kaAFq!D" x="170" y="110">
+      <mutation>
+        <arg name="touching" varid="pdfTnVBBf`wUeNn8uW4R"/>
+      </mutation>
+      <field name="NAME">UPDATE_READOUT</field>
+      <comment pinned="false" h="80" w="160">Describe this function...</comment>
+      <statement name="STACK">
+        <block type="variables_set" id="-pwP78KJMMGR1JpRfx3Q">
+          <field name="VAR" id="1j%DTIN)B}|_H_!pikA{">touched_object</field>
+          <value name="VALUE">
+            <block type="GLIFTEK_v3d_Plugins_Bounding_Boxes/GLIFTEK_BBOX_Get_Touching_Object" id="|n34cVe,6~ih}rn/4AmV">
+              <value name="objInput">
+                <shadow type="objectList" id="nnllkWPj{)7q0}x]sr)^">
+                  <field name="FIELDNAME">&lt;none&gt;</field>
+                </shadow>
+                <block type="variables_get" id="Svgw]6,`*:21s$Bz8i10">
+                  <field name="VAR" id="~Ilo$%2T%tn?!X5F!sFS">selected_object</field>
+                </block>
+              </value>
+            </block>
+          </value>
+          <next>
+            <block type="variables_set" id=")DT4VcgP]VE4;$~B#ksW">
+              <field name="VAR" id="p.kyYE1`YR/#mi8)X1@M">readout_for_selected_object</field>
+              <value name="VALUE">
+                <block type="logic_ternary" id="t[.|Z=qb@7yqhx;iXxi[">
+                  <value name="IF">
+                    <block type="variables_get" id="YSF5PXoWH^B11r}j~~yr">
+                      <field name="VAR" id="pdfTnVBBf`wUeNn8uW4R">touching</field>
+                    </block>
+                  </value>
+                  <value name="THEN">
+                    <block type="text_join" id="rMm,GlYZ-)j_Uu:3Ehdi">
+                      <mutation items="4"/>
+                      <value name="ADD0">
+                        <block type="text" id="n2J7[A9XtROtUjO7c4:s">
+                          <field name="TEXT">Selected object </field>
+                        </block>
+                      </value>
+                      <value name="ADD1">
+                        <block type="variables_get" id=":wmEyb,g#e6w_9eQLm2A">
+                          <field name="VAR" id="~Ilo$%2T%tn?!X5F!sFS">selected_object</field>
+                        </block>
+                      </value>
+                      <value name="ADD2">
+                        <block type="text" id="2GISh7C1@t.#y-f_Ks=4">
+                          <field name="TEXT"> is touching </field>
+                        </block>
+                      </value>
+                      <value name="ADD3">
+                        <block type="variables_get" id="EHx_9li#cGL-oo=Zpfj(">
+                          <field name="VAR" id="1j%DTIN)B}|_H_!pikA{">touched_object</field>
+                        </block>
+                      </value>
+                    </block>
+                  </value>
+                  <value name="ELSE">
+                    <block type="text" id="}YX7Dizo(ozk6NC5FRds">
+                      <field name="TEXT">Drag objects to touch.</field>
+                    </block>
+                  </value>
+                </block>
+              </value>
+              <next>
+                <block type="setHTMLElemAttribute" id="v-v[fU5,{Tc1ta~`qgC^">
+                  <field name="ATTRIBUTE">innerHTML</field>
+                  <field name="PARENT">FALSE</field>
+                  <value name="VALUE">
+                    <block type="variables_get" id="0uvdfaywK/r^n,!~`HTS">
+                      <field name="VAR" id="p.kyYE1`YR/#mi8)X1@M">readout_for_selected_object</field>
+                    </block>
+                  </value>
+                  <value name="ID">
+                    <shadow type="text" id="UF6Q|mFG5%f-nK?T%#c(">
+                      <field name="TEXT">readout_for_selected_object</field>
+                    </shadow>
+                  </value>
+                  <next>
+                    <block type="variables_set" id="Q:g!]hd]AD0ElwR,lFW1">
+                      <field name="VAR" id="d8oVHT|wv[4:0j2s+e-p">LIST_all_touching_objects</field>
+                      <value name="VALUE">
+                        <block type="GLIFTEK_v3d_Plugins_Bounding_Boxes/GLIFTEK_BBOX_Get_List_Of_Touching_or_NON_Touching_Objects" id="VU=g(7j(@TX`2-yU^gI|">
+                          <field name="typeDropdown">touching</field>
+                        </block>
+                      </value>
+                      <next>
+                        <block type="variables_set" id="na:9OklTztB.p6]Up}-(">
+                          <field name="VAR" id="K;|KfZWuLVXzXf.])ck#">readout_for_all_objects</field>
+                          <value name="VALUE">
+                            <block type="text_join" id="K^B4e$-`4p.T!Y#1IVZ3">
+                              <mutation items="2"/>
+                              <value name="ADD0">
+                                <block type="text" id="XuAV!bo__X@Mh9Fi!hd|">
+                                  <field name="TEXT">All touching objects: </field>
+                                </block>
+                              </value>
+                              <value name="ADD1">
+                                <block type="variables_get" id="h`~6cLg)ffd-~#Mv5#wk">
+                                  <field name="VAR" id="d8oVHT|wv[4:0j2s+e-p">LIST_all_touching_objects</field>
+                                </block>
+                              </value>
+                            </block>
+                          </value>
+                          <next>
+                            <block type="setHTMLElemAttribute" id="Q7%KfR*5yC}BJaN~+7_a">
+                              <field name="ATTRIBUTE">innerHTML</field>
+                              <field name="PARENT">FALSE</field>
+                              <value name="VALUE">
+                                <block type="variables_get" id="5dO~5r65vU3Y=d81#;wv">
+                                  <field name="VAR" id="K;|KfZWuLVXzXf.])ck#">readout_for_all_objects</field>
+                                </block>
+                              </value>
+                              <value name="ID">
+                                <shadow type="text" id="yI:yD2`8HE;w`N@5=!l+">
+                                  <field name="TEXT">readout_for_all_objects</field>
+                                </shadow>
+                              </value>
+                            </block>
+                          </next>
+                        </block>
+                      </next>
+                    </block>
+                  </next>
+                </block>
+              </next>
+            </block>
+          </next>
+        </block>
+      </statement>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="procedures_defnoreturn" id="i4%L2qqxjJ7I07%0iQaq" x="-1470" y="490">
+      <mutation>
+        <arg name="obj" varid="2b@Zc_P~fchNLpVa~4`]"/>
+      </mutation>
+      <field name="NAME">do something3</field>
+      <comment pinned="false" h="80" w="160">Describe this function...</comment>
+      <statement name="STACK">
+        <block type="whenMoved" id="LOXLKqt3PJSO3;_;kl=*">
+          <value name="OBJECT">
+            <shadow type="objectList" id="B9?YS.@#0wSBKR$-{zIe">
+              <field name="FIELDNAME">&lt;none&gt;</field>
+            </shadow>
+            <block type="variables_get" id="pQ]:4jT?)Y.7s%S#by0x">
+              <field name="VAR" id="2b@Zc_P~fchNLpVa~4`]">obj</field>
+            </block>
+          </value>
+          <value name="DELTA">
+            <shadow type="math_number" id="H:,(z2!k()+lGc_zxN#J">
+              <field name="NUM">0.01</field>
+            </shadow>
+          </value>
+          <statement name="DO_START">
+            <block type="GLIFTEK_v3d_Plugins_Bounding_Boxes/GLIFTEK_BBOX_Bounding_Box_Collision_Sensor" id="Ymz+TPJ]aZIskK1,qGya">
+              <value name="objInput">
+                <shadow type="objectList">
+                  <field name="FIELDNAME">&lt;none&gt;</field>
+                </shadow>
+                <block type="variables_get" id="/3gF|H}?w$4){*Ke(@|)">
+                  <field name="VAR" id="2b@Zc_P~fchNLpVa~4`]">obj</field>
+                </block>
+              </value>
+              <value name="otherObjsInput">
+                <shadow type="objectList">
+                  <field name="FIELDNAME">&lt;none&gt;</field>
+                </shadow>
+                <block type="variables_get" id=":@ICyKa;~?O,]P*$Ehz+">
+                  <field name="VAR" id=";yghu4_r=c9a_yisY73U">LIST_Objects</field>
+                </block>
+              </value>
+              <statement name="whenTouching_Do_Statement_Input">
+                <block type="procedures_callnoreturn" id="zwDbJb,uIITZY0xPuW(O">
+                  <mutation name="UPDATE_READOUT">
+                    <arg name="touching"/>
+                  </mutation>
+                  <value name="ARG0">
+                    <block type="logic_boolean" id="yhAMd,=dz7jWL0zK5mNL">
+                      <field name="BOOL">TRUE</field>
+                    </block>
+                  </value>
+                </block>
+              </statement>
+              <statement name="when_NOT_Touching_Do_Statement_Input">
+                <block type="procedures_callnoreturn" id="SMI.Xl2uG4A1uSD:hR!5">
+                  <mutation name="UPDATE_READOUT">
+                    <arg name="touching"/>
+                  </mutation>
+                  <value name="ARG0">
+                    <block type="logic_boolean" id="kc7~^`F46%Ca+a|m%M$B">
+                      <field name="BOOL">FALSE</field>
+                    </block>
+                  </value>
+                </block>
+              </statement>
+              <next>
+                <block type="procedures_callnoreturn" id="^7E%qie/j_[S-2KD+);Z">
+                  <mutation name="CHANGE_COLORS_OF_ALL"/>
+                </block>
+              </next>
+            </block>
+          </statement>
+        </block>
+      </statement>
+    </block>
+  </tab>
+  <editorsettings viewport-x="1324" viewport-y="209" viewport-w="417" viewport-h="359" viewport-hidden="false" toolbox-library-mode="false" toolbox-minimized-mode="false"></editorsettings>
+</xml>
