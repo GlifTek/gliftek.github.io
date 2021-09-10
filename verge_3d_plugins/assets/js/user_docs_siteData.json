@@ -433,6 +433,8 @@
 
         "demo": true,
 
+        "demoText": "<i>Drag cubes over one another in the demo above.<br>Use fullscreen for best results.</i>",
+
         "plugins": [
             "Create_Bounding_Boxes",
             "Update_Bounding_Box",
