@@ -1207,7 +1207,7 @@ function set_post_HTML( pluginName, pic )
   {
     exampleHTML =
     `<p class="align-center">${exampleText}</p>
-    <p class="align-center">Click example to enlarge.</p>    
+    <!-- <p class="align-center">Click example to enlarge.</p> -->    
     <div id='${divExamplePic}' class='modal-content' style='width: 100%'></div><br />`;
   };
 

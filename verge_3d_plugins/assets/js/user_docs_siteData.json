@@ -120,14 +120,16 @@
 
         "title": "Helpers",
 
-        "intro": "is a collection of puzzles that create 'helper' objects for visualizing position, size and orientation. The helpers provided here are:",
+        "intro": "is a collection of verge3D puzzle blocks that create 'helper' objects for visualizing position, size and orientation.  The helpers provided here show square and circular grids in 3D space.  Also included is a quad wireframe material for visualizing the geometric structure of any 3D object.",
 
         "demo": true,
 
-        "demoText": "<i>Drag to navigate the demo above.<br>Click the center object to view next example.</i>",
+        "demoText": "<i>Drag to navigate the demo above.<br>Select 'Next' to view next example.<br>Select center object to toggle it's wireframe mode.</i>",
         
 
         "plugins": [
+            "Quad_Wireframe",
+            "Quad_Wireframe_Toggle",
             "Create_Infinite_Grid_Helper",
             "Create_Grid_Helper",
             "Create_Polar_Grid_Helper",
@@ -135,11 +137,41 @@
             "Create_Axes_Helper"
         ],
 
+        "Quad_Wireframe": {
+
+            "pluginWidth": "22rem","exampleWidth": "23rem",
+
+            "puzzleText": "produces a material for 3D objects that shows a grid made of quad (4-sided) polygons.  This type of material is desirable for showing a polygonal flow to the geometry.",
+
+            "exampleText": "This is a convenient method of describing a three dimensional space when designing or displaying a 3D scene.  This grid helper expands in all directions infinitely.  A distance control is used to fade the farthest ends.",
+
+            "consoleText": "",
+
+            "extraText": "",
+
+            "customHTML": ""
+        },
+
+        "Quad_Wireframe_Toggle": {
+
+            "pluginWidth": "22rem","exampleWidth": "23rem",
+
+            "puzzleText": "changes a Quad Wireframe Shader to be see-through or solid, given an object or list of objects.",
+
+            "exampleText": "Example:",
+
+            "consoleText": "",
+
+            "extraText": "",
+
+            "customHTML": ""
+        },
+
         "Create_Infinite_Grid_Helper": {
 
             "pluginWidth": "22rem","exampleWidth": "40rem",
 
-            "puzzleText": "creates an Infinite Grid Helper object.  The Infinite GridHelper is an object to define infinite grids. Grids are two-dimensional arrays of lines.",
+            "puzzleText": "creates an Infinite Grid Helper object.  The Infinite Grid Helper is an object to define infinite grids. Grids are two-dimensional arrays of lines.",
 
             "exampleText": "This is a convenient method of describing a three dimensional space when designing or displaying a 3D scene.  This grid helper expands in all directions infinitely.  A distance control is used to fade the farthest ends.",
 
