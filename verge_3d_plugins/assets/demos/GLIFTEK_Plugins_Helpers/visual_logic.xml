@@ -1,0 +1,1975 @@
+<xml xmlns="http://www.w3.org/1999/xhtml">
+  <tab name="init" type="InitTab" active="false" scrollx="630.0000000000014" scrolly="376.77777099609375" scale="1">
+    <block xmlns="https://developers.google.com/blockly/xml" type="initSettings" id=",9SJdu.qu#*5O(?^r55a" x="-630" y="-330">
+      <field name="LOAD_COMP_ASSETS">FALSE</field>
+      <field name="FULLSCREEN">TRUE</field>
+      <field name="BKG_TRANSPARENCY">TRUE</field>
+      <field name="PRESERVE_DRAW_BUF">FALSE</field>
+      <field name="FADE_ANNOTATIONS">TRUE</field>
+    </block>
+  </tab>
+  <tab name="main" type="MainTab" active="true" scrollx="-1031" scrolly="-281.99999999999955" scale="1">
+    <variables xmlns="https://developers.google.com/blockly/xml">
+      <variable id="=83[-j,6!J;rY^v4CTqo" type="">list_number</variable>
+      <variable id="9|Sf.^PKkg=YKDv;ScRl" type="">LIST_to_use</variable>
+      <variable id="u3U?j`{t(DnYRf3VhdlH" type="">LIST_objects</variable>
+      <variable id="fFPP69^A?)|ERI{Se`OM" type="">obj_to_show_transparent</variable>
+      <variable id="U-d^1xm~TR/Re*~MD;!q" type="">EXEC_updateQuadWireframe</variable>
+      <variable id="5s0iVQ%6];hXfN9=;[g^" type="">grid_Cube_color</variable>
+      <variable id="@;Vql}4-0{JX#j@TX.D3" type="">wireframe_object</variable>
+      <variable id="g(SP)#qn4s,7{x1U`-K}" type="">obj_number</variable>
+      <variable id="f?7{Mm7|u.j8YR6BO872" type="">list_length</variable>
+      <variable id="LX#|ZA~,jM|5}{VjXdq:" type="">_g_list_number</variable>
+      <variable id="u,cRSS8`@:,PSab=!(/d" type="">current_object</variable>
+      <variable id="i%7^|u/!U$)j.s_3~h.~" type="">LIST_cube_grid_helpers</variable>
+      <variable id="J7W25rA1?J[!fV=xW964" type="">grid_Cube_Center_color</variable>
+      <variable id="Fje!jz9h1RN]5u+PeC}L" type="">obj_to_show</variable>
+      <variable id="ji@KcWEuTJ+f*KF##V`+" type="">TOGGLE_wireframe_is_see_through</variable>
+      <variable id="7#XTpE!N)NUrusuA*Y||" type="">LIST_polar_grid_helpers</variable>
+      <variable id="}c|LfCl+d$@c/n7$X%Pw" type="">COLOR_object_transparent</variable>
+      <variable id="IFT3SP$ZB6C4Ag{Wsc1*" type="">LIST_helpers</variable>
+      <variable id="9Vnh.s(xuEjpl8mD2WJz" type="">COLOR_object_wireframe</variable>
+    </variables>
+    <block xmlns="https://developers.google.com/blockly/xml" type="procedures_defnoreturn" id=".a;hBiWT.h?Nl.NKfefr" x="310" y="-1970">
+      <field name="NAME">HOVER_NEXT</field>
+      <comment pinned="false" h="80" w="160">Describe this function...</comment>
+      <statement name="STACK">
+        <block type="whenHovered" id="xsqXD@C@LUZh|3fY{HxE" inline="true">
+          <mutation xmlns="http://www.w3.org/1999/xhtml" adveventoptions="true"></mutation>
+          <field name="X_RAY">TRUE</field>
+          <value name="VALUE">
+            <shadow type="objectList" id="8tI4e|=kC`5[mf1UG_}:">
+              <field name="FIELDNAME">black space</field>
+            </shadow>
+            <block type="lists_create_with" id="bVQ68Hk.~)2tJ{JrV}gh">
+              <mutation items="2"/>
+              <value name="ADD0">
+                <block type="objectList" id="]aoBzBtkgR;pT)2tD#v*">
+                  <field name="FIELDNAME">black space</field>
+                </block>
+              </value>
+              <value name="ADD1">
+                <block type="variables_get" id="6)d`8NONf7`*PK|G%{|Y">
+                  <field name="VAR" id="u3U?j`{t(DnYRf3VhdlH">LIST_objects</field>
+                </block>
+              </value>
+            </block>
+          </value>
+          <statement name="DO_OVER">
+            <block type="setHTMLElemStyle" id="kbv:i+SCK$BQ3}16P}Af" inline="false">
+              <field name="PROPERTY">cursor</field>
+              <field name="PARENT">FALSE</field>
+              <value name="VALUE">
+                <block type="text" id="o3Y0o:X*[r64FOmre)!A">
+                  <field name="TEXT">pointer</field>
+                </block>
+              </value>
+              <value name="ID">
+                <shadow type="text">
+                  <field name="TEXT"/>
+                </shadow>
+                <block type="DOMObjectSelector" id="5FuMq-2SKzSyUSE3SeN;">
+                  <field name="DOM_OBJECT">CONTAINER</field>
+                </block>
+              </value>
+            </block>
+          </statement>
+          <statement name="DO_OUT">
+            <block type="setHTMLElemStyle" id="Ph.1WD*=xlnG#a})gXaa" inline="false">
+              <field name="PROPERTY">cursor</field>
+              <field name="PARENT">FALSE</field>
+              <value name="VALUE">
+                <block type="text" id="{3PhOIyS8`%utT{wL.-j">
+                  <field name="TEXT">default</field>
+                </block>
+              </value>
+              <value name="ID">
+                <shadow type="text">
+                  <field name="TEXT"/>
+                </shadow>
+                <block type="DOMObjectSelector" id="30`3MoJz(F`XpvTR[evc">
+                  <field name="DOM_OBJECT">CONTAINER</field>
+                </block>
+              </value>
+            </block>
+          </statement>
+        </block>
+      </statement>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="GLIFTEK_v3d_Plugins_Helpers/GLIFTEK_HELPERS_Quad_Wireframe_Toggle" id="xd|34P])fZyfn3{:3]v2" x="1130" y="-2010">
+      <value name="objInput">
+        <shadow type="objectList">
+          <field name="FIELDNAME">&lt;none&gt;</field>
+        </shadow>
+        <block type="variables_get" id="et;8_V~uP69mPh]cdzuu">
+          <field name="VAR" id="u3U?j`{t(DnYRf3VhdlH">LIST_objects</field>
+        </block>
+      </value>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="procedures_defnoreturn" id="3OSyaTGb~5G)uGQbgp$x" x="1130" y="-1910">
+      <field name="NAME">CHANGE_OBJECT_WIREFRAME</field>
+      <comment pinned="false" h="80" w="160">Describe this function...</comment>
+      <statement name="STACK">
+        <block type="whenClicked" id="i}?pa%a{vu#;y:N!{k.T">
+          <mutation xmlns="http://www.w3.org/1999/xhtml" adveventoptions="false" enableifmissed="false"></mutation>
+          <field name="X_RAY">FALSE</field>
+          <field name="DOUBLE_CLICK">FALSE</field>
+          <field name="LEFT_BUTTON">TRUE</field>
+          <field name="MIDDLE_BUTTON">TRUE</field>
+          <field name="RIGHT_BUTTON">TRUE</field>
+          <value name="VALUE">
+            <shadow type="objectList">
+              <field name="FIELDNAME">Teapot</field>
+            </shadow>
+            <block type="variables_get" id="9M(x[ai%uGAO|rklXs^,">
+              <field name="VAR" id="u3U?j`{t(DnYRf3VhdlH">LIST_objects</field>
+            </block>
+          </value>
+          <statement name="DO">
+            <block type="variables_set" id="*hdNyi4;K4FowGZFOQm.">
+              <field name="VAR" id="@;Vql}4-0{JX#j@TX.D3">wireframe_object</field>
+              <value name="VALUE">
+                <block type="lists_getIndex" id="6YZ=%/eU04yWkCDDK9?b">
+                  <mutation statement="false" at="true"/>
+                  <field name="MODE">GET</field>
+                  <field name="WHERE">FROM_START</field>
+                  <value name="VALUE">
+                    <block type="variables_get" id="L*Fkl3UGp-E4YT11.|YX">
+                      <field name="VAR" id="u3U?j`{t(DnYRf3VhdlH">LIST_objects</field>
+                    </block>
+                  </value>
+                  <value name="AT">
+                    <block type="lists_indexOf" id="/Q@C7mDRan3}%QO5:[_}" inline="false">
+                      <field name="END">FIRST</field>
+                      <value name="VALUE">
+                        <block type="variables_get" id="ZRYfmG8W3G9ltnv5%Pha">
+                          <field name="VAR" id="u3U?j`{t(DnYRf3VhdlH">LIST_objects</field>
+                        </block>
+                      </value>
+                      <value name="FIND">
+                        <block type="pickedObject" id="M(6!:qpnD$ar8LeI1wP%"/>
+                      </value>
+                    </block>
+                  </value>
+                </block>
+              </value>
+              <next>
+                <block type="GLIFTEK_v3d_Plugins_Helpers/GLIFTEK_HELPERS_Quad_Wireframe_Toggle" id="g{dUdVxqpf2F[8;i0c16">
+                  <value name="objInput">
+                    <shadow type="objectList" id="]VbUmyd^{;4Iq3e@B$9-">
+                      <field name="FIELDNAME">&lt;none&gt;</field>
+                    </shadow>
+                    <block type="variables_get" id="5_wF@4YO:BM9L/*ey=vP">
+                      <field name="VAR" id="@;Vql}4-0{JX#j@TX.D3">wireframe_object</field>
+                    </block>
+                  </value>
+                </block>
+              </next>
+            </block>
+          </statement>
+        </block>
+      </statement>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="procedures_defnoreturn" id="E./$t2nvf,g@:tOUr,9a" x="1130" y="-1650">
+      <field name="NAME">DISABLE_RENDERING</field>
+      <comment pinned="false" h="80" w="160">Describe this function...</comment>
+      <statement name="STACK">
+        <block type="disableRendering" id=".G.5uprSsIZ-loXb$i75">
+          <field name="AA">FALSE</field>
+          <next>
+            <block type="whenMoved" id=";?f=SW3fbP%rFB`9[c9~">
+              <value name="OBJECT">
+                <shadow type="objectList" id="}Ev1aoEwu/QCTm4j)+i/">
+                  <field name="FIELDNAME">Camera</field>
+                </shadow>
+              </value>
+              <value name="DELTA">
+                <shadow type="math_number" id="[oLW.w]9^H6-E](C4kQ4">
+                  <field name="NUM">0.01</field>
+                </shadow>
+              </value>
+              <statement name="DO_START">
+                <block type="enableRendering" id="QR%QAwx:N)=v/SCH@[nB"/>
+              </statement>
+              <statement name="DO_STOP">
+                <block type="disableRendering" id="c}EQe+!1Zw8q1:7.bskk">
+                  <field name="AA">FALSE</field>
+                </block>
+              </statement>
+              <next>
+                <block type="eventHTMLElem" id="f!we3OW,HCHfWlw2+!K0">
+                  <field name="EVENT">pointerdown</field>
+                  <field name="PARENT">FALSE</field>
+                  <value name="ID">
+                    <shadow type="text">
+                      <field name="TEXT"/>
+                    </shadow>
+                    <block type="DOMObjectSelector" id="y;]k%ZAPy/+Wz4Sjal]F">
+                      <field name="DOM_OBJECT">CONTAINER</field>
+                    </block>
+                  </value>
+                  <statement name="DO">
+                    <block type="enableRendering" id="3lmXB{Y,4FlT?`ry21Y@"/>
+                  </statement>
+                  <next>
+                    <block type="eventHTMLElem" id="DgT8TfqTL_AM)Z8q~OIo">
+                      <field name="EVENT">pointerup</field>
+                      <field name="PARENT">FALSE</field>
+                      <value name="ID">
+                        <shadow type="text">
+                          <field name="TEXT"/>
+                        </shadow>
+                        <block type="DOMObjectSelector" id="u9t9[_mrQs@|99E_7tYS">
+                          <field name="DOM_OBJECT">CONTAINER</field>
+                        </block>
+                      </value>
+                      <statement name="DO">
+                        <block type="disableRendering" id="G9tpgIWEhzF}-t6.hsy3">
+                          <field name="AA">FALSE</field>
+                        </block>
+                      </statement>
+                    </block>
+                  </next>
+                </block>
+              </next>
+            </block>
+          </next>
+        </block>
+      </statement>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="procedures_defnoreturn" id="f/ob%ds95Q?.Jv3JD@.h" x="310" y="-1570">
+      <field name="NAME">CHANGE_EXAMPLES</field>
+      <comment pinned="false" h="80" w="160">Describe this function...</comment>
+      <statement name="STACK">
+        <block type="whenClicked" id="F0J:~HWb43PbG/[vaZ$Z" inline="true">
+          <mutation xmlns="http://www.w3.org/1999/xhtml" adveventoptions="true" enableifmissed="false"></mutation>
+          <field name="X_RAY">TRUE</field>
+          <field name="DOUBLE_CLICK">FALSE</field>
+          <field name="LEFT_BUTTON">TRUE</field>
+          <field name="MIDDLE_BUTTON">TRUE</field>
+          <field name="RIGHT_BUTTON">TRUE</field>
+          <value name="VALUE">
+            <shadow type="objectList" id="GXePS7dgqJc4m_9@xv0)">
+              <field name="FIELDNAME">black space</field>
+            </shadow>
+          </value>
+          <statement name="DO">
+            <block type="variables_set" id="c)z(d8HM{`SC1u7|l^jo">
+              <field name="VAR" id="g(SP)#qn4s,7{x1U`-K}">obj_number</field>
+              <value name="VALUE">
+                <block type="lists_indexOf" id="`,e3{DQoZJw21{n{hB62" inline="false">
+                  <field name="END">FIRST</field>
+                  <value name="VALUE">
+                    <block type="variables_get" id="i8V7R|b-Z{luVEjD6XgC">
+                      <field name="VAR" id="u3U?j`{t(DnYRf3VhdlH">LIST_objects</field>
+                    </block>
+                  </value>
+                  <value name="FIND">
+                    <block type="variables_get" id="ORtOV7DUy}@5TWlfzoPL">
+                      <field name="VAR" id="u,cRSS8`@:,PSab=!(/d">current_object</field>
+                    </block>
+                  </value>
+                </block>
+              </value>
+              <next>
+                <block type="procedures_callnoreturn" id="Rg;77]|IzLIZ=7Miq@(7">
+                  <mutation name="CHANGE_VISIBILITY_OF_ITEMS">
+                    <arg name="list_number"/>
+                    <arg name="LIST_to_use"/>
+                  </mutation>
+                  <value name="ARG0">
+                    <block type="variables_get" id="ry0hXO`a~X|um,Rpy8-}">
+                      <field name="VAR" id="g(SP)#qn4s,7{x1U`-K}">obj_number</field>
+                    </block>
+                  </value>
+                  <value name="ARG1">
+                    <block type="variables_get" id="hLCowzgY/uv39}*TtfG4">
+                      <field name="VAR" id="u3U?j`{t(DnYRf3VhdlH">LIST_objects</field>
+                    </block>
+                  </value>
+                  <next>
+                    <block type="procedures_callnoreturn" id="![aCZDXE[%FdtQS)oC^!">
+                      <mutation name="CHANGE_VISIBILITY_OF_HELPERS">
+                        <arg name="list_number"/>
+                        <arg name="LIST_to_use"/>
+                      </mutation>
+                      <value name="ARG0">
+                        <block type="variables_get" id="L)C4{TP05F`:?azTKK|)">
+                          <field name="VAR" id="g(SP)#qn4s,7{x1U`-K}">obj_number</field>
+                        </block>
+                      </value>
+                      <value name="ARG1">
+                        <block type="variables_get" id="lOcnF`jVr7y{[ROnh(1u">
+                          <field name="VAR" id="IFT3SP$ZB6C4Ag{Wsc1*">LIST_helpers</field>
+                        </block>
+                      </value>
+                    </block>
+                  </next>
+                </block>
+              </next>
+            </block>
+          </statement>
+        </block>
+      </statement>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="procedures_defnoreturn" id="u0O:=EZ/5dQ^1M6JM)^Y" x="310" y="-1210">
+      <mutation>
+        <arg name="list_number" varid="=83[-j,6!J;rY^v4CTqo"/>
+        <arg name="LIST_to_use" varid="9|Sf.^PKkg=YKDv;ScRl"/>
+      </mutation>
+      <field name="NAME">CHANGE_VISIBILITY_OF_ITEMS</field>
+      <comment pinned="false" h="80" w="160">Describe this function...</comment>
+      <statement name="STACK">
+        <block type="hide" id="v2d#)#V4nhP!eBcvnSY!">
+          <value name="VALUE">
+            <shadow type="objectList" id="`KaZ,QbU`v4_T(H3Y~_3">
+              <field name="FIELDNAME">&lt;none&gt;</field>
+            </shadow>
+            <block type="lists_getIndex" id="l03=,L_xpfMmm8Z^e:EP">
+              <mutation statement="false" at="true"/>
+              <field name="MODE">GET</field>
+              <field name="WHERE">FROM_START</field>
+              <value name="VALUE">
+                <block type="variables_get" id=",AO:q~M}6%RA2vTq~ha.">
+                  <field name="VAR" id="9|Sf.^PKkg=YKDv;ScRl">LIST_to_use</field>
+                </block>
+              </value>
+              <value name="AT">
+                <block type="variables_get" id="/*z,qe%UVNK)E%wZ^rWw">
+                  <field name="VAR" id="=83[-j,6!J;rY^v4CTqo">list_number</field>
+                </block>
+              </value>
+            </block>
+          </value>
+          <next>
+            <block type="variables_set" id="KLo)/TG.;Pa~`dKK7Fhq">
+              <field name="VAR" id="f?7{Mm7|u.j8YR6BO872">list_length</field>
+              <value name="VALUE">
+                <block type="math_arithmetic" id="I{M3,;pbIDntkm_dM6O,">
+                  <field name="OP">MINUS</field>
+                  <value name="A">
+                    <shadow type="math_number">
+                      <field name="NUM">2</field>
+                    </shadow>
+                    <block type="lists_length" id="UeJXCDV{[`{fZ.3r7Vz5">
+                      <value name="VALUE">
+                        <block type="variables_get" id="/D(lDs^#BkRL3{sjp_-(">
+                          <field name="VAR" id="9|Sf.^PKkg=YKDv;ScRl">LIST_to_use</field>
+                        </block>
+                      </value>
+                    </block>
+                  </value>
+                  <value name="B">
+                    <shadow type="math_number" id="gEZ,@+rVJ$q=+gN`31*I">
+                      <field name="NUM">1</field>
+                    </shadow>
+                  </value>
+                </block>
+              </value>
+              <next>
+                <block type="controls_if" id="SB1oPo,q5_o%btaD#k-U">
+                  <mutation elseif="1"/>
+                  <value name="IF0">
+                    <block type="logic_compare" id="a}6]Rl_D*[XSE/h[t+ZM">
+                      <field name="OP">LT</field>
+                      <value name="A">
+                        <block type="variables_get" id="CMkZBF/`{jWg{Jlb;!ix">
+                          <field name="VAR" id="g(SP)#qn4s,7{x1U`-K}">obj_number</field>
+                        </block>
+                      </value>
+                      <value name="B">
+                        <block type="variables_get" id="/?uE,E4z0C.Chm*vt0:#">
+                          <field name="VAR" id="f?7{Mm7|u.j8YR6BO872">list_length</field>
+                        </block>
+                      </value>
+                    </block>
+                  </value>
+                  <statement name="DO0">
+                    <block type="variables_set" id="KJ(.TH$v_+spI@?(Dy-V">
+                      <field name="VAR" id="Fje!jz9h1RN]5u+PeC}L">obj_to_show</field>
+                      <value name="VALUE">
+                        <block type="lists_getIndex" id="Y%a`@/NXfz/3kbEKd3-`">
+                          <mutation statement="false" at="true"/>
+                          <field name="MODE">GET</field>
+                          <field name="WHERE">FROM_START</field>
+                          <value name="VALUE">
+                            <block type="variables_get" id="=G@~(Z4YvEE]a50rV}R]">
+                              <field name="VAR" id="9|Sf.^PKkg=YKDv;ScRl">LIST_to_use</field>
+                            </block>
+                          </value>
+                          <value name="AT">
+                            <block type="math_arithmetic" id="2Y_~x@[W[/=hI/Ol~r11">
+                              <field name="OP">ADD</field>
+                              <value name="A">
+                                <shadow type="math_number">
+                                  <field name="NUM">2</field>
+                                </shadow>
+                                <block type="variables_get" id="IXZu|@;c}lW*3*%OVe{.">
+                                  <field name="VAR" id="g(SP)#qn4s,7{x1U`-K}">obj_number</field>
+                                </block>
+                              </value>
+                              <value name="B">
+                                <shadow type="math_number" id="f,][MtO9$L/cE_ZyFqrA">
+                                  <field name="NUM">1</field>
+                                </shadow>
+                              </value>
+                            </block>
+                          </value>
+                        </block>
+                      </value>
+                      <next>
+                        <block type="procedures_callnoreturn" id="[n+dD*wbWv@G34*q?s?M">
+                          <mutation name="SHOW_OBJECTS"/>
+                          <next>
+                            <block type="variables_set" id="!`E|mdH6]wti}`@J]El3">
+                              <field name="VAR" id="u,cRSS8`@:,PSab=!(/d">current_object</field>
+                              <value name="VALUE">
+                                <block type="variables_get" id="`A_g/kYoJ0=L,{8JvVWc">
+                                  <field name="VAR" id="Fje!jz9h1RN]5u+PeC}L">obj_to_show</field>
+                                </block>
+                              </value>
+                            </block>
+                          </next>
+                        </block>
+                      </next>
+                    </block>
+                  </statement>
+                  <value name="IF1">
+                    <block type="logic_compare" id="?ag6lrrlIm.?AIynplkc">
+                      <field name="OP">GTE</field>
+                      <value name="A">
+                        <block type="variables_get" id="6bpGUK,GW^n1eZ6Q8/?Z">
+                          <field name="VAR" id="g(SP)#qn4s,7{x1U`-K}">obj_number</field>
+                        </block>
+                      </value>
+                      <value name="B">
+                        <block type="variables_get" id="PB$hnJ?$ZnT0V}S2G#}2">
+                          <field name="VAR" id="f?7{Mm7|u.j8YR6BO872">list_length</field>
+                        </block>
+                      </value>
+                    </block>
+                  </value>
+                  <statement name="DO1">
+                    <block type="variables_set" id="/?Z|a,okg}d9s0wKy-r_">
+                      <field name="VAR" id="Fje!jz9h1RN]5u+PeC}L">obj_to_show</field>
+                      <value name="VALUE">
+                        <block type="lists_getIndex" id="vFMf7kjI15)-YtcC+W8M">
+                          <mutation statement="false" at="true"/>
+                          <field name="MODE">GET</field>
+                          <field name="WHERE">FROM_START</field>
+                          <value name="VALUE">
+                            <block type="variables_get" id="!KNv/Ptf5RU}^_8t}vAi">
+                              <field name="VAR" id="9|Sf.^PKkg=YKDv;ScRl">LIST_to_use</field>
+                            </block>
+                          </value>
+                          <value name="AT">
+                            <block type="math_number" id="T*k{q8U5UPIZ?//QHMZ@">
+                              <field name="NUM">0</field>
+                            </block>
+                          </value>
+                        </block>
+                      </value>
+                      <next>
+                        <block type="procedures_callnoreturn" id="{364!@+~MLi6zXxRYY}N">
+                          <mutation name="SHOW_OBJECTS"/>
+                          <next>
+                            <block type="variables_set" id="MOch{GS]zj:8vUSvwujN">
+                              <field name="VAR" id="u,cRSS8`@:,PSab=!(/d">current_object</field>
+                              <value name="VALUE">
+                                <block type="variables_get" id="iZ*_ei9#D7pkgQeuf~{q">
+                                  <field name="VAR" id="Fje!jz9h1RN]5u+PeC}L">obj_to_show</field>
+                                </block>
+                              </value>
+                            </block>
+                          </next>
+                        </block>
+                      </next>
+                    </block>
+                  </statement>
+                </block>
+              </next>
+            </block>
+          </next>
+        </block>
+      </statement>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="procedures_defnoreturn" id="w6HhD-?Q2c]hOAxP$+lL" x="1130" y="-1210">
+      <mutation>
+        <arg name="list_number" varid="=83[-j,6!J;rY^v4CTqo"/>
+        <arg name="LIST_to_use" varid="9|Sf.^PKkg=YKDv;ScRl"/>
+      </mutation>
+      <field name="NAME">CHANGE_VISIBILITY_OF_HELPERS</field>
+      <comment pinned="false" h="80" w="160">Describe this function...</comment>
+      <statement name="STACK">
+        <block type="hide" id="N;/$t9:10y$YAzL%cA/x">
+          <value name="VALUE">
+            <shadow type="objectList">
+              <field name="FIELDNAME">&lt;none&gt;</field>
+            </shadow>
+            <block type="lists_getIndex" id=")J=j;YYH|vsB8^D!QP!)">
+              <mutation statement="false" at="true"/>
+              <field name="MODE">GET</field>
+              <field name="WHERE">FROM_START</field>
+              <value name="VALUE">
+                <block type="variables_get" id="^1zqg1]e47UEM0*5?Z8d">
+                  <field name="VAR" id="9|Sf.^PKkg=YKDv;ScRl">LIST_to_use</field>
+                </block>
+              </value>
+              <value name="AT">
+                <block type="variables_get" id="-`oW)T?@k9*Vj`I9hVif">
+                  <field name="VAR" id="=83[-j,6!J;rY^v4CTqo">list_number</field>
+                </block>
+              </value>
+            </block>
+          </value>
+          <next>
+            <block type="variables_set" id="dUd_$)U{CPR)}PTOz)%a">
+              <field name="VAR" id="f?7{Mm7|u.j8YR6BO872">list_length</field>
+              <value name="VALUE">
+                <block type="math_arithmetic" id="SSA(vCpc]gauJcassa(q">
+                  <field name="OP">MINUS</field>
+                  <value name="A">
+                    <shadow type="math_number">
+                      <field name="NUM">2</field>
+                    </shadow>
+                    <block type="lists_length" id="{=)(b(FfqU$Li,f3#D{y">
+                      <value name="VALUE">
+                        <block type="variables_get" id="eO.b_[-zL-rck%OX.X%i">
+                          <field name="VAR" id="9|Sf.^PKkg=YKDv;ScRl">LIST_to_use</field>
+                        </block>
+                      </value>
+                    </block>
+                  </value>
+                  <value name="B">
+                    <shadow type="math_number" id="yuI**ZOAwID+K/OB`+I@">
+                      <field name="NUM">1</field>
+                    </shadow>
+                  </value>
+                </block>
+              </value>
+              <next>
+                <block type="controls_if" id="zTp|GS*azCWXPO$2WT4V">
+                  <mutation elseif="1"/>
+                  <value name="IF0">
+                    <block type="logic_compare" id="d8e}1}cyom)nTNGBsVn|">
+                      <field name="OP">LT</field>
+                      <value name="A">
+                        <block type="variables_get" id="xT.DqD$1El3w8rS%Mj#a">
+                          <field name="VAR" id="g(SP)#qn4s,7{x1U`-K}">obj_number</field>
+                        </block>
+                      </value>
+                      <value name="B">
+                        <block type="variables_get" id="MA;SEtPE7ZALI/,%(-)T">
+                          <field name="VAR" id="f?7{Mm7|u.j8YR6BO872">list_length</field>
+                        </block>
+                      </value>
+                    </block>
+                  </value>
+                  <statement name="DO0">
+                    <block type="variables_set" id="1Ut94e^AO~iNC9bqv3y:">
+                      <field name="VAR" id="Fje!jz9h1RN]5u+PeC}L">obj_to_show</field>
+                      <value name="VALUE">
+                        <block type="lists_getIndex" id="j)|GB:4uI!{B#A8nxtVG">
+                          <mutation statement="false" at="true"/>
+                          <field name="MODE">GET</field>
+                          <field name="WHERE">FROM_START</field>
+                          <value name="VALUE">
+                            <block type="variables_get" id="E*K%?EQe4~Qi#S2yLmJ2">
+                              <field name="VAR" id="9|Sf.^PKkg=YKDv;ScRl">LIST_to_use</field>
+                            </block>
+                          </value>
+                          <value name="AT">
+                            <block type="math_arithmetic" id="6z;5%Bv(YoCB7Rv/aZZX">
+                              <field name="OP">ADD</field>
+                              <value name="A">
+                                <shadow type="math_number">
+                                  <field name="NUM">2</field>
+                                </shadow>
+                                <block type="variables_get" id="T1AGVG5WD[~%LWM0R(k!">
+                                  <field name="VAR" id="g(SP)#qn4s,7{x1U`-K}">obj_number</field>
+                                </block>
+                              </value>
+                              <value name="B">
+                                <shadow type="math_number" id="TtW`=Q(0:O~wa{r][t~U">
+                                  <field name="NUM">1</field>
+                                </shadow>
+                              </value>
+                            </block>
+                          </value>
+                        </block>
+                      </value>
+                      <next>
+                        <block type="procedures_callnoreturn" id="FSMij+Ltn:.,2Wp+Y{~(">
+                          <mutation name="SHOW_OBJECTS"/>
+                        </block>
+                      </next>
+                    </block>
+                  </statement>
+                  <value name="IF1">
+                    <block type="logic_compare" id="F*LB?c/QQ$.PWG(d3/^k">
+                      <field name="OP">GTE</field>
+                      <value name="A">
+                        <block type="variables_get" id="2X4FEs_ptKnrr+1NtRLD">
+                          <field name="VAR" id="g(SP)#qn4s,7{x1U`-K}">obj_number</field>
+                        </block>
+                      </value>
+                      <value name="B">
+                        <block type="variables_get" id="7kr/JM$Fa8WSI{Vo/f26">
+                          <field name="VAR" id="f?7{Mm7|u.j8YR6BO872">list_length</field>
+                        </block>
+                      </value>
+                    </block>
+                  </value>
+                  <statement name="DO1">
+                    <block type="variables_set" id="XH|t|0wykjm]nK2Tnl`q">
+                      <field name="VAR" id="Fje!jz9h1RN]5u+PeC}L">obj_to_show</field>
+                      <value name="VALUE">
+                        <block type="lists_getIndex" id="[6}2PKkq]^R1oq!csYW?">
+                          <mutation statement="false" at="true"/>
+                          <field name="MODE">GET</field>
+                          <field name="WHERE">FROM_START</field>
+                          <value name="VALUE">
+                            <block type="variables_get" id="Z*gKMltYr{)[%bq7kE-G">
+                              <field name="VAR" id="9|Sf.^PKkg=YKDv;ScRl">LIST_to_use</field>
+                            </block>
+                          </value>
+                          <value name="AT">
+                            <block type="math_number" id="HuIDrM?G~mAhoyuB}B2*">
+                              <field name="NUM">0</field>
+                            </block>
+                          </value>
+                        </block>
+                      </value>
+                      <next>
+                        <block type="procedures_callnoreturn" id="UIH1H}3DrXXmo?6_%O6*">
+                          <mutation name="SHOW_OBJECTS"/>
+                        </block>
+                      </next>
+                    </block>
+                  </statement>
+                </block>
+              </next>
+            </block>
+          </next>
+        </block>
+      </statement>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="procedures_callnoreturn" id="Q?G+ZMcPV:K:XT!RtyP{" x="-530" y="-730">
+      <mutation name="MAIN"/>
+      <next>
+        <block type="comment" id="s|JdA|Tp83NfVP4Tu/}e">
+          <field name="TEXT">PUZZLES START HERE!</field>
+        </block>
+      </next>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="procedures_defnoreturn" id="Q?c:M36jL_OZCf:;1L=+" x="310" y="-670">
+      <field name="NAME">SHOW_OBJECTS</field>
+      <comment pinned="false" h="80" w="160">Describe this function...</comment>
+      <statement name="STACK">
+        <block type="variables_set" id="kW}XNAaa|iEz~v|7=2OS">
+          <field name="VAR" id="fFPP69^A?)|ERI{Se`OM">obj_to_show_transparent</field>
+          <value name="VALUE">
+            <block type="text_join" id=".?1!^cr6P#JqDLNIuALP">
+              <mutation items="2"/>
+              <value name="ADD0">
+                <block type="variables_get" id="}zxjszMV6itm[I8e!^va">
+                  <field name="VAR" id="Fje!jz9h1RN]5u+PeC}L">obj_to_show</field>
+                </block>
+              </value>
+              <value name="ADD1">
+                <block type="text" id="w{.OO|A-[~[^6}C`rEgR">
+                  <field name="TEXT">_transparent</field>
+                </block>
+              </value>
+            </block>
+          </value>
+          <next>
+            <block type="console.log" id="*@-IL5pwMk)!ztAC+Lq{">
+              <value name="VALUE">
+                <shadow type="text" id="[ww=8$cqR7yky*0/9%C1">
+                  <field name="TEXT">Hello, Verge!</field>
+                </shadow>
+                <block type="text_join" id="1gGboC1XGhx|[M?R8{bg">
+                  <mutation items="2"/>
+                  <value name="ADD0">
+                    <block type="text" id=",Qr*sXoFvQK[!`W{}-AN">
+                      <field name="TEXT">obj_to_show: </field>
+                    </block>
+                  </value>
+                  <value name="ADD1">
+                    <block type="variables_get" id="83z~(Mt_|=47PE8hIv9$">
+                      <field name="VAR" id="Fje!jz9h1RN]5u+PeC}L">obj_to_show</field>
+                    </block>
+                  </value>
+                </block>
+              </value>
+              <next>
+                <block type="show" id="l*HhEtMB.:~kXtGsOh_[">
+                  <value name="VALUE">
+                    <shadow type="objectList">
+                      <field name="FIELDNAME">Teapot</field>
+                    </shadow>
+                    <block type="variables_get" id="B1Mc1)9i,2nK{7Tup-Fq">
+                      <field name="VAR" id="Fje!jz9h1RN]5u+PeC}L">obj_to_show</field>
+                    </block>
+                  </value>
+                </block>
+              </next>
+            </block>
+          </next>
+        </block>
+      </statement>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="procedures_defnoreturn" id=";5gNbhkx1;4!hx~h_y#*" x="-1270" y="-550">
+      <field name="NAME">FADE_IN_SCREEN</field>
+      <comment pinned="false" h="80" w="160">Describe this function...</comment>
+      <statement name="STACK">
+        <block type="setScreenScale" id="%^ip-*:MxKEp._lt`:,_">
+          <value name="FACTOR">
+            <shadow type="math_number" id=":KeTn#rc75g.#=l6/h_Y">
+              <field name="NUM">1.5</field>
+            </shadow>
+          </value>
+          <next>
+            <block type="GLIFTEK_v3d_Plugins_Backgrounds/GLIFTEK_BACKGROUNDS_Screen_Fade" id="$]1]u2C|ybA/y=lTxRdn">
+              <field name="typeDropdown">out</field>
+              <field name="colorInput_1_PICKER">#000000</field>
+              <field name="delete_When_Done_Checkbox">TRUE</field>
+              <value name="screenFade_ID_Input">
+                <shadow type="text" id="x).%xp^gwz6Wz@qt8g:S">
+                  <field name="TEXT">screenFade_1</field>
+                </shadow>
+              </value>
+              <value name="screenFade_Z_Index_Input">
+                <shadow type="math_number" id="Zt!!*xpH}y;fU[HS(iWX">
+                  <field name="NUM">10</field>
+                </shadow>
+              </value>
+              <value name="screenFade_Pause_Input">
+                <shadow type="math_number" id="_l*hcdE=(Bq@/u[q#(~D">
+                  <field name="NUM">1.5</field>
+                </shadow>
+              </value>
+              <value name="screenFade_Duration_Input">
+                <shadow type="math_number" id="Z);1|cmDSsqxZ@?r%`?6">
+                  <field name="NUM">1</field>
+                </shadow>
+              </value>
+              <value name="colorInput_1_TEXT">
+                <shadow type="text" id="2HPE{z%;1RX=ZkwSV2B+">
+                  <field name="TEXT"/>
+                </shadow>
+              </value>
+              <statement name="whenDone_Statement_Input">
+                <block type="procedures_callnoreturn" id="kpV6D%_HE[ll;XS]rk0t">
+                  <mutation name="DISABLE_RENDERING"/>
+                </block>
+              </statement>
+            </block>
+          </next>
+        </block>
+      </statement>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="procedures_defnoreturn" id="xB2OyPV2WX|E(UzP%]aS" x="-510" y="-510">
+      <field name="NAME">MAIN</field>
+      <comment pinned="false" h="80" w="160">Describe this function...</comment>
+      <statement name="STACK">
+        <block type="variables_set" id="^BdH9`a~DwlC9{R?tN0U" collapsed="true">
+          <field name="VAR" id="U-d^1xm~TR/Re*~MD;!q">EXEC_updateQuadWireframe</field>
+          <value name="VALUE">
+            <block type="textMultiline" id="_eM57*yYq=vzr8H$v#?D">
+              <field name="HIGHLIGHT_MODE">text</field>
+              <field name="TEXT">window.updateQuadWireframe = true;</field>
+            </block>
+          </value>
+          <next>
+            <block type="variables_set" id="Z)=iIzWc^(l.[:?v^1EK">
+              <field name="VAR" id="LX#|ZA~,jM|5}{VjXdq:">_g_list_number</field>
+              <value name="VALUE">
+                <block type="math_number" id="+QL:CxHX0xhJ{PsnvOD6">
+                  <field name="NUM">0</field>
+                </block>
+              </value>
+              <next>
+                <block type="variables_set" id="_/[BRo|6x`o6c?T_wY^)">
+                  <field name="VAR" id="g(SP)#qn4s,7{x1U`-K}">obj_number</field>
+                  <value name="VALUE">
+                    <block type="logic_null" id="w.zyA3FQS4{$?quz2^~N"/>
+                  </value>
+                  <next>
+                    <block type="procedures_callnoreturn" id="M:fX/zMHR2((]60x^bE[">
+                      <mutation name="FADE_IN_SCREEN"/>
+                      <next>
+                        <block type="procedures_callnoreturn" id="*{5-ShLDG*-3N6$D7$A9">
+                          <mutation name="MAKE_LISTS"/>
+                          <next>
+                            <block type="procedures_callnoreturn" id="7JB]1X}Bk_N;t_//dSa9">
+                              <mutation name="MAKE_HELPERS"/>
+                              <next>
+                                <block type="procedures_callnoreturn" id="6+|][y8.aBo:ps:;B-kx">
+                                  <mutation name="MAKE_OBJECTS"/>
+                                  <next>
+                                    <block type="procedures_callnoreturn" id="0Uv8v^ZMh0#rQpv$2I3P">
+                                      <mutation name="HIDE_ALL_OBJECTS"/>
+                                      <next>
+                                        <block type="procedures_callnoreturn" id="AY{B;bZG70$xng$poB*f">
+                                          <mutation name="HOVER_NEXT"/>
+                                          <next>
+                                            <block type="procedures_callnoreturn" id="gesvdR[-K_[EvURa/eN9">
+                                              <mutation name="CHANGE_EXAMPLES"/>
+                                              <next>
+                                                <block type="procedures_callnoreturn" id="/tpP3T,v+mJOF`w.,@?I">
+                                                  <mutation name="CHANGE_OBJECT_WIREFRAME"/>
+                                                </block>
+                                              </next>
+                                            </block>
+                                          </next>
+                                        </block>
+                                      </next>
+                                    </block>
+                                  </next>
+                                </block>
+                              </next>
+                            </block>
+                          </next>
+                        </block>
+                      </next>
+                    </block>
+                  </next>
+                </block>
+              </next>
+            </block>
+          </next>
+        </block>
+      </statement>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="procedures_defnoreturn" id="cbD_33pS}@,DK^J^ZeUZ" x="310" y="-430">
+      <field name="NAME">HIDE_ALL_OBJECTS</field>
+      <comment pinned="false" h="80" w="160">Describe this function...</comment>
+      <statement name="STACK">
+        <block type="hide" id="x||*5@fc%/90[|^ML]j!">
+          <value name="VALUE">
+            <shadow type="objectList" id="6P.4iLR]-{m)zQ#?6!1q">
+              <field name="FIELDNAME">&lt;none&gt;</field>
+            </shadow>
+            <block type="allObjectList" id="yAR2Ay79SRg,%:_Y`npw"/>
+          </value>
+          <next>
+            <block type="variables_set" id="oE6gx3C@GSi~GQelzU44">
+              <field name="VAR" id="u,cRSS8`@:,PSab=!(/d">current_object</field>
+              <value name="VALUE">
+                <block type="text" id="`HQV_R}|i)l(](!9_Y.1">
+                  <field name="TEXT">Teapot</field>
+                </block>
+              </value>
+              <next>
+                <block type="variables_set" id="3[14~C56RYQHJjVxe^6#">
+                  <field name="VAR" id="ji@KcWEuTJ+f*KF##V`+">TOGGLE_wireframe_is_see_through</field>
+                  <value name="VALUE">
+                    <block type="logic_boolean" id="-j)6#tL3yP=6?/-+bal%">
+                      <field name="BOOL">FALSE</field>
+                    </block>
+                  </value>
+                  <next>
+                    <block type="show" id="Fhr1,)6]|_Cab0Z}k}KA">
+                      <value name="VALUE">
+                        <shadow type="objectList" id="W0@PzEnBb(ialonEHdGE">
+                          <field name="FIELDNAME">Teapot</field>
+                        </shadow>
+                      </value>
+                      <next>
+                        <block type="show" id="g%`N.+h`N#Ljvx(nzKGs">
+                          <value name="VALUE">
+                            <shadow type="objectList" id="4:tE4E$8_)a%t.[ABlde">
+                              <field name="FIELDNAME">infiniteGridHelper_1</field>
+                            </shadow>
+                          </value>
+                          <next>
+                            <block type="show" id="`jvs1h4EiLVjfJcsGGKy">
+                              <value name="VALUE">
+                                <shadow type="objectList" id="8PPJC)t*~=.Y[Lgsh[]J">
+                                  <field name="FIELDNAME">black space</field>
+                                </shadow>
+                              </value>
+                              <next>
+                                <block type="show" id="C(cG4GU2zd50H2q=K}@%">
+                                  <value name="VALUE">
+                                    <shadow type="objectList" id="YQ{W2of6emE~4;ELY(sA">
+                                      <field name="FIELDNAME">Text_Next</field>
+                                    </shadow>
+                                  </value>
+                                </block>
+                              </next>
+                            </block>
+                          </next>
+                        </block>
+                      </next>
+                    </block>
+                  </next>
+                </block>
+              </next>
+            </block>
+          </next>
+        </block>
+      </statement>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="procedures_defnoreturn" id="V5?53wQxErZX~_iuWCt)" x="-1270" y="10">
+      <field name="NAME">MAKE_LISTS</field>
+      <comment pinned="false" h="80" w="160">Describe this function...</comment>
+      <statement name="STACK">
+        <block type="variables_set" id="!j{u5GX(os~]NI;X#[h1">
+          <field name="VAR" id="u3U?j`{t(DnYRf3VhdlH">LIST_objects</field>
+          <value name="VALUE">
+            <block type="lists_create_with" id="p43mj+3:mbW.M!Ij3o6Z">
+              <mutation items="3"/>
+              <value name="ADD0">
+                <block type="text" id="RRSnvC=f3yx23_*^f|4n">
+                  <field name="TEXT">Teapot</field>
+                </block>
+              </value>
+              <value name="ADD1">
+                <block type="text" id="K:W!Pw9Y.]T`rgkp^/[:">
+                  <field name="TEXT">Torus</field>
+                </block>
+              </value>
+              <value name="ADD2">
+                <block type="text" id="{m}Mj5)ZGY)l/}*HRDeD">
+                  <field name="TEXT">Box</field>
+                </block>
+              </value>
+            </block>
+          </value>
+          <next>
+            <block type="variables_set" id="+F7{!dPgX_+kka6||wJ!">
+              <field name="VAR" id="i%7^|u/!U$)j.s_3~h.~">LIST_cube_grid_helpers</field>
+              <value name="VALUE">
+                <block type="lists_create_with" id="h0e1I+)!S!8+/x_sJeLm">
+                  <mutation items="4"/>
+                  <value name="ADD0">
+                    <block type="text" id="g~!zwOP1|hyDgJTsOk.D">
+                      <field name="TEXT">gridHelper_1</field>
+                    </block>
+                  </value>
+                  <value name="ADD1">
+                    <block type="text" id="H_@B!+8+01P`K!o6P)nc">
+                      <field name="TEXT">gridHelper_2</field>
+                    </block>
+                  </value>
+                  <value name="ADD2">
+                    <block type="text" id="qy5=KN0v[1OhFiayApKM">
+                      <field name="TEXT">gridHelper_3</field>
+                    </block>
+                  </value>
+                  <value name="ADD3">
+                    <block type="text" id="#//s8yKsj/B5LBt!Unsy">
+                      <field name="TEXT">gridHelper_4</field>
+                    </block>
+                  </value>
+                </block>
+              </value>
+              <next>
+                <block type="variables_set" id="=B6.Ff3/kns#L/;eoZL`">
+                  <field name="VAR" id="7#XTpE!N)NUrusuA*Y||">LIST_polar_grid_helpers</field>
+                  <value name="VALUE">
+                    <block type="lists_create_with" id="Q*JPo?j3%GST$WhR-~(o">
+                      <mutation items="5"/>
+                      <value name="ADD0">
+                        <block type="text" id="(;KwG(j{@Q-_Wh^dz(=q">
+                          <field name="TEXT">polarGridHelper_1</field>
+                        </block>
+                      </value>
+                      <value name="ADD1">
+                        <block type="text" id="K{{]GJHR;a|ix}#^EHiY">
+                          <field name="TEXT">polarGridHelper_2</field>
+                        </block>
+                      </value>
+                      <value name="ADD2">
+                        <block type="text" id="?Wi|-J1uK]UtJXjzm@?]">
+                          <field name="TEXT">polarGridHelper_3</field>
+                        </block>
+                      </value>
+                      <value name="ADD3">
+                        <block type="text" id="+q=}q3QPZ5(]NcSRp6OZ">
+                          <field name="TEXT">polarGridHelper_4</field>
+                        </block>
+                      </value>
+                      <value name="ADD4">
+                        <block type="text" id="?lHx(?@5V5X+}5i%d+yx">
+                          <field name="TEXT">Cylinder</field>
+                        </block>
+                      </value>
+                    </block>
+                  </value>
+                  <next>
+                    <block type="variables_set" id="{8v@5r[=frtz,=}+py*I">
+                      <field name="VAR" id="IFT3SP$ZB6C4Ag{Wsc1*">LIST_helpers</field>
+                      <value name="VALUE">
+                        <block type="lists_create_with" id="*(c;N:~wAKCdZ}HH#S=!">
+                          <mutation items="3"/>
+                          <value name="ADD0">
+                            <block type="text" id=".x#Wq=fM9j[h9OIog#Or">
+                              <field name="TEXT">infiniteGridHelper_1</field>
+                            </block>
+                          </value>
+                          <value name="ADD1">
+                            <block type="variables_get" id="v|UT)T;SQkZMCA.0i}Jd">
+                              <field name="VAR" id="7#XTpE!N)NUrusuA*Y||">LIST_polar_grid_helpers</field>
+                            </block>
+                          </value>
+                          <value name="ADD2">
+                            <block type="variables_get" id="o/WI)2Q([#+].~:D8GD]">
+                              <field name="VAR" id="i%7^|u/!U$)j.s_3~h.~">LIST_cube_grid_helpers</field>
+                            </block>
+                          </value>
+                        </block>
+                      </value>
+                    </block>
+                  </next>
+                </block>
+              </next>
+            </block>
+          </next>
+        </block>
+      </statement>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="procedures_defnoreturn" id="!JYs0J*YY3EZU45ck[/(" x="-510" y="10">
+      <field name="NAME">MAKE_HELPERS</field>
+      <comment pinned="false" h="80" w="160">Describe this function...</comment>
+      <statement name="STACK">
+        <block type="procedures_callnoreturn" id="hdozp$)Cr^z(]%3|BRHF">
+          <mutation name="MAKE_INFINITE_GRID"/>
+          <next>
+            <block type="procedures_callnoreturn" id="~X0}#oPsZ*wtPlELpg[Q">
+              <mutation name="MAKE_GRID_CUBE"/>
+              <next>
+                <block type="procedures_callnoreturn" id="H2k9pazh=K1#9D5Dgmqw">
+                  <mutation name="MAKE_GRID_POLAR"/>
+                  <next>
+                    <block type="procedures_callnoreturn" id="nRs2MNnIfC|PoiLGp1qz" disabled="true">
+                      <mutation name="MAKE_OTHER_HELPERS"/>
+                    </block>
+                  </next>
+                </block>
+              </next>
+            </block>
+          </next>
+        </block>
+      </statement>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="procedures_defnoreturn" id="3bXvX1zECxbw{mi1*xUD" x="310" y="10">
+      <field name="NAME">MAKE_OBJECTS</field>
+      <comment pinned="false" h="80" w="160">Describe this function...</comment>
+      <statement name="STACK">
+        <block type="procedures_callnoreturn" id="P^$kwm*-fsl@pW]|}U%Y">
+          <mutation name="MAKE_TEAPOT"/>
+          <next>
+            <block type="procedures_callnoreturn" id="h5(18_Su|4B[DnA#$;9k">
+              <mutation name="MAKE_TORUS"/>
+              <next>
+                <block type="procedures_callnoreturn" id="QK.tOPoWd}g^p^SZ{s$k">
+                  <mutation name="MAKE_BOX"/>
+                  <next>
+                    <block type="procedures_callnoreturn" id="rt0f{#GXTVVBWaRN0D(K">
+                      <mutation name="SET_MATERIALS"/>
+                    </block>
+                  </next>
+                </block>
+              </next>
+            </block>
+          </next>
+        </block>
+      </statement>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="procedures_defnoreturn" id="n%`*(bcU7wiLL_gMB,{i" x="-510" y="250">
+      <field name="NAME">MAKE_INFINITE_GRID</field>
+      <comment pinned="false" h="80" w="160">Describe this function...</comment>
+      <statement name="STACK">
+        <block type="GLIFTEK_v3d_Plugins_Helpers/GLIFTEK_HELPERS_Infinite_Grid" id="HDy[l5s2U_}{8;6CST!p">
+          <value name="gridSize1">
+            <shadow type="math_number" id="iR2bt+R%|1PDas6yG+4(">
+              <field name="NUM">5</field>
+            </shadow>
+          </value>
+          <value name="gridSize2">
+            <shadow type="math_number" id="ASo9g%IF93T6I}rXV)ML">
+              <field name="NUM">50</field>
+            </shadow>
+          </value>
+          <value name="distance">
+            <shadow type="math_number" id="TBGj/BZ5DVfWN9xb6?EN">
+              <field name="NUM">3000</field>
+            </shadow>
+          </value>
+          <value name="colorGrid">
+            <shadow type="text" id="C#j0a*{nCFQD}6Q4I5cD">
+              <field name="TEXT">pink</field>
+            </shadow>
+          </value>
+        </block>
+      </statement>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="procedures_defnoreturn" id="n2B:$!lEZ|UW_E;Ev)e]" x="310" y="310">
+      <field name="NAME">MAKE_TEAPOT</field>
+      <comment pinned="false" h="80" w="160">Describe this function...</comment>
+      <statement name="STACK">
+        <block type="createObject" id="!Z|`ZVr_S[BLu},|5i-}">
+          <mutation xmlns="http://www.w3.org/1999/xhtml" object_type="TEAPOT"></mutation>
+          <field name="TYPE">TEAPOT</field>
+          <field name="CAMERA_TYPE">PERSPECTIVE</field>
+          <field name="LIGHT_TYPE">AMBIENT</field>
+          <value name="NAME">
+            <shadow type="text" id="~79@9]AzVMl0;v)561iw">
+              <field name="TEXT">Teapot</field>
+            </shadow>
+          </value>
+          <value name="WIDTH">
+            <shadow type="math_number" id="q~h[4|t!#mNI/@6f`dd@">
+              <field name="NUM">2</field>
+            </shadow>
+          </value>
+          <next>
+            <block type="setObjTransform" id="wa=M3PnFd67+LaPf]|KG">
+              <mutation xmlns="http://www.w3.org/1999/xhtml" usevectorslot="false"></mutation>
+              <field name="MODE">position</field>
+              <field name="OFFSET">FALSE</field>
+              <value name="TARGETOBJ">
+                <shadow type="objectList" id=":!91:%uj6)+HVY[G!k.2">
+                  <field name="FIELDNAME">Teapot</field>
+                </shadow>
+              </value>
+              <value name="Z">
+                <block type="math_number" id="RmWi3_sxlQX)CH{A.O5U">
+                  <field name="NUM">5</field>
+                </block>
+              </value>
+              <next>
+                <block type="setObjTransform" id="ezS_GieEeo(A?;RN75b;">
+                  <mutation xmlns="http://www.w3.org/1999/xhtml" usevectorslot="false"></mutation>
+                  <field name="MODE">rotation</field>
+                  <field name="OFFSET">FALSE</field>
+                  <value name="TARGETOBJ">
+                    <shadow type="objectList" id="gnafMEl-VEZPf`E|NF-e">
+                      <field name="FIELDNAME">Teapot</field>
+                    </shadow>
+                  </value>
+                  <value name="Z">
+                    <block type="math_number" id="(rP9BrGX(D?G=VLM|hP1">
+                      <field name="NUM">90</field>
+                    </block>
+                  </value>
+                </block>
+              </next>
+            </block>
+          </next>
+        </block>
+      </statement>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="procedures_defnoreturn" id="u/vGVBGxafAk8]]o%E6d" x="1130" y="310">
+      <field name="NAME">SET_MATERIALS</field>
+      <comment pinned="false" h="80" w="160">Describe this function...</comment>
+      <statement name="STACK">
+        <block type="setMaterialColor" id="9r@`oJ@OT}:iPT9:P*8j">
+          <mutation xmlns="http://www.w3.org/1999/xhtml" flexcolinput="false" usecsscolor="true"></mutation>
+          <field name="MAT_COL_NAME">emissive</field>
+          <value name="MATERIAL">
+            <shadow type="materialList" id="^p8%z%A~0t/=*]g,ESC4">
+              <field name="FIELDNAME">CylinderMaterial</field>
+            </shadow>
+          </value>
+          <value name="CSS">
+            <block type="text" id="n(V*^_CQWTAdf^?08ka}">
+              <field name="TEXT">cyan</field>
+            </block>
+          </value>
+          <next>
+            <block type="GLIFTEK_v3d_Plugins_Objects/GLIFTEK_OBJECTS_Set_Material_Transparency" id="/84z|j~T@KTKq~l~955X">
+              <value name="matInput">
+                <shadow type="materialList" id="^;HY:C|o~r![e`mC[s:7">
+                  <field name="FIELDNAME">CylinderMaterial</field>
+                </shadow>
+              </value>
+              <value name="opacity">
+                <shadow type="math_number" id="foc5GREvlJ4.~c:SFff=">
+                  <field name="NUM">0.1</field>
+                </shadow>
+              </value>
+              <next>
+                <block type="variables_set" id="%L[B3=^@j|g?~`pb4o)P">
+                  <field name="VAR" id="}c|LfCl+d$@c/n7$X%Pw">COLOR_object_transparent</field>
+                  <value name="VALUE">
+                    <block type="text" id="@fyUXV]cmbkVoc8q.JzE">
+                      <field name="TEXT">black</field>
+                    </block>
+                  </value>
+                  <next>
+                    <block type="variables_set" id="ZLa]L*]+ZC/o;$)FJVS}">
+                      <field name="VAR" id="9Vnh.s(xuEjpl8mD2WJz">COLOR_object_wireframe</field>
+                      <value name="VALUE">
+                        <block type="text" id="];aey#vQ6+mjRk,ASqrK">
+                          <field name="TEXT">cyan</field>
+                        </block>
+                      </value>
+                      <next>
+                        <block type="GLIFTEK_v3d_Plugins_Helpers/GLIFTEK_HELPERS_Quad_Wireframe" id="LMc{ylu3_E7wb4FlE!BH">
+                          <field name="wireframeCheckbox">FALSE</field>
+                          <value name="objInput">
+                            <shadow type="objectList" id="Th=/JIbz.Y}xRuj)Y^GN">
+                              <field name="FIELDNAME">Teapot</field>
+                            </shadow>
+                          </value>
+                          <value name="colorInput">
+                            <shadow type="text" id="-i9h(;j!jrDR^miX1uux">
+                              <field name="TEXT">white</field>
+                            </shadow>
+                          </value>
+                          <value name="segUinput">
+                            <shadow type="math_number" id="`}t#}Dt(;1aKZf%^{^*v">
+                              <field name="NUM">4</field>
+                            </shadow>
+                          </value>
+                          <value name="segVinput">
+                            <shadow type="math_number" id="ThljWKF=pIUX0mi`B`I%">
+                              <field name="NUM">4</field>
+                            </shadow>
+                          </value>
+                          <value name="wireWidthInput">
+                            <shadow type="math_number" id="(~)xzW57uhyP1t)DqMj2">
+                              <field name="NUM">3</field>
+                            </shadow>
+                          </value>
+                          <value name="wireColorInput">
+                            <shadow type="text" id="/hMe{Sn(yG$nw(P?|k/}">
+                              <field name="TEXT">black</field>
+                            </shadow>
+                            <block type="variables_get" id="z=GX|Q$f#rYd@c+k~|G`">
+                              <field name="VAR" id="9Vnh.s(xuEjpl8mD2WJz">COLOR_object_wireframe</field>
+                            </block>
+                          </value>
+                          <next>
+                            <block type="GLIFTEK_v3d_Plugins_Helpers/GLIFTEK_HELPERS_Quad_Wireframe" id="q1cg{1ZOgsr5NI.0`_nZ">
+                              <field name="wireframeCheckbox">FALSE</field>
+                              <value name="objInput">
+                                <shadow type="objectList" id="2,J;ck_$^)wgdQ*W2P48">
+                                  <field name="FIELDNAME">Torus</field>
+                                </shadow>
+                              </value>
+                              <value name="colorInput">
+                                <shadow type="text" id="M2=o6Gz%`X)%k#w],4wG">
+                                  <field name="TEXT">black</field>
+                                </shadow>
+                              </value>
+                              <value name="segUinput">
+                                <shadow type="math_number" id="6)cny-ukOBQ?pQKeiP^p">
+                                  <field name="NUM">8</field>
+                                </shadow>
+                              </value>
+                              <value name="segVinput">
+                                <shadow type="math_number" id=",GNS/l?[8!Rdb,/3Wm^W">
+                                  <field name="NUM">8</field>
+                                </shadow>
+                              </value>
+                              <value name="wireWidthInput">
+                                <shadow type="math_number" id="#FfrEb*+,P39R4R7N1!Q">
+                                  <field name="NUM">3</field>
+                                </shadow>
+                              </value>
+                              <value name="wireColorInput">
+                                <shadow type="text">
+                                  <field name="TEXT">cyan</field>
+                                </shadow>
+                                <block type="variables_get" id="5YF=JtR@hbOB#_.~~g~n">
+                                  <field name="VAR" id="9Vnh.s(xuEjpl8mD2WJz">COLOR_object_wireframe</field>
+                                </block>
+                              </value>
+                              <next>
+                                <block type="GLIFTEK_v3d_Plugins_Helpers/GLIFTEK_HELPERS_Quad_Wireframe" id=":b]W{=d@V9j`W_[{0[f-">
+                                  <field name="wireframeCheckbox">FALSE</field>
+                                  <value name="objInput">
+                                    <shadow type="objectList" id="kIj?ph/;^r=ir]Z)Sb`L">
+                                      <field name="FIELDNAME">Box</field>
+                                    </shadow>
+                                  </value>
+                                  <value name="colorInput">
+                                    <shadow type="text" id="4g;A2N)@cV_TpQ|v9WbO">
+                                      <field name="TEXT">black</field>
+                                    </shadow>
+                                  </value>
+                                  <value name="segUinput">
+                                    <shadow type="math_number" id=";ztF_RpJt#QcNw)f@Qw#">
+                                      <field name="NUM">4</field>
+                                    </shadow>
+                                  </value>
+                                  <value name="segVinput">
+                                    <shadow type="math_number" id="y@;prD)1J;kvySvB#fq%">
+                                      <field name="NUM">4</field>
+                                    </shadow>
+                                  </value>
+                                  <value name="wireWidthInput">
+                                    <shadow type="math_number" id="G-Hm}BcI-wo@4n@4W/rQ">
+                                      <field name="NUM">3</field>
+                                    </shadow>
+                                  </value>
+                                  <value name="wireColorInput">
+                                    <shadow type="text">
+                                      <field name="TEXT">cyan</field>
+                                    </shadow>
+                                    <block type="variables_get" id="4GMyPK[#ZwFU^Oc%w}Q.">
+                                      <field name="VAR" id="9Vnh.s(xuEjpl8mD2WJz">COLOR_object_wireframe</field>
+                                    </block>
+                                  </value>
+                                </block>
+                              </next>
+                            </block>
+                          </next>
+                        </block>
+                      </next>
+                    </block>
+                  </next>
+                </block>
+              </next>
+            </block>
+          </next>
+        </block>
+      </statement>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="procedures_defnoreturn" id="LRc,J$%{]TmkiA:ttsb=" x="-510" y="450">
+      <field name="NAME">MAKE_GRID_POLAR</field>
+      <comment pinned="false" h="80" w="160">Describe this function...</comment>
+      <statement name="STACK">
+        <block type="GLIFTEK_v3d_Plugins_Helpers/GLIFTEK_HELPERS_Polar_Grid" id="dJOaV5iy]yG:Jz)B@*as">
+          <value name="radius">
+            <shadow type="math_number" id="ZREDHFi)}0C5$/X6%18$">
+              <field name="NUM">5</field>
+            </shadow>
+          </value>
+          <value name="radials">
+            <shadow type="math_number" id=")(]boGgfF{*`-=M-U,j7">
+              <field name="NUM">8</field>
+            </shadow>
+          </value>
+          <value name="circles">
+            <shadow type="math_number" id="n(y,uA@4!]24=g=_*6jC">
+              <field name="NUM">6</field>
+            </shadow>
+          </value>
+          <value name="divisions">
+            <shadow type="math_number" id="DZL#rttY7DjQ=$vbto=n">
+              <field name="NUM">64</field>
+            </shadow>
+          </value>
+          <value name="color1">
+            <shadow type="text" id="yjRVrF^|#U.wIg.k$e{s">
+              <field name="TEXT">gray</field>
+            </shadow>
+          </value>
+          <value name="color2">
+            <shadow type="text" id="?dE}d$*r$pkUiPP,^g!^">
+              <field name="TEXT">gray</field>
+            </shadow>
+          </value>
+          <next>
+            <block type="GLIFTEK_v3d_Plugins_Helpers/GLIFTEK_HELPERS_Polar_Grid" id="pY+XJC1*TX34h.Kt=4cD">
+              <value name="radius">
+                <shadow type="math_number" id="MkVBiIfBQu]36S]tQU)(">
+                  <field name="NUM">5</field>
+                </shadow>
+              </value>
+              <value name="radials">
+                <shadow type="math_number" id="B~+(BQe]Hj,c2+09G+V`">
+                  <field name="NUM">8</field>
+                </shadow>
+              </value>
+              <value name="circles">
+                <shadow type="math_number" id="1$w7tNFSo]j$Csmzs)_$">
+                  <field name="NUM">6</field>
+                </shadow>
+              </value>
+              <value name="divisions">
+                <shadow type="math_number" id="PyO_(xJ_{IfVVOHI/mxI">
+                  <field name="NUM">64</field>
+                </shadow>
+              </value>
+              <value name="color1">
+                <shadow type="text" id=")56ET`/6gZ;w-/{pqFYg">
+                  <field name="TEXT">gray</field>
+                </shadow>
+              </value>
+              <value name="color2">
+                <shadow type="text" id="uTcAadhjmunMg]^@8(q!">
+                  <field name="TEXT">gray</field>
+                </shadow>
+              </value>
+              <next>
+                <block type="setObjTransform" id="zo8?%p{G$aa1Mh7ErBVZ">
+                  <mutation xmlns="http://www.w3.org/1999/xhtml" usevectorslot="false"></mutation>
+                  <field name="MODE">position</field>
+                  <field name="OFFSET">FALSE</field>
+                  <value name="TARGETOBJ">
+                    <shadow type="objectList" id="39{]*jKJh%99fQ|{lif2">
+                      <field name="FIELDNAME">polarGridHelper_2</field>
+                    </shadow>
+                  </value>
+                  <value name="Z">
+                    <block type="math_number" id="roED6a!J?y;eF}k)LMb`">
+                      <field name="NUM">10</field>
+                    </block>
+                  </value>
+                  <next>
+                    <block type="GLIFTEK_v3d_Plugins_Helpers/GLIFTEK_HELPERS_Polar_Grid" id="uL%6WKa1Qj;Qb_,9cjop">
+                      <value name="radius">
+                        <shadow type="math_number" id=".v3:^6/BC.c}Wm{`{[vL">
+                          <field name="NUM">50</field>
+                        </shadow>
+                      </value>
+                      <value name="radials">
+                        <shadow type="math_number" id="JtL.f{$D)$cJedQXqcj!">
+                          <field name="NUM">8</field>
+                        </shadow>
+                      </value>
+                      <value name="circles">
+                        <shadow type="math_number" id="+_B3~GJMu]@O$~.qFahs">
+                          <field name="NUM">6</field>
+                        </shadow>
+                      </value>
+                      <value name="divisions">
+                        <shadow type="math_number" id="F=X0H,!`?=H7.#6=@Dw5">
+                          <field name="NUM">64</field>
+                        </shadow>
+                      </value>
+                      <value name="color1">
+                        <shadow type="text" id="+|VOt@r@:z;]Rp9IaB7Q">
+                          <field name="TEXT">magenta</field>
+                        </shadow>
+                      </value>
+                      <value name="color2">
+                        <shadow type="text" id="$[Tp~j.jaco)j,=zvkxl">
+                          <field name="TEXT">magenta</field>
+                        </shadow>
+                      </value>
+                      <next>
+                        <block type="GLIFTEK_v3d_Plugins_Helpers/GLIFTEK_HELPERS_Polar_Grid" id="a0D8vrREh_W4ft`m*rZ6">
+                          <value name="radius">
+                            <shadow type="math_number" id="H?/J7S(9LJ54UGown4)R">
+                              <field name="NUM">50</field>
+                            </shadow>
+                          </value>
+                          <value name="radials">
+                            <shadow type="math_number" id="?wXz@lB4t+g/Pa(46iko">
+                              <field name="NUM">8</field>
+                            </shadow>
+                          </value>
+                          <value name="circles">
+                            <shadow type="math_number" id="l^Mh@5XgO{_KRB#_-pq;">
+                              <field name="NUM">6</field>
+                            </shadow>
+                          </value>
+                          <value name="divisions">
+                            <shadow type="math_number" id="}JU..q.!L*J_N{w(sEs~">
+                              <field name="NUM">64</field>
+                            </shadow>
+                          </value>
+                          <value name="color1">
+                            <shadow type="text" id="kH)b3{WRO=K;W~-]w$Ih">
+                              <field name="TEXT">magenta</field>
+                            </shadow>
+                          </value>
+                          <value name="color2">
+                            <shadow type="text" id="v`).^U/fX0_3pE!:$d/4">
+                              <field name="TEXT">magenta</field>
+                            </shadow>
+                          </value>
+                          <next>
+                            <block type="setObjTransform" id="SHQo9`a+_ugyC@?v8Tp+">
+                              <mutation xmlns="http://www.w3.org/1999/xhtml" usevectorslot="false"></mutation>
+                              <field name="MODE">position</field>
+                              <field name="OFFSET">FALSE</field>
+                              <value name="TARGETOBJ">
+                                <shadow type="objectList" id="F{T]mlO/Fpp%kIo2vxI9">
+                                  <field name="FIELDNAME">polarGridHelper_4</field>
+                                </shadow>
+                              </value>
+                              <value name="Z">
+                                <block type="math_number" id="x/W~[#Yd08j:n=e%B9Eq">
+                                  <field name="NUM">10</field>
+                                </block>
+                              </value>
+                              <next>
+                                <block type="createObject" id="*WoESRde;px#Lobw_~d)">
+                                  <mutation xmlns="http://www.w3.org/1999/xhtml" object_type="CYLINDER"></mutation>
+                                  <field name="TYPE">CYLINDER</field>
+                                  <field name="CAMERA_TYPE">PERSPECTIVE</field>
+                                  <field name="LIGHT_TYPE">AMBIENT</field>
+                                  <value name="NAME">
+                                    <shadow type="text" id="dA`#s??Hi^sxm)bt{),?">
+                                      <field name="TEXT">Cylinder</field>
+                                    </shadow>
+                                  </value>
+                                  <value name="HEIGHT">
+                                    <shadow type="math_number" id="08{8ziT{kvL3d(G6#D0H">
+                                      <field name="NUM">10</field>
+                                    </shadow>
+                                  </value>
+                                  <value name="RADIUS">
+                                    <shadow type="math_number" id="p()!xWYVW?2U@Si5[z;(">
+                                      <field name="NUM">5</field>
+                                    </shadow>
+                                  </value>
+                                  <value name="SEGMENTS">
+                                    <shadow type="math_number" id="|?Sif]ci)_EM~0FbfX_T">
+                                      <field name="NUM">32</field>
+                                    </shadow>
+                                  </value>
+                                  <next>
+                                    <block type="GLIFTEK_v3d_Plugins_Objects/GLIFTEK_OBJECTS_Set_Object_Selectability" id="r8P,OyA8CaSuJvcTlh~h">
+                                      <field name="selectabilityDropdown">unselectable</field>
+                                      <value name="objInput">
+                                        <shadow type="objectList" id="@_h5+y20JYsT_b3ca9{v">
+                                          <field name="FIELDNAME">Cylinder</field>
+                                        </shadow>
+                                      </value>
+                                      <next>
+                                        <block type="setObjTransform" id="[8k!SP-3:a_XCpVz+Ol^">
+                                          <mutation xmlns="http://www.w3.org/1999/xhtml" usevectorslot="false"></mutation>
+                                          <field name="MODE">position</field>
+                                          <field name="OFFSET">FALSE</field>
+                                          <value name="TARGETOBJ">
+                                            <shadow type="objectList" id="]h/WLmaiQ^UzGf:D8h$q">
+                                              <field name="FIELDNAME">Cylinder</field>
+                                            </shadow>
+                                          </value>
+                                          <value name="Z">
+                                            <block type="math_number" id="`thmBSYcpRoIFvd=-Z_F">
+                                              <field name="NUM">5</field>
+                                            </block>
+                                          </value>
+                                        </block>
+                                      </next>
+                                    </block>
+                                  </next>
+                                </block>
+                              </next>
+                            </block>
+                          </next>
+                        </block>
+                      </next>
+                    </block>
+                  </next>
+                </block>
+              </next>
+            </block>
+          </next>
+        </block>
+      </statement>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="procedures_defnoreturn" id="~3zT8J`QP}+E$s%W5~,s" x="310" y="530">
+      <field name="NAME">MAKE_TORUS</field>
+      <comment pinned="false" h="80" w="160">Describe this function...</comment>
+      <statement name="STACK">
+        <block type="createObject" id="Tm.PA!%U4FS/SP-}K[%m">
+          <mutation xmlns="http://www.w3.org/1999/xhtml" object_type="TORUS"></mutation>
+          <field name="TYPE">TORUS</field>
+          <field name="CAMERA_TYPE">PERSPECTIVE</field>
+          <field name="LIGHT_TYPE">AMBIENT</field>
+          <value name="NAME">
+            <shadow type="text" id="J;phw4MeZ$V9?/$L7e!k">
+              <field name="TEXT">Torus</field>
+            </shadow>
+          </value>
+          <value name="RADIUS">
+            <shadow type="math_number" id="XMdnFy41?~ot;1(Vx0-@">
+              <field name="NUM">2</field>
+            </shadow>
+          </value>
+          <value name="TUBE">
+            <shadow type="math_number" id="]v^e}YFXTX0CtFk^XNWQ">
+              <field name="NUM">1</field>
+            </shadow>
+          </value>
+          <next>
+            <block type="setObjTransform" id="E;aFs,Qh][}hEP4l2?B9">
+              <mutation xmlns="http://www.w3.org/1999/xhtml" usevectorslot="false"></mutation>
+              <field name="MODE">position</field>
+              <field name="OFFSET">FALSE</field>
+              <value name="TARGETOBJ">
+                <shadow type="objectList" id="Op/{edHC1)-!j3S}n;g2">
+                  <field name="FIELDNAME">Torus</field>
+                </shadow>
+              </value>
+              <value name="Z">
+                <block type="math_number" id="dlE?{d7,:|Bl}mxA!z)(">
+                  <field name="NUM">5</field>
+                </block>
+              </value>
+              <next>
+                <block type="setObjTransform" id="Z/X{X@-d~+,Ig}Z7V7d8">
+                  <mutation xmlns="http://www.w3.org/1999/xhtml" usevectorslot="false"></mutation>
+                  <field name="MODE">rotation</field>
+                  <field name="OFFSET">FALSE</field>
+                  <value name="TARGETOBJ">
+                    <shadow type="objectList" id="CCaBK#qT|@`b0y}G(2MK">
+                      <field name="FIELDNAME">Torus</field>
+                    </shadow>
+                  </value>
+                  <value name="X">
+                    <block type="math_number" id="J$?t[VOTarqww6k8i7*_">
+                      <field name="NUM">90</field>
+                    </block>
+                  </value>
+                </block>
+              </next>
+            </block>
+          </next>
+        </block>
+      </statement>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="procedures_defnoreturn" id="*$[F~{].BzVC],zrU_S/" x="310" y="770">
+      <field name="NAME">MAKE_BOX</field>
+      <comment pinned="false" h="80" w="160">Describe this function...</comment>
+      <statement name="STACK">
+        <block type="createObject" id="l_xJvynpvAiUAbOVel4S">
+          <mutation xmlns="http://www.w3.org/1999/xhtml" object_type="BOX"></mutation>
+          <field name="TYPE">BOX</field>
+          <field name="CAMERA_TYPE">PERSPECTIVE</field>
+          <field name="LIGHT_TYPE">AMBIENT</field>
+          <value name="NAME">
+            <shadow type="text" id="zUs7Dh!#H(9`-pG:$Jm-">
+              <field name="TEXT">Box</field>
+            </shadow>
+          </value>
+          <value name="WIDTH">
+            <shadow type="math_number" id="_OOZ|WEVR9y-H4]p3;Qy">
+              <field name="NUM">4</field>
+            </shadow>
+          </value>
+          <value name="HEIGHT">
+            <shadow type="math_number" id="}uTBF-7aL!K_i^Txt{G.">
+              <field name="NUM">4</field>
+            </shadow>
+          </value>
+          <value name="DEPTH">
+            <shadow type="math_number" id="5w^24[a#8[#//o7Rl.+6">
+              <field name="NUM">4</field>
+            </shadow>
+          </value>
+          <next>
+            <block type="setObjTransform" id="]*J[]]f*n8L=?JcbRV6O">
+              <mutation xmlns="http://www.w3.org/1999/xhtml" usevectorslot="false"></mutation>
+              <field name="MODE">position</field>
+              <field name="OFFSET">FALSE</field>
+              <value name="TARGETOBJ">
+                <shadow type="objectList" id="6]u6C1|Or^W15eay/jWE">
+                  <field name="FIELDNAME">Box</field>
+                </shadow>
+              </value>
+              <value name="Z">
+                <block type="math_number" id=")4Uf6$9?nBUx=?51PLoX">
+                  <field name="NUM">5</field>
+                </block>
+              </value>
+            </block>
+          </next>
+        </block>
+      </statement>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="procedures_defnoreturn" id="2;-z-adTz~D|2O%?2Qw:" x="310" y="1050">
+      <field name="NAME">MAKE_OTHER_HELPERS</field>
+      <comment pinned="false" h="80" w="160">Describe this function...</comment>
+      <statement name="STACK">
+        <block type="GLIFTEK_v3d_Plugins_Helpers/GLIFTEK_HELPERS_Arrow" id="_rBBEp+$?JUe[^+mgbdm">
+          <value name="dir">
+            <block type="createVector" id="69.`9hWg[*v`{bSrjDLm">
+              <value name="X">
+                <shadow type="math_number" id="+xg-LI=7AjN0YGI.Qi|c">
+                  <field name="NUM">0</field>
+                </shadow>
+              </value>
+              <value name="Y">
+                <shadow type="math_number" id="xMQ}iaW(sdfmRB60~VJ8">
+                  <field name="NUM">-3</field>
+                </shadow>
+              </value>
+              <value name="Z">
+                <shadow type="math_number" id="LWOhX{Lp-}u%9pRpuuec">
+                  <field name="NUM">0</field>
+                </shadow>
+              </value>
+            </block>
+          </value>
+          <value name="origin">
+            <block type="createVector" id="uRO|hJ*mo7@|xU$Oxnim">
+              <value name="X">
+                <shadow type="math_number" id="3|dX]93e-%;$.3:nB,Of">
+                  <field name="NUM">0</field>
+                </shadow>
+              </value>
+              <value name="Y">
+                <shadow type="math_number" id="NI$kh#mu8;F=(I9Oop69">
+                  <field name="NUM">0</field>
+                </shadow>
+              </value>
+              <value name="Z">
+                <shadow type="math_number" id="0kyJlI=w36*./(!hRO1!">
+                  <field name="NUM">0</field>
+                </shadow>
+              </value>
+            </block>
+          </value>
+          <value name="length">
+            <shadow type="math_number" id="c9$TEe~%P-zE^XYhs![M">
+              <field name="NUM">3</field>
+            </shadow>
+          </value>
+          <value name="hex">
+            <shadow type="text" id="8+1F{MB_.)JU@WF8D);!">
+              <field name="TEXT">#4682B4</field>
+            </shadow>
+          </value>
+          <value name="headLength">
+            <shadow type="math_number" id="l$a|npq12ZueQ!eE|qaP">
+              <field name="NUM">0.5</field>
+            </shadow>
+          </value>
+          <value name="headWidth">
+            <shadow type="math_number" id="(k/xMa2cGD0]z0=-EWr=">
+              <field name="NUM">0.25</field>
+            </shadow>
+          </value>
+          <next>
+            <block type="GLIFTEK_v3d_Plugins_Helpers/GLIFTEK_HELPERS_Axes" id="nv1D}sj_%#cPWroWilD`">
+              <value name="axisSize">
+                <shadow type="math_number" id="*D*WLW?gq0gO?)+#3VnG">
+                  <field name="NUM">3</field>
+                </shadow>
+              </value>
+            </block>
+          </next>
+        </block>
+      </statement>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="procedures_defnoreturn" id="wOeVW/dQ?Uc9dY=BM`R~" x="-510" y="1450">
+      <field name="NAME">MAKE_GRID_CUBE</field>
+      <comment pinned="false" h="80" w="160">Describe this function...</comment>
+      <statement name="STACK">
+        <block type="variables_set" id="FaJW$/@6KErA!#Z:p{Sv">
+          <field name="VAR" id="5s0iVQ%6];hXfN9=;[g^">grid_Cube_color</field>
+          <value name="VALUE">
+            <block type="text" id="GCWYMA-5~+X{0LV*H%rz">
+              <field name="TEXT">magenta</field>
+            </block>
+          </value>
+          <next>
+            <block type="variables_set" id="-:E,uP]F7|^D`3*aEFnJ">
+              <field name="VAR" id="J7W25rA1?J[!fV=xW964">grid_Cube_Center_color</field>
+              <value name="VALUE">
+                <block type="text" id="fLLUdjv:Y$~Y*G[T-sv|">
+                  <field name="TEXT">gray</field>
+                </block>
+              </value>
+              <next>
+                <block type="GLIFTEK_v3d_Plugins_Helpers/GLIFTEK_HELPERS_Grid" id="w;HOF6F@i1lyzW;O62;k">
+                  <value name="gridSize">
+                    <shadow type="math_number" id="%Pps4D[ysXuT=t!E2LCo">
+                      <field name="NUM">10</field>
+                    </shadow>
+                  </value>
+                  <value name="divisions">
+                    <shadow type="math_number" id="QPeq9]TW_0^ZGAB/U3uC">
+                      <field name="NUM">10</field>
+                    </shadow>
+                  </value>
+                  <value name="colorGrid">
+                    <shadow type="text" id="WmyBX{/c-DM@.I2+@umM">
+                      <field name="TEXT">cyan</field>
+                    </shadow>
+                    <block type="variables_get" id="==7,JYpAve#1nh~y=C,S">
+                      <field name="VAR" id="5s0iVQ%6];hXfN9=;[g^">grid_Cube_color</field>
+                    </block>
+                  </value>
+                  <value name="colorCenterLine">
+                    <shadow type="text" id="8Tacv).[0.Rc~NF%kV%@">
+                      <field name="TEXT">yellow</field>
+                    </shadow>
+                    <block type="variables_get" id="5gA^XOL(u?][,~^KZI||">
+                      <field name="VAR" id="J7W25rA1?J[!fV=xW964">grid_Cube_Center_color</field>
+                    </block>
+                  </value>
+                  <next>
+                    <block type="setObjTransform" id="GJC-bve3955:(d4=ZL9F">
+                      <mutation xmlns="http://www.w3.org/1999/xhtml" usevectorslot="false"></mutation>
+                      <field name="MODE">rotation</field>
+                      <field name="OFFSET">FALSE</field>
+                      <value name="TARGETOBJ">
+                        <shadow type="objectList" id="=#DtDBB=@,S-C3qTS/s@">
+                          <field name="FIELDNAME">gridHelper_1</field>
+                        </shadow>
+                      </value>
+                      <value name="Y">
+                        <block type="math_number" id="1%B#eJ)nw$Mq|DA^?NU{">
+                          <field name="NUM">90</field>
+                        </block>
+                      </value>
+                      <next>
+                        <block type="setObjTransform" id="`v9S$2N?l9)+!jKdbH9e">
+                          <mutation xmlns="http://www.w3.org/1999/xhtml" usevectorslot="false"></mutation>
+                          <field name="MODE">position</field>
+                          <field name="OFFSET">FALSE</field>
+                          <value name="TARGETOBJ">
+                            <shadow type="objectList" id="rVo1d$8f14UHm{6@kQ*}">
+                              <field name="FIELDNAME">gridHelper_1</field>
+                            </shadow>
+                          </value>
+                          <value name="X">
+                            <block type="math_number" id="mStf!ybg$A_tmx+P2Ro6">
+                              <field name="NUM">-5</field>
+                            </block>
+                          </value>
+                          <value name="Z">
+                            <block type="math_number" id="y8f{}H*Q;?kiEQvUM=eg">
+                              <field name="NUM">5</field>
+                            </block>
+                          </value>
+                          <next>
+                            <block type="GLIFTEK_v3d_Plugins_Helpers/GLIFTEK_HELPERS_Grid" id="vDGXs:pGd#NlcOEWv%;G">
+                              <value name="gridSize">
+                                <shadow type="math_number" id="Xn8NPgTlf/)~!3$A{QDV">
+                                  <field name="NUM">10</field>
+                                </shadow>
+                              </value>
+                              <value name="divisions">
+                                <shadow type="math_number" id="2R.W;/ZJ!{:n=:hkhEzd">
+                                  <field name="NUM">10</field>
+                                </shadow>
+                              </value>
+                              <value name="colorGrid">
+                                <shadow type="text" id="fF3nH~jFJ`dw#F%/|,?Z">
+                                  <field name="TEXT">cyan</field>
+                                </shadow>
+                                <block type="variables_get" id="C;rmFhl^T{Cw~B]yZu1W">
+                                  <field name="VAR" id="5s0iVQ%6];hXfN9=;[g^">grid_Cube_color</field>
+                                </block>
+                              </value>
+                              <value name="colorCenterLine">
+                                <shadow type="text" id="K-Nz:]^frNGW$XozZR];">
+                                  <field name="TEXT">yellow</field>
+                                </shadow>
+                                <block type="variables_get" id="}E;vmc:F-7}@9[Tq[*F%">
+                                  <field name="VAR" id="J7W25rA1?J[!fV=xW964">grid_Cube_Center_color</field>
+                                </block>
+                              </value>
+                              <next>
+                                <block type="setObjTransform" id="6D+wf5Q:N6uks8K/.=}|">
+                                  <mutation xmlns="http://www.w3.org/1999/xhtml" usevectorslot="false"></mutation>
+                                  <field name="MODE">rotation</field>
+                                  <field name="OFFSET">FALSE</field>
+                                  <value name="TARGETOBJ">
+                                    <shadow type="objectList" id="nF(y*tQBxW[4]V%T1.X~">
+                                      <field name="FIELDNAME">gridHelper_2</field>
+                                    </shadow>
+                                  </value>
+                                  <value name="Y">
+                                    <block type="math_number" id="ae*{v3G2Elqurn%:H2Z%">
+                                      <field name="NUM">-90</field>
+                                    </block>
+                                  </value>
+                                  <value name="Z">
+                                    <block type="math_number" id="}UtL*e,Br|Pw2}:W(%,4">
+                                      <field name="NUM">-90</field>
+                                    </block>
+                                  </value>
+                                  <next>
+                                    <block type="setObjTransform" id="]dP9]1G?~N@s8c+Mw*5K">
+                                      <mutation xmlns="http://www.w3.org/1999/xhtml" usevectorslot="false"></mutation>
+                                      <field name="MODE">position</field>
+                                      <field name="OFFSET">FALSE</field>
+                                      <value name="TARGETOBJ">
+                                        <shadow type="objectList" id="~DSz:42F]bBPk_h^IL*F">
+                                          <field name="FIELDNAME">gridHelper_2</field>
+                                        </shadow>
+                                      </value>
+                                      <value name="Y">
+                                        <block type="math_number" id="(1*3RI7Fktw9l9s;Wtgi">
+                                          <field name="NUM">5</field>
+                                        </block>
+                                      </value>
+                                      <value name="Z">
+                                        <block type="math_number" id="_|z^Z[4Y~9~fJE;@#9qM">
+                                          <field name="NUM">5</field>
+                                        </block>
+                                      </value>
+                                      <next>
+                                        <block type="GLIFTEK_v3d_Plugins_Helpers/GLIFTEK_HELPERS_Grid" id="s1fkO!0SXiK5ak4{|+a[">
+                                          <value name="gridSize">
+                                            <shadow type="math_number" id="cOqj=sCjrebWuFa0lpLI">
+                                              <field name="NUM">10</field>
+                                            </shadow>
+                                          </value>
+                                          <value name="divisions">
+                                            <shadow type="math_number" id="VzVS;I*}8^@4wa;#(ve~">
+                                              <field name="NUM">10</field>
+                                            </shadow>
+                                          </value>
+                                          <value name="colorGrid">
+                                            <shadow type="text" id="6dr!aOS4XlS#^y1FQcY,">
+                                              <field name="TEXT">cyan</field>
+                                            </shadow>
+                                            <block type="variables_get" id="hlX*CVj0]4F5=]Kck4FL">
+                                              <field name="VAR" id="5s0iVQ%6];hXfN9=;[g^">grid_Cube_color</field>
+                                            </block>
+                                          </value>
+                                          <value name="colorCenterLine">
+                                            <shadow type="text" id="u)49CdT{Gzk|`~da]]ER">
+                                              <field name="TEXT">yellow</field>
+                                            </shadow>
+                                            <block type="variables_get" id="jSlMV}!)^a}9f@--`OH^">
+                                              <field name="VAR" id="J7W25rA1?J[!fV=xW964">grid_Cube_Center_color</field>
+                                            </block>
+                                          </value>
+                                          <next>
+                                            <block type="GLIFTEK_v3d_Plugins_Helpers/GLIFTEK_HELPERS_Grid" id="(-4btzj4lE(j4#Xf#jSj">
+                                              <value name="gridSize">
+                                                <shadow type="math_number" id="A2LX%oN4Y=z7x#X6S0/W">
+                                                  <field name="NUM">100</field>
+                                                </shadow>
+                                              </value>
+                                              <value name="divisions">
+                                                <shadow type="math_number" id="=pUnMk,Q:b%=DzI;_HW]">
+                                                  <field name="NUM">20</field>
+                                                </shadow>
+                                              </value>
+                                              <value name="colorGrid">
+                                                <shadow type="text" id="CvRDW~4OfG%NXJFPCq.M">
+                                                  <field name="TEXT">purple</field>
+                                                </shadow>
+                                              </value>
+                                              <value name="colorCenterLine">
+                                                <shadow type="text">
+                                                  <field name="TEXT">yellow</field>
+                                                </shadow>
+                                                <block type="variables_get" id="GE(Jxf[I8J$Z*?i]|hmu">
+                                                  <field name="VAR" id="J7W25rA1?J[!fV=xW964">grid_Cube_Center_color</field>
+                                                </block>
+                                              </value>
+                                            </block>
+                                          </next>
+                                        </block>
+                                      </next>
+                                    </block>
+                                  </next>
+                                </block>
+                              </next>
+                            </block>
+                          </next>
+                        </block>
+                      </next>
+                    </block>
+                  </next>
+                </block>
+              </next>
+            </block>
+          </next>
+        </block>
+      </statement>
+    </block>
+  </tab>
+  <editorsettings viewport-x="827" viewport-y="48" viewport-w="300" viewport-h="230.5" viewport-hidden="false" toolbox-library-mode="false" toolbox-minimized-mode="false"></editorsettings>
+</xml>
