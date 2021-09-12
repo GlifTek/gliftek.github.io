@@ -730,28 +730,14 @@ function nav_HTML()
 };
 
 function set_nav_HTML()
-// loop to get all plugins from JSON and CAPStitles also remove "user_docs" 
-// make link be one page with variable "?var=value" "?page=pageName"
-// to fit so many, make dropdown instead of topBar menu?
 {
 
   console.log('LIST_allPluginPacks:',LIST_allPluginPacks);
   
   console.log('LIST_allPluginPacks.length',LIST_allPluginPacks.length);
 
-  // const LIST_allPluginPacks_half = Math.ceil(LIST_allPluginPacks.length / 2);    
-  // console.log('LIST_allPluginPacks_half',LIST_allPluginPacks_half);
-
-
-
   const LIST_nav_firstHalf = LIST_allPluginPacks.slice(0, 11)
   console.log('LIST_nav_firstHalf',LIST_nav_firstHalf);
-
-  // const LIST_nav_firstHalf = LIST_allPluginPacks.slice(0, LIST_allPluginPacks_half)
-  // console.log('LIST_nav_firstHalf',LIST_nav_firstHalf);
-
-  // const LIST_nav_secondHalf = LIST_allPluginPacks.slice(-LIST_allPluginPacks_half)
-  // console.log('LIST_nav_secondHalf',LIST_nav_secondHalf);
 
 
 
@@ -761,10 +747,6 @@ function set_nav_HTML()
 
     let navMenuList = [];
 
-    // for( let i = 0; i < (  ( LIST_nav_firstHalf.length - ( LIST_nav_firstHalf.length / 2 )  )  ); i++ )
-    // for( let i = 0; i < LIST_allPluginPacks.length; i++ )
-    // {
-    //   let item = LIST_allPluginPacks[i];
 
     for( let i = 0; i < LIST_nav_firstHalf.length; i++ )
     {
@@ -803,7 +785,6 @@ function set_nav_HTML()
   {
     let navMenuList_1 = [];
 
-    // for( let i = 0; i < (  ( LIST_nav_firstHalf.length - ( LIST_nav_firstHalf.length / 2 )  )  ); i++ )
     for( let i = 0; i < LIST_nav_firstHalf.length; i++ )
     {
       let item = LIST_nav_firstHalf[i];
@@ -831,72 +812,9 @@ function set_nav_HTML()
   }
 
 
-  // function make_Nav2()
-  // {
-  //     let navMenuList_2  = [];
-
-  //     for( let i = 0; i < LIST_nav_secondHalf.length; i++ )
-  //     {
-  //       let item = LIST_nav_secondHalf[i];
-    
-  //       let navItemClass;
-    
-    
-  //       if ( item == page )
-  //       {
-  //         navItemClass = 'active';
-  //       }
-  //       else
-  //       {
-  //         navItemClass = '';
-  //       }
-    
-  //       let navMenuItem = 
-  //       `<li class = '${navItemClass}'><a href="user_docs.html?page=${item}">${item}</a></li>`;
-    
-  //       navMenuList_2.push(navMenuItem);
-
-        
-
-  //     };
-
-  //     return navMenuList_2;
-
-  // }
-
-
-  // for( let i = 0; i < (  ( LIST_allPluginPacks.length - ( LIST_allPluginPacks.length / 2 )  )  ); i++ )
-  // {
-  //   let item = LIST_allPluginPacks[i];
-
-  //   let navItemClass;
-
-
-  //   if ( item == page )
-  //   {
-  //     navItemClass = 'active';
-  //   }
-  //   else
-  //   {
-  //     navItemClass = '';
-  //   }
-
-  //   let navMenuItem = 
-  //   `<li class = '${navItemClass}'><a href="user_docs.html?page=${item}">${item}</a></li>`;
-
-  //   navMenuList_1.push(navMenuItem);
-
-
-  // make_Nav1();
-  // make_Nav2();
-
 
   let result =
 
-  // `<ul class="links">
-  // ${menuHeaderFooter}
-  // ${make_Nav().join('')}   
-  // </ul>`;
   
   `<ul class="links">
     ${make_Nav().join('')}   
@@ -904,41 +822,6 @@ function set_nav_HTML()
   ${menuHeaderFooter}`;
 
   return result;
-
-
-
-  // let result =
-
-  // `<ul class="links">
-  //   ${make_Nav1().join('')}   
-  // </ul>
-  // <br />
-  // <ul class="links">
-  //   ${make_Nav2().join('')}   
-  // </ul>
-
-  // ${menuHeaderFooter}`;
-
-  // return result;
-
-
-
-
-
-  // let result =
-
-  // `<ul class="links">
-  //   ${navMenuList_1.join('')}   
-  // </ul>
-
-  // <ul class="links">
-  //   ${navMenuList_2.join('')}   
-  // </ul>
-
-  // ${menuHeaderFooter}`;
-
-  // return result;
-
 
 };  //  END NAVS
 
@@ -953,7 +836,7 @@ function set_intro_HTML()
 {
 
 
-  let pluginNameandIntro, userDocumentationOrNot, disclosureHTM;
+  let pluginNameandIntro, userDocumentationOrNot;
 
   if ( page == 'featured' )
   {
@@ -966,8 +849,6 @@ function set_intro_HTML()
   {    
     userDocumentationOrNot = 'User Documentation';
     pluginNameandIntro = `The [ ${pluginPack_title_UpperCase} ] Plugin Pack ${pluginPack.intro}`;    
-    disclosureHTML = 
-    `<p style="font-size: .7rem; text-align: center"><i><br>*A portion of the proceeds from the sale of this plugin pack is donated to:<br>The <a href = 'https://docs.github.com/en/sponsors/getting-started-with-github-sponsors/about-github-sponsors'  target='blank' rel='noreferrer noopener' >Github Sponsors Matching Fund.</a></i></p>`;
   }
 
     let result =
@@ -975,7 +856,6 @@ function set_intro_HTML()
     <header class="major" style='font-style: italic'>
     <span class="date">${userDocumentationOrNot}</span>
     ${pluginNameandIntro}<br>
-    ${disclosureHTML}
     </header>
     
     `;
@@ -1353,8 +1233,8 @@ function storeSmall_HTML()
 {
   let storeSmallDiv = document.getElementById('storeSmallDiv');
   storeSmallDiv.innerHTML = `<div class="align-center"><a href="${gliftek_contactInfo.gumroadStore}" target="_blank" rel="noreferrer noopener"class="button large">PURCHASE AT STORE</a></div>
-  </br>
-  </br>`;
+  <p style="font-size: .7rem; text-align: center"><i><br>*A portion of the proceeds from the sale of 'ported' plugin packs is donated to <a href = 'https://docs.github.com/en/sponsors/getting-started-with-github-sponsors/about-github-sponsors'  target='blank' rel='noreferrer noopener' >The Github Sponsors Matching Fund.</a></i></p>
+  </br></br>`;
 }
 
 
