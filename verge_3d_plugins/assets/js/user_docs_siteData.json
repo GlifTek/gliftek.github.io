@@ -65,7 +65,7 @@
 
         "Bounding_Boxes": {
 
-            "pluginWidth": "100%","exampleWidth": "30rem",
+            "pluginWidth": "100%","exampleWidth": "23rem",
 
             "puzzleText": "consists of the puzzles<br />'Create Bounding Box', 'Update Bounding Box', 'Bounding Box Collision Sensor', 'Get Bounding Box',<br /> 'Get Bounding Box Collision State', & 'Get Touching Object'. ",
 
@@ -82,7 +82,7 @@
 
         "Helpers": {
 
-            "pluginWidth": "100%","exampleWidth": "30rem",
+            "pluginWidth": "100%","exampleWidth": "23rem",
 
             "puzzleText": "consists of the puzzles:<br />'Grid Helper', 'Polar Grid Helper', 'Arrow Helper', & 'Axes Helper'. ",
 
@@ -99,7 +99,7 @@
 
         "Objects": {
 
-            "pluginWidth": "100%","exampleWidth": "30rem",
+            "pluginWidth": "100%","exampleWidth": "23rem",
 
             "puzzleText": "consists of the puzzles:<br />'Copy Object And Material', 'Copy Material', 'Rename Object', 'Rename Material', 'Create Group', & 'Get Parent'.",
 
@@ -272,7 +272,7 @@
         
         "Stats_Info_Box": {
 
-            "pluginWidth": "23rem","exampleWidth": "30rem",
+            "pluginWidth": "23rem","exampleWidth": "23rem",
 
             "puzzleText": "provides a simple info box that will help you monitor your code performance.",
 
@@ -289,7 +289,7 @@
 
         "Add_Zeros_Padding": {
 
-            "pluginWidth": "22rem","exampleWidth": "30rem",
+            "pluginWidth": "22rem","exampleWidth": "23rem",
 
             "puzzleText": "formats a number to a 'Locale String', adding a padding of zeros determined by the 'digits' input amount.",
 
@@ -686,8 +686,8 @@
 
         "Set_Background_Image": {
 
-            "pluginWidth": "30rem", "exampleWidth": "30rem",
-            "pluginWidth_mobile": "30rem", "exampleWidth_mobile": "30rem",
+            "pluginWidth": "23rem", "exampleWidth": "23rem",
+            "pluginWidth_mobile": "23rem", "exampleWidth_mobile": "23rem",
 
             "puzzleText": "sets a custom static background image for the scene.  Using a still image for a background to your 3D scene can be a great tool for streamlining your product presentation.",
 
@@ -717,7 +717,7 @@
 
         "Fade_Screen": {
 
-            "pluginWidth": "30rem","exampleWidth": "40%",
+            "pluginWidth": "23rem","exampleWidth": "40%",
 
             "puzzleText": "Fades the screen in or out from a solid color.",
 
@@ -732,7 +732,7 @@
 
         "Screen_Vignette": {
 
-            "pluginWidth": "30rem","exampleWidth": "40%",
+            "pluginWidth": "23rem","exampleWidth": "40%",
 
             "puzzleText": "To achieve a cinematic style 'vignette' effect, this creates a div with a radial gradient background with three stops: Center, Mid, and Outer, differing in opacity.  In the 'radius' field use percentages for a responsive gradient, and integers for an absolute size.  ie: '100%' will scale with different size screens, while '1024' will not, staying that size.",
 
@@ -766,7 +766,7 @@
 
         "Copy_Objects": {
 
-            "pluginWidth": "30rem","exampleWidth": "30rem",
+            "pluginWidth": "23rem","exampleWidth": "23rem",
 
             "puzzleText": "makes a completely unique copy of the given object and it's material. ",
 
@@ -781,7 +781,7 @@
 
         "Copy_Material": {
 
-            "pluginWidth": "30rem","exampleWidth": "30rem",
+            "pluginWidth": "23rem","exampleWidth": "23rem",
 
             "puzzleText": "makes a new, completely unique copy of the given object's material. ",
 
@@ -796,7 +796,7 @@
 
         "Rename_Object": {
 
-            "pluginWidth": "30rem","exampleWidth": "30rem",
+            "pluginWidth": "23rem","exampleWidth": "23rem",
 
             "puzzleText": "gives the selected object a new unique name.",
 
@@ -811,7 +811,7 @@
 
         "Rename_Material": {
 
-            "pluginWidth": "30rem","exampleWidth": "30rem",
+            "pluginWidth": "23rem","exampleWidth": "23rem",
 
             "puzzleText": "changes the selected material's name. ",
 
@@ -826,7 +826,7 @@
 
         "Create_Group": {
 
-            "pluginWidth": "30rem","exampleWidth": "30rem",
+            "pluginWidth": "23rem","exampleWidth": "23rem",
 
             "puzzleText": "creates a new empty object group.",
 
@@ -841,7 +841,7 @@
 
         "Get_Parent": {
 
-            "pluginWidth": "30rem","exampleWidth": "30rem",
+            "pluginWidth": "23rem","exampleWidth": "23rem",
 
             "puzzleText": "returns the parent object of the given object.",
 
@@ -876,7 +876,7 @@
 
         "Pop_Up_Modal": {
 
-            "pluginWidth": "20rem","exampleWidth": "30rem",
+            "pluginWidth": "20rem","exampleWidth": "23rem",
 
             "puzzleText": "The opening and closing of the window can be animated via slide, zoom, or fade functions. The background of the window and / or entire background screen can be blurred, tinted or darkened for greater focus on the window and its contents.",
 
@@ -891,7 +891,7 @@
 
         "Modal_Text_Settings": {
 
-            "pluginWidth": "20rem","exampleWidth": "30rem",
+            "pluginWidth": "20rem","exampleWidth": "23rem",
 
             "puzzleText": "Text settings options are standard. Users can load external fonts if desired. The float settings allow for grouping text around images and or video.",
 
@@ -906,7 +906,7 @@
 
         "Modal_Media_Settings": {
 
-            "pluginWidth": "20rem","exampleWidth": "30rem",
+            "pluginWidth": "20rem","exampleWidth": "23rem",
 
             "puzzleText": "The media puzzle provides input of images and video. For video, mp4 format is recommended. Settings for video include video controls, loop video, play on start.",
 
@@ -921,7 +921,7 @@
 
         "Modal_Animation_Settings": {
 
-            "pluginWidth": "20rem","exampleWidth": "30rem",
+            "pluginWidth": "20rem","exampleWidth": "23rem",
 
             "puzzleText": "The animation settings plugin provides input for customizing opening and closing animations. Options include slide in/out, zoom in/out, fade in/out. Timing of the animation and animation tweening settings are available.",
 
@@ -951,7 +951,7 @@
 
         "Get_Modal_Status": {
 
-            "pluginWidth": "25rem","exampleWidth": "30rem",
+            "pluginWidth": "25rem","exampleWidth": "23rem",
 
             "puzzleText": "returns true if modal is open, false if closed, given a modal id.",
 
@@ -990,7 +990,7 @@
 
         "Configure_Web_Storage": {
 
-            "pluginWidth": "25rem","exampleWidth": "30rem",
+            "pluginWidth": "25rem","exampleWidth": "23rem",
 
             "puzzleText": "Used to initialize the web storage driver type, database name, database size, and description.  NOTE: This puzzle is neccessary to place before any other 'Web Storage' puzzles.",
 
@@ -1005,7 +1005,7 @@
 
         "Save_To_Web_Storage": {
 
-            "pluginWidth": "25rem","exampleWidth": "30rem",
+            "pluginWidth": "25rem","exampleWidth": "23rem",
 
             "puzzleText": "Saves given data to an object key / value pair. Data is saved to a user designated dataStore in a user designated database.",
 
@@ -1020,7 +1020,7 @@
 
         "Load_From_Web_Storage": {
 
-            "pluginWidth": "22rem","exampleWidth": "30rem",
+            "pluginWidth": "22rem","exampleWidth": "23rem",
 
             "puzzleText": "Returns the value of an object key / value pair stored in a user designated dataStore in a user designated database, given an existing key.",
 
@@ -1035,7 +1035,7 @@
 
         "Get_All_Keys_Of_DataStore": {
 
-            "pluginWidth": "25rem","exampleWidth": "30rem",
+            "pluginWidth": "25rem","exampleWidth": "23rem",
 
             "puzzleText": "Returns all keys from a user designated dataStore in a user designated database, given an existing dataStore.",
 
@@ -1050,7 +1050,7 @@
 
         "Get_Length_Of_DataStore": {
 
-            "pluginWidth": "25rem","exampleWidth": "30rem",
+            "pluginWidth": "25rem","exampleWidth": "23rem",
 
             "puzzleText": "Returns the numerical amount of keys in a user designated dataStore in a user designated database, given an existing dataStore.",
 
@@ -1065,7 +1065,7 @@
 
         "Iterate_Through_DataStore": {
 
-            "pluginWidth": "25rem","exampleWidth": "30rem",
+            "pluginWidth": "25rem","exampleWidth": "23rem",
 
             "puzzleText": "Iterates through keys in a user designated dataStore in a user designated database, given an existing dataStore.",
 
@@ -1080,7 +1080,7 @@
 
         "Clear_Database": {
 
-            "pluginWidth": "25rem","exampleWidth": "30rem",
+            "pluginWidth": "25rem","exampleWidth": "23rem",
 
             "puzzleText": "Clears all data in a user designated database.",
 
@@ -1095,7 +1095,7 @@
 
         "Delete_Key": {
 
-            "pluginWidth": "25rem","exampleWidth": "30rem",
+            "pluginWidth": "25rem","exampleWidth": "23rem",
 
             "puzzleText": "Removes a designated key / value pair from a user designated dataStore.",
 
@@ -1110,7 +1110,7 @@
 
         "Delete_DataStore": {
 
-            "pluginWidth": "25rem","exampleWidth": "30rem",
+            "pluginWidth": "25rem","exampleWidth": "23rem",
 
             "puzzleText": "Removes a designated dataStore from a user designated dataStore in a user designated database.",
 
@@ -1125,7 +1125,7 @@
 
         "Delete_Database": {
 
-            "pluginWidth": "25rem","exampleWidth": "30rem",
+            "pluginWidth": "25rem","exampleWidth": "23rem",
 
             "puzzleText": "Deletes a designated database, given am existing database.",
 
@@ -1161,7 +1161,7 @@
 
         "Generate_Sky": {
 
-            "pluginWidth": "23rem","exampleWidth": "30rem",
+            "pluginWidth": "23rem","exampleWidth": "23rem",
 
             "puzzleText": "Makes an Sky object to simulate a sunlit or moonlit atmosphere.",
 
@@ -1177,7 +1177,7 @@
 
         "Generate_Sun_Light": {
 
-            "pluginWidth": "23rem","exampleWidth": "30rem",
+            "pluginWidth": "23rem","exampleWidth": "23rem",
 
             "puzzleText": "Makes a physically correct 'Sun' light. This can be used with in the Generate Sky, Generate Terrain, and Generate Ocean plugins.",
 
@@ -1192,7 +1192,7 @@
 
         "Generate_Ocean": {
 
-            "pluginWidth": "23rem","exampleWidth": "30rem",
+            "pluginWidth": "23rem","exampleWidth": "23rem",
 
             "puzzleText": "Generates a water object for use with landscapes.  Settings include ocean size, distortion scale, texture size, water color, sun source, and an option to use the sun object from the Generate Sky Plugin.",
 
@@ -1208,7 +1208,7 @@
 
         "Generate_Terrain": {
 
-            "pluginWidth": "23rem","exampleWidth": "30rem",
+            "pluginWidth": "23rem","exampleWidth": "23rem",
 
             "puzzleText": "Generates a terrain object for use with landscapes.",
 
@@ -1239,7 +1239,7 @@
 
         "CSG_Boolean": {
 
-            "pluginWidth": "25rem","exampleWidth": "30rem",  "consoleWidth": "22rem", "extraWidth": "85%",
+            "pluginWidth": "25rem","exampleWidth": "23rem",  "consoleWidth": "22rem", "extraWidth": "85%",
 
             "puzzleText": "executes a boolean operation between two objects, returning the resulting geometry in a new object.",
 
@@ -1267,7 +1267,7 @@
 
         "Import_Export_3D_File": {
 
-            "pluginWidth": "30rem","exampleWidth": "30rem",
+            "pluginWidth": "23rem","exampleWidth": "23rem",
 
             "puzzleText": "allows for the importing and exporting of different 3D file formats.<br />Available formats are: Wavefront (.obj), Stereo Lithography (.stl), Collada (.dae), Motion Capture (.bhv), .fbx, Lightwave3D (.lwo), Draco Compressed (.drc).",
 
@@ -1299,7 +1299,7 @@
 
         "puzzle": {
 
-            "pluginWidth": "30rem","exampleWidth": "30rem",
+            "pluginWidth": "23rem","exampleWidth": "23rem",
 
             "puzzleText": "___",
 
