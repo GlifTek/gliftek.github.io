@@ -77,8 +77,11 @@
 
             "mainText": " ",
 
-            "customHTML": ""
+            "customHTML": "",
+
+            "portedURL": ""
         },
+
 
         "Helpers": {
 
@@ -94,8 +97,11 @@
 
             "mainText": " ",
 
-            "customHTML": ""
+            "customHTML": "",
+
+            "portedURL": ""
         },
+
 
         "Objects": {
 
@@ -111,7 +117,9 @@
 
             "mainText": " ",
 
-            "customHTML": ""
+            "customHTML": "",
+
+            "portedURL": ""
         }
     },
 
@@ -143,15 +151,17 @@
 
             "puzzleText": "produces a material for 3D objects that shows a grid made of quad (4-sided) polygons.  This type of material is desirable for showing a polygonal flow to the geometry.",
 
-            "exampleText": "This is a convenient method of describing a three dimensional space when designing or displaying a 3D scene.  This grid helper expands in all directions infinitely.  A distance control is used to fade the farthest ends.",
+            "exampleText": "This shader works off whatever UV map is supplied.  Special attention to the map's seams is reccomended.",
 
             "consoleText": "",
 
             "extraText": "",
 
-            "customHTML": "Ported to Verge3D by GlifTek. <br> Original code at: <a href = 'http://madebyevan.com/shaders/grid/'  target='blank' rel='noreferrer noopener' >Anti-Aliased Grid Shader</a>"
+            "customHTML": "Ported to Verge3D by GlifTek. <br> Original code at: <a href = 'http://madebyevan.com/shaders/grid/'  target='blank' rel='noreferrer noopener' >Anti-Aliased Grid Shader</a>",
+        
+            "portedURL": ""
         },
-
+        
 
         "Quad_Wireframe_Toggle": {
 
@@ -165,8 +175,11 @@
 
             "extraText": "",
 
-            "customHTML": ""
+            "customHTML": "",
+
+            "portedURL": ""
         },
+
 
         "Create_Infinite_Grid_Helper": {
 
@@ -180,8 +193,11 @@
 
             "extraText": "",
 
-            "customHTML": ""
+            "customHTML": "",
+
+            "portedURL": ""
         },
+
 
         "Create_Grid_Helper": {
 
@@ -195,8 +211,11 @@
 
             "extraText": "",
 
-            "customHTML": ""
+            "customHTML": "",
+
+            "portedURL": ""
         },
+
 
         "Create_Polar_Grid_Helper": {
 
@@ -210,8 +229,11 @@
 
             "extraText": "",
 
-            "customHTML": ""
+            "customHTML": "",
+
+            "portedURL": ""
         },
+        
 
         "Create_Arrow_Helper": {
 
@@ -225,8 +247,11 @@
 
             "extraText": "",
 
-            "customHTML": ""
+            "customHTML": "",
+
+            "portedURL": ""
         },
+
 
         "Create_Axes_Helper": {
 
@@ -240,7 +265,9 @@
 
             "extraText": "",
 
-            "customHTML": ""
+            "customHTML": "",
+
+            "portedURL": ""
         }
     },
 
@@ -282,10 +309,12 @@
 
             "extraText": "",
 
-            "customHTML": "Ported to Verge3D by GlifTek. <br> Original code from: <a href = 'https://github.com/mrdoob/stats.js'  target='blank' rel='noreferrer noopener' >https://github.com/mrdoob/stats.js</a><br>Portions of profits from the purchase of this plugin go to<br> the <a href = 'https://docs.github.com/en/sponsors/getting-started-with-github-sponsors/about-github-sponsors'  target='blank' rel='noreferrer noopener' >Github Sponsors Matching Fund.</a>"
+            "customHTML": "Ported to Verge3D by GlifTek. <br> Original code from: <a href = 'https://github.com/mrdoob/stats.js'  target='blank' rel='noreferrer noopener' >https://github.com/mrdoob/stats.js</a><br>Portions of profits from the purchase of this plugin go to<br> the <a href = 'https://docs.github.com/en/sponsors/getting-started-with-github-sponsors/about-github-sponsors'  target='blank' rel='noreferrer noopener' >Github Sponsors Matching Fund.</a>",
 
+            "portedURL": ""
 
         },
+
 
         "Add_Zeros_Padding": {
 
@@ -299,9 +328,12 @@
 
             "extraText": "",
 
-            "customHTML": ""
+            "customHTML": "",
+
+            "portedURL": ""
 
         },
+
 
         "Convert_To_RGBA": {
 
@@ -315,8 +347,11 @@
 
             "extraText": "",
 
-            "customHTML": ""
+            "customHTML": "",
+
+            "portedURL": ""
         },
+
 
         "Export_CSV_File": {
 
@@ -330,8 +365,11 @@
 
             "extraText": "Which can be opened and edited with any spreadsheet software:",
             
-            "customHTML": ""
+            "customHTML": "",
+
+            "portedURL": ""
         },
+
 
         "Convert_To_CSV_Format": {
 
@@ -345,9 +383,12 @@
 
             "extraText": "The data can then be downloaded using the native Verge3D 'download file' puzzle found in the HTML folder of the puzzles menu.",
 
-            "customHTML": ""
+            "customHTML": "",
+
+            "portedURL": ""
 
         },
+
 
         "Call_Procedure_By_Name": {
 
@@ -361,8 +402,11 @@
 
             "extraText": "",
 
-            "customHTML": ""
+            "customHTML": "",
+
+            "portedURL": ""
         },
+
 
         "Call_Procedure_By_Name_Output": {
 
@@ -376,8 +420,11 @@
 
             "extraText": "",
 
-            "customHTML": ""
+            "customHTML": "",
+
+            "portedURL": ""
         },
+
 
         "Merge_Lists": {
 
@@ -391,8 +438,11 @@
 
             "extraText": "",
 
-            "customHTML": ""
+            "customHTML": "",
+
+            "portedURL": ""
         },
+
 
         "List_Similar": {
 
@@ -400,14 +450,17 @@
 
             "puzzleText": "returns a list of all list items containing a specific string, given a list.",
 
-            "exampleText": "___",
+            "exampleText": "",
 
             "consoleText": " ",
 
             "extraText": "",
 
-            "customHTML": ""
+            "customHTML": "",
+
+            "portedURL": ""
         },
+
 
         "Right_Click_Event": {
 
@@ -421,8 +474,11 @@
 
             "extraText": "",
 
-            "customHTML": ""
+            "customHTML": "",
+
+            "portedURL": ""
         },
+
 
         "Context_Menu_Toggle": {
 
@@ -436,8 +492,11 @@
 
             "extraText": "",
 
-            "customHTML": ""
+            "customHTML": "",
+
+            "portedURL": ""
         },
+
 
         "Alert_Message": {
 
@@ -451,7 +510,9 @@
 
             "extraText": "A browser popup alert message:",
 
-            "customHTML": ""
+            "customHTML": "",
+
+            "portedURL": ""
         }
     },
 
@@ -490,8 +551,11 @@
 
             "extraText": "",
 
-            "customHTML": ""
+            "customHTML": "",
+
+            "portedURL": ""
         },
+
 
         "Update_Bounding_Box": {
 
@@ -505,8 +569,11 @@
 
             "extraText": "",
 
-            "customHTML": ""
+            "customHTML": "",
+
+            "portedURL": ""
         },
+
 
         "Bounding_Box_Collision_Sensor": {
 
@@ -520,8 +587,11 @@
 
             "extraText": "",
 
-            "customHTML": ""
+            "customHTML": "",
+
+            "portedURL": ""
         },
+
 
         "Get_Bounding_Box": {
 
@@ -535,8 +605,11 @@
 
             "extraText": "",
 
-            "customHTML": ""
+            "customHTML": "",
+
+            "portedURL": ""
         },
+
 
         "Get_Bounding_Box_Collision_State": {
 
@@ -550,8 +623,11 @@
 
             "extraText": "",
 
-            "customHTML": ""
+            "customHTML": "",
+
+            "portedURL": ""
         },
+
 
         "Get_Touching_Object": {
 
@@ -565,8 +641,11 @@
 
             "extraText": "",
 
-            "customHTML": ""
+            "customHTML": "",
+
+            "portedURL": ""
         },
+
 
         "Get_List_Of_Touching_Or_Non_Touching_Objects": {
 
@@ -580,7 +659,9 @@
 
             "extraText": "",
 
-            "customHTML": ""
+            "customHTML": "",
+
+            "portedURL": ""
         }
 
     },
@@ -617,8 +698,11 @@
 
             "extraText": "Usage of custom lens flares can span a wide range of cases:",
 
-            "customHTML": "<ul style='text-align: left'><li>Sun Lens Flares,</li><li>Sun Coronal Halo Effect,</li><li>Cinematic Anamorphic Streaks,</li><li>In-App Weapon Ignition Effects,</li><li>In-App Missile, Rocket Engine Effects,</li><li>In-App Explosion Effects,</li><li>Car Headlights,</li><li>Vehicle Lighting,</li><li>Flashlights,</li><li>Phone Camera Lights,</li><li>Camera Flasbulb Blooms,</li><li>Nebula, Galaxy and Stars Accents,</li><li>City Light Posts,</li><li>Lighthouse Lights,</li><li>Artistic Abstract Design Lighting,</li><li>Experimental Decorative Effects,</li></ul>"
+            "customHTML": "<ul style='text-align: left'><li>Sun Lens Flares,</li><li>Sun Coronal Halo Effect,</li><li>Cinematic Anamorphic Streaks,</li><li>In-App Weapon Ignition Effects,</li><li>In-App Missile, Rocket Engine Effects,</li><li>In-App Explosion Effects,</li><li>Car Headlights,</li><li>Vehicle Lighting,</li><li>Flashlights,</li><li>Phone Camera Lights,</li><li>Camera Flasbulb Blooms,</li><li>Nebula, Galaxy and Stars Accents,</li><li>City Light Posts,</li><li>Lighthouse Lights,</li><li>Artistic Abstract Design Lighting,</li><li>Experimental Decorative Effects,</li></ul>",
+            
+            "portedURL": ""
         },
+
 
         "Rays_Settings": {
 
@@ -632,8 +716,12 @@
 
             "extraText": "Users can determine symmetry, ray count, ray width, ray sharpness, randomness of ray length, rotation, blur, opacity, size, distance, and color.  The following options are available:",
 
-            "customHTML": "<ul style='text-align: left'><li>Symmetry:<br />This designates whether the rays will be positioned symmetrically. If the 'ray count' input is an odd number while the 'Symmetrical' option is checked, the number of rays will be rounded up to the nearest integer resulting in an even number of rays.</li><br /><li>Ray Count:<br />This decides how many rays are produced in the group.<br /><br /></li><li>Ray Width:<br />This option changes the width of the rays.<br /><br /></li><li>Ray Sharpness:<br />Determines the sharpness of the ray. This needs to be adjusted as higher 'Ray Width' settings may broaden their gradient.<br /><br /></li><li>Random Length:<br />This option randomizes the group's rays' lengths. A number between 1 and 10 is allowed. The higher the number, the more variation in length. An input of 0 negates this option.<br /><br /></li><li>Rotation:<br />Rotates the entire group of rays based on degrees from 0 to 360.<br /><br /></li><li>Blur:<br />Sets the level of blur for the group of rays.<br /><br /></li><li>Opacity:<br />This changes the transparency of the group of rays.<br /><br /></li><li>Size:<br />The overall size of the entire group of rays<br /><br /></li><li>Distance:<br />The distance from the light to the camera. A value of 0 (nearest to light) to 1 (nearest to camera) is used. This option is convenient for ordering any stacked settings one may have.<br /><br /></li><li>Example:<br />Set a stack of of Rays puzzles setting their 'distance' between .01 to .05, a large background Glow at 0, and a strong small center Glow at .06, at the very front.<br /><br /></li><li>Color:<br />This designates the color of the rays group.<br /><br /></li><li>Users can determine ray width, ray length, and randomness of ray length.<br /></li></ul>"                
+            "customHTML": "<ul style='text-align: left'><li>Symmetry:<br />This designates whether the rays will be positioned symmetrically. If the 'ray count' input is an odd number while the 'Symmetrical' option is checked, the number of rays will be rounded up to the nearest integer resulting in an even number of rays.</li><br /><li>Ray Count:<br />This decides how many rays are produced in the group.<br /><br /></li><li>Ray Width:<br />This option changes the width of the rays.<br /><br /></li><li>Ray Sharpness:<br />Determines the sharpness of the ray. This needs to be adjusted as higher 'Ray Width' settings may broaden their gradient.<br /><br /></li><li>Random Length:<br />This option randomizes the group's rays' lengths. A number between 1 and 10 is allowed. The higher the number, the more variation in length. An input of 0 negates this option.<br /><br /></li><li>Rotation:<br />Rotates the entire group of rays based on degrees from 0 to 360.<br /><br /></li><li>Blur:<br />Sets the level of blur for the group of rays.<br /><br /></li><li>Opacity:<br />This changes the transparency of the group of rays.<br /><br /></li><li>Size:<br />The overall size of the entire group of rays<br /><br /></li><li>Distance:<br />The distance from the light to the camera. A value of 0 (nearest to light) to 1 (nearest to camera) is used. This option is convenient for ordering any stacked settings one may have.<br /><br /></li><li>Example:<br />Set a stack of of Rays puzzles setting their 'distance' between .01 to .05, a large background Glow at 0, and a strong small center Glow at .06, at the very front.<br /><br /></li><li>Color:<br />This designates the color of the rays group.<br /><br /></li><li>Users can determine ray width, ray length, and randomness of ray length.<br /></li></ul>",                
+        
+            "portedURL": ""
         },
+        
+
 
         "Glow_Settings": {
 
@@ -647,8 +735,11 @@
 
             "extraText": "",
 
-            "customHTML": ""
+            "customHTML": "",
+
+            "portedURL": ""
         },
+
 
         "Bokeh_Settings": {
 
@@ -656,13 +747,15 @@
 
             "puzzleText": "creates bokeh style fragmented in-lens effects. A number of shapes are available to chose from.  Of such are: line, circle, triangle, square, pentagon, hexagon, heptagon, octagon, & nonagon polygon shapes.  Users can determine ray width, ray length, and randomness of ray length.",
 
-            "exampleText": "___",
+            "exampleText": "",
 
             "consoleText": "",
 
             "extraText": "",
 
-            "customHTML": ""
+            "customHTML": "",
+
+            "portedURL": ""
         }
     },
 
@@ -697,8 +790,11 @@
 
             "extraText": "",
 
-            "customHTML": ""
+            "customHTML": "",
+
+            "portedURL": ""
         },
+
 
         "Generate_Gradient_Background": {
 
@@ -727,8 +823,11 @@
 
             "extraText": "",
 
-            "customHTML": ""
+            "customHTML": "",
+
+            "portedURL": ""
         },
+
 
         "Screen_Vignette": {
 
@@ -736,13 +835,15 @@
 
             "puzzleText": "To achieve a cinematic style 'vignette' effect, this creates a div with a radial gradient background with three stops: Center, Mid, and Outer, differing in opacity.  In the 'radius' field use percentages for a responsive gradient, and integers for an absolute size.  ie: '100%' will scale with different size screens, while '1024' will not, staying that size.",
 
-            "exampleText": "___",
+            "exampleText": "",
 
             "consoleText": "",
 
             "extraText": "",
 
-            "customHTML": ""
+            "customHTML": "",
+
+            "portedURL": ""
         }
     },
 
@@ -776,8 +877,11 @@
 
             "extraText": "",
 
-            "customHTML": ""
+            "customHTML": "",
+
+            "portedURL": ""
         },
+
 
         "Copy_Material": {
 
@@ -791,8 +895,11 @@
 
             "extraText": "",
 
-            "customHTML": ""
+            "customHTML": "",
+
+            "portedURL": ""
         },
+
 
         "Rename_Object": {
 
@@ -806,8 +913,11 @@
 
             "extraText": "",
 
-            "customHTML": ""
+            "customHTML": "",
+
+            "portedURL": ""
         },
+
 
         "Rename_Material": {
 
@@ -821,7 +931,9 @@
 
             "extraText": "",
 
-            "customHTML": ""
+            "customHTML": "",
+
+            "portedURL": ""
         },
 
         "Create_Group": {
@@ -836,8 +948,11 @@
 
             "extraText": "",
 
-            "customHTML": ""
+            "customHTML": "",
+
+            "portedURL": ""
         },
+
 
         "Get_Parent": {
 
@@ -851,7 +966,9 @@
 
             "extraText": "",
 
-            "customHTML": ""
+            "customHTML": "",
+
+            "portedURL": ""
         }
     },
 
@@ -880,14 +997,17 @@
 
             "puzzleText": "The opening and closing of the window can be animated via slide, zoom, or fade functions. The background of the window and / or entire background screen can be blurred, tinted or darkened for greater focus on the window and its contents.",
 
-            "exampleText": "___",
+            "exampleText": "",
 
             "consoleText": "",
 
             "extraText": "",
 
-            "customHTML": ""
+            "customHTML": "",
+
+            "portedURL": ""
         },
+
 
         "Modal_Text_Settings": {
 
@@ -895,14 +1015,17 @@
 
             "puzzleText": "Text settings options are standard. Users can load external fonts if desired. The float settings allow for grouping text around images and or video.",
 
-            "exampleText": "___",
+            "exampleText": "",
 
             "consoleText": "",
 
             "extraText": "",
 
-            "customHTML": ""
+            "customHTML": "",
+
+            "portedURL": ""
         },
+
 
         "Modal_Media_Settings": {
 
@@ -910,14 +1033,17 @@
 
             "puzzleText": "The media puzzle provides input of images and video. For video, mp4 format is recommended. Settings for video include video controls, loop video, play on start.",
 
-            "exampleText": "___",
+            "exampleText": "",
 
             "consoleText": "",
 
             "extraText": "",
 
-            "customHTML": ""
+            "customHTML": "",
+
+            "portedURL": ""
         },
+
 
         "Modal_Animation_Settings": {
 
@@ -925,14 +1051,17 @@
 
             "puzzleText": "The animation settings plugin provides input for customizing opening and closing animations. Options include slide in/out, zoom in/out, fade in/out. Timing of the animation and animation tweening settings are available.",
 
-            "exampleText": "___",
+            "exampleText": "",
 
             "consoleText": "",
 
             "extraText": "",
 
-            "customHTML": ""
+            "customHTML": "",
+
+            "portedURL": ""
         },
+
 
         "Modal_Open_Close": {
 
@@ -940,14 +1069,17 @@
 
             "puzzleText": "opens or closes a pre-existing pop-up modal window, given a modal id.",
 
-            "exampleText": "___",
+            "exampleText": "",
 
             "consoleText": "",
 
             "extraText": "",
 
-            "customHTML": ""
+            "customHTML": "",
+
+            "portedURL": ""
         },
+
 
         "Get_Modal_Status": {
 
@@ -955,13 +1087,15 @@
 
             "puzzleText": "returns true if modal is open, false if closed, given a modal id.",
 
-            "exampleText": "___",
+            "exampleText": "",
 
             "consoleText": "",
 
             "extraText": "",
 
-            "customHTML": ""
+            "customHTML": "",
+
+            "portedURL": ""
         }
     },
 
@@ -1000,8 +1134,11 @@
 
             "extraText": "",
 
-            "customHTML": ""
+            "customHTML": "",
+
+            "portedURL": ""
         },
+
 
         "Save_To_Web_Storage": {
 
@@ -1015,8 +1152,11 @@
 
             "extraText": "",
 
-            "customHTML": ""
+            "customHTML": "",
+
+            "portedURL": ""
         },
+
 
         "Load_From_Web_Storage": {
 
@@ -1030,8 +1170,11 @@
 
             "extraText": "",
 
-            "customHTML": ""
+            "customHTML": "",
+
+            "portedURL": ""
         },
+
 
         "Get_All_Keys_Of_DataStore": {
 
@@ -1045,8 +1188,11 @@
 
             "extraText": "",
 
-            "customHTML": ""
+            "customHTML": "",
+
+            "portedURL": ""
         },
+
 
         "Get_Length_Of_DataStore": {
 
@@ -1060,8 +1206,11 @@
 
             "extraText": "",
 
-            "customHTML": ""
+            "customHTML": "",
+
+            "portedURL": ""
         },
+
 
         "Iterate_Through_DataStore": {
 
@@ -1075,8 +1224,11 @@
 
             "extraText": "",
 
-            "customHTML": ""
+            "customHTML": "",
+
+            "portedURL": ""
         },
+
 
         "Clear_Database": {
 
@@ -1090,7 +1242,9 @@
 
             "extraText": "",
 
-            "customHTML": ""
+            "customHTML": "",
+
+            "portedURL": ""
         },
 
         "Delete_Key": {
@@ -1105,7 +1259,9 @@
 
             "extraText": "",
 
-            "customHTML": ""
+            "customHTML": "",
+
+            "portedURL": ""
         },
 
         "Delete_DataStore": {
@@ -1120,7 +1276,9 @@
 
             "extraText": "",
 
-            "customHTML": ""
+            "customHTML": "",
+
+            "portedURL": ""
         },
 
         "Delete_Database": {
@@ -1135,7 +1293,9 @@
 
             "extraText": "",
 
-            "customHTML": ""
+            "customHTML": "",
+
+            "portedURL": ""
         }
     },
 
@@ -1171,7 +1331,9 @@
 
             "extraText": "",
 
-            "customHTML": "Ported to Verge3D by GlifTek under the MIT license. <br> Code reworked from: <a href = 'https://threejs.org/examples/webgl_shaders_sky.html'  target='blank' rel='noreferrer noopener' >https://threejs.org/examples/webgl_shaders_sky.html</a>"
+            "customHTML": "",
+
+            "portedURL": "https://threejs.org/examples/webgl_shaders_sky.html"
 
         },
 
@@ -1181,13 +1343,15 @@
 
             "puzzleText": "Makes a physically correct 'Sun' light. This can be used with in the Generate Sky, Generate Terrain, and Generate Ocean plugins.",
 
-            "exampleText": "___",
+            "exampleText": "",
 
             "consoleText": "",
 
             "extraText": "",
 
-            "customHTML": ""
+            "customHTML": "",
+
+            "portedURL": ""
         },
 
         "Generate_Ocean": {
@@ -1202,7 +1366,9 @@
 
             "extraText": "",
 
-            "customHTML": "Ported to Verge3D by GlifTek. <br> Code reworked from: <a href = 'https://threejs.org/examples/webgl_shaders_ocean.html'  target='blank' rel='noreferrer noopener' >https://threejs.org/examples/webgl_shaders_ocean.html</a>"
+            "customHTML": "",
+
+            "portedURL": "https://threejs.org/examples/webgl_shaders_ocean.html"
 
         },
 
@@ -1212,7 +1378,7 @@
 
             "puzzleText": "Generates a terrain object for use with landscapes.",
 
-            "exampleText": "___",
+            "exampleText": "",
 
             "consoleText": "",
 
@@ -1278,7 +1444,9 @@
 
             "extraText": "",
 
-            "customHTML": ""
+            "customHTML": "",
+
+            "portedURL": ""
         }
     },
 
@@ -1303,14 +1471,17 @@
 
             "puzzleText": "___",
 
-            "exampleText": "___",
+            "exampleText": "",
 
             "consoleText": "",
 
             "extraText": "",
 
-            "customHTML": ""
+            "customHTML": "",
+
+            "portedURL": ""
         }
+
     }
 
 

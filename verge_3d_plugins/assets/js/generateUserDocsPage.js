@@ -953,7 +953,7 @@ function set_intro_HTML()
 {
 
 
-  let pluginNameandIntro, userDocumentationOrNot;
+  let pluginNameandIntro, userDocumentationOrNot, disclosureHTM;
 
   if ( page == 'featured' )
   {
@@ -961,17 +961,21 @@ function set_intro_HTML()
     userDocumentationOrNot = 'Plugin Packs'
   }
 
+
   else if ( page !== 'featured' )
   {    
-    pluginNameandIntro = `The [ ${pluginPack_title_UpperCase} ] Plugin Pack ${pluginPack.intro}`;
     userDocumentationOrNot = 'User Documentation';
+    pluginNameandIntro = `The [ ${pluginPack_title_UpperCase} ] Plugin Pack ${pluginPack.intro}`;    
+    disclosureHTML = 
+    `<p style="font-size: 14px; text-align: center"><i><br>*A portion of the proceeds from the sale of this plugin pack is donated to:<br>The <a href = 'https://docs.github.com/en/sponsors/getting-started-with-github-sponsors/about-github-sponsors'  target='blank' rel='noreferrer noopener' >Github Sponsors Matching Fund.</a></i></p>`;
   }
 
     let result =
     `<div style="text-align: center; font-size: 20;">${menuHeaderFooter}</div>
     <header class="major" style='font-style: italic'>
     <span class="date">${userDocumentationOrNot}</span>
-    ${pluginNameandIntro}
+    ${pluginNameandIntro}<br>
+    ${disclosureHTML}
     </header>
     
     `;
@@ -1176,6 +1180,7 @@ function set_post_HTML( pluginName, pic )
   let consoleText = pluginPackEvaled.consoleText;
   let extraText = pluginPackEvaled.extraText;
   let customHTML = pluginPackEvaled.customHTML;
+  let portedURL = pluginPackEvaled.portedURL;
 
 
 
@@ -1284,10 +1289,22 @@ function set_post_HTML( pluginName, pic )
   };
 
 
+
+  let portedHTML;
+
+  if ( portedURL == '' || portedURL == 'undefined' )
+  {
+    portedHTML = '';
+  }
+  else if ( portedURL !== '' || portedURL !== 'undefined' )
+  {
+    // portedHTML =
+    // `<p class="align-center" style="font-size: 8em">Ported to Verge3D by GlifTek under the MIT license from: <br><a href = '${portedURL}' target='blank' rel='noreferrer noopener'>${portedURL}</a></p>`;
+    portedHTML =
+    `<p style="font-size: 14px; text-align: center"><i>Ported to Verge3D by GlifTek under the MIT license from: <br><a href = '${portedURL}' target='blank' rel='noreferrer noopener'>${portedURL}</a></i></p>`;
   
-  let disclosureHTML = 
-  `<br>A portion of the proceeds from this plugin go to the <a href = 'https://docs.github.com/en/sponsors/getting-started-with-github-sponsors/about-github-sponsors'  target='blank' rel='noreferrer noopener' >Github Sponsors Matching Fund.</a>`;
-  
+  }; 
+
 
 //<div style="width: 100%; height: 1px; background: #ffffff;"></div>
 
@@ -1315,7 +1332,8 @@ function set_post_HTML( pluginName, pic )
      
       ${mainHTML}
 
-      ${disclosureHTML}    
+      ${portedHTML}
+        
       
       <hr>
       <br>
