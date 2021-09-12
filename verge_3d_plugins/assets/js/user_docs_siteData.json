@@ -1149,7 +1149,7 @@
 
         "demo": true,
 
-        "demoText": "<i>Two-Finger Swipe or Right Click Drag to pan image in the demo above.</i>",
+        "demoText": "<i>Two-Finger Swipe or Right Click Drag to pan the demo above.</i>",
         
 
         "plugins": [
@@ -1165,13 +1165,13 @@
 
             "puzzleText": "Makes an Sky object to simulate a sunlit or moonlit atmosphere.",
 
-            "exampleText": "___",
+            "exampleText": "",
 
             "consoleText": "",
 
             "extraText": "",
 
-            "customHTML": "Ported to Verge3D by GlifTek. <br> Code reworked from: <a href = 'https://threejs.org/examples/webgl_shaders_sky.html'  target='blank' rel='noreferrer noopener' >https://threejs.org/examples/webgl_shaders_sky.html</a><br>Portions of profits from the purchase of this plugin go to the <a href = 'https://docs.github.com/en/sponsors/getting-started-with-github-sponsors/about-github-sponsors'  target='blank' rel='noreferrer noopener' >Github Sponsors Matching Fund.</a>"
+            "customHTML": "Ported to Verge3D by GlifTek under the MIT license. <br> Code reworked from: <a href = 'https://threejs.org/examples/webgl_shaders_sky.html'  target='blank' rel='noreferrer noopener' >https://threejs.org/examples/webgl_shaders_sky.html</a>"
 
         },
 
@@ -1196,13 +1196,13 @@
 
             "puzzleText": "Generates a water object for use with landscapes.  Settings include ocean size, distortion scale, texture size, water color, sun source, and an option to use the sun object from the Generate Sky Plugin.",
 
-            "exampleText": "___",
+            "exampleText": "",
 
             "consoleText": "",
 
             "extraText": "",
 
-            "customHTML": "Ported to Verge3D by GlifTek. <br> Code reworked from: <a href = 'https://threejs.org/examples/webgl_shaders_ocean.html'  target='blank' rel='noreferrer noopener' >https://threejs.org/examples/webgl_shaders_ocean.html</a><br>Portions of profits from the purchase of this plugin go<br>to the <a href = 'https://docs.github.com/en/sponsors/getting-started-with-github-sponsors/about-github-sponsors'  target='blank' rel='noreferrer noopener' >Github Sponsors Matching Fund.</a>"
+            "customHTML": "Ported to Verge3D by GlifTek. <br> Code reworked from: <a href = 'https://threejs.org/examples/webgl_shaders_ocean.html'  target='blank' rel='noreferrer noopener' >https://threejs.org/examples/webgl_shaders_ocean.html</a>"
 
         },
 
@@ -1249,7 +1249,7 @@
 
             "extraText": "Boolean Operation Modes:",
 
-            "customHTML": "</br /></br />Original code copyright (c) 2011 Evan Wallace ( <a href='http://madebyevan.com/' target='blank' rel='noreferrer noopener'  >http://madebyevan.com </a>), under the MIT license.  </br />THREE.js rework by manthrax - <a href='https://github.com/manthrax/THREE-CSGMesh' target='blank' rel='noreferrer noopener' >https://github.com/manthrax/THREE-CSGMesh</a></br />Ported to Verge3D by GlifTek."
+            "customHTML": "Original code copyright (c) 2011 Evan Wallace ( <a href='http://madebyevan.com/' target='blank' rel='noreferrer noopener'  >http://madebyevan.com </a>), under the MIT license.  </br />THREE.js rework by manthrax - <a href='https://github.com/manthrax/THREE-CSGMesh' target='blank' rel='noreferrer noopener' >https://github.com/manthrax/THREE-CSGMesh</a></br />Ported to Verge3D by GlifTek."
 
         }
     },
