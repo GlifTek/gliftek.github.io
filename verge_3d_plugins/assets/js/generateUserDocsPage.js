@@ -1284,6 +1284,10 @@ function set_post_HTML( pluginName, pic )
   };
 
 
+  
+  let disclosureHTML = 
+  `<br>A portion of the proceeds from this plugin go to the <a href = 'https://docs.github.com/en/sponsors/getting-started-with-github-sponsors/about-github-sponsors'  target='blank' rel='noreferrer noopener' >Github Sponsors Matching Fund.</a>`;
+  
 
 //<div style="width: 100%; height: 1px; background: #ffffff;"></div>
 
@@ -1301,11 +1305,9 @@ function set_post_HTML( pluginName, pic )
 
       ${exampleHTML}
 
-      <hr>
 
       ${consoleHTML}
 
-      <hr>
 
       ${extraHTML}
 
@@ -1313,10 +1315,10 @@ function set_post_HTML( pluginName, pic )
      
       ${mainHTML}
 
+      ${disclosureHTML}    
+      
       <hr>
-
-      </i>
-      <br />
+      <br>
 
     </div>
 
