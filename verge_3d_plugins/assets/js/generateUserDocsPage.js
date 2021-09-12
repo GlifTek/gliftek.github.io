@@ -967,7 +967,7 @@ function set_intro_HTML()
     userDocumentationOrNot = 'User Documentation';
     pluginNameandIntro = `The [ ${pluginPack_title_UpperCase} ] Plugin Pack ${pluginPack.intro}`;    
     disclosureHTML = 
-    `<p style="font-size: 14px; text-align: center"><i><br>*A portion of the proceeds from the sale of this plugin pack is donated to:<br>The <a href = 'https://docs.github.com/en/sponsors/getting-started-with-github-sponsors/about-github-sponsors'  target='blank' rel='noreferrer noopener' >Github Sponsors Matching Fund.</a></i></p>`;
+    `<p style="font-size: .7rem; text-align: center"><i><br>*A portion of the proceeds from the sale of this plugin pack is donated to:<br>The <a href = 'https://docs.github.com/en/sponsors/getting-started-with-github-sponsors/about-github-sponsors'  target='blank' rel='noreferrer noopener' >Github Sponsors Matching Fund.</a></i></p>`;
   }
 
     let result =
