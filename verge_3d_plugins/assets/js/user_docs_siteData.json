@@ -1384,7 +1384,10 @@
 
             "extraText": "",
 
-            "customHTML": ""
+            "customHTML": "",
+
+            "portedURL": "https://threejs.org/examples/webgl_geometry_terrain.html"
+
         }
     },
 
@@ -1415,7 +1418,9 @@
 
             "extraText": "Boolean Operation Modes:",
 
-            "customHTML": "Original code copyright (c) 2011 Evan Wallace ( <a href='http://madebyevan.com/' target='blank' rel='noreferrer noopener'  >http://madebyevan.com </a>), under the MIT license.  </br />THREE.js rework by manthrax - <a href='https://github.com/manthrax/THREE-CSGMesh' target='blank' rel='noreferrer noopener' >https://github.com/manthrax/THREE-CSGMesh</a></br />Ported to Verge3D by GlifTek."
+            "customHTML": "",
+            
+            "portedURL": "https://github.com/manthrax/THREE-CSGMesh"
 
         }
     },
