@@ -935,13 +935,10 @@ function set_demo_HTML()
     text-align: center;
     '>
     ${demo}
-    </br>
-    ${demoText}
+    
+    <p style="font-size: .7rem; text-align: center"><i>${demoText}</i></p>
     </div>   
-    <!--  <hr> -->
-   
-    </br>
-    </br>
+
     </br>
     `;
     return result;
