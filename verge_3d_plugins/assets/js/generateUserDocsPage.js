@@ -939,7 +939,6 @@ function set_demo_HTML()
     <p style="font-size: .7rem; text-align: center"><i>${demoText}</i></p>
     </div>   
 
-    </br>
     `;
     return result;
 
@@ -1229,7 +1228,8 @@ function set_post_HTML( pluginName, pic )
 function storeSmall_HTML()
 {
   let storeSmallDiv = document.getElementById('storeSmallDiv');
-  storeSmallDiv.innerHTML = `<div class="align-center"><a href="${gliftek_contactInfo.gumroadStore}" target="_blank" rel="noreferrer noopener"class="button large">PURCHASE AT STORE</a></div>
+  storeSmallDiv.innerHTML = `
+  <br><div class="align-center"><a href="${gliftek_contactInfo.gumroadStore}" target="_blank" rel="noreferrer noopener"class="button large">PURCHASE AT STORE</a></div>
   <p style="font-size: .7rem; text-align: center"><i><br>*A portion of the proceeds from the sale of 'ported' plugin packs is donated to <a href = 'https://docs.github.com/en/sponsors/getting-started-with-github-sponsors/about-github-sponsors'  target='blank' rel='noreferrer noopener' >The Github Sponsors Matching Fund.</a></i></p>
   </br></br>`;
 }

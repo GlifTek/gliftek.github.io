@@ -25,9 +25,9 @@
     "allPluginPacks": [
         "featured",
         "lens_flare_deluxe",
+        "web_storage",
         "world",
-        "csg",
-        "web_storage",        
+        "csg",       
         "bounding_boxes",
         "helpers",
         "backgrounds",
@@ -283,6 +283,7 @@
 
         "plugins": [
             "Stats_Info_Box",
+            "Toggle_Boolean",
             "Add_Zeros_Padding",
             "Convert_To_RGBA",
             "Export_CSV_File",
@@ -299,17 +300,37 @@
         
         "Stats_Info_Box": {
 
-            "pluginWidth": "23rem","exampleWidth": "23rem",
+            "pluginWidth": "23rem","exampleWidth": "23rem", "consoleWidth": "23rem",
+
 
             "puzzleText": "provides a simple info box that will help you monitor your code performance.",
 
             "exampleText": "Types of stats available:<br><ul><li>Frames rendered in the last second. The higher the number the better.</li><li>Milliseconds needed to render a frame. The lower the number the better.</li><li>MBytes of allocated memory. (Run Chrome with <code>--enable-precise-memory-info</code>)</li></ul>",
             
-            "consoleText": "",
+            "consoleText": "This is an easy replacemnt for the standard puzzle block arrangement of toggling a value:",
 
             "extraText": "",
 
-            "customHTML": "Ported to Verge3D by GlifTek. <br> Original code from: <a href = 'https://github.com/mrdoob/stats.js'  target='blank' rel='noreferrer noopener' >https://github.com/mrdoob/stats.js</a><br>Portions of profits from the purchase of this plugin go to<br> the <a href = 'https://docs.github.com/en/sponsors/getting-started-with-github-sponsors/about-github-sponsors'  target='blank' rel='noreferrer noopener' >Github Sponsors Matching Fund.</a>",
+            "customHTML": "",
+            
+            "portedURL": ""
+
+        },
+
+
+        "Toggle_Boolean": {
+
+            "pluginWidth": "23rem","exampleWidth": "23rem",
+
+            "puzzleText": "toggles a user designated global boolean variable's changing value contained in one puzzle block.",
+
+            "exampleText": "This is convenient for switching between two values easily.",
+
+            "consoleText": "_",
+
+            "extraText": "",
+
+            "customHTML": "",
 
             "portedURL": ""
 
@@ -1105,9 +1126,12 @@
 
         "title": "Web_Storage",
 
-        "intro": "allows developers the option to save data to user device browser storage.  This is a prime tool for saving information off-line so that it may be used later.  Such types of data might be: product configuration progress, saved game progress, settings, databases, etc.  In the demo below, drag objects around, save the key, drag around again, and then load key to revert to saved key. ",
-
+        "intro": "allows developers the option to save data to user device browser storage.<br>This is a prime tool for saving information off-line so that it may be used later.<br>Such types of data might be: product configuration progress, saved game progress, settings, databases, etc.<br>Included are puzzle blocks used to manage all neccessary actoins needed for managing your off-line data.",
+        
         "demo": true,
+
+        "demoText": "In the demo above, drag objects around and 'SAVE KEY'.<br>Then either drag objects aroud around again, or reload page, or even restart browser / device.<br>Then 'LOAD KEY' to revert to your previously saved key.",
+
 
         "plugins": [
             "Configure_Web_Storage",
