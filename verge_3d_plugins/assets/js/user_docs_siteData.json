@@ -157,9 +157,9 @@
 
             "extraText": "",
 
-            "customHTML": "Ported to Verge3D by GlifTek. <br> Original code at: <a href = 'http://madebyevan.com/shaders/grid/'  target='blank' rel='noreferrer noopener' >Anti-Aliased Grid Shader</a>",
+            "customHTML": "",
         
-            "portedURL": ""
+            "portedURL": "https://madebyevan.com/shaders/grid/"
         },
         
 
@@ -544,7 +544,7 @@
 
         "title": "Bounding_Boxes",
 
-        "intro": "is a suite of plugins that allow for detection of the intersection of designated 'bounding boxes'. The bounding boxes are 'Box3' rectangles representing the furthest spatial bounds that an object takes up.  Drag the objects in the demo below.",
+        "intro": "is a suite of plugins that allow for detection of the intersection of designated 'bounding boxes'. The bounding boxes are 'Box3' rectangles representing the furthest spatial bounds that an object takes up.",
 
         "demo": true,
 
@@ -602,7 +602,7 @@
 
             "puzzleText": "compares bounding boxes for collisions and intersections between them without the need for a physics engine.",
 
-            "exampleText": "For best results, use in the While Moving: Do area of the When Moved event puzzle.",
+            "exampleText": "For best results, use in the 'while moving: do' area of the 'When Moved' event puzzle.",
 
             "consoleText": "",
 
@@ -698,7 +698,7 @@
 
         "demo": true,
 
-        "demoText": "<i>Two-Finger Swipe or Right Click Drag to pan image in the demo above.  <br>Click 'Next' to view next example.</i>",
+        "demoText": "<i>Two-Finger Swipe or Right Click Drag to pan image in the demo above.  <br>Click 'Next' to view next example.<br>Drag flare behind 'Occlude' to observe occlusion.</i>",
         
         "plugins": [
             "Lens_Flare_Deluxe",
