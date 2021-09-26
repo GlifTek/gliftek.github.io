@@ -544,7 +544,7 @@
 
         "title": "Bounding_Boxes",
 
-        "intro": "is a suite of plugins that allow for detection of the intersection of designated 'bounding boxes'. The bounding boxes are 'Box3' rectangles representing the furthest spatial bounds that an object takes up.",
+        "intro": "is a suite of plugins that allow for detection of the intersection of designated 'bounding boxes'.<br>The bounding boxes are 'Box3' rectangles representing the furthest spatial bounds that an object takes up.",
 
         "demo": true,
 
@@ -831,8 +831,12 @@
 
             "extraText": "This plugin provides 3 color and 3 offset options for generating a gradient background for your 3D scene.  The gradient can be either linear or radial.  Color 'HEX' values recieve hexadecimal '#f0f0f0' format color code.  These override color picker inputs.  To use color pickers, leave HEX fields blank.  Color 2 can be optionally disabled if a two-tone gradient is desired.",
 
-            "customHTML": "<img src='./images/backgrounds/Generate_Gradient_Background_example_linear.png' style='width:20rem'/><br /><br /><img src='./images/backgrounds/Generate_Gradient_Background_example_radial.png' style='width:20rem'/>"
+            "customHTML": "<img src='./images/backgrounds/Generate_Gradient_Background_example_linear.png' style='width:20rem'/><br /><br /><img src='./images/backgrounds/Generate_Gradient_Background_example_radial.png' style='width:20rem'/>",
+        
+            "portedURL": ""
         },
+            
+
 
         "Fade_Screen": {
 
