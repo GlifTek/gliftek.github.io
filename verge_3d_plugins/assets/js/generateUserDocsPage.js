@@ -883,6 +883,16 @@ function set_demo_HTML()
   pluginAddress,
   pluginAddress2;
 
+  if ( pluginPack.demoText == 'undefined' ||  pluginPack.demoText == '' )
+  {
+    demoTextVar = ' ';
+  }
+  else if ( pluginPack.demoText !== '' )
+  {
+    demoTextVar =  pluginPack.demoText;
+  }
+
+
   if ( pluginPack.demo !== true )
   {
     demo = '';
@@ -936,7 +946,7 @@ function set_demo_HTML()
     '>
     ${demo}
     
-    <p style="font-size: .7rem; text-align: center"><i>${demoText}</i></p>
+    <p style="font-size: .7rem; text-align: center"><i>${demoTextVar}</i></p>
     </div>   
 
     `;
@@ -1177,7 +1187,7 @@ function set_post_HTML( pluginName, pic )
     // portedHTML =
     // `<p class="align-center" style="font-size: 8em">Ported to Verge3D by GlifTek under the MIT license from: <br><a href = '${portedURL}' target='blank' rel='noreferrer noopener'>${portedURL}</a></p>`;
     portedHTML =
-    `<p style="font-size: 14px; text-align: center"><i>Ported to Verge3D by GlifTek under the MIT license from: <br><a href = '${portedURL}' target='blank' rel='noreferrer noopener'>${portedURL}</a></i></p>`;
+    `<p style="font-size: 14px; text-align: center"><i>Ported to Verge3D by GlifTek under MIT or Apache license from: <br><a href = '${portedURL}' target='blank' rel='noreferrer noopener'>${portedURL}</a></i></p>`;
   
   }; 
 
@@ -1188,7 +1198,7 @@ function set_post_HTML( pluginName, pic )
   `
   <section class="post" >
 
-   
+
     <div class="align-center" >
 
       <h2><a id="${pluginName}" href="#${pluginName}">[ ${pluginName_UpperCase} ]</a></h2>
@@ -1205,7 +1215,7 @@ function set_post_HTML( pluginName, pic )
       ${extraHTML}
 
       ${customHTML}
-     
+    
       ${mainHTML}
 
       ${portedHTML}
@@ -1229,11 +1239,11 @@ function storeSmall_HTML()
 {
   let storeSmallDiv = document.getElementById('storeSmallDiv');
   storeSmallDiv.innerHTML = `
-  <br><div class="align-center"><a href="${gliftek_contactInfo.gumroadStore}" target="_blank" rel="noreferrer noopener"class="button large">PURCHASE AT STORE</a></div>
+  <br><div class="align-center"><a href="https://store.gliftek.com/l/${page}_plugins" target="_blank" rel="noreferrer noopener"class="button large">PURCHASE AT STORE</a></div>
   <p style="font-size: .7rem; text-align: center"><i><br>*A portion of the proceeds from the sale of 'ported' plugin packs is donated to <a href = 'https://docs.github.com/en/sponsors/getting-started-with-github-sponsors/about-github-sponsors'  target='blank' rel='noreferrer noopener' >The Github Sponsors Matching Fund.</a></i></p>
   </br></br>`;
 }
-
+//  gliftek_contactInfo.gumroadStore
 
 
 

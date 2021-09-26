@@ -27,7 +27,7 @@
         "lens_flare_deluxe",
         "web_storage",
         "world",
-        "csg",       
+        "csg",
         "bounding_boxes",
         "helpers",
         "backgrounds",
@@ -277,7 +277,7 @@
 
         "title": "Utility",
 
-        "intro": "is a selection of a dozen puzzles that allow solutions for many varied and common smaller tasks useful for app development such as database exporting, color format conversion, FPS stats, array (list) management and alert messages.",
+        "intro": "is a selection of a dozen + puzzles that allow solutions for many varied and common smaller app development tasks such as database exporting, color format conversion, FPS stats, array (list) management , context menu disabling and alert messages.",
 
         "demo": false,
 
@@ -312,7 +312,7 @@
             "extraText": "",
 
             "customHTML": "",
-            
+
             "portedURL": ""
 
         },
@@ -787,9 +787,11 @@
 
         "title": "Backgrounds",
 
-        "intro": ":  Setting background images in Verge3D can always be accomlished by setting the background to transparent, and placing an image behind the v3d-container in your HTML. However, some cases call for an in-scene background texture which can be manipulated. These plugins allow for that.",
+        "intro": ":  Setting background images in Verge3D can always be accomplished by setting the background to transparent, and placing an image behind the v3d-container in your HTML. However, some cases call for an in-scene background texture which can be manipulated. These plugins allow for that.",
 
         "demo": true,
+
+        "demoText": "<i>Select Cube to change effect in demo above.</i>",
 
         "plugins": [
             "Set_Background_Image",
@@ -876,6 +878,10 @@
         "title": "objects",
 
         "intro": ": cloning objects in Verge3D is avaliable using the clone puzzle.  However, creating deep copies of objects and their corresponding materials and textures has not been available as an option.  These pluigns allow for detailed reproductions of individual objects or groups of objects, each with unique properties.",
+
+        "demo": true,
+
+        "demoText": "<i>Click menu to copy objects.</i>",
 
         "plugins": [
             "Copy_Objects",
@@ -1001,7 +1007,11 @@
 
         "title": "modal_window",
 
-        "intro": "creates a fully customizable pop-up window that can be filled with custom content, be it text, images, or video. Placement of window contents is controlled by a drop down menu.",
+        "intro": "creates a fully customizable pop-up window that can be filled with custom content, be it text, images, video, or a combination of such.  The order of the placement of window contents is controlled by a drop down menu.  Windows may be animated to slide, scale, or fade as they appear or disappear.  A 'draggable' window option is also available.",
+
+        "demo": true,
+
+        "demoText": "<i>Click menu to copy objects.</i>",
 
         "plugins": [
             "Pop_Up_Modal",
@@ -1126,11 +1136,11 @@
 
         "title": "Web_Storage",
 
-        "intro": "allows developers the option to save data to user device browser storage.<br>This is a prime tool for saving information off-line so that it may be used later.<br>Such types of data might be: product configuration progress, saved game progress, settings, databases, etc.<br>Included are puzzle blocks used to manage all neccessary actoins needed for managing your off-line data.",
+        "intro": "allows developers the option to save data to user device browser storage.<br>This is a prime tool for saving information off-line so that it may be used later.<br>Such types of data might be: product configuration progress, saved game progress, settings, databases, etc.<br>Included are all the visual-coding blocks needed for managing your off-line data.",
         
         "demo": true,
 
-        "demoText": "In the demo above, drag objects around and 'SAVE KEY'.<br>Then either drag objects aroud around again, or reload page, or even restart browser / device.<br>Then 'LOAD KEY' to revert to your previously saved key.",
+        "demoText": "In the demo above, drag objects around and 'SAVE KEY'.<br>Then either drag objects around again, or reload page, or even restart browser / device.<br>Then 'LOAD KEY' to revert to your previously saved key.",
 
 
         "plugins": [
@@ -1150,7 +1160,7 @@
 
             "pluginWidth": "25rem","exampleWidth": "23rem",
 
-            "puzzleText": "Used to initialize the web storage driver type, database name, database size, and description.  NOTE: This puzzle is neccessary to place before any other 'Web Storage' puzzles.",
+            "puzzleText": "is used to initialize the web storage driver type, database name, database size, and description.  NOTE: This puzzle is neccessary to place before any other 'Web Storage' puzzles.",
 
             "exampleText": "",
 
@@ -1160,7 +1170,7 @@
 
             "customHTML": "",
 
-            "portedURL": ""
+            "portedURL": "https://github.com/localForage/localForage"
         },
 
 
@@ -1168,7 +1178,7 @@
 
             "pluginWidth": "25rem","exampleWidth": "23rem",
 
-            "puzzleText": "Saves given data to an object key / value pair. Data is saved to a user designated dataStore in a user designated database.",
+            "puzzleText": "saves given data to an object key / value pair. Data is saved to a user designated dataStore in a user designated database.",
 
             "exampleText": "",
 
@@ -1186,7 +1196,7 @@
 
             "pluginWidth": "22rem","exampleWidth": "23rem",
 
-            "puzzleText": "Returns the value of an object key / value pair stored in a user designated dataStore in a user designated database, given an existing key.",
+            "puzzleText": "returns the value of a key stored in a user designated dataStore in a user designated database, given an existing key.",
 
             "exampleText": "",
 
@@ -1204,7 +1214,7 @@
 
             "pluginWidth": "25rem","exampleWidth": "23rem",
 
-            "puzzleText": "Returns all keys from a user designated dataStore in a user designated database, given an existing dataStore.",
+            "puzzleText": "returns all keys from a user designated dataStore in a user designated database, given an existing dataStore.",
 
             "exampleText": "",
 
@@ -1222,7 +1232,7 @@
 
             "pluginWidth": "25rem","exampleWidth": "23rem",
 
-            "puzzleText": "Returns the numerical amount of keys in a user designated dataStore in a user designated database, given an existing dataStore.",
+            "puzzleText": "returns the numerical amount of keys in a user designated dataStore in a user designated database, given an existing dataStore.",
 
             "exampleText": "",
 
@@ -1240,7 +1250,7 @@
 
             "pluginWidth": "25rem","exampleWidth": "23rem",
 
-            "puzzleText": "Iterates through keys in a user designated dataStore in a user designated database, given an existing dataStore.",
+            "puzzleText": "iterates through keys in a user designated dataStore in a user designated database, given an existing dataStore.",
 
             "exampleText": "",
 
@@ -1258,7 +1268,7 @@
 
             "pluginWidth": "25rem","exampleWidth": "23rem",
 
-            "puzzleText": "Clears all data in a user designated database.",
+            "puzzleText": "clears all data in a user designated database.",
 
             "exampleText": "",
 
@@ -1275,7 +1285,7 @@
 
             "pluginWidth": "25rem","exampleWidth": "23rem",
 
-            "puzzleText": "Removes a designated key / value pair from a user designated dataStore.",
+            "puzzleText": "removes a designated key / value pair from a user designated dataStore.",
 
             "exampleText": "",
 
@@ -1292,7 +1302,7 @@
 
             "pluginWidth": "25rem","exampleWidth": "23rem",
 
-            "puzzleText": "Removes a designated dataStore from a user designated dataStore in a user designated database.",
+            "puzzleText": "removes a designated dataStore from a user designated database.",
 
             "exampleText": "",
 
@@ -1309,7 +1319,7 @@
 
             "pluginWidth": "25rem","exampleWidth": "23rem",
 
-            "puzzleText": "Deletes a designated database, given am existing database.",
+            "puzzleText": "deletes a designated database, given an existing database.",
 
             "exampleText": "",
 
@@ -1329,7 +1339,7 @@
 
         "title": "World",
 
-        "intro": "is a group of plugins, mostly ported from pre-existing open source examples, that provide easily implemented real-world environmental features such as a natural sky, body of water, and terrain.",
+        "intro": "is a group of plugins that provide easily implemented real-world environmental features such as a natural sky, body of rippling water, and terrain.",
 
         "demo": true,
 
@@ -1347,7 +1357,7 @@
 
             "pluginWidth": "23rem","exampleWidth": "23rem",
 
-            "puzzleText": "Makes an Sky object to simulate a sunlit or moonlit atmosphere.",
+            "puzzleText": "Makes an accurately lit 'Sky' object to simulate a sunlit or moonlit atmosphere.  A 'sun disk' option is available to visualize the sun in the sky.  This can be used linked with the 'Generate Sun Light' plugin to match correct lighting from the Sky's sun position.",
 
             "exampleText": "",
 
