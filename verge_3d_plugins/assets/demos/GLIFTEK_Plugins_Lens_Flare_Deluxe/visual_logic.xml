@@ -1,0 +1,2370 @@
+<xml xmlns="http://www.w3.org/1999/xhtml">
+  <tab name="init" type="InitTab" active="false" scrollx="725.4999999999984" scrolly="370.9999999999999" scale="0.9">
+    <block xmlns="https://developers.google.com/blockly/xml" type="initSettings" id="`TG{mcKB7~XH`2?BQ4A_" x="-730" y="-370">
+      <field name="LOAD_COMP_ASSETS">FALSE</field>
+      <field name="FULLSCREEN">TRUE</field>
+      <field name="BKG_TRANSPARENCY">FALSE</field>
+      <field name="PRESERVE_DRAW_BUF">FALSE</field>
+      <field name="FADE_ANNOTATIONS">TRUE</field>
+    </block>
+  </tab>
+  <tab name="main" type="MainTab" active="true" scrollx="339.3472900390625" scrolly="1452.527099609375" scale="0.6260121018585127">
+    <variables xmlns="https://developers.google.com/blockly/xml">
+      <variable id="bskK`cC2{l#Ur9;[r[gt" type="">lens_flare_counter</variable>
+      <variable id="=^O1|J((cJF7gS~O|c/R" type="">RAYS_01</variable>
+      <variable id="!xO@Bi:x%NFQ/|q`mkON" type="">BOKEH_01</variable>
+      <variable id="!}_Lm/!mhQ7SAtvh^{60" type="">GLOW_01</variable>
+      <variable id="IZ9L(3^.6uFDai[S8?K/" type="">RAYS_2</variable>
+      <variable id="f|]AjT/mM(+0-u!ytl:d" type="">BOKEH_2</variable>
+      <variable id="Nx|%u!_Fa#hnVy@lEk{s" type="">GLOW_2</variable>
+      <variable id="W{m+PIQ+{`A0Ps6Jkn3~" type="">RAYS_3</variable>
+      <variable id="c`pujQB:vY;#4UA_hPL~" type="">BOKEH_3</variable>
+      <variable id="l/mJ@o?w}Y$(sQcyQ$Cs" type="">GLOW_3</variable>
+      <variable id="?*O(0FFRL*Qn~1Jq2ZVy" type="">LIST_bg_images</variable>
+      <variable id=":kVff`=p:~#aP#hKPWO{" type="">center_alpha_distance_02</variable>
+    </variables>
+    <block xmlns="https://developers.google.com/blockly/xml" type="comment" id="w[([zk*p8YZq}TdgLk+i" x="-510" y="-2270">
+      <field name="TEXT">PUZZLES START HERE!</field>
+      <next>
+        <block type="procedures_callnoreturn" id=")*+yotJ|^x[Or(5m*jd=">
+          <mutation name="MAIN"/>
+        </block>
+      </next>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="procedures_defnoreturn" id="3h6=)DQNDo(zYN^gBg#-" x="590" y="-2310">
+      <field name="NAME">SWITCH_FLARE</field>
+      <comment pinned="false" h="80" w="160">Describe this function...</comment>
+      <statement name="STACK">
+        <block type="math_change" id=":%,MbPj~w39T}Vfc?9Xc">
+          <field name="VAR" id="bskK`cC2{l#Ur9;[r[gt">lens_flare_counter</field>
+          <value name="DELTA">
+            <shadow type="math_number" id="TpwwLzzoDZh8RW[K-Cwm">
+              <field name="NUM">1</field>
+            </shadow>
+          </value>
+          <next>
+            <block type="controls_if" id="FP]-V5ev@/6Vft,gdlL)">
+              <mutation elseif="1"/>
+              <value name="IF0">
+                <block type="logic_compare" id=",AB{$CO+?q%Y_E#iPrjf">
+                  <field name="OP">LTE</field>
+                  <value name="A">
+                    <block type="variables_get" id="w_6-S#|]!61atSBcZ[zF">
+                      <field name="VAR" id="bskK`cC2{l#Ur9;[r[gt">lens_flare_counter</field>
+                    </block>
+                  </value>
+                  <value name="B">
+                    <block type="math_number" id="kh=QF`E=%]4ve@X`604+">
+                      <field name="NUM">3</field>
+                    </block>
+                  </value>
+                </block>
+              </value>
+              <statement name="DO0">
+                <block type="console.log" id="=:0W3sxgB,(ji0oIWkmY">
+                  <value name="VALUE">
+                    <shadow type="text" id="yjuOp-DF2W6LoWMpR(az">
+                      <field name="TEXT">Hello, Verge!</field>
+                    </shadow>
+                    <block type="text_join" id="Iq09$X92Vqdc?47vUwa#">
+                      <mutation items="2"/>
+                      <value name="ADD0">
+                        <block type="text" id="MIG_??y/pcG)00J4W8(=">
+                          <field name="TEXT">lens_flare_counter: </field>
+                        </block>
+                      </value>
+                      <value name="ADD1">
+                        <block type="variables_get" id="yc|p|7~,,GJy`tI]@IRF">
+                          <field name="VAR" id="bskK`cC2{l#Ur9;[r[gt">lens_flare_counter</field>
+                        </block>
+                      </value>
+                    </block>
+                  </value>
+                  <next>
+                    <block type="procedures_callnoreturn" id="O3j}w25WZ(TEMl3IaQ|J" disabled="true">
+                      <mutation name="CHANGE_BG_AND_FLARE"/>
+                      <next>
+                        <block type="procedures_callnoreturn" id="zDvhja[LO7Xw?oWPy0L[">
+                          <mutation name="SWITCH_FLARE_FADE"/>
+                        </block>
+                      </next>
+                    </block>
+                  </next>
+                </block>
+              </statement>
+              <value name="IF1">
+                <block type="logic_compare" id="y|!Ms-WqH=cWx=U:+#ZM">
+                  <field name="OP">GT</field>
+                  <value name="A">
+                    <block type="variables_get" id="e=XV;99A?,:H.Va0!Dm]">
+                      <field name="VAR" id="bskK`cC2{l#Ur9;[r[gt">lens_flare_counter</field>
+                    </block>
+                  </value>
+                  <value name="B">
+                    <block type="math_number" id=",`sgC%oWLjh_8y_x8KrN">
+                      <field name="NUM">3</field>
+                    </block>
+                  </value>
+                </block>
+              </value>
+              <statement name="DO1">
+                <block type="variables_set" id="G,p1f9gQK(}5:x4t}Dfn">
+                  <field name="VAR" id="bskK`cC2{l#Ur9;[r[gt">lens_flare_counter</field>
+                  <value name="VALUE">
+                    <block type="math_number" id="$iI)GNd^m=t.^KFlP-d9">
+                      <field name="NUM">1</field>
+                    </block>
+                  </value>
+                  <next>
+                    <block type="console.log" id=")Wz|ppAf@U55kI~BymE5">
+                      <value name="VALUE">
+                        <shadow type="text">
+                          <field name="TEXT">Hello, Verge!</field>
+                        </shadow>
+                        <block type="text_join" id="{pLyq%+1WY#|EUCnS`Z*">
+                          <mutation items="2"/>
+                          <value name="ADD0">
+                            <block type="text" id="9ck2y6].1;8p%o1?8h@_">
+                              <field name="TEXT">lens_flare_counter reset to: </field>
+                            </block>
+                          </value>
+                          <value name="ADD1">
+                            <block type="variables_get" id="C*W5_8O:kkGfU:VLVDCK">
+                              <field name="VAR" id="bskK`cC2{l#Ur9;[r[gt">lens_flare_counter</field>
+                            </block>
+                          </value>
+                        </block>
+                      </value>
+                      <next>
+                        <block type="procedures_callnoreturn" id=",SwrWDeMefayxPN4j6l%" disabled="true">
+                          <mutation name="CHANGE_BG_AND_FLARE"/>
+                          <next>
+                            <block type="procedures_callnoreturn" id="8;j,et.I4BvP.^4{6^(f">
+                              <mutation name="SWITCH_FLARE_FADE"/>
+                            </block>
+                          </next>
+                        </block>
+                      </next>
+                    </block>
+                  </next>
+                </block>
+              </statement>
+            </block>
+          </next>
+        </block>
+      </statement>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="procedures_defnoreturn" id="ho$l2,y;THeP_f[]{S)X" x="-510" y="-2210">
+      <field name="NAME">MAIN</field>
+      <comment pinned="false" h="80" w="160">Describe this function...</comment>
+      <statement name="STACK">
+        <block type="setScreenScale" id="2T)-zDS0!EfgmDA^4uY[">
+          <value name="FACTOR">
+            <shadow type="math_number" id=";Xo||_O/3X_V_`|dx]TK">
+              <field name="NUM">1.5</field>
+            </shadow>
+          </value>
+          <next>
+            <block type="procedures_callnoreturn" id="9jAg3#@ai4@`Prxk}lY1">
+              <mutation name="FADE_IN"/>
+              <next>
+                <block type="procedures_callnoreturn" id="V#%9I2@Xr[D.tz^q5]h-">
+                  <mutation name="SET_VARIABLES"/>
+                  <next>
+                    <block type="procedures_callnoreturn" id="[Rs{l6(xYkVFjE!hY]c9">
+                      <mutation name="SET_CAM_AND_LIGHT"/>
+                      <next>
+                        <block type="procedures_callnoreturn" id="gTP,pT8CqLB6IBGyE*q3">
+                          <mutation name="CAMERA_CONSTRAINTS"/>
+                          <next>
+                            <block type="procedures_callnoreturn" id="FKGNi{Mf$1B_l3)ND-6=">
+                              <mutation name="CLICK_NEXT_BUTTON"/>
+                              <next>
+                                <block type="procedures_callnoreturn" id="rNc7S@bJ1ti2PFE*3^+U">
+                                  <mutation name="LENS_FLARES_PROCEDURES"/>
+                                  <next>
+                                    <block type="procedures_callnoreturn" id=")Oh;~dH,xs25RZ0J`S|_">
+                                      <mutation name="DISABLE_RENDERING"/>
+                                    </block>
+                                  </next>
+                                </block>
+                              </next>
+                            </block>
+                          </next>
+                        </block>
+                      </next>
+                    </block>
+                  </next>
+                </block>
+              </next>
+            </block>
+          </next>
+        </block>
+      </statement>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="procedures_defnoreturn" id="@nwg|SzFZflf!,sm|C%3" x="1730" y="-2310">
+      <field name="NAME">LENS_FLARES_PROCEDURES</field>
+      <comment pinned="false" h="80" w="160">Describe this function...</comment>
+      <statement name="STACK">
+        <block type="GLIFTEK_v3d_Plugins_Backgrounds/GLIFTEK_BACKGROUNDS_Set_Background_Image" id="t|dtgvYiP*mC|78SLl{?">
+          <value name="imageURLInput">
+            <shadow type="text">
+              <field name="TEXT"/>
+            </shadow>
+            <block type="text" id="Ohfl@vO2Tjd4JNS3|mi2">
+              <field name="TEXT">./img/bg_clouds_pink_purple.jpg</field>
+            </block>
+          </value>
+          <next>
+            <block type="procedures_callnoreturn" id="K|ku{*S?UlRwv4I@)_#W">
+              <mutation name="INIT_RAYS_SETTINGS_1"/>
+              <next>
+                <block type="procedures_callnoreturn" id="1:Dl@tngt@:,I%d2/Hxc">
+                  <mutation name="INIT_GLOW_SETTINGS_1"/>
+                  <next>
+                    <block type="procedures_callnoreturn" id="Z|4cjYk+8}1oDOTc94jW">
+                      <mutation name="INIT_BOKEH_SETTINGS_1"/>
+                      <next>
+                        <block type="procedures_callnoreturn" id="qrxw{jb*|^gfj:lhsXY7">
+                          <mutation name="INIT_RAYS_SETTINGS_2"/>
+                          <next>
+                            <block type="procedures_callnoreturn" id="(o(M!p_)(A1AmohNa:ex">
+                              <mutation name="INIT_GLOW_SETTINGS_2"/>
+                              <next>
+                                <block type="procedures_callnoreturn" id="+nn{8Ew$jhVY_Fp#a@yY">
+                                  <mutation name="INIT_BOKEH_SETTINGS_2"/>
+                                  <next>
+                                    <block type="procedures_callnoreturn" id="}pe3mu_3%9f4T)ux|eWB">
+                                      <mutation name="INIT_RAYS_SETTINGS_3"/>
+                                      <next>
+                                        <block type="procedures_callnoreturn" id="e]Hlh|QV+C0]F2.GVA_}">
+                                          <mutation name="INIT_GLOW_SETTINGS_3"/>
+                                          <next>
+                                            <block type="procedures_callnoreturn" id="iFKr!K^+-j3APSBXeN}2">
+                                              <mutation name="INIT_BOKEH_SETTINGS_3"/>
+                                              <next>
+                                                <block type="procedures_callnoreturn" id="O7).t_wVZ]D|~AVau5pz">
+                                                  <mutation name="LENS_FLARE_DELUXE_1"/>
+                                                </block>
+                                              </next>
+                                            </block>
+                                          </next>
+                                        </block>
+                                      </next>
+                                    </block>
+                                  </next>
+                                </block>
+                              </next>
+                            </block>
+                          </next>
+                        </block>
+                      </next>
+                    </block>
+                  </next>
+                </block>
+              </next>
+            </block>
+          </next>
+        </block>
+      </statement>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="procedures_defnoreturn" id="%c(K3rL^!X.Ry5a-xZBX" x="-510" y="-1890">
+      <field name="NAME">FADE_IN</field>
+      <comment pinned="false" h="80" w="160">Describe this function...</comment>
+      <statement name="STACK">
+        <block type="GLIFTEK_v3d_Plugins_Backgrounds/GLIFTEK_BACKGROUNDS_Screen_Fade" id="L3H)UB_C2iD*A,3z^z_I">
+          <field name="typeDropdown">out</field>
+          <field name="colorInput_1_PICKER">#000000</field>
+          <field name="delete_When_Done_Checkbox">TRUE</field>
+          <value name="screenFade_ID_Input">
+            <shadow type="text" id="?R+,o3t0Z3%[rFXO89b~">
+              <field name="TEXT">screenFade_1</field>
+            </shadow>
+          </value>
+          <value name="screenFade_Z_Index_Input">
+            <shadow type="math_number" id="1c(z1KmuqhHC3alXnqSf">
+              <field name="NUM">10</field>
+            </shadow>
+          </value>
+          <value name="screenFade_Pause_Input">
+            <shadow type="math_number" id="t.rj@-P?N)Nh(qfS.0^n">
+              <field name="NUM">1.5</field>
+            </shadow>
+          </value>
+          <value name="screenFade_Duration_Input">
+            <shadow type="math_number" id="~[@p0QRz8,^h)-aEmhA%">
+              <field name="NUM">1</field>
+            </shadow>
+          </value>
+          <value name="colorInput_1_TEXT">
+            <shadow type="text" id="*l(c6.yMHE.+abd=n~(Y">
+              <field name="TEXT"/>
+            </shadow>
+          </value>
+        </block>
+      </statement>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="procedures_defnoreturn" id="o{)T6DQQuzaH7Q4bJq]2" x="590" y="-1870">
+      <field name="NAME">SWITCH_FLARE_FADE</field>
+      <comment pinned="false" h="80" w="160">Describe this function...</comment>
+      <statement name="STACK">
+        <block type="GLIFTEK_v3d_Plugins_Backgrounds/GLIFTEK_BACKGROUNDS_Screen_Fade" id="ad_0M,hVC2^XS[GaH.=V">
+          <field name="typeDropdown">in</field>
+          <field name="colorInput_1_PICKER">#000000</field>
+          <field name="delete_When_Done_Checkbox">TRUE</field>
+          <value name="screenFade_ID_Input">
+            <shadow type="text" id="oUH=JCGTjpHlFnNm8E~*">
+              <field name="TEXT">screenFade_2</field>
+            </shadow>
+          </value>
+          <value name="screenFade_Z_Index_Input">
+            <shadow type="math_number" id="T1_6b%vN:uinB#5`g-zE">
+              <field name="NUM">10</field>
+            </shadow>
+          </value>
+          <value name="screenFade_Pause_Input">
+            <shadow type="math_number" id="XM]j42Gf{n/iR.m[VA@g">
+              <field name="NUM">0</field>
+            </shadow>
+          </value>
+          <value name="screenFade_Duration_Input">
+            <shadow type="math_number" id="Qox:`JmzOEyZ`p2lD,x_">
+              <field name="NUM">0.25</field>
+            </shadow>
+          </value>
+          <value name="colorInput_1_TEXT">
+            <shadow type="text" id="lug`0icq@j8vrsbRBPEH">
+              <field name="TEXT"/>
+            </shadow>
+          </value>
+          <statement name="whenDone_Statement_Input">
+            <block type="enableRendering" id="T(D{H3V`-,?QN6;TbbM@">
+              <next>
+                <block type="procedures_callnoreturn" id="T3yGNRoPuM~%Q)q:~;X5">
+                  <mutation name="CHANGE_BG_AND_FLARE"/>
+                  <next>
+                    <block type="GLIFTEK_v3d_Plugins_Backgrounds/GLIFTEK_BACKGROUNDS_Screen_Fade" id="aL9gQ15*%;[mrt;+-.eT">
+                      <field name="typeDropdown">out</field>
+                      <field name="colorInput_1_PICKER">#000000</field>
+                      <field name="delete_When_Done_Checkbox">TRUE</field>
+                      <value name="screenFade_ID_Input">
+                        <shadow type="text" id="#Xn^tG#v6Q)gGMY=((!O">
+                          <field name="TEXT">screenFade_3</field>
+                        </shadow>
+                      </value>
+                      <value name="screenFade_Z_Index_Input">
+                        <shadow type="math_number" id="[e9r:HBx@fJu{vxf.1]e">
+                          <field name="NUM">10</field>
+                        </shadow>
+                      </value>
+                      <value name="screenFade_Pause_Input">
+                        <shadow type="math_number" id="klO`,o2ewv%r,_uTo$`7">
+                          <field name="NUM">0.5</field>
+                        </shadow>
+                      </value>
+                      <value name="screenFade_Duration_Input">
+                        <shadow type="math_number" id="W8{NHODQgMt,-NN:~q!x">
+                          <field name="NUM">0.25</field>
+                        </shadow>
+                      </value>
+                      <value name="colorInput_1_TEXT">
+                        <shadow type="text" id="AN?FdaL1V(v!C={T9E0q">
+                          <field name="TEXT"/>
+                        </shadow>
+                      </value>
+                      <statement name="whenDone_Statement_Input">
+                        <block type="disableRendering" id="CcBe|=u5[.*8zJlxVL58">
+                          <field name="AA">TRUE</field>
+                        </block>
+                      </statement>
+                    </block>
+                  </next>
+                </block>
+              </next>
+            </block>
+          </statement>
+        </block>
+      </statement>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="procedures_defnoreturn" id="5y6I56j7(!m($!=^dY{F" x="1750" y="-1930">
+      <field name="NAME">LENS_FLARE_DELUXE_1</field>
+      <comment pinned="false" h="80" w="160">Describe this function...</comment>
+      <statement name="STACK">
+        <block type="GLIFTEK_v3d_Plugins_Lens_Flare_Deluxe/GLIFTEK_LENSFLARE_Lens_Flare_Deluxe" id="SP}:p,g6n6JCN*1(GL!c">
+          <field name="activeCheckboxRAYS">TRUE</field>
+          <field name="activeCheckboxGLOW">TRUE</field>
+          <field name="activeCheckboxBOKEH">TRUE</field>
+          <value name="nameInput">
+            <shadow type="text" id="*L.bxHMNy6OSZR]*~0X{">
+              <field name="TEXT">myLensFlare_A</field>
+            </shadow>
+          </value>
+          <value name="objInput">
+            <shadow type="objectList" id="`?~9k$7c8wC?XDgomsC(">
+              <field name="FIELDNAME">Lens_Flare_Point_Light</field>
+            </shadow>
+          </value>
+          <value name="flareMasterSize">
+            <shadow type="math_number" id="@TF5ckU/OKrS$(CNUo6F">
+              <field name="NUM">0.65</field>
+            </shadow>
+          </value>
+          <value name="flareMasterOpacity">
+            <shadow type="math_number" id="GpH~hkr|i]j]x|xH.x`A">
+              <field name="NUM">0.95</field>
+            </shadow>
+          </value>
+          <value name="flareSettingsRAYS">
+            <shadow type="text" id="iz,glJS!w^2-%[ED@_):">
+              <field name="TEXT"/>
+            </shadow>
+            <block type="variables_get" id="@q6BCT|6e8bC%tU!Y^MJ">
+              <field name="VAR" id="=^O1|J((cJF7gS~O|c/R">RAYS_01</field>
+            </block>
+          </value>
+          <value name="flareMasterSizeRAYS">
+            <shadow type="math_number" id="bHg;,M6G0KjEgNbCcvzz">
+              <field name="NUM">1.5</field>
+            </shadow>
+          </value>
+          <value name="flareMasterOpacityRAYS">
+            <shadow type="math_number" id="$~*CZHOh@bVD`~YuaaAq">
+              <field name="NUM">0.95</field>
+            </shadow>
+          </value>
+          <value name="flareSettingsGLOW">
+            <shadow type="text" id="(Urxf]b/bapP*9N?Cy,O">
+              <field name="TEXT"/>
+            </shadow>
+            <block type="variables_get" id="~ro2WnV96y,]lRuW|,vG">
+              <field name="VAR" id="!}_Lm/!mhQ7SAtvh^{60">GLOW_01</field>
+            </block>
+          </value>
+          <value name="flareMasterSizeGLOW">
+            <shadow type="math_number" id="(!#^DN$1Unc;m8X%u3Ee">
+              <field name="NUM">1</field>
+            </shadow>
+          </value>
+          <value name="flareMasterOpacityGLOW">
+            <shadow type="math_number" id="[J{igR!j-Gb!Rp[.!Qqn">
+              <field name="NUM">0.95</field>
+            </shadow>
+          </value>
+          <value name="flareSettingsBOKEH">
+            <shadow type="text" id=".0zG8pK[@G8;oj!?N-1q">
+              <field name="TEXT"/>
+            </shadow>
+            <block type="variables_get" id="T7+=dJW|U-G]SQf3+fV`">
+              <field name="VAR" id="!xO@Bi:x%NFQ/|q`mkON">BOKEH_01</field>
+            </block>
+          </value>
+          <value name="flareMasterSizeBOKEH">
+            <shadow type="math_number" id="kw?}~-9Ns{opS30lE#+N">
+              <field name="NUM">0.75</field>
+            </shadow>
+          </value>
+          <value name="flareMasterOpacityBOKEH">
+            <shadow type="math_number" id="N*D/D#cH3Z~I6yS.xTN1">
+              <field name="NUM">0.75</field>
+            </shadow>
+          </value>
+        </block>
+      </statement>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="procedures_defnoreturn" id="`Ci|Za`tY]zCATEYlrz," x="2370" y="-1930">
+      <field name="NAME">INIT_RAYS_SETTINGS_1</field>
+      <comment pinned="false" h="80" w="160">Describe this function...</comment>
+      <statement name="STACK">
+        <block type="variables_set" id="FVOnbjW7OuYhCl+eV}PT">
+          <field name="VAR" id="=^O1|J((cJF7gS~O|c/R">RAYS_01</field>
+          <value name="VALUE">
+            <block type="lists_create_with" id="alqcoKe;(+APX*JiO{AA" inline="true">
+              <mutation items="3"/>
+              <value name="ADD0">
+                <block type="GLIFTEK_v3d_Plugins_Lens_Flare_Deluxe/GLIFTEK_LENSFLARE_Lens_Flare_Deluxe_Rays_Settings" id="xE=Kz*rHSXYyDKU?]mkW">
+                  <field name="nameInput">name</field>
+                  <field name="symmetricalCheckbox">TRUE</field>
+                  <field name="color">#ffff66</field>
+                  <value name="rays">
+                    <shadow type="math_number" id="iEiTO}P}#`o`z}6.qHTj">
+                      <field name="NUM">6</field>
+                    </shadow>
+                  </value>
+                  <value name="rayWidth">
+                    <shadow type="math_number" id="?!#,z9@!`%|P!8yZbj6@">
+                      <field name="NUM">3</field>
+                    </shadow>
+                  </value>
+                  <value name="raySharpness">
+                    <shadow type="math_number" id="SsNb!=al=AY:|^=)@(s%">
+                      <field name="NUM">0</field>
+                    </shadow>
+                  </value>
+                  <value name="randomSeed">
+                    <shadow type="math_number" id="s~{|0`qgCL+?a}R(s3NP">
+                      <field name="NUM">9</field>
+                    </shadow>
+                  </value>
+                  <value name="rotate">
+                    <shadow type="math_number" id="^Z3guSQ!AimwvPiLdMNc">
+                      <field name="NUM">0</field>
+                    </shadow>
+                  </value>
+                  <value name="feBlur">
+                    <shadow type="math_number" id="??A)gZ,KQKvi#TMq[4[%">
+                      <field name="NUM">0.1</field>
+                    </shadow>
+                  </value>
+                  <value name="opacity">
+                    <shadow type="math_number" id=")XU]V]82ptv|`g~gR+k#">
+                      <field name="NUM">0.9</field>
+                    </shadow>
+                  </value>
+                  <value name="size">
+                    <shadow type="math_number" id="yimAI`.,-:|dCKAA42=~">
+                      <field name="NUM">900</field>
+                    </shadow>
+                  </value>
+                  <value name="distance">
+                    <shadow type="math_number" id=":u$AC1pj|lTG)`NbW[R^">
+                      <field name="NUM">0</field>
+                    </shadow>
+                  </value>
+                </block>
+              </value>
+              <value name="ADD1">
+                <block type="GLIFTEK_v3d_Plugins_Lens_Flare_Deluxe/GLIFTEK_LENSFLARE_Lens_Flare_Deluxe_Rays_Settings" id="vdZz|!Ub=SKjBH%N6!fB">
+                  <field name="nameInput">name</field>
+                  <field name="symmetricalCheckbox">FALSE</field>
+                  <field name="color">#ffcc66</field>
+                  <value name="rays">
+                    <shadow type="math_number" id="2.ZhDW0r*)jgPnPWuuRY">
+                      <field name="NUM">9</field>
+                    </shadow>
+                  </value>
+                  <value name="rayWidth">
+                    <shadow type="math_number" id="S@?],y.]~oEzkG=2SC$k">
+                      <field name="NUM">3</field>
+                    </shadow>
+                  </value>
+                  <value name="raySharpness">
+                    <shadow type="math_number" id="X5MPe6ZW$ydzo?kt:.$i">
+                      <field name="NUM">1</field>
+                    </shadow>
+                  </value>
+                  <value name="randomSeed">
+                    <shadow type="math_number" id="=xKZ8WYEkmM/Y7slpclC">
+                      <field name="NUM">3</field>
+                    </shadow>
+                  </value>
+                  <value name="rotate">
+                    <shadow type="math_number" id="VQ6g=R(=~*{*#R!nH^rQ">
+                      <field name="NUM">0</field>
+                    </shadow>
+                  </value>
+                  <value name="feBlur">
+                    <shadow type="math_number" id="M]{JJ(9f[-THS[OBKiWu">
+                      <field name="NUM">0.1</field>
+                    </shadow>
+                  </value>
+                  <value name="opacity">
+                    <shadow type="math_number" id=",po+=i]*,hC.P`HspMh)">
+                      <field name="NUM">0.9</field>
+                    </shadow>
+                  </value>
+                  <value name="size">
+                    <shadow type="math_number" id="Ik[x!X?7|#%@;pBh8Ch{">
+                      <field name="NUM">1200</field>
+                    </shadow>
+                  </value>
+                  <value name="distance">
+                    <shadow type="math_number" id="I4TMU#2*bb,Lt,.9LSJ?">
+                      <field name="NUM">0.001</field>
+                    </shadow>
+                  </value>
+                </block>
+              </value>
+              <value name="ADD2">
+                <block type="GLIFTEK_v3d_Plugins_Lens_Flare_Deluxe/GLIFTEK_LENSFLARE_Lens_Flare_Deluxe_Rays_Settings" id="Fcjq6gf{uQ-[wqR![XpK">
+                  <field name="nameInput">name</field>
+                  <field name="symmetricalCheckbox">TRUE</field>
+                  <field name="color">#ffffcc</field>
+                  <value name="rays">
+                    <shadow type="math_number" id="+eOyuo6Y-E}E6IDR2/[}">
+                      <field name="NUM">64</field>
+                    </shadow>
+                  </value>
+                  <value name="rayWidth">
+                    <shadow type="math_number" id="~D`N}T@r[@9eX]oQWJaE">
+                      <field name="NUM">3</field>
+                    </shadow>
+                  </value>
+                  <value name="raySharpness">
+                    <shadow type="math_number" id=":9b6dI(a+s@U3;Y]ck}6">
+                      <field name="NUM">0</field>
+                    </shadow>
+                  </value>
+                  <value name="randomSeed">
+                    <shadow type="math_number" id="-3~5cI`GaR%m?RD$Q(_*">
+                      <field name="NUM">5</field>
+                    </shadow>
+                  </value>
+                  <value name="rotate">
+                    <shadow type="math_number" id="g_qJ~IsW|xnAnz}S9)0C">
+                      <field name="NUM">23</field>
+                    </shadow>
+                  </value>
+                  <value name="feBlur">
+                    <shadow type="math_number" id="VYx|P9DJ$0?Q#-2HkiFP">
+                      <field name="NUM">2</field>
+                    </shadow>
+                  </value>
+                  <value name="opacity">
+                    <shadow type="math_number" id="d)*YvepLIIwTBN0wMvdZ">
+                      <field name="NUM">0.5</field>
+                    </shadow>
+                  </value>
+                  <value name="size">
+                    <shadow type="math_number" id=")dXTPM|f/o4S7rQ;510]">
+                      <field name="NUM">500</field>
+                    </shadow>
+                  </value>
+                  <value name="distance">
+                    <shadow type="math_number" id="Nc*1i@O+8DF@3]-+hHJv">
+                      <field name="NUM">0.002</field>
+                    </shadow>
+                  </value>
+                </block>
+              </value>
+            </block>
+          </value>
+        </block>
+      </statement>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="procedures_defnoreturn" id="Sw1OHxJvA?3t^XoWEd;/" x="3550" y="-1930">
+      <field name="NAME">INIT_BOKEH_SETTINGS_1</field>
+      <comment pinned="false" h="80" w="160">Describe this function...</comment>
+      <statement name="STACK">
+        <block type="variables_set" id="SJ;4h#,rr/z]aT^CG9xM">
+          <field name="VAR" id="!xO@Bi:x%NFQ/|q`mkON">BOKEH_01</field>
+          <value name="VALUE">
+            <block type="lists_create_with" id="[1I%SH=D|FkxAW7V^W/i">
+              <mutation items="2"/>
+              <value name="ADD0">
+                <block type="GLIFTEK_v3d_Plugins_Lens_Flare_Deluxe/GLIFTEK_LENSFLARE_Lens_Flare_Deluxe_Bokeh_Settings" id="X4+jI{Stp[j?aZ/8@F,C">
+                  <field name="shapeDropdown">BOKEH_hexagon</field>
+                  <field name="color">#ff9900</field>
+                  <value name="rotate">
+                    <shadow type="math_number" id="qCEG{UmW`rO~V*..bq5q">
+                      <field name="NUM">0</field>
+                    </shadow>
+                  </value>
+                  <value name="feBlur">
+                    <shadow type="math_number" id="/!0F)v^/s,rMRZaLW7k3">
+                      <field name="NUM">0.2</field>
+                    </shadow>
+                  </value>
+                  <value name="opacity">
+                    <shadow type="math_number" id=".5eSzMRr-oRp($Lz%0k}">
+                      <field name="NUM">0.6</field>
+                    </shadow>
+                  </value>
+                  <value name="size">
+                    <shadow type="math_number" id="di%W(vGqQ.6}cf}-vUVh">
+                      <field name="NUM">1</field>
+                    </shadow>
+                  </value>
+                  <value name="distance">
+                    <shadow type="math_number" id="4YlH.bOrMW~;e:q)]COb">
+                      <field name="NUM">0.9</field>
+                    </shadow>
+                  </value>
+                </block>
+              </value>
+              <value name="ADD1">
+                <block type="GLIFTEK_v3d_Plugins_Lens_Flare_Deluxe/GLIFTEK_LENSFLARE_Lens_Flare_Deluxe_Bokeh_Settings" id="7Ph8HiJhb4U]%k8Ynneh">
+                  <field name="shapeDropdown">BOKEH_hexagon</field>
+                  <field name="color">#ffff00</field>
+                  <value name="rotate">
+                    <shadow type="math_number" id="JyMuI9J1a_)%a5f[u%7C">
+                      <field name="NUM">0</field>
+                    </shadow>
+                  </value>
+                  <value name="feBlur">
+                    <shadow type="math_number" id="2R[!Y,=xu(%G)R2kp9qK">
+                      <field name="NUM">0.8</field>
+                    </shadow>
+                  </value>
+                  <value name="opacity">
+                    <shadow type="math_number" id="zwt9$.zb@ksAn|@,fu8`">
+                      <field name="NUM">0.5</field>
+                    </shadow>
+                  </value>
+                  <value name="size">
+                    <shadow type="math_number" id="G]Xr{KN8*~?B?5ak^X,2">
+                      <field name="NUM">2</field>
+                    </shadow>
+                  </value>
+                  <value name="distance">
+                    <shadow type="math_number" id="ewQL4I-6!A@/=1IqG|,c">
+                      <field name="NUM">0</field>
+                    </shadow>
+                  </value>
+                </block>
+              </value>
+            </block>
+          </value>
+        </block>
+      </statement>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="procedures_defnoreturn" id="WaV(w^wPt7H$;ObH^mc}" x="-510" y="-1390">
+      <field name="NAME">SET_VARIABLES</field>
+      <comment pinned="false" h="80" w="160">Describe this function...</comment>
+      <statement name="STACK">
+        <block type="variables_set" id="G[u|_9`hGWLv`#7(,zJ2">
+          <field name="VAR" id="bskK`cC2{l#Ur9;[r[gt">lens_flare_counter</field>
+          <value name="VALUE">
+            <block type="math_number" id="Smo|{srIql9$@YZp%o9b">
+              <field name="NUM">1</field>
+            </block>
+          </value>
+          <next>
+            <block type="variables_set" id="`3W0l=(F2.:vwboqk1%G">
+              <field name="VAR" id="?*O(0FFRL*Qn~1Jq2ZVy">LIST_bg_images</field>
+              <value name="VALUE">
+                <block type="lists_create_with" id=":^|^c-zv1=^NpG$}6s+4">
+                  <mutation items="3"/>
+                  <value name="ADD0">
+                    <block type="text" id="YMzbRz6dF3Er6h0_*zho">
+                      <field name="TEXT">./img/bg_clouds_pink_purple.jpg</field>
+                    </block>
+                  </value>
+                  <value name="ADD1">
+                    <block type="text" id="fH1_*X$@j7?m|]Y_v^iW">
+                      <field name="TEXT">./img/bg_blue_dark_cloudy.jpg</field>
+                    </block>
+                  </value>
+                  <value name="ADD2">
+                    <block type="text" id="-oYc,Rj?Cgd7f;r|s%)z">
+                      <field name="TEXT">./img/bg_clouds_godrays_02.jpg</field>
+                    </block>
+                  </value>
+                </block>
+              </value>
+              <next>
+                <block type="variables_set" id="z]7uXl$lIyxtr7K4TD}/">
+                  <field name="VAR" id="Nx|%u!_Fa#hnVy@lEk{s">GLOW_2</field>
+                  <value name="VALUE">
+                    <block type="logic_null" id="R9}sNs{Izz|gOMydZs1X"/>
+                  </value>
+                  <next>
+                    <block type="variables_set" id="g6!rg3`.#2:RwoyLJUcN">
+                      <field name="VAR" id=":kVff`=p:~#aP#hKPWO{">center_alpha_distance_02</field>
+                      <value name="VALUE">
+                        <block type="logic_null" id="!CT7+TD?vYkyxmlD:jmm"/>
+                      </value>
+                    </block>
+                  </next>
+                </block>
+              </next>
+            </block>
+          </next>
+        </block>
+      </statement>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="procedures_defnoreturn" id="lq6F!?6B/-Js7`,/[Y7a" x="-510" y="-1170">
+      <field name="NAME">SET_CAM_AND_LIGHT</field>
+      <comment pinned="false" h="80" w="160">Describe this function...</comment>
+      <statement name="STACK">
+        <block type="setObjTransform" id="VR)(g(%LL%pyjU9lwG24">
+          <mutation xmlns="http://www.w3.org/1999/xhtml" usevectorslot="false"></mutation>
+          <field name="MODE">position</field>
+          <field name="OFFSET">TRUE</field>
+          <value name="TARGETOBJ">
+            <shadow type="objectList" id="H7K.N%G[.Zk!,DMED[Xk">
+              <field name="FIELDNAME">Lens_Flare_Point_Light</field>
+            </shadow>
+          </value>
+          <value name="X">
+            <block type="math_number" id="z9`84-n8|5qx9FYU5p`|">
+              <field name="NUM">2.75</field>
+            </block>
+          </value>
+          <value name="Y">
+            <block type="math_number" id="3|A^v/%=^mZB|5*:.1_P">
+              <field name="NUM">224638.07</field>
+            </block>
+          </value>
+          <value name="Z">
+            <block type="math_number" id="*C:}n{4X71Ch)q5KCxRq">
+              <field name="NUM">7844.53</field>
+            </block>
+          </value>
+          <next>
+            <block type="lookAt" id="P{eJ+MJIs{$P+?!QCv}l">
+              <value name="LOOKAT">
+                <shadow type="objectList" id="/e~:2_+dhjUguom`=TdB">
+                  <field name="FIELDNAME">Lens_Flare_Point_Light</field>
+                </shadow>
+              </value>
+              <value name="DURATION">
+                <shadow type="math_number" id="8y+T=t}?1sa(R(iX2!Go">
+                  <field name="NUM">0.0001</field>
+                </shadow>
+              </value>
+            </block>
+          </next>
+        </block>
+      </statement>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="procedures_defnoreturn" id="lue{oG]-LR/cdubZ:,#R" x="2370" y="-1250">
+      <field name="NAME">INIT_GLOW_SETTINGS_1</field>
+      <comment pinned="false" h="80" w="160">Describe this function...</comment>
+      <statement name="STACK">
+        <block type="variables_set" id="i0/2fE4C9/7*k4MW+FEu">
+          <field name="VAR" id="!}_Lm/!mhQ7SAtvh^{60">GLOW_01</field>
+          <value name="VALUE">
+            <block type="lists_create_with" id="]$E/TEJj@yOf{5WeexA." inline="true">
+              <mutation items="2"/>
+              <value name="ADD0">
+                <block type="GLIFTEK_v3d_Plugins_Lens_Flare_Deluxe/GLIFTEK_LENSFLARE_Lens_Flare_Deluxe_Glow_Settings" id="gCMJ:pl9d`t-(3A#X-Pm">
+                  <field name="nameInput">name</field>
+                  <field name="shapeDropdown">GLOW_circle</field>
+                  <field name="color">#ffff66</field>
+                  <value name="toneCenter">
+                    <shadow type="math_number" id="Qan(S}pv,_#y6~D).G2%">
+                      <field name="NUM">0</field>
+                    </shadow>
+                  </value>
+                  <value name="toneInner">
+                    <block type="math_number" id="fG;s~tGd:fywr,oHQam*">
+                      <field name="NUM">0</field>
+                    </block>
+                  </value>
+                  <value name="toneMid">
+                    <shadow type="math_number" id="357^Ws57c$MGb6oK=V,2">
+                      <field name="NUM">0.7</field>
+                    </shadow>
+                  </value>
+                  <value name="toneOuter">
+                    <shadow type="math_number" id="%di2r[N-F/vEyB!(Q(yT">
+                      <field name="NUM">0.85</field>
+                    </shadow>
+                  </value>
+                  <value name="toneEdge">
+                    <block type="math_number" id="a3457:p)4M6P2maKZ52L">
+                      <field name="NUM">1</field>
+                    </block>
+                  </value>
+                  <value name="rotate">
+                    <shadow type="math_number" id="CP2!_Kabk$R*6lEhe*fl">
+                      <field name="NUM">0</field>
+                    </shadow>
+                  </value>
+                  <value name="feBlur">
+                    <shadow type="math_number" id="|V*j*l1k)P|lrp*(qYv*">
+                      <field name="NUM">0.4</field>
+                    </shadow>
+                  </value>
+                  <value name="opacity">
+                    <shadow type="math_number" id="0Bm*EENG%NkM`1]VRIi4">
+                      <field name="NUM">0.4</field>
+                    </shadow>
+                  </value>
+                  <value name="size">
+                    <shadow type="math_number" id="CPr{)}K?l,.o_(s][9dD">
+                      <field name="NUM">150</field>
+                    </shadow>
+                  </value>
+                  <value name="distance">
+                    <shadow type="math_number" id="#!]??O(yj(ULpf]]R6hZ">
+                      <field name="NUM">0</field>
+                    </shadow>
+                  </value>
+                </block>
+              </value>
+              <value name="ADD1">
+                <block type="GLIFTEK_v3d_Plugins_Lens_Flare_Deluxe/GLIFTEK_LENSFLARE_Lens_Flare_Deluxe_Glow_Settings" id="-nKwO4c|$WL[Y(RE?7a#">
+                  <field name="nameInput">name</field>
+                  <field name="shapeDropdown">GLOW_circle</field>
+                  <field name="color">#ff9900</field>
+                  <value name="toneCenter">
+                    <shadow type="math_number" id="b*{!:[I#d)h4$o8:?((}">
+                      <field name="NUM">0</field>
+                    </shadow>
+                  </value>
+                  <value name="toneInner">
+                    <block type="math_number" id="zcN]]^z~@x8BMRKX%|Z#">
+                      <field name="NUM">0</field>
+                    </block>
+                  </value>
+                  <value name="toneMid">
+                    <shadow type="math_number" id="r-bwTTof5W11_yC=x272">
+                      <field name="NUM">0.7</field>
+                    </shadow>
+                  </value>
+                  <value name="toneOuter">
+                    <shadow type="math_number" id="iZOq8Cs[vMUmGK-]Oypl">
+                      <field name="NUM">0.85</field>
+                    </shadow>
+                  </value>
+                  <value name="toneEdge">
+                    <block type="math_number" id="}sTo-*id;x1cQ`QEPx,?">
+                      <field name="NUM">1</field>
+                    </block>
+                  </value>
+                  <value name="rotate">
+                    <shadow type="math_number" id="*n-C*vg1T;+nrUk8!iRz">
+                      <field name="NUM">0</field>
+                    </shadow>
+                  </value>
+                  <value name="feBlur">
+                    <shadow type="math_number" id="f,{n8W%-aP6IWY=X%:[5">
+                      <field name="NUM">0.6</field>
+                    </shadow>
+                  </value>
+                  <value name="opacity">
+                    <shadow type="math_number" id="+sI2Dqf)x?p#fr4s/Ql9">
+                      <field name="NUM">0.4</field>
+                    </shadow>
+                  </value>
+                  <value name="size">
+                    <shadow type="math_number" id="!2QO:;F7C).wq7GzE4R[">
+                      <field name="NUM">300</field>
+                    </shadow>
+                  </value>
+                  <value name="distance">
+                    <shadow type="math_number" id="7$o%[u_3XPha[c/Ii8Ca">
+                      <field name="NUM">0</field>
+                    </shadow>
+                  </value>
+                </block>
+              </value>
+            </block>
+          </value>
+        </block>
+      </statement>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="procedures_defnoreturn" id="bIl!Q[UTYlZbi(3!Q/5v" x="-510" y="-1010">
+      <field name="NAME">CAMERA_CONSTRAINTS</field>
+      <comment pinned="false" h="80" w="160">Describe this function...</comment>
+      <statement name="STACK">
+        <block type="comment" id="gTOFi(M)9#W|o;)LlWjM">
+          <field name="TEXT">POSITION</field>
+          <next>
+            <block type="objConstraintAddLimit" id="=:T:3iHq5*|AmnTV`qX}">
+              <mutation xmlns="http://www.w3.org/1999/xhtml" mode="POS_X"></mutation>
+              <field name="MODE">POS_X</field>
+              <field name="DIST_LIMIT_MODE">LIMITDIST_ONSURFACE</field>
+              <value name="CONSTRAINT">
+                <shadow type="text" id="9rjJ}R3}T.TP%*/DtJFM">
+                  <field name="TEXT">myConst_Cam_pos_X</field>
+                </shadow>
+              </value>
+              <value name="TARGETOBJ">
+                <shadow type="objectList" id="7DKgs_M3^?^Tz/F]a83x">
+                  <field name="FIELDNAME">Camera</field>
+                </shadow>
+              </value>
+              <value name="MIN">
+                <shadow type="math_number" id="c}!aoRCW?bA02=wBjE4v">
+                  <field name="NUM">-1</field>
+                </shadow>
+                <block type="math_number" id="H*V-XT9l%_i~WqN%k+ra">
+                  <field name="NUM">80</field>
+                </block>
+              </value>
+              <value name="MAX">
+                <shadow type="math_number" id="lcq$[Ux)g.pd!,,c43Dm">
+                  <field name="NUM">1</field>
+                </shadow>
+                <block type="math_number" id="-kWi:S0eEp.5~l![Oo_d">
+                  <field name="NUM">80</field>
+                </block>
+              </value>
+              <next>
+                <block type="objConstraintAddLimit" id="aXAr3Wmkz]SSh}?w)}^b">
+                  <mutation xmlns="http://www.w3.org/1999/xhtml" mode="POS_Y"></mutation>
+                  <field name="MODE">POS_Y</field>
+                  <field name="DIST_LIMIT_MODE">LIMITDIST_ONSURFACE</field>
+                  <value name="CONSTRAINT">
+                    <shadow type="text" id="~rH2,|DVx+SE|?v~jV*;">
+                      <field name="TEXT">myConst_Cam_pos_Y</field>
+                    </shadow>
+                  </value>
+                  <value name="TARGETOBJ">
+                    <shadow type="objectList" id="zG-vo#~?EI1N54;/+o=d">
+                      <field name="FIELDNAME">Camera</field>
+                    </shadow>
+                  </value>
+                  <value name="MIN">
+                    <shadow type="math_number" id="5p|-fcT0s1{KVxNS;O=B">
+                      <field name="NUM">-1</field>
+                    </shadow>
+                    <block type="math_number" id="qXltW3XE%fbSJuJ[;QW,">
+                      <field name="NUM">224540</field>
+                    </block>
+                  </value>
+                  <value name="MAX">
+                    <shadow type="math_number" id="#Tg@H:R+RAQ.jL3kF]~)">
+                      <field name="NUM">1</field>
+                    </shadow>
+                    <block type="math_number" id="{p_v8AHA*EH99?A~hQVs">
+                      <field name="NUM">224540</field>
+                    </block>
+                  </value>
+                  <next>
+                    <block type="objConstraintAddLimit" id="!fi{T8X/`JR^GpX)fwmg">
+                      <mutation xmlns="http://www.w3.org/1999/xhtml" mode="POS_Z"></mutation>
+                      <field name="MODE">POS_Z</field>
+                      <field name="DIST_LIMIT_MODE">LIMITDIST_ONSURFACE</field>
+                      <value name="CONSTRAINT">
+                        <shadow type="text" id="}mj+Wv$S9;6j?`l*r*}h">
+                          <field name="TEXT">myConst_Cam_pos_Z</field>
+                        </shadow>
+                      </value>
+                      <value name="TARGETOBJ">
+                        <shadow type="objectList" id="2M0+74g3s(0_6a8H%IF}">
+                          <field name="FIELDNAME">Camera</field>
+                        </shadow>
+                      </value>
+                      <value name="MIN">
+                        <shadow type="math_number" id="@b}x$Y6dZ$-u*[60|uWU">
+                          <field name="NUM">-1</field>
+                        </shadow>
+                        <block type="math_number" id="g.~QHE2nqPR@Q!}nh(NF">
+                          <field name="NUM">7820</field>
+                        </block>
+                      </value>
+                      <value name="MAX">
+                        <shadow type="math_number" id="}ZU[JEAq?gVeUxWQ$~Zf">
+                          <field name="NUM">1</field>
+                        </shadow>
+                        <block type="math_number" id="N1?jarQF]C?[%B)ZGjUQ">
+                          <field name="NUM">7870</field>
+                        </block>
+                      </value>
+                      <next>
+                        <block type="comment" id="!t;T4THP$qh-O/:Z~`~o">
+                          <field name="TEXT">ROTATION</field>
+                          <next>
+                            <block type="objConstraintAddLimit" id="hn/cMH]uLz+5RFIO-^Z:">
+                              <mutation xmlns="http://www.w3.org/1999/xhtml" mode="ROT_X"></mutation>
+                              <field name="MODE">ROT_X</field>
+                              <field name="DIST_LIMIT_MODE">LIMITDIST_ONSURFACE</field>
+                              <value name="CONSTRAINT">
+                                <shadow type="text" id="R]_,#F{XsG0u+ALU~2I=">
+                                  <field name="TEXT">myConst_Cam_rot_X</field>
+                                </shadow>
+                              </value>
+                              <value name="TARGETOBJ">
+                                <shadow type="objectList" id="1aqz5^^;Pv=Kyb[50F+;">
+                                  <field name="FIELDNAME">Camera</field>
+                                </shadow>
+                              </value>
+                              <value name="MIN">
+                                <shadow type="math_number" id="fCZAQ5{k3`]=X[]+k0{1">
+                                  <field name="NUM">0</field>
+                                </shadow>
+                              </value>
+                              <value name="MAX">
+                                <shadow type="math_number" id="t_t|F!_S~.2fXxz?Zt4m">
+                                  <field name="NUM">0</field>
+                                </shadow>
+                              </value>
+                              <next>
+                                <block type="objConstraintAddLimit" id="VFmA#6`tA;L1k2N~PqY:">
+                                  <mutation xmlns="http://www.w3.org/1999/xhtml" mode="ROT_Y"></mutation>
+                                  <field name="MODE">ROT_Y</field>
+                                  <field name="DIST_LIMIT_MODE">LIMITDIST_ONSURFACE</field>
+                                  <value name="CONSTRAINT">
+                                    <shadow type="text" id="xbwG$CoP/k~-Go$Nvp5^">
+                                      <field name="TEXT">myConst_Cam_rot_Y</field>
+                                    </shadow>
+                                  </value>
+                                  <value name="TARGETOBJ">
+                                    <shadow type="objectList" id="z#]h3E|y9?_-l,LahP]U">
+                                      <field name="FIELDNAME">Camera</field>
+                                    </shadow>
+                                  </value>
+                                  <value name="MIN">
+                                    <shadow type="math_number" id="DcsFN}*(0tKG67(Tew{X">
+                                      <field name="NUM">0</field>
+                                    </shadow>
+                                  </value>
+                                  <value name="MAX">
+                                    <shadow type="math_number" id="dfUt[G/X`)LLThUG[%cz">
+                                      <field name="NUM">2.5</field>
+                                    </shadow>
+                                  </value>
+                                  <next>
+                                    <block type="objConstraintAddLimit" id="QjC#HbnL8/ji%kunFk?q">
+                                      <mutation xmlns="http://www.w3.org/1999/xhtml" mode="ROT_Z"></mutation>
+                                      <field name="MODE">ROT_Z</field>
+                                      <field name="DIST_LIMIT_MODE">LIMITDIST_ONSURFACE</field>
+                                      <value name="CONSTRAINT">
+                                        <shadow type="text" id="DRFTUm6`TYbzNS6/lM_Y">
+                                          <field name="TEXT">myConst_Cam_rot_Z</field>
+                                        </shadow>
+                                      </value>
+                                      <value name="TARGETOBJ">
+                                        <shadow type="objectList" id="K*~!~ZzkIw**F8wGHllZ">
+                                          <field name="FIELDNAME">Camera</field>
+                                        </shadow>
+                                      </value>
+                                      <value name="MIN">
+                                        <shadow type="math_number" id="#COXyMH41jOe~K-oxf@J">
+                                          <field name="NUM">6</field>
+                                        </shadow>
+                                      </value>
+                                      <value name="MAX">
+                                        <shadow type="math_number" id="=S3pLg.`lnfk1Gzt.y^U">
+                                          <field name="NUM">70</field>
+                                        </shadow>
+                                      </value>
+                                    </block>
+                                  </next>
+                                </block>
+                              </next>
+                            </block>
+                          </next>
+                        </block>
+                      </next>
+                    </block>
+                  </next>
+                </block>
+              </next>
+            </block>
+          </next>
+        </block>
+      </statement>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="procedures_defnoreturn" id="!Pqr1tLR5dYs0~*WoiF7" x="590" y="-870">
+      <field name="NAME">CHANGE_BG_AND_FLARE</field>
+      <comment pinned="false" h="80" w="160">Describe this function...</comment>
+      <statement name="STACK">
+        <block type="controls_if" id="S)5_iQB.Fmu7wl]nR+!(">
+          <mutation elseif="2"/>
+          <value name="IF0">
+            <block type="logic_compare" id="X`{o-;Q^_|yZ=Ot1DsZc">
+              <field name="OP">EQ</field>
+              <value name="A">
+                <block type="variables_get" id="?.HvMbuhQ~U?CAw[y)rc">
+                  <field name="VAR" id="bskK`cC2{l#Ur9;[r[gt">lens_flare_counter</field>
+                </block>
+              </value>
+              <value name="B">
+                <block type="math_number" id="VT6nm./n.p,RjFFtsG`5">
+                  <field name="NUM">1</field>
+                </block>
+              </value>
+            </block>
+          </value>
+          <statement name="DO0">
+            <block type="GLIFTEK_v3d_Plugins_Backgrounds/GLIFTEK_BACKGROUNDS_Set_Background_Image" id="ONovAn98u,psXNl.Rp?H">
+              <value name="imageURLInput">
+                <shadow type="text" id="pi3sFMLdfzB|8B,q/0R3">
+                  <field name="TEXT"/>
+                </shadow>
+                <block type="text" id="7eL@m@ac(ADhB{H#uybG">
+                  <field name="TEXT">./img/bg_clouds_pink_purple.jpg</field>
+                </block>
+              </value>
+              <next>
+                <block type="removeObject" id="2L[)h.CJ}O|39`g5+}{7">
+                  <value name="VALUE">
+                    <shadow type="objectList" id="`HTgYv0~oyk;cHuKf+@0">
+                      <field name="FIELDNAME">myLensFlare_02</field>
+                    </shadow>
+                    <block type="text" id=";zr^)iumY,S!xys5c}Zm">
+                      <field name="TEXT">myLensFlare_C</field>
+                    </block>
+                  </value>
+                  <next>
+                    <block type="procedures_callnoreturn" id="t9$-=DzcCA5Jm1wsA9ih">
+                      <mutation name="LENS_FLARE_DELUXE_1"/>
+                    </block>
+                  </next>
+                </block>
+              </next>
+            </block>
+          </statement>
+          <value name="IF1">
+            <block type="logic_compare" id="P2aRp3M;BZx|cPMZfAiH">
+              <field name="OP">EQ</field>
+              <value name="A">
+                <block type="variables_get" id="?#o@s}N(OB#yL{4~[oyW">
+                  <field name="VAR" id="bskK`cC2{l#Ur9;[r[gt">lens_flare_counter</field>
+                </block>
+              </value>
+              <value name="B">
+                <block type="math_number" id="Y+=F,FSpg6cGnh{#-]H=">
+                  <field name="NUM">2</field>
+                </block>
+              </value>
+            </block>
+          </value>
+          <statement name="DO1">
+            <block type="GLIFTEK_v3d_Plugins_Backgrounds/GLIFTEK_BACKGROUNDS_Set_Background_Image" id="%:?R0Usk%ztnVNB1K0tC">
+              <value name="imageURLInput">
+                <shadow type="text" id="+Fq*8e{M!jZ1Lo,6npHR">
+                  <field name="TEXT"/>
+                </shadow>
+                <block type="text" id="aS,)8d9Q4!qIJ4C.15,8">
+                  <field name="TEXT">./img/bg_blue_dark_cloudy.jpg</field>
+                </block>
+              </value>
+              <next>
+                <block type="removeObject" id="mR4nZt#@XzsHeM:oVbIl">
+                  <value name="VALUE">
+                    <shadow type="objectList" id="Re[(1Qm2M86(BM9e5wkQ">
+                      <field name="FIELDNAME">myLensFlare_02</field>
+                    </shadow>
+                    <block type="text" id="~v-7s5C%~WH;RTI*7!%)">
+                      <field name="TEXT">myLensFlare_A</field>
+                    </block>
+                  </value>
+                  <next>
+                    <block type="procedures_callnoreturn" id="GN;992T4;Bp,nt6iuj3(">
+                      <mutation name="LENS_FLARE_DELUXE_2"/>
+                    </block>
+                  </next>
+                </block>
+              </next>
+            </block>
+          </statement>
+          <value name="IF2">
+            <block type="logic_compare" id="^Deei:wOG-jG@$c#)56e">
+              <field name="OP">EQ</field>
+              <value name="A">
+                <block type="variables_get" id="p{reA~/Q_8q`42`rttIl">
+                  <field name="VAR" id="bskK`cC2{l#Ur9;[r[gt">lens_flare_counter</field>
+                </block>
+              </value>
+              <value name="B">
+                <block type="math_number" id=",(4Nfn!ghUJNn$8FC0P[">
+                  <field name="NUM">3</field>
+                </block>
+              </value>
+            </block>
+          </value>
+          <statement name="DO2">
+            <block type="GLIFTEK_v3d_Plugins_Backgrounds/GLIFTEK_BACKGROUNDS_Set_Background_Image" id="ycxD{+bi_=Ea9P$XIg#p">
+              <value name="imageURLInput">
+                <shadow type="text" id="@_4l.I,`X?JrUq?v^@|8">
+                  <field name="TEXT"/>
+                </shadow>
+                <block type="text" id="^(YS#EjHa/@doHNhtnoP">
+                  <field name="TEXT">./img/city_lights_01.jpg</field>
+                </block>
+              </value>
+              <next>
+                <block type="GLIFTEK_v3d_Plugins_Backgrounds/GLIFTEK_BACKGROUNDS_Set_Background_Image" id="P#valM(0.=wsJUMYYg]{" disabled="true">
+                  <value name="imageURLInput">
+                    <shadow type="text">
+                      <field name="TEXT"/>
+                    </shadow>
+                    <block type="text" id="9IRZhsO#J:S,5tX%(Bwx">
+                      <field name="TEXT">./img/bg_clouds_godrays_02.jpg</field>
+                    </block>
+                  </value>
+                  <next>
+                    <block type="removeObject" id="a3(P0}(Pz6aazhXj)$ih">
+                      <value name="VALUE">
+                        <shadow type="objectList" id="PsxV8D=y[07(j9E)ql^T">
+                          <field name="FIELDNAME">myLensFlare_01</field>
+                        </shadow>
+                        <block type="text" id="3|%a@,Aq}iA[U6%:HMT+">
+                          <field name="TEXT">myLensFlare_B</field>
+                        </block>
+                      </value>
+                      <next>
+                        <block type="procedures_callnoreturn" id="Midz+725gG(1gul4S1`%">
+                          <mutation name="LENS_FLARE_DELUXE_3"/>
+                        </block>
+                      </next>
+                    </block>
+                  </next>
+                </block>
+              </next>
+            </block>
+          </statement>
+        </block>
+      </statement>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="procedures_defnoreturn" id="qCpXpk=43/I7VWUHlFfJ" x="-510" y="-650">
+      <field name="NAME">CLICK_NEXT_BUTTON</field>
+      <comment pinned="false" h="80" w="160">Describe this function...</comment>
+      <statement name="STACK">
+        <block type="whenHovered" id="2Ks)YgYOu5b-i8OQBF|K" inline="true">
+          <mutation xmlns="http://www.w3.org/1999/xhtml" adveventoptions="true"></mutation>
+          <field name="X_RAY">TRUE</field>
+          <value name="VALUE">
+            <shadow type="objectList" id="SJLhCKaKiU!?|hFbI*_I">
+              <field name="FIELDNAME">hitbox</field>
+            </shadow>
+          </value>
+          <statement name="DO_OVER">
+            <block type="setHTMLElemStyle" id="X9Rq1n#X*S@QPJV(@EBK">
+              <field name="PROPERTY">cursor</field>
+              <field name="PARENT">FALSE</field>
+              <value name="VALUE">
+                <block type="text" id="p?Wef3RXvv0FigMw2B+Q">
+                  <field name="TEXT">pointer</field>
+                </block>
+              </value>
+              <value name="ID">
+                <block type="DOMObjectSelector" id="z[(zs`d?/gb-%P|w~#WU">
+                  <field name="DOM_OBJECT">CONTAINER</field>
+                </block>
+              </value>
+            </block>
+          </statement>
+          <statement name="DO_OUT">
+            <block type="setHTMLElemStyle" id="3JeU$5.S633OCBR[}18#">
+              <field name="PROPERTY">cursor</field>
+              <field name="PARENT">FALSE</field>
+              <value name="VALUE">
+                <block type="text" id="cRfF-1j2$gtqiAKOjQBM">
+                  <field name="TEXT">default</field>
+                </block>
+              </value>
+              <value name="ID">
+                <block type="DOMObjectSelector" id="/~qCRly?`JhcmD|h%F/^">
+                  <field name="DOM_OBJECT">CONTAINER</field>
+                </block>
+              </value>
+            </block>
+          </statement>
+          <next>
+            <block type="whenClicked" id="zvVu8*nQUry[;6~#(!.." inline="true">
+              <mutation xmlns="http://www.w3.org/1999/xhtml" adveventoptions="true" enableifmissed="false"></mutation>
+              <field name="X_RAY">TRUE</field>
+              <field name="DOUBLE_CLICK">FALSE</field>
+              <field name="LEFT_BUTTON">TRUE</field>
+              <field name="MIDDLE_BUTTON">TRUE</field>
+              <field name="RIGHT_BUTTON">TRUE</field>
+              <value name="VALUE">
+                <shadow type="objectList" id="sM$B%wE5PM}U4--l2.`.">
+                  <field name="FIELDNAME">hitbox</field>
+                </shadow>
+              </value>
+              <statement name="DO">
+                <block type="procedures_callnoreturn" id="s3c~pC4fIbenht:vzyh5">
+                  <mutation name="SWITCH_FLARE"/>
+                </block>
+              </statement>
+            </block>
+          </next>
+        </block>
+      </statement>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="procedures_defnoreturn" id="M1FcfcP+cq}:[$e2]f7S" x="-510" y="-310">
+      <field name="NAME">DISABLE_RENDERING</field>
+      <comment pinned="false" h="80" w="160">Describe this function...</comment>
+      <statement name="STACK">
+        <block type="disableRendering" id="TB7Y(CvgZ_2A0f:=GYUn">
+          <field name="AA">TRUE</field>
+          <next>
+            <block type="whenMoved" id="A2l0bOx/:K4:i!Ufj49x">
+              <value name="OBJECT">
+                <shadow type="objectList" id=".p5_5h_bVAkn2a_N,jfM">
+                  <field name="FIELDNAME">Camera</field>
+                </shadow>
+              </value>
+              <value name="DELTA">
+                <shadow type="math_number" id="oM^hyHd@+q5d)Zci,]2K">
+                  <field name="NUM">0.01</field>
+                </shadow>
+              </value>
+              <statement name="DO_START">
+                <block type="enableRendering" id="Ez{NrCs-!H7DmsIy)MwS"/>
+              </statement>
+              <statement name="DO_STOP">
+                <block type="disableRendering" id="Z1g*Ia}WAPT#+9U7W=#L">
+                  <field name="AA">TRUE</field>
+                </block>
+              </statement>
+            </block>
+          </next>
+        </block>
+      </statement>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="procedures_defnoreturn" id="B!|ez:Ql{F#}[+%moOT|" x="1750" y="-170">
+      <field name="NAME">LENS_FLARE_DELUXE_2</field>
+      <comment pinned="false" h="80" w="160">Describe this function...</comment>
+      <statement name="STACK">
+        <block type="GLIFTEK_v3d_Plugins_Lens_Flare_Deluxe/GLIFTEK_LENSFLARE_Lens_Flare_Deluxe" id="|uRM=V.[1s_jY.n8k9-q">
+          <field name="activeCheckboxRAYS">TRUE</field>
+          <field name="activeCheckboxGLOW">TRUE</field>
+          <field name="activeCheckboxBOKEH">TRUE</field>
+          <value name="nameInput">
+            <shadow type="text" id="y=n7AbT2MhupC~#y-sF6">
+              <field name="TEXT">myLensFlare_B</field>
+            </shadow>
+          </value>
+          <value name="objInput">
+            <shadow type="objectList" id="1`8Ic4f$HEI38R+SIK.C">
+              <field name="FIELDNAME">Lens_Flare_Point_Light</field>
+            </shadow>
+          </value>
+          <value name="flareMasterSize">
+            <shadow type="math_number" id="OXMvAl6Ri;(PG-e~!PU/">
+              <field name="NUM">2.25</field>
+            </shadow>
+          </value>
+          <value name="flareMasterOpacity">
+            <shadow type="math_number" id="DCH1Q-!5Ke,5p%vZ0jAz">
+              <field name="NUM">0.8</field>
+            </shadow>
+          </value>
+          <value name="flareSettingsRAYS">
+            <shadow type="text">
+              <field name="TEXT"/>
+            </shadow>
+            <block type="variables_get" id="`OQGMYsoXDU=CB3_+l$:">
+              <field name="VAR" id="IZ9L(3^.6uFDai[S8?K/">RAYS_2</field>
+            </block>
+          </value>
+          <value name="flareMasterSizeRAYS">
+            <shadow type="math_number" id="Bir3#-odB#42b(G#e;dF">
+              <field name="NUM">0.4</field>
+            </shadow>
+          </value>
+          <value name="flareMasterOpacityRAYS">
+            <shadow type="math_number" id="c*BJN,J}YX2j/p~PCnQK">
+              <field name="NUM">0.75</field>
+            </shadow>
+          </value>
+          <value name="flareSettingsGLOW">
+            <shadow type="text" id="x]R`a$U^AqgnpTB+U3o-">
+              <field name="TEXT"/>
+            </shadow>
+            <block type="variables_get" id="`{~JtQm%ihzxA!XmT`fs">
+              <field name="VAR" id="Nx|%u!_Fa#hnVy@lEk{s">GLOW_2</field>
+            </block>
+          </value>
+          <value name="flareMasterSizeGLOW">
+            <shadow type="math_number" id="IZbg%9@0f!a*h(!Yuv*%">
+              <field name="NUM">0.125</field>
+            </shadow>
+          </value>
+          <value name="flareMasterOpacityGLOW">
+            <shadow type="math_number" id="%!*w$?oTKYjI}4trD[/;">
+              <field name="NUM">0.6</field>
+            </shadow>
+          </value>
+          <value name="flareSettingsBOKEH">
+            <shadow type="text">
+              <field name="TEXT"/>
+            </shadow>
+            <block type="variables_get" id="8cLy9o6o@t#iAd{vx-cq">
+              <field name="VAR" id="f|]AjT/mM(+0-u!ytl:d">BOKEH_2</field>
+            </block>
+          </value>
+          <value name="flareMasterSizeBOKEH">
+            <shadow type="math_number" id="5mIsru6=5{R{1b_hkwT|">
+              <field name="NUM">1</field>
+            </shadow>
+          </value>
+          <value name="flareMasterOpacityBOKEH">
+            <shadow type="math_number" id="r!@9nJGo,-WYapGdj5Zq">
+              <field name="NUM">0.95</field>
+            </shadow>
+          </value>
+        </block>
+      </statement>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="procedures_defnoreturn" id="G;B$c1$=?C-%6u#F#5*Y" x="2370" y="-170">
+      <field name="NAME">INIT_RAYS_SETTINGS_2</field>
+      <comment pinned="false" h="80" w="160">Describe this function...</comment>
+      <statement name="STACK">
+        <block type="variables_set" id="LOJkG{^bAV[[Zhioq;bC">
+          <field name="VAR" id="IZ9L(3^.6uFDai[S8?K/">RAYS_2</field>
+          <value name="VALUE">
+            <block type="lists_create_with" id="3:gh+J9!RTF=;BozGx!W" inline="true">
+              <mutation items="4"/>
+              <value name="ADD0">
+                <block type="GLIFTEK_v3d_Plugins_Lens_Flare_Deluxe/GLIFTEK_LENSFLARE_Lens_Flare_Deluxe_Rays_Settings" id="@Guy:Nk/?R(L3mGlEb*3">
+                  <field name="nameInput">anamorphic</field>
+                  <field name="symmetricalCheckbox">TRUE</field>
+                  <field name="color">#3366ff</field>
+                  <value name="rays">
+                    <shadow type="math_number" id="WWhtSl}t,Sq9ZAIw73nT">
+                      <field name="NUM">2</field>
+                    </shadow>
+                  </value>
+                  <value name="rayWidth">
+                    <shadow type="math_number" id="*~mV7Z2[~][f;@Z,+q$r">
+                      <field name="NUM">0.7</field>
+                    </shadow>
+                  </value>
+                  <value name="raySharpness">
+                    <shadow type="math_number" id="_P=oV}Ll{J!R}ej:{S]f">
+                      <field name="NUM">8</field>
+                    </shadow>
+                  </value>
+                  <value name="randomSeed">
+                    <shadow type="math_number" id=".[]b%hv%+|pLcUvziJv)">
+                      <field name="NUM">0</field>
+                    </shadow>
+                  </value>
+                  <value name="rotate">
+                    <shadow type="math_number" id="zx!KB3GrvU2WVOwA]oEi">
+                      <field name="NUM">0</field>
+                    </shadow>
+                  </value>
+                  <value name="feBlur">
+                    <shadow type="math_number" id="}$Ozid1%xAUPq`G`vKLo">
+                      <field name="NUM">0</field>
+                    </shadow>
+                  </value>
+                  <value name="opacity">
+                    <shadow type="math_number" id="q8.P4GJbvW[L+z$|Kano">
+                      <field name="NUM">0.9</field>
+                    </shadow>
+                  </value>
+                  <value name="size">
+                    <shadow type="math_number" id="kcdo.Es!?HU]@.M(ekk;">
+                      <field name="NUM">10000</field>
+                    </shadow>
+                  </value>
+                  <value name="distance">
+                    <shadow type="math_number" id="9J|df1UB^~aQAuO=)2C+">
+                      <field name="NUM">0</field>
+                    </shadow>
+                  </value>
+                </block>
+              </value>
+              <value name="ADD1">
+                <block type="GLIFTEK_v3d_Plugins_Lens_Flare_Deluxe/GLIFTEK_LENSFLARE_Lens_Flare_Deluxe_Rays_Settings" id="oLnCz}qmD0YJcuRmN/_P">
+                  <field name="nameInput">shimmer_1</field>
+                  <field name="symmetricalCheckbox">FALSE</field>
+                  <field name="color">#3366ff</field>
+                  <value name="rays">
+                    <shadow type="math_number" id=":HZ{F.P7gJytT#$d=#Ed">
+                      <field name="NUM">32</field>
+                    </shadow>
+                  </value>
+                  <value name="rayWidth">
+                    <shadow type="math_number" id="7$L:E-Hh+$|:)f2;KIA!">
+                      <field name="NUM">0.5</field>
+                    </shadow>
+                  </value>
+                  <value name="raySharpness">
+                    <shadow type="math_number" id="RL7aU]5qHDn02WdTc=-,">
+                      <field name="NUM">3</field>
+                    </shadow>
+                  </value>
+                  <value name="randomSeed">
+                    <shadow type="math_number" id="z}}OHSo:R8Hr(7-/i55[">
+                      <field name="NUM">2.5</field>
+                    </shadow>
+                  </value>
+                  <value name="rotate">
+                    <shadow type="math_number" id="GFVnN9}lFYu+)=HzO,J`">
+                      <field name="NUM">23</field>
+                    </shadow>
+                  </value>
+                  <value name="feBlur">
+                    <shadow type="math_number" id="gFWM;c/8u[+e;nI#!9U}">
+                      <field name="NUM">0</field>
+                    </shadow>
+                  </value>
+                  <value name="opacity">
+                    <shadow type="math_number" id="PA9pr9w0^j.iAtdU1Nk8">
+                      <field name="NUM">0.8</field>
+                    </shadow>
+                  </value>
+                  <value name="size">
+                    <shadow type="math_number" id="072MJ3jZrFR6|j8osqmR">
+                      <field name="NUM">2400</field>
+                    </shadow>
+                  </value>
+                  <value name="distance">
+                    <shadow type="math_number" id="agtY6PY}z_5{gA^PzkKB">
+                      <field name="NUM">0.002</field>
+                    </shadow>
+                  </value>
+                </block>
+              </value>
+              <value name="ADD2">
+                <block type="GLIFTEK_v3d_Plugins_Lens_Flare_Deluxe/GLIFTEK_LENSFLARE_Lens_Flare_Deluxe_Rays_Settings" id="D9^wGz8ll0qg-4sUU}#,">
+                  <field name="nameInput">shimmer_2</field>
+                  <field name="symmetricalCheckbox">FALSE</field>
+                  <field name="color">#33ccff</field>
+                  <value name="rays">
+                    <shadow type="math_number" id="`V+rWe^xLgn]^H]H$tEl">
+                      <field name="NUM">32</field>
+                    </shadow>
+                  </value>
+                  <value name="rayWidth">
+                    <shadow type="math_number" id="0^*)vfC`U%e9y3K{21(5">
+                      <field name="NUM">0.5</field>
+                    </shadow>
+                  </value>
+                  <value name="raySharpness">
+                    <shadow type="math_number" id="e~5b3~4K=UDrr]_d;q;v">
+                      <field name="NUM">3</field>
+                    </shadow>
+                  </value>
+                  <value name="randomSeed">
+                    <shadow type="math_number" id="IO+bdafBUdOhdsBp+(W]">
+                      <field name="NUM">2.5</field>
+                    </shadow>
+                  </value>
+                  <value name="rotate">
+                    <shadow type="math_number" id="c6!KYZsa1={QR!~DXN1[">
+                      <field name="NUM">45</field>
+                    </shadow>
+                  </value>
+                  <value name="feBlur">
+                    <shadow type="math_number" id="8+6-8Mm+(}@1Yen!zx{F">
+                      <field name="NUM">0</field>
+                    </shadow>
+                  </value>
+                  <value name="opacity">
+                    <shadow type="math_number" id="CQH#s|o6tHx8O{6hOGgU">
+                      <field name="NUM">0.8</field>
+                    </shadow>
+                  </value>
+                  <value name="size">
+                    <shadow type="math_number" id="}Tmp~DU_7W{*,i;d=|Y8">
+                      <field name="NUM">2400</field>
+                    </shadow>
+                  </value>
+                  <value name="distance">
+                    <shadow type="math_number" id="gm%b*$J2m^%Gv/XfT`pY">
+                      <field name="NUM">0.002</field>
+                    </shadow>
+                  </value>
+                </block>
+              </value>
+              <value name="ADD3">
+                <block type="GLIFTEK_v3d_Plugins_Lens_Flare_Deluxe/GLIFTEK_LENSFLARE_Lens_Flare_Deluxe_Rays_Settings" id="GNFQFH0hn$.G=]]Xn-@L">
+                  <field name="nameInput">shimmer_3</field>
+                  <field name="symmetricalCheckbox">FALSE</field>
+                  <field name="color">#99ffff</field>
+                  <value name="rays">
+                    <shadow type="math_number" id="nM{6H;;l0:m+%#%nA91*">
+                      <field name="NUM">64</field>
+                    </shadow>
+                  </value>
+                  <value name="rayWidth">
+                    <shadow type="math_number" id="LW:$TPO)0xm5go8p}*R%">
+                      <field name="NUM">0.25</field>
+                    </shadow>
+                  </value>
+                  <value name="raySharpness">
+                    <shadow type="math_number" id="i,};;lunaIcsS00W9o9y">
+                      <field name="NUM">0</field>
+                    </shadow>
+                  </value>
+                  <value name="randomSeed">
+                    <shadow type="math_number" id="St%)?7_-hZ5x_v!e7Yqv">
+                      <field name="NUM">4</field>
+                    </shadow>
+                  </value>
+                  <value name="rotate">
+                    <shadow type="math_number" id="#ePyN~Se;i;Hbb-4O?~/">
+                      <field name="NUM">0</field>
+                    </shadow>
+                  </value>
+                  <value name="feBlur">
+                    <shadow type="math_number" id="Kuf/j7y3$z7s)84enr6t">
+                      <field name="NUM">0</field>
+                    </shadow>
+                  </value>
+                  <value name="opacity">
+                    <shadow type="math_number" id=")7~_%Iro3fttX{n6u9oO">
+                      <field name="NUM">0.8</field>
+                    </shadow>
+                  </value>
+                  <value name="size">
+                    <shadow type="math_number" id="A3M(d*Gpk6D3S2pN=*mX">
+                      <field name="NUM">1600</field>
+                    </shadow>
+                  </value>
+                  <value name="distance">
+                    <shadow type="math_number" id="OMmELN4)DV=od1hv1Ke-">
+                      <field name="NUM">0.003</field>
+                    </shadow>
+                  </value>
+                </block>
+              </value>
+            </block>
+          </value>
+        </block>
+      </statement>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="procedures_defnoreturn" id="hr#G6DGL~FgZ+ekBz:dt" x="3750" y="-170">
+      <field name="NAME">INIT_BOKEH_SETTINGS_2</field>
+      <comment pinned="false" h="80" w="160">Describe this function...</comment>
+      <statement name="STACK">
+        <block type="variables_set" id="/2b[~ZO-(FdtysG:.}3g">
+          <field name="VAR" id="f|]AjT/mM(+0-u!ytl:d">BOKEH_2</field>
+          <value name="VALUE">
+            <block type="lists_create_with" id="*(L^zi$OoFqEkuQ7~.8_">
+              <mutation items="2"/>
+              <value name="ADD0">
+                <block type="GLIFTEK_v3d_Plugins_Lens_Flare_Deluxe/GLIFTEK_LENSFLARE_Lens_Flare_Deluxe_Bokeh_Settings" id="i#F6Akv3b!5KmzQK[`v~">
+                  <field name="shapeDropdown">BOKEH_triangle</field>
+                  <field name="color">#ccffff</field>
+                  <value name="rotate">
+                    <shadow type="math_number" id="tUK|P+MVq:@td}Y3dF|,">
+                      <field name="NUM">15</field>
+                    </shadow>
+                  </value>
+                  <value name="feBlur">
+                    <shadow type="math_number" id="JDH~tQD7qWxwT%eZK3_r">
+                      <field name="NUM">0.2</field>
+                    </shadow>
+                  </value>
+                  <value name="opacity">
+                    <shadow type="math_number" id="+eF3)HmZHb5bg#D_roB|">
+                      <field name="NUM">0.5</field>
+                    </shadow>
+                  </value>
+                  <value name="size">
+                    <shadow type="math_number" id="0$o)zCz8o/v3#~]9HrGG">
+                      <field name="NUM">1</field>
+                    </shadow>
+                  </value>
+                  <value name="distance">
+                    <shadow type="math_number" id="A/~#b_;GY@U;rXO=To4!">
+                      <field name="NUM">0.9</field>
+                    </shadow>
+                  </value>
+                </block>
+              </value>
+              <value name="ADD1">
+                <block type="GLIFTEK_v3d_Plugins_Lens_Flare_Deluxe/GLIFTEK_LENSFLARE_Lens_Flare_Deluxe_Bokeh_Settings" id="fufPM$y$LT+TopD=s=tS">
+                  <field name="shapeDropdown">BOKEH_triangle</field>
+                  <field name="color">#66ffff</field>
+                  <value name="rotate">
+                    <shadow type="math_number" id="xv{HPc@YAS~+8(iB83qJ">
+                      <field name="NUM">15</field>
+                    </shadow>
+                  </value>
+                  <value name="feBlur">
+                    <shadow type="math_number" id="_P.4pB#n_qATj98fjeGF">
+                      <field name="NUM">0.2</field>
+                    </shadow>
+                  </value>
+                  <value name="opacity">
+                    <shadow type="math_number" id="]Tj_{Vh`@(uOvrFg#Jph">
+                      <field name="NUM">0.3</field>
+                    </shadow>
+                  </value>
+                  <value name="size">
+                    <shadow type="math_number" id="%YIm?xeq4t@:cRuzQ.Nb">
+                      <field name="NUM">0.5</field>
+                    </shadow>
+                  </value>
+                  <value name="distance">
+                    <shadow type="math_number" id="lel=ukc7@.T,D[a%+k=a">
+                      <field name="NUM">0.5</field>
+                    </shadow>
+                  </value>
+                </block>
+              </value>
+            </block>
+          </value>
+        </block>
+      </statement>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="procedures_defnoreturn" id="DVY={Sd/vP/sO;LgIGiV" x="2370" y="530">
+      <field name="NAME">INIT_GLOW_SETTINGS_2</field>
+      <comment pinned="false" h="80" w="160">Describe this function...</comment>
+      <statement name="STACK">
+        <block type="variables_set" id="r5QW8IDof.On#tK(*w]U">
+          <field name="VAR" id="Nx|%u!_Fa#hnVy@lEk{s">GLOW_2</field>
+          <value name="VALUE">
+            <block type="lists_create_with" id="DTXgO,[D5y~#TGZF4[?c" inline="true">
+              <mutation items="3"/>
+              <value name="ADD0">
+                <block type="GLIFTEK_v3d_Plugins_Lens_Flare_Deluxe/GLIFTEK_LENSFLARE_Lens_Flare_Deluxe_Glow_Settings" id="y4HgvSVu?Gs]Ych0@m/V">
+                  <field name="nameInput">inner glow</field>
+                  <field name="shapeDropdown">GLOW_hexagon</field>
+                  <field name="color">#ccffff</field>
+                  <value name="toneCenter">
+                    <shadow type="math_number" id="fJ!JVF?kz]]*da[pBd5N">
+                      <field name="NUM">0</field>
+                    </shadow>
+                  </value>
+                  <value name="toneInner">
+                    <shadow type="math_number" id="#ec|y/MX=?@UT$}uPc/5">
+                      <field name="NUM">0.2</field>
+                    </shadow>
+                  </value>
+                  <value name="toneMid">
+                    <shadow type="math_number" id="pQs|cZb4RF,YnGY_DnwP">
+                      <field name="NUM">0.7</field>
+                    </shadow>
+                  </value>
+                  <value name="toneOuter">
+                    <shadow type="math_number" id="~+=zQo|Q%9bKTg!x0O:?">
+                      <field name="NUM">1</field>
+                    </shadow>
+                  </value>
+                  <value name="toneEdge">
+                    <shadow type="math_number" id="UwIB:.|9]L.O79Gw!rRg">
+                      <field name="NUM">1</field>
+                    </shadow>
+                  </value>
+                  <value name="rotate">
+                    <shadow type="math_number" id="X$y+y$tP!w(0Bu{iruko">
+                      <field name="NUM">0</field>
+                    </shadow>
+                  </value>
+                  <value name="feBlur">
+                    <shadow type="math_number" id="RS9gSqhsC{Ywa{D{?3,[">
+                      <field name="NUM">4</field>
+                    </shadow>
+                  </value>
+                  <value name="opacity">
+                    <shadow type="math_number" id="x[s1/f*$Q)2-C0--44q5">
+                      <field name="NUM">0.9</field>
+                    </shadow>
+                  </value>
+                  <value name="size">
+                    <shadow type="math_number" id="[WF2g1Sn_|+62[KYBnmf">
+                      <field name="NUM">350</field>
+                    </shadow>
+                  </value>
+                  <value name="distance">
+                    <shadow type="math_number" id="_G`J5+ou_ip!00bgw0Q2">
+                      <field name="NUM">0</field>
+                    </shadow>
+                  </value>
+                </block>
+              </value>
+              <value name="ADD1">
+                <block type="GLIFTEK_v3d_Plugins_Lens_Flare_Deluxe/GLIFTEK_LENSFLARE_Lens_Flare_Deluxe_Glow_Settings" id="/dnP`_h8A^Ox0p9/#S);">
+                  <field name="nameInput">outer circle</field>
+                  <field name="shapeDropdown">GLOW_circle</field>
+                  <field name="color">#00ffff</field>
+                  <value name="toneCenter">
+                    <shadow type="math_number" id="%8cdREhL:N-Nv9e~}.F.">
+                      <field name="NUM">0.55</field>
+                    </shadow>
+                  </value>
+                  <value name="toneInner">
+                    <shadow type="math_number" id="-6lV*y_]TIS(.$g}nQHp">
+                      <field name="NUM">0.65</field>
+                    </shadow>
+                  </value>
+                  <value name="toneMid">
+                    <shadow type="math_number" id="[rDgmhX8NMy0i+{4vue!">
+                      <field name="NUM">0.85</field>
+                    </shadow>
+                  </value>
+                  <value name="toneOuter">
+                    <shadow type="math_number" id="DgS@Yk1;Z+90X;PBrPhm">
+                      <field name="NUM">0.95</field>
+                    </shadow>
+                  </value>
+                  <value name="toneEdge">
+                    <shadow type="math_number" id=";T|sTT?q~5$)6`Tbw?+P">
+                      <field name="NUM">1</field>
+                    </shadow>
+                  </value>
+                  <value name="rotate">
+                    <shadow type="math_number" id="m|O2v-Q$=cdJ)q,CuR}F">
+                      <field name="NUM">0</field>
+                    </shadow>
+                  </value>
+                  <value name="feBlur">
+                    <shadow type="math_number" id="ujsZU~%@M]6*QBn/(2er">
+                      <field name="NUM">7</field>
+                    </shadow>
+                  </value>
+                  <value name="opacity">
+                    <shadow type="math_number" id="I+%n3/L`?#$:`R-v@3x+">
+                      <field name="NUM">0.4</field>
+                    </shadow>
+                  </value>
+                  <value name="size">
+                    <shadow type="math_number" id="[+e*88[(@PEBQ2.Bu?64">
+                      <field name="NUM">1500</field>
+                    </shadow>
+                  </value>
+                  <value name="distance">
+                    <shadow type="math_number" id="m+`P:)%#!4H7XPSoo}gP">
+                      <field name="NUM">0</field>
+                    </shadow>
+                  </value>
+                </block>
+              </value>
+              <value name="ADD2">
+                <block type="GLIFTEK_v3d_Plugins_Lens_Flare_Deluxe/GLIFTEK_LENSFLARE_Lens_Flare_Deluxe_Glow_Settings" id="t1Tng^|7P42Z(o3O3iC;">
+                  <field name="nameInput">accent elipse</field>
+                  <field name="shapeDropdown">GLOW_ellipse</field>
+                  <field name="color">#00ffff</field>
+                  <value name="toneCenter">
+                    <shadow type="math_number" id="7MEB{?4^Yn$qCLBjCY`]">
+                      <field name="NUM">0.55</field>
+                    </shadow>
+                  </value>
+                  <value name="toneInner">
+                    <shadow type="math_number" id="|Dop3K0u+Z4q2NX-juU:">
+                      <field name="NUM">0.65</field>
+                    </shadow>
+                  </value>
+                  <value name="toneMid">
+                    <shadow type="math_number" id="V]zSpUqnNwK:e~(~)Ii2">
+                      <field name="NUM">0.85</field>
+                    </shadow>
+                  </value>
+                  <value name="toneOuter">
+                    <shadow type="math_number" id="I47;Br(x@s_2?~Xk|73u">
+                      <field name="NUM">0.95</field>
+                    </shadow>
+                  </value>
+                  <value name="toneEdge">
+                    <shadow type="math_number" id="Y1-{+2J[p}JUw?sz79%$">
+                      <field name="NUM">1</field>
+                    </shadow>
+                  </value>
+                  <value name="rotate">
+                    <shadow type="math_number" id="gCf0Zn%a_02#M=-)zfev">
+                      <field name="NUM">0</field>
+                    </shadow>
+                  </value>
+                  <value name="feBlur">
+                    <shadow type="math_number" id="^khqrHI6]C;PUk_UgNM(">
+                      <field name="NUM">7</field>
+                    </shadow>
+                  </value>
+                  <value name="opacity">
+                    <shadow type="math_number" id="V4w$$.d7Ts)FdtE_OU9=">
+                      <field name="NUM">0.2</field>
+                    </shadow>
+                  </value>
+                  <value name="size">
+                    <shadow type="math_number" id="FZ|*}jDacbocQE^Hjv{D">
+                      <field name="NUM">1500</field>
+                    </shadow>
+                  </value>
+                  <value name="distance">
+                    <shadow type="math_number" id=",6gU`*^Qnc@=+A?UaE~|">
+                      <field name="NUM">0</field>
+                    </shadow>
+                  </value>
+                </block>
+              </value>
+            </block>
+          </value>
+        </block>
+      </statement>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="procedures_defnoreturn" id=";slIn=5hE|1x*IuJ(JDy" x="1730" y="1610">
+      <field name="NAME">LENS_FLARE_DELUXE_3</field>
+      <comment pinned="false" h="80" w="160">Describe this function...</comment>
+      <statement name="STACK">
+        <block type="GLIFTEK_v3d_Plugins_Lens_Flare_Deluxe/GLIFTEK_LENSFLARE_Lens_Flare_Deluxe" id="%s^7DdW{ve$fk(.-}yaR">
+          <field name="activeCheckboxRAYS">TRUE</field>
+          <field name="activeCheckboxGLOW">TRUE</field>
+          <field name="activeCheckboxBOKEH">TRUE</field>
+          <value name="nameInput">
+            <shadow type="text" id="5f!9G-eQQ$])NS7IwP^e">
+              <field name="TEXT">myLensFlare_C</field>
+            </shadow>
+          </value>
+          <value name="objInput">
+            <shadow type="objectList" id="@h#.]KA@0waK[:!TFWY/">
+              <field name="FIELDNAME">Lens_Flare_Point_Light</field>
+            </shadow>
+          </value>
+          <value name="flareMasterSize">
+            <shadow type="math_number" id="_[F|{b.RnX-e(.,Tl:!h">
+              <field name="NUM">1</field>
+            </shadow>
+          </value>
+          <value name="flareMasterOpacity">
+            <shadow type="math_number" id="CG,R8VV%@0V5uOFO?%mn">
+              <field name="NUM">0.8</field>
+            </shadow>
+          </value>
+          <value name="flareSettingsRAYS">
+            <shadow type="text">
+              <field name="TEXT"/>
+            </shadow>
+            <block type="variables_get" id="FTEcp6d:Zb/zWWK^F*sf">
+              <field name="VAR" id="W{m+PIQ+{`A0Ps6Jkn3~">RAYS_3</field>
+            </block>
+          </value>
+          <value name="flareMasterSizeRAYS">
+            <shadow type="math_number" id="cp]WxOV[B:X)zYh?Y/[a">
+              <field name="NUM">0.4</field>
+            </shadow>
+          </value>
+          <value name="flareMasterOpacityRAYS">
+            <shadow type="math_number" id="HdSf)vz?ZX.Y^z__A//=">
+              <field name="NUM">0.9</field>
+            </shadow>
+          </value>
+          <value name="flareSettingsGLOW">
+            <shadow type="text">
+              <field name="TEXT"/>
+            </shadow>
+            <block type="variables_get" id="u/n0,}T8YYqM9lwgg~(!">
+              <field name="VAR" id="l/mJ@o?w}Y$(sQcyQ$Cs">GLOW_3</field>
+            </block>
+          </value>
+          <value name="flareMasterSizeGLOW">
+            <shadow type="math_number" id="G|Dm5a2G+*N8Elx0}ZM~">
+              <field name="NUM">0.5</field>
+            </shadow>
+          </value>
+          <value name="flareMasterOpacityGLOW">
+            <shadow type="math_number" id="l~,(Y_$})UgVO`W[;mqo">
+              <field name="NUM">0.9</field>
+            </shadow>
+          </value>
+          <value name="flareSettingsBOKEH">
+            <shadow type="text">
+              <field name="TEXT"/>
+            </shadow>
+            <block type="variables_get" id="=J32`,pjC_7w[3Va+k@5">
+              <field name="VAR" id="c`pujQB:vY;#4UA_hPL~">BOKEH_3</field>
+            </block>
+          </value>
+          <value name="flareMasterSizeBOKEH">
+            <shadow type="math_number" id="]Lmq6Cl~WCxo]^7i?bmc">
+              <field name="NUM">1</field>
+            </shadow>
+          </value>
+          <value name="flareMasterOpacityBOKEH">
+            <shadow type="math_number" id="X$AI,a43v0P*s?bL+m?[">
+              <field name="NUM">0.95</field>
+            </shadow>
+          </value>
+        </block>
+      </statement>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="procedures_defnoreturn" id="I.9*:]fB?K_U%f+v(hi|" x="2370" y="1610">
+      <field name="NAME">INIT_RAYS_SETTINGS_3</field>
+      <comment pinned="false" h="80" w="160">Describe this function...</comment>
+      <statement name="STACK">
+        <block type="variables_set" id="O#xG8HAvQ#Di4pDrv,_T">
+          <field name="VAR" id="W{m+PIQ+{`A0Ps6Jkn3~">RAYS_3</field>
+          <value name="VALUE">
+            <block type="lists_create_with" id="pfC/B?#678D-tHHQ+Hsi" inline="true">
+              <mutation items="2"/>
+              <value name="ADD0">
+                <block type="GLIFTEK_v3d_Plugins_Lens_Flare_Deluxe/GLIFTEK_LENSFLARE_Lens_Flare_Deluxe_Rays_Settings" id=";o;2Y*QIu6()x3CXzjNS">
+                  <field name="nameInput">shimmer_1</field>
+                  <field name="symmetricalCheckbox">FALSE</field>
+                  <field name="color">#ff6600</field>
+                  <value name="rays">
+                    <shadow type="math_number" id="kY-YcvP8dp7-`62Cd8H)">
+                      <field name="NUM">32</field>
+                    </shadow>
+                  </value>
+                  <value name="rayWidth">
+                    <shadow type="math_number" id="H~:nTlJWSnopZB=#R_BK">
+                      <field name="NUM">1</field>
+                    </shadow>
+                  </value>
+                  <value name="raySharpness">
+                    <shadow type="math_number" id="EXu/!Wa)!=drfHlq8:8k">
+                      <field name="NUM">3</field>
+                    </shadow>
+                  </value>
+                  <value name="randomSeed">
+                    <shadow type="math_number" id="S%S1eF}o54@($%`jrvke">
+                      <field name="NUM">2.5</field>
+                    </shadow>
+                  </value>
+                  <value name="rotate">
+                    <shadow type="math_number" id="B^?l3plJ#k(Pl7vVA[5~">
+                      <field name="NUM">23</field>
+                    </shadow>
+                  </value>
+                  <value name="feBlur">
+                    <shadow type="math_number" id=";eZknTp4E`Hp9?#5$MCi">
+                      <field name="NUM">0</field>
+                    </shadow>
+                  </value>
+                  <value name="opacity">
+                    <shadow type="math_number" id="v4eBbk=h3?ebLhV2,akN">
+                      <field name="NUM">0.8</field>
+                    </shadow>
+                  </value>
+                  <value name="size">
+                    <shadow type="math_number" id="8cj(2pz7V;CI$|@=-D4Z">
+                      <field name="NUM">6000</field>
+                    </shadow>
+                  </value>
+                  <value name="distance">
+                    <shadow type="math_number" id="W4#Zo.`tL!]^jx}/n80p">
+                      <field name="NUM">0.002</field>
+                    </shadow>
+                  </value>
+                </block>
+              </value>
+              <value name="ADD1">
+                <block type="GLIFTEK_v3d_Plugins_Lens_Flare_Deluxe/GLIFTEK_LENSFLARE_Lens_Flare_Deluxe_Rays_Settings" id="UQVP|VeGg#ygovM=60e}">
+                  <field name="nameInput">shimmer_2</field>
+                  <field name="symmetricalCheckbox">FALSE</field>
+                  <field name="color">#993300</field>
+                  <value name="rays">
+                    <shadow type="math_number" id="*/Ks{TK/1gN7LwcBi(98">
+                      <field name="NUM">32</field>
+                    </shadow>
+                  </value>
+                  <value name="rayWidth">
+                    <shadow type="math_number" id="[;OgT9uPRTi=0/|u!aYe">
+                      <field name="NUM">5</field>
+                    </shadow>
+                  </value>
+                  <value name="raySharpness">
+                    <shadow type="math_number" id="a7Fsx{GVpa_ly;U`+P.Y">
+                      <field name="NUM">3</field>
+                    </shadow>
+                  </value>
+                  <value name="randomSeed">
+                    <shadow type="math_number" id="TmlHHATIMkNlZs~36BIe">
+                      <field name="NUM">8</field>
+                    </shadow>
+                  </value>
+                  <value name="rotate">
+                    <shadow type="math_number" id="0Ci8Bx+|2e!gAyyr:OV:">
+                      <field name="NUM">45</field>
+                    </shadow>
+                  </value>
+                  <value name="feBlur">
+                    <shadow type="math_number" id="CEG^imchkn@ZU,)24rA6">
+                      <field name="NUM">0</field>
+                    </shadow>
+                  </value>
+                  <value name="opacity">
+                    <shadow type="math_number" id="$fK@pcr4{Wi,L2X4lB9a">
+                      <field name="NUM">0.8</field>
+                    </shadow>
+                  </value>
+                  <value name="size">
+                    <shadow type="math_number" id="5^ycr]$p4rkWB*2GP^|x">
+                      <field name="NUM">2400</field>
+                    </shadow>
+                  </value>
+                  <value name="distance">
+                    <shadow type="math_number" id="%!$Q]OhHb9AknMZxxMIf">
+                      <field name="NUM">0.002</field>
+                    </shadow>
+                  </value>
+                </block>
+              </value>
+            </block>
+          </value>
+        </block>
+      </statement>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="procedures_defnoreturn" id="wtbt#,#jI-q-EXiki;=L" x="3270" y="1590">
+      <field name="NAME">INIT_BOKEH_SETTINGS_3</field>
+      <comment pinned="false" h="80" w="160">Describe this function...</comment>
+      <statement name="STACK">
+        <block type="variables_set" id="x!*#*4E}u}K}rXHN__Br">
+          <field name="VAR" id="c`pujQB:vY;#4UA_hPL~">BOKEH_3</field>
+          <value name="VALUE">
+            <block type="lists_create_with" id="JU]JM@5/R7O=`jR(VA83">
+              <mutation items="2"/>
+              <value name="ADD0">
+                <block type="GLIFTEK_v3d_Plugins_Lens_Flare_Deluxe/GLIFTEK_LENSFLARE_Lens_Flare_Deluxe_Bokeh_Settings" id="JTdcofAX!-i(?Xz(AZOY">
+                  <field name="shapeDropdown">BOKEH_ellipse</field>
+                  <field name="color">#ffff99</field>
+                  <value name="rotate">
+                    <shadow type="math_number" id="woKYWrsO=7Y}(G7bJ[4Y">
+                      <field name="NUM">0</field>
+                    </shadow>
+                  </value>
+                  <value name="feBlur">
+                    <shadow type="math_number" id="+(v/$ET?euG?~gJ+=$}G">
+                      <field name="NUM">0.2</field>
+                    </shadow>
+                  </value>
+                  <value name="opacity">
+                    <shadow type="math_number" id="1A_JZ,=}.EO7J6C.0C+d">
+                      <field name="NUM">0.5</field>
+                    </shadow>
+                  </value>
+                  <value name="size">
+                    <shadow type="math_number" id="3MxI:^RP/tGeFE;;!`El">
+                      <field name="NUM">1</field>
+                    </shadow>
+                  </value>
+                  <value name="distance">
+                    <shadow type="math_number" id="26l?6HAkO:9g%TQy^**O">
+                      <field name="NUM">0.9</field>
+                    </shadow>
+                  </value>
+                </block>
+              </value>
+              <value name="ADD1">
+                <block type="GLIFTEK_v3d_Plugins_Lens_Flare_Deluxe/GLIFTEK_LENSFLARE_Lens_Flare_Deluxe_Bokeh_Settings" id="Rn@#-]s#HfccW{vbcgc_">
+                  <field name="shapeDropdown">BOKEH_ellipse</field>
+                  <field name="color">#ffff66</field>
+                  <value name="rotate">
+                    <shadow type="math_number" id="0i7z}U6el0Y;ou@MCfTi">
+                      <field name="NUM">0</field>
+                    </shadow>
+                  </value>
+                  <value name="feBlur">
+                    <shadow type="math_number" id="3sky2fF[NKyfS_b+mKqB">
+                      <field name="NUM">0.2</field>
+                    </shadow>
+                  </value>
+                  <value name="opacity">
+                    <shadow type="math_number" id="G!u]H3x%H`K)T^x!Xw[g">
+                      <field name="NUM">0.3</field>
+                    </shadow>
+                  </value>
+                  <value name="size">
+                    <shadow type="math_number" id="$W*Xg`^8tTg^Jov(V]K6">
+                      <field name="NUM">0.5</field>
+                    </shadow>
+                  </value>
+                  <value name="distance">
+                    <shadow type="math_number" id="cg[oeX[l]-.lN;3(Ofu+">
+                      <field name="NUM">0.5</field>
+                    </shadow>
+                  </value>
+                </block>
+              </value>
+            </block>
+          </value>
+        </block>
+      </statement>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="procedures_defnoreturn" id="yw5!Lumnn2DqW)c5t0/R" x="2370" y="2290">
+      <field name="NAME">INIT_GLOW_SETTINGS_3</field>
+      <comment pinned="false" h="80" w="160">Describe this function...</comment>
+      <statement name="STACK">
+        <block type="variables_set" id="K[@}dUL_bHoVHP;aT?;Y">
+          <field name="VAR" id="l/mJ@o?w}Y$(sQcyQ$Cs">GLOW_3</field>
+          <value name="VALUE">
+            <block type="lists_create_with" id="YQS.eDOvNO^Wex-g:GA]" inline="true">
+              <mutation items="2"/>
+              <value name="ADD0">
+                <block type="GLIFTEK_v3d_Plugins_Lens_Flare_Deluxe/GLIFTEK_LENSFLARE_Lens_Flare_Deluxe_Glow_Settings" id="*:9#/LOw@aEY$cZ`BrK^">
+                  <field name="nameInput">inner glow</field>
+                  <field name="shapeDropdown">GLOW_circle</field>
+                  <field name="color">#ffcc66</field>
+                  <value name="toneCenter">
+                    <shadow type="math_number" id="`J#Y==As?Q_9vVu4SD1z">
+                      <field name="NUM">0</field>
+                    </shadow>
+                  </value>
+                  <value name="toneInner">
+                    <shadow type="math_number" id="xm6=Gm,|?u.6;RdWIyGU">
+                      <field name="NUM">0.2</field>
+                    </shadow>
+                  </value>
+                  <value name="toneMid">
+                    <shadow type="math_number" id="|FX/tR7Zx:71y]-I:GF;">
+                      <field name="NUM">0.5</field>
+                    </shadow>
+                  </value>
+                  <value name="toneOuter">
+                    <shadow type="math_number" id="`o*Ws,+bg8z_8y$f/lYb">
+                      <field name="NUM">0.6</field>
+                    </shadow>
+                  </value>
+                  <value name="toneEdge">
+                    <shadow type="math_number" id="9lCR^W(fAy42*KJ#5m0~">
+                      <field name="NUM">0.7</field>
+                    </shadow>
+                  </value>
+                  <value name="rotate">
+                    <shadow type="math_number" id="z,2PpR$JEvCKZS`Wbh$5">
+                      <field name="NUM">0</field>
+                    </shadow>
+                  </value>
+                  <value name="feBlur">
+                    <shadow type="math_number" id="+H%5|+%88;B$jQn.ra$w">
+                      <field name="NUM">10</field>
+                    </shadow>
+                  </value>
+                  <value name="opacity">
+                    <shadow type="math_number" id="|NO:B[OklIsh{M1+Mb}d">
+                      <field name="NUM">0.9</field>
+                    </shadow>
+                  </value>
+                  <value name="size">
+                    <shadow type="math_number" id=".c{8Hdh8VqHd,Mx*DE|$">
+                      <field name="NUM">600</field>
+                    </shadow>
+                  </value>
+                  <value name="distance">
+                    <shadow type="math_number" id="?b-QsM{z:/#s@n`!NZRt">
+                      <field name="NUM">0</field>
+                    </shadow>
+                  </value>
+                </block>
+              </value>
+              <value name="ADD1">
+                <block type="GLIFTEK_v3d_Plugins_Lens_Flare_Deluxe/GLIFTEK_LENSFLARE_Lens_Flare_Deluxe_Glow_Settings" id="Ixh]aKU7(|0gL@G=Pl-t">
+                  <field name="nameInput">name</field>
+                  <field name="shapeDropdown">GLOW_circle</field>
+                  <field name="color">#cc9933</field>
+                  <value name="toneCenter">
+                    <shadow type="math_number" id="Qy3Scp)4Wumw(g6B[Ggc">
+                      <field name="NUM">0</field>
+                    </shadow>
+                  </value>
+                  <value name="toneInner">
+                    <shadow type="math_number" id="z}_=hSZ;z*?=[D{qb1zD">
+                      <field name="NUM">0.2</field>
+                    </shadow>
+                  </value>
+                  <value name="toneMid">
+                    <shadow type="math_number" id="N3Z9Sxh{t5CKMS%[(Vbg">
+                      <field name="NUM">0.7</field>
+                    </shadow>
+                  </value>
+                  <value name="toneOuter">
+                    <shadow type="math_number" id="oS*Nc+U1~p@qhQ6$-H!D">
+                      <field name="NUM">0.8</field>
+                    </shadow>
+                  </value>
+                  <value name="toneEdge">
+                    <shadow type="math_number" id="IARzHza^)U+NkKp]EX23">
+                      <field name="NUM">0.9</field>
+                    </shadow>
+                  </value>
+                  <value name="rotate">
+                    <shadow type="math_number" id="+sZ9X}.tEuotv=fFQoqU">
+                      <field name="NUM">0</field>
+                    </shadow>
+                  </value>
+                  <value name="feBlur">
+                    <shadow type="math_number" id="`nETs-vaPtY3PQuH;mKe">
+                      <field name="NUM">4</field>
+                    </shadow>
+                  </value>
+                  <value name="opacity">
+                    <shadow type="math_number" id="~fWR?fT,K4*L5Y:DSc]h">
+                      <field name="NUM">0.5</field>
+                    </shadow>
+                  </value>
+                  <value name="size">
+                    <shadow type="math_number" id="Q{SDZC74t46S@86+ZTe:">
+                      <field name="NUM">800</field>
+                    </shadow>
+                  </value>
+                  <value name="distance">
+                    <shadow type="math_number" id="Fvv#h`GNEgx+b4qN9adP">
+                      <field name="NUM">0</field>
+                    </shadow>
+                  </value>
+                </block>
+              </value>
+            </block>
+          </value>
+        </block>
+      </statement>
+    </block>
+  </tab>
+  <editorsettings viewport-x="580" viewport-y="54" viewport-w="300" viewport-h="223.5" viewport-hidden="false" toolbox-library-mode="false" toolbox-minimized-mode="false"></editorsettings>
+</xml>
