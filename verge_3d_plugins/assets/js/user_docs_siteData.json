@@ -51,59 +51,17 @@
 
         "title": "featured",
 
-        "intro": "<p font-size='3rem'>[ GLIFTEK ] Plugin Packs are collections of convenient visual coding blocks for the<a href='https://soft8soft.com' target='_blank' rel='noreferrer noopener'> Verge 3D</a> web graphics authoring application.</br />  These will be up for sale soon.<br />Featured here are the following:",
+        "intro": "<p font-size='3rem'>[ GLIFTEK ] Plugin Packs are collections of convenient visual coding blocks<br> for the<a href='https://soft8soft.com' target='_blank' rel='noreferrer noopener'> Verge 3D</a> web graphics authoring application.<br>Featured here are the following:",
 
         "demo": false,
 
         "demoText": "",
 
         "plugins": [
-            "Bounding_Boxes",
-            "Helpers",
-            "Objects"
+            "Lens_Flare_Deluxe_Store"
         ],
 
-        "Bounding_Boxes": {
-
-            "pluginWidth": "100%","exampleWidth": "23rem",
-
-            "puzzleText": "consists of the puzzles<br />'Create Bounding Box', 'Update Bounding Box', 'Bounding Box Collision Sensor', 'Get Bounding Box',<br /> 'Get Bounding Box Collision State', & 'Get Touching Object'. ",
-
-            "exampleText": "",
-
-            "consoleText": "",
-
-            "extraText": "",
-
-            "mainText": " ",
-
-            "customHTML": "",
-
-            "portedURL": ""
-        },
-
-
-        "Helpers": {
-
-            "pluginWidth": "100%","exampleWidth": "23rem",
-
-            "puzzleText": "consists of the puzzles:<br />'Grid Helper', 'Polar Grid Helper', 'Arrow Helper', & 'Axes Helper'. ",
-
-            "exampleText": "",
-
-            "consoleText": "",
-
-            "extraText": "",
-
-            "mainText": " ",
-
-            "customHTML": "",
-
-            "portedURL": ""
-        },
-
-
-        "Objects": {
+        "Lens_Flare_Deluxe": {
 
             "pluginWidth": "100%","exampleWidth": "23rem",
 

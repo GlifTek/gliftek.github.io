@@ -742,7 +742,7 @@ function set_nav_HTML()
   console.log('LIST_allPluginPacks.length',LIST_allPluginPacks.length);
 
   // SET MENU ITEMS
-  const LIST_nav_firstHalf = LIST_allPluginPacks.slice(0, 2) // 11 is objects
+  const LIST_nav_firstHalf = LIST_allPluginPacks.slice(1, 2) // 11 is objects
   console.log('LIST_nav_firstHalf',LIST_nav_firstHalf);
 
 
@@ -1307,39 +1307,45 @@ function footer_HTML()
 
 function set_footer_HTML()
 {
+
+
+//   <section>
+//   <header class="major">
+//     <span class="date"><i>Contact GlifTek</i></span>
+//   </header>
+  
+//   <form method="post" action="#">
+//     <div class="fields">
+//       <div class="field">
+//         <label for="name">Name</label>
+//         <input type="text" name="name" id="name" />
+//       </div>
+//       <div class="field">
+//         <label for="email">Email</label>
+//         <input type="text" name="email" id="email" />
+//       </div>
+//       <div class="field">
+//         <label for="message">Message</label>
+//         <textarea name="message" id="message" rows="3"></textarea>
+//       </div>
+//     </div>
+//     <ul class="actions">
+//       <li><input type="submit" value="Send Message" /></li>
+//     </ul>
+//   </form>
+// </section>
+
+
   let result =
   `<footer id="footer">
-  <section>
 
-    <header class="major">
-      <span class="date"><i>Contact GlifTek</i></span>
-    </header>
-    
-    <form method="post" action="#">
-      <div class="fields">
-        <div class="field">
-          <label for="name">Name</label>
-          <input type="text" name="name" id="name" />
-        </div>
-        <div class="field">
-          <label for="email">Email</label>
-          <input type="text" name="email" id="email" />
-        </div>
-        <div class="field">
-          <label for="message">Message</label>
-          <textarea name="message" id="message" rows="3"></textarea>
-        </div>
-      </div>
-      <ul class="actions">
-        <li><input type="submit" value="Send Message" /></li>
-      </ul>
-    </form>
-  </section>
+
+
 
   <section class="split contact">
     <section>
       <h3>Email</h3>
-      <p><a href="#">${gliftek_contactInfo.email}</a></p>
+      <p><a href="mailto:${gliftek_contactInfo.email}">${gliftek_contactInfo.email}</a></p>
     </section>
 
     <section>
