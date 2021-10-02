@@ -321,12 +321,17 @@ window.menuHeaderFooter =
 `<ul class="icons">
 <li><a href="${gliftek_contactInfo.discordVerge3D}" target="_blank" rel="noreferrer noopener" class="icon brands alt fa-discord"><span class="label">Discord</span></a></li>
 <li><a href="${gliftek_contactInfo.slackVerge3D}" target="_blank" rel="noreferrer noopener" class="icon brands alt fa-slack"><span class="label">Slack</span></a></li>
-<li><a href="${gliftek_contactInfo.youtube}" target="_blank" rel="noreferrer noopener" class="icon brands alt fa-youtube"><span class="label">YouTube</span></a></li>
-<li><a href="${gliftek_contactInfo.facebook}" target="_blank" rel="noreferrer noopener" class="icon brands alt fa-facebook-f"><span class="label">Facebook</span></a></li>
-<li><a href="${gliftek_contactInfo.instagram}" target="_blank" rel="noreferrer noopener" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li>
-<li><a href="${gliftek_contactInfo.twitter}" class="icon brands alt fa-twitter"><span class="label">Twitter</span></a></li> 
-</ul>
 `;
+
+// `<ul class="icons">
+// <li><a href="${gliftek_contactInfo.discordVerge3D}" target="_blank" rel="noreferrer noopener" class="icon brands alt fa-discord"><span class="label">Discord</span></a></li>
+// <li><a href="${gliftek_contactInfo.slackVerge3D}" target="_blank" rel="noreferrer noopener" class="icon brands alt fa-slack"><span class="label">Slack</span></a></li>
+// <li><a href="${gliftek_contactInfo.youtube}" target="_blank" rel="noreferrer noopener" class="icon brands alt fa-youtube"><span class="label">YouTube</span></a></li>
+// <li><a href="${gliftek_contactInfo.facebook}" target="_blank" rel="noreferrer noopener" class="icon brands alt fa-facebook-f"><span class="label">Facebook</span></a></li>
+// <li><a href="${gliftek_contactInfo.instagram}" target="_blank" rel="noreferrer noopener" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li>
+// <li><a href="${gliftek_contactInfo.twitter}" class="icon brands alt fa-twitter"><span class="label">Twitter</span></a></li> 
+// </ul>
+// `;
 
 // <li><a href="${gliftek_contactInfo.github}" target="_blank" rel="noreferrer noopener" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li> 
 
