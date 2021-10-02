@@ -736,7 +736,8 @@ function set_nav_HTML()
   
   console.log('LIST_allPluginPacks.length',LIST_allPluginPacks.length);
 
-  const LIST_nav_firstHalf = LIST_allPluginPacks.slice(0, 11)
+  // SET MENU ITEMS
+  const LIST_nav_firstHalf = LIST_allPluginPacks.slice(0, 2) // 11 is objects
   console.log('LIST_nav_firstHalf',LIST_nav_firstHalf);
 
 
