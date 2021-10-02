@@ -602,7 +602,7 @@
 
             "puzzleText": "compares bounding boxes for collisions and intersections between them without the need for a physics engine.",
 
-            "exampleText": "For best results, use in the 'while moving: do' area of the 'When Moved' event puzzle.",
+            "exampleText": "Using this block in the 'move: do' area of the 'When Dragged' event puzzle.",
 
             "consoleText": "",
 
@@ -711,7 +711,7 @@
 
             "pluginWidth": "20rem", "exampleWidth": "23rem",
 
-            "puzzleText": "creates a Lens Flare Object with three optional effects: Rays, Glow and Bokeh. (link these)",
+            "puzzleText": "creates a Lens Flare Object with three optional effects: Rays, Glow and Bokeh.",
 
             "exampleText": "Each of these effects are found within their own corresponding 'Settings' puzzles with a set of customizable options (shown further below). ",
 
@@ -881,7 +881,7 @@
 
         "title": "objects",
 
-        "intro": ": cloning objects in Verge3D is avaliable using the clone puzzle.  However, creating deep copies of objects and their corresponding materials and textures has not been available as an option.  These pluigns allow for detailed reproductions of individual objects or groups of objects, each with unique properties.",
+        "intro": ": Cloning objects in Verge3D is available using the clone puzzle. However, creating deep copies of objects and their corresponding materials and textures has not been available as an option. These plugins allow for detailed reproductions of individual objects or groups of objects, each with unique properties.",
 
         "demo": true,
 
