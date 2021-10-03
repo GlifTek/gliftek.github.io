@@ -3,6 +3,9 @@
 //________________________________________________________________________________
 //  SET GLOBALS
 
+// mute console logging
+// console.log = function() {}
+
 set_Globals();
 
 function set_Globals()
@@ -126,6 +129,10 @@ function parseJSON(siteData_File)
 
   window.imagePrefix = gliftek_pluginPacks.imagePrefix;
   console.log('imagePrefix:',imagePrefix);
+
+  window.demoText = pluginPack.demoText;
+  console.log('demoText:',demoText);
+  
 
   make_ALL_LISTS( );
 
@@ -274,21 +281,9 @@ function setstyleVar()
 
   }
 
-
   `
   return result;
 }
-// @media screen and (max-width: 980px) {
-
-
-  // //   set pluginWidth_mobile size
-  // function pluginWidth_mobile_CSS()
-  // {
-  //   result = 
-  //   `
-  //   `;
-  // }
-
 
 
 
@@ -322,15 +317,25 @@ function makeALL_OF_ALLPageImages()
 
 function make_site_HTML()
 {
-
-  window.menuHeaderFooter =
+window.menuHeaderFooter =
 `<ul class="icons">
-<li><a href="${gliftek_contactInfo.discordVerge3D}" class="icon brands alt fa-discord"><span class="label">Discord</span></a></li>        
-<li><a href="${gliftek_contactInfo.facebook}" class="icon brands alt fa-facebook-f"><span class="label">Facebook</span></a></li>
-<li><a href="${gliftek_contactInfo.instagram}" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li>
-<li><a href="${gliftek_contactInfo.twitter}" class="icon brands alt fa-twitter"><span class="label">Twitter</span></a></li>
-<li><a href="${gliftek_contactInfo.github}" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>    
-</ul>`;
+<li><a href="${gliftek_contactInfo.discordVerge3D}" target="_blank" rel="noreferrer noopener" class="icon brands alt fa-discord"><span class="label">Discord</span></a></li>
+<li><a href="${gliftek_contactInfo.slackVerge3D}" target="_blank" rel="noreferrer noopener" class="icon brands alt fa-slack"><span class="label">Slack</span></a></li>
+`;
+
+// `<ul class="icons">
+// <li><a href="${gliftek_contactInfo.discordVerge3D}" target="_blank" rel="noreferrer noopener" class="icon brands alt fa-discord"><span class="label">Discord</span></a></li>
+// <li><a href="${gliftek_contactInfo.slackVerge3D}" target="_blank" rel="noreferrer noopener" class="icon brands alt fa-slack"><span class="label">Slack</span></a></li>
+// <li><a href="${gliftek_contactInfo.youtube}" target="_blank" rel="noreferrer noopener" class="icon brands alt fa-youtube"><span class="label">YouTube</span></a></li>
+// <li><a href="${gliftek_contactInfo.facebook}" target="_blank" rel="noreferrer noopener" class="icon brands alt fa-facebook-f"><span class="label">Facebook</span></a></li>
+// <li><a href="${gliftek_contactInfo.instagram}" target="_blank" rel="noreferrer noopener" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li>
+// <li><a href="${gliftek_contactInfo.twitter}" class="icon brands alt fa-twitter"><span class="label">Twitter</span></a></li> 
+// </ul>
+// `;
+
+// <li><a href="${gliftek_contactInfo.github}" target="_blank" rel="noreferrer noopener" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li> 
+
+
 
   title_HTML();
 
@@ -340,7 +345,15 @@ function make_site_HTML()
 
   storeSmall_HTML();
 
+
+
   intro_HTML();
+
+  demo_HTML();
+
+  tableOfContents_HTML();
+
+
 
   make_All_post_HTML();
 
@@ -349,7 +362,6 @@ function make_site_HTML()
   footer_HTML();
 
   copyright_HTML();
-
 
   loadMainJS_navPanel();
 
@@ -712,6 +724,7 @@ function header_HTML(pluginName)
     headerDiv.innerHTML = `<header id="header">
     <a href="user_docs_${pluginName}.html" class="logo">[ ${pluginPack_title_UpperCase} ]</a>
     </header>`;
+
 };
 
 
@@ -722,36 +735,30 @@ function nav_HTML()
 };
 
 function set_nav_HTML()
-// loop to get all plugins from JSON and CAPStitles also remove "user_docs" 
-// make link be one page with variable "?var=value" "?page=pageName"
-// to fit so many, make dropdown instead of topBar menu?
 {
 
   console.log('LIST_allPluginPacks:',LIST_allPluginPacks);
   
   console.log('LIST_allPluginPacks.length',LIST_allPluginPacks.length);
 
-  const LIST_allPluginPacks_half = Math.ceil(LIST_allPluginPacks.length / 2);    
-  console.log('LIST_allPluginPacks_half',LIST_allPluginPacks_half);
-
-  const LIST_nav_firstHalf = LIST_allPluginPacks.slice(0, LIST_allPluginPacks_half)
+  // SET MENU ITEMS
+  const LIST_nav_firstHalf = LIST_allPluginPacks.slice(1, 3) // 11 is objects
   console.log('LIST_nav_firstHalf',LIST_nav_firstHalf);
-
-  const LIST_nav_secondHalf = LIST_allPluginPacks.slice(-LIST_allPluginPacks_half)
-  console.log('LIST_nav_secondHalf',LIST_nav_secondHalf);
 
 
 
   function make_Nav()
   {
-    
+
 
     let navMenuList = [];
 
-    // for( let i = 0; i < (  ( LIST_nav_firstHalf.length - ( LIST_nav_firstHalf.length / 2 )  )  ); i++ )
-    for( let i = 0; i < LIST_allPluginPacks.length; i++ )
+
+    for( let i = 0; i < LIST_nav_firstHalf.length; i++ )
     {
-      let item = LIST_allPluginPacks[i];
+      let item = LIST_nav_firstHalf[i];
+
+      
 
       let navItemClass;
 
@@ -784,7 +791,6 @@ function set_nav_HTML()
   {
     let navMenuList_1 = [];
 
-    // for( let i = 0; i < (  ( LIST_nav_firstHalf.length - ( LIST_nav_firstHalf.length / 2 )  )  ); i++ )
     for( let i = 0; i < LIST_nav_firstHalf.length; i++ )
     {
       let item = LIST_nav_firstHalf[i];
@@ -812,68 +818,10 @@ function set_nav_HTML()
   }
 
 
-  function make_Nav2()
-  {
-      let navMenuList_2  = [];
-
-      for( let i = 0; i < LIST_nav_secondHalf.length; i++ )
-      {
-        let item = LIST_nav_secondHalf[i];
-    
-        let navItemClass;
-    
-    
-        if ( item == page )
-        {
-          navItemClass = 'active';
-        }
-        else
-        {
-          navItemClass = '';
-        }
-    
-        let navMenuItem = 
-        `<li class = '${navItemClass}'><a href="user_docs.html?page=${item}">${item}</a></li>`;
-    
-        navMenuList_2.push(navMenuItem);
-
-        
-
-      };
-
-      return navMenuList_2;
-
-  }
-
-
-  // for( let i = 0; i < (  ( LIST_allPluginPacks.length - ( LIST_allPluginPacks.length / 2 )  )  ); i++ )
-  // {
-  //   let item = LIST_allPluginPacks[i];
-
-  //   let navItemClass;
-
-
-  //   if ( item == page )
-  //   {
-  //     navItemClass = 'active';
-  //   }
-  //   else
-  //   {
-  //     navItemClass = '';
-  //   }
-
-  //   let navMenuItem = 
-  //   `<li class = '${navItemClass}'><a href="user_docs.html?page=${item}">${item}</a></li>`;
-
-  //   navMenuList_1.push(navMenuItem);
-
-
-  // make_Nav1();
-  // make_Nav2();
-
 
   let result =
 
+  
   `<ul class="links">
     ${make_Nav().join('')}   
   </ul>
@@ -881,55 +829,146 @@ function set_nav_HTML()
 
   return result;
 
-
-
-  // let result =
-
-  // `<ul class="links">
-  //   ${make_Nav1().join('')}   
-  // </ul>
-  // <br />
-  // <ul class="links">
-  //   ${make_Nav2().join('')}   
-  // </ul>
-
-  // ${menuHeaderFooter}`;
-
-  // return result;
-
-
-
-
-
-  // let result =
-
-  // `<ul class="links">
-  //   ${navMenuList_1.join('')}   
-  // </ul>
-
-  // <ul class="links">
-  //   ${navMenuList_2.join('')}   
-  // </ul>
-
-  // ${menuHeaderFooter}`;
-
-  // return result;
-};
+};  //  END NAVS
 
 
 function intro_HTML()
 {
-  // let intro_HTML_Var = set_intro_HTML();
-  // let intro_HTML_Div = document.createElement('div');
-  // intro_HTML_Div.id = 'intro_HTML_Div';   
-  // intro_HTML_Div.innerHTML = intro_HTML_Var;
-
   let introDiv = document.getElementById('introDiv');
   introDiv.innerHTML = set_intro_HTML();
-  // introDiv.appendChild( intro_HTML_Div );
 }
 
 function set_intro_HTML()
+{
+
+
+  let pluginNameandIntro, userDocumentationOrNot;
+
+  if ( page == 'featured' )
+  {
+    pluginNameandIntro = pluginPack.intro;
+    userDocumentationOrNot = 'Plugin Packs'
+  }
+
+
+  else if ( page !== 'featured' )
+  {    
+    userDocumentationOrNot = 'User Documentation';
+    pluginNameandIntro = `The [ ${pluginPack_title_UpperCase} ] Plugin Pack ${pluginPack.intro}`;    
+  }
+
+    let result =
+    `<div style="text-align: center; font-size: 20;">${menuHeaderFooter}</div>
+    <header class="major" style='font-style: italic'>
+    <span class="date">${userDocumentationOrNot}</span>
+    ${pluginNameandIntro}<br>
+    </header>
+    
+    `;
+
+    return result;
+
+
+};
+
+
+
+function demo_HTML()
+{
+  let demoDiv = document.getElementById('demoDiv');
+  demoDiv.innerHTML = set_demo_HTML();
+}
+
+function set_demo_HTML()
+{
+  let
+  demo,
+  iframeSrc,
+  iframeSrcURI,
+  pluginFolder,
+  pluginAddress,
+  pluginAddress2;
+
+  if ( pluginPack.demoText == 'undefined' ||  pluginPack.demoText == '' )
+  {
+    demoTextVar = ' ';
+  }
+  else if ( pluginPack.demoText !== '' )
+  {
+    demoTextVar =  pluginPack.demoText;
+  }
+
+
+  if ( pluginPack.demo !== true )
+  {
+    demo = '';
+  }
+  // if ( pluginPack.demo == false )
+  // {
+  //   // console.log('DEMO = FALSE!')
+  //   demo = ``;
+  // }
+
+  else if ( pluginPack.demo == true )
+  {
+  
+    pluginFolder = `GLIFTEK_Plugins_${pluginPack.title}`;
+    // console.log('pluginFolder:',pluginFolder);
+
+    pluginAddress = `./assets/demos/${pluginFolder}/${pluginFolder}.html`;
+    // console.log('pluginAddress:',pluginAddress);
+
+    demo = 
+    `<iframe src = "${pluginAddress}"
+    scrolling = "no"
+    border = "0"
+    frameborder = "0"
+    framespacing = "0"
+    allowfullscreen = "true"
+    style='display: block;
+    width: 100%;
+    height: 300px;
+    text-align: center;
+    display: block;
+
+    margin-left: auto;
+    margin-right: auto;
+
+    border-radius: 20px;
+    border: 2px solid cyan;
+    background-color:rgba(0,0,0,0.3);'>
+    </iframe>
+    `;
+
+  };
+
+    let result =
+    `</br>
+    <div id='verge3d_iframe_Div'
+    style='
+    display: block; 
+    float: center; 
+    text-align: center;
+    '>
+    ${demo}
+    
+    <p style="font-size: .7rem; text-align: center"><i>${demoTextVar}</i></p>
+    </div>   
+
+    `;
+    return result;
+
+};
+
+
+
+function tableOfContents_HTML()
+{
+  let tableOfContentsDiv = document.getElementById('tableOfContentsDiv');
+  tableOfContentsDiv.innerHTML = set_tableOfContents_HTML();
+};
+
+function set_tableOfContents_HTML()
 {
   let tableOfContents = [];
 
@@ -943,40 +982,35 @@ function set_intro_HTML()
 
     tableOfContents.push(tableItem);
 
-  }
+  };
+    
+    let result =
+    `
+    <header class="major" style='font-style: italic'>
+    <span class="date">Plugins:</span>
+    
+    <div styly='width: 100%'>
+    <div id= 'pageContentsListDiv'
+    style = '
+    text-align: center;
+    margin-left: 38%;
+    margin-right: auto;
+    width: 50%;
+    '>
 
-  let pluginNameandIntro, userDocumentationOrNot;
+    <ul style = ' text-align: left; '>  
+      ${tableOfContents.join('')}
+      </ul>
 
-  if ( page == 'featured' )
-  {
-    pluginNameandIntro = pluginPack.intro;
-    userDocumentationOrNot = 'Plugin Packs'
-  }
+      </div>
+      </div>
 
-  else if ( page !== 'featured' )
-  {    
-    pluginNameandIntro = `The [ ${pluginPack_title_UpperCase} ] Plugin Pack ${pluginPack.intro}`;
-    userDocumentationOrNot = 'User Documentation';
-  }
+    </header>
+    <hr>
+  `;
 
-
-
-  let result =
-  `<header class="major" style='font-style: italic'>
-  <span class="date">${userDocumentationOrNot}</span>
-  ${pluginNameandIntro}
-  </header>
-  <hr>
-  <div style='text-align: left; font-style: italic' >
-    <ul id = 'pageContentsList' >  
-    ${tableOfContents.join('')}
-    </ul>
-  </div>`;
-
-  return result;
-}
-
-
+    return result;
+};
 
 
 
@@ -1038,8 +1072,7 @@ function set_post_HTML( pluginName, pic )
   let consoleText = pluginPackEvaled.consoleText;
   let extraText = pluginPackEvaled.extraText;
   let customHTML = pluginPackEvaled.customHTML;
-
-
+  let portedURL = pluginPackEvaled.portedURL;
 
 
 
@@ -1071,7 +1104,7 @@ function set_post_HTML( pluginName, pic )
   {
     exampleHTML =
     `<p class="align-center">${exampleText}</p>
-    <p class="align-center">Click example to enlarge.</p>    
+    <!-- <p class="align-center">Click example to enlarge.</p> -->    
     <div id='${divExamplePic}' class='modal-content' style='width: 100%'></div><br />`;
   };
 
@@ -1090,7 +1123,8 @@ function set_post_HTML( pluginName, pic )
 
     consoleHTML =
     `<p class="align-center">${consoleText}</p>
-    <div id='${divConsolePic}' class='modal-content' style='width: 100%'></div><br />`;
+    <div id='${divConsolePic}' class='modal-content' style='width: 100%'></div>
+    `;
 
   };
 
@@ -1116,7 +1150,7 @@ function set_post_HTML( pluginName, pic )
     mainHTML = 
     `<ul class="actions special">
       <li>
-        <a href="https://gliftek.gumroad.com" 
+        <a href="https://store.gliftek.com" 
         target="_blank" rel="noreferrer noopener"
         class="button large">
         Buy Now
@@ -1142,42 +1176,64 @@ function set_post_HTML( pluginName, pic )
 
     extraHTML =
     `<p class="align-center">${extraText}</p>
-    <div id='${divExtraPic}' class='modal-content' style='width: 100%'></div><br />`;
+    <div id='${divExtraPic}' class='modal-content' style='width: 100%'></div>`;
 
   };
 
 
 
+  let portedHTML;
 
+  if ( portedURL == '' || portedURL == 'undefined' )
+  {
+    portedHTML = '';
+  }
+  else if ( portedURL !== '' || portedURL !== 'undefined' )
+  {
+    // portedHTML =
+    // `<p class="align-center" style="font-size: 8em">Ported to Verge3D by GlifTek under the MIT license from: <br><a href = '${portedURL}' target='blank' rel='noreferrer noopener'>${portedURL}</a></p>`;
+    portedHTML =
+    `<p style="font-size: 14px; text-align: center"><i>Ported to Verge3D by GlifTek under MIT or Apache license from: <br><a href = '${portedURL}' target='blank' rel='noreferrer noopener'>${portedURL}</a></i></p>`;
+  
+  }; 
+
+
+//<div style="width: 100%; height: 1px; background: #ffffff;"></div>
 
   let result =
-  `<section class="post" >
+  `
+  <section class="post" >
 
-    <br />
 
     <div class="align-center" >
 
       <h2><a id="${pluginName}" href="#${pluginName}">[ ${pluginName_UpperCase} ]</a></h2>
-
+      </br>
+      <i>
       ${puzzleHTML}
 
       ${exampleHTML}
 
+
       ${consoleHTML}
+
 
       ${extraHTML}
 
       ${customHTML}
-
+    
       ${mainHTML}
 
-      <div style="width: 100%; height: 1px; background: #ffffff;"></div>
-
-      <br />
+      ${portedHTML}
+        
+      
+      <hr>
+      <br>
 
     </div>
 
-  </section>`;
+  </section>
+  `;
 
   return result;
 };
@@ -1188,9 +1244,12 @@ function set_post_HTML( pluginName, pic )
 function storeSmall_HTML()
 {
   let storeSmallDiv = document.getElementById('storeSmallDiv');
-  storeSmallDiv.innerHTML = `<div class="align-center"><a href="${gliftek_contactInfo.gumroadStore}" target="_blank" rel="noreferrer noopener"class="button small">PURCHASE AT STORE</a></div><br />`;
+  storeSmallDiv.innerHTML = `
+  <br><div class="align-center"><a href="https://store.gliftek.com/l/${page}_plugins" target="_blank" rel="noreferrer noopener"class="button large">PURCHASE AT STORE</a></div>
+  <p style="font-size: .7rem; text-align: center"><i><br>*A portion of the proceeds from the sale of 'ported' plugin packs is donated to <a href = 'https://docs.github.com/en/sponsors/getting-started-with-github-sponsors/about-github-sponsors'  target='blank' rel='noreferrer noopener' >The Github Sponsors Matching Fund.</a></i></p>
+  </br></br>`;
 }
-
+//  gliftek_contactInfo.gumroadStore
 
 
 
@@ -1248,39 +1307,45 @@ function footer_HTML()
 
 function set_footer_HTML()
 {
+
+
+//   <section>
+//   <header class="major">
+//     <span class="date"><i>Contact GlifTek</i></span>
+//   </header>
+  
+//   <form method="post" action="#">
+//     <div class="fields">
+//       <div class="field">
+//         <label for="name">Name</label>
+//         <input type="text" name="name" id="name" />
+//       </div>
+//       <div class="field">
+//         <label for="email">Email</label>
+//         <input type="text" name="email" id="email" />
+//       </div>
+//       <div class="field">
+//         <label for="message">Message</label>
+//         <textarea name="message" id="message" rows="3"></textarea>
+//       </div>
+//     </div>
+//     <ul class="actions">
+//       <li><input type="submit" value="Send Message" /></li>
+//     </ul>
+//   </form>
+// </section>
+
+
   let result =
   `<footer id="footer">
-  <section>
 
-    <header class="major">
-      <span class="date"><i>Contact GlifTek</i></span>
-    </header>
-    
-    <form method="post" action="#">
-      <div class="fields">
-        <div class="field">
-          <label for="name">Name</label>
-          <input type="text" name="name" id="name" />
-        </div>
-        <div class="field">
-          <label for="email">Email</label>
-          <input type="text" name="email" id="email" />
-        </div>
-        <div class="field">
-          <label for="message">Message</label>
-          <textarea name="message" id="message" rows="3"></textarea>
-        </div>
-      </div>
-      <ul class="actions">
-        <li><input type="submit" value="Send Message" /></li>
-      </ul>
-    </form>
-  </section>
+
+
 
   <section class="split contact">
     <section>
       <h3>Email</h3>
-      <p><a href="#">${gliftek_contactInfo.email}</a></p>
+      <p><a href="mailto:${gliftek_contactInfo.email}">${gliftek_contactInfo.email}</a></p>
     </section>
 
     <section>
@@ -1568,18 +1633,18 @@ function loadMainJS_navPanel()  //  MENU part
         // Move nav content on breakpoint change.
           var $navContent = $nav.children();
   
-          breakpoints.on('>medium', function() {
+          // breakpoints.on('>medium', function() {
   
-            // NavPanel -> Nav.
-              $navContent.appendTo($nav);
+          //   // NavPanel -> Nav.
+          //     $navContent.appendTo($nav);
   
-            // Flip icon classes.
-              $nav.find('.icons, .icon')
-                .removeClass('alt');
+          //   // Flip icon classes.
+          //     $nav.find('.icons, .icon')
+          //       .removeClass('alt');
   
-          });
+          // });
   
-          breakpoints.on('<=medium', function() {
+          // breakpoints.on('<=medium', function() {
   
             // Nav -> NavPanel.
               $navContent.appendTo($navPanelInner);
@@ -1588,7 +1653,7 @@ function loadMainJS_navPanel()  //  MENU part
               $navPanelInner.find('.icons, .icon')
                 .addClass('alt');
   
-          });
+          // });
   
         // Hack: Disable transitions on WP.
           if (browser.os == 'wp'
