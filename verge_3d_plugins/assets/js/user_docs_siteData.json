@@ -1,1492 +1,1213 @@
 {"siteData": {
 
-"contactInfo": {
-
-    "email": "sales@gliftek.com",
-    "gumroadStore": "https://gliftek.gumroad.com/follow",
-    "store": "https://store.gliftek.com",
-    "slackVerge3D": "https://join.slack.com/t/verge3d/shared_invite/zt-v2pm0p4i-bN2nwe7m3LbitFuYwjSiew",
-    "twitter": "",
-    "youtube": "https://www.youtube.com/gliftek/",
-    "facebook": "https://www.facebook.com/glif.tek/",
-    "instagram": "https://www.instagram.com/GlifTek/",
-    "github": "https://github.com/GlifTek/",
-    "discordGliftek": "",
-    "discordVerge3D": "https://discord.gg/vGMAAED"
-},
-
-
-
-"pluginPacks": {
-
-    "imageDir": "./images/",
-    "imagePrefix": "GLIFTEK_plugins",
-
-    "allPluginPacks": [
-        "featured",
-        "lens_flare_deluxe",
-        "web_storage",
-        "world",
-        "csg",
-        "bounding_boxes",
-        "helpers",
-        "backgrounds",
-        "modal_window",
-        "utility",
-        "objects",
-
-        "import_export",
-        "right_click_menu",
-        "svg_loader",
-        "paperJS",
-        "geometry",            
-        "clipping planes",
-        "console",
-        "material"
-    ],
-
-
-
-    "featured": {
-
-        "title": "featured",
-
-        "intro": "<p font-size='3rem'>[ GLIFTEK ] Plugin Packs are collections of convenient visual coding blocks<br> for the<a href='https://soft8soft.com' target='_blank' rel='noreferrer noopener'> Verge 3D</a> web graphics authoring application.<br>Featured here are the following:",
-
-        "demo": false,
-
-        "demoText": "",
-
-        "plugins": [
-            "Lens_Flare_Deluxe_Store"
-        ],
-
-        "Lens_Flare_Deluxe": {
-
-            "pluginWidth": "100%","exampleWidth": "23rem",
-
-            "puzzleText": "consists of the puzzles:<br />'Copy Object And Material', 'Copy Material', 'Rename Object', 'Rename Material', 'Create Group', & 'Get Parent'.",
-
-            "exampleText": "",
-
-            "consoleText": "",
-
-            "extraText": "",
-
-            "mainText": " ",
-
-            "customHTML": "",
-
-            "portedURL": ""
-        }
-    },
-
-
-    "helpers": {
-
-        "title": "Helpers",
-
-        "intro": "is a collection of verge3D puzzle blocks that create 'helper' objects for visualizing position, size and orientation.  The helpers provided here show square and circular grids in 3D space.  Also included is a quad wireframe material for visualizing the geometric structure of any 3D object.",
-
-        "demo": true,
-
-        "demoText": "<i>Drag to navigate the demo above.<br>Select 'Next' to view next example.<br>Select center object to toggle it's wireframe mode.</i>",
-        
-
-        "plugins": [
-            "Quad_Wireframe",
-            "Quad_Wireframe_Toggle",
-            "Create_Infinite_Grid_Helper",
-            "Create_Grid_Helper",
-            "Create_Polar_Grid_Helper",
-            "Create_Arrow_Helper",
-            "Create_Axes_Helper"
-        ],
-
-        "Quad_Wireframe": {
-
-            "pluginWidth": "22rem","exampleWidth": "23rem",
-
-            "puzzleText": "produces a material for 3D objects that shows a grid made of quad (4-sided) polygons.  This type of material is desirable for showing a polygonal flow to the geometry.",
-
-            "exampleText": "This shader works off whatever UV map is supplied.  Special attention to the map's seams is reccomended.",
-
-            "consoleText": "",
-
-            "extraText": "",
-
-            "customHTML": "",
-        
-            "portedURL": "https://madebyevan.com/shaders/grid/"
-        },
-        
-
-        "Quad_Wireframe_Toggle": {
-
-            "pluginWidth": "22rem","exampleWidth": "23rem",
-
-            "puzzleText": "changes a Quad Wireframe Shader to be see-through or solid, given an object or list of objects.",
-
-            "exampleText": "Example:",
-
-            "consoleText": "",
-
-            "extraText": "",
-
-            "customHTML": "",
-
-            "portedURL": ""
-        },
-
-
-        "Create_Infinite_Grid_Helper": {
-
-            "pluginWidth": "22rem","exampleWidth": "40rem",
-
-            "puzzleText": "creates an Infinite Grid Helper object.  The Infinite Grid Helper is an object to define infinite grids. Grids are two-dimensional arrays of lines.",
-
-            "exampleText": "This is a convenient method of describing a three dimensional space when designing or displaying a 3D scene.  This grid helper expands in all directions infinitely.  A distance control is used to fade the farthest ends.",
-
-            "consoleText": "",
-
-            "extraText": "",
-
-            "customHTML": "",
-
-            "portedURL": ""
-        },
-
-
-        "Create_Grid_Helper": {
-
-            "pluginWidth": "22rem", "exampleWidth": "40rem",
-            
-            "puzzleText": "creates a Grid Helper object.  The GridHelper is an object to define grids.  Grids are two-dimensional arrays of lines.",
-
-            "exampleText": "This is a convenient method of describing a three dimensional space when designing or displaying 3D items.",
-
-            "consoleText": "",
-
-            "extraText": "",
-
-            "customHTML": "",
-
-            "portedURL": ""
-        },
-
-
-        "Create_Polar_Grid_Helper": {
-
-            "pluginWidth": "22rem", "exampleWidth": "40rem",
-            
-            "puzzleText": "creates a Polar Grid Helper object.  The PolarGridHelper is an object to define polar grids. Grids are two-dimensional arrays of lines.",
-
-            "exampleText": "Another method of describing a three dimensional space when designing or displaying 3D items, yet in a radial format.",
-
-            "consoleText": "",
-
-            "extraText": "",
-
-            "customHTML": "",
-
-            "portedURL": ""
-        },
-        
-
-        "Create_Arrow_Helper": {
-
-            "pluginWidth": "22rem", "exampleWidth": "40rem",
-            
-            "puzzleText": "creates an Arrow Helper object.  The ArrowHelper is a 3D arrow object for visualizing directions.",
-
-            "exampleText": "This object can be used for illustrating direction, decorating controls, and describing object axis orientation.",
-
-            "consoleText": "",
-
-            "extraText": "",
-
-            "customHTML": "",
-
-            "portedURL": ""
-        },
-
-
-        "Create_Axes_Helper": {
-
-            "pluginWidth": "22rem", "exampleWidth": "22rem",
-            
-            "puzzleText": "creates an Axes Helper object.  An axis object to visualize the 3 axes in a simple way.  The X axis is red. The Y axis is green. The Z axis is blue.",
-
-            "exampleText": "In displaying objects in 3D, this helper supplies a point of reference for the three dimensions of the world and the orientation of the axes used",
-
-            "consoleText": "",
-
-            "extraText": "",
-
-            "customHTML": "",
-
-            "portedURL": ""
-        }
+    "contactInfo": {
+
+        "email": "gliftekV3Dplugins@pm.me",
+        "gumroadStore": "https://gliftek.gumroad.com/follow",
+        "twitter": "",
+        "facebook": "https://www.facebook.com/glif.tek/",
+        "instagram": "https://www.instagram.com/GlifTek/",
+        "github": "https://github.com/GlifTek/",
+        "discordGliftek": "",
+        "discordVerge3D": "https://discord.gg/vGMAAED"
     },
 
 
 
-    "utility": {
+    "pluginPacks": {
 
-        "title": "Utility",
+        "imageDir": "./images/",
+        "imagePrefix": "GLIFTEK_plugins",
 
-        "intro": "is a selection of a dozen + puzzles that allow solutions for many varied and common smaller app development tasks such as database exporting, color format conversion, FPS stats, array (list) management , context menu disabling and alert messages.",
-
-        "demo": false,
-
-        "plugins": [
-            "Stats_Info_Box",
-            "Toggle_Boolean",
-            "Add_Zeros_Padding",
-            "Convert_To_RGBA",
-            "Export_CSV_File",
-            "Convert_To_CSV_Format",
-            "Call_Procedure_By_Name",
-            "Call_Procedure_By_Name_Output",
-            "Merge_Lists",
-            "List_Similar",
-            "Right_Click_Event",
-            "Context_Menu_Toggle",
-            "Alert_Message"
+        "allPluginPacks": [
+            "featured",
+            "lens_flare_deluxe",            
+            "world",
+            "csg",
+            "import_export",
+            "modal_window",
+            "web_storage",
+            "backgrounds",
+            "bounding_boxes",
+            "helpers",
+            "utility",
+            "objects",
+            "right_click_menu",
+            "svg_loader",
+            "paperJS",
+            "geometry",            
+            "clipping planes",
+            "console",
+            "material"
         ],
 
-        
-        "Stats_Info_Box": {
-
-            "pluginWidth": "23rem","exampleWidth": "23rem", "consoleWidth": "23rem",
 
 
-            "puzzleText": "provides a simple info box that will help you monitor your code performance.",
+        "featured": {
 
-            "exampleText": "Types of stats available:<br><ul><li>Frames rendered in the last second. The higher the number the better.</li><li>Milliseconds needed to render a frame. The lower the number the better.</li><li>MBytes of allocated memory. (Run Chrome with <code>--enable-precise-memory-info</code>)</li></ul>",
-            
-            "consoleText": "This is an easy replacemnt for the standard puzzle block arrangement of toggling a value:",
+            "title": "featured",
 
-            "extraText": "",
+            "intro": "<p font-size='3rem'>[ GLIFTEK ] Plugin Packs are collections of convenient visual coding puzzles for the<a href='https://soft8soft.com' target='_blank' rel='noreferrer noopener'> Verge 3D</a> web graphics authoring application.</br />  These will be up for sale soon.<br />Featured here are the following:",
 
-            "customHTML": "",
+            "plugins": [
+                "Bounding_Boxes",
+                "Helpers",
+                "Objects"
+            ],
 
-            "portedURL": ""
+            "Bounding_Boxes": {
+
+                "pluginWidth": "100%","exampleWidth": "30rem",
+
+                "puzzleText": "consists of the puzzles<br />'Create Bounding Box', 'Update Bounding Box', 'Bounding Box Collision Sensor', 'Get Bounding Box',<br /> 'Get Bounding Box Collision State', & 'Get Touching Object'. ",
+
+                "exampleText": "",
+
+                "consoleText": "",
+
+                "extraText": "",
+
+                "mainText": " ",
+
+                "customHTML": ""
+            },
+
+            "Helpers": {
+
+                "pluginWidth": "100%","exampleWidth": "30rem",
+
+                "puzzleText": "consists of the puzzles:<br />'Grid Helper', 'Polar Grid Helper', 'Arrow Helper', & 'Axes Helper'. ",
+
+                "exampleText": "",
+
+                "consoleText": "",
+
+                "extraText": "",
+
+                "mainText": " ",
+
+                "customHTML": ""
+            },
+
+            "Objects": {
+
+                "pluginWidth": "100%","exampleWidth": "30rem",
+
+                "puzzleText": "consists of the puzzles:<br />'Copy Object And Material', 'Copy Material', 'Rename Object', 'Rename Material', 'Create Group', & 'Get Parent'.",
+
+                "exampleText": "",
+
+                "consoleText": "",
+
+                "extraText": "",
+
+                "mainText": " ",
+
+                "customHTML": ""
+            }
+        },
+
+
+        "helpers": {
+
+            "title": "helpers",
+
+            "intro": "is a collection of puzzles that create 'helper' objects for visualizing position, size and orientation. The helpers provided here are:",
+
+            "plugins": [
+                "Create_Infinite_Grid_Helper",
+                "Create_Grid_Helper",
+                "Create_Polar_Grid_Helper",
+                "Create_Arrow_Helper",
+                "Create_Axes_Helper"
+            ],
+
+            "Create_Infinite_Grid_Helper": {
+
+                "pluginWidth": "22rem","exampleWidth": "40rem",
+
+                "puzzleText": "creates an Infinite Grid Helper object.  The Infinite GridHelper is an object to define infinite grids. Grids are two-dimensional arrays of lines.",
+
+                "exampleText": "This is a convenient method of describing a three dimensional space when designing or displaying a 3D scene.  This grid helper expands in all directions infinitely.  A distance control is used to fade the farthest ends.",
+
+                "consoleText": "",
+
+                "extraText": "",
+
+                "customHTML": ""
+            },
+
+            "Create_Grid_Helper": {
+
+                "pluginWidth": "22rem", "exampleWidth": "40rem",
+                
+                "puzzleText": "creates a Grid Helper object.  The GridHelper is an object to define grids.  Grids are two-dimensional arrays of lines.",
+
+                "exampleText": "This is a convenient method of describing a three dimensional space when designing or displaying 3D items.",
+
+                "consoleText": "",
+
+                "extraText": "",
+
+                "customHTML": ""
+            },
+
+            "Create_Polar_Grid_Helper": {
+
+                "pluginWidth": "22rem", "exampleWidth": "40rem",
+                
+                "puzzleText": "creates a Polar Grid Helper object.  The PolarGridHelper is an object to define polar grids. Grids are two-dimensional arrays of lines.",
+
+                "exampleText": "Another method of describing a three dimensional space when designing or displaying 3D items, yet in a radial format.",
+
+                "consoleText": "",
+
+                "extraText": "",
+
+                "customHTML": ""
+            },
+
+            "Create_Arrow_Helper": {
+
+                "pluginWidth": "22rem", "exampleWidth": "40rem",
+                
+                "puzzleText": "creates an Arrow Helper object.  The ArrowHelper is a 3D arrow object for visualizing directions.",
+
+                "exampleText": "This object can be used for illustrating direction, decorating controls, and describing object axis orientation.",
+
+                "consoleText": "",
+
+                "extraText": "",
+
+                "customHTML": ""
+            },
+
+            "Create_Axes_Helper": {
+
+                "pluginWidth": "22rem", "exampleWidth": "22rem",
+                
+                "puzzleText": "creates an Axes Helper object.  An axis object to visualize the 3 axes in a simple way.  The X axis is red. The Y axis is green. The Z axis is blue.",
+
+                "exampleText": "In displaying objects in 3D, this helper supplies a point of reference for the three dimensions of the world and the orientation of the axes used",
+
+                "consoleText": "",
+
+                "extraText": "",
+
+                "customHTML": ""
+            }
+        },
+
+
+
+        "utility": {
+
+            "title": "utility",
+    
+            "intro": "is a selection of puzzles that allow solutions for many varied common tasks. In this group you will find:",
+    
+            "plugins": [
+                "Add_Zeros_Padding",
+                "Convert_To_RGBA",
+                "Export_CSV_File",
+                "Convert_To_CSV_Format",
+                "Call_Procedure_By_Name",
+                "Call_Procedure_By_Name_Output",
+                "Merge_Lists",
+                "List_Similar",
+                "Right_Click_Event",
+                "Context_Menu_Toggle",
+                "Alert_Message"
+            ],
+    
+            "Add_Zeros_Padding": {
+
+                "pluginWidth": "22rem","exampleWidth": "30rem",
+    
+                "puzzleText": "formats a number to a 'Locale String', adding a padding of zeros determined by the 'digits' input amount.",
+
+                "exampleText": "When making many iterations of object names or text list items, it's often prefereable to have an ordered naming convention like a numbered suffix.  An easy method to achieve this is to use the plugin in a loop.",
+    
+                "consoleText": "Console Readout:",
+
+                "extraText": "",
+
+                "customHTML": ""
+
+            },
+
+            "Convert_To_RGBA": {
+
+                "pluginWidth": "22rem","exampleWidth": "25rem",
+    
+                "puzzleText": "given a color choice, CSS name, or hex value, returns an 'rgba' string in the format of 'rgba( 0, 0, 0, 0 )' where the last number is an alpha value from the puzzle's alpha input field.",
+    
+                "exampleText": "This puzzle solves the issue of needing an rgba value in certain circumstances.",
+    
+                "consoleText": "",
+    
+                "extraText": "",
+
+                "customHTML": ""
+            },
+
+            "Export_CSV_File": {
+
+                "pluginWidth": "25rem","exampleWidth": "20rem", "consoleWidth": "22rem", "extraWidth": "22rem",
+    
+                "puzzleText": "takes a list of lists (rows) and returns a generated Comma Separated Values File (CSV) for use in spreadsheet software.",
+    
+                "exampleText": "This can of course be edited, saved, and re-imported by using the default 'Read CSV' puzzle that comes with Verge3D.",
+    
+                "consoleText": "The plugin will produce a save file dialogue:",
+    
+                "extraText": "Which can be opened and edited with any spreadsheet software:",
+                
+                "customHTML": ""
+            },
+
+            "Convert_To_CSV_Format": {
+
+                "pluginWidth": "22rem","exampleWidth": "22rem", "consoleWidth": "22rem", "extraWidth": "25rem",
+    
+                "puzzleText": "returns a string in Comma Separated Value (CSV) format, given a list of lists (rows).",
+    
+                "exampleText": "This works in the same manner as the above 'Export CSV File' plugin but does not export a file, returning the CSV value to be used as raw data before being exported.",
+
+                "consoleText": "Console output:",
+
+                "extraText": "The data can then be downloaded using the native Verge3D 'download file' puzzle found in the HTML folder of the puzzles menu.",
+
+                "customHTML": ""
+
+            },
+
+            "Call_Procedure_By_Name": {
+
+                "pluginWidth": "22rem","exampleWidth": "23rem",
+
+                "puzzleText": "executes an already existing procedure when given it's name.",
+
+                "exampleText": "This can be useful when switching between iterations of similar or differently named procedures.  This can be done dynamically.",
+
+                "consoleText": "",
+
+                "extraText": "",
+
+                "customHTML": ""
+            },
+
+            "Call_Procedure_By_Name_Output": {
+
+                "pluginWidth": "22rem","exampleWidth": "25rem",
+    
+                "puzzleText": "executes an already existing procedure when given it's name.  Can recieve lists.",
+    
+                "exampleText": "This can be useful when switching between iterations of similar or differently named procedures.  This can be done dynamically.",
+    
+                "consoleText": "",
+    
+                "extraText": "",
+
+                "customHTML": ""
+            },
+
+            "Merge_Lists": {
+
+                "pluginWidth": "20rem","exampleWidth": "23rem", "consoleWidth": "15rem",
+    
+                "puzzleText": "returns a list consisting of the items from one or more lists.",
+    
+                "exampleText": "The [ LIST SIMILAR ] Plugin returns a list of all list items containing a specific string, given a list.",
+    
+                "consoleText": " ",
+    
+                "extraText": "",
+
+                "customHTML": ""
+            },
+
+            "List_Similar": {
+
+                "pluginWidth": "23rem","exampleWidth": "23rem", "consoleWidth": "23rem",
+
+                "puzzleText": "returns a list of all list items containing a specific string, given a list.",
+    
+                "exampleText": "___",
+    
+                "consoleText": " ",
+    
+                "extraText": "",
+
+                "customHTML": ""
+            },
+
+            "Right_Click_Event": {
+
+                "pluginWidth": "15rem","exampleWidth": "22rem", "consoleWidth": "23rem",
+    
+                "puzzleText": "executes desired functions upon any and all right-clicks on HTML elements.",
+    
+                "exampleText": "This plugin is also included in the [ GLIFTEK ] Plugins custom 'Right Click Menu' Plugin Pack.  This allows for activation of a custom right-click menu upon clicking HTML elements.",
+    
+                "consoleText": "",
+    
+                "extraText": "",
+
+                "customHTML": ""
+            },
+
+            "Context_Menu_Toggle": {
+
+                "pluginWidth": "18rem","exampleWidth": "25rem",
+    
+                "puzzleText": "disables or enables the browser's right-click 'context' menu.",
+    
+                "exampleText": "This is useful when applications need right mouse button interactivity and the browser pop up context menu is unwanted.",
+    
+                "consoleText": "This plugin is also included in the [ GLIFTEK ] Plugins custom 'Right Click Menu' Plugin Pack as it is necessary to disable the existing context menu in order to display a custom menu.",
+    
+                "extraText": "",
+
+                "customHTML": ""
+            },
+
+            "Alert_Message": {
+
+                "pluginWidth": "18rem","exampleWidth": "10rem", "consoleWidth": "5rem", "extraWidth": "22rem",
+    
+                "puzzleText": "outputs text to a popup 'alert' text window.",
+    
+                "exampleText": "",
+    
+                "consoleText": "",
+    
+                "extraText": "A browser popup alert message:",
+
+                "customHTML": ""
+            }
+        },
+
+
+
+
+        "bounding_boxes": {
+
+            "title": "bounding_boxes",
+
+            "intro": "The [ BOUNDING BOXES ] Plugin Pack is a",
+
+            "plugins": [
+                "Create_Bounding_Boxes",
+                "Update_Bounding_Box",
+                "Bounding_Box_Collision_Sensor",
+                "Get_Bounding_Box",
+                "Get_Bounding_Box_Collision_State",
+                "Get_Touching_Object"
+            ],
+
+            "Create_Bounding_Boxes": {
+
+                "pluginWidth": "25rem","exampleWidth": "50%",
+
+                "puzzleText": "creates a virtual 'Box3' cube shaped boundary around an object used for determining intersections with others of it's type.",
+
+                "exampleText": "An optional bounding box helper object can be used for visualizing the box's dimensions for testing and debugging.",
+
+                "consoleText": "",
+
+                "extraText": "",
+
+                "customHTML": ""
+            },
+
+            "Update_Bounding_Box": {
+
+                "pluginWidth": "25rem","exampleWidth": "50%",
+
+                "puzzleText": "This puzzle is needed to .",
+
+                "exampleText": "This puzzle allows users to make copies of objects, and customize the materials and textures independent of their source object.",
+
+                "consoleText": "",
+
+                "extraText": "",
+
+                "customHTML": ""
+            },
+
+            "Bounding_Box_Collision_Sensor": {
+
+                "pluginWidth": "25rem","exampleWidth": "50%",
+
+                "puzzleText": "compares bounding boxes for collisions and intersections between them without the need for a physics engine.",
+
+                "exampleText": "For best results, use in the While Moving: Do area of the When Moved event puzzle.",
+
+                "consoleText": "",
+
+                "extraText": "",
+
+                "customHTML": ""
+            },
+
+            "Get_Bounding_Box": {
+
+                "pluginWidth": "25rem","exampleWidth": "50%",
+
+                "puzzleText": "returns the Bounding Box of an Object.",
+
+                "exampleText": "returns the bounding box of a given object.",
+
+                "consoleText": "",
+
+                "extraText": "",
+
+                "customHTML": ""
+            },
+
+            "Get_Bounding_Box_Collision_State": {
+
+                "pluginWidth": "25rem","exampleWidth": "50%",
+
+                "puzzleText": "returns a boolean (true / false ) value for the current collision state of a Bounding Box.",
+
+                "exampleText": "returns a true / false boolean operator as to whether two bounding box's are touching / intersecting at any given time, given a moving object and object to compare it with.",
+
+                "consoleText": "",
+
+                "extraText": "",
+
+                "customHTML": ""
+            },
+
+            "Get_Touching_Object": {
+
+                "pluginWidth": "25rem","exampleWidth": "50%",
+
+                "puzzleText": "returns the object a Bounding Box is currently touching.",
+
+                "exampleText": "returns the name of an object whose bounding box is touching another bounding box",
+
+                "consoleText": "",
+
+                "extraText": "",
+
+                "customHTML": ""
+            }
 
         },
 
 
-        "Toggle_Boolean": {
 
-            "pluginWidth": "23rem","exampleWidth": "23rem",
 
-            "puzzleText": "toggles a user designated global boolean variable's changing value contained in one puzzle block.",
+        "lens_flare_deluxe": {
 
-            "exampleText": "This is convenient for switching between two values easily.",
+            "title": "lens_flare_deluxe",
 
-            "consoleText": "_",
+            "intro": "creates a 'Lens Flare' object with three optional effects:<br /> [ Rays ], [ Glow ], and [ Bokeh ].",
 
-            "extraText": "",
+            "plugins": [
+                "Lens_Flare_Deluxe",
+                "Rays_Settings",
+                "Glow_Settings",
+                "Bokeh_Settings"
+            ],
 
-            "customHTML": "",
+            "Lens_Flare_Deluxe": {
 
-            "portedURL": ""
+                "pluginWidth": "20rem", "exampleWidth": "23rem",
 
+                "puzzleText": "creates a Lens Flare Object with three optional effects: [ Rays ], [ Glow ], and [ Bokeh ]. (link these)",
+
+                "exampleText": "Each of these effects are found within their own corresponding 'Settings' puzzles with a set of customizable options (shown further below). ",
+
+                "consoleText": "The 'Settings' puzzles can be used singularly, or stacked into lists and then applied via variable puzzles.  Users can stack as many settings as desired to create detailed and controllable dynamic flare effects.  If inputs of any effects setting are left blank, default settings will be used.<br /><br />Purchasers of the Lens Flare Deluxe Plugin can check the pack's accompanied Verge3D project application files for examples like shown. Included are presets for exciting and vibrant examples of the customizable power this plugin provides!",
+
+                "extraText": "Usage of custom lens flares can span a wide range of cases:",
+
+                "customHTML": "<ul style='text-align: left'><li>Sun Lens Flares,</li><li>Sun Coronal Halo Effect,</li><li>Cinematic Anamorphic Streaks,</li><li>In-App Weapon Ignition Effects,</li><li>In-App Missile, Rocket Engine Effects,</li><li>In-App Explosion Effects,</li><li>Car Headlights,</li><li>Vehicle Lighting,</li><li>Flashlights,</li><li>Phone Camera Lights,</li><li>Camera Flasbulb Blooms,</li><li>Nebula, Galaxy and Stars Accents,</li><li>City Light Posts,</li><li>Lighthouse Lights,</li><li>Artistic Abstract Design Lighting,</li><li>Experimental Decorative Effects,</li></ul>"
+            },
+
+            "Rays_Settings": {
+
+                "pluginWidth": "20rem", "exampleWidth": "40%",
+
+                "puzzleText": "allows for control of multiple spreads of symmetrical or non-symmetrical rays of light from the center of the Lens Flare Object.",
+
+                "exampleText": "",
+
+                "consoleText": "",
+
+                "extraText": "Users can determine symmetry, ray count, ray width, ray sharpness, randomness of ray length, rotation, blur, opacity, size, distance, and color.  The following options are available:",
+
+                "customHTML": "<ul style='text-align: left'><li>Symmetry:<br />This designates whether the rays will be positioned symmetrically. If the 'ray count' input is an odd number while the 'Symmetrical' option is checked, the number of rays will be rounded up to the nearest integer resulting in an even number of rays.</li><br /><li>Ray Count:<br />This decides how many rays are produced in the group.<br /><br /></li><li>Ray Width:<br />This option changes the width of the rays.<br /><br /></li><li>Ray Sharpness:<br />Determines the sharpness of the ray. This needs to be adjusted as higher 'Ray Width' settings may broaden their gradient.<br /><br /></li><li>Random Length:<br />This option randomizes the group's rays' lengths. A number between 1 and 10 is allowed. The higher the number, the more variation in length. An input of 0 negates this option.<br /><br /></li><li>Rotation:<br />Rotates the entire group of rays based on degrees from 0 to 360.<br /><br /></li><li>Blur:<br />Sets the level of blur for the group of rays.<br /><br /></li><li>Opacity:<br />This changes the transparency of the group of rays.<br /><br /></li><li>Size:<br />The overall size of the entire group of rays<br /><br /></li><li>Distance:<br />The distance from the light to the camera. A value of 0 (nearest to light) to 1 (nearest to camera) is used. This option is convenient for ordering any stacked settings one may have.<br /><br /></li><li>Example:<br />Set a stack of of Rays puzzles setting their 'distance' between .01 to .05, a large background Glow at 0, and a strong small center Glow at .06, at the very front.<br /><br /></li><li>Color:<br />This designates the color of the rays group.<br /><br /></li><li>Users can determine ray width, ray length, and randomness of ray length.<br /></li></ul>"                
+            },
+
+            "Glow_Settings": {
+
+                "pluginWidth": "20rem", "exampleWidth": "40%",
+
+                "puzzleText": "controls a single or multiple radial gradients of tone starting from the center of the Lens Flare Object.",                
+                
+                "exampleText": "Users can designate gradient tone spacings via three control fields.  Rotation, blur, and opacity are also available.",
+
+                "consoleText": "",
+    
+                "extraText": "",
+
+                "customHTML": ""
+            },
+
+            "Bokeh_Settings": {
+
+                "pluginWidth": "20rem","exampleWidth": "40%",
+
+                "puzzleText": "creates bokeh style fragmented in-lens effects. A number of shapes are available to chose from.  Of such are: line, circle, triangle, square, pentagon, hexagon, heptagon, octagon, & nonagon polygon shapes.  Users can determine ray width, ray length, and randomness of ray length.",
+
+                "exampleText": "___",
+    
+                "consoleText": "",
+    
+                "extraText": "",
+
+                "customHTML": ""
+            }
         },
 
 
-        "Add_Zeros_Padding": {
 
-            "pluginWidth": "22rem","exampleWidth": "23rem",
 
-            "puzzleText": "formats a number to a 'Locale String', adding a padding of zeros determined by the 'digits' input amount.",
+        "backgrounds": {
 
-            "exampleText": "When making many iterations of object names or text list items, it's often prefereable to have an ordered naming convention like a numbered suffix.  An easy method to achieve this is to use the plugin in a loop.",
+            "title": "backgrounds",
+    
+            "intro": ":  Setting background images in Verge3D can always be accomlished by setting the background to transparent, and placing an image behind the v3d-container in your HTML. However, some cases call for an in-scene background texture which can be manipulated. These plugins allow for that.",
+    
+            "plugins": [
+                "Set_Background_Image",
+                "Generate_Gradient_Background",
+                "Fade_Screen",
+                "Screen_Vignette"
+            ],
+    
+            "Set_Background_Image": {
+    
+                "pluginWidth": "30rem", "exampleWidth": "30rem",
+                "pluginWidth_mobile": "30rem", "exampleWidth_mobile": "30rem",
 
-            "consoleText": "Console Readout:",
+                "puzzleText": "sets a custom static background image for the scene.  Using a still image for a background to your 3D scene can be a great tool for streamlining your product presentation.",
+    
+                "exampleText": "Often, all that's needed to make your 3D content more prominent, is a subtle touch like a custom still image.",
+    
+                "consoleText": "",
+    
+                "extraText": "",
 
-            "extraText": "",
+                "customHTML": ""
+            },
 
-            "customHTML": "",
+            "Generate_Gradient_Background": {
+    
+                "pluginWidth": "25rem","exampleWidth": "50%",
 
-            "portedURL": ""
+                "puzzleText": "creates a colored gradient static background.",
+    
+                "exampleText": "",
+    
+                "consoleText": "",
+    
+                "extraText": "This plugin provides 3 color and 3 offset options for generating a gradient background for your 3D scene.  The gradient can be either linear or radial.  Color 'HEX' values recieve hexadecimal '#f0f0f0' format color code.  These override color picker inputs.  To use color pickers, leave HEX fields blank.  Color 2 can be optionally disabled if a two-tone gradient is desired.",
 
+                "customHTML": "<img src='./images/backgrounds/Generate_Gradient_Background_example_linear.png' style='width:20rem'/><br /><br /><img src='./images/backgrounds/Generate_Gradient_Background_example_radial.png' style='width:20rem'/>"
+            },
+
+            "Fade_Screen": {
+    
+                "pluginWidth": "30rem","exampleWidth": "40%",
+
+                "puzzleText": "Fades the screen in or out from a solid color.",
+    
+                "exampleText": "",
+    
+                "consoleText": "",
+    
+                "extraText": "",
+
+                "customHTML": ""
+            },
+
+            "Screen_Vignette": {
+    
+                "pluginWidth": "30rem","exampleWidth": "40%",
+
+                "puzzleText": "To achieve a cinematic style 'vignette' effect, this creates a div with a radial gradient background with three stops: Center, Mid, and Outer, differing in opacity.  In the 'radius' field use percentages for a responsive gradient, and integers for an absolute size.  ie: '100%' will scale with different size screens, while '1024' will not, staying that size.",
+    
+                "exampleText": "___",
+    
+                "consoleText": "",
+    
+                "extraText": "",
+
+                "customHTML": ""
+            }
         },
 
 
-        "Convert_To_RGBA": {
 
-            "pluginWidth": "22rem","exampleWidth": "25rem",
 
-            "puzzleText": "given a color choice, CSS name, or hex value, returns an 'rgba' string in the format of 'rgba( 0, 0, 0, 0 )' where the last number is an alpha value from the puzzle's alpha input field.",
+        "objects": {
 
-            "exampleText": "This puzzle solves the issue of needing an rgba value in certain circumstances.",
+            "title": "objects",
+    
+            "intro": ": cloning objects in Verge3D is avaliable using the clone puzzle.  However, creating deep copies of objects and their corresponding materials and textures has not been available as an option.  These pluigns allow for detailed reproductions of individual objects or groups of objects, each with unique properties.",
+    
+            "plugins": [
+                "Copy_Objects",
+                "Copy_Material",
+                "Rename_Object",
+                "Rename_Material",
+                "Create_Group",
+                "Get_Parent"
+            ],
+    
+            "Copy_Objects": {
+    
+                "pluginWidth": "30rem","exampleWidth": "30rem",
 
-            "consoleText": "",
+                "puzzleText": "makes a completely unique copy of the given object and it's material. ",
+    
+                "exampleText": "This puzzle allows users to make copies of an object, a group of objects, or groups of objects.  The object's material is copied as well.  Materials and textures independent of their source object.  Creates multiple copies of an object, material and textures.  Creates groups for each object or a list of objects.",
+    
+                "consoleText": "",
+    
+                "extraText": "",
 
-            "extraText": "",
+                "customHTML": ""
+            },
 
-            "customHTML": "",
+            "Copy_Material": {
+    
+                "pluginWidth": "30rem","exampleWidth": "30rem",
 
-            "portedURL": ""
+                "puzzleText": "makes a new, completely unique copy of the given object's material. ",
+    
+                "exampleText": "This puzzle allows users to generate material copies that can be modified independently from their source material.",
+    
+                "consoleText": "",
+    
+                "extraText": "",
+
+                "customHTML": ""
+            },
+
+            "Rename_Object": {
+    
+                "pluginWidth": "30rem","exampleWidth": "30rem",
+
+                "puzzleText": "gives the selected object a new unique name.",
+    
+                "exampleText": "Using this puzzle, users can rename objects.  Ideal uses for this puzzle would be for renaming copies of single objects, batch renaming groups of objects in a loop, renaming objects via user input or application generated names.",
+    
+                "consoleText": "",
+    
+                "extraText": "",
+
+                "customHTML": ""
+            },
+
+            "Rename_Material": {
+    
+                "pluginWidth": "30rem","exampleWidth": "30rem",
+
+                "puzzleText": "changes the selected material's name. ",
+    
+                "exampleText": "This puzzle renames materials.  When copying or changing objects, material names may need to be specific.  This puzzle allows for this.",
+    
+                "consoleText": "",
+    
+                "extraText": "",
+
+                "customHTML": ""
+            },
+
+            "Create_Group": {
+    
+                "pluginWidth": "30rem","exampleWidth": "30rem",
+
+                "puzzleText": "creates a new empty object group.",
+    
+                "exampleText": "This is useful for applying changes to many objects at once. ie: translating or rotating.",
+    
+                "consoleText": "",
+    
+                "extraText": "",
+
+                "customHTML": ""
+            },
+
+            "Get_Parent": {
+    
+                "pluginWidth": "30rem","exampleWidth": "30rem",
+
+                "puzzleText": "returns the parent object of the given object.",
+    
+                "exampleText": "This puzzle comes in useful for situations where objects are dynamically parented and a parent object needs to be retrieved.",
+    
+                "consoleText": "",
+    
+                "extraText": "",
+
+                "customHTML": ""
+            }
         },
 
 
-        "Export_CSV_File": {
 
-            "pluginWidth": "25rem","exampleWidth": "20rem", "consoleWidth": "22rem", "extraWidth": "22rem",
 
-            "puzzleText": "takes a list of lists (rows) and returns a generated Comma Separated Values File (CSV) for use in spreadsheet software.",
 
-            "exampleText": "This can of course be edited, saved, and re-imported by using the default 'Read CSV' puzzle that comes with Verge3D.",
+        "modal_window": {
 
-            "consoleText": "The plugin will produce a save file dialogue:",
+            "title": "modal_window",
+    
+            "intro": "creates a fully customizable pop-up window that can be filled with custom content, be it text, images, or video. Placement of window contents is controlled by a drop down menu.",
+    
+            "plugins": [
+                "Pop_Up_Modal",
+                "Modal_Text_Settings",                
+                "Modal_Media_Settings",
+                "Modal_Animation_Settings",
+                "Modal_Open_Close",
+                "Get_Modal_Status"
+            ],
+    
+            "Pop_Up_Modal": {
+    
+                "pluginWidth": "20rem","exampleWidth": "30rem",
 
-            "extraText": "Which can be opened and edited with any spreadsheet software:",
-            
-            "customHTML": "",
+                "puzzleText": "The opening and closing of the window can be animated via slide, zoom, or fade functions. The background of the window and / or entire background screen can be blurred, tinted or darkened for greater focus on the window and its contents.",
+    
+                "exampleText": "___",
+    
+                "consoleText": "",
+    
+                "extraText": "",
 
-            "portedURL": ""
+                "customHTML": ""
+            },
+
+            "Modal_Text_Settings": {
+    
+                "pluginWidth": "20rem","exampleWidth": "30rem",
+
+                "puzzleText": "Text settings options are standard. Users can load external fonts if desired. The float settings allow for grouping text around images and or video.",
+    
+                "exampleText": "___",
+    
+                "consoleText": "",
+    
+                "extraText": "",
+
+                "customHTML": ""
+            },
+
+            "Modal_Media_Settings": {
+    
+                "pluginWidth": "20rem","exampleWidth": "30rem",
+
+                "puzzleText": "The media puzzle provides input of images and video. For video, mp4 format is recommended. Settings for video include video controls, loop video, play on start.",
+    
+                "exampleText": "___",
+    
+                "consoleText": "",
+    
+                "extraText": "",
+
+                "customHTML": ""
+            },
+
+            "Modal_Animation_Settings": {
+    
+                "pluginWidth": "20rem","exampleWidth": "30rem",
+
+                "puzzleText": "The animation settings plugin provides input for customizing opening and closing animations. Options include slide in/out, zoom in/out, fade in/out. Timing of the animation and animation tweening settings are available.",
+    
+                "exampleText": "___",
+    
+                "consoleText": "",
+    
+                "extraText": "",
+
+                "customHTML": ""
+            },
+
+            "Modal_Open_Close": {
+    
+                "pluginWidth": "20rem","exampleWidth": "25rem",
+
+                "puzzleText": "opens or closes a pre-existing pop-up modal window, given a modal id.",
+    
+                "exampleText": "___",
+    
+                "consoleText": "",
+    
+                "extraText": "",
+
+                "customHTML": ""
+            },
+
+            "Get_Modal_Status": {
+    
+                "pluginWidth": "25rem","exampleWidth": "30rem",
+
+                "puzzleText": "returns true if modal is open, false if closed, given a modal id.",
+    
+                "exampleText": "___",
+    
+                "consoleText": "",
+    
+                "extraText": "",
+
+                "customHTML": ""
+            }
         },
 
 
-        "Convert_To_CSV_Format": {
 
-            "pluginWidth": "22rem","exampleWidth": "22rem", "consoleWidth": "22rem", "extraWidth": "25rem",
+        "web_storage": {
 
-            "puzzleText": "returns a string in Comma Separated Value (CSV) format, given a list of lists (rows).",
+            "title": "web_storage",
+    
+            "intro": "allows developers the option to save data to user device browser storage.  This is a prime tool for saving information off-line so that it may be used later.  Such types of data might be: product configuration progress, saved game progress, settings, databases, etc. ",
+    
+            "plugins": [
+                "Configure_Web_Storage",
+                "Save_To_Web_Storage",
+                "Load_From_Web_Storage",
+                "Get_All_Keys_Of_DataStore",
+                "Get_Length_Of_DataStore",
+                "Iterate_Through_DataStore",
+                "Clear_Database",
+                "Delete_Key",
+                "Delete_DataStore",
+                "Delete_Database"                
+            ],
+    
+            "Configure_Web_Storage": {
+    
+                "pluginWidth": "25rem","exampleWidth": "30rem",
 
-            "exampleText": "This works in the same manner as the above 'Export CSV File' plugin but does not export a file, returning the CSV value to be used as raw data before being exported.",
+                "puzzleText": "Used to initialize the web storage driver type, database name, database size, and description.  NOTE: This puzzle is neccessary to place before any other 'Web Storage' puzzles.",
+    
+                "exampleText": "",
+    
+                "consoleText": "",
+    
+                "extraText": "",
 
-            "consoleText": "Console output:",
+                "customHTML": ""
+            },
 
-            "extraText": "The data can then be downloaded using the native Verge3D 'download file' puzzle found in the HTML folder of the puzzles menu.",
+            "Save_To_Web_Storage": {
+    
+                "pluginWidth": "25rem","exampleWidth": "30rem",
 
-            "customHTML": "",
+                "puzzleText": "Saves given data to an object key / value pair. Data is saved to a user designated dataStore in a user designated database.",
+    
+                "exampleText": "",
+    
+                "consoleText": "",
+    
+                "extraText": "",
 
-            "portedURL": ""
+                "customHTML": ""
+            },
 
+            "Load_From_Web_Storage": {
+    
+                "pluginWidth": "22rem","exampleWidth": "30rem",
+
+                "puzzleText": "Returns the value of an object key / value pair stored in a user designated dataStore in a user designated database, given an existing key.",
+    
+                "exampleText": "",
+    
+                "consoleText": "",
+    
+                "extraText": "",
+
+                "customHTML": ""
+            },
+
+            "Get_All_Keys_Of_DataStore": {
+    
+                "pluginWidth": "25rem","exampleWidth": "30rem",
+
+                "puzzleText": "Returns all keys from a user designated dataStore in a user designated database, given an existing dataStore.",
+    
+                "exampleText": "",
+    
+                "consoleText": "",
+    
+                "extraText": "",
+
+                "customHTML": ""
+            },
+
+            "Get_Length_Of_DataStore": {
+    
+                "pluginWidth": "25rem","exampleWidth": "30rem",
+
+                "puzzleText": "Returns the numerical amount of keys in a user designated dataStore in a user designated database, given an existing dataStore.",
+    
+                "exampleText": "",
+    
+                "consoleText": "",
+    
+                "extraText": "",
+
+                "customHTML": ""
+            },
+
+            "Iterate_Through_DataStore": {
+    
+                "pluginWidth": "25rem","exampleWidth": "30rem",
+
+                "puzzleText": "Iterates through keys in a user designated dataStore in a user designated database, given an existing dataStore.",
+    
+                "exampleText": "",
+    
+                "consoleText": "",
+    
+                "extraText": "",
+
+                "customHTML": ""
+            },
+
+            "Clear_Database": {
+    
+                "pluginWidth": "25rem","exampleWidth": "30rem",
+
+                "puzzleText": "Clears all data in a user designated database.",
+    
+                "exampleText": "",
+    
+                "consoleText": "",
+    
+                "extraText": "",
+
+                "customHTML": ""
+            },
+
+            "Delete_Key": {
+    
+                "pluginWidth": "25rem","exampleWidth": "30rem",
+
+                "puzzleText": "Removes a designated key / value pair from a user designated dataStore.",
+    
+                "exampleText": "",
+    
+                "consoleText": "",
+    
+                "extraText": "",
+
+                "customHTML": ""
+            },
+
+            "Delete_DataStore": {
+    
+                "pluginWidth": "25rem","exampleWidth": "30rem",
+
+                "puzzleText": "Removes a designated dataStore from a user designated dataStore in a user designated database.",
+    
+                "exampleText": "",
+    
+                "consoleText": "",
+    
+                "extraText": "",
+
+                "customHTML": ""
+            },
+
+            "Delete_Database": {
+    
+                "pluginWidth": "25rem","exampleWidth": "30rem",
+
+                "puzzleText": "Deletes a designated database, given am existing database.",
+    
+                "exampleText": "",
+    
+                "consoleText": "",
+    
+                "extraText": "",
+
+                "customHTML": ""
+            }
         },
 
 
-        "Call_Procedure_By_Name": {
 
-            "pluginWidth": "22rem","exampleWidth": "23rem",
+        "world": {
 
-            "puzzleText": "executes an already existing procedure when given it's name.",
+            "title": "___",
+    
+            "intro": "",
+    
+            "plugins": [
+                "Generate_Sky",
+                "Generate_Sun_Light",
+                "Generate_Ocean",
+                "Generate_Terrain"
+            ],
+    
+            "Generate_Sky": {
+    
+                "pluginWidth": "30rem","exampleWidth": "30rem",
 
-            "exampleText": "This can be useful when switching between iterations of similar or differently named procedures.  This can be done dynamically.",
+                "puzzleText": "Makes an Sky object to simulate a sunlit or moonlit atmosphere.",
+    
+                "exampleText": "___",
+    
+                "consoleText": "",
+    
+                "extraText": "",
 
-            "consoleText": "",
+                "customHTML": ""
+            },
 
-            "extraText": "",
+            "Generate_Sun_Light": {
+    
+                "pluginWidth": "30rem","exampleWidth": "30rem",
 
-            "customHTML": "",
+                "puzzleText": "Makes a physically correct 'Sun' light. This can be used with in the Generate Sky, Generate Terrain, and Generate Ocean plugins.",
+    
+                "exampleText": "___",
+    
+                "consoleText": "",
+    
+                "extraText": "",
 
-            "portedURL": ""
+                "customHTML": ""
+            },
+
+            "Generate_Ocean": {
+    
+                "pluginWidth": "30rem","exampleWidth": "30rem",
+
+                "puzzleText": "Generates a water object for use with landscapes.  Settings include ocean size, distortion scale, texture size, water color, sun source, and an option to use the sun object from the Generate Sky Plugin.",
+    
+                "exampleText": "___",
+    
+                "consoleText": "",
+    
+                "extraText": "",
+
+                "customHTML": ""
+            },
+
+            "Generate_Terrain": {
+    
+                "pluginWidth": "30rem","exampleWidth": "30rem",
+
+                "puzzleText": "Generates a terrain object for use with landscapes.",
+    
+                "exampleText": "___",
+    
+                "consoleText": "",
+    
+                "extraText": "",
+
+                "customHTML": ""
+            }
         },
 
 
-        "Call_Procedure_By_Name_Output": {
+        "csg": {
 
-            "pluginWidth": "22rem","exampleWidth": "25rem",
+            "title": "Constructive Solid Geometry",
+    
+            "intro": "",
+    
+            "plugins": [
+                "CSG_Boolean"
+            ],
 
-            "puzzleText": "executes an already existing procedure when given it's name.  Can recieve lists.",
+            "CSG_Boolean": {
 
-            "exampleText": "This can be useful when switching between iterations of similar or differently named procedures.  This can be done dynamically.",
+                "pluginWidth": "25rem","exampleWidth": "30rem",  "consoleWidth": "22rem", "extraWidth": "85%",
 
-            "consoleText": "",
+                "puzzleText": "executes a boolean operation between two objects, returning the resulting geometry as a new object.",
 
-            "extraText": "",
+                "exampleText": "Operation modes available are: Union, Subtract, and Intersect.",
+    
+                "consoleText": "",
+    
+                "extraText": " ",
 
-            "customHTML": "",
-
-            "portedURL": ""
+                "customHTML": ""
+            }
         },
 
 
-        "Merge_Lists": {
+        "import_export": {
 
-            "pluginWidth": "20rem","exampleWidth": "23rem", "consoleWidth": "15rem",
+            "title": "Import Export",
+    
+            "intro": ": While Verge3D currently allows for importing GLTF and GLB file formats, one can use external applications to convert 3D files before importing to Verge3D.  However, certain cases demand the need for importing and exporting other 3D file formats within Verge3D-created apps.  This plugin allows for this.",
+    
+            "plugins": [
+                "Import_Export_3D_File"
+            ],
+    
+            "Import_Export_3D_File": {
+    
+                "pluginWidth": "30rem","exampleWidth": "30rem",
 
-            "puzzleText": "returns a list consisting of the items from one or more lists.",
+                "puzzleText": "allows for the importing and exporting of different 3D file formats.<br />Available formats are: Wavefront (.obj), Stereo Lithography (.stl), Collada (.dae), Motion Capture (.bhv), .fbx, Lightwave3D (.lwo), Draco Compressed (.drc).",
+    
 
-            "exampleText": "The [ LIST SIMILAR ] Plugin returns a list of all list items containing a specific string, given a list.",
+                "exampleText": "",
+    
+                "consoleText": "",
+    
+                "extraText": "",
 
-            "consoleText": " ",
-
-            "extraText": "",
-
-            "customHTML": "",
-
-            "portedURL": ""
+                "customHTML": ""
+            }
         },
 
 
-        "List_Similar": {
+        "pluginTemplate": {
 
-            "pluginWidth": "23rem","exampleWidth": "23rem", "consoleWidth": "23rem",
+            "title": "___",
+    
+            "intro": "",
+    
+            "plugins": [
+                "___",
+                "___",
+                "___",
+                "___",
+                "___"
+            ],
+    
+            "puzzle": {
+    
+                "pluginWidth": "30rem","exampleWidth": "30rem",
 
-            "puzzleText": "returns a list of all list items containing a specific string, given a list.",
+                "puzzleText": "___",
+    
+                "exampleText": "___",
+    
+                "consoleText": "",
+    
+                "extraText": "",
 
-            "exampleText": "",
-
-            "consoleText": " ",
-
-            "extraText": "",
-
-            "customHTML": "",
-
-            "portedURL": ""
-        },
-
-
-        "Right_Click_Event": {
-
-            "pluginWidth": "15rem","exampleWidth": "22rem", "consoleWidth": "23rem",
-
-            "puzzleText": "executes desired functions upon any and all right-clicks on HTML elements.",
-
-            "exampleText": "This plugin is also included in the [ GLIFTEK ] Plugins custom 'Right Click Menu' Plugin Pack.  This allows for activation of a custom right-click menu upon clicking HTML elements.",
-
-            "consoleText": "",
-
-            "extraText": "",
-
-            "customHTML": "",
-
-            "portedURL": ""
-        },
-
-
-        "Context_Menu_Toggle": {
-
-            "pluginWidth": "18rem","exampleWidth": "25rem",
-
-            "puzzleText": "disables or enables the browser's right-click 'context' menu.",
-
-            "exampleText": "This is useful when applications need right mouse button interactivity and the browser pop up context menu is unwanted.",
-
-            "consoleText": "This plugin is also included in the [ GLIFTEK ] Plugins custom 'Right Click Menu' Plugin Pack as it is necessary to disable the existing context menu in order to display a custom menu.",
-
-            "extraText": "",
-
-            "customHTML": "",
-
-            "portedURL": ""
-        },
-
-
-        "Alert_Message": {
-
-            "pluginWidth": "18rem","exampleWidth": "10rem", "consoleWidth": "5rem", "extraWidth": "22rem",
-
-            "puzzleText": "outputs text to a popup 'alert' text window.",
-
-            "exampleText": "",
-
-            "consoleText": "",
-
-            "extraText": "A browser popup alert message:",
-
-            "customHTML": "",
-
-            "portedURL": ""
+                "customHTML": ""
+            }
         }
-    },
 
 
 
-
-    "bounding_boxes": {
-
-        "title": "Bounding_Boxes",
-
-        "intro": "is a suite of plugins that allow for detection of the intersection of designated 'bounding boxes'.<br>The bounding boxes are 'Box3' rectangles representing the furthest spatial bounds that an object takes up.",
-
-        "demo": true,
-
-        "demoText": "<i>Drag cubes over one another in the demo above.<br>Use fullscreen for best results.</i>",
-
-        "plugins": [
-            "Create_Bounding_Boxes",
-            "Update_Bounding_Box",
-            "Bounding_Box_Collision_Sensor",
-            "Get_Bounding_Box",
-            "Get_Bounding_Box_Collision_State",
-            "Get_Touching_Object",
-            "Get_List_Of_Touching_Or_Non_Touching_Objects"
-        ],
-
-        "Create_Bounding_Boxes": {
-
-            "pluginWidth": "25rem","exampleWidth": "50%",
-
-            "puzzleText": "creates a virtual 'Box3' cube shaped boundary around an object used for determining intersections with others of it's type.",
-
-            "exampleText": "An optional bounding box helper object can be used for visualizing the box's dimensions for testing and debugging.",
-
-            "consoleText": "",
-
-            "extraText": "",
-
-            "customHTML": "",
-
-            "portedURL": ""
-        },
-
-
-        "Update_Bounding_Box": {
-
-            "pluginWidth": "25rem","exampleWidth": "50%",
-
-            "puzzleText": "This puzzle is needed to .",
-
-            "exampleText": "This puzzle allows users to make copies of objects, and customize the materials and textures independent of their source object.",
-
-            "consoleText": "",
-
-            "extraText": "",
-
-            "customHTML": "",
-
-            "portedURL": ""
-        },
-
-
-        "Bounding_Box_Collision_Sensor": {
-
-            "pluginWidth": "25rem","exampleWidth": "50%",
-
-            "puzzleText": "compares bounding boxes for collisions and intersections between them without the need for a physics engine.",
-
-            "exampleText": "Using this block in the 'move: do' area of the 'When Dragged' event puzzle.",
-
-            "consoleText": "",
-
-            "extraText": "",
-
-            "customHTML": "",
-
-            "portedURL": ""
-        },
-
-
-        "Get_Bounding_Box": {
-
-            "pluginWidth": "25rem","exampleWidth": "50%",
-
-            "puzzleText": "returns the Bounding Box of an Object.",
-
-            "exampleText": "returns the bounding box of a given object.",
-
-            "consoleText": "",
-
-            "extraText": "",
-
-            "customHTML": "",
-
-            "portedURL": ""
-        },
-
-
-        "Get_Bounding_Box_Collision_State": {
-
-            "pluginWidth": "25rem","exampleWidth": "50%",
-
-            "puzzleText": "returns a boolean (true / false ) value for the current collision state of a Bounding Box.",
-
-            "exampleText": "returns a true / false boolean operator as to whether two bounding box's are touching / intersecting at any given time, given a moving object and object to compare it with.",
-
-            "consoleText": "",
-
-            "extraText": "",
-
-            "customHTML": "",
-
-            "portedURL": ""
-        },
-
-
-        "Get_Touching_Object": {
-
-            "pluginWidth": "25rem","exampleWidth": "50%",
-
-            "puzzleText": "returns the object a Bounding Box is currently touching.",
-
-            "exampleText": "returns the name of an object whose bounding box is touching another bounding box",
-
-            "consoleText": "",
-
-            "extraText": "",
-
-            "customHTML": "",
-
-            "portedURL": ""
-        },
-
-
-        "Get_List_Of_Touching_Or_Non_Touching_Objects": {
-
-            "pluginWidth": "25rem","exampleWidth": "50%",
-
-            "puzzleText": "returns a list of all the objects in a scene whose bounding boxes are either touching or not touching outher bounding boxes.",
-
-            "exampleText": "...",
-
-            "consoleText": "",
-
-            "extraText": "",
-
-            "customHTML": "",
-
-            "portedURL": ""
-        }
-
-    },
-
-
-
-
-    "lens_flare_deluxe": {
-
-        "title": "Lens_Flare_Deluxe",
-
-        "intro": "creates a 'Lens Flare' object with three optional effects settings:<br /> Rays, Glow, and Bokeh.",
-
-        "demo": true,
-
-        "demoText": "<i>Two-Finger Swipe or Right Click Drag to pan image in the demo above.  <br>Click 'Next' to view next example.<br>Drag flare behind 'Occlude' to observe occlusion.</i>",
-        
-        "plugins": [
-            "Lens_Flare_Deluxe",
-            "Rays_Settings",
-            "Glow_Settings",
-            "Bokeh_Settings"
-        ],
-
-        "Lens_Flare_Deluxe": {
-
-            "pluginWidth": "20rem", "exampleWidth": "23rem",
-
-            "puzzleText": "creates a Lens Flare Object with three optional effects: Rays, Glow and Bokeh.",
-
-            "exampleText": "Each of these effects are found within their own corresponding 'Settings' puzzles with a set of customizable options (shown further below). ",
-
-            "consoleText": "The 'Settings' puzzles can be used singularly, or stacked into lists and then applied via variable puzzles.  Users can stack as many settings as desired to create detailed and controllable dynamic flare effects.  If inputs of any effects setting are left blank, default settings will be used.<br /><br />Purchasers of the Lens Flare Deluxe Plugin can check the pack's accompanied Verge3D project application files for examples like shown. Included are presets for exciting and vibrant examples of the customizable power this plugin provides!",
-
-            "extraText": "Usage of custom lens flares can span a wide range of cases:",
-
-            "customHTML": "<ul style='text-align: left'><li>Sun Lens Flares,</li><li>Sun Coronal Halo Effect,</li><li>Cinematic Anamorphic Streaks,</li><li>In-App Weapon Ignition Effects,</li><li>In-App Missile, Rocket Engine Effects,</li><li>In-App Explosion Effects,</li><li>Car Headlights,</li><li>Vehicle Lighting,</li><li>Flashlights,</li><li>Phone Camera Lights,</li><li>Camera Flasbulb Blooms,</li><li>Nebula, Galaxy and Stars Accents,</li><li>City Light Posts,</li><li>Lighthouse Lights,</li><li>Artistic Abstract Design Lighting,</li><li>Experimental Decorative Effects,</li></ul>",
-            
-            "portedURL": ""
-        },
-
-
-        "Rays_Settings": {
-
-            "pluginWidth": "20rem", "exampleWidth": "40%",
-
-            "puzzleText": "allows for control of multiple spreads of symmetrical or non-symmetrical rays of light from the center of the Lens Flare Object.",
-
-            "exampleText": "",
-
-            "consoleText": "",
-
-            "extraText": "Users can determine symmetry, ray count, ray width, ray sharpness, randomness of ray length, rotation, blur, opacity, size, distance, and color.  The following options are available:",
-
-            "customHTML": "<ul style='text-align: left'><li>Symmetry:<br />This designates whether the rays will be positioned symmetrically. If the 'ray count' input is an odd number while the 'Symmetrical' option is checked, the number of rays will be rounded up to the nearest integer resulting in an even number of rays.</li><br /><li>Ray Count:<br />This decides how many rays are produced in the group.<br /><br /></li><li>Ray Width:<br />This option changes the width of the rays.<br /><br /></li><li>Ray Sharpness:<br />Determines the sharpness of the ray. This needs to be adjusted as higher 'Ray Width' settings may broaden their gradient.<br /><br /></li><li>Random Length:<br />This option randomizes the group's rays' lengths. A number between 1 and 10 is allowed. The higher the number, the more variation in length. An input of 0 negates this option.<br /><br /></li><li>Rotation:<br />Rotates the entire group of rays based on degrees from 0 to 360.<br /><br /></li><li>Blur:<br />Sets the level of blur for the group of rays.<br /><br /></li><li>Opacity:<br />This changes the transparency of the group of rays.<br /><br /></li><li>Size:<br />The overall size of the entire group of rays<br /><br /></li><li>Distance:<br />The distance from the light to the camera. A value of 0 (nearest to light) to 1 (nearest to camera) is used. This option is convenient for ordering any stacked settings one may have.<br /><br /></li><li>Example:<br />Set a stack of of Rays puzzles setting their 'distance' between .01 to .05, a large background Glow at 0, and a strong small center Glow at .06, at the very front.<br /><br /></li><li>Color:<br />This designates the color of the rays group.<br /><br /></li><li>Users can determine ray width, ray length, and randomness of ray length.<br /></li></ul>",                
-        
-            "portedURL": ""
-        },
-        
-
-
-        "Glow_Settings": {
-
-            "pluginWidth": "20rem", "exampleWidth": "40%",
-
-            "puzzleText": "controls a single or multiple radial gradients of tone starting from the center of the Lens Flare Object.",                
-            
-            "exampleText": "Users can designate gradient tone spacings via three control fields.  Rotation, blur, and opacity are also available.",
-
-            "consoleText": "",
-
-            "extraText": "",
-
-            "customHTML": "",
-
-            "portedURL": ""
-        },
-
-
-        "Bokeh_Settings": {
-
-            "pluginWidth": "20rem","exampleWidth": "40%",
-
-            "puzzleText": "creates bokeh style fragmented in-lens effects. A number of shapes are available to chose from.  Of such are: line, circle, triangle, square, pentagon, hexagon, heptagon, octagon, & nonagon polygon shapes.  Users can determine ray width, ray length, and randomness of ray length.",
-
-            "exampleText": "",
-
-            "consoleText": "",
-
-            "extraText": "",
-
-            "customHTML": "",
-
-            "portedURL": ""
-        }
-    },
-
-
-
-
-    "backgrounds": {
-
-        "title": "Backgrounds",
-
-        "intro": ":  Setting background images in Verge3D can always be accomplished by setting the background to transparent, and placing an image behind the v3d-container in your HTML. However, some cases call for an in-scene background texture which can be manipulated. These plugins allow for that.",
-
-        "demo": true,
-
-        "demoText": "<i>Select Cube to change effect in demo above.</i>",
-
-        "plugins": [
-            "Set_Background_Image",
-            "Generate_Gradient_Background",
-            "Fade_Screen",
-            "Screen_Vignette"
-        ],
-
-        "Set_Background_Image": {
-
-            "pluginWidth": "23rem", "exampleWidth": "23rem",
-            "pluginWidth_mobile": "23rem", "exampleWidth_mobile": "23rem",
-
-            "puzzleText": "sets a custom static background image for the scene.  Using a still image for a background to your 3D scene can be a great tool for streamlining your product presentation.",
-
-            "exampleText": "Often, all that's needed to make your 3D content more prominent, is a subtle touch like a custom still image.",
-
-            "consoleText": "",
-
-            "extraText": "",
-
-            "customHTML": "",
-
-            "portedURL": ""
-        },
-
-
-        "Generate_Gradient_Background": {
-
-            "pluginWidth": "25rem","exampleWidth": "50%",
-
-            "puzzleText": "creates a colored gradient static background.",
-
-            "exampleText": "",
-
-            "consoleText": "",
-
-            "extraText": "This plugin provides 3 color and 3 offset options for generating a gradient background for your 3D scene.  The gradient can be either linear or radial.  Color 'HEX' values recieve hexadecimal '#f0f0f0' format color code.  These override color picker inputs.  To use color pickers, leave HEX fields blank.  Color 2 can be optionally disabled if a two-tone gradient is desired.",
-
-            "customHTML": "<img src='./images/backgrounds/Generate_Gradient_Background_example_linear.png' style='width:20rem'/><br /><br /><img src='./images/backgrounds/Generate_Gradient_Background_example_radial.png' style='width:20rem'/>",
-        
-            "portedURL": ""
-        },
-            
-
-
-        "Fade_Screen": {
-
-            "pluginWidth": "23rem","exampleWidth": "40%",
-
-            "puzzleText": "Fades the screen in or out from a solid color.",
-
-            "exampleText": "",
-
-            "consoleText": "",
-
-            "extraText": "",
-
-            "customHTML": "",
-
-            "portedURL": ""
-        },
-
-
-        "Screen_Vignette": {
-
-            "pluginWidth": "23rem","exampleWidth": "40%",
-
-            "puzzleText": "To achieve a cinematic style 'vignette' effect, this creates a div with a radial gradient background with three stops: Center, Mid, and Outer, differing in opacity.  In the 'radius' field use percentages for a responsive gradient, and integers for an absolute size.  ie: '100%' will scale with different size screens, while '1024' will not, staying that size.",
-
-            "exampleText": "",
-
-            "consoleText": "",
-
-            "extraText": "",
-
-            "customHTML": "",
-
-            "portedURL": ""
-        }
-    },
-
-
-
-
-    "objects": {
-
-        "title": "objects",
-
-        "intro": ": Cloning objects in Verge3D is available using the clone puzzle. However, creating deep copies of objects and their corresponding materials and textures has not been available as an option. These plugins allow for detailed reproductions of individual objects or groups of objects, each with unique properties.",
-
-        "demo": true,
-
-        "demoText": "<i>Click menu to copy objects.</i>",
-
-        "plugins": [
-            "Copy_Objects",
-            "Copy_Material",
-            "Rename_Object",
-            "Rename_Material",
-            "Create_Group",
-            "Get_Parent"
-        ],
-
-        "Copy_Objects": {
-
-            "pluginWidth": "23rem","exampleWidth": "23rem",
-
-            "puzzleText": "makes a completely unique copy of the given object and it's material. ",
-
-            "exampleText": "This puzzle allows users to make copies of an object, a group of objects, or groups of objects.  The object's material is copied as well.  Materials and textures independent of their source object.  Creates multiple copies of an object, material and textures.  Creates groups for each object or a list of objects.",
-
-            "consoleText": "",
-
-            "extraText": "",
-
-            "customHTML": "",
-
-            "portedURL": ""
-        },
-
-
-        "Copy_Material": {
-
-            "pluginWidth": "23rem","exampleWidth": "23rem",
-
-            "puzzleText": "makes a new, completely unique copy of the given object's material. ",
-
-            "exampleText": "This puzzle allows users to generate material copies that can be modified independently from their source material.",
-
-            "consoleText": "",
-
-            "extraText": "",
-
-            "customHTML": "",
-
-            "portedURL": ""
-        },
-
-
-        "Rename_Object": {
-
-            "pluginWidth": "23rem","exampleWidth": "23rem",
-
-            "puzzleText": "gives the selected object a new unique name.",
-
-            "exampleText": "Using this puzzle, users can rename objects.  Ideal uses for this puzzle would be for renaming copies of single objects, batch renaming groups of objects in a loop, renaming objects via user input or application generated names.",
-
-            "consoleText": "",
-
-            "extraText": "",
-
-            "customHTML": "",
-
-            "portedURL": ""
-        },
-
-
-        "Rename_Material": {
-
-            "pluginWidth": "23rem","exampleWidth": "23rem",
-
-            "puzzleText": "changes the selected material's name. ",
-
-            "exampleText": "This puzzle renames materials.  When copying or changing objects, material names may need to be specific.  This puzzle allows for this.",
-
-            "consoleText": "",
-
-            "extraText": "",
-
-            "customHTML": "",
-
-            "portedURL": ""
-        },
-
-        "Create_Group": {
-
-            "pluginWidth": "23rem","exampleWidth": "23rem",
-
-            "puzzleText": "creates a new empty object group.",
-
-            "exampleText": "This is useful for applying changes to many objects at once. ie: translating or rotating.",
-
-            "consoleText": "",
-
-            "extraText": "",
-
-            "customHTML": "",
-
-            "portedURL": ""
-        },
-
-
-        "Get_Parent": {
-
-            "pluginWidth": "23rem","exampleWidth": "23rem",
-
-            "puzzleText": "returns the parent object of the given object.",
-
-            "exampleText": "This puzzle comes in useful for situations where objects are dynamically parented and a parent object needs to be retrieved.",
-
-            "consoleText": "",
-
-            "extraText": "",
-
-            "customHTML": "",
-
-            "portedURL": ""
-        }
-    },
-
-
-
-
-
-    "modal_window": {
-
-        "title": "modal_window",
-
-        "intro": "creates a fully customizable pop-up window that can be filled with custom content, be it text, images, video, or a combination of such.  The order of the placement of window contents is controlled by a drop down menu.  Windows may be animated to slide, scale, or fade as they appear or disappear.  A 'draggable' window option is also available.",
-
-        "demo": true,
-
-        "demoText": "<i>Click menu to copy objects.</i>",
-
-        "plugins": [
-            "Pop_Up_Modal",
-            "Modal_Text_Settings",                
-            "Modal_Media_Settings",
-            "Modal_Animation_Settings",
-            "Modal_Open_Close",
-            "Get_Modal_Status"
-        ],
-
-        "Pop_Up_Modal": {
-
-            "pluginWidth": "20rem","exampleWidth": "23rem",
-
-            "puzzleText": "The opening and closing of the window can be animated via slide, zoom, or fade functions. The background of the window and / or entire background screen can be blurred, tinted or darkened for greater focus on the window and its contents.",
-
-            "exampleText": "",
-
-            "consoleText": "",
-
-            "extraText": "",
-
-            "customHTML": "",
-
-            "portedURL": ""
-        },
-
-
-        "Modal_Text_Settings": {
-
-            "pluginWidth": "20rem","exampleWidth": "23rem",
-
-            "puzzleText": "Text settings options are standard. Users can load external fonts if desired. The float settings allow for grouping text around images and or video.",
-
-            "exampleText": "",
-
-            "consoleText": "",
-
-            "extraText": "",
-
-            "customHTML": "",
-
-            "portedURL": ""
-        },
-
-
-        "Modal_Media_Settings": {
-
-            "pluginWidth": "20rem","exampleWidth": "23rem",
-
-            "puzzleText": "The media puzzle provides input of images and video. For video, mp4 format is recommended. Settings for video include video controls, loop video, play on start.",
-
-            "exampleText": "",
-
-            "consoleText": "",
-
-            "extraText": "",
-
-            "customHTML": "",
-
-            "portedURL": ""
-        },
-
-
-        "Modal_Animation_Settings": {
-
-            "pluginWidth": "20rem","exampleWidth": "23rem",
-
-            "puzzleText": "The animation settings plugin provides input for customizing opening and closing animations. Options include slide in/out, zoom in/out, fade in/out. Timing of the animation and animation tweening settings are available.",
-
-            "exampleText": "",
-
-            "consoleText": "",
-
-            "extraText": "",
-
-            "customHTML": "",
-
-            "portedURL": ""
-        },
-
-
-        "Modal_Open_Close": {
-
-            "pluginWidth": "20rem","exampleWidth": "25rem",
-
-            "puzzleText": "opens or closes a pre-existing pop-up modal window, given a modal id.",
-
-            "exampleText": "",
-
-            "consoleText": "",
-
-            "extraText": "",
-
-            "customHTML": "",
-
-            "portedURL": ""
-        },
-
-
-        "Get_Modal_Status": {
-
-            "pluginWidth": "25rem","exampleWidth": "23rem",
-
-            "puzzleText": "returns true if modal is open, false if closed, given a modal id.",
-
-            "exampleText": "",
-
-            "consoleText": "",
-
-            "extraText": "",
-
-            "customHTML": "",
-
-            "portedURL": ""
-        }
-    },
-
-
-
-    "web_storage": {
-
-        "title": "Web_Storage",
-
-        "intro": "allows developers the option to save data to user device browser storage.<br>This is a prime tool for saving information off-line so that it may be used later.<br>Such types of data might be: product configuration progress, saved game progress, settings, databases, etc.<br>Included are all the visual-coding blocks needed for managing your off-line data.",
-        
-        "demo": true,
-
-        "demoText": "In the demo above, drag objects around and 'SAVE KEY'.<br>Then either drag objects around again, or reload page, or even restart browser / device.<br>Then 'LOAD KEY' to revert to your previously saved key.",
-
-
-        "plugins": [
-            "Configure_Web_Storage",
-            "Save_To_Web_Storage",
-            "Load_From_Web_Storage",
-            "Get_All_Keys_Of_DataStore",
-            "Get_Length_Of_DataStore",
-            "Iterate_Through_DataStore",
-            "Clear_Database",
-            "Delete_Key",
-            "Delete_DataStore",
-            "Delete_Database"                
-        ],
-
-        "Configure_Web_Storage": {
-
-            "pluginWidth": "25rem","exampleWidth": "23rem",
-
-            "puzzleText": "is used to initialize the web storage driver type, database name, database size, and description.  NOTE: This puzzle is neccessary to place before any other 'Web Storage' puzzles.",
-
-            "exampleText": "",
-
-            "consoleText": "",
-
-            "extraText": "",
-
-            "customHTML": "",
-
-            "portedURL": "https://github.com/localForage/localForage"
-        },
-
-
-        "Save_To_Web_Storage": {
-
-            "pluginWidth": "25rem","exampleWidth": "23rem",
-
-            "puzzleText": "saves given data to an object key / value pair. Data is saved to a user designated dataStore in a user designated database.",
-
-            "exampleText": "",
-
-            "consoleText": "",
-
-            "extraText": "",
-
-            "customHTML": "",
-
-            "portedURL": ""
-        },
-
-
-        "Load_From_Web_Storage": {
-
-            "pluginWidth": "22rem","exampleWidth": "23rem",
-
-            "puzzleText": "returns the value of a key stored in a user designated dataStore in a user designated database, given an existing key.",
-
-            "exampleText": "",
-
-            "consoleText": "",
-
-            "extraText": "",
-
-            "customHTML": "",
-
-            "portedURL": ""
-        },
-
-
-        "Get_All_Keys_Of_DataStore": {
-
-            "pluginWidth": "25rem","exampleWidth": "23rem",
-
-            "puzzleText": "returns all keys from a user designated dataStore in a user designated database, given an existing dataStore.",
-
-            "exampleText": "",
-
-            "consoleText": "",
-
-            "extraText": "",
-
-            "customHTML": "",
-
-            "portedURL": ""
-        },
-
-
-        "Get_Length_Of_DataStore": {
-
-            "pluginWidth": "25rem","exampleWidth": "23rem",
-
-            "puzzleText": "returns the numerical amount of keys in a user designated dataStore in a user designated database, given an existing dataStore.",
-
-            "exampleText": "",
-
-            "consoleText": "",
-
-            "extraText": "",
-
-            "customHTML": "",
-
-            "portedURL": ""
-        },
-
-
-        "Iterate_Through_DataStore": {
-
-            "pluginWidth": "25rem","exampleWidth": "23rem",
-
-            "puzzleText": "iterates through keys in a user designated dataStore in a user designated database, given an existing dataStore.",
-
-            "exampleText": "",
-
-            "consoleText": "",
-
-            "extraText": "",
-
-            "customHTML": "",
-
-            "portedURL": ""
-        },
-
-
-        "Clear_Database": {
-
-            "pluginWidth": "25rem","exampleWidth": "23rem",
-
-            "puzzleText": "clears all data in a user designated database.",
-
-            "exampleText": "",
-
-            "consoleText": "",
-
-            "extraText": "",
-
-            "customHTML": "",
-
-            "portedURL": ""
-        },
-
-        "Delete_Key": {
-
-            "pluginWidth": "25rem","exampleWidth": "23rem",
-
-            "puzzleText": "removes a designated key / value pair from a user designated dataStore.",
-
-            "exampleText": "",
-
-            "consoleText": "",
-
-            "extraText": "",
-
-            "customHTML": "",
-
-            "portedURL": ""
-        },
-
-        "Delete_DataStore": {
-
-            "pluginWidth": "25rem","exampleWidth": "23rem",
-
-            "puzzleText": "removes a designated dataStore from a user designated database.",
-
-            "exampleText": "",
-
-            "consoleText": "",
-
-            "extraText": "",
-
-            "customHTML": "",
-
-            "portedURL": ""
-        },
-
-        "Delete_Database": {
-
-            "pluginWidth": "25rem","exampleWidth": "23rem",
-
-            "puzzleText": "deletes a designated database, given an existing database.",
-
-            "exampleText": "",
-
-            "consoleText": "",
-
-            "extraText": "",
-
-            "customHTML": "",
-
-            "portedURL": ""
-        }
-    },
-
-
-
-    "world": {
-
-        "title": "World",
-
-        "intro": "is a group of plugins that provide easily implemented real-world environmental features such as a natural sky, body of rippling water, and terrain.",
-
-        "demo": true,
-
-        "demoText": "<i>Two-Finger Swipe or Right Click Drag to pan the demo above.</i>",
-        
-
-        "plugins": [
-            "Generate_Sky",
-            "Generate_Sun_Light",
-            "Generate_Ocean",
-            "Generate_Terrain"
-        ],
-
-        "Generate_Sky": {
-
-            "pluginWidth": "23rem","exampleWidth": "23rem",
-
-            "puzzleText": "Makes an accurately lit 'Sky' object to simulate a sunlit or moonlit atmosphere.  A 'sun disk' option is available to visualize the sun in the sky.  This can be used linked with the 'Generate Sun Light' plugin to match correct lighting from the Sky's sun position.",
-
-            "exampleText": "",
-
-            "consoleText": "",
-
-            "extraText": "",
-
-            "customHTML": "",
-
-            "portedURL": "https://threejs.org/examples/webgl_shaders_sky.html"
-
-        },
-
-        "Generate_Sun_Light": {
-
-            "pluginWidth": "23rem","exampleWidth": "23rem",
-
-            "puzzleText": "Makes a physically correct 'Sun' light. This can be used with in the Generate Sky, Generate Terrain, and Generate Ocean plugins.",
-
-            "exampleText": "",
-
-            "consoleText": "",
-
-            "extraText": "",
-
-            "customHTML": "",
-
-            "portedURL": ""
-        },
-
-        "Generate_Ocean": {
-
-            "pluginWidth": "23rem","exampleWidth": "23rem",
-
-            "puzzleText": "Generates a water object for use with landscapes.  Settings include ocean size, distortion scale, texture size, water color, sun source, and an option to use the sun object from the Generate Sky Plugin.",
-
-            "exampleText": "",
-
-            "consoleText": "",
-
-            "extraText": "",
-
-            "customHTML": "",
-
-            "portedURL": "https://threejs.org/examples/webgl_shaders_ocean.html"
-
-        },
-
-        "Generate_Terrain": {
-
-            "pluginWidth": "23rem","exampleWidth": "23rem",
-
-            "puzzleText": "Generates a terrain object for use with landscapes.",
-
-            "exampleText": "",
-
-            "consoleText": "",
-
-            "extraText": "",
-
-            "customHTML": "",
-
-            "portedURL": "https://threejs.org/examples/webgl_geometry_terrain.html"
-
-        }
-    },
-
-
-    "csg": {
-
-        "title": "CSG",
-
-        "intro": "is a set of plugins that use CONSTRUCTIVE SOLID GEOMETRY libraries to add or subtract geometry from objects.",
-
-        "demo": true,
-
-        "demoText": "<i>In the demo above, drag one object to overlap part of the other, then select an operation from the menu.</i>",
-
-        "plugins": [
-            "CSG_Boolean"
-        ],
-
-        "CSG_Boolean": {
-
-            "pluginWidth": "25rem","exampleWidth": "23rem",  "consoleWidth": "22rem", "extraWidth": "85%",
-
-            "puzzleText": "executes a boolean operation between two objects, returning the resulting geometry in a new object.",
-
-            "exampleText": "Operation modes available are: Union, Subtract, and Intersect.</br> 'Union' combines both meshes into one. </br>'Subtract' subtracts geometry from 'Object 1' where 'Object 2' overlaps.</br>'Intersect' returns the space where the two objects overlap.</br> The 'operation aux' field can be used to supersede the dropdown menu if a changing varable is needed.",
-
-            "consoleText": "",
-
-            "extraText": "Boolean Operation Modes:",
-
-            "customHTML": "",
-            
-            "portedURL": "https://github.com/manthrax/THREE-CSGMesh"
-
-        }
-    },
-
-
-    "import_export": {
-
-        "title": "Import Export",
-
-        "intro": ": While Verge3D currently allows for importing GLTF and GLB file formats, one can use external applications to convert 3D files before importing to Verge3D.  However, certain cases demand the need for importing and exporting other 3D file formats within Verge3D-created apps.  This plugin allows for this.",
-
-        "plugins": [
-            "Import_Export_3D_File"
-        ],
-
-        "Import_Export_3D_File": {
-
-            "pluginWidth": "23rem","exampleWidth": "23rem",
-
-            "puzzleText": "allows for the importing and exporting of different 3D file formats.<br />Available formats are: Wavefront (.obj), Stereo Lithography (.stl), Collada (.dae), Motion Capture (.bhv), .fbx, Lightwave3D (.lwo), Draco Compressed (.drc).",
-
-
-            "exampleText": "",
-
-            "consoleText": "",
-
-            "extraText": "",
-
-            "customHTML": "",
-
-            "portedURL": ""
-        }
-    },
-
-
-    "pluginTemplate": {
-
-        "title": "___",
-
-        "intro": "",
-
-        "plugins": [
-            "___",
-            "___",
-            "___",
-            "___",
-            "___"
-        ],
-
-        "puzzle": {
-
-            "pluginWidth": "23rem","exampleWidth": "23rem",
-
-            "puzzleText": "___",
-
-            "exampleText": "",
-
-            "consoleText": "",
-
-            "extraText": "",
-
-            "customHTML": "",
-
-            "portedURL": ""
-        }
 
     }
-
-
-
-
-}
 }}
