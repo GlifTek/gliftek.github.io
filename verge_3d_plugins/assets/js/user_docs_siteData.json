@@ -1408,7 +1408,7 @@
 
             "puzzleText": "executes a boolean operation between two objects, returning the resulting geometry in a new object.",
 
-            "exampleText": "Operation modes available are: Union, Subtract, and Intersect.</br> 'Union' combines both meshes into one. </br>'Subtract' subtracts geometry from 'Object 1' where 'Object 2' overlaps.</br>'Intersect' returns the space where the two objects overlap.</br> The 'operation aux' field can be used to supersede the dropdown menu if a changing varable is needed.",
+            "exampleText": "Operation modes available are: Union, Subtract, and Intersect.</br> 'Union' combines both meshes into one. </br>'Subtract' subtracts geometry from 'Object 1' where 'Object 2' overlaps.</br>'Intersect' returns the space where the two objects overlap.</br> The 'operation aux' field can be used to supersede the dropdown menu if a changing variable is needed.",
 
             "consoleText": "",
 
