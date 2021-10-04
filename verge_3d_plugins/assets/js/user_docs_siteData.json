@@ -86,7 +86,7 @@
 
         "title": "Helpers",
 
-        "intro": "is a collection of verge3D puzzle blocks that create 'helper' objects for visualizing position, size and orientation.  The helpers provided here show square and circular grids in 3D space.  Also included is a quad wireframe material for visualizing the geometric structure of any 3D object.",
+        "intro": "is a collection of verge3D puzzle blocks that create 'helper' objects for visualizing position, size and orientation.  The helpers provided here show square and circular grids in 3D space, directional axes and arrow objects.  Also included is a quad wireframe material for visualizing the geometric structure of any 3D object.",
 
         "demo": true,
 
