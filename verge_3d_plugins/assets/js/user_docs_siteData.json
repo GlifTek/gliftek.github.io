@@ -27,8 +27,9 @@
         "lens_flare_deluxe",
         "csg",
         "helpers",
-        "backgrounds",
+        "backgrounds",        
         "web_storage",
+        
         "world",        
         "bounding_boxes",
         "modal_window",
@@ -41,8 +42,7 @@
         "paperJS",
         "geometry",            
         "clipping planes",
-        "console",
-        "material"
+        "console"
     ],
 
 
