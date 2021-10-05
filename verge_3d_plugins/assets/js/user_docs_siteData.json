@@ -29,11 +29,12 @@
         "helpers",
         "backgrounds",        
         "web_storage",
+        "utility_1",
+        "utility_2",
         
         "world",        
         "bounding_boxes",
-        "modal_window",
-        "utility",
+        "modal_window",        
         "objects",
 
         "import_export",
@@ -230,29 +231,23 @@
     },
 
 
+    "utility_1": {
 
-    "utility": {
+        "title": "Utility 1",
 
-        "title": "Utility",
-
-        "intro": "is a selection of a dozen + puzzles that allow solutions for many varied and common smaller app development tasks such as database exporting, color format conversion, FPS stats, array (list) management , context menu disabling and alert messages.",
+        "intro": "is a selection of 6 blocks that allow solutions for many varied and common smaller app development tasks such as CSV database formatting and exporting, RGBA color format conversion,<br> FPS stats and alert messages.",
 
         "demo": false,
 
+        "demoText": "",
+
         "plugins": [
             "Stats_Info_Box",
-            "Toggle_Boolean",
             "Add_Zeros_Padding",
+            "Alert_Message",
             "Convert_To_RGBA",
             "Export_CSV_File",
-            "Convert_To_CSV_Format",
-            "Call_Procedure_By_Name",
-            "Call_Procedure_By_Name_Output",
-            "Merge_Lists",
-            "List_Similar",
-            "Right_Click_Event",
-            "Context_Menu_Toggle",
-            "Alert_Message"
+            "Convert_To_CSV_Format"
         ],
 
         
@@ -265,26 +260,7 @@
 
             "exampleText": "Types of stats available:<br><ul><li>Frames rendered in the last second. The higher the number the better.</li><li>Milliseconds needed to render a frame. The lower the number the better.</li><li>MBytes of allocated memory. (Run Chrome with <code>--enable-precise-memory-info</code>)</li></ul>",
             
-            "consoleText": "This is an easy replacemnt for the standard puzzle block arrangement of toggling a value:",
-
-            "extraText": "",
-
-            "customHTML": "",
-
-            "portedURL": ""
-
-        },
-
-
-        "Toggle_Boolean": {
-
-            "pluginWidth": "23rem","exampleWidth": "23rem",
-
-            "puzzleText": "toggles a user designated global boolean variable's changing value contained in one puzzle block.",
-
-            "exampleText": "This is convenient for switching between two values easily.",
-
-            "consoleText": "_",
+            "consoleText": "",
 
             "extraText": "",
 
@@ -299,7 +275,7 @@
 
             "pluginWidth": "22rem","exampleWidth": "23rem",
 
-            "puzzleText": "formats a number to a 'Locale String', adding a padding of zeros determined by the 'digits' input amount.",
+            "puzzleText": "formats a number to a 'Locale String', <br>adding a padding of zeros determined by the 'digits' input amount.",
 
             "exampleText": "When making many iterations of object names or text list items, it's often prefereable to have an ordered naming convention like a numbered suffix.  An easy method to achieve this is to use the plugin in a loop.",
 
@@ -314,11 +290,29 @@
         },
 
 
+        "Alert_Message": {
+
+            "pluginWidth": "18rem","exampleWidth": "10rem", "consoleWidth": "5rem", "extraWidth": "22rem",
+
+            "puzzleText": "outputs text to a popup 'alert' text window.",
+
+            "exampleText": "",
+
+            "consoleText": "",
+
+            "extraText": "A browser popup alert message:",
+
+            "customHTML": "",
+
+            "portedURL": ""
+        },
+
+
         "Convert_To_RGBA": {
 
             "pluginWidth": "22rem","exampleWidth": "25rem",
 
-            "puzzleText": "given a color choice, CSS name, or hex value, returns an 'rgba' string in the format of 'rgba( 0, 0, 0, 0 )' where the last number is an alpha value from the puzzle's alpha input field.",
+            "puzzleText": "given a color choice, CSS name, or hex value, returns an 'rgba' string in the format of 'rgba( x, x, x, x )' where the last number is an alpha value from the puzzle's alpha input field.",
 
             "exampleText": "This puzzle solves the issue of needing an rgba value in certain circumstances.",
 
@@ -360,7 +354,50 @@
 
             "consoleText": "Console output:",
 
-            "extraText": "The data can then be downloaded using the native Verge3D 'download file' puzzle found in the HTML folder of the puzzles menu.",
+            "extraText": "The data can then be downloaded using the native Verge3D 'download file' puzzle<br> found in the HTML folder of the puzzles menu.",
+
+            "customHTML": "",
+
+            "portedURL": ""
+
+        }
+
+    },
+
+
+    "utility_2": {
+
+        "title": "Utility 2",
+
+        "intro": "is a selection of 6 blocks that allow solutions for many varied and common smaller app development tasks such as boolean value toggling, right-click context menu toggling, right-click events, dynamic procedure name calls, and list management.",
+
+        "demo": false,
+
+        "demoText": "",
+
+        "plugins": [
+            "Toggle_Boolean",
+            "Context_Menu_Toggle",
+            "Right_Click_Event",
+            "Call_Procedure_By_Name",
+            "Merge_Lists",
+            "List_Similar"
+        ],
+
+
+        "Toggle_Boolean": {
+
+            "pluginWidth": "23rem","exampleWidth": "23rem",
+
+            "puzzleText": "toggles a user designated global boolean variable's changing value contained in one puzzle block.",
+
+            "exampleText": "This is convenient for switching between two values easily.",
+
+            "consoleText": "",
+
+            "consoleTextMuted": "And is a quick and easy replacment for this standard puzzle block arrangement of toggling a value:",
+
+            "extraText": "",
 
             "customHTML": "",
 
@@ -369,13 +406,33 @@
         },
 
 
-        "Call_Procedure_By_Name": {
+        "Context_Menu_Toggle": {
 
-            "pluginWidth": "22rem","exampleWidth": "23rem",
+            "pluginWidth": "18rem","exampleWidth": "25rem",
 
-            "puzzleText": "executes an already existing procedure when given it's name.",
+            "puzzleText": "disables or enables the browser's right-click 'context' menu.",
 
-            "exampleText": "This can be useful when switching between iterations of similar or differently named procedures.  This can be done dynamically.",
+            "exampleText": "This is useful when applications need right mouse button interactivity and the browser pop up context menu is unwanted.",
+
+            "consoleText": "",
+
+            "consoleTextMUTED": "This plugin is also included in the [ GLIFTEK ] Plugins custom 'Right Click Menu' Plugin Pack as it is necessary to disable the existing context menu in order to display a custom menu.",
+
+            "extraText": "",
+
+            "customHTML": "",
+
+            "portedURL": ""
+        },
+
+
+        "Right_Click_Event": {
+
+            "pluginWidth": "15rem","exampleWidth": "22rem", "consoleWidth": "23rem",
+
+            "puzzleText": "executes desired functions upon any and all right-clicks on HTML elements.",
+
+            "exampleText": "This plugin is also included in the [ GLIFTEK ] Plugins custom 'Right Click Menu' Plugin Pack.  This allows for activation of a custom right-click menu upon clicking HTML elements.",
 
             "consoleText": "",
 
@@ -387,7 +444,25 @@
         },
 
 
-        "Call_Procedure_By_Name_Output": {
+        "Call_Procedure_By_Name": {
+
+            "pluginWidth": "22rem","exampleWidth": "23rem",
+
+            "puzzleText": "executes an already existing procedure when given it's name.",
+
+            "exampleText": "This can be useful when switching between iterations of similar or differently named procedures<br>and can be done dynamically.",
+
+            "consoleText": "",
+
+            "extraText": "",
+
+            "customHTML": "",
+
+            "portedURL": ""
+        },
+
+
+        "Call_Procedure_By_Name_Output_MUTED": {
 
             "pluginWidth": "22rem","exampleWidth": "25rem",
 
@@ -438,63 +513,9 @@
             "customHTML": "",
 
             "portedURL": ""
-        },
+        }        
 
-
-        "Right_Click_Event": {
-
-            "pluginWidth": "15rem","exampleWidth": "22rem", "consoleWidth": "23rem",
-
-            "puzzleText": "executes desired functions upon any and all right-clicks on HTML elements.",
-
-            "exampleText": "This plugin is also included in the [ GLIFTEK ] Plugins custom 'Right Click Menu' Plugin Pack.  This allows for activation of a custom right-click menu upon clicking HTML elements.",
-
-            "consoleText": "",
-
-            "extraText": "",
-
-            "customHTML": "",
-
-            "portedURL": ""
-        },
-
-
-        "Context_Menu_Toggle": {
-
-            "pluginWidth": "18rem","exampleWidth": "25rem",
-
-            "puzzleText": "disables or enables the browser's right-click 'context' menu.",
-
-            "exampleText": "This is useful when applications need right mouse button interactivity and the browser pop up context menu is unwanted.",
-
-            "consoleText": "This plugin is also included in the [ GLIFTEK ] Plugins custom 'Right Click Menu' Plugin Pack as it is necessary to disable the existing context menu in order to display a custom menu.",
-
-            "extraText": "",
-
-            "customHTML": "",
-
-            "portedURL": ""
-        },
-
-
-        "Alert_Message": {
-
-            "pluginWidth": "18rem","exampleWidth": "10rem", "consoleWidth": "5rem", "extraWidth": "22rem",
-
-            "puzzleText": "outputs text to a popup 'alert' text window.",
-
-            "exampleText": "",
-
-            "consoleText": "",
-
-            "extraText": "A browser popup alert message:",
-
-            "customHTML": "",
-
-            "portedURL": ""
-        }
     },
-
 
 
 
