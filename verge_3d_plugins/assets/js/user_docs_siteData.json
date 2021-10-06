@@ -430,9 +430,9 @@
 
             "pluginWidth": "15rem","exampleWidth": "22rem", "consoleWidth": "23rem",
 
-            "puzzleText": "executes desired functions upon any and all right-clicks on HTML elements.",
+            "puzzleText": "executes desired functions upon any right-click events on HTML elements.",
 
-            "exampleText": "This plugin is also included in the [ GLIFTEK ] Plugins custom 'Right Click Menu' Plugin Pack.  This allows for activation of a custom right-click menu upon clicking HTML elements.",
+            "exampleText": "",
 
             "consoleText": "",
 
