@@ -1,0 +1,2800 @@
+<xml xmlns="http://www.w3.org/1999/xhtml">
+  <tab name="init" type="InitTab" active="false" scrollx="719.0000000000005" scrolly="409.0000000000004" scale="0.9">
+    <block xmlns="https://developers.google.com/blockly/xml" type="procedures_callnoreturn" id="fIjH02lPo}S^f,Q_agPJ" x="-710" y="-270">
+      <mutation name="LOAD_MODAL_FONTS"/>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="procedures_defnoreturn" id="t{/,vp(:#w_+EX.f2z[3" x="-710" y="-210">
+      <field name="NAME">LOAD_MODAL_FONTS</field>
+      <comment pinned="false" h="80" w="160">Describe this function...</comment>
+      <statement name="STACK">
+        <block type="loadFont" id="d-+e%[6L8QuUgT@vXPSR">
+          <value name="URL">
+            <shadow type="text" id="{+gmI!x{)79.^*nB+cp(">
+              <field name="TEXT">./fonts/KrinkesDecorPERSONAL.ttf</field>
+            </shadow>
+          </value>
+          <value name="FONTFAMILY">
+            <shadow type="text" id="Bp}}9Vgx]ojnej#RK:qR">
+              <field name="TEXT">KrinkesDecorPERSONAL</field>
+            </shadow>
+          </value>
+          <next>
+            <block type="loadFont" id="DubRr^zQ,3HoAFVN{+s5">
+              <value name="URL">
+                <shadow type="text" id="X7jm%8714/(TD:iEt]6*">
+                  <field name="TEXT">./fonts/Long_Shot.ttf</field>
+                </shadow>
+              </value>
+              <value name="FONTFAMILY">
+                <shadow type="text" id="u8i[*Yg;;dsiDDdt[H00">
+                  <field name="TEXT">Long_Shot</field>
+                </shadow>
+              </value>
+              <next>
+                <block type="loadFont" id="cjpJ^x})eO(,`d1%$VY5">
+                  <value name="URL">
+                    <shadow type="text" id="f5DTbdURju/$PmWF5Kfk">
+                      <field name="TEXT">./fonts/Flux_Architect_Regular.ttf</field>
+                    </shadow>
+                  </value>
+                  <value name="FONTFAMILY">
+                    <shadow type="text" id="v;r%tyr1oh~|$iiWNXEp">
+                      <field name="TEXT">Flux_Architect_Regular</field>
+                    </shadow>
+                  </value>
+                  <next>
+                    <block type="loadFont" id="m%5i]I$e3t_PTS`I,4D}">
+                      <value name="URL">
+                        <shadow type="text" id="O;UUZeh`?S|,%`;LPT):">
+                          <field name="TEXT">./fonts/Reza Zulmi Sans.ttf</field>
+                        </shadow>
+                      </value>
+                      <value name="FONTFAMILY">
+                        <shadow type="text" id="c#{0-m`VuzMj^hY?.VB(">
+                          <field name="TEXT">Reza_Zulmi_Sans</field>
+                        </shadow>
+                      </value>
+                      <next>
+                        <block type="loadFont" id="seKwic(v56NuBonXX)hn">
+                          <value name="URL">
+                            <shadow type="text" id="6@]i+8^yM,{q#E_hh;G1">
+                              <field name="TEXT">./fonts/Road_Rage.otf</field>
+                            </shadow>
+                          </value>
+                          <value name="FONTFAMILY">
+                            <shadow type="text" id="m]yO@ghtMTnR/Zu],!8R">
+                              <field name="TEXT">Road_Rage</field>
+                            </shadow>
+                          </value>
+                          <next>
+                            <block type="loadFont" id="7wSp0OFFBAGS~(^i88[P">
+                              <value name="URL">
+                                <shadow type="text" id="R7}dAFXQ,GX`x:y3]Y[(">
+                                  <field name="TEXT">./fonts/trebuc.ttf</field>
+                                </shadow>
+                              </value>
+                              <value name="FONTFAMILY">
+                                <shadow type="text" id="j(dpsD)+/Yv2kOm/;ooe">
+                                  <field name="TEXT">trebuc</field>
+                                </shadow>
+                              </value>
+                              <next>
+                                <block type="loadFont" id="8ABmDeMvHok-@Sb*?-p}">
+                                  <value name="URL">
+                                    <shadow type="text" id="wkg_n[em;G/hytYvi!S?">
+                                      <field name="TEXT">./fonts/Atami-Regular.otf</field>
+                                    </shadow>
+                                  </value>
+                                  <value name="FONTFAMILY">
+                                    <shadow type="text" id="V^NR?sbWCo_MOwcjO_~9">
+                                      <field name="TEXT">Atami-Regular</field>
+                                    </shadow>
+                                  </value>
+                                </block>
+                              </next>
+                            </block>
+                          </next>
+                        </block>
+                      </next>
+                    </block>
+                  </next>
+                </block>
+              </next>
+            </block>
+          </next>
+        </block>
+      </statement>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="initSettings" id="}+O5qksi6$dHY0QL$dfk" x="-710" y="150">
+      <field name="LOAD_COMP_ASSETS">FALSE</field>
+      <field name="FULLSCREEN">TRUE</field>
+      <field name="BKG_TRANSPARENCY">FALSE</field>
+      <field name="PRESERVE_DRAW_BUF">FALSE</field>
+      <field name="FADE_ANNOTATIONS">TRUE</field>
+    </block>
+  </tab>
+  <tab name="main" type="MainTab" active="true" scrollx="870" scrolly="815" scale="0.3">
+    <variables xmlns="https://developers.google.com/blockly/xml">
+      <variable id="tI++]k}RoD@S(5D([A7C" type="">modal_OPEN_button_1_ID</variable>
+      <variable id="%6+l;tF`AERZr_X;bv[$" type="">modal_in_list</variable>
+      <variable id="JUTgVf0!X*j1u9QbP+A*" type="">modal_1_BODY_IMAGE</variable>
+      <variable id="Ppyv4lPrEj8Aa[lTfYNR" type="">modal_2_BODY_IMAGE</variable>
+      <variable id="3Q|tebtFuNdNnRmDU9m~" type="">modal_3_BODY_IMAGE</variable>
+      <variable id="=bNXz:k|ZxU.{W@s(kQg" type="">font_1</variable>
+      <variable id="Sl9``Jn5Ku-u(PHY)_~I" type="">modal_OPEN_button_2_ID</variable>
+      <variable id="I{U!tNZvdhEQQ)QOG(;:" type="">modal_1_BODY_VIDEO</variable>
+      <variable id="z/c?D./s0H2+zBV3VD!=" type="">modal_1_width</variable>
+      <variable id="b9l%x~/$vAs?s7X4*hs/" type="">modal_1_HEADER_TEXT_settings</variable>
+      <variable id="Ww6`HR[!3l]D-.yc^?_V" type="">modal_1_FOOTER_TEXT_settings</variable>
+      <variable id="#DsS0d{E^|e!G.3}FAY?" type="">modal_1_BODY_TEXT_settings</variable>
+      <variable id="wl6YoJ8:NgJo{Q;x4]xx" type="">modal_1_BODY_MEDIA_settings</variable>
+      <variable id="YXV5ztQevjh*oTouLzyX" type="">modal_1_ANIMATION_settings</variable>
+      <variable id="i[.u)3*DPcCUj4ohe*y+" type="">modal_1_position_TOP</variable>
+      <variable id="{nyUrSqn,K*H8L?0dA)N" type="">modal_1_position_LEFT</variable>
+      <variable id="C$nVR0:FGbLP3c-Mu4+." type="">modal_2_BODY_VIDEO</variable>
+      <variable id="+?sS(b7)A3pn/;|e$iB?" type="">modal_2_HEADER_settings</variable>
+      <variable id="|Q~9Y~uvXH.t|3xo]Z.@" type="">modal_2_FOOTER_settings</variable>
+      <variable id="9b*,9WQ52PuVk@Y;slG;" type="">modal_2_BODY_TEXT_settings</variable>
+      <variable id="s!%p[JckyPYYBk,WgZwV" type="">modal_2_BODY_MEDIA_settings</variable>
+      <variable id="X1DAsy.[GMhpw0]XsG3!" type="">modal_2_ANIMATION_settings</variable>
+      <variable id="2o+Uo}=g/1SIGmq(y2zf" type="">modal_3_BODY_VIDEO</variable>
+      <variable id="fM~}chT`9LjYFZGn0kAP" type="">modal_3_HEADER_TEXT_settings</variable>
+      <variable id="A*e.Mzhi9jNuh=;M*J9," type="">modal_3_FOOTER_TEXT_settings</variable>
+      <variable id="paM66K?dm,OtR-65x{yY" type="">modal_3_BODY_TEXT_settings</variable>
+      <variable id="v2qKe+/oW$j:H%|c7t??" type="">modal_3_BODY_MEDIA_settings</variable>
+      <variable id=":Ez[@4tN7mZljG=2flmL" type="">modal_3_ANIMATION_settings</variable>
+      <variable id="-B)PQJ8u#/G2s)8kurW{" type="">font_2</variable>
+      <variable id="h_5fvy13z;PhY1W$W[H@" type="">modal_1_body_text</variable>
+      <variable id="^Pr-Dafo,+01.QcrH5z9" type="">modal_2_body_text</variable>
+      <variable id="^!aHKQFst.:UG36TVD9t" type="">modal_3_body_text</variable>
+      <variable id="Ghon9Iga5%Qb1d9gd)w*" type="">font_3</variable>
+      <variable id="v+1a!*%X7~L{}uk/b~UZ" type="">modal_1_BODY_Extra_CSS</variable>
+      <variable id="Ls0s*-hWA2BJS8;^get^" type="">modal_2_header_text</variable>
+      <variable id="!Ngk4n3|`[9i8DL!C+/j" type="">modal_3_header_text</variable>
+      <variable id="bPA|tL%8Dr[mx=3YdJjD" type="">font_4</variable>
+      <variable id="/aOaop_fby.4]71VeWr7" type="">modal_1_header_text</variable>
+      <variable id="Hwe|,rWF3yA#mdhNm.jb" type="">modal_2_footer_text</variable>
+      <variable id="OgxkX%6,#?}a670IJ71[" type="">modal_3_footer_text</variable>
+      <variable id="4.pQGZL#_pT%Y#QNqH:$" type="">font_5</variable>
+      <variable id="8z/{+|w@:f9VA6c8o4Iy" type="">modal_1_footer_text</variable>
+      <variable id="t$qMNNJE0.3-L^ei7FH/" type="">font_6</variable>
+      <variable id="GkHes]E3{0cTyGi()PVs" type="">font_7</variable>
+      <variable id="F+*.`*|20Ni^5]`.L1bF" type="">modal_1_position_offscreen</variable>
+    </variables>
+    <block xmlns="https://developers.google.com/blockly/xml" type="comment" id="V@mRk$C_6z10qRF6|7RR" x="-2430" y="-2570">
+      <field name="TEXT">PUZZLES START HERE</field>
+      <next>
+        <block type="procedures_callnoreturn" id="zhO=BMiez]?]LgA/f8`z">
+          <mutation name="MAIN"/>
+        </block>
+      </next>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="procedures_defnoreturn" id="A(Y`JP_%t~2rvv,sU5?0" x="-1550" y="-2570">
+      <field name="NAME">SETUP_MODAL_FONT_VARIABLES</field>
+      <comment pinned="false" h="80" w="160">Describe this function...</comment>
+      <statement name="STACK">
+        <block type="comment" id="*T3/ixj,6:R!s`#7q=Z%">
+          <field name="TEXT">FONTS ARE LOADED IN INIT TAB</field>
+          <next>
+            <block type="variables_set" id="uZQO?H$7$hO-txIHQ6y3">
+              <field name="VAR" id="=bNXz:k|ZxU.{W@s(kQg">font_1</field>
+              <value name="VALUE">
+                <block type="text" id=".(=4vbhl4rY{NYT^!M0=">
+                  <field name="TEXT">KrinkesDecorPERSONAL</field>
+                </block>
+              </value>
+              <next>
+                <block type="variables_set" id="ve4ynpry0p5GCGwUsZ|J">
+                  <field name="VAR" id="-B)PQJ8u#/G2s)8kurW{">font_2</field>
+                  <value name="VALUE">
+                    <block type="text" id="[B=A1u{%x3{~X[}.97]0">
+                      <field name="TEXT">Long_Shot</field>
+                    </block>
+                  </value>
+                  <next>
+                    <block type="variables_set" id="E:}730XP:ttnoxP.F9p+">
+                      <field name="VAR" id="Ghon9Iga5%Qb1d9gd)w*">font_3</field>
+                      <value name="VALUE">
+                        <block type="text" id="|$VOSMp9knXuG?X`[1j0">
+                          <field name="TEXT">Flux_Architect_Regular</field>
+                        </block>
+                      </value>
+                      <next>
+                        <block type="variables_set" id="#yTpP#GFTm!rCbvnd?f%">
+                          <field name="VAR" id="bPA|tL%8Dr[mx=3YdJjD">font_4</field>
+                          <value name="VALUE">
+                            <block type="text" id="ior%fO21G@Tzz!6]3k/2">
+                              <field name="TEXT">Reza_Zulmi_Sans</field>
+                            </block>
+                          </value>
+                          <next>
+                            <block type="variables_set" id="Gzh2?,e3)Dj07z8FXJJ#">
+                              <field name="VAR" id="4.pQGZL#_pT%Y#QNqH:$">font_5</field>
+                              <value name="VALUE">
+                                <block type="text" id="@-8(R,(yijUrS,=]NtfL">
+                                  <field name="TEXT">Road_Rage</field>
+                                </block>
+                              </value>
+                              <next>
+                                <block type="variables_set" id="te])]]T$IiD0yGTNad}@">
+                                  <field name="VAR" id="t$qMNNJE0.3-L^ei7FH/">font_6</field>
+                                  <value name="VALUE">
+                                    <block type="text" id="6%xeqS!K~j~M=]6W@`(j">
+                                      <field name="TEXT">trebuc</field>
+                                    </block>
+                                  </value>
+                                  <next>
+                                    <block type="variables_set" id="szRjUq,wdDzE;H/Lp9r1">
+                                      <field name="VAR" id="GkHes]E3{0cTyGi()PVs">font_7</field>
+                                      <value name="VALUE">
+                                        <block type="text" id="U(pGzzv]!43w~j5%.}oZ">
+                                          <field name="TEXT">Atami-Regular</field>
+                                        </block>
+                                      </value>
+                                    </block>
+                                  </next>
+                                </block>
+                              </next>
+                            </block>
+                          </next>
+                        </block>
+                      </next>
+                    </block>
+                  </next>
+                </block>
+              </next>
+            </block>
+          </next>
+        </block>
+      </statement>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="procedures_defnoreturn" id="xmpr=/fnnIeA-7jdIfkI" x="-2430" y="-2510">
+      <field name="NAME">MAIN</field>
+      <comment pinned="false" h="80" w="160">Describe this function...</comment>
+      <statement name="STACK">
+        <block type="createEnvironment" id="K$i-;d$_EbsYJ[iyZbs=" disabled="true">
+          <mutation xmlns="http://www.w3.org/1999/xhtml" oncereadydoslot="false"></mutation>
+          <field name="TYPE">BACKGROUND_COLOR</field>
+          <value name="NAME">
+            <shadow type="text" id="jy;Bpw$sZvn2x;@$aPOP">
+              <field name="TEXT">myEnvMaterial</field>
+            </shadow>
+          </value>
+          <next>
+            <block type="setMaterialColor" id="Qy|XNC~m:}ohj`-CwRfr" inline="false" disabled="true">
+              <mutation xmlns="http://www.w3.org/1999/xhtml" flexcolinput="false" usecsscolor="true"></mutation>
+              <field name="MAT_COL_NAME">&lt;no colors&gt;</field>
+              <value name="MATERIAL">
+                <shadow type="materialList" id="cT%)NO-u?c5gmqTmaq)p">
+                  <field name="FIELDNAME">Verge3D_Environment_World</field>
+                </shadow>
+              </value>
+              <value name="CSS">
+                <block type="text" id="1a=gFd7UG)0gYH`8cF/k">
+                  <field name="TEXT">lightblue</field>
+                </block>
+              </value>
+              <next>
+                <block type="GLIFTEK_v3d_Plugins_Backgrounds/GLIFTEK_BACKGROUNDS_Generate_Gradient_Background" id=":6L1}]^;#?O)R9chq`wn">
+                  <field name="typeDropdown">gradientRadial</field>
+                  <field name="colorInput_1_PICKER">#ccffff</field>
+                  <field name="color2Checkbox">FALSE</field>
+                  <field name="colorInput_2_PICKER">#66cccc</field>
+                  <field name="colorInput_3_PICKER">#336666</field>
+                  <value name="colorInput_1_TEXT">
+                    <shadow type="text" id="r:mdeHrTllVPo[B,Wd|-">
+                      <field name="TEXT"/>
+                    </shadow>
+                  </value>
+                  <value name="colorInput_1_OFFSET">
+                    <shadow type="math_number" id="SvcJ6`ivwT^gaPf~r^_[">
+                      <field name="NUM">0</field>
+                    </shadow>
+                  </value>
+                  <value name="colorInput_2_TEXT">
+                    <shadow type="text" id="UF`SOHhQB(:xI(Z`%QH,">
+                      <field name="TEXT"/>
+                    </shadow>
+                  </value>
+                  <value name="colorInput_2_OFFSET">
+                    <shadow type="math_number" id="HhAJJ2eBHK*UWndXR@Pu">
+                      <field name="NUM">0.3</field>
+                    </shadow>
+                  </value>
+                  <value name="colorInput_3_TEXT">
+                    <shadow type="text" id="clv9ab+5Z0_]04;B]Z(y">
+                      <field name="TEXT"/>
+                    </shadow>
+                  </value>
+                  <value name="colorInput_3_OFFSET">
+                    <shadow type="math_number" id="KgZa]Ma)B!4$JB=:REki">
+                      <field name="NUM">1</field>
+                    </shadow>
+                  </value>
+                  <next>
+                    <block type="procedures_callnoreturn" id="4RiaiQfou#sq@dUy.+k[">
+                      <mutation name="SETUP_MODAL_FONT_VARIABLES"/>
+                      <next>
+                        <block type="procedures_callnoreturn" id="usc4#e#,N?jErSprn{Dw">
+                          <mutation name="MAKE_MODAL_OPEN_BUTTON_1"/>
+                          <next>
+                            <block type="procedures_callnoreturn" id="mLH)9.h{VzMR4%B#3{s0">
+                              <mutation name="ADD_ANNOTATIONS"/>
+                              <next>
+                                <block type="procedures_callnoreturn" id="!fg;$^n5eP~WItL6erTM">
+                                  <mutation name="SETUP_MODALS"/>
+                                  <next>
+                                    <block type="procedures_callnoreturn" id="h-#OxDA)tFztuMp2DfI[" disabled="true">
+                                      <mutation name="OPEN_MODALS_PLUGIN"/>
+                                      <next>
+                                        <block type="GLIFTEK_v3d_Plugins_Backgrounds/GLIFTEK_BACKGROUNDS_Screen_Fade" id="bv02D0^]?yDT[b]`HV(R">
+                                          <field name="typeDropdown">out</field>
+                                          <field name="colorInput_1_PICKER">#000000</field>
+                                          <field name="delete_When_Done_Checkbox">FALSE</field>
+                                          <value name="screenFade_ID_Input">
+                                            <shadow type="text" id="(1($Jq#-8D^R8T89;22j">
+                                              <field name="TEXT">screenFade_1</field>
+                                            </shadow>
+                                          </value>
+                                          <value name="screenFade_Z_Index_Input">
+                                            <shadow type="math_number" id="tqo+p4puwk:(ojp!#p3N">
+                                              <field name="NUM">10</field>
+                                            </shadow>
+                                          </value>
+                                          <value name="screenFade_Pause_Input">
+                                            <shadow type="math_number" id="XQ/oHE7RR(s_,pBq77XP">
+                                              <field name="NUM">3</field>
+                                            </shadow>
+                                          </value>
+                                          <value name="screenFade_Duration_Input">
+                                            <shadow type="math_number" id="7ViEhNQM{.@65k7HI/SQ">
+                                              <field name="NUM">1.5</field>
+                                            </shadow>
+                                          </value>
+                                          <value name="colorInput_1_TEXT">
+                                            <shadow type="text" id="VqrK-GhU{sAZvwESWc5S">
+                                              <field name="TEXT"/>
+                                            </shadow>
+                                          </value>
+                                          <statement name="whenDone_Statement_Input">
+                                            <block type="procedures_callnoreturn" id="3K}VI%8C7LyB_a5u9*5}">
+                                              <mutation name="OPEN_MODALS_PLUGIN"/>
+                                            </block>
+                                          </statement>
+                                        </block>
+                                      </next>
+                                    </block>
+                                  </next>
+                                </block>
+                              </next>
+                            </block>
+                          </next>
+                        </block>
+                      </next>
+                    </block>
+                  </next>
+                </block>
+              </next>
+            </block>
+          </next>
+        </block>
+      </statement>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="procedures_defnoreturn" id="alcp[%J^%qv~`Q?cHnF6" x="-510" y="-2590">
+      <field name="NAME">MAKE_MODAL_OPEN_BUTTON_1</field>
+      <comment pinned="false" h="80" w="160">Describe this function...</comment>
+      <statement name="STACK">
+        <block type="variables_set" id="^P4:Koq1oG#e5{.l::h:">
+          <field name="VAR" id="tI++]k}RoD@S(5D([A7C">modal_OPEN_button_1_ID</field>
+          <value name="VALUE">
+            <block type="text" id=")h}i`HS;dnb$]hlW+2mI">
+              <field name="TEXT">modalButton_1</field>
+            </block>
+          </value>
+          <next>
+            <block type="addHTMLElement" id="}oE3Xq{3iqAs4h1VLQ^Q">
+              <field name="ELEMENT">form</field>
+              <field name="MODE">TO</field>
+              <field name="PARENT">FALSE</field>
+              <value name="ID">
+                <shadow type="text">
+                  <field name="TEXT"/>
+                </shadow>
+                <block type="variables_get" id="~}Fkeal#N6T89hr:_`%~">
+                  <field name="VAR" id="tI++]k}RoD@S(5D([A7C">modal_OPEN_button_1_ID</field>
+                </block>
+              </value>
+              <value name="TARGET_ID">
+                <shadow type="DOMObjectSelector" id="%[bc^*CJ3*FI)F3+@.Xn">
+                  <field name="DOM_OBJECT">CONTAINER</field>
+                </shadow>
+              </value>
+              <next>
+                <block type="setHTMLElemAttribute" id="DG.;B=zLg@:%KaP?gtKt">
+                  <field name="ATTRIBUTE">type</field>
+                  <field name="PARENT">FALSE</field>
+                  <value name="VALUE">
+                    <block type="text" id="_sRaz6ba`j[kt.{rj;#-">
+                      <field name="TEXT">submit</field>
+                    </block>
+                  </value>
+                  <value name="ID">
+                    <shadow type="text">
+                      <field name="TEXT"/>
+                    </shadow>
+                    <block type="variables_get" id="BMKW%E[C}5y+j}SdZTSJ">
+                      <field name="VAR" id="tI++]k}RoD@S(5D([A7C">modal_OPEN_button_1_ID</field>
+                    </block>
+                  </value>
+                  <next>
+                    <block type="setHTMLElemStyle" id="%kW`*1i~[dnx=R8^9%F=">
+                      <field name="PROPERTY">height</field>
+                      <field name="PARENT">FALSE</field>
+                      <value name="VALUE">
+                        <block type="text" id="U]/~i.j8dijhugoVl{o6">
+                          <field name="TEXT">24px</field>
+                        </block>
+                      </value>
+                      <value name="ID">
+                        <shadow type="text">
+                          <field name="TEXT"/>
+                        </shadow>
+                        <block type="variables_get" id="?3;MYnRzR/HCRsJ%{hz7">
+                          <field name="VAR" id="tI++]k}RoD@S(5D([A7C">modal_OPEN_button_1_ID</field>
+                        </block>
+                      </value>
+                      <next>
+                        <block type="setHTMLElemStyle" id="UUz%uA~bm(lUE~B#,u:a">
+                          <field name="PROPERTY">width</field>
+                          <field name="PARENT">FALSE</field>
+                          <value name="VALUE">
+                            <block type="text" id="T%5wQj#Rix8vjrMP1Z9?">
+                              <field name="TEXT">240px</field>
+                            </block>
+                          </value>
+                          <value name="ID">
+                            <shadow type="text">
+                              <field name="TEXT"/>
+                            </shadow>
+                            <block type="variables_get" id="(F_p;](grw](iC4!*=7o">
+                              <field name="VAR" id="tI++]k}RoD@S(5D([A7C">modal_OPEN_button_1_ID</field>
+                            </block>
+                          </value>
+                          <next>
+                            <block type="setHTMLElemStyle" id="X%X%p{C)=mEC|*z/5`kY">
+                              <field name="PROPERTY">position</field>
+                              <field name="PARENT">FALSE</field>
+                              <value name="VALUE">
+                                <block type="text" id="McyLe+wB)oMGBfq74=Ba">
+                                  <field name="TEXT">absolute</field>
+                                </block>
+                              </value>
+                              <value name="ID">
+                                <shadow type="text">
+                                  <field name="TEXT"/>
+                                </shadow>
+                                <block type="variables_get" id="/FLnuiChF,cioAe1r.5i">
+                                  <field name="VAR" id="tI++]k}RoD@S(5D([A7C">modal_OPEN_button_1_ID</field>
+                                </block>
+                              </value>
+                              <next>
+                                <block type="setHTMLElemStyle" id="efcH7t`Jt{a15oVF:Ae0">
+                                  <field name="PROPERTY">top</field>
+                                  <field name="PARENT">FALSE</field>
+                                  <value name="VALUE">
+                                    <block type="text" id="G%`JKln0TP^[pak|+yB^">
+                                      <field name="TEXT">10px</field>
+                                    </block>
+                                  </value>
+                                  <value name="ID">
+                                    <shadow type="text">
+                                      <field name="TEXT"/>
+                                    </shadow>
+                                    <block type="variables_get" id="Ue]^TrtgQW{_s(!Rf4/=">
+                                      <field name="VAR" id="tI++]k}RoD@S(5D([A7C">modal_OPEN_button_1_ID</field>
+                                    </block>
+                                  </value>
+                                  <next>
+                                    <block type="setHTMLElemStyle" id="T)P(^T.C/2LA6YR_kC@{">
+                                      <field name="PROPERTY">left</field>
+                                      <field name="PARENT">FALSE</field>
+                                      <value name="VALUE">
+                                        <block type="text" id="ctU(z5(uDSA1W}%*.POV">
+                                          <field name="TEXT">10px</field>
+                                        </block>
+                                      </value>
+                                      <value name="ID">
+                                        <shadow type="text">
+                                          <field name="TEXT"/>
+                                        </shadow>
+                                        <block type="variables_get" id="HHxKMbtue}W*J=x/,)uT">
+                                          <field name="VAR" id="tI++]k}RoD@S(5D([A7C">modal_OPEN_button_1_ID</field>
+                                        </block>
+                                      </value>
+                                      <next>
+                                        <block type="setHTMLElemStyle" id="I(52K0dw%7P!cmkdm,4d">
+                                          <field name="PROPERTY">cursor</field>
+                                          <field name="PARENT">FALSE</field>
+                                          <value name="VALUE">
+                                            <block type="text" id="piAtUe6;t?v~t_Y)Lp,:">
+                                              <field name="TEXT">pointer</field>
+                                            </block>
+                                          </value>
+                                          <value name="ID">
+                                            <shadow type="text">
+                                              <field name="TEXT"/>
+                                            </shadow>
+                                            <block type="variables_get" id="e:S3LBF45sUH)!y3nha|">
+                                              <field name="VAR" id="tI++]k}RoD@S(5D([A7C">modal_OPEN_button_1_ID</field>
+                                            </block>
+                                          </value>
+                                          <next>
+                                            <block type="setHTMLElemStyle" id="6{z2k8_jbEZ$.SGv@=s8">
+                                              <field name="PROPERTY">backgroundColor</field>
+                                              <field name="PARENT">FALSE</field>
+                                              <value name="VALUE">
+                                                <block type="text" id="OYQiN]{FCo9+,g},Q8cb">
+                                                  <field name="TEXT">teal</field>
+                                                </block>
+                                              </value>
+                                              <value name="ID">
+                                                <shadow type="text">
+                                                  <field name="TEXT"/>
+                                                </shadow>
+                                                <block type="variables_get" id="uySH)Q*BI`3WLL(pGrUb">
+                                                  <field name="VAR" id="tI++]k}RoD@S(5D([A7C">modal_OPEN_button_1_ID</field>
+                                                </block>
+                                              </value>
+                                              <next>
+                                                <block type="setHTMLElemStyle" id="8+=dsKK;hd7zuh%1dB)Y">
+                                                  <field name="PROPERTY">fontFamily</field>
+                                                  <field name="PARENT">FALSE</field>
+                                                  <value name="VALUE">
+                                                    <block type="text" id="Kwsxiig%%C|RT1rsb.t0">
+                                                      <field name="TEXT">Arial</field>
+                                                    </block>
+                                                  </value>
+                                                  <value name="ID">
+                                                    <shadow type="text">
+                                                      <field name="TEXT"/>
+                                                    </shadow>
+                                                    <block type="variables_get" id="[u[nrQIJxEjNGc(0K_^c">
+                                                      <field name="VAR" id="tI++]k}RoD@S(5D([A7C">modal_OPEN_button_1_ID</field>
+                                                    </block>
+                                                  </value>
+                                                  <next>
+                                                    <block type="setHTMLElemStyle" id="3eOspnntR[d.$gIml8Qo">
+                                                      <field name="PROPERTY">color</field>
+                                                      <field name="PARENT">FALSE</field>
+                                                      <value name="VALUE">
+                                                        <block type="text" id="-M*/9Kc@ck;l5Z3AEW#l">
+                                                          <field name="TEXT">white</field>
+                                                        </block>
+                                                      </value>
+                                                      <value name="ID">
+                                                        <shadow type="text">
+                                                          <field name="TEXT"/>
+                                                        </shadow>
+                                                        <block type="variables_get" id="JwKX+K$/b]k~;7cBwr,f">
+                                                          <field name="VAR" id="tI++]k}RoD@S(5D([A7C">modal_OPEN_button_1_ID</field>
+                                                        </block>
+                                                      </value>
+                                                      <next>
+                                                        <block type="setHTMLElemAttribute" id="[yq@tc[B@WNq}lHL|`5#">
+                                                          <field name="ATTRIBUTE">innerHTML</field>
+                                                          <field name="PARENT">FALSE</field>
+                                                          <value name="VALUE">
+                                                            <block type="text" id="SbpCE6?-mdtCe,%ciQN;">
+                                                              <field name="TEXT">Click Here To Re-Open Modal #1</field>
+                                                            </block>
+                                                          </value>
+                                                          <value name="ID">
+                                                            <shadow type="text" id="%3lMb|~SB7;?d/A_$]=g">
+                                                              <field name="TEXT"/>
+                                                            </shadow>
+                                                            <block type="variables_get" id="sgwDf/A1Xqr4^C53vS$^">
+                                                              <field name="VAR" id="tI++]k}RoD@S(5D([A7C">modal_OPEN_button_1_ID</field>
+                                                            </block>
+                                                          </value>
+                                                        </block>
+                                                      </next>
+                                                    </block>
+                                                  </next>
+                                                </block>
+                                              </next>
+                                            </block>
+                                          </next>
+                                        </block>
+                                      </next>
+                                    </block>
+                                  </next>
+                                </block>
+                              </next>
+                            </block>
+                          </next>
+                        </block>
+                      </next>
+                    </block>
+                  </next>
+                </block>
+              </next>
+            </block>
+          </next>
+        </block>
+      </statement>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="procedures_defnoreturn" id="I8v,1K1d5?LZZ@^+TM45" x="-1550" y="-2290">
+      <field name="NAME">OPEN_MODALS_PLUGIN</field>
+      <comment pinned="false" h="80" w="160">Describe this function...</comment>
+      <statement name="STACK">
+        <block type="setTimeout" id="mJUgm%zdO$d?|1?$^j0%">
+          <value name="VALUE">
+            <shadow type="math_number" id="/F-(O]?)V-@.,;*ri4O$">
+              <field name="NUM">1</field>
+            </shadow>
+          </value>
+          <statement name="DO">
+            <block type="GLIFTEK_v3d_Plugins_PopUp_Modal/GLIFTEK_UTILITY_PopUp_Modal_Open_Close" id="{^n)cA(IQ,u::}7dt!2.">
+              <field name="typeDropdown">open</field>
+              <value name="modal_ID_Input">
+                <shadow type="text" id="9R1lr9C(ZaGcPJkElt)0">
+                  <field name="TEXT">Modal_1</field>
+                </shadow>
+              </value>
+              <next>
+                <block type="whenClicked" id="@c6[y}M(+28iLk/AyCUq">
+                  <mutation xmlns="http://www.w3.org/1999/xhtml" adveventoptions="false" enableifmissed="false"></mutation>
+                  <field name="X_RAY">FALSE</field>
+                  <field name="DOUBLE_CLICK">FALSE</field>
+                  <field name="LEFT_BUTTON">TRUE</field>
+                  <field name="MIDDLE_BUTTON">TRUE</field>
+                  <field name="RIGHT_BUTTON">TRUE</field>
+                  <value name="VALUE">
+                    <shadow type="objectList" id="s(8bK/D8Wih(16xhDN!u">
+                      <field name="FIELDNAME">Cube_1</field>
+                    </shadow>
+                  </value>
+                  <statement name="DO">
+                    <block type="setHTMLElemStyle" id="M!(Cnb]}8|IYa@qz-~OC">
+                      <field name="PROPERTY">cursor</field>
+                      <field name="PARENT">FALSE</field>
+                      <value name="VALUE">
+                        <block type="text" id="^b2m;^I`cqjZ_Dwz;}rl">
+                          <field name="TEXT">default</field>
+                        </block>
+                      </value>
+                      <value name="ID">
+                        <shadow type="text">
+                          <field name="TEXT">document</field>
+                        </shadow>
+                        <block type="DOMObjectSelector" id="kcWEyf.|n($#26txFe24">
+                          <field name="DOM_OBJECT">CONTAINER</field>
+                        </block>
+                      </value>
+                      <next>
+                        <block type="GLIFTEK_v3d_Plugins_PopUp_Modal/GLIFTEK_UTILITY_PopUp_Modal_Open_Close" id="Z=%6qu..*a*u,n=^m%tB">
+                          <field name="typeDropdown">open</field>
+                          <value name="modal_ID_Input">
+                            <shadow type="text" id="U0(Emh!lc%f1v[3HiuR;">
+                              <field name="TEXT">Modal_2</field>
+                            </shadow>
+                          </value>
+                        </block>
+                      </next>
+                    </block>
+                  </statement>
+                </block>
+              </next>
+            </block>
+          </statement>
+        </block>
+      </statement>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="procedures_defnoreturn" id="dS=:3gUMRk@lT9VN84Ak" x="-1550" y="-2010">
+      <field name="NAME">GET_STATUS_OF_MODALS</field>
+      <comment pinned="false" h="80" w="160">Describe this function...</comment>
+      <statement name="STACK">
+        <block type="controls_forEach" id="l9.3yfD3JTDKN8We4MB5">
+          <field name="VAR" id="%6+l;tF`AERZr_X;bv[$">modal_in_list</field>
+          <value name="LIST">
+            <block type="lists_create_with" id="-I|oKf?wq6MrLQOAJUh%">
+              <mutation items="3"/>
+              <value name="ADD0">
+                <block type="text" id="M2p*j]PZ$h5IllfI@FxP">
+                  <field name="TEXT">Modal_1</field>
+                </block>
+              </value>
+              <value name="ADD1">
+                <block type="text" id="iE6Dlb}?y$4mlFgcA=:E">
+                  <field name="TEXT">Modal_2</field>
+                </block>
+              </value>
+              <value name="ADD2">
+                <block type="text" id="$xP#t[=d$NxD}ee{|y5`">
+                  <field name="TEXT">Modal_3</field>
+                </block>
+              </value>
+            </block>
+          </value>
+          <statement name="DO">
+            <block type="console.log" id="Y0xec4hNkYc^m}L2sYm[">
+              <value name="VALUE">
+                <shadow type="text" id="Qpf4z%o?]8}YBf6,2lw%">
+                  <field name="TEXT"/>
+                </shadow>
+                <block type="text_join" id="!/R!e/R*Pk4YVPG6SgvY">
+                  <mutation items="2"/>
+                  <value name="ADD0">
+                    <block type="variables_get" id="`r%wYxSr_O-AQqZh}}df">
+                      <field name="VAR" id="%6+l;tF`AERZr_X;bv[$">modal_in_list</field>
+                    </block>
+                  </value>
+                  <value name="ADD1">
+                    <block type="logic_ternary" id="nVcSrP4$i%Zgt4NGdhIt">
+                      <value name="IF">
+                        <block type="GLIFTEK_v3d_Plugins_PopUp_Modal/GLIFTEK_UTILITY_PopUp_Modal_Status" id="wf^tn-?ip80!H0W+l7FZ" inline="true">
+                          <value name="modal_ID_Input">
+                            <shadow type="text">
+                              <field name="TEXT">Modal_1</field>
+                            </shadow>
+                            <block type="variables_get" id="[-?5N=zni3a!SB*6%Oj+">
+                              <field name="VAR" id="%6+l;tF`AERZr_X;bv[$">modal_in_list</field>
+                            </block>
+                          </value>
+                        </block>
+                      </value>
+                      <value name="THEN">
+                        <block type="text" id="#~w)-cH84-=aDkF-+zj#">
+                          <field name="TEXT"> is OPEN!</field>
+                        </block>
+                      </value>
+                      <value name="ELSE">
+                        <block type="text" id="JEzm,SE^T9|1.K9*A_wV">
+                          <field name="TEXT"> is CLOSED!</field>
+                        </block>
+                      </value>
+                    </block>
+                  </value>
+                </block>
+              </value>
+            </block>
+          </statement>
+        </block>
+      </statement>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="procedures_defnoreturn" id="XcB~+Bf)1vXI#wo^UTsA" x="-510" y="-2030">
+      <field name="NAME">ADD_ANNOTATION_OPEN_MODAL_2</field>
+      <comment pinned="false" h="80" w="160">Describe this function...</comment>
+      <statement name="STACK">
+        <block type="addAnnotation" id="34I@Z4gpOrbH10EW6e.x" inline="false">
+          <mutation xmlns="http://www.w3.org/1999/xhtml" usenameslot="false"></mutation>
+          <value name="ANNOTATION">
+            <shadow type="text" id="Z69Wc_WME*D)0BrLa-6z">
+              <field name="TEXT">Click Cube To Open Modal #2</field>
+            </shadow>
+          </value>
+          <value name="TARGET">
+            <shadow type="objectList" id="bJEOa|[f$t{))Z1Eh)*7">
+              <field name="FIELDNAME">Cube_1</field>
+            </shadow>
+          </value>
+          <value name="CONTENTS">
+            <shadow type="text" id="oo@I}^G?3FQT:[FvrAQc">
+              <field name="TEXT"/>
+            </shadow>
+          </value>
+          <value name="ID">
+            <shadow type="text" id="6;Zn;Ie4lE|fv:4Gww}E">
+              <field name="TEXT">annotation_open_modal_2</field>
+            </shadow>
+          </value>
+          <next>
+            <block type="whenHovered" id="/n|EsK2(QgR.8qnrtXPj">
+              <mutation xmlns="http://www.w3.org/1999/xhtml" adveventoptions="false"></mutation>
+              <field name="X_RAY">FALSE</field>
+              <value name="VALUE">
+                <shadow type="objectList" id="-%-/l;k!_=NA-9bzJh@r">
+                  <field name="FIELDNAME">Cube_1</field>
+                </shadow>
+              </value>
+              <statement name="DO_OVER">
+                <block type="setHTMLElemStyle" id=".p$$iv)Yf!r_9Vxl)voH" inline="false">
+                  <field name="PROPERTY">cursor</field>
+                  <field name="PARENT">FALSE</field>
+                  <value name="VALUE">
+                    <block type="text" id="nGSO]o.1oFhe]1xVlOa)">
+                      <field name="TEXT">pointer</field>
+                    </block>
+                  </value>
+                  <value name="ID">
+                    <shadow type="text" id="*4^1Kq]ryH^$k3Il_]!+">
+                      <field name="TEXT">document</field>
+                    </shadow>
+                    <block type="DOMObjectSelector" id="o]tY#K30zlIv17z+qsAh">
+                      <field name="DOM_OBJECT">CONTAINER</field>
+                    </block>
+                  </value>
+                </block>
+              </statement>
+              <statement name="DO_OUT">
+                <block type="setHTMLElemStyle" id="~/37:#Z$0nrmgSY:dK-i" inline="false">
+                  <field name="PROPERTY">cursor</field>
+                  <field name="PARENT">FALSE</field>
+                  <value name="VALUE">
+                    <block type="text" id=".2(A#aWYvE_-uaGXUt}:">
+                      <field name="TEXT">default</field>
+                    </block>
+                  </value>
+                  <value name="ID">
+                    <shadow type="text" id="~x#xk}Mk.KMbHH])Y+=5">
+                      <field name="TEXT">document</field>
+                    </shadow>
+                    <block type="DOMObjectSelector" id="Y)}9oFq[1x0/^AWAzRc/">
+                      <field name="DOM_OBJECT">CONTAINER</field>
+                    </block>
+                  </value>
+                </block>
+              </statement>
+              <next>
+                <block type="setHTMLElemStyle" id=",9K.}#aa~2.V;REb#.ty" inline="false">
+                  <field name="PROPERTY">zIndex</field>
+                  <field name="PARENT">FALSE</field>
+                  <value name="VALUE">
+                    <block type="text" id="8-MHm]`%YKkI(V+/Ose`">
+                      <field name="TEXT">3</field>
+                    </block>
+                  </value>
+                  <value name="ID">
+                    <shadow type="text" id=",xoPm8$;t:u2YYs?V2u9">
+                      <field name="TEXT">annotation_open_modal_2</field>
+                    </shadow>
+                  </value>
+                </block>
+              </next>
+            </block>
+          </next>
+        </block>
+      </statement>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="procedures_defnoreturn" id=",}O3O8AH;|1y{xA}bYFE" x="-1550" y="-1730">
+      <field name="NAME">SET_STATUS_BUTTON</field>
+      <comment pinned="false" h="80" w="160">Describe this function...</comment>
+      <statement name="STACK">
+        <block type="eventHTMLElem" id="elkg9)wjnI2z,L{A0IXI" inline="false">
+          <field name="EVENT">click</field>
+          <field name="PARENT">FALSE</field>
+          <value name="ID">
+            <shadow type="text" id="MH4UmGAQPKXH^?mYVLj@">
+              <field name="TEXT"/>
+            </shadow>
+            <block type="variables_get" id="V!5fD$.|hJJFx:!=1%rI">
+              <field name="VAR" id="Sl9``Jn5Ku-u(PHY)_~I">modal_OPEN_button_2_ID</field>
+            </block>
+          </value>
+          <statement name="DO">
+            <block type="procedures_callnoreturn" id="#R(b3Q@;|J.l7pO67zbK">
+              <mutation name="GET_STATUS_OF_MODALS"/>
+            </block>
+          </statement>
+          <next>
+            <block type="eventHTMLElem" id="jfxMBDDrLaL6#*F_#*+P" inline="false">
+              <field name="EVENT">click</field>
+              <field name="PARENT">FALSE</field>
+              <value name="ID">
+                <shadow type="text" id="U|bb084n4+I6RB+f;HJV">
+                  <field name="TEXT">annotation_open_modal_3</field>
+                </shadow>
+              </value>
+              <statement name="DO">
+                <block type="GLIFTEK_v3d_Plugins_PopUp_Modal/GLIFTEK_UTILITY_PopUp_Modal_Open_Close" id="FC8M?b!Uu@/[0RSQ5/Kv">
+                  <field name="typeDropdown">open</field>
+                  <value name="modal_ID_Input">
+                    <shadow type="text" id="g-[yll2[M?I5ZNU4cJ^g">
+                      <field name="TEXT">Modal_3</field>
+                    </shadow>
+                  </value>
+                </block>
+              </statement>
+            </block>
+          </next>
+        </block>
+      </statement>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="procedures_defnoreturn" id="bUlkGL8A-!W6dWBhgSE," x="-1550" y="-1410">
+      <field name="NAME">SETUP_MODALS</field>
+      <comment pinned="false" h="80" w="160">Describe this function...</comment>
+      <statement name="STACK">
+        <block type="procedures_callnoreturn" id="EN][lM[zDFgGcJ=nI=I8">
+          <mutation name="MODAL_1_MAIN"/>
+          <next>
+            <block type="procedures_callnoreturn" id="/1Pxol#*jx2{s][7l]I!">
+              <mutation name="MODAL_2_MAIN"/>
+              <next>
+                <block type="procedures_callnoreturn" id="YA`KxNNWftZg-^]pyMG4">
+                  <mutation name="MODAL_3_MAIN"/>
+                </block>
+              </next>
+            </block>
+          </next>
+        </block>
+      </statement>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="procedures_defnoreturn" id="v;)NNvTL6.i)buh^3;_O" x="-510" y="-1450">
+      <field name="NAME">ADD_ANNOTATION_OPEN_MODAL_3</field>
+      <comment pinned="false" h="80" w="160">Describe this function...</comment>
+      <statement name="STACK">
+        <block type="addAnnotation" id="=Q^Gu=dyT|5NNsp=vM#," inline="false">
+          <mutation xmlns="http://www.w3.org/1999/xhtml" usenameslot="false"></mutation>
+          <value name="ANNOTATION">
+            <shadow type="text" id="xifnpFS@nRwdq8aCY0^o">
+              <field name="TEXT"> Open Info Modal #3  </field>
+            </shadow>
+          </value>
+          <value name="TARGET">
+            <shadow type="objectList" id="L~AUHfU[wT6/]l^y~vJ*">
+              <field name="FIELDNAME">Cube_2</field>
+            </shadow>
+          </value>
+          <value name="CONTENTS">
+            <shadow type="text" id="o6L#qp:j2wEZ^$qpynO#">
+              <field name="TEXT"/>
+            </shadow>
+          </value>
+          <value name="ID">
+            <shadow type="text" id="aHCQZ:s@Ip^,.iXBvn5p">
+              <field name="TEXT">annotation_open_modal_3</field>
+            </shadow>
+          </value>
+          <next>
+            <block type="hide" id="+Sg6r%#d`bqekl@.22NB">
+              <value name="VALUE">
+                <shadow type="objectList" id="nWD$zdX`I!8$^2~A{%bv">
+                  <field name="FIELDNAME">Cube_2</field>
+                </shadow>
+              </value>
+              <next>
+                <block type="setHTMLElemStyle" id=";vph+]T@P|ywQ*p;hfzn" inline="false">
+                  <field name="PROPERTY">cursor</field>
+                  <field name="PARENT">FALSE</field>
+                  <value name="VALUE">
+                    <block type="text" id="t~GfC%ZqJQH^;7ycmk}(">
+                      <field name="TEXT">pointer</field>
+                    </block>
+                  </value>
+                  <value name="ID">
+                    <shadow type="text" id="[S~R[Ifep$I#$QMr`dvh">
+                      <field name="TEXT">annotation_open_modal_3</field>
+                    </shadow>
+                  </value>
+                  <next>
+                    <block type="setHTMLElemStyle" id="uO8Z+kgdM@NX1cINz4lK" inline="false">
+                      <field name="PROPERTY">zIndex</field>
+                      <field name="PARENT">FALSE</field>
+                      <value name="VALUE">
+                        <block type="text" id="Lfr6g!B}l*V~Q4tDx~d0">
+                          <field name="TEXT">3</field>
+                        </block>
+                      </value>
+                      <value name="ID">
+                        <shadow type="text" id="]19Lk:q,^zijJBaR*2ew">
+                          <field name="TEXT">annotation_open_modal_3</field>
+                        </shadow>
+                      </value>
+                    </block>
+                  </next>
+                </block>
+              </next>
+            </block>
+          </next>
+        </block>
+      </statement>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="procedures_defnoreturn" id="MXE{OX3f1rC:GPX^}Yjt" x="-1210" y="-1410">
+      <field name="NAME">ADD_ANNOTATIONS</field>
+      <comment pinned="false" h="80" w="160">Describe this function...</comment>
+      <statement name="STACK">
+        <block type="procedures_callnoreturn" id="ov14x[$xhaA4q/?WFlE0">
+          <mutation name="ADD_ANNOTATION_OPEN_MODAL_2"/>
+          <next>
+            <block type="procedures_callnoreturn" id="M6{$eT(0z$EA`g[C^R3K">
+              <mutation name="ADD_ANNOTATION_OPEN_MODAL_3"/>
+            </block>
+          </next>
+        </block>
+      </statement>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="procedures_defnoreturn" id="MB@x!SF+8dLX5](`U17-" x="-1550" y="-1250">
+      <field name="NAME">MODAL_1_MAIN</field>
+      <comment pinned="false" h="80" w="160">Describe this function...</comment>
+      <statement name="STACK">
+        <block type="procedures_callnoreturn" id="+k{3^%L5;6[;et`iz)3(">
+          <mutation name="SET_MODAL_1_SETTINGS"/>
+          <next>
+            <block type="procedures_callnoreturn" id="r#3S7-h7$kHXq7{F|C4a">
+              <mutation name="SETUP_MODAL_1"/>
+            </block>
+          </next>
+        </block>
+      </statement>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="procedures_defnoreturn" id="W;Ha/8)M--XK;}z+CG3$" x="-1550" y="-1130">
+      <field name="NAME">MODAL_2_MAIN</field>
+      <comment pinned="false" h="80" w="160">Describe this function...</comment>
+      <statement name="STACK">
+        <block type="procedures_callnoreturn" id="o:ImM6UnTc*hwEvqd-Yj">
+          <mutation name="SET_MODAL_2_SETTINGS"/>
+          <next>
+            <block type="procedures_callnoreturn" id="lGhS,O15f:2r#Aerk.Q.">
+              <mutation name="SETUP_MODAL_2"/>
+            </block>
+          </next>
+        </block>
+      </statement>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="procedures_defnoreturn" id="]pzCgtj`#q]QS#`!Xld:" x="-1550" y="-1010">
+      <field name="NAME">MODAL_3_MAIN</field>
+      <comment pinned="false" h="80" w="160">Describe this function...</comment>
+      <statement name="STACK">
+        <block type="procedures_callnoreturn" id="{K}bYxJQ1p_PFcD]$#!.">
+          <mutation name="SET_MODAL_3_SETTINGS"/>
+          <next>
+            <block type="procedures_callnoreturn" id="G{EP}Xfq=MV|NSX]Ug_|">
+              <mutation name="SETUP_MODAL_3"/>
+            </block>
+          </next>
+        </block>
+      </statement>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="comment" id="1[/cBM?*V{l#lrOwskDb" x="-2430" y="-530">
+      <field name="TEXT">MODAL 1</field>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="procedures_defnoreturn" id=".@f,+L?#Yn2)bKQGdih`" x="-2430" y="-470">
+      <field name="NAME">SET_MODAL_1_SETTINGS</field>
+      <comment pinned="false" h="80" w="160">Describe this function...</comment>
+      <statement name="STACK">
+        <block type="variables_set" id="{721Y@1YTi7yfl}-:AW:">
+          <field name="VAR" id="JUTgVf0!X*j1u9QbP+A*">modal_1_BODY_IMAGE</field>
+          <value name="VALUE">
+            <block type="text" id=";^:{+@|h,$t.e_mr43/l">
+              <field name="TEXT">./images/Open_Close_Modal.png</field>
+            </block>
+          </value>
+          <next>
+            <block type="variables_set" id="?ZJfTU|j+DORQAf@pcMS">
+              <field name="VAR" id="I{U!tNZvdhEQQ)QOG(;:">modal_1_BODY_VIDEO</field>
+              <value name="VALUE">
+                <block type="text" id="B|a5@y$^hKuXKgmovAb?">
+                  <field name="TEXT">https://player.vimeo.com/external/610625787.hd.mp4?s=26c2e11c0952c4fe0a0d39268fb0133a8ccd6438</field>
+                </block>
+              </value>
+              <next>
+                <block type="variables_set" id="VsUx3{KzCwA+l-Iy7cZ]" collapsed="true">
+                  <field name="VAR" id="h_5fvy13z;PhY1W$W[H@">modal_1_body_text</field>
+                  <value name="VALUE">
+                    <block type="textMultiline" id="C_A5vR,5VqRL,h3#.!TJ">
+                      <field name="HIGHLIGHT_MODE">html</field>
+                      <field name="TEXT">This popup modal window&lt;br&gt;&#10;is opened on scene load&lt;br&gt;&#10;by the "Pop-Up Modal Open"&lt;br&gt;&#10;puzzle, as seen above.&lt;br&gt;&#10;It's positioned by the&lt;br&gt;&#10;top and left position fields&lt;br&gt;&#10;with position: relative used.&lt;br&gt;&#10;It's width is 250px.&lt;br&gt;&#10;&lt;br&gt;&#10;  ___________________________&lt;br&gt;&#10;&lt;br&gt;&#10;Click the cube for info modal #2.&lt;br&gt;&#10;  ___________________________&lt;br&gt;</field>
+                    </block>
+                  </value>
+                  <next>
+                    <block type="variables_set" id="8w$_W+W_l=/]H{QZ@N63" collapsed="true">
+                      <field name="VAR" id="v+1a!*%X7~L{}uk/b~UZ">modal_1_BODY_Extra_CSS</field>
+                      <value name="VALUE">
+                        <block type="textMultiline" id="pt6is9Zgu^^fL$|:Co1r">
+                          <field name="HIGHLIGHT_MODE">text</field>
+                          <field name="TEXT">/* UN-COMMENT THE BELOW LINE TO USE */&#10;/*background: rgba( 0, 50, 0, .4) !important;*/</field>
+                        </block>
+                      </value>
+                      <next>
+                        <block type="variables_set" id="8j6;3aGV:97:P^jq=?Pc">
+                          <field name="VAR" id="/aOaop_fby.4]71VeWr7">modal_1_header_text</field>
+                          <value name="VALUE">
+                            <block type="textMultiline" id="8!0H.f/CFKE9T+JT@Q%a" collapsed="true">
+                              <field name="HIGHLIGHT_MODE">text</field>
+                              <field name="TEXT">Info Modal #1</field>
+                            </block>
+                          </value>
+                          <next>
+                            <block type="variables_set" id="eN0,[g3s.b-]Z{1hO1.(">
+                              <field name="VAR" id="8z/{+|w@:f9VA6c8o4Iy">modal_1_footer_text</field>
+                              <value name="VALUE">
+                                <block type="textMultiline" id="60-B8,uu1Q0wcyksi:O$" collapsed="true">
+                                  <field name="HIGHLIGHT_MODE">html</field>
+                                  <field name="TEXT">Footer space for footnotes,&lt;br&gt;&#10;a menu or copyright information.</field>
+                                </block>
+                              </value>
+                              <next>
+                                <block type="variables_set" id="v$Iw.)uV}2W19;9J0O!`" collapsed="true">
+                                  <field name="VAR" id="b9l%x~/$vAs?s7X4*hs/">modal_1_HEADER_TEXT_settings</field>
+                                  <value name="VALUE">
+                                    <block type="GLIFTEK_v3d_Plugins_PopUp_Modal/GLIFTEK_UTILITY_PopUp_Modal_Content_Text_Settings" id="4s0gZy1zbd=5KmU/]84?">
+                                      <field name="Text_Selectable_Checkbox">FALSE</field>
+                                      <value name="Text_Input">
+                                        <shadow type="text">
+                                          <field name="TEXT">my Text</field>
+                                        </shadow>
+                                        <block type="variables_get" id="WvzGV9b%)~;|e=HW4`el">
+                                          <field name="VAR" id="/aOaop_fby.4]71VeWr7">modal_1_header_text</field>
+                                        </block>
+                                      </value>
+                                      <value name="Font_Input">
+                                        <shadow type="text">
+                                          <field name="TEXT">Helvetica</field>
+                                        </shadow>
+                                        <block type="variables_get" id="jx.%|YX}4}i{J:Z,qplI">
+                                          <field name="VAR" id="GkHes]E3{0cTyGi()PVs">font_7</field>
+                                        </block>
+                                      </value>
+                                      <value name="Font_Size_Input">
+                                        <shadow type="text" id="q,]=#mB)%NNqT;e!?59T">
+                                          <field name="TEXT">14px</field>
+                                        </shadow>
+                                      </value>
+                                      <value name="Font_Weight_Input">
+                                        <shadow type="text" id="Gd,)Oat||$YVCKzd2djh">
+                                          <field name="TEXT">normal</field>
+                                        </shadow>
+                                      </value>
+                                      <value name="Font_Spacing_Input">
+                                        <shadow type="text" id="2DvJ.5}E1.za?(/YD|ZJ">
+                                          <field name="TEXT">normal</field>
+                                        </shadow>
+                                      </value>
+                                      <value name="Font_Margin_Input">
+                                        <shadow type="text" id="9]2{4yL:|jD:TNyW](MZ">
+                                          <field name="TEXT">5px</field>
+                                        </shadow>
+                                      </value>
+                                      <value name="Font_Padding_Input">
+                                        <shadow type="text" id="@#gLj@=;mh0i-xo+aF6b">
+                                          <field name="TEXT">5px 10px</field>
+                                        </shadow>
+                                      </value>
+                                      <value name="Font_Color_Input">
+                                        <shadow type="text" id="B02RPK/yw?3%zJ3*gnZ.">
+                                          <field name="TEXT">cyan</field>
+                                        </shadow>
+                                      </value>
+                                      <value name="Font_Alpha_Input">
+                                        <shadow type="math_number" id="+B**#9l]N{[tQ0jlP1@n">
+                                          <field name="NUM">1</field>
+                                        </shadow>
+                                      </value>
+                                      <value name="Background_Color_Input">
+                                        <shadow type="text" id="F`8V_]hSo8h*9d0E5EZ-">
+                                          <field name="TEXT">black</field>
+                                        </shadow>
+                                      </value>
+                                      <value name="Background_Alpha_Input">
+                                        <shadow type="math_number" id="z4o)?@/Ymw?)sz3pgTb.">
+                                          <field name="NUM">0.7</field>
+                                        </shadow>
+                                      </value>
+                                      <value name="Extra_CSS_Input">
+                                        <shadow type="text" id="Z?,xcv{j_GPrhn35-2`4">
+                                          <field name="TEXT"/>
+                                        </shadow>
+                                      </value>
+                                    </block>
+                                  </value>
+                                  <next>
+                                    <block type="variables_set" id="Fg?-me2E:@=si8diorV=" collapsed="true">
+                                      <field name="VAR" id="Ww6`HR[!3l]D-.yc^?_V">modal_1_FOOTER_TEXT_settings</field>
+                                      <value name="VALUE">
+                                        <block type="GLIFTEK_v3d_Plugins_PopUp_Modal/GLIFTEK_UTILITY_PopUp_Modal_Content_Text_Settings" id="9Kwa5o:Gi9SkWr6:V%(I">
+                                          <field name="Text_Selectable_Checkbox">FALSE</field>
+                                          <value name="Text_Input">
+                                            <shadow type="text" id="DCVH/P)v(A/-67:QsmLo">
+                                              <field name="TEXT">my Text</field>
+                                            </shadow>
+                                            <block type="variables_get" id="7RIG]3C@q?f*Vu]6!wNx">
+                                              <field name="VAR" id="8z/{+|w@:f9VA6c8o4Iy">modal_1_footer_text</field>
+                                            </block>
+                                          </value>
+                                          <value name="Font_Input">
+                                            <shadow type="text" id="y8imY4M(W0MwK$6)j9:-">
+                                              <field name="TEXT">Helvetica</field>
+                                            </shadow>
+                                            <block type="variables_get" id="NMr_z{pK5V5;,i*DsH/l">
+                                              <field name="VAR" id="t$qMNNJE0.3-L^ei7FH/">font_6</field>
+                                            </block>
+                                          </value>
+                                          <value name="Font_Size_Input">
+                                            <shadow type="text" id="o=YK=4zK7V({PG9NiLQ]">
+                                              <field name="TEXT">10px</field>
+                                            </shadow>
+                                          </value>
+                                          <value name="Font_Weight_Input">
+                                            <shadow type="text" id="8D2(WvrVO?-VpDLC_a|M">
+                                              <field name="TEXT">normal</field>
+                                            </shadow>
+                                          </value>
+                                          <value name="Font_Spacing_Input">
+                                            <shadow type="text" id="dlp1}mp7~eIG0fqvjQ4n">
+                                              <field name="TEXT">normal</field>
+                                            </shadow>
+                                          </value>
+                                          <value name="Font_Margin_Input">
+                                            <shadow type="text" id="d4~LK%+EXr;l2HE|4y}T">
+                                              <field name="TEXT">5px</field>
+                                            </shadow>
+                                          </value>
+                                          <value name="Font_Padding_Input">
+                                            <shadow type="text" id="3EzRr%M9C$+[@{RNV}fq">
+                                              <field name="TEXT">2px</field>
+                                            </shadow>
+                                          </value>
+                                          <value name="Font_Color_Input">
+                                            <shadow type="text" id="^#VwULzbQ:B*NOnUR)g5">
+                                              <field name="TEXT">cyan</field>
+                                            </shadow>
+                                          </value>
+                                          <value name="Font_Alpha_Input">
+                                            <shadow type="math_number" id="%meh%iQv)w9gOcPy%)[o">
+                                              <field name="NUM">1</field>
+                                            </shadow>
+                                          </value>
+                                          <value name="Background_Color_Input">
+                                            <shadow type="text" id="_`p:0KxmB|1z$r2BgqoF">
+                                              <field name="TEXT">black</field>
+                                            </shadow>
+                                          </value>
+                                          <value name="Background_Alpha_Input">
+                                            <shadow type="math_number" id="=iS1cgTh(ZR.w4Nkwl7V">
+                                              <field name="NUM">0.7</field>
+                                            </shadow>
+                                          </value>
+                                          <value name="Extra_CSS_Input">
+                                            <shadow type="text" id="4IzS%r-IOzT3@#Z/q9K.">
+                                              <field name="TEXT"/>
+                                            </shadow>
+                                          </value>
+                                        </block>
+                                      </value>
+                                      <next>
+                                        <block type="variables_set" id="e_%e+mBz%fr$U*dur5eK">
+                                          <field name="VAR" id="i[.u)3*DPcCUj4ohe*y+">modal_1_position_TOP</field>
+                                          <value name="VALUE">
+                                            <block type="text" id="vg?svtZ`2swl,a4:2JcZ">
+                                              <field name="TEXT">100px</field>
+                                            </block>
+                                          </value>
+                                          <next>
+                                            <block type="variables_set" id="zS3)ohm4-_*uf**Op1GK">
+                                              <field name="VAR" id="{nyUrSqn,K*H8L?0dA)N">modal_1_position_LEFT</field>
+                                              <value name="VALUE">
+                                                <block type="text" id=";-Jl`,/!I]hZ+@8tTk;,">
+                                                  <field name="TEXT">100px</field>
+                                                </block>
+                                              </value>
+                                              <next>
+                                                <block type="variables_set" id="46a$^Hh+Y*92R86Af_T{">
+                                                  <field name="VAR" id="z/c?D./s0H2+zBV3VD!=">modal_1_width</field>
+                                                  <value name="VALUE">
+                                                    <block type="text" id="t{bF~xJH/]4Xvl),%$}u">
+                                                      <field name="TEXT">250px</field>
+                                                    </block>
+                                                  </value>
+                                                  <next>
+                                                    <block type="variables_set" id="Hjwqu_OhZ,ks11_Fs1Ur">
+                                                      <field name="VAR" id="F+*.`*|20Ni^5]`.L1bF">modal_1_position_offscreen</field>
+                                                      <value name="VALUE">
+                                                        <block type="text_join" id="Oif}yt6)x7e/gOx={B+_">
+                                                          <mutation items="2"/>
+                                                          <value name="ADD0">
+                                                            <block type="text" id="Zde=NWnPE~r}{Ue)f];m">
+                                                              <field name="TEXT">-</field>
+                                                            </block>
+                                                          </value>
+                                                          <value name="ADD1">
+                                                            <block type="variables_get" id="IBcLH6OZ:x{eF~{N:a/p">
+                                                              <field name="VAR" id="z/c?D./s0H2+zBV3VD!=">modal_1_width</field>
+                                                            </block>
+                                                          </value>
+                                                        </block>
+                                                      </value>
+                                                      <next>
+                                                        <block type="variables_set" id="gH,09Wf6%Fg:-e_mFpN@">
+                                                          <field name="VAR" id="#DsS0d{E^|e!G.3}FAY?">modal_1_BODY_TEXT_settings</field>
+                                                          <value name="VALUE">
+                                                            <block type="GLIFTEK_v3d_Plugins_PopUp_Modal/GLIFTEK_UTILITY_PopUp_Modal_Content_Text_Settings" id="V*J?SIV3lQ4[:nn.hKLl">
+                                                              <field name="Text_Selectable_Checkbox">FALSE</field>
+                                                              <value name="Text_Input">
+                                                                <shadow type="text">
+                                                                  <field name="TEXT">my Text</field>
+                                                                </shadow>
+                                                                <block type="variables_get" id=",8ma-JkE~2uSqYbosY/G">
+                                                                  <field name="VAR" id="h_5fvy13z;PhY1W$W[H@">modal_1_body_text</field>
+                                                                </block>
+                                                              </value>
+                                                              <value name="Font_Input">
+                                                                <shadow type="text">
+                                                                  <field name="TEXT">Helvetica</field>
+                                                                </shadow>
+                                                                <block type="variables_get" id="A%1R=(d~-%IgZHXp|H{l">
+                                                                  <field name="VAR" id="Ghon9Iga5%Qb1d9gd)w*">font_3</field>
+                                                                </block>
+                                                              </value>
+                                                              <value name="Font_Size_Input">
+                                                                <shadow type="text" id="WO-,-)mYQN_%-a:V3Xo9">
+                                                                  <field name="TEXT">12px</field>
+                                                                </shadow>
+                                                              </value>
+                                                              <value name="Font_Style_Input">
+                                                                <block type="text" id="71mXx*tZ{OOl.k:ZCy{h">
+                                                                  <field name="TEXT">normal</field>
+                                                                </block>
+                                                              </value>
+                                                              <value name="Font_Weight_Input">
+                                                                <shadow type="text" id="E@4U,{,72,Tc=!S*pk^D">
+                                                                  <field name="TEXT">normal</field>
+                                                                </shadow>
+                                                              </value>
+                                                              <value name="Font_Spacing_Input">
+                                                                <shadow type="text" id="k)!-ToAyShpc{+eu*+g~">
+                                                                  <field name="TEXT">normal</field>
+                                                                </shadow>
+                                                              </value>
+                                                              <value name="Font_Alignment_Input">
+                                                                <block type="text" id="u+[=gB}P)21dL{:Va3]t">
+                                                                  <field name="TEXT">center</field>
+                                                                </block>
+                                                              </value>
+                                                              <value name="Font_Margin_Input">
+                                                                <shadow type="text" id="6Nx%mVi}?u{-f6fno:Ti">
+                                                                  <field name="TEXT">5px</field>
+                                                                </shadow>
+                                                              </value>
+                                                              <value name="Font_Padding_Input">
+                                                                <shadow type="text" id="*EJX+O6:ZuA.xg=3!+)#">
+                                                                  <field name="TEXT">15px</field>
+                                                                </shadow>
+                                                              </value>
+                                                              <value name="Font_Color_Input">
+                                                                <shadow type="text" id="!y@djiuwD{j=ZFr.~%.(">
+                                                                  <field name="TEXT">cyan</field>
+                                                                </shadow>
+                                                              </value>
+                                                              <value name="Font_Alpha_Input">
+                                                                <shadow type="math_number" id="%1?tr:.Ady`Bp81@z~`Z">
+                                                                  <field name="NUM">1</field>
+                                                                </shadow>
+                                                              </value>
+                                                              <value name="Background_Color_Input">
+                                                                <shadow type="text" id="5sxH#qt?k-@,G]n6)]]1">
+                                                                  <field name="TEXT">black</field>
+                                                                </shadow>
+                                                              </value>
+                                                              <value name="Background_Alpha_Input">
+                                                                <shadow type="math_number" id="-g:6tLso]TfM6TIRSz{T">
+                                                                  <field name="NUM">0.5</field>
+                                                                </shadow>
+                                                              </value>
+                                                              <value name="Extra_CSS_Input">
+                                                                <shadow type="text">
+                                                                  <field name="TEXT"/>
+                                                                </shadow>
+                                                                <block type="variables_get" id="x!W0/a]3ZJ@?uV(w9Y#u">
+                                                                  <field name="VAR" id="v+1a!*%X7~L{}uk/b~UZ">modal_1_BODY_Extra_CSS</field>
+                                                                </block>
+                                                              </value>
+                                                            </block>
+                                                          </value>
+                                                          <next>
+                                                            <block type="variables_set" id="0=.p1.X.R{S6*n=Kq$CC">
+                                                              <field name="VAR" id="wl6YoJ8:NgJo{Q;x4]xx">modal_1_BODY_MEDIA_settings</field>
+                                                              <value name="VALUE">
+                                                                <block type="GLIFTEK_v3d_Plugins_PopUp_Modal/GLIFTEK_UTILITY_PopUp_Modal_Content_Media_Settings" id="J.+y~9TWpv_E8b~eyozf">
+                                                                  <field name="VIDEO_CONTROLS_Checkbox">TRUE</field>
+                                                                  <field name="VIDEO_LOOP_Checkbox">TRUE</field>
+                                                                  <field name="VIDEO_AUTOPLAY_Checkbox">TRUE</field>
+                                                                  <field name="CONTENT_ORDER_Dropdown">image-text-video</field>
+                                                                  <value name="IMAGE_Input">
+                                                                    <shadow type="text" id="Pj)l)2S1e@~{d@Ye2!#[">
+                                                                      <field name="TEXT">./myImage.jpg</field>
+                                                                    </shadow>
+                                                                    <block type="variables_get" id="XLR[I.D_VL-NgelR?g9;">
+                                                                      <field name="VAR" id="JUTgVf0!X*j1u9QbP+A*">modal_1_BODY_IMAGE</field>
+                                                                    </block>
+                                                                  </value>
+                                                                  <value name="IMAGE_Width_Input">
+                                                                    <shadow type="text" id="9Id]=]o`ZW~pE)L*nXx%">
+                                                                      <field name="TEXT">80%</field>
+                                                                    </shadow>
+                                                                  </value>
+                                                                  <value name="IMAGE_Display_Input">
+                                                                    <shadow type="text" id="OBN36E6.=wI6n.b[9g}%">
+                                                                      <field name="TEXT">inline</field>
+                                                                    </shadow>
+                                                                  </value>
+                                                                  <value name="IMAGE_Alignment_Input">
+                                                                    <shadow type="text" id="]f[|aC~!dsk/LT#!e^He">
+                                                                      <field name="TEXT">center</field>
+                                                                    </shadow>
+                                                                  </value>
+                                                                  <value name="IMAGE_FLOAT_Alignment_Input">
+                                                                    <shadow type="text" id="}LE1npOWp0muiK6HQ7s{">
+                                                                      <field name="TEXT">none</field>
+                                                                    </shadow>
+                                                                  </value>
+                                                                  <value name="VIDEO_Input">
+                                                                    <shadow type="text" id="px%`^Enhje=cT)_ZeF!D">
+                                                                      <field name="TEXT">./myVideo.mp4</field>
+                                                                    </shadow>
+                                                                    <block type="variables_get" id="D|pvS*q76e%Rw$M1C|QK">
+                                                                      <field name="VAR" id="I{U!tNZvdhEQQ)QOG(;:">modal_1_BODY_VIDEO</field>
+                                                                    </block>
+                                                                  </value>
+                                                                  <value name="VIDEO_Width_Input">
+                                                                    <shadow type="text" id="IcpW*ptBuQEc3{mYG,;6">
+                                                                      <field name="TEXT">80%</field>
+                                                                    </shadow>
+                                                                  </value>
+                                                                  <value name="VIDEO_Display_Input">
+                                                                    <shadow type="text" id="fE232,HKp=vH0+1nshbo">
+                                                                      <field name="TEXT">inline</field>
+                                                                    </shadow>
+                                                                  </value>
+                                                                  <value name="VIDEO_Alignment_Input">
+                                                                    <shadow type="text" id="_-%Q8NdXg*Z3rFtn|S1#">
+                                                                      <field name="TEXT">center</field>
+                                                                    </shadow>
+                                                                  </value>
+                                                                  <value name="VIDEO_FLOAT_Alignment_Input">
+                                                                    <shadow type="text" id="j)#]iBH00=?eAgi;il]@">
+                                                                      <field name="TEXT">none</field>
+                                                                    </shadow>
+                                                                  </value>
+                                                                </block>
+                                                              </value>
+                                                              <next>
+                                                                <block type="variables_set" id="TGR^3`3?ab}1Ion~o`6@">
+                                                                  <field name="VAR" id="YXV5ztQevjh*oTouLzyX">modal_1_ANIMATION_settings</field>
+                                                                  <value name="VALUE">
+                                                                    <block type="GLIFTEK_v3d_Plugins_PopUp_Modal/GLIFTEK_UTILITY_PopUp_Modal_Animation_Settings" id="5Qpk/V21v`Qzb]^z!4$d">
+                                                                      <field name="modal_FADE_IN_Checkbox">FALSE</field>
+                                                                      <field name="modal_FADE_OUT_Checkbox">FALSE</field>
+                                                                      <field name="modal_ZOOM_IN_Checkbox">FALSE</field>
+                                                                      <field name="modal_ZOOM_OUT_Checkbox">FALSE</field>
+                                                                      <field name="modal_SLIDE_IN_Checkbox">TRUE</field>
+                                                                      <field name="modal_SLIDE_OUT_Checkbox">TRUE</field>
+                                                                      <field name="modal_Animation_Timing_Dropdown">ease-in-out</field>
+                                                                      <field name="modal_SCREEN_BG_Blur_Checkbox">FALSE</field>
+                                                                      <field name="modal_CONTENT_BG_Blur_Checkbox">FALSE</field>
+                                                                      <value name="modal_SLIDE_IN_start_LEFT_Input">
+                                                                        <shadow type="text" id="nW^G|yY(!Xnh?1Io0YA(">
+                                                                          <field name="TEXT">-100px</field>
+                                                                        </shadow>
+                                                                        <block type="variables_get" id="KfFeK@Cag!xQ(BCeX),N">
+                                                                          <field name="VAR" id="F+*.`*|20Ni^5]`.L1bF">modal_1_position_offscreen</field>
+                                                                        </block>
+                                                                      </value>
+                                                                      <value name="modal_SLIDE_IN_start_TOP_Input">
+                                                                        <shadow type="text" id="Qe:#k~M^9[YL`bzCrIp!">
+                                                                          <field name="TEXT">-1000px</field>
+                                                                        </shadow>
+                                                                        <block type="variables_get" id="[$Ulk:[Mc5#0FvluJo@}">
+                                                                          <field name="VAR" id="i[.u)3*DPcCUj4ohe*y+">modal_1_position_TOP</field>
+                                                                        </block>
+                                                                      </value>
+                                                                      <value name="modal_SLIDE_OUT_end_LEFT_Input">
+                                                                        <shadow type="text" id="XrIo{YZ!p7zQSJn#.G~s">
+                                                                          <field name="TEXT">-100px</field>
+                                                                        </shadow>
+                                                                        <block type="variables_get" id="Q8592F9?=+XG}z2%A;,#">
+                                                                          <field name="VAR" id="F+*.`*|20Ni^5]`.L1bF">modal_1_position_offscreen</field>
+                                                                        </block>
+                                                                      </value>
+                                                                      <value name="modal_SLIDE_OUT_end_TOP_Input">
+                                                                        <shadow type="text" id="FxyX,f(0@`t*Mh,9tyi1">
+                                                                          <field name="TEXT">1000px</field>
+                                                                        </shadow>
+                                                                        <block type="variables_get" id="}WokDYuWqN/SuX:K0.+R">
+                                                                          <field name="VAR" id="i[.u)3*DPcCUj4ohe*y+">modal_1_position_TOP</field>
+                                                                        </block>
+                                                                      </value>
+                                                                      <value name="modal_Animation_Duration_Input">
+                                                                        <shadow type="math_number" id="D~a]U!FTsST-eU-G}lam">
+                                                                          <field name="NUM">0.35</field>
+                                                                        </shadow>
+                                                                      </value>
+                                                                      <value name="modal_SCREEN_BG_Blur_Amount">
+                                                                        <shadow type="math_number" id=":T/F+}Y1%WGiKbWN5i=9">
+                                                                          <field name="NUM">10</field>
+                                                                        </shadow>
+                                                                      </value>
+                                                                      <value name="modal_SCREEN_BG_Saturation_Amount">
+                                                                        <shadow type="math_number" id="Q]`L6VB09l3hG}I_O7L,">
+                                                                          <field name="NUM">80</field>
+                                                                        </shadow>
+                                                                      </value>
+                                                                      <value name="modal_SCREEN_BG_Color_Input">
+                                                                        <shadow type="text" id="?0c$E,rqoglCQ7i.@Stw">
+                                                                          <field name="TEXT">black</field>
+                                                                        </shadow>
+                                                                      </value>
+                                                                      <value name="modal_SCREEN_BG_Alpha_Input">
+                                                                        <shadow type="math_number" id="}j^G;mw*M8x8=e/|-mv$">
+                                                                          <field name="NUM">0</field>
+                                                                        </shadow>
+                                                                      </value>
+                                                                      <value name="modal_CONTENT_BG_Blur_Amount">
+                                                                        <shadow type="math_number" id="NMzTez@RoGX!v6d*-I7H">
+                                                                          <field name="NUM">6</field>
+                                                                        </shadow>
+                                                                      </value>
+                                                                      <value name="modal_CONTENT_BG_Saturation_Amount">
+                                                                        <shadow type="math_number" id="M42~]qyq41!EDS`uZRC#">
+                                                                          <field name="NUM">80</field>
+                                                                        </shadow>
+                                                                      </value>
+                                                                    </block>
+                                                                  </value>
+                                                                </block>
+                                                              </next>
+                                                            </block>
+                                                          </next>
+                                                        </block>
+                                                      </next>
+                                                    </block>
+                                                  </next>
+                                                </block>
+                                              </next>
+                                            </block>
+                                          </next>
+                                        </block>
+                                      </next>
+                                    </block>
+                                  </next>
+                                </block>
+                              </next>
+                            </block>
+                          </next>
+                        </block>
+                      </next>
+                    </block>
+                  </next>
+                </block>
+              </next>
+            </block>
+          </next>
+        </block>
+      </statement>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="comment" id="i]WE:|#v-BXD}AbrwR8K" x="-490" y="-550">
+      <field name="TEXT">MODAL 2</field>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="procedures_defnoreturn" id="nM:=tI3b[df:Y~p71/Oo" x="-1550" y="-470">
+      <field name="NAME">SETUP_MODAL_1</field>
+      <comment pinned="false" h="80" w="160">Describe this function...</comment>
+      <statement name="STACK">
+        <block type="GLIFTEK_v3d_Plugins_PopUp_Modal/GLIFTEK_UTILITY_PopUp_Modal" id="K8L-r[2+d1;a*Et:y(^@">
+          <field name="typeDropdown">container</field>
+          <field name="modal_CONTENT_Clickable_Checkbox">TRUE</field>
+          <field name="modal_SCREEN_BG_Clickable_Checkbox">FALSE</field>
+          <field name="modal_Close_Button_Checkbox">TRUE</field>
+          <field name="modal_Close_On_Outside_Click_Checkbox">FALSE</field>
+          <field name="modal_Drop_Shadow_Checkbox">FALSE</field>
+          <value name="modal_ID_Input">
+            <shadow type="text" id="Gaj^-qtmf?z)~g?luKA@">
+              <field name="TEXT">Modal_1</field>
+            </shadow>
+          </value>
+          <value name="modal_Trigger_Event_Element_ID_Input">
+            <shadow type="text" id="}i*GVPdNW|VC?Y2k^5.x">
+              <field name="TEXT">modalOpenPlugin</field>
+            </shadow>
+            <block type="variables_get" id="Jn3|..nC2t;?lF7iuo~{">
+              <field name="VAR" id="tI++]k}RoD@S(5D([A7C">modal_OPEN_button_1_ID</field>
+            </block>
+          </value>
+          <value name="modal_Z_Index_Input">
+            <shadow type="math_number" id="AZU.?y?c!j_hO%2Gk=*J">
+              <field name="NUM">1</field>
+            </shadow>
+          </value>
+          <value name="modal_Width_Input">
+            <shadow type="text" id="eiIxH?Y:V:Hghg9~y1Do">
+              <field name="TEXT">60%</field>
+            </shadow>
+            <block type="variables_get" id=";.yFZQ(lJ^/wqT`/3cn9">
+              <field name="VAR" id="z/c?D./s0H2+zBV3VD!=">modal_1_width</field>
+            </block>
+          </value>
+          <value name="modal_CONTENT_POSITION_Input">
+            <shadow type="text" id="m+)XE|K(apX*RuDh+=.z">
+              <field name="TEXT">relative</field>
+            </shadow>
+          </value>
+          <value name="modal_CONTENT_TOP_Input">
+            <shadow type="text" id="y1,06F#ev{C|cd{AnwTK">
+              <field name="TEXT">50px</field>
+            </shadow>
+            <block type="variables_get" id="Ofqn@eH9t=NM1C,P|}qq">
+              <field name="VAR" id="i[.u)3*DPcCUj4ohe*y+">modal_1_position_TOP</field>
+            </block>
+          </value>
+          <value name="modal_CONTENT_LEFT_Input">
+            <shadow type="text" id="s(gZL#0(K@wtAKZ.2}eh">
+              <field name="TEXT">50px</field>
+            </shadow>
+            <block type="variables_get" id="-YZQO[}0n9nUr~.(Bp2S">
+              <field name="VAR" id="{nyUrSqn,K*H8L?0dA)N">modal_1_position_LEFT</field>
+            </block>
+          </value>
+          <value name="modal_CONTENT_MARGIN_Input">
+            <shadow type="text" id="%p/(]m4lJWPjpJ)iX?iN">
+              <field name="TEXT"/>
+            </shadow>
+          </value>
+          <value name="modal_BORDER_Radius_Input">
+            <shadow type="math_number" id="r6_Lk3_@,8+uQHIBe:HJ">
+              <field name="NUM">8</field>
+            </shadow>
+          </value>
+          <value name="modal_BORDER_Width_Input">
+            <shadow type="math_number" id="}eNC[]0.VaL+1;0-5qb|">
+              <field name="NUM">2</field>
+            </shadow>
+          </value>
+          <value name="modal_BORDER_Color_Input">
+            <shadow type="text" id="J0N~h4tBr|#l=XcC?sku">
+              <field name="TEXT">cyan</field>
+            </shadow>
+          </value>
+          <value name="modal_HEADER_TEXT_settings_Input">
+            <shadow type="text" id="c};8N3X5|J.f-s?EmoZ0">
+              <field name="TEXT"/>
+            </shadow>
+            <block type="variables_get" id="H-qe(yORs#`/@Re4j+y:">
+              <field name="VAR" id="b9l%x~/$vAs?s7X4*hs/">modal_1_HEADER_TEXT_settings</field>
+            </block>
+          </value>
+          <value name="modal_FOOTER_TEXT_settings_Input">
+            <shadow type="text" id="^R|C.RqiuZ%Y~nT8VLQ=">
+              <field name="TEXT"/>
+            </shadow>
+            <block type="variables_get" id="WXb(^;Y:}5T_69)X]Mj{">
+              <field name="VAR" id="Ww6`HR[!3l]D-.yc^?_V">modal_1_FOOTER_TEXT_settings</field>
+            </block>
+          </value>
+          <value name="modal_BODY_TEXT_settings_Input">
+            <shadow type="text" id="J;/8aQJ-88r46}=HPS5`">
+              <field name="TEXT"/>
+            </shadow>
+            <block type="variables_get" id="2p]dPTri5ec%Q=Pj}U6V">
+              <field name="VAR" id="#DsS0d{E^|e!G.3}FAY?">modal_1_BODY_TEXT_settings</field>
+            </block>
+          </value>
+          <value name="modal_BODY_MEDIA_settings_Input">
+            <shadow type="text" id="G[BeQlVJjb=8;aB{yFKr">
+              <field name="TEXT"/>
+            </shadow>
+            <block type="variables_get" id="rKjzKY^VGtVF0PkDq9v)">
+              <field name="VAR" id="wl6YoJ8:NgJo{Q;x4]xx">modal_1_BODY_MEDIA_settings</field>
+            </block>
+          </value>
+          <value name="modal_ANIMATION_settings_Input">
+            <shadow type="text" id="B0i~ao6XWd]t+|F*@8Ot">
+              <field name="TEXT"/>
+            </shadow>
+            <block type="variables_get" id="-fosMvta+(.jt}/ZZltI">
+              <field name="VAR" id="YXV5ztQevjh*oTouLzyX">modal_1_ANIMATION_settings</field>
+            </block>
+          </value>
+        </block>
+      </statement>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="procedures_defnoreturn" id="TfI*r/Vgp5iHa[T2[zeu" x="-490" y="-470">
+      <field name="NAME">SET_MODAL_2_SETTINGS</field>
+      <comment pinned="false" h="80" w="160">Describe this function...</comment>
+      <statement name="STACK">
+        <block type="variables_set" id="3{)xqA*CV5gQ@5b@.v/K">
+          <field name="VAR" id="Ppyv4lPrEj8Aa[lTfYNR">modal_2_BODY_IMAGE</field>
+          <value name="VALUE">
+            <block type="text" id="E,^0[(H6DJpagB-rL$lp">
+              <field name="TEXT">./images/click_cube_open_modal.png</field>
+            </block>
+          </value>
+          <next>
+            <block type="variables_set" id="HhGbF%2t:3oYp;3CQIW=">
+              <field name="VAR" id="C$nVR0:FGbLP3c-Mu4+.">modal_2_BODY_VIDEO</field>
+              <value name="VALUE">
+                <block type="text" id="`MVFDy-$GVb;GYA?T5)k">
+                  <field name="TEXT">https://player.vimeo.com/external/352012062.hd.mp4?s=1b396592425f54dea49ab41264ecd837d62a29ad</field>
+                </block>
+              </value>
+              <next>
+                <block type="variables_set" id="wt{4NvyPif2zN2`Oia%4" collapsed="true">
+                  <field name="VAR" id="^Pr-Dafo,+01.QcrH5z9">modal_2_body_text</field>
+                  <value name="VALUE">
+                    <block type="textMultiline" id="8C?izB]e6bWLZ/RnpW5R">
+                      <field name="HIGHLIGHT_MODE">html</field>
+                      <field name="TEXT">This popup modal window is opened by clicking on the cube object.&lt;br&gt;&#10;and is positioned by the&lt;br&gt;&#10;top and left position fields&lt;br&gt;&#10;with position: relative used.&lt;br&gt;&#10;It's width is 60% of the parent modal background &lt;br&gt;&#10;which is 100% of it's parent window size.&lt;br&gt;&#10;&lt;br&gt;&#10;  ___________________________&lt;br&gt;&#10;&lt;br&gt;&#10;Click the "#3" annotation for the third info modal.&lt;br&gt;&#10;  ___________________________&lt;br&gt;&#10;&lt;br&gt;</field>
+                    </block>
+                  </value>
+                  <next>
+                    <block type="variables_set" id="Kkm~a-H?_3NzBq`So?(}" collapsed="true">
+                      <field name="VAR" id="Ls0s*-hWA2BJS8;^get^">modal_2_header_text</field>
+                      <value name="VALUE">
+                        <block type="textMultiline" id="}*Yrh=FZEk[7^|fCTQ6K">
+                          <field name="HIGHLIGHT_MODE">html</field>
+                          <field name="TEXT">Info Modal #2</field>
+                        </block>
+                      </value>
+                      <next>
+                        <block type="variables_set" id="JAojFhZ7#%{VHE/E41xf" collapsed="true">
+                          <field name="VAR" id="Hwe|,rWF3yA#mdhNm.jb">modal_2_footer_text</field>
+                          <value name="VALUE">
+                            <block type="textMultiline" id="Q^o(EZC/bVe7M910upzl">
+                              <field name="HIGHLIGHT_MODE">html</field>
+                              <field name="TEXT">Footer space for footnotes, a menu or copyright information.</field>
+                            </block>
+                          </value>
+                          <next>
+                            <block type="variables_set" id="@Onlxsn!FQv#3f!uZ{a^" collapsed="true">
+                              <field name="VAR" id="+?sS(b7)A3pn/;|e$iB?">modal_2_HEADER_settings</field>
+                              <value name="VALUE">
+                                <block type="GLIFTEK_v3d_Plugins_PopUp_Modal/GLIFTEK_UTILITY_PopUp_Modal_Content_Text_Settings" id="ymix;mU2:I+9x{_6;l:c">
+                                  <field name="Text_Selectable_Checkbox">FALSE</field>
+                                  <value name="Text_Input">
+                                    <shadow type="text">
+                                      <field name="TEXT">my Text</field>
+                                    </shadow>
+                                    <block type="variables_get" id="y+K0!X*)aAZrB3s.p]K1">
+                                      <field name="VAR" id="Ls0s*-hWA2BJS8;^get^">modal_2_header_text</field>
+                                    </block>
+                                  </value>
+                                  <value name="Font_Input">
+                                    <shadow type="text">
+                                      <field name="TEXT">Helvetica</field>
+                                    </shadow>
+                                    <block type="variables_get" id=")Q?l2:4$wcYV=i@Y0uQ7">
+                                      <field name="VAR" id="GkHes]E3{0cTyGi()PVs">font_7</field>
+                                    </block>
+                                  </value>
+                                  <value name="Font_Size_Input">
+                                    <shadow type="text" id="12Q|K6,)n^rqRO[7hK8A">
+                                      <field name="TEXT">14px</field>
+                                    </shadow>
+                                  </value>
+                                  <value name="Font_Weight_Input">
+                                    <shadow type="text" id=")}e.!MJN,9w=vOkLbyqy">
+                                      <field name="TEXT">normal</field>
+                                    </shadow>
+                                  </value>
+                                  <value name="Font_Spacing_Input">
+                                    <shadow type="text" id="vK]RfIW{NM4P2He-pr/o">
+                                      <field name="TEXT">normal</field>
+                                    </shadow>
+                                  </value>
+                                  <value name="Font_Margin_Input">
+                                    <shadow type="text" id="?XxDqOPJXt+|4?6qf)5C">
+                                      <field name="TEXT">5px</field>
+                                    </shadow>
+                                  </value>
+                                  <value name="Font_Padding_Input">
+                                    <shadow type="text" id="qZdFq*v7PYi5x+{5_NOH">
+                                      <field name="TEXT">5px 10px</field>
+                                    </shadow>
+                                  </value>
+                                  <value name="Font_Color_Input">
+                                    <shadow type="text" id="k.zmZJLm;wjhMy]m3S!^">
+                                      <field name="TEXT">cyan</field>
+                                    </shadow>
+                                  </value>
+                                  <value name="Font_Alpha_Input">
+                                    <shadow type="math_number" id="qew3~x_{}_%OtTfrQ}j(">
+                                      <field name="NUM">1</field>
+                                    </shadow>
+                                  </value>
+                                  <value name="Background_Color_Input">
+                                    <shadow type="text" id="(;_7gT[@1m-$,_SN!V..">
+                                      <field name="TEXT">black</field>
+                                    </shadow>
+                                  </value>
+                                  <value name="Background_Alpha_Input">
+                                    <shadow type="math_number" id="Zx0qMq}.}V3L8Z;edCS4">
+                                      <field name="NUM">0.7</field>
+                                    </shadow>
+                                  </value>
+                                  <value name="Extra_CSS_Input">
+                                    <shadow type="text" id="dBeyl|FMtNo=Nn7LAf2C">
+                                      <field name="TEXT"/>
+                                    </shadow>
+                                  </value>
+                                </block>
+                              </value>
+                              <next>
+                                <block type="variables_set" id="@:IM@@;YYM94bi%cnTJp" collapsed="true">
+                                  <field name="VAR" id="|Q~9Y~uvXH.t|3xo]Z.@">modal_2_FOOTER_settings</field>
+                                  <value name="VALUE">
+                                    <block type="GLIFTEK_v3d_Plugins_PopUp_Modal/GLIFTEK_UTILITY_PopUp_Modal_Content_Text_Settings" id="qJy/hkG#]]%Ik2R[M|On">
+                                      <field name="Text_Selectable_Checkbox">FALSE</field>
+                                      <value name="Text_Input">
+                                        <shadow type="text">
+                                          <field name="TEXT">my Text</field>
+                                        </shadow>
+                                        <block type="variables_get" id="a(K::SVRv6`P[w9JX1cq">
+                                          <field name="VAR" id="Hwe|,rWF3yA#mdhNm.jb">modal_2_footer_text</field>
+                                        </block>
+                                      </value>
+                                      <value name="Font_Input">
+                                        <shadow type="text">
+                                          <field name="TEXT">Helvetica</field>
+                                        </shadow>
+                                        <block type="variables_get" id="u4VVkXlTr+teeFA4#NNr">
+                                          <field name="VAR" id="t$qMNNJE0.3-L^ei7FH/">font_6</field>
+                                        </block>
+                                      </value>
+                                      <value name="Font_Size_Input">
+                                        <shadow type="text" id="NLGb*C3p4@[~lKBoDH9_">
+                                          <field name="TEXT">10px</field>
+                                        </shadow>
+                                      </value>
+                                      <value name="Font_Weight_Input">
+                                        <shadow type="text" id="mm1b7k=0z-Wml3wOvO8y">
+                                          <field name="TEXT">normal</field>
+                                        </shadow>
+                                      </value>
+                                      <value name="Font_Spacing_Input">
+                                        <shadow type="text" id="M0RWv^V#O:10dmLl=oA0">
+                                          <field name="TEXT">normal</field>
+                                        </shadow>
+                                      </value>
+                                      <value name="Font_Margin_Input">
+                                        <shadow type="text" id="7%EweRRftQ2C1jNs]0I/">
+                                          <field name="TEXT">5px</field>
+                                        </shadow>
+                                      </value>
+                                      <value name="Font_Padding_Input">
+                                        <shadow type="text" id="(s0/X_RP7Pn;DC-YG?z*">
+                                          <field name="TEXT">2px</field>
+                                        </shadow>
+                                      </value>
+                                      <value name="Font_Color_Input">
+                                        <shadow type="text" id="UOymtDae*y3,N0Tw46z|">
+                                          <field name="TEXT">cyan</field>
+                                        </shadow>
+                                      </value>
+                                      <value name="Font_Alpha_Input">
+                                        <shadow type="math_number" id="u*cJBgUk^j%{htM:/Aj?">
+                                          <field name="NUM">1</field>
+                                        </shadow>
+                                      </value>
+                                      <value name="Background_Color_Input">
+                                        <shadow type="text" id="(ZoFf3wVW|=A9aTRzv!V">
+                                          <field name="TEXT">black</field>
+                                        </shadow>
+                                      </value>
+                                      <value name="Background_Alpha_Input">
+                                        <shadow type="math_number" id="-dfFUcz(wY%5m;@;N(/A">
+                                          <field name="NUM">0.7</field>
+                                        </shadow>
+                                      </value>
+                                      <value name="Extra_CSS_Input">
+                                        <shadow type="text" id="mVyX1*p_1q?m._rI]FgS">
+                                          <field name="TEXT"/>
+                                        </shadow>
+                                      </value>
+                                    </block>
+                                  </value>
+                                  <next>
+                                    <block type="variables_set" id="j[-*C+hpn:R3oio,dp@z">
+                                      <field name="VAR" id="9b*,9WQ52PuVk@Y;slG;">modal_2_BODY_TEXT_settings</field>
+                                      <value name="VALUE">
+                                        <block type="GLIFTEK_v3d_Plugins_PopUp_Modal/GLIFTEK_UTILITY_PopUp_Modal_Content_Text_Settings" id="eM^[,v{q~4S6T%,N1u5^">
+                                          <field name="Text_Selectable_Checkbox">FALSE</field>
+                                          <value name="Text_Input">
+                                            <shadow type="text">
+                                              <field name="TEXT">my Text</field>
+                                            </shadow>
+                                            <block type="variables_get" id="+Is:6_h]Nu-DKME%yK./">
+                                              <field name="VAR" id="^Pr-Dafo,+01.QcrH5z9">modal_2_body_text</field>
+                                            </block>
+                                          </value>
+                                          <value name="Font_Input">
+                                            <shadow type="text">
+                                              <field name="TEXT">Helvetica</field>
+                                            </shadow>
+                                            <block type="variables_get" id="K5pWeZ?$)]IG}OEU;08J">
+                                              <field name="VAR" id="Ghon9Iga5%Qb1d9gd)w*">font_3</field>
+                                            </block>
+                                          </value>
+                                          <value name="Font_Size_Input">
+                                            <shadow type="text" id="DQeEK|TPUZ2[e%xyOlqB">
+                                              <field name="TEXT">12px</field>
+                                            </shadow>
+                                          </value>
+                                          <value name="Font_Style_Input">
+                                            <block type="text" id="um3tgQrOF+]opr=dw{Ck">
+                                              <field name="TEXT">normal</field>
+                                            </block>
+                                          </value>
+                                          <value name="Font_Weight_Input">
+                                            <shadow type="text" id="t*D/{zD1SU,149D0.!M_">
+                                              <field name="TEXT">normal</field>
+                                            </shadow>
+                                          </value>
+                                          <value name="Font_Spacing_Input">
+                                            <shadow type="text" id="5y!/D-O2|4s=[95])!,;">
+                                              <field name="TEXT">normal</field>
+                                            </shadow>
+                                          </value>
+                                          <value name="Font_Alignment_Input">
+                                            <block type="text" id="4UfQ-J*%SB_x!zLkh^#N">
+                                              <field name="TEXT">center</field>
+                                            </block>
+                                          </value>
+                                          <value name="Font_Margin_Input">
+                                            <shadow type="text" id="7-h_W6*.:k3.Pxx36c%J">
+                                              <field name="TEXT">5px</field>
+                                            </shadow>
+                                          </value>
+                                          <value name="Font_Padding_Input">
+                                            <shadow type="text" id="5,8dXfLv9}u/^/hL!9qD">
+                                              <field name="TEXT">15px</field>
+                                            </shadow>
+                                          </value>
+                                          <value name="Font_Color_Input">
+                                            <shadow type="text" id="H8tM;_g+ZTB,WrFHUM0A">
+                                              <field name="TEXT">cyan</field>
+                                            </shadow>
+                                          </value>
+                                          <value name="Font_Alpha_Input">
+                                            <shadow type="math_number" id="p#8%o@IQV2~VAJ/g{=;Z">
+                                              <field name="NUM">1</field>
+                                            </shadow>
+                                          </value>
+                                          <value name="Background_Color_Input">
+                                            <shadow type="text" id="Yschy10Hub?}~+V8nR,,">
+                                              <field name="TEXT">black</field>
+                                            </shadow>
+                                          </value>
+                                          <value name="Background_Alpha_Input">
+                                            <shadow type="math_number" id="?w(1ak+aXop0kbiDF1u_">
+                                              <field name="NUM">0.5</field>
+                                            </shadow>
+                                          </value>
+                                          <value name="Extra_CSS_Input">
+                                            <shadow type="text" id="DqB7cWYj0*J(rJrp-Gj[">
+                                              <field name="TEXT"/>
+                                            </shadow>
+                                          </value>
+                                        </block>
+                                      </value>
+                                      <next>
+                                        <block type="variables_set" id="OgB/VH/7)Yiw|zXTay#^">
+                                          <field name="VAR" id="s!%p[JckyPYYBk,WgZwV">modal_2_BODY_MEDIA_settings</field>
+                                          <value name="VALUE">
+                                            <block type="GLIFTEK_v3d_Plugins_PopUp_Modal/GLIFTEK_UTILITY_PopUp_Modal_Content_Media_Settings" id="XvMR=bw$uDzFA7|;1;Z|">
+                                              <field name="VIDEO_CONTROLS_Checkbox">TRUE</field>
+                                              <field name="VIDEO_LOOP_Checkbox">TRUE</field>
+                                              <field name="VIDEO_AUTOPLAY_Checkbox">TRUE</field>
+                                              <field name="CONTENT_ORDER_Dropdown">video-text-image</field>
+                                              <value name="IMAGE_Input">
+                                                <shadow type="text" id="_FxJHhtOffLYga{mN?V}">
+                                                  <field name="TEXT">./myImage.jpg</field>
+                                                </shadow>
+                                                <block type="variables_get" id="k~GCT;lCHJe_w1zyG[:B">
+                                                  <field name="VAR" id="Ppyv4lPrEj8Aa[lTfYNR">modal_2_BODY_IMAGE</field>
+                                                </block>
+                                              </value>
+                                              <value name="IMAGE_Width_Input">
+                                                <shadow type="text" id="V/BeD2fiJ+IrT,W7UaEt">
+                                                  <field name="TEXT">80%</field>
+                                                </shadow>
+                                              </value>
+                                              <value name="IMAGE_Display_Input">
+                                                <shadow type="text" id="X(]Q8+C0LDP6zhW77|WB">
+                                                  <field name="TEXT">inline</field>
+                                                </shadow>
+                                              </value>
+                                              <value name="IMAGE_Alignment_Input">
+                                                <shadow type="text" id="0,`i2EX~BN_ZzM|eI^sq">
+                                                  <field name="TEXT">center</field>
+                                                </shadow>
+                                              </value>
+                                              <value name="IMAGE_FLOAT_Alignment_Input">
+                                                <shadow type="text" id="L0yA_TQ)bLZA!e!;pJl^">
+                                                  <field name="TEXT">none</field>
+                                                </shadow>
+                                              </value>
+                                              <value name="VIDEO_Input">
+                                                <shadow type="text" id="~X1Bj}Y1Aph!Y6B_F+^N">
+                                                  <field name="TEXT">./myVideo.mp4</field>
+                                                </shadow>
+                                                <block type="variables_get" id="NyA--3DWGa7g4y0)QXhO">
+                                                  <field name="VAR" id="C$nVR0:FGbLP3c-Mu4+.">modal_2_BODY_VIDEO</field>
+                                                </block>
+                                              </value>
+                                              <value name="VIDEO_Width_Input">
+                                                <shadow type="text" id="0QUrG.u4c4-Mv{~(Zv(h">
+                                                  <field name="TEXT">80%</field>
+                                                </shadow>
+                                              </value>
+                                              <value name="VIDEO_Display_Input">
+                                                <shadow type="text" id="z^,u3afTyg{FEZ0RF*ht">
+                                                  <field name="TEXT">inline</field>
+                                                </shadow>
+                                              </value>
+                                              <value name="VIDEO_Alignment_Input">
+                                                <shadow type="text" id="Ee-}pi%n?vQP/k;Pml=H">
+                                                  <field name="TEXT">center</field>
+                                                </shadow>
+                                              </value>
+                                              <value name="VIDEO_FLOAT_Alignment_Input">
+                                                <shadow type="text" id="chQ)r+b]eZmx5@QmiQ%x">
+                                                  <field name="TEXT">center</field>
+                                                </shadow>
+                                              </value>
+                                            </block>
+                                          </value>
+                                          <next>
+                                            <block type="variables_set" id="`^ZLg%mdRN-vVhG55l?p">
+                                              <field name="VAR" id="X1DAsy.[GMhpw0]XsG3!">modal_2_ANIMATION_settings</field>
+                                              <value name="VALUE">
+                                                <block type="GLIFTEK_v3d_Plugins_PopUp_Modal/GLIFTEK_UTILITY_PopUp_Modal_Animation_Settings" id="fO_tPiX|Sj@yAwuly]?O">
+                                                  <field name="modal_FADE_IN_Checkbox">TRUE</field>
+                                                  <field name="modal_FADE_OUT_Checkbox">TRUE</field>
+                                                  <field name="modal_ZOOM_IN_Checkbox">TRUE</field>
+                                                  <field name="modal_ZOOM_OUT_Checkbox">TRUE</field>
+                                                  <field name="modal_SLIDE_IN_Checkbox">FALSE</field>
+                                                  <field name="modal_SLIDE_OUT_Checkbox">FALSE</field>
+                                                  <field name="modal_Animation_Timing_Dropdown">ease-in-out</field>
+                                                  <field name="modal_SCREEN_BG_Blur_Checkbox">FALSE</field>
+                                                  <field name="modal_CONTENT_BG_Blur_Checkbox">TRUE</field>
+                                                  <value name="modal_SLIDE_IN_start_LEFT_Input">
+                                                    <shadow type="text" id="-9jn;n0eu!`gW/s;/v@X">
+                                                      <field name="TEXT">-1000px</field>
+                                                    </shadow>
+                                                  </value>
+                                                  <value name="modal_SLIDE_IN_start_TOP_Input">
+                                                    <shadow type="text" id="EgWuHRr2XV9E=Ab?43:7">
+                                                      <field name="TEXT">-1000px</field>
+                                                    </shadow>
+                                                  </value>
+                                                  <value name="modal_SLIDE_OUT_end_LEFT_Input">
+                                                    <shadow type="text" id="o*g7#%[16mf$0;~9@y;=">
+                                                      <field name="TEXT">1000px</field>
+                                                    </shadow>
+                                                  </value>
+                                                  <value name="modal_SLIDE_OUT_end_TOP_Input">
+                                                    <shadow type="text" id="69`D;e29h);J/Yt#x=6K">
+                                                      <field name="TEXT">1000px</field>
+                                                    </shadow>
+                                                  </value>
+                                                  <value name="modal_Animation_Duration_Input">
+                                                    <shadow type="math_number" id="2J[Pe}@XPtvky(6G^[mo">
+                                                      <field name="NUM">0.4</field>
+                                                    </shadow>
+                                                  </value>
+                                                  <value name="modal_SCREEN_BG_Blur_Amount">
+                                                    <shadow type="math_number" id="BN`3r/Gz`lrvsNScy4k6">
+                                                      <field name="NUM">10</field>
+                                                    </shadow>
+                                                  </value>
+                                                  <value name="modal_SCREEN_BG_Saturation_Amount">
+                                                    <shadow type="math_number" id="`^,E:ne,ppB7u_-Ty6W+">
+                                                      <field name="NUM">80</field>
+                                                    </shadow>
+                                                  </value>
+                                                  <value name="modal_SCREEN_BG_Color_Input">
+                                                    <shadow type="text" id="fn2m/,55uof$Azi+tt0C">
+                                                      <field name="TEXT">black</field>
+                                                    </shadow>
+                                                  </value>
+                                                  <value name="modal_SCREEN_BG_Alpha_Input">
+                                                    <shadow type="math_number" id="n?jRm4[}a_NQzI{VG1W+">
+                                                      <field name="NUM">0.5</field>
+                                                    </shadow>
+                                                  </value>
+                                                  <value name="modal_CONTENT_BG_Blur_Amount">
+                                                    <shadow type="math_number" id=".K/h#|LAv}+PJ.V}-,#/">
+                                                      <field name="NUM">6</field>
+                                                    </shadow>
+                                                  </value>
+                                                  <value name="modal_CONTENT_BG_Saturation_Amount">
+                                                    <shadow type="math_number" id="GQ`F86CgPx4dn+~s6P#q">
+                                                      <field name="NUM">50</field>
+                                                    </shadow>
+                                                  </value>
+                                                </block>
+                                              </value>
+                                            </block>
+                                          </next>
+                                        </block>
+                                      </next>
+                                    </block>
+                                  </next>
+                                </block>
+                              </next>
+                            </block>
+                          </next>
+                        </block>
+                      </next>
+                    </block>
+                  </next>
+                </block>
+              </next>
+            </block>
+          </next>
+        </block>
+      </statement>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="comment" id="6F@gAm6Wq41YxH~u)2@z" x="1210" y="-550">
+      <field name="TEXT">MODAL 3</field>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="procedures_defnoreturn" id="z*SA[[{U8cA98[f{8Hq;" x="290" y="-470">
+      <field name="NAME">SETUP_MODAL_2</field>
+      <comment pinned="false" h="80" w="160">Describe this function...</comment>
+      <statement name="STACK">
+        <block type="GLIFTEK_v3d_Plugins_PopUp_Modal/GLIFTEK_UTILITY_PopUp_Modal" id=":f@#6HKyDM0~P{n8MDoI">
+          <field name="typeDropdown">container</field>
+          <field name="modal_CONTENT_Clickable_Checkbox">TRUE</field>
+          <field name="modal_SCREEN_BG_Clickable_Checkbox">TRUE</field>
+          <field name="modal_Close_Button_Checkbox">TRUE</field>
+          <field name="modal_Close_On_Outside_Click_Checkbox">FALSE</field>
+          <field name="modal_Drop_Shadow_Checkbox">FALSE</field>
+          <value name="modal_ID_Input">
+            <shadow type="text" id="7=Flc$@.hltfmLRI-#A)">
+              <field name="TEXT">Modal_2</field>
+            </shadow>
+          </value>
+          <value name="modal_Trigger_Event_Element_ID_Input">
+            <shadow type="text" id="}l,2-^Jqr!#)Od{x%l)F">
+              <field name="TEXT">modalOpenPlugin</field>
+            </shadow>
+          </value>
+          <value name="modal_Z_Index_Input">
+            <shadow type="math_number" id="G@Ubg?J.hpLk*Y,Vk-t8">
+              <field name="NUM">4</field>
+            </shadow>
+          </value>
+          <value name="modal_Width_Input">
+            <shadow type="text" id="0g)7u6yC_p,%-Eg]h}RY">
+              <field name="TEXT">600px</field>
+            </shadow>
+          </value>
+          <value name="modal_CONTENT_POSITION_Input">
+            <shadow type="text" id="k6JA8~{#[!lt87@4!R+`">
+              <field name="TEXT">relative</field>
+            </shadow>
+          </value>
+          <value name="modal_CONTENT_TOP_Input">
+            <shadow type="text" id="Hn%Z3;6uS|Jj%FqRJ{xa">
+              <field name="TEXT"/>
+            </shadow>
+          </value>
+          <value name="modal_CONTENT_LEFT_Input">
+            <shadow type="text" id="$MnHfD)~}^}2uO-zi9d;">
+              <field name="TEXT"/>
+            </shadow>
+          </value>
+          <value name="modal_CONTENT_MARGIN_Input">
+            <shadow type="text" id="6!k?%*m9f:c_(1wt,4KS">
+              <field name="TEXT">5% auto</field>
+            </shadow>
+          </value>
+          <value name="modal_BORDER_Radius_Input">
+            <shadow type="math_number" id="|5kHip%}c[S9XGHxi$48">
+              <field name="NUM">5</field>
+            </shadow>
+          </value>
+          <value name="modal_BORDER_Width_Input">
+            <shadow type="math_number" id=")p)!yk/2c~]p7UbQ^uv4">
+              <field name="NUM">2</field>
+            </shadow>
+          </value>
+          <value name="modal_BORDER_Color_Input">
+            <shadow type="text" id="z11Q7f$0$X0.Z+5`Q^]i">
+              <field name="TEXT">cyan</field>
+            </shadow>
+          </value>
+          <value name="modal_HEADER_TEXT_settings_Input">
+            <shadow type="text" id="S.A|?:@@oM/euyU+o!F%">
+              <field name="TEXT"/>
+            </shadow>
+            <block type="variables_get" id="1h`DTA(7-CTg7ogmM5%z">
+              <field name="VAR" id="+?sS(b7)A3pn/;|e$iB?">modal_2_HEADER_settings</field>
+            </block>
+          </value>
+          <value name="modal_FOOTER_TEXT_settings_Input">
+            <shadow type="text" id="=`lmZkB--oVcD6B%YV=j">
+              <field name="TEXT"/>
+            </shadow>
+            <block type="variables_get" id="(G,Yj(MOZb-*tTjR3n2_">
+              <field name="VAR" id="|Q~9Y~uvXH.t|3xo]Z.@">modal_2_FOOTER_settings</field>
+            </block>
+          </value>
+          <value name="modal_BODY_TEXT_settings_Input">
+            <shadow type="text" id="Ebov3!Qh~)Skwa[2d!Sr">
+              <field name="TEXT"/>
+            </shadow>
+            <block type="variables_get" id="cNqi8F:!KD3-zOai!Zau">
+              <field name="VAR" id="9b*,9WQ52PuVk@Y;slG;">modal_2_BODY_TEXT_settings</field>
+            </block>
+          </value>
+          <value name="modal_BODY_MEDIA_settings_Input">
+            <shadow type="text" id="t3sv5K%,h.i/0%_B#=$Q">
+              <field name="TEXT"/>
+            </shadow>
+            <block type="variables_get" id="sK(#p/08UHwea`JqJ$-j">
+              <field name="VAR" id="s!%p[JckyPYYBk,WgZwV">modal_2_BODY_MEDIA_settings</field>
+            </block>
+          </value>
+          <value name="modal_ANIMATION_settings_Input">
+            <shadow type="text" id="pmhNUB.:wq?(,#HG]vuN">
+              <field name="TEXT"/>
+            </shadow>
+            <block type="variables_get" id="wjW*YK~u`|WaIkIE/-u}">
+              <field name="VAR" id="X1DAsy.[GMhpw0]XsG3!">modal_2_ANIMATION_settings</field>
+            </block>
+          </value>
+        </block>
+      </statement>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="procedures_defnoreturn" id="Va-h]8*,Wd*Ol3[IOQ$9" x="1210" y="-470">
+      <field name="NAME">SET_MODAL_3_SETTINGS</field>
+      <comment pinned="false" h="80" w="160">Describe this function...</comment>
+      <statement name="STACK">
+        <block type="variables_set" id="CRwJHmDnCsKrOowjutKA">
+          <field name="VAR" id="3Q|tebtFuNdNnRmDU9m~">modal_3_BODY_IMAGE</field>
+          <value name="VALUE">
+            <block type="text" id="rz`w{j*aZCId)Qkc4)yB">
+              <field name="TEXT">./images/gliftek_console_logo.png</field>
+            </block>
+          </value>
+          <next>
+            <block type="variables_set" id="i(r|HCSG8bZo4!d^5`Nr">
+              <field name="VAR" id="2o+Uo}=g/1SIGmq(y2zf">modal_3_BODY_VIDEO</field>
+              <value name="VALUE">
+                <block type="text" id="W|7zZm)$3{JJf]PS~*3L">
+                  <field name="TEXT">https://player.vimeo.com/external/368730818.hd.mp4?s=d4c63aaf30d35f712005a6b6cd67b0b066202128</field>
+                </block>
+              </value>
+              <next>
+                <block type="variables_set" id="9qH!AUOR|tC?ZgYMs_os" collapsed="true">
+                  <field name="VAR" id="^!aHKQFst.:UG36TVD9t">modal_3_body_text</field>
+                  <value name="VALUE">
+                    <block type="textMultiline" id="6yh~ms]{Enm5li*,-|@}">
+                      <field name="HIGHLIGHT_MODE">html</field>
+                      <field name="TEXT">This popup modal window is opened by clicking on an annotation.&lt;br&gt;&#10;and is positioned by the&lt;br&gt;&#10;top and left position fields&lt;br&gt;&#10;with position: relative used.&lt;br&gt;&#10;It's width is 60% of the parent modal background &lt;br&gt;&#10;which is 100% of it's parent window size.&lt;br&gt;</field>
+                    </block>
+                  </value>
+                  <next>
+                    <block type="variables_set" id="DP,iQpuNY=NuvYM_Gc,U" collapsed="true">
+                      <field name="VAR" id="!Ngk4n3|`[9i8DL!C+/j">modal_3_header_text</field>
+                      <value name="VALUE">
+                        <block type="textMultiline" id="VB745Nj_=8{WPwOD0?za">
+                          <field name="HIGHLIGHT_MODE">html</field>
+                          <field name="TEXT">Info Modal #3</field>
+                        </block>
+                      </value>
+                      <next>
+                        <block type="variables_set" id="_-+I7O%/lM/bZ%f3#pLq" collapsed="true">
+                          <field name="VAR" id="OgxkX%6,#?}a670IJ71[">modal_3_footer_text</field>
+                          <value name="VALUE">
+                            <block type="textMultiline" id="-Xe(##[fq:owbSnHfx)n">
+                              <field name="HIGHLIGHT_MODE">html</field>
+                              <field name="TEXT">Footer space for footnotes, a menu or copyright information.</field>
+                            </block>
+                          </value>
+                          <next>
+                            <block type="variables_set" id="*{91#]ZlrBddD%[c|_kl" collapsed="true">
+                              <field name="VAR" id="fM~}chT`9LjYFZGn0kAP">modal_3_HEADER_TEXT_settings</field>
+                              <value name="VALUE">
+                                <block type="GLIFTEK_v3d_Plugins_PopUp_Modal/GLIFTEK_UTILITY_PopUp_Modal_Content_Text_Settings" id="ODhO|J()H5lv},uz]o%n">
+                                  <field name="Text_Selectable_Checkbox">FALSE</field>
+                                  <value name="Text_Input">
+                                    <shadow type="text">
+                                      <field name="TEXT">my Text</field>
+                                    </shadow>
+                                    <block type="variables_get" id="bB(m{%Rg9ZdFqUBICVr*">
+                                      <field name="VAR" id="!Ngk4n3|`[9i8DL!C+/j">modal_3_header_text</field>
+                                    </block>
+                                  </value>
+                                  <value name="Font_Input">
+                                    <shadow type="text">
+                                      <field name="TEXT">Helvetica</field>
+                                    </shadow>
+                                    <block type="variables_get" id="0:*ayK50#a7%.BK+:{}!">
+                                      <field name="VAR" id="4.pQGZL#_pT%Y#QNqH:$">font_5</field>
+                                    </block>
+                                  </value>
+                                  <value name="Font_Size_Input">
+                                    <shadow type="text" id="V$*96FWLzzH7J||iWThK">
+                                      <field name="TEXT">14px</field>
+                                    </shadow>
+                                  </value>
+                                  <value name="Font_Weight_Input">
+                                    <shadow type="text" id="n%L+YqlOu8nEYqU3DQyL">
+                                      <field name="TEXT">normal</field>
+                                    </shadow>
+                                  </value>
+                                  <value name="Font_Spacing_Input">
+                                    <shadow type="text" id="B9i[bz(yyswbp5]?eQat">
+                                      <field name="TEXT">normal</field>
+                                    </shadow>
+                                  </value>
+                                  <value name="Font_Margin_Input">
+                                    <shadow type="text" id="3FcZ|V^e9pfRZOkJUd;2">
+                                      <field name="TEXT">0px</field>
+                                    </shadow>
+                                  </value>
+                                  <value name="Font_Padding_Input">
+                                    <shadow type="text" id="x@m$65+P9M6yrgi6GQps">
+                                      <field name="TEXT">5px 10px</field>
+                                    </shadow>
+                                  </value>
+                                  <value name="Font_Color_Input">
+                                    <shadow type="text" id="G#0.X(j3K+bE:R-,+^V~">
+                                      <field name="TEXT">white</field>
+                                    </shadow>
+                                  </value>
+                                  <value name="Font_Alpha_Input">
+                                    <shadow type="math_number" id="Nd_~tq^e.U-E@sy%;sJR">
+                                      <field name="NUM">1</field>
+                                    </shadow>
+                                  </value>
+                                  <value name="Background_Color_Input">
+                                    <shadow type="text" id="00Z7TO:PsBj(z;yJ4|i|">
+                                      <field name="TEXT">black</field>
+                                    </shadow>
+                                    <block type="text" id="w{XIt/i|a3iC*;P{^oQf">
+                                      <field name="TEXT">#f44336</field>
+                                    </block>
+                                  </value>
+                                  <value name="Background_Alpha_Input">
+                                    <shadow type="math_number" id="X?^g=~gD|[(e7$#d}_PW">
+                                      <field name="NUM">1</field>
+                                    </shadow>
+                                  </value>
+                                  <value name="Extra_CSS_Input">
+                                    <shadow type="text" id="L164}l[Hu3zqaO}50.`h">
+                                      <field name="TEXT"/>
+                                    </shadow>
+                                  </value>
+                                </block>
+                              </value>
+                              <next>
+                                <block type="variables_set" id="4TWpeMxCBQMZQ6ay4,j+" collapsed="true">
+                                  <field name="VAR" id="A*e.Mzhi9jNuh=;M*J9,">modal_3_FOOTER_TEXT_settings</field>
+                                  <value name="VALUE">
+                                    <block type="GLIFTEK_v3d_Plugins_PopUp_Modal/GLIFTEK_UTILITY_PopUp_Modal_Content_Text_Settings" id="z4)5O+AnVv{u5V{#V2^X">
+                                      <field name="Text_Selectable_Checkbox">FALSE</field>
+                                      <value name="Text_Input">
+                                        <shadow type="text">
+                                          <field name="TEXT">my Text</field>
+                                        </shadow>
+                                        <block type="variables_get" id="_J-7y/Zc,L:a-I[rv-/3">
+                                          <field name="VAR" id="OgxkX%6,#?}a670IJ71[">modal_3_footer_text</field>
+                                        </block>
+                                      </value>
+                                      <value name="Font_Input">
+                                        <shadow type="text">
+                                          <field name="TEXT">Helvetica</field>
+                                        </shadow>
+                                        <block type="variables_get" id="/8`*[pnOQ6V7Y:bPr!98">
+                                          <field name="VAR" id="t$qMNNJE0.3-L^ei7FH/">font_6</field>
+                                        </block>
+                                      </value>
+                                      <value name="Font_Size_Input">
+                                        <shadow type="text" id="l(([w3%5jqzl4UNImrH@">
+                                          <field name="TEXT">10px</field>
+                                        </shadow>
+                                      </value>
+                                      <value name="Font_Weight_Input">
+                                        <shadow type="text" id="@d!|v1(C?8fSMa;Xl4pa">
+                                          <field name="TEXT">normal</field>
+                                        </shadow>
+                                      </value>
+                                      <value name="Font_Spacing_Input">
+                                        <shadow type="text" id="H~]GY^P]RDq(QQc6Bzh^">
+                                          <field name="TEXT">normal</field>
+                                        </shadow>
+                                      </value>
+                                      <value name="Font_Margin_Input">
+                                        <shadow type="text" id="4N!NBJ2M)1n%#I7)wT/6">
+                                          <field name="TEXT">5px</field>
+                                        </shadow>
+                                      </value>
+                                      <value name="Font_Padding_Input">
+                                        <shadow type="text" id="~DL{A|%O7)C$VuVxAS::">
+                                          <field name="TEXT">2px</field>
+                                        </shadow>
+                                      </value>
+                                      <value name="Font_Color_Input">
+                                        <shadow type="text" id="uR;][@,NkGiXWW6C(;uq">
+                                          <field name="TEXT">white</field>
+                                        </shadow>
+                                      </value>
+                                      <value name="Font_Alpha_Input">
+                                        <shadow type="math_number" id="3oV=)H@R+V{yrP$n8eiQ">
+                                          <field name="NUM">1</field>
+                                        </shadow>
+                                      </value>
+                                      <value name="Background_Color_Input">
+                                        <shadow type="text" id="hp?BEbnOf:YjO]q4tttN">
+                                          <field name="TEXT">black</field>
+                                        </shadow>
+                                        <block type="text" id="+u_k7sp}#9ekVpKeB+ym">
+                                          <field name="TEXT">#f44336</field>
+                                        </block>
+                                      </value>
+                                      <value name="Background_Alpha_Input">
+                                        <shadow type="math_number" id=")vXmoDY)K8{XL$_4UV3k">
+                                          <field name="NUM">0.7</field>
+                                        </shadow>
+                                      </value>
+                                      <value name="Extra_CSS_Input">
+                                        <shadow type="text" id="9~`cYo^/c:b0dIqo2Ae2">
+                                          <field name="TEXT"/>
+                                        </shadow>
+                                      </value>
+                                    </block>
+                                  </value>
+                                  <next>
+                                    <block type="variables_set" id="[U$Zx=FXevg8Xx^RejkO">
+                                      <field name="VAR" id="paM66K?dm,OtR-65x{yY">modal_3_BODY_TEXT_settings</field>
+                                      <value name="VALUE">
+                                        <block type="GLIFTEK_v3d_Plugins_PopUp_Modal/GLIFTEK_UTILITY_PopUp_Modal_Content_Text_Settings" id="%(LA`ox0WIt?aGF,QcR(">
+                                          <field name="Text_Selectable_Checkbox">FALSE</field>
+                                          <value name="Text_Input">
+                                            <shadow type="text">
+                                              <field name="TEXT">my Text</field>
+                                            </shadow>
+                                            <block type="variables_get" id="[EdB;GyDH!:4-f[O_.h@">
+                                              <field name="VAR" id="^!aHKQFst.:UG36TVD9t">modal_3_body_text</field>
+                                            </block>
+                                          </value>
+                                          <value name="Font_Input">
+                                            <shadow type="text">
+                                              <field name="TEXT">Helvetica</field>
+                                            </shadow>
+                                            <block type="variables_get" id="o6+,*MUP;.v7A%N}01v~">
+                                              <field name="VAR" id="Ghon9Iga5%Qb1d9gd)w*">font_3</field>
+                                            </block>
+                                          </value>
+                                          <value name="Font_Size_Input">
+                                            <shadow type="text" id="!Xvy8rTK=Y=*6N%dhPw%">
+                                              <field name="TEXT">12px</field>
+                                            </shadow>
+                                          </value>
+                                          <value name="Font_Style_Input">
+                                            <block type="text" id="fdXnm5iMFpYH-2AG7^07">
+                                              <field name="TEXT">normal</field>
+                                            </block>
+                                          </value>
+                                          <value name="Font_Weight_Input">
+                                            <shadow type="text" id="Im_VPFOu8jjrib!b),8r">
+                                              <field name="TEXT">normal</field>
+                                            </shadow>
+                                          </value>
+                                          <value name="Font_Spacing_Input">
+                                            <shadow type="text" id="%AFM|fXHT3q(VZugS5t;">
+                                              <field name="TEXT">normal</field>
+                                            </shadow>
+                                          </value>
+                                          <value name="Font_Alignment_Input">
+                                            <block type="text" id="VUQUd7LY!aJ)of_qt+P}">
+                                              <field name="TEXT">center</field>
+                                            </block>
+                                          </value>
+                                          <value name="Font_Margin_Input">
+                                            <shadow type="text" id="dkz]R;oYtMN/N*s5I*5b">
+                                              <field name="TEXT">5px</field>
+                                            </shadow>
+                                          </value>
+                                          <value name="Font_Padding_Input">
+                                            <shadow type="text" id="aUAzrCb=Z8tw`N:`GM^.">
+                                              <field name="TEXT">15px</field>
+                                            </shadow>
+                                          </value>
+                                          <value name="Font_Color_Input">
+                                            <shadow type="text" id="PJ7p^mr3=uvj/7[z2W0M">
+                                              <field name="TEXT">red</field>
+                                            </shadow>
+                                          </value>
+                                          <value name="Font_Alpha_Input">
+                                            <shadow type="math_number" id="N}(7}|Ge?aWsN90!q(VH">
+                                              <field name="NUM">1</field>
+                                            </shadow>
+                                          </value>
+                                          <value name="Background_Color_Input">
+                                            <shadow type="text" id="TDE%T!I5!85mj/.j`u:]">
+                                              <field name="TEXT">gray</field>
+                                            </shadow>
+                                          </value>
+                                          <value name="Background_Alpha_Input">
+                                            <shadow type="math_number" id="gkZ~0o6;ldd-P6iBGW%i">
+                                              <field name="NUM">1</field>
+                                            </shadow>
+                                          </value>
+                                          <value name="Extra_CSS_Input">
+                                            <shadow type="text" id="7=qo/(z1G5#{IsbHhN.`">
+                                              <field name="TEXT"/>
+                                            </shadow>
+                                          </value>
+                                        </block>
+                                      </value>
+                                      <next>
+                                        <block type="variables_set" id="`n.AKpR]3DO0z1!f`Zya">
+                                          <field name="VAR" id="v2qKe+/oW$j:H%|c7t??">modal_3_BODY_MEDIA_settings</field>
+                                          <value name="VALUE">
+                                            <block type="GLIFTEK_v3d_Plugins_PopUp_Modal/GLIFTEK_UTILITY_PopUp_Modal_Content_Media_Settings" id="Ut`g%hu9JvoD9/2Qi4p3">
+                                              <field name="VIDEO_CONTROLS_Checkbox">TRUE</field>
+                                              <field name="VIDEO_LOOP_Checkbox">TRUE</field>
+                                              <field name="VIDEO_AUTOPLAY_Checkbox">TRUE</field>
+                                              <field name="CONTENT_ORDER_Dropdown">video-image-text</field>
+                                              <value name="IMAGE_Input">
+                                                <shadow type="text" id="{+Uz31,Cc?E-qk*k-vqI">
+                                                  <field name="TEXT">./myImage.jpg</field>
+                                                </shadow>
+                                                <block type="variables_get" id="7i2|;Dt|vx)gO[wItp-G">
+                                                  <field name="VAR" id="3Q|tebtFuNdNnRmDU9m~">modal_3_BODY_IMAGE</field>
+                                                </block>
+                                              </value>
+                                              <value name="IMAGE_Width_Input">
+                                                <shadow type="text" id="*VE1cr71Ak*^%=R~3Q})">
+                                                  <field name="TEXT">80%</field>
+                                                </shadow>
+                                              </value>
+                                              <value name="IMAGE_Display_Input">
+                                                <shadow type="text" id="^IJ-`G3HA|_KH28pn:ew">
+                                                  <field name="TEXT">inline</field>
+                                                </shadow>
+                                              </value>
+                                              <value name="IMAGE_Alignment_Input">
+                                                <shadow type="text" id="C:82W]^2Sje5Yt0PX5k@">
+                                                  <field name="TEXT">center</field>
+                                                </shadow>
+                                              </value>
+                                              <value name="IMAGE_FLOAT_Alignment_Input">
+                                                <shadow type="text" id="ua/btDTi.I7-;3rhAx]u">
+                                                  <field name="TEXT">none</field>
+                                                </shadow>
+                                              </value>
+                                              <value name="VIDEO_Input">
+                                                <shadow type="text" id="wHM1Gr|DUZ~.h7[k!,Z]">
+                                                  <field name="TEXT">./myVideo.mp4</field>
+                                                </shadow>
+                                                <block type="variables_get" id="~mC^agw*}FL_KFP-s2#[">
+                                                  <field name="VAR" id="2o+Uo}=g/1SIGmq(y2zf">modal_3_BODY_VIDEO</field>
+                                                </block>
+                                              </value>
+                                              <value name="VIDEO_Width_Input">
+                                                <shadow type="text" id="d[I_Z,S[D%R4~%7=6MjF">
+                                                  <field name="TEXT">80%</field>
+                                                </shadow>
+                                              </value>
+                                              <value name="VIDEO_Display_Input">
+                                                <shadow type="text" id="5V@qR-@K-0vRK`MpY4lH">
+                                                  <field name="TEXT">inline</field>
+                                                </shadow>
+                                              </value>
+                                              <value name="VIDEO_Alignment_Input">
+                                                <shadow type="text" id="TnFqex~$-@-Kl?4+z_oQ">
+                                                  <field name="TEXT">center</field>
+                                                </shadow>
+                                              </value>
+                                              <value name="VIDEO_FLOAT_Alignment_Input">
+                                                <shadow type="text" id=")H$aJL5]I/*4RL]nDNWR">
+                                                  <field name="TEXT">none</field>
+                                                </shadow>
+                                              </value>
+                                            </block>
+                                          </value>
+                                          <next>
+                                            <block type="variables_set" id="V%JB/11S96_.umpj*lf_">
+                                              <field name="VAR" id=":Ez[@4tN7mZljG=2flmL">modal_3_ANIMATION_settings</field>
+                                              <value name="VALUE">
+                                                <block type="GLIFTEK_v3d_Plugins_PopUp_Modal/GLIFTEK_UTILITY_PopUp_Modal_Animation_Settings" id="@*Jb#j^K5m@{zb3]{ap]">
+                                                  <field name="modal_FADE_IN_Checkbox">TRUE</field>
+                                                  <field name="modal_FADE_OUT_Checkbox">TRUE</field>
+                                                  <field name="modal_ZOOM_IN_Checkbox">TRUE</field>
+                                                  <field name="modal_ZOOM_OUT_Checkbox">TRUE</field>
+                                                  <field name="modal_SLIDE_IN_Checkbox">TRUE</field>
+                                                  <field name="modal_SLIDE_OUT_Checkbox">TRUE</field>
+                                                  <field name="modal_Animation_Timing_Dropdown">ease-in-out</field>
+                                                  <field name="modal_SCREEN_BG_Blur_Checkbox">TRUE</field>
+                                                  <field name="modal_CONTENT_BG_Blur_Checkbox">FALSE</field>
+                                                  <value name="modal_SLIDE_IN_start_LEFT_Input">
+                                                    <shadow type="text" id="HhGAom`m.MqivVt1UPGB">
+                                                      <field name="TEXT">-1000px</field>
+                                                    </shadow>
+                                                  </value>
+                                                  <value name="modal_SLIDE_IN_start_TOP_Input">
+                                                    <shadow type="text" id="#HvmjS)0qrbGGPX0@%/E">
+                                                      <field name="TEXT"/>
+                                                    </shadow>
+                                                  </value>
+                                                  <value name="modal_SLIDE_OUT_end_LEFT_Input">
+                                                    <shadow type="text" id="V8Q@Y6z}HiD,tPWKeiZl">
+                                                      <field name="TEXT">1000px</field>
+                                                    </shadow>
+                                                  </value>
+                                                  <value name="modal_SLIDE_OUT_end_TOP_Input">
+                                                    <shadow type="text" id="BrVO1{K}v77V_j[VlB#F">
+                                                      <field name="TEXT"/>
+                                                    </shadow>
+                                                  </value>
+                                                  <value name="modal_Animation_Duration_Input">
+                                                    <shadow type="math_number" id="H`#WTq()*RkT^B1[OhvS">
+                                                      <field name="NUM">0.35</field>
+                                                    </shadow>
+                                                  </value>
+                                                  <value name="modal_SCREEN_BG_Blur_Amount">
+                                                    <shadow type="math_number" id="*%v/1t_-U[BbB0Kqaj6^">
+                                                      <field name="NUM">10</field>
+                                                    </shadow>
+                                                  </value>
+                                                  <value name="modal_SCREEN_BG_Saturation_Amount">
+                                                    <shadow type="math_number" id="NZ*O#Z,/iWiVC;+qiA#=">
+                                                      <field name="NUM">30</field>
+                                                    </shadow>
+                                                  </value>
+                                                  <value name="modal_SCREEN_BG_Color_Input">
+                                                    <shadow type="text" id="}anph=#[bCeB~XGY7|Yi">
+                                                      <field name="TEXT">black</field>
+                                                    </shadow>
+                                                  </value>
+                                                  <value name="modal_SCREEN_BG_Alpha_Input">
+                                                    <shadow type="math_number" id="WbDn#,]}X_M/`0E[b~y@">
+                                                      <field name="NUM">0.5</field>
+                                                    </shadow>
+                                                  </value>
+                                                  <value name="modal_CONTENT_BG_Blur_Amount">
+                                                    <shadow type="math_number" id="d2TzGbi:SrFu794oFaW2">
+                                                      <field name="NUM">6</field>
+                                                    </shadow>
+                                                  </value>
+                                                  <value name="modal_CONTENT_BG_Saturation_Amount">
+                                                    <shadow type="math_number" id="6~^urE6Z{O0(?kC$be!0">
+                                                      <field name="NUM">50</field>
+                                                    </shadow>
+                                                  </value>
+                                                </block>
+                                              </value>
+                                            </block>
+                                          </next>
+                                        </block>
+                                      </next>
+                                    </block>
+                                  </next>
+                                </block>
+                              </next>
+                            </block>
+                          </next>
+                        </block>
+                      </next>
+                    </block>
+                  </next>
+                </block>
+              </next>
+            </block>
+          </next>
+        </block>
+      </statement>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="procedures_defnoreturn" id="(-YPFPXiMZ9u9`(V|@^w" x="1990" y="-470">
+      <field name="NAME">SETUP_MODAL_3</field>
+      <comment pinned="false" h="80" w="160">Describe this function...</comment>
+      <statement name="STACK">
+        <block type="GLIFTEK_v3d_Plugins_PopUp_Modal/GLIFTEK_UTILITY_PopUp_Modal" id="Ue^#deKbcAVX[od_P,,~">
+          <field name="typeDropdown">container</field>
+          <field name="modal_CONTENT_Clickable_Checkbox">TRUE</field>
+          <field name="modal_SCREEN_BG_Clickable_Checkbox">TRUE</field>
+          <field name="modal_Close_Button_Checkbox">TRUE</field>
+          <field name="modal_Close_On_Outside_Click_Checkbox">TRUE</field>
+          <field name="modal_Drop_Shadow_Checkbox">FALSE</field>
+          <value name="modal_ID_Input">
+            <shadow type="text" id="[V?6QFins};l9DEVfbL)">
+              <field name="TEXT">Modal_3</field>
+            </shadow>
+          </value>
+          <value name="modal_Trigger_Event_Element_ID_Input">
+            <shadow type="text" id="7Bs4Gfl(?w(G{mvyzn+x">
+              <field name="TEXT">annotation_open_modal_3</field>
+            </shadow>
+          </value>
+          <value name="modal_Z_Index_Input">
+            <shadow type="math_number" id="dk@c^)HP?Y;cLeuWP=~R">
+              <field name="NUM">1</field>
+            </shadow>
+          </value>
+          <value name="modal_Width_Input">
+            <shadow type="text" id="tPcq-=8/WkicTQ[kT*y{">
+              <field name="TEXT">300px</field>
+            </shadow>
+          </value>
+          <value name="modal_CONTENT_POSITION_Input">
+            <shadow type="text" id="[2ZFJ0bbXy)HJ6S.4m^c">
+              <field name="TEXT">relative</field>
+            </shadow>
+          </value>
+          <value name="modal_CONTENT_TOP_Input">
+            <shadow type="text" id="|4!7HJ`#7|.R/3GmAB;M">
+              <field name="TEXT">50px</field>
+            </shadow>
+            <block type="text" id="Js-wap/{8|C*:r@qZ|l)">
+              <field name="TEXT">300px</field>
+            </block>
+          </value>
+          <value name="modal_CONTENT_LEFT_Input">
+            <shadow type="text" id="E!XwK]oDD/9#GUu|w/Q5">
+              <field name="TEXT">50px</field>
+            </shadow>
+            <block type="text" id="6nWg$(sINu!5Y8)No-qf">
+              <field name="TEXT">300px</field>
+            </block>
+          </value>
+          <value name="modal_CONTENT_MARGIN_Input">
+            <shadow type="text" id="76R_20Fa0EHN5z(uOuMu">
+              <field name="TEXT"/>
+            </shadow>
+          </value>
+          <value name="modal_BORDER_Radius_Input">
+            <shadow type="math_number" id="x1SHb49[MU*+Gjvq(Kb]">
+              <field name="NUM">20</field>
+            </shadow>
+          </value>
+          <value name="modal_BORDER_Width_Input">
+            <shadow type="math_number" id="t:SesBUF3LR|kUn%8}~u">
+              <field name="NUM">0</field>
+            </shadow>
+          </value>
+          <value name="modal_BORDER_Color_Input">
+            <shadow type="text" id="fq@1B!_ls(muzzFl6Z0g">
+              <field name="TEXT">gray</field>
+            </shadow>
+            <block type="text" id="AbJ]^mV3nfnVu1%qy@+j">
+              <field name="TEXT">#f44336</field>
+            </block>
+          </value>
+          <value name="modal_HEADER_TEXT_settings_Input">
+            <shadow type="text" id="Gs$6aomLG,^`Zii:We9]">
+              <field name="TEXT"/>
+            </shadow>
+            <block type="variables_get" id="mVa4(%[4;X|Z%Rh}yi?F">
+              <field name="VAR" id="fM~}chT`9LjYFZGn0kAP">modal_3_HEADER_TEXT_settings</field>
+            </block>
+          </value>
+          <value name="modal_FOOTER_TEXT_settings_Input">
+            <shadow type="text" id="[8%6)_LA:A|O/rTkXuvp">
+              <field name="TEXT"/>
+            </shadow>
+            <block type="variables_get" id="3U/S__XDR]E=mDXyOA5{">
+              <field name="VAR" id="A*e.Mzhi9jNuh=;M*J9,">modal_3_FOOTER_TEXT_settings</field>
+            </block>
+          </value>
+          <value name="modal_BODY_TEXT_settings_Input">
+            <shadow type="text" id=";wAqxRh`qBxqy9Zh673*">
+              <field name="TEXT"/>
+            </shadow>
+            <block type="variables_get" id="IyX3GGx?@2+e8md-B;*^">
+              <field name="VAR" id="paM66K?dm,OtR-65x{yY">modal_3_BODY_TEXT_settings</field>
+            </block>
+          </value>
+          <value name="modal_BODY_MEDIA_settings_Input">
+            <shadow type="text" id="tVRJK$i5~k}O%0BxB5%{">
+              <field name="TEXT"/>
+            </shadow>
+            <block type="variables_get" id="Q1obs6[$2$3W9PuhV2,C">
+              <field name="VAR" id="v2qKe+/oW$j:H%|c7t??">modal_3_BODY_MEDIA_settings</field>
+            </block>
+          </value>
+          <value name="modal_ANIMATION_settings_Input">
+            <shadow type="text" id="BbpYzyD[XDy2~-_wF$-#">
+              <field name="TEXT"/>
+            </shadow>
+            <block type="variables_get" id="HluzgHt6%;24#lr.)?q3">
+              <field name="VAR" id=":Ez[@4tN7mZljG=2flmL">modal_3_ANIMATION_settings</field>
+            </block>
+          </value>
+        </block>
+      </statement>
+    </block>
+  </tab>
+  <editorsettings viewport-x="514.0000244140624" viewport-y="56" viewport-w="538" viewport-h="811" viewport-hidden="true" toolbox-library-mode="false" toolbox-minimized-mode="false"></editorsettings>
+</xml>
