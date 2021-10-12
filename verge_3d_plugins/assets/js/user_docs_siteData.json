@@ -989,7 +989,7 @@
 
     "popup_modal": {
 
-        "title": "Popup_Modal",
+        "title": "PopUp_Modal",
 
         "intro": "creates a fully customizable pop-up window that can be filled with custom content, be it text, images, video, or a combination of such.  The order of the placement of window contents is controlled by a drop down menu.  Windows may be animated to slide, scale, or fade as they appear or disappear.  A 'draggable' window option is also available.",
 
