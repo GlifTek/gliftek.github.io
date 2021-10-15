@@ -995,7 +995,7 @@
 
         "demo": true,
 
-        "demoText": "<i>Demo best viewed in fullscreen mode.</i>",
+        "demoText": "<i>Demo best viewed on desktop, in fullscreen mode.</i>",
 
         "plugins": [
             "Pop_Up_Modal",
