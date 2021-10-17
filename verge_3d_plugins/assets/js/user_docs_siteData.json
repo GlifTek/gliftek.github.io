@@ -654,7 +654,7 @@
 
             "puzzleText": "returns a list of all the objects in a scene whose bounding boxes are either touching or not touching outher bounding boxes.",
 
-            "exampleText": "...",
+            "exampleText": "use this plugin to reiterate through a list of objects touched (intersecting) or not touched.",
 
             "consoleText": "",
 
