@@ -562,7 +562,7 @@
 
             "pluginWidth": "25rem","exampleWidth": "50%",
 
-            "puzzleText": "used to update the bounding box's 3D attributres to the object it is representing.",
+            "puzzleText": "used to update the bounding box's 3D attributes to match the object it is representing.",
 
             "exampleText": "",
 
