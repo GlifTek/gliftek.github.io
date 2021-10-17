@@ -26,16 +26,16 @@
         "featured",
         "lens_flare_deluxe",
         "csg",
-        "helpers",
+        "bounding_boxes",        
         "popup_modal",
         "backgrounds",        
         "web_storage",
+        "helpers",
         "utility_1",
         "utility_2",
         
         
-        "world",        
-        "bounding_boxes",              
+        "world",
         "objects",
 
         "import_export",
@@ -524,7 +524,7 @@
 
         "title": "Bounding_Boxes",
 
-        "intro": "is a suite of plugins that allow for detection of the intersection of designated 'bounding boxes'.<br>The bounding boxes are 'Box3' rectangles representing the furthest spatial bounds that an object takes up.",
+        "intro": "is a suite of plugins that allow for detection <br>of the intersection of object-designated 'bounding boxes'.<br>The bounding boxes are 'Box3' 3D rectangles representing the furthest spatial bounds that an object takes up.  <br>Best use case is for one-on-one intersection comparison. <br> Future versions will have better support for multiple intersections.",
 
         "demo": true,
 
@@ -544,7 +544,7 @@
 
             "pluginWidth": "25rem","exampleWidth": "50%",
 
-            "puzzleText": "creates a virtual 'Box3' cube shaped boundary around an object used for determining intersections with others of it's type.",
+            "puzzleText": "creates a virtual 'Box3' cube shaped boundary around an object or objects used for determining intersections with others.",
 
             "exampleText": "An optional bounding box helper object can be used for visualizing the box's dimensions for testing and debugging.",
 
