@@ -562,9 +562,9 @@
 
             "pluginWidth": "25rem","exampleWidth": "50%",
 
-            "puzzleText": "This puzzle is needed to .",
+            "puzzleText": "used to update the bounding box's 3D attributres to the object it is representing.",
 
-            "exampleText": "This puzzle allows users to make copies of objects, and customize the materials and textures independent of their source object.",
+            "exampleText": "",
 
             "consoleText": "",
 
@@ -598,9 +598,9 @@
 
             "pluginWidth": "25rem","exampleWidth": "50%",
 
-            "puzzleText": "returns the Bounding Box of an Object.",
+            "puzzleText": "returns the Bounding Box of an object.",
 
-            "exampleText": "returns the bounding box of a given object.",
+            "exampleText": "",
 
             "consoleText": "",
 
@@ -636,7 +636,7 @@
 
             "puzzleText": "returns the object a Bounding Box is currently touching.",
 
-            "exampleText": "returns the name of an object whose bounding box is touching another bounding box",
+            "exampleText": "",
 
             "consoleText": "",
 
