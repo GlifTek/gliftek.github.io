@@ -618,7 +618,7 @@
 
             "puzzleText": "returns a boolean (true / false ) value for the current collision state of a Bounding Box.",
 
-            "exampleText": "returns a true / false boolean operator as to whether two bounding box's are touching / intersecting at any given time, given a moving object and object to compare it with.",
+            "exampleText": "returns a true / false result as to whether a specific object's bounding box is intersecting another bounding box.",
 
             "consoleText": "",
 
