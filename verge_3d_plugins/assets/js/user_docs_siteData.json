@@ -25,6 +25,7 @@
     "allPluginPacks": [
         "featured",
         "lens_flare_deluxe",
+        "world",
         "csg",
         "bounding_boxes",        
         "popup_modal",
@@ -35,7 +36,7 @@
         "utility_2",
         
         
-        "world",
+        
         "objects",
 
         "import_export",
