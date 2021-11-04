@@ -859,7 +859,7 @@
 
     "objects": {
 
-        "title": "objects",
+        "title": "Objects",
 
         "intro": ": Cloning objects in Verge3D is available using the clone puzzle. However, creating deep copies of objects and their corresponding materials and textures has not been available as an option. These plugins allow for detailed reproductions of individual objects or groups of objects, each with unique properties.",
 
