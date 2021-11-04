@@ -861,11 +861,11 @@
 
         "title": "Objects",
 
-        "intro": ": Cloning objects in Verge3D is available using the clone puzzle. However, creating deep copies of objects and their corresponding materials and textures has not been available as an option. These plugins allow for detailed reproductions of individual objects or groups of objects, each with unique properties.",
+        "intro": ": Cloning objects in Verge3D is available using the clone puzzle. However, creating <u>deep copies</u> of objects and their corresponding materials and textures has not been available as an option. These plugins allow for detailed reproductions of individual objects or groups of objects, each with unique properties.",
 
         "demo": true,
 
-        "demoText": "<i>Click menu to copy objects.<br>Select objects to view grouping order.</i>",
+        "demoText": "<i>Select menu options to copy objects into ordered or un-ordered groups.<br>Mouse-hover or tap-hold to select objects to view grouping order.</i>",
 
         "plugins": [
             "Copy_Objects",            
@@ -891,7 +891,7 @@
 
             "puzzleText": "makes a completely unique copy of the given object and it's material. ",
 
-            "exampleText": "This puzzle allows users to make copies of an object, a group of objects, or groups of objects.  The object's material is copied as well.  Materials and textures are independent of their source object.  Creates groups for each object or a list of objects in ordered or non-ordered manner.",
+            "exampleText": "This puzzle allows users to make copies of an object, a group of objects, or groups of objects.  The object's material is copied as well.  Materials and textures are not references of their source object and can be modified independent.  This creates groups for each object or a list of objects in ordered or unordered manner.",
 
             "consoleText": "",
 
@@ -1037,7 +1037,7 @@
 
             "pluginWidth": "23rem","exampleWidth": "23rem",
 
-            "puzzleText": "creates a new empty object group.",
+            "puzzleText": "creates a new object group.",
 
             "exampleText": "This is useful for applying changes to many objects at once. ie: translating or rotating.",
 
@@ -1056,9 +1056,9 @@
 
             "pluginWidth": "23rem","exampleWidth": "23rem",
 
-            "puzzleText": "creates a new empty object group.",
+            "puzzleText": "adds or removes an object or list of objects from an existing group, given an existing object and group.",
 
-            "exampleText": "This is useful for applying changes to many objects at once. ie: translating or rotating.",
+            "exampleText": "",
 
             "consoleText": "",
 
@@ -1074,9 +1074,9 @@
 
             "pluginWidth": "23rem","exampleWidth": "23rem",
 
-            "puzzleText": "creates a new empty object group.",
+            "puzzleText": "returns a the name(s) of any group(s) that an object is currently part of, given an object.",
 
-            "exampleText": "This is useful for applying changes to many objects at once. ie: translating or rotating.",
+            "exampleText": "",
 
             "consoleText": "",
 
@@ -1092,9 +1092,9 @@
 
             "pluginWidth": "23rem","exampleWidth": "23rem",
 
-            "puzzleText": "creates a new empty object group.",
+            "puzzleText": "allows for the use of a variable or string input when designating a group, given an existing group's name.",
 
-            "exampleText": "This is useful for applying changes to many objects at once. ie: translating or rotating.",
+            "exampleText": "",
 
             "consoleText": "",
 
@@ -1110,9 +1110,9 @@
 
             "pluginWidth": "23rem","exampleWidth": "23rem",
 
-            "puzzleText": "creates a new empty object group.",
+            "puzzleText": "returns a list of all object copies created by a 'Copy Object' plugin, given a 'copy session id'.",
 
-            "exampleText": "This is useful for applying changes to many objects at once. ie: translating or rotating.",
+            "exampleText": "",
 
             "consoleText": "",
 
@@ -1128,9 +1128,9 @@
 
             "pluginWidth": "23rem","exampleWidth": "23rem",
 
-            "puzzleText": "creates a new empty object group.",
+            "puzzleText": "returns a list of all object copies' groups created by a 'Copy Object' plugin, given a 'copy session id'.",
 
-            "exampleText": "This is useful for applying changes to many objects at once. ie: translating or rotating.",
+            "exampleText": "",
 
             "consoleText": "",
 
@@ -1142,7 +1142,6 @@
         }
 
 
-       
     },
 
 
