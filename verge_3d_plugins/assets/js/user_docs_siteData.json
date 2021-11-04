@@ -25,18 +25,17 @@
     "allPluginPacks": [
         "featured",
         "lens_flare_deluxe",
-        "world",
-        "csg",
-        "bounding_boxes",        
         "popup_modal",
+        
         "backgrounds",        
         "web_storage",
+        "world",
+        "csg",
+        "bounding_boxes",
         "helpers",
         "utility_1",
         "utility_2",
-        
-        
-        
+
         "objects",
 
         "import_export",
@@ -866,16 +865,25 @@
 
         "demo": true,
 
-        "demoText": "<i>Click menu to copy objects.</i>",
+        "demoText": "<i>Click menu to copy objects.<br>Select objects to view grouping order.</i>",
 
         "plugins": [
-            "Copy_Objects",
-            "Copy_Material",
+            "Copy_Objects",            
+            "Copy_Object",
             "Rename_Object",
+            "Set_Object_Selectability",
+            "Get_Parent",
+            "Copy_Material",
             "Rename_Material",
+            "Set_Material_Transparency",
             "Create_Group",
-            "Get_Parent"
+            "Add_Or_Remove_Objects_In_Group",
+            "Get_Groups_From_Object",
+            "Get_Group_By_Name",
+            "Get_All_Object_Copies",
+            "Get_All_Object_Copies_Groups"
         ],
+
 
         "Copy_Objects": {
 
@@ -883,7 +891,7 @@
 
             "puzzleText": "makes a completely unique copy of the given object and it's material. ",
 
-            "exampleText": "This puzzle allows users to make copies of an object, a group of objects, or groups of objects.  The object's material is copied as well.  Materials and textures independent of their source object.  Creates multiple copies of an object, material and textures.  Creates groups for each object or a list of objects.",
+            "exampleText": "This puzzle allows users to make copies of an object, a group of objects, or groups of objects.  The object's material is copied as well.  Materials and textures are independent of their source object.  Creates groups for each object or a list of objects in ordered or non-ordered manner.",
 
             "consoleText": "",
 
@@ -895,13 +903,13 @@
         },
 
 
-        "Copy_Material": {
+        "Copy_Object": {
 
             "pluginWidth": "23rem","exampleWidth": "23rem",
 
-            "puzzleText": "makes a new, completely unique copy of the given object's material. ",
+            "puzzleText": "makes a completely unique copy of the given object and it's material. ",
 
-            "exampleText": "This puzzle allows users to generate material copies that can be modified independently from their source material.",
+            "exampleText": "This puzzle allows users to make copies of an object.  The object's material is copied as well.  Materials and textures are independent of their source object.",
 
             "consoleText": "",
 
@@ -931,30 +939,14 @@
         },
 
 
-        "Rename_Material": {
+
+        "Set_Object_Selectability": {
 
             "pluginWidth": "23rem","exampleWidth": "23rem",
 
-            "puzzleText": "changes the selected material's name. ",
+            "puzzleText": "sets an object to be either selectable or unselectable.",
 
-            "exampleText": "This puzzle renames materials.  When copying or changing objects, material names may need to be specific.  This puzzle allows for this.",
-
-            "consoleText": "",
-
-            "extraText": "",
-
-            "customHTML": "",
-
-            "portedURL": ""
-        },
-
-        "Create_Group": {
-
-            "pluginWidth": "23rem","exampleWidth": "23rem",
-
-            "puzzleText": "creates a new empty object group.",
-
-            "exampleText": "This is useful for applying changes to many objects at once. ie: translating or rotating.",
+            "exampleText": "The 'when clicked, hovered' etc puzzles have the 'x-ray' option to click through objects to objects behind them, this plugin lets you make objects completely unselectable for certain instances where this is desired.  Objects can later then be made 'selectable' again.",
 
             "consoleText": "",
 
@@ -981,7 +973,176 @@
             "customHTML": "",
 
             "portedURL": ""
+        },
+
+        
+        "Copy_Material": {
+
+            "pluginWidth": "23rem","exampleWidth": "23rem",
+
+            "puzzleText": "makes a new, completely unique copy of the given object's material. ",
+
+            "exampleText": "This puzzle allows users to generate material copies that can be modified independently from their source material.",
+
+            "consoleText": "",
+
+            "extraText": "",
+
+            "customHTML": "",
+
+            "portedURL": ""
+        },
+
+
+
+        "Rename_Material": {
+
+            "pluginWidth": "23rem","exampleWidth": "23rem",
+
+            "puzzleText": "changes the selected material's name. ",
+
+            "exampleText": "This puzzle renames materials.  When copying or changing objects, material names may need to be specific.  This puzzle allows for this.",
+
+            "consoleText": "",
+
+            "extraText": "",
+
+            "customHTML": "",
+
+            "portedURL": ""
+        },
+
+
+
+        "Set_Material_Transparency": {
+
+            "pluginWidth": "23rem","exampleWidth": "23rem",
+
+            "puzzleText": "sets an object's material's transparency to a given amount from 0 to 1.",
+
+            "exampleText": "",
+
+            "consoleText": "",
+
+            "extraText": "",
+
+            "customHTML": "",
+
+            "portedURL": ""
+        },
+
+
+
+        "Create_Group": {
+
+            "pluginWidth": "23rem","exampleWidth": "23rem",
+
+            "puzzleText": "creates a new empty object group.",
+
+            "exampleText": "This is useful for applying changes to many objects at once. ie: translating or rotating.",
+
+            "consoleText": "",
+
+            "extraText": "",
+
+            "customHTML": "",
+
+            "portedURL": ""
+        },
+
+
+
+        "Add_Or_Remove_Objects_In_Group": {
+
+            "pluginWidth": "23rem","exampleWidth": "23rem",
+
+            "puzzleText": "creates a new empty object group.",
+
+            "exampleText": "This is useful for applying changes to many objects at once. ie: translating or rotating.",
+
+            "consoleText": "",
+
+            "extraText": "",
+
+            "customHTML": "",
+
+            "portedURL": ""
+        },
+
+
+        "Get_Groups_From_Object": {
+
+            "pluginWidth": "23rem","exampleWidth": "23rem",
+
+            "puzzleText": "creates a new empty object group.",
+
+            "exampleText": "This is useful for applying changes to many objects at once. ie: translating or rotating.",
+
+            "consoleText": "",
+
+            "extraText": "",
+
+            "customHTML": "",
+
+            "portedURL": ""
+        },
+
+
+        "Get_Group_By_Name": {
+
+            "pluginWidth": "23rem","exampleWidth": "23rem",
+
+            "puzzleText": "creates a new empty object group.",
+
+            "exampleText": "This is useful for applying changes to many objects at once. ie: translating or rotating.",
+
+            "consoleText": "",
+
+            "extraText": "",
+
+            "customHTML": "",
+
+            "portedURL": ""
+        },
+
+
+        "Get_All_Object_Copies": {
+
+            "pluginWidth": "23rem","exampleWidth": "23rem",
+
+            "puzzleText": "creates a new empty object group.",
+
+            "exampleText": "This is useful for applying changes to many objects at once. ie: translating or rotating.",
+
+            "consoleText": "",
+
+            "extraText": "",
+
+            "customHTML": "",
+
+            "portedURL": ""
+        },
+
+
+        "Get_All_Object_Copies_Groups": {
+
+            "pluginWidth": "23rem","exampleWidth": "23rem",
+
+            "puzzleText": "creates a new empty object group.",
+
+            "exampleText": "This is useful for applying changes to many objects at once. ie: translating or rotating.",
+
+            "consoleText": "",
+
+            "extraText": "",
+
+            "customHTML": "",
+
+            "portedURL": ""
         }
+
+
+       
     },
 
 
