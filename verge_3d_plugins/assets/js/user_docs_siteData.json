@@ -889,7 +889,7 @@
 
             "pluginWidth": "23rem","exampleWidth": "23rem",
 
-            "puzzleText": "makes a completely unique copy of the given object and it's material. ",
+            "puzzleText": "makes a completely unique copy of the given object(s) and their materials and textures. ",
 
             "exampleText": "This puzzle allows users to make copies of an object, a group of objects, or groups of objects.  The object's material is copied as well.  Materials and textures are not references of their source object and can be modified independent.  This creates groups for each object or a list of objects in ordered or unordered manner.",
 
@@ -907,7 +907,7 @@
 
             "pluginWidth": "23rem","exampleWidth": "23rem",
 
-            "puzzleText": "makes a completely unique copy of the given object and it's material. ",
+            "puzzleText": "makes a completely unique copy of the given object and it's materials and textures. ",
 
             "exampleText": "This puzzle allows users to make copies of an object.  The object's material is copied as well.  Materials and textures are independent of their source object.",
 
@@ -1018,7 +1018,7 @@
 
             "pluginWidth": "23rem","exampleWidth": "23rem",
 
-            "puzzleText": "sets an object's material's transparency to a given amount from 0 to 1.",
+            "puzzleText": "sets an object's material's transparency to a given amount from 0 to 1.  NOTE: This works only with objects created with Verge3D's native 'create object' puzzle.",
 
             "exampleText": "",
 
