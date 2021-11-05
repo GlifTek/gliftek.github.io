@@ -1484,7 +1484,7 @@
 
         "title": "World",
 
-        "intro": "is a group of plugins that provide easily implemented real-world environmental features such as a natural sky, body of rippling water, and terrain.",
+        "intro": "is a group of plugins that provide easily implemented real-world environmental features such as a natural sky, body of rippling water, and terrain.<br>NOTE: World plugins currently only works with Verge3D versions 3.8 pre3 and under.",
 
         "demo": true,
 
