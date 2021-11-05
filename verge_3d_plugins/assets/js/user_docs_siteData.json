@@ -873,6 +873,7 @@
             "Rename_Object",
             "Set_Object_Selectability",
             "Get_Parent",
+            "Get_Object_By_Name",
             "Copy_Material",
             "Rename_Material",
             "Set_Material_Transparency",
@@ -967,6 +968,24 @@
             "exampleText": "This puzzle comes in useful for situations where objects are dynamically parented and a parent object needs to be retrieved.",
 
             "consoleText": "",
+
+            "extraText": "",
+
+            "customHTML": "",
+
+            "portedURL": ""
+        },
+
+
+        "Get_Object_By_Name": {
+
+            "pluginWidth": "23rem","exampleWidth": "23rem",
+
+            "puzzleText": "returns the actual javascript 'object' definition of a given object.",
+
+            "exampleText": "This is used when you need access to an object's properties.",
+
+            "consoleText": "Console readout:",
 
             "extraText": "",
 
