@@ -1037,7 +1037,7 @@
 
             "pluginWidth": "23rem","exampleWidth": "23rem",
 
-            "puzzleText": "sets an object's material's transparency to a given amount from 0 to 1.  NOTE: This works only with objects created with Verge3D's native 'create object' puzzle.",
+            "puzzleText": "sets an object's material's transparency to a given amount from 0 to 1.  NOTE: This works only with objects created with Verge3D's native 'create object' puzzle, or imported objects using materials that are not MeshNodeMaterial.",
 
             "exampleText": "",
 
@@ -1093,7 +1093,7 @@
 
             "pluginWidth": "23rem","exampleWidth": "23rem",
 
-            "puzzleText": "returns a the name(s) of any group(s) that an object is currently part of, given an object.",
+            "puzzleText": "returns the name(s) of any group(s) that an object is currently part of, given an object.",
 
             "exampleText": "",
 
@@ -1129,7 +1129,7 @@
 
             "pluginWidth": "23rem","exampleWidth": "23rem",
 
-            "puzzleText": "returns a list of all object copies created by a 'Copy Object' plugin, given a 'copy session id'.",
+            "puzzleText": "returns a list of all object copies created by the 'Copy Objects' plugin, given a 'copy session id'.",
 
             "exampleText": "",
 
@@ -1147,7 +1147,7 @@
 
             "pluginWidth": "23rem","exampleWidth": "23rem",
 
-            "puzzleText": "returns a list of all object copies' groups created by a 'Copy Object' plugin, given a 'copy session id'.",
+            "puzzleText": "returns a list of all object copies' groups created by the 'Copy Objects' plugin, given a 'copy session id'.",
 
             "exampleText": "",
 
