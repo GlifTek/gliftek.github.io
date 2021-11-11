@@ -35,13 +35,12 @@
         "helpers",
         "utility_1",
         "utility_2",
-        "svg",
+        "svg_loader",
 
         
 
         "import_export",
         "right_click_menu",
-        "svg_loader",
         "paperJS",
         "geometry",            
         "clipping planes",
@@ -85,7 +84,7 @@
     },
 
 
-    "svg": {
+    "svg_loader": {
 
         "title": "SVG_Loader",
 
