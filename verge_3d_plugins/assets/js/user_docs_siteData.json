@@ -35,6 +35,7 @@
         "helpers",
         "utility_1",
         "utility_2",
+        "svg",
 
         
 
@@ -82,6 +83,62 @@
             "portedURL": ""
         }
     },
+
+
+    "svg": {
+
+        "title": "SVG_Loader",
+
+        "intro": "Allows for the import of SVG files to be rendered as objects, then extruded.",
+
+        "demo": true,
+
+        "demoText": "<i>Select one of the logos in the demo above to load their SVG file<br>or select 'upload' to load a local file or from a URL.</i>",
+        
+
+        "plugins": [
+            "SVG_Object_Loader",
+            "SVG_Extrude_Geometry"
+        ],
+
+        "SVG_Object_Loader": {
+
+            "pluginWidth": "22rem","exampleWidth": "23rem",
+
+            "puzzleText": "produces a group of meshes based on an imported SVG file.",
+
+            "exampleText": "",
+
+            "consoleText": "",
+
+            "extraText": "",
+
+            "customHTML": "",
+        
+            "portedURL": ""
+        },
+        
+
+        "SVG_Extrude_Geometry": {
+
+            "pluginWidth": "22rem","exampleWidth": "23rem",
+
+            "puzzleText": "Extrudes an SVG's Geometry along the depth axis (y).",
+
+            "exampleText": "Example:",
+
+            "consoleText": "",
+
+            "extraText": "",
+
+            "customHTML": "",
+
+            "portedURL": ""
+        }
+    },
+
+
+
 
 
     "helpers": {
@@ -230,6 +287,10 @@
             "portedURL": ""
         }
     },
+
+
+
+
 
 
     "utility_1": {
