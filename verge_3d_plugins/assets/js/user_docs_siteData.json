@@ -27,6 +27,7 @@
         "lens_flare_deluxe",
         "popup_modal",
         "objects",
+        "lottie_animations",
         "backgrounds",        
         "web_storage",
         "world",
@@ -1223,6 +1224,172 @@
 
     },
 
+
+    "lottie_animations": {
+
+        "title": "Lottie_Animations",
+
+        "intro": "loads and controls 'Lottie' files as JSON format for use as 2D animations that can be used on Verge3D object surfaces.",
+
+        "demo": true,
+
+        "demoText": "<i></i>",
+
+        "plugins": [
+            "Load_Lottie_File",
+            "Lottie_Animation_Play",  
+            "Lottie_Animation_Play_Segment",            
+            "Lottie_Animation_Go_To_Frame",
+            "Lottie_Animation_Pause",
+            "Lottie_Animation_Stop",
+            "Lottie_Animation_Is_Playing",
+            "Lottie_Animation_Set_Playback_Rate"
+        ],
+
+        "Load_Lottie_File": {
+            "pluginWidth": "25rem","exampleWidth": "23rem",  "consoleWidth": "22rem", "extraWidth": "85%",
+
+            "puzzleText": "Loads lotie files in JSON format.",
+
+            "exampleText": "",
+
+            "consoleText": "",
+
+            "extraText": "",
+
+            "customHTML": "",
+            
+            "portedURL": "https://github.com/bodymovin"
+
+        },
+        
+        "Lottie_Animation_Play": {
+
+            "pluginWidth": "25rem","exampleWidth": "23rem",  "consoleWidth": "22rem", "extraWidth": "85%",
+
+            "puzzleText": "plays a lottie animation.",
+
+            "exampleText": "",
+
+            "consoleText": "",
+
+            "extraText": "",
+
+            "customHTML": "",
+            
+            "portedURL": ""
+
+        },
+
+        "Lottie_Animation_Play_Segment": {
+
+            "pluginWidth": "40rem","exampleWidth": "23rem",  "consoleWidth": "22rem", "extraWidth": "85%",
+
+            "puzzleText": "plays a segment of animation from frame A to frame B.",
+
+            "exampleText": "",
+
+            "consoleText": "",
+
+            "extraText": "",
+
+            "customHTML": "",
+            
+            "portedURL": ""
+
+        },
+        
+        "Lottie_Animation_Go_To_Frame": {
+
+            "pluginWidth": "40rem","exampleWidth": "23rem",  "consoleWidth": "22rem", "extraWidth": "85%",
+
+            "puzzleText": "goes to a specified frame in a lottie animation and either plays forward, backward or stops.",
+
+            "exampleText": "",
+
+            "consoleText": "",
+
+            "extraText": "",
+
+            "customHTML": "",
+            
+            "portedURL": ""
+
+        },
+        
+        "Lottie_Animation_Pause": {
+
+            "pluginWidth": "25rem","exampleWidth": "23rem",  "consoleWidth": "22rem", "extraWidth": "85%",
+
+            "puzzleText": "pauses a playing lottie animation.",
+
+            "exampleText": "",
+
+            "consoleText": "",
+
+            "extraText": "",
+
+            "customHTML": "",
+            
+            "portedURL": ""
+
+        },
+        
+
+        "Lottie_Animation_Stop": {
+
+            "pluginWidth": "25rem","exampleWidth": "23rem",  "consoleWidth": "22rem", "extraWidth": "85%",
+
+            "puzzleText": "stops a playing lottie animation and sets it to the first frame.",
+
+            "exampleText": "",
+
+            "consoleText": "",
+
+            "extraText": "",
+
+            "customHTML": "",
+            
+            "portedURL": ""
+
+        },
+        
+        "Lottie_Animation_Is_Playing": {
+
+            "pluginWidth": "25rem","exampleWidth": "23rem",  "consoleWidth": "22rem", "extraWidth": "85%",
+
+            "puzzleText": "returns true or false whether a lottie animation is playing.",
+
+            "exampleText": "",
+
+            "consoleText": "",
+
+            "extraText": "",
+
+            "customHTML": "",
+            
+            "portedURL": ""
+
+        },
+
+        "Lottie_Animation_Set_Playback_Rate": {
+
+            "pluginWidth": "30rem","exampleWidth": "23rem",  "consoleWidth": "22rem", "extraWidth": "85%",
+
+            "puzzleText": "sets the playback speed of a lottie animation.",
+
+            "exampleText": "",
+
+            "consoleText": "",
+
+            "extraText": "",
+
+            "customHTML": "",
+            
+            "portedURL": ""
+
+        }
+    },
 
 
 
