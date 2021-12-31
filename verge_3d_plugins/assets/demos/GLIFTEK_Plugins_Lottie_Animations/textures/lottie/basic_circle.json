@@ -1,0 +1,1015 @@
+{
+    "v": "5.6.5",
+    "fr": 30,
+    "ip": 0,
+    "op": 30,
+    "w": 1116,
+    "h": 636,
+    "nm": "basic_circle",
+    "ddd": 0,
+    "assets": [
+        {
+            "id": "image_0",
+            "w": 500,
+            "h": 500,
+            "u": "",
+            "p": "data:image/png;base64,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",
+            "e": 1
+        }
+    ],
+    "fonts": {
+        "list": [
+            {
+                "fName": "VenusRising",
+                "fFamily": "Venus Rising",
+                "fStyle": "Regular",
+                "ascent": 74.0998413180932
+            }
+        ]
+    },
+    "layers": [
+        {
+            "ddd": 0,
+            "ind": 1,
+            "ty": 5,
+            "nm": "TEXT",
+            "sr": 1,
+            "ks": {
+                "o": {
+                    "a": 0,
+                    "k": 100,
+                    "ix": 11
+                },
+                "r": {
+                    "a": 0,
+                    "k": 0,
+                    "ix": 10
+                },
+                "p": {
+                    "a": 1,
+                    "k": [
+                        {
+                            "i": {
+                                "x": 0.506,
+                                "y": 1
+                            },
+                            "o": {
+                                "x": 0,
+                                "y": 0
+                            },
+                            "t": 0,
+                            "s": [
+                                323.947,
+                                499.992,
+                                0
+                            ],
+                            "to": [
+                                0,
+                                0,
+                                0
+                            ],
+                            "ti": [
+                                0,
+                                0,
+                                0
+                            ]
+                        },
+                        {
+                            "i": {
+                                "x": 1,
+                                "y": 1
+                            },
+                            "o": {
+                                "x": 0.506,
+                                "y": 0
+                            },
+                            "t": 30,
+                            "s": [
+                                323.947,
+                                221.82,
+                                0
+                            ],
+                            "to": [
+                                0,
+                                0,
+                                0
+                            ],
+                            "ti": [
+                                0,
+                                0,
+                                0
+                            ]
+                        },
+                        {
+                            "t": 58,
+                            "s": [
+                                323.947,
+                                499.992,
+                                0
+                            ]
+                        }
+                    ],
+                    "ix": 2
+                },
+                "a": {
+                    "a": 0,
+                    "k": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "ix": 1
+                },
+                "s": {
+                    "a": 0,
+                    "k": [
+                        100,
+                        100,
+                        100
+                    ],
+                    "ix": 6
+                }
+            },
+            "ao": 0,
+            "t": {
+                "d": {
+                    "k": [
+                        {
+                            "s": {
+                                "s": 112,
+                                "f": "VenusRising",
+                                "t": "TEXT",
+                                "j": 0,
+                                "tr": 0,
+                                "lh": 134.4,
+                                "ls": 0,
+                                "fc": [
+                                    0.922,
+                                    0.922,
+                                    0.922
+                                ]
+                            },
+                            "t": 0
+                        }
+                    ]
+                },
+                "p": {},
+                "m": {
+                    "g": 1,
+                    "a": {
+                        "a": 0,
+                        "k": [
+                            0,
+                            0
+                        ],
+                        "ix": 2
+                    }
+                },
+                "a": []
+            },
+            "ip": 0,
+            "op": 30,
+            "st": 0,
+            "bm": 0
+        },
+        {
+            "ddd": 0,
+            "ind": 3,
+            "ty": 2,
+            "nm": "img_0.png",
+            "cl": "png",
+            "refId": "image_0",
+            "sr": 1,
+            "ks": {
+                "o": {
+                    "a": 0,
+                    "k": 60,
+                    "ix": 11
+                },
+                "r": {
+                    "a": 0,
+                    "k": 0,
+                    "ix": 10
+                },
+                "p": {
+                    "a": 1,
+                    "k": [
+                        {
+                            "i": {
+                                "x": 0.667,
+                                "y": 1
+                            },
+                            "o": {
+                                "x": 0.333,
+                                "y": 0
+                            },
+                            "t": 0,
+                            "s": [
+                                387.809,
+                                318,
+                                0
+                            ],
+                            "to": [
+                                0,
+                                0,
+                                0
+                            ],
+                            "ti": [
+                                0,
+                                0,
+                                0
+                            ]
+                        },
+                        {
+                            "i": {
+                                "x": 0.667,
+                                "y": 1
+                            },
+                            "o": {
+                                "x": 0.333,
+                                "y": 0
+                            },
+                            "t": 30,
+                            "s": [
+                                738.836,
+                                318,
+                                0
+                            ],
+                            "to": [
+                                0,
+                                0,
+                                0
+                            ],
+                            "ti": [
+                                0,
+                                0,
+                                0
+                            ]
+                        },
+                        {
+                            "t": 58,
+                            "s": [
+                                387.809,
+                                318,
+                                0
+                            ]
+                        }
+                    ],
+                    "ix": 2
+                },
+                "a": {
+                    "a": 0,
+                    "k": [
+                        250,
+                        250,
+                        0
+                    ],
+                    "ix": 1
+                },
+                "s": {
+                    "a": 0,
+                    "k": [
+                        100,
+                        100,
+                        100
+                    ],
+                    "ix": 6
+                }
+            },
+            "ao": 0,
+            "ip": 0,
+            "op": 30,
+            "st": 0,
+            "bm": 0
+        },
+        {
+            "ddd": 0,
+            "ind": 4,
+            "ty": 4,
+            "nm": "Shape Layer 2",
+            "sr": 1,
+            "ks": {
+                "o": {
+                    "a": 0,
+                    "k": 40,
+                    "ix": 11
+                },
+                "r": {
+                    "a": 0,
+                    "k": 0,
+                    "ix": 10
+                },
+                "p": {
+                    "a": 0,
+                    "k": [
+                        558,
+                        318,
+                        0
+                    ],
+                    "ix": 2
+                },
+                "a": {
+                    "a": 0,
+                    "k": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "ix": 1
+                },
+                "s": {
+                    "a": 0,
+                    "k": [
+                        62,
+                        92,
+                        100
+                    ],
+                    "ix": 6
+                }
+            },
+            "ao": 0,
+            "shapes": [
+                {
+                    "ty": "gr",
+                    "it": [
+                        {
+                            "ty": "rc",
+                            "d": 1,
+                            "s": {
+                                "a": 0,
+                                "k": [
+                                    674,
+                                    432
+                                ],
+                                "ix": 2
+                            },
+                            "p": {
+                                "a": 0,
+                                "k": [
+                                    0,
+                                    0
+                                ],
+                                "ix": 3
+                            },
+                            "r": {
+                                "a": 0,
+                                "k": 20,
+                                "ix": 4
+                            },
+                            "nm": "Rectangle Path 1",
+                            "mn": "ADBE Vector Shape - Rect",
+                            "hd": false
+                        },
+                        {
+                            "ty": "st",
+                            "c": {
+                                "a": 0,
+                                "k": [
+                                    0.074509803922,
+                                    0.949019607843,
+                                    1,
+                                    1
+                                ],
+                                "ix": 3
+                            },
+                            "o": {
+                                "a": 0,
+                                "k": 20,
+                                "ix": 4
+                            },
+                            "w": {
+                                "a": 0,
+                                "k": 2,
+                                "ix": 5
+                            },
+                            "lc": 1,
+                            "lj": 1,
+                            "ml": 4,
+                            "bm": 0,
+                            "nm": "Stroke 1",
+                            "mn": "ADBE Vector Graphic - Stroke",
+                            "hd": false
+                        },
+                        {
+                            "ty": "fl",
+                            "c": {
+                                "a": 0,
+                                "k": [
+                                    0.191049583285,
+                                    0.430946439855,
+                                    0.482352941176,
+                                    1
+                                ],
+                                "ix": 4
+                            },
+                            "o": {
+                                "a": 0,
+                                "k": 100,
+                                "ix": 5
+                            },
+                            "r": 1,
+                            "bm": 0,
+                            "nm": "Fill 1",
+                            "mn": "ADBE Vector Graphic - Fill",
+                            "hd": false
+                        },
+                        {
+                            "ty": "tr",
+                            "p": {
+                                "a": 0,
+                                "k": [
+                                    3,
+                                    12
+                                ],
+                                "ix": 2
+                            },
+                            "a": {
+                                "a": 0,
+                                "k": [
+                                    0,
+                                    0
+                                ],
+                                "ix": 1
+                            },
+                            "s": {
+                                "a": 0,
+                                "k": [
+                                    100,
+                                    100
+                                ],
+                                "ix": 3
+                            },
+                            "r": {
+                                "a": 0,
+                                "k": 0,
+                                "ix": 6
+                            },
+                            "o": {
+                                "a": 0,
+                                "k": 100,
+                                "ix": 7
+                            },
+                            "sk": {
+                                "a": 0,
+                                "k": 0,
+                                "ix": 4
+                            },
+                            "sa": {
+                                "a": 0,
+                                "k": 0,
+                                "ix": 5
+                            },
+                            "nm": "Transform"
+                        }
+                    ],
+                    "nm": "Rectangle 1",
+                    "np": 3,
+                    "cix": 2,
+                    "bm": 0,
+                    "ix": 1,
+                    "mn": "ADBE Vector Group",
+                    "hd": false
+                }
+            ],
+            "ip": 0,
+            "op": 30,
+            "st": 0,
+            "bm": 0
+        }
+    ],
+    "markers": [
+        {
+            "tm": 0,
+            "cm": "{ 'name': 'begin' }",
+            "dr": 0
+        },
+        {
+            "tm": 15,
+            "cm": "{ 'name': 'middle' }",
+            "dr": 0
+        },
+        {
+            "tm": 30,
+            "cm": "{ 'name': 'end' }",
+            "dr": 0
+        }
+    ],
+    "chars": [
+        {
+            "ch": "T",
+            "size": 112,
+            "style": "Regular",
+            "w": 97.6,
+            "data": {
+                "shapes": [
+                    {
+                        "ty": "gr",
+                        "it": [
+                            {
+                                "ind": 0,
+                                "ty": "sh",
+                                "ix": 1,
+                                "ks": {
+                                    "a": 0,
+                                    "k": {
+                                        "i": [
+                                            [
+                                                0,
+                                                0
+                                            ],
+                                            [
+                                                0,
+                                                0
+                                            ],
+                                            [
+                                                0,
+                                                0
+                                            ],
+                                            [
+                                                0,
+                                                0
+                                            ],
+                                            [
+                                                0,
+                                                0
+                                            ],
+                                            [
+                                                0,
+                                                0
+                                            ],
+                                            [
+                                                0,
+                                                0
+                                            ],
+                                            [
+                                                0,
+                                                0
+                                            ]
+                                        ],
+                                        "o": [
+                                            [
+                                                0,
+                                                0
+                                            ],
+                                            [
+                                                0,
+                                                0
+                                            ],
+                                            [
+                                                0,
+                                                0
+                                            ],
+                                            [
+                                                0,
+                                                0
+                                            ],
+                                            [
+                                                0,
+                                                0
+                                            ],
+                                            [
+                                                0,
+                                                0
+                                            ],
+                                            [
+                                                0,
+                                                0
+                                            ],
+                                            [
+                                                0,
+                                                0
+                                            ]
+                                        ],
+                                        "v": [
+                                            [
+                                                95.2,
+                                                -59.4
+                                            ],
+                                            [
+                                                95.2,
+                                                -73.9
+                                            ],
+                                            [
+                                                4.1,
+                                                -73.9
+                                            ],
+                                            [
+                                                4.1,
+                                                -59.4
+                                            ],
+                                            [
+                                                42.4,
+                                                -59.4
+                                            ],
+                                            [
+                                                42.4,
+                                                0
+                                            ],
+                                            [
+                                                56.9,
+                                                0
+                                            ],
+                                            [
+                                                56.9,
+                                                -59.4
+                                            ]
+                                        ],
+                                        "c": true
+                                    },
+                                    "ix": 2
+                                },
+                                "nm": "T",
+                                "mn": "ADBE Vector Shape - Group",
+                                "hd": false
+                            }
+                        ],
+                        "nm": "T",
+                        "np": 3,
+                        "cix": 2,
+                        "bm": 0,
+                        "ix": 1,
+                        "mn": "ADBE Vector Group",
+                        "hd": false
+                    }
+                ]
+            },
+            "fFamily": "Venus Rising"
+        },
+        {
+            "ch": "E",
+            "size": 112,
+            "style": "Regular",
+            "w": 102.6,
+            "data": {
+                "shapes": [
+                    {
+                        "ty": "gr",
+                        "it": [
+                            {
+                                "ind": 0,
+                                "ty": "sh",
+                                "ix": 1,
+                                "ks": {
+                                    "a": 0,
+                                    "k": {
+                                        "i": [
+                                            [
+                                                0,
+                                                0
+                                            ],
+                                            [
+                                                0,
+                                                0
+                                            ],
+                                            [
+                                                0,
+                                                0
+                                            ],
+                                            [
+                                                0,
+                                                0
+                                            ],
+                                            [
+                                                0,
+                                                0
+                                            ],
+                                            [
+                                                0,
+                                                0
+                                            ],
+                                            [
+                                                0,
+                                                0
+                                            ],
+                                            [
+                                                0,
+                                                0
+                                            ],
+                                            [
+                                                0,
+                                                0
+                                            ],
+                                            [
+                                                0,
+                                                0
+                                            ],
+                                            [
+                                                0,
+                                                0
+                                            ],
+                                            [
+                                                0,
+                                                0
+                                            ]
+                                        ],
+                                        "o": [
+                                            [
+                                                0,
+                                                0
+                                            ],
+                                            [
+                                                0,
+                                                0
+                                            ],
+                                            [
+                                                0,
+                                                0
+                                            ],
+                                            [
+                                                0,
+                                                0
+                                            ],
+                                            [
+                                                0,
+                                                0
+                                            ],
+                                            [
+                                                0,
+                                                0
+                                            ],
+                                            [
+                                                0,
+                                                0
+                                            ],
+                                            [
+                                                0,
+                                                0
+                                            ],
+                                            [
+                                                0,
+                                                0
+                                            ],
+                                            [
+                                                0,
+                                                0
+                                            ],
+                                            [
+                                                0,
+                                                0
+                                            ],
+                                            [
+                                                0,
+                                                0
+                                            ]
+                                        ],
+                                        "v": [
+                                            [
+                                                96.8,
+                                                0
+                                            ],
+                                            [
+                                                96.8,
+                                                -14.5
+                                            ],
+                                            [
+                                                20.2,
+                                                -14.5
+                                            ],
+                                            [
+                                                20.2,
+                                                -36.2
+                                            ],
+                                            [
+                                                82.7,
+                                                -36.2
+                                            ],
+                                            [
+                                                82.7,
+                                                -50.7
+                                            ],
+                                            [
+                                                20.2,
+                                                -50.7
+                                            ],
+                                            [
+                                                20.2,
+                                                -59.4
+                                            ],
+                                            [
+                                                96.8,
+                                                -59.4
+                                            ],
+                                            [
+                                                96.8,
+                                                -73.9
+                                            ],
+                                            [
+                                                5.7,
+                                                -73.9
+                                            ],
+                                            [
+                                                5.7,
+                                                0
+                                            ]
+                                        ],
+                                        "c": true
+                                    },
+                                    "ix": 2
+                                },
+                                "nm": "E",
+                                "mn": "ADBE Vector Shape - Group",
+                                "hd": false
+                            }
+                        ],
+                        "nm": "E",
+                        "np": 3,
+                        "cix": 2,
+                        "bm": 0,
+                        "ix": 1,
+                        "mn": "ADBE Vector Group",
+                        "hd": false
+                    }
+                ]
+            },
+            "fFamily": "Venus Rising"
+        },
+        {
+            "ch": "X",
+            "size": 112,
+            "style": "Regular",
+            "w": 137.1,
+            "data": {
+                "shapes": [
+                    {
+                        "ty": "gr",
+                        "it": [
+                            {
+                                "ind": 0,
+                                "ty": "sh",
+                                "ix": 1,
+                                "ks": {
+                                    "a": 0,
+                                    "k": {
+                                        "i": [
+                                            [
+                                                0,
+                                                0
+                                            ],
+                                            [
+                                                0,
+                                                0
+                                            ],
+                                            [
+                                                0,
+                                                0
+                                            ],
+                                            [
+                                                0,
+                                                0
+                                            ],
+                                            [
+                                                0,
+                                                0
+                                            ],
+                                            [
+                                                0,
+                                                0
+                                            ],
+                                            [
+                                                0,
+                                                0
+                                            ],
+                                            [
+                                                0,
+                                                0
+                                            ],
+                                            [
+                                                0,
+                                                0
+                                            ],
+                                            [
+                                                0,
+                                                0
+                                            ],
+                                            [
+                                                0,
+                                                0
+                                            ],
+                                            [
+                                                0,
+                                                0
+                                            ]
+                                        ],
+                                        "o": [
+                                            [
+                                                0,
+                                                0
+                                            ],
+                                            [
+                                                0,
+                                                0
+                                            ],
+                                            [
+                                                0,
+                                                0
+                                            ],
+                                            [
+                                                0,
+                                                0
+                                            ],
+                                            [
+                                                0,
+                                                0
+                                            ],
+                                            [
+                                                0,
+                                                0
+                                            ],
+                                            [
+                                                0,
+                                                0
+                                            ],
+                                            [
+                                                0,
+                                                0
+                                            ],
+                                            [
+                                                0,
+                                                0
+                                            ],
+                                            [
+                                                0,
+                                                0
+                                            ],
+                                            [
+                                                0,
+                                                0
+                                            ],
+                                            [
+                                                0,
+                                                0
+                                            ]
+                                        ],
+                                        "v": [
+                                            [
+                                                124.5,
+                                                -73.9
+                                            ],
+                                            [
+                                                99.7,
+                                                -73.9
+                                            ],
+                                            [
+                                                60.9,
+                                                -45.6
+                                            ],
+                                            [
+                                                22,
+                                                -73.9
+                                            ],
+                                            [
+                                                -2.6,
+                                                -73.9
+                                            ],
+                                            [
+                                                48.6,
+                                                -36.6
+                                            ],
+                                            [
+                                                -1.9,
+                                                0.1
+                                            ],
+                                            [
+                                                22.4,
+                                                0.1
+                                            ],
+                                            [
+                                                60.9,
+                                                -27.7
+                                            ],
+                                            [
+                                                99.5,
+                                                0.1
+                                            ],
+                                            [
+                                                123.6,
+                                                0.1
+                                            ],
+                                            [
+                                                73.3,
+                                                -36.6
+                                            ]
+                                        ],
+                                        "c": true
+                                    },
+                                    "ix": 2
+                                },
+                                "nm": "X",
+                                "mn": "ADBE Vector Shape - Group",
+                                "hd": false
+                            }
+                        ],
+                        "nm": "X",
+                        "np": 3,
+                        "cix": 2,
+                        "bm": 0,
+                        "ix": 1,
+                        "mn": "ADBE Vector Group",
+                        "hd": false
+                    }
+                ]
+            },
+            "fFamily": "Venus Rising"
+        }
+    ]
+}
