@@ -1233,7 +1233,7 @@
 
         "demo": true,
 
-        "demoText": "<i></i>",
+        "demoText": "<i>Use side buttons to rotate object.<br>press play or stop to control lottie animation.</i>",
 
         "plugins": [
             "Load_Lottie_File",
@@ -1249,7 +1249,7 @@
         "Load_Lottie_File": {
             "pluginWidth": "25rem","exampleWidth": "23rem",  "consoleWidth": "22rem", "extraWidth": "85%",
 
-            "puzzleText": "Loads lotie files in JSON format.",
+            "puzzleText": "loads Lottie files in JSON format into a specified object's material. Loop, Autoplay and Quality options are available.",
 
             "exampleText": "",
 
@@ -1283,7 +1283,7 @@
 
         "Lottie_Animation_Play_Segment": {
 
-            "pluginWidth": "40rem","exampleWidth": "23rem",  "consoleWidth": "22rem", "extraWidth": "85%",
+            "pluginWidth": "25rem","exampleWidth": "23rem",  "consoleWidth": "22rem", "extraWidth": "85%",
 
             "puzzleText": "plays a segment of animation from frame A to frame B.",
 
@@ -1301,7 +1301,7 @@
         
         "Lottie_Animation_Go_To_Frame": {
 
-            "pluginWidth": "40rem","exampleWidth": "23rem",  "consoleWidth": "22rem", "extraWidth": "85%",
+            "pluginWidth": "25rem","exampleWidth": "23rem",  "consoleWidth": "22rem", "extraWidth": "85%",
 
             "puzzleText": "goes to a specified frame in a lottie animation and either plays forward, backward or stops.",
 
@@ -1374,7 +1374,7 @@
 
         "Lottie_Animation_Set_Playback_Rate": {
 
-            "pluginWidth": "30rem","exampleWidth": "23rem",  "consoleWidth": "22rem", "extraWidth": "85%",
+            "pluginWidth": "25rem","exampleWidth": "23rem",  "consoleWidth": "22rem", "extraWidth": "85%",
 
             "puzzleText": "sets the playback speed of a lottie animation.",
 
