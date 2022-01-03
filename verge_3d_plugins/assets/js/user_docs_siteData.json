@@ -1233,7 +1233,7 @@
 
         "demo": true,
 
-        "demoText": "<i>Use side buttons to rotate object.<br>press play or stop to control lottie animation.</i>",
+        "demoText": "<i>Use side buttons to rotate object.<br>press play or stop to control lottie animation.<br>Drag carousel up and down to scrub animations.</i>",
 
         "plugins": [
             "Load_Lottie_File",
